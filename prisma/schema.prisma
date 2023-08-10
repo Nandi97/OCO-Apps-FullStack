@@ -1,0 +1,149 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Account {
+  id                String  @id
+  userId            String
+  type              String
+  provider          String
+  providerAccountId String
+  refresh_token     String?
+  access_token      String?
+  expires_at        Int?
+  token_type        String?
+  scope             String?
+  id_token          String?
+  session_state     String?
+  User              User    @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@unique([provider, providerAccountId])
+}
+
+model Session {
+  id           String   @id
+  sessionToken String   @unique
+  userId       String
+  expires      DateTime
+  User         User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+}
+
+model User {
+  id            String    @id
+  name          String?
+  email         String?   @unique
+  emailVerified DateTime?
+  image         String?
+  Account       Account[]
+  Session       Session[]
+}
+
+model VerificationToken {
+  identifier String
+  token      String   @unique
+  expires    DateTime
+
+  @@unique([identifier, token])
+}
+
+model books {
+  id               BigInt    @id @default(autoincrement())
+  author           String    @db.VarChar(255)
+  title            String    @db.VarChar(255)
+  cover_url        String?
+  copies           Int
+  edition          String    @db.VarChar(255)
+  isbn_issn        String    @db.VarChar(255)
+  media_type       String    @db.VarChar(255)
+  publication_year Int
+  publisher        String    @db.VarChar(255)
+  subject          String?
+  status           Boolean   @default(true)
+  staff_id         BigInt
+  deleted_at       DateTime? @db.Timestamp(0)
+  created_at       DateTime? @db.Timestamp(0)
+  updated_at       DateTime? @db.Timestamp(0)
+  staff            staff     @relation(fields: [staff_id], references: [id], onDelete: NoAction, onUpdate: NoAction, map: "books_staff_id_foreign")
+}
+
+model designations {
+  id            BigInt      @id @default(autoincrement())
+  name          String      @db.VarChar(255)
+  staff_type_id BigInt
+  created_at    DateTime?   @db.Timestamp(0)
+  updated_at    DateTime?   @db.Timestamp(0)
+  staff_types   staff_types @relation(fields: [staff_type_id], references: [id], onDelete: NoAction, onUpdate: NoAction, map: "designations_staff_type_id_foreign")
+  staff         staff[]
+}
+
+model genders {
+  id         BigInt    @id @default(autoincrement())
+  name       String    @db.VarChar(255)
+  created_at DateTime? @db.Timestamp(0)
+  updated_at DateTime? @db.Timestamp(0)
+  staff      staff[]
+}
+
+model menus {
+  id         BigInt      @id @default(autoincrement())
+  name       String      @db.VarChar(255)
+  url        String      @db.VarChar(255)
+  icon       String      @db.VarChar(255)
+  list_order String      @db.VarChar(255)
+  created_at DateTime?   @db.Timestamp(0)
+  updated_at DateTime?   @db.Timestamp(0)
+  sub_menus  sub_menus[]
+}
+
+model staff {
+  id             BigInt       @id @default(autoincrement())
+  name           String       @db.VarChar(255)
+  email          String       @db.VarChar(255)
+  mobile         String       @db.VarChar(255)
+  ext            String       @db.VarChar(255)
+  staff_no       Int
+  avatar_url     String?
+  team_id        BigInt
+  designation_id BigInt
+  gender_id      BigInt
+  deleted_at     DateTime?    @db.Timestamp(0)
+  created_at     DateTime?    @db.Timestamp(0)
+  updated_at     DateTime?    @db.Timestamp(0)
+  books          books[]
+  designations   designations @relation(fields: [designation_id], references: [id], onDelete: NoAction, onUpdate: NoAction, map: "staff_designation_id_foreign")
+  genders        genders      @relation(fields: [gender_id], references: [id], onDelete: NoAction, onUpdate: NoAction, map: "staff_gender_id_foreign")
+  teams          teams        @relation(fields: [team_id], references: [id], onDelete: NoAction, onUpdate: NoAction, map: "staff_team_id_foreign")
+}
+
+model staff_types {
+  id           BigInt         @id @default(autoincrement())
+  name         String         @db.VarChar(255)
+  created_at   DateTime?      @db.Timestamp(0)
+  updated_at   DateTime?      @db.Timestamp(0)
+  designations designations[]
+}
+
+model sub_menus {
+  id         BigInt    @id @default(autoincrement())
+  name       String    @db.VarChar(255)
+  url        String    @db.VarChar(255)
+  icon       String    @db.VarChar(255)
+  list_order String    @db.VarChar(255)
+  menu_id    BigInt
+  created_at DateTime? @db.Timestamp(0)
+  updated_at DateTime? @db.Timestamp(0)
+  menus      menus     @relation(fields: [menu_id], references: [id], onDelete: NoAction, onUpdate: NoAction, map: "sub_menus_menu_id_foreign")
+}
+
+model teams {
+  id         BigInt    @id @default(autoincrement())
+  name       String    @db.VarChar(255)
+  created_at DateTime? @db.Timestamp(0)
+  updated_at DateTime? @db.Timestamp(0)
+  staff      staff[]
+}
