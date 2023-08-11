@@ -5,23 +5,24 @@ import Login from './Login';
 import Logged from './Logged';
 
 export async function getSessionData() {
-    const session = await getServerSession(authOptions);
-    return session;
+	const session = await getServerSession(authOptions);
+	// console.log(session)
+	return session;
 }
 
 export default async function Nav() {
-    const session = await getSessionData();
+	const session = await getSessionData();
 
-    return (
-        <>
-            {!session?.user && <Login />}
-            {session?.user && (
-                <Logged
-                    image={session?.user?.image || ''}
-                    name={session?.user?.name}
-                    designation=""
-                />
-            )}
-        </>
-    );
+	return (
+		<>
+			{!session?.user && <Login />}
+			{session?.user && (
+				<Logged
+					image={session?.user?.image || ''}
+					name={session?.user?.name}
+					designation=""
+				/>
+			)}
+		</>
+	);
 }

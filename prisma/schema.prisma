@@ -8,39 +8,40 @@ datasource db {
 }
 
 model Account {
-  id                String  @id
+  id                String  @id @default(cuid())
   userId            String
   type              String
   provider          String
   providerAccountId String
-  refresh_token     String?
-  access_token      String?
+  refresh_token     String? @db.Text
+  access_token      String? @db.Text
   expires_at        Int?
   token_type        String?
   scope             String?
-  id_token          String?
+  id_token          String? @db.Text
   session_state     String?
-  User              User    @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
 
   @@unique([provider, providerAccountId])
 }
 
 model Session {
-  id           String   @id
+  id           String   @id @default(cuid())
   sessionToken String   @unique
   userId       String
   expires      DateTime
-  User         User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  user         User     @relation(fields: [userId], references: [id], onDelete: Cascade)
 }
 
 model User {
-  id            String    @id
+  id            String    @id @default(cuid())
   name          String?
   email         String?   @unique
   emailVerified DateTime?
   image         String?
-  Account       Account[]
-  Session       Session[]
+  accounts      Account[]
+  sessions      Session[]
 }
 
 model VerificationToken {
@@ -51,99 +52,99 @@ model VerificationToken {
   @@unique([identifier, token])
 }
 
-model books {
-  id               BigInt    @id @default(autoincrement())
-  author           String    @db.VarChar(255)
-  title            String    @db.VarChar(255)
-  cover_url        String?
-  copies           Int
-  edition          String    @db.VarChar(255)
-  isbn_issn        String    @db.VarChar(255)
-  media_type       String    @db.VarChar(255)
-  publication_year Int
-  publisher        String    @db.VarChar(255)
-  subject          String?
-  status           Boolean   @default(true)
-  staff_id         BigInt
-  deleted_at       DateTime? @db.Timestamp(0)
-  created_at       DateTime? @db.Timestamp(0)
-  updated_at       DateTime? @db.Timestamp(0)
-  staff            staff     @relation(fields: [staff_id], references: [id], onDelete: NoAction, onUpdate: NoAction, map: "books_staff_id_foreign")
+model Book {
+  id              Int       @id @default(autoincrement())
+  author          String
+  title           String
+  coverUrl        String?
+  copies          Int
+  edition         String
+  isbnIssn        String
+  mediaType       String
+  publicationYear Int
+  publisher       String
+  subject         String?
+  status          Boolean   @default(true)
+  staffId         Int
+  deletedAt       DateTime?
+  createdAt       DateTime  @default(now())
+  updatedAt       DateTime?
+  staff           Staff     @relation(fields: [staffId], references: [id])
 }
 
-model designations {
-  id            BigInt      @id @default(autoincrement())
-  name          String      @db.VarChar(255)
-  staff_type_id BigInt
-  created_at    DateTime?   @db.Timestamp(0)
-  updated_at    DateTime?   @db.Timestamp(0)
-  staff_types   staff_types @relation(fields: [staff_type_id], references: [id], onDelete: NoAction, onUpdate: NoAction, map: "designations_staff_type_id_foreign")
-  staff         staff[]
+model Designation {
+  id          Int       @id @default(autoincrement())
+  name        String
+  staffTypeId Int
+  createdAt   DateTime  @default(now())
+  updatedAt   DateTime  @default(now())
+  staffType   StaffType @relation(fields: [staffTypeId], references: [id])
+  staff       Staff[]
 }
 
-model genders {
-  id         BigInt    @id @default(autoincrement())
-  name       String    @db.VarChar(255)
+model Gender {
+  id        Int      @id @default(autoincrement())
+  name      String
+  createdAt DateTime @default(now())
+  updatedAt DateTime @default(now())
+  staff     Staff[]
+}
+
+model Menu {
+  id        Int       @id @default(autoincrement())
+  name      String
+  url       String
+  icon      String
+  listOrder Int
+  createdAt DateTime  @default(now())
+  updatedAt DateTime  @default(now())
+  subMenus  SubMenu[]
+}
+
+model Staff {
+  id            Int         @id @default(autoincrement())
+  name          String
+  email         String
+  mobile        String
+  ext           Int
+  staffNo       Int
+  avatarUrl     String?
+  teamId        Int
+  designationId Int
+  genderId      Int
+  deletedAt     DateTime?   @db.Timestamp(0)
+  createdAt     DateTime    @default(now())
+  updatedAt     DateTime?   @default(now())
+  books         Book[]
+  designation   Designation @relation(fields: [designationId], references: [id])
+  gender        Gender      @relation(fields: [genderId], references: [id])
+  team          Team        @relation(fields: [teamId], references: [id])
+}
+
+model StaffType {
+  id           Int           @id @default(autoincrement())
+  name         String
+  createdAt    DateTime?     @db.Timestamp(0)
+  updatedAt    DateTime?     @db.Timestamp(0)
+  designations Designation[]
+}
+
+model SubMenu {
+  id        Int       @id @default(autoincrement())
+  name      String
+  url       String
+  icon      String
+  listOrder Int
+  menuId    Int
+  createdAt DateTime? @db.Timestamp(0)
+  updatedAt DateTime? @db.Timestamp(0)
+  menu      Menu      @relation(fields: [menuId], references: [id])
+}
+
+model Team {
+  id         Int       @id @default(autoincrement())
+  name       String
   created_at DateTime? @db.Timestamp(0)
   updated_at DateTime? @db.Timestamp(0)
-  staff      staff[]
-}
-
-model menus {
-  id         BigInt      @id @default(autoincrement())
-  name       String      @db.VarChar(255)
-  url        String      @db.VarChar(255)
-  icon       String      @db.VarChar(255)
-  list_order String      @db.VarChar(255)
-  created_at DateTime?   @db.Timestamp(0)
-  updated_at DateTime?   @db.Timestamp(0)
-  sub_menus  sub_menus[]
-}
-
-model staff {
-  id             BigInt       @id @default(autoincrement())
-  name           String       @db.VarChar(255)
-  email          String       @db.VarChar(255)
-  mobile         String       @db.VarChar(255)
-  ext            String       @db.VarChar(255)
-  staff_no       Int
-  avatar_url     String?
-  team_id        BigInt
-  designation_id BigInt
-  gender_id      BigInt
-  deleted_at     DateTime?    @db.Timestamp(0)
-  created_at     DateTime?    @db.Timestamp(0)
-  updated_at     DateTime?    @db.Timestamp(0)
-  books          books[]
-  designations   designations @relation(fields: [designation_id], references: [id], onDelete: NoAction, onUpdate: NoAction, map: "staff_designation_id_foreign")
-  genders        genders      @relation(fields: [gender_id], references: [id], onDelete: NoAction, onUpdate: NoAction, map: "staff_gender_id_foreign")
-  teams          teams        @relation(fields: [team_id], references: [id], onDelete: NoAction, onUpdate: NoAction, map: "staff_team_id_foreign")
-}
-
-model staff_types {
-  id           BigInt         @id @default(autoincrement())
-  name         String         @db.VarChar(255)
-  created_at   DateTime?      @db.Timestamp(0)
-  updated_at   DateTime?      @db.Timestamp(0)
-  designations designations[]
-}
-
-model sub_menus {
-  id         BigInt    @id @default(autoincrement())
-  name       String    @db.VarChar(255)
-  url        String    @db.VarChar(255)
-  icon       String    @db.VarChar(255)
-  list_order String    @db.VarChar(255)
-  menu_id    BigInt
-  created_at DateTime? @db.Timestamp(0)
-  updated_at DateTime? @db.Timestamp(0)
-  menus      menus     @relation(fields: [menu_id], references: [id], onDelete: NoAction, onUpdate: NoAction, map: "sub_menus_menu_id_foreign")
-}
-
-model teams {
-  id         BigInt    @id @default(autoincrement())
-  name       String    @db.VarChar(255)
-  created_at DateTime? @db.Timestamp(0)
-  updated_at DateTime? @db.Timestamp(0)
-  staff      staff[]
+  staff      Staff[]
 }
