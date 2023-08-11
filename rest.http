@@ -4,3 +4,8 @@
 # @name menus
 GET {{host}}/menus/getMenus HTTp/1.1
 Content-Type: application/json
+
+###
+# @name books
+GET {{host}}/books/getBooks HTTp/1.1
+Content-Type: application/json

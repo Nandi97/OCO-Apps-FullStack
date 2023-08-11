@@ -2,7 +2,6 @@
 import OptDropdown from '@/components/ui/OptDropdown';
 import Pagination from '@/components/ui/Pagination';
 import SearchInput from '@/components/ui/SearchInput';
-import { BookData } from '@/pages/types/Books';
 import { Icon } from '@iconify/react';
 import { useQuery } from '@tanstack/react-query';
 import axios from 'axios';
@@ -19,20 +18,20 @@ export default function Library() {
 
 	const pathname = usePathname();
 
-	const { data, isLoading } = useQuery<BookData>(
-		['bookList', currentPage, perPage, searchParam],
-		() =>
-			axios
-				.get(`/api/books/getBooks`, {
-					params: { page: currentPage, perPage, searchParam },
-				})
-				.then((response) => response.data)
+	const { data, isLoading } = useQuery(['bookList', currentPage, perPage, searchParam], () =>
+		axios
+			.get(`/api/books/getBooks`, {
+				params: { page: currentPage, perPage, searchParam },
+			})
+			.then((response) => response.data.data)
 	);
+
+	// console.log('Book Data', data.links);
 
 	const total = data?.total ?? 0;
 	const links = data?.links ?? [];
-	const firstPageUrl = data?.first_page_url;
-	const lastPageUrl = data?.last_page_url;
+	const firstPageUrl = data?.firstPageUrl;
+	const lastPageUrl = data?.lastPageUrl;
 	const from = data?.from ?? 0;
 	const to = data?.to ?? 0;
 
@@ -173,7 +172,7 @@ export default function Library() {
 										<tr key={book?.id}>
 											<td className="p-2 text-sm text-center">
 												<div className="flex items-center w-full">
-													{!book?.cover_url ? (
+													{!book?.coverUrl ? (
 														<div className="w-full">
 															<span className="inline-flex items-center justify-center rounded w-7 h-7 bg-ocoblue-500">
 																<span className="font-medium leading-none text-white">
@@ -190,7 +189,7 @@ export default function Library() {
 																height={200}
 																width={200}
 																className="object-contain h-7 rounded aspect-[9/16]"
-																src={book?.cover_url}
+																src={book?.coverUrl}
 																alt=""
 															/>
 														</div>
@@ -209,7 +208,7 @@ export default function Library() {
 												{book?.author}
 											</td>
 											<td className="px-3 py-2 text-sm whitespace-nowrap text-ocoblue-500">
-												{book?.publication_year}
+												{book?.publicationYear}
 											</td>
 											<td className="px-3 py-2 text-sm text-center whitespace-nowrap text-ocoblue-500">
 												{book?.edition}
@@ -258,7 +257,7 @@ export default function Library() {
 						>
 							<div className="col-span-4">
 								<div className="flex items-center gap-2">
-									{!book?.cover_url ? (
+									{!book?.coverUrl ? (
 										<span className="inline-flex items-center justify-center rounded-full h-7 w-7 bg-ocoblue-500">
 											<span className="font-medium leading-none text-white">
 												{book?.title
@@ -272,7 +271,7 @@ export default function Library() {
 											height={200}
 											width={200}
 											className="rounded-full h-7 w-7"
-											src={book?.cover_url}
+											src={book?.coverUrl}
 											alt="user avatar"
 										/>
 									)}
@@ -293,7 +292,7 @@ export default function Library() {
 								Publication Year :
 							</div>
 							<div className="col-span-8 text-ocobrown-500">
-								{book?.publication_year}
+								{book?.publicationYear}
 							</div>
 							<div className="col-span-4 text-sm font-semibold text-left text-ocoblue-600">
 								Extension :

@@ -47,6 +47,9 @@ dependencies:
   next-auth:
     specifier: ^4.22.5
     version: 4.22.5(next@13.4.13)(react-dom@18.2.0)(react@18.2.0)
+  paginator:
+    specifier: ^1.0.0
+    version: 1.0.0
   postcss:
     specifier: 8.4.27
     version: 8.4.27
@@ -2168,6 +2171,10 @@ packages:
     engines: {node: '>=10'}
     dependencies:
       p-limit: 3.1.0
+    dev: false
+
+  /paginator@1.0.0:
+    resolution: {integrity: sha512-j2Y5AtF/NrXOEU9VVOQBGHnj81NveRQ/cDzySywqsWrAj+cxivMpMCkYJOds3ulQiDU4rQBWc0WoyyXMXOmuMA==}
     dev: false
 
   /parent-module@1.0.1:
