@@ -23,10 +23,10 @@ export default function Library() {
 			.get(`/api/books/getBooks`, {
 				params: { page: currentPage, perPage, searchParam },
 			})
-			.then((response) => response.data.data)
+			.then((response) => response.data)
 	);
 
-	// console.log('Book Data', data.links);
+	// console.log('Book Data', data);
 
 	const total = data?.total ?? 0;
 	const links = data?.links ?? [];

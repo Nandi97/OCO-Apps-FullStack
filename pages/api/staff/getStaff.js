@@ -16,12 +16,21 @@ export default async function handler(req, res) {
 
 			const skip = (page - 1) * perPage;
 
-			const totalItems = await prisma.book.count();
+			const totalItems = await prisma.staff.count();
 			const totalPages = Math.ceil(totalItems / perPage);
 
-			const data = await prisma.book.findMany({
+			const data = await prisma.staff.findMany({
 				include: {
-					staff: true,
+					designation: {
+						include: {
+							staffType: true,
+						},
+					},
+					gender: true,
+					team: true,
+				},
+				orderBy: {
+					staffNo: 'asc',
 				},
 				skip,
 				take: perPage,
@@ -32,7 +41,7 @@ export default async function handler(req, res) {
 			// Add "Previous" link
 			if (page > 1) {
 				links.push({
-					url: `/api/books/getBooks?page=${page - 1}`,
+					url: `/api/staff/getStaff?page=${page - 1}`,
 					label: '&laquo; Previous',
 					active: false,
 				});
@@ -41,7 +50,7 @@ export default async function handler(req, res) {
 			// Add links for individual pages
 			for (let i = 1; i <= totalPages; i++) {
 				links.push({
-					url: `/api/books/getBooks?page=${i}`,
+					url: `/api/staff/getStaff?page=${i}`,
 					label: i.toString(),
 					active: i === page,
 				});
@@ -50,7 +59,7 @@ export default async function handler(req, res) {
 			// Add "Next" link
 			if (page < totalPages) {
 				links.push({
-					url: `/api/books/getBooks?page=${page + 1}`,
+					url: `/api/staff/getStaff?page=${page + 1}`,
 					label: 'Next &raquo;',
 					active: false,
 				});
@@ -61,15 +70,15 @@ export default async function handler(req, res) {
 			const responseData = {
 				currentPage: page,
 				data,
-				firstPageUrl: `/api/books/getBooks?page=1`,
+				firstPageUrl: `/api/staff/getStaff?page=1`,
 				lastPage: totalPages,
-				lastPageUrl: `/api/books/getBooks?page=${totalPages}`,
+				lastPageUrl: `/api/staff/getStaff?page=${totalPages}`,
 				links,
-				nextPageUrl: `/api/books/getBooks?page=${page + 1}`,
-				path: '/api/books/getBooks',
+				nextPageUrl: `/api/staff/getStaff?page=${page + 1}`,
+				path: '/api/staff/getStaff',
 				perPage,
 				searchParam,
-				prevPageUrl: `/api/books/getBooks?page=${page - 1}`,
+				prevPageUrl: `/api/staff/getStaff?page=${page - 1}`,
 				total: totalItems,
 				from,
 				to,

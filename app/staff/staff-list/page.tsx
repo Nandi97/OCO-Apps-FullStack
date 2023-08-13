@@ -9,8 +9,6 @@ import StaffForm from '@/components/forms/StaffForm';
 import SearchInput from '@/components/ui/SearchInput';
 import OptDropdown from '@/components/ui/OptDropdown';
 import { toast } from 'react-hot-toast';
-import API_URL from '@/config';
-import { Staff, StaffData } from '@/pages/types/Staff';
 import CreateStaff from './components/CreateStaff';
 import EditStaff from './components/EditStaff';
 
@@ -23,27 +21,27 @@ export default function StaffList() {
 
 	const [searchParam, setSearchParam] = useState<string | null>(null); // Add searchParam state
 
-	const { data, isLoading } = useQuery<StaffData>(
-		['staffList', currentPage, perPage, searchParam],
-		() =>
-			axios
-				.get(`/api/staff/getStaff`, {
-					params: { page: currentPage, perPage, searchParam },
-				})
-				.then((response) => response.data)
+	const { data, isLoading } = useQuery(['staffList', currentPage, perPage, searchParam], () =>
+		axios
+			.get(`/api/staff/getStaff`, {
+				params: { page: currentPage, perPage, searchParam },
+			})
+			.then((response) => response.data)
 	);
+
+	console.log(data);
 
 	const total = data?.total ?? 0;
 	const links = data?.links ?? [];
-	const firstPageUrl = data?.first_page_url;
-	const lastPageUrl = data?.last_page_url;
+	const firstPageUrl = data?.firstPageUrl;
+	const lastPageUrl = data?.lastPageUrl;
 	const from = data?.from ?? 0;
 	const to = data?.to ?? 0;
 
 	const [submitFormID, setSubmitFormID] = useState<string | null>(null);
 
 	const [editMode, setEditMode] = useState(false);
-	const [staffDetails, setStaffDetails] = useState<Staff | null>(null);
+	const [staffDetails, setStaffDetails] = useState(null);
 
 	const newStaffMember = () => {
 		console.log('new Staff Member');
@@ -209,13 +207,18 @@ export default function StaffList() {
 									);
 								} else {
 									return (
-										<tr key={person?.id}>
+										<tr
+											key={person?.id}
+											className={`hover:bg-ocobrown-100/95 ${
+												index % 2 && index !== 0 ? 'bg-ocoblue-100/95' : ''
+											}`}
+										>
 											<td className="px-3 py-2 text-sm text-center whitespace-nowrap text-ocoblue-500">
-												{person?.staff_no}
+												{person?.staffNo}
 											</td>
 											<td className="py-2 pl-4 pr-3 text-sm whitespace-nowrap sm:pl-6">
 												<div className="flex items-center gap-2">
-													{!person?.avatar_url ? (
+													{!person?.avatarUrl ? (
 														<span className="inline-flex items-center justify-center rounded-full h-7 w-7 bg-ocoblue-500">
 															<span className="font-medium leading-none text-white">
 																{person?.name
@@ -229,7 +232,7 @@ export default function StaffList() {
 															height={200}
 															width={200}
 															className="rounded-full h-7 w-7"
-															src={person?.avatar_url}
+															src={person?.avatarUrl}
 															alt=""
 														/>
 													)}
@@ -256,12 +259,12 @@ export default function StaffList() {
 											<td className="px-3 py-2 text-sm whitespace-nowrap text-ocoblue-500">
 												<span
 													className={`inline-flex rounded-full  px-2 text-xs font-semibold leading-5 ${
-														person?.deleted_at === null
+														person?.deletedAt === null
 															? 'text-green-800 bg-green-100'
 															: 'text-red-800 bg-red-100'
 													}`}
 												>
-													{person?.deleted_at === null
+													{person?.deletedAt === null
 														? 'Active'
 														: 'Inactive'}
 												</span>
@@ -300,7 +303,7 @@ export default function StaffList() {
 						>
 							<div className="col-span-4">
 								<div className="flex items-center gap-2">
-									{!person?.avatar_url ? (
+									{!person?.avatarUrl ? (
 										<span className="inline-flex items-center justify-center rounded-full h-7 w-7 bg-ocoblue-500">
 											<span className="font-medium leading-none text-white">
 												{person?.name
@@ -314,13 +317,13 @@ export default function StaffList() {
 											height={200}
 											width={200}
 											className="rounded-full h-7 w-7"
-											src={person?.avatar_url}
+											src={person?.avatarUrl}
 											alt="user avatar"
 										/>
 									)}
 								</div>
 							</div>
-							<div className="col-span-8">{person?.staff_no}</div>
+							<div className="col-span-8">{person?.staffNo}</div>
 							<div className="col-span-4 text-sm font-semibold text-left text-ocoblue-600">
 								Name :
 							</div>
@@ -347,12 +350,12 @@ export default function StaffList() {
 							<div className="col-span-8">
 								<span
 									className={`inline-flex rounded-full  px-2 text-xs font-semibold leading-5 ${
-										person?.deleted_at === null
+										person?.deletedAt === null
 											? 'text-green-800 bg-green-100'
 											: 'text-red-800 bg-red-100'
 									}`}
 								>
-									{person?.deleted_at === null ? 'Active' : 'Inactive'}
+									{person?.deletedAt === null ? 'Active' : 'Inactive'}
 								</span>
 							</div>
 						</div>

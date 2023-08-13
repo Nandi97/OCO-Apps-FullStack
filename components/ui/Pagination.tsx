@@ -51,9 +51,10 @@ export default function Pagination({
 	};
 
 	const handlePerPageChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
-		const newValue = parseInt(event.target.value, 15); // Parse the selected value to an integer
+		const newValue = parseInt(event.target.value, 10); // Parse the selected value to an integer
 		onPerPageChange(newValue);
 	};
+	const showFullPagination = total / perPage < 11;
 
 	return (
 		<div className="flex items-center justify-between px-4 py-3 bg-white border-t border-ocoblue-200 sm:px-6">
@@ -128,17 +129,21 @@ export default function Pagination({
 									);
 								} else if (index > 0 && index < links?.length - 1) {
 									return (
-										<button
-											key={index}
-											onClick={() => handlePageChange(parseInt(item?.label))}
-											className={`relative inline-flex items-center border ${
-												currentPage === parseInt(item?.label)
-													? 'border-ocobrown-500 text-ocobrown-50 bg-ocobrown-500'
-													: 'border-ocoblue-400 bg-white text-ocoblue-500 hover:bg-ocoblue-50'
-											} px-4 py-2 text-sm font-medium  focus:z-20`}
-										>
-											{item?.label}
-										</button>
+										showFullPagination && (
+											<button
+												key={index}
+												onClick={() =>
+													handlePageChange(parseInt(item?.label))
+												}
+												className={`relative inline-flex items-center border ${
+													currentPage === parseInt(item?.label)
+														? 'border-ocobrown-500 text-ocobrown-50 bg-ocobrown-500'
+														: 'border-ocoblue-400 bg-white text-ocoblue-500 hover:bg-ocoblue-50'
+												} px-4 py-2 text-sm font-medium  focus:z-20`}
+											>
+												{item?.label}
+											</button>
+										)
 									);
 								} else {
 									return (
