@@ -94,7 +94,7 @@ export default function CreateBook() {
 
 	const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
 		e.preventDefault();
-		toastBookID = toast.loading('Creating Your Book', { id: toastBookID });
+		// toastBookID = toast.loading('Creating Your Book', { id: toastBookID });
 		mutate();
 	};
 

@@ -1,7 +1,13 @@
 import prisma from '../../../prisma/client';
 import { getServerSession } from 'next-auth';
 import { authOptions } from '../auth/[...nextauth]';
-
+export const config = {
+	api: {
+		bodyParser: {
+			sizeLimit: '10mb',
+		},
+	},
+};
 export default async function handler(req, res) {
 	if (req.method === 'POST') {
 		const session = await getServerSession(req, res, authOptions);
@@ -17,21 +23,22 @@ export default async function handler(req, res) {
 
 			const result = await prisma.book.create({
 				data: {
-					// coverUrl: formData.coverUrl,
+					coverUrl: formData.coverUrl,
 					author: formData.author,
-					copies: formData.copies,
+					copies: parseInt(formData.copies),
 					edition: formData.edition,
 					isbnIssn: formData.isbnIssn,
 					mediaType: formData.mediaType,
-					publicationYear: formData.publicationYear,
+					publicationYear: parseInt(formData.publicationYear),
 					publisher: formData.publisher,
-					staffId: formData.staffId,
+					staffId: parseInt(formData.staffId),
 					subject: formData.subject,
 					title: formData.title,
 				},
 			});
 			res.status(200).json(result);
 		} catch (err) {
+			console.log('Error when deleting post:', err.message);
 			res.status(403).json({ err: 'Error has occurred while creating a book' });
 		}
 	}
