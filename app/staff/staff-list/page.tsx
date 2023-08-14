@@ -19,7 +19,7 @@ export default function StaffList() {
 	const [currentPage, setCurrentPage] = useState(1);
 	const [perPage, setPerPage] = useState(10);
 
-	const [searchParam, setSearchParam] = useState<string | null>(null); // Add searchParam state
+	const [searchParam, setSearchParam] = useState<string | null>(null);
 
 	const { data, isLoading } = useQuery(['staffList', currentPage, perPage, searchParam], () =>
 		axios
@@ -29,7 +29,7 @@ export default function StaffList() {
 			.then((response) => response.data)
 	);
 
-	console.log(data);
+	// console.log(data);
 
 	const total = data?.total ?? 0;
 	const links = data?.links ?? [];
@@ -100,7 +100,6 @@ export default function StaffList() {
 
 	const handlePerPageChange = (newPerPage: number) => {
 		setPerPage(newPerPage);
-		// You may also want to update the displayed data based on the newPerPage value
 	};
 
 	const submitForm = () => {

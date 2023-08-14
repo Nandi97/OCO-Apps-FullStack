@@ -48,14 +48,14 @@ export default function CreateBook() {
 				title: formValues.title,
 				author: formValues.author,
 				publisher: formValues.publisher,
-				media_type: formValues.mediaType,
+				mediaType: formValues.mediaType,
 				edition: formValues.edition,
-				staff_id: formValues.staffId,
+				staffId: formValues.staffId,
 				subject: formValues.subject,
 				copies: formValues.copies,
-				isbn_issn: formValues.isbnIssn,
-				publication_year: formValues.publicationYear,
-				cover_url: base64Cover,
+				isbnIssn: formValues.isbnIssn,
+				publicationYear: formValues.publicationYear,
+				coverUrl: base64Cover,
 			};
 			console.log('Book Data', bookData);
 			await axios.post('/api/books/addBook', { body: bookData });

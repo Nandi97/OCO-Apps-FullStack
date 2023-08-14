@@ -46,21 +46,12 @@ export default function Book(url: URL) {
 			<div className="relative">
 				<div className="grid w-full grid-cols-6 p-4 shadow md:grid-cols-12 overscroll-none ring-1 ring-black ring-opacity-5 md:rounded-md">
 					<div className="flex items-center w-full col-span-6 md:col-span-4">
-						{!book?.cover_url ? (
-							<Image
-								width={180}
-								height={320}
-								alt="Book Cover Image"
-								src={Book_Mockup}
-							/>
-						) : (
-							<Image
-								width={180}
-								height={320}
-								alt="Book Cover Image"
-								src={book?.cover_url}
-							/>
-						)}
+						<Image
+							width={180}
+							height={320}
+							alt="Book Cover Image"
+							src={book?.coverUrl || Book_Mockup}
+						/>
 					</div>
 					<div className="grid grid-cols-8 col-span-6 gap-2 md:col-span-8">
 						{/* Author  */}
@@ -85,7 +76,7 @@ export default function Book(url: URL) {
 							<span>:</span>
 						</div>
 						<div className="px-2 text-sm font-semibold md:col-span-6 sm:col-span-8">
-							<span>{book?.publication_year}</span>
+							<span>{book?.publicationYear}</span>
 						</div>
 						{/* Subject  */}
 						<div className="flex justify-between w-full text-sm font-semibold text-ocoblue-700 md:col-span-2 sm:col-span-8">
@@ -109,7 +100,7 @@ export default function Book(url: URL) {
 							<span>:</span>
 						</div>
 						<div className="px-2 text-sm font-semibold md:col-span-6 sm:col-span-8">
-							<span>{book?.isbn_issn}</span>
+							<span>{book?.isbnIssn}</span>
 						</div>
 						{/* Copies  */}
 						<div className="flex items-center w-full col-span-8 text-sm font-semibold">

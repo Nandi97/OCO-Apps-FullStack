@@ -28,8 +28,9 @@ export default function EditBook(url: URL) {
 		queryKey: ['detailBookEdit'],
 		queryFn: () => fetchDetails(url.params.slug),
 	});
-	const [title, setTitle] = useState<string>(`Edit Book: ${book?.title}`);
+
 	// console.log('Books :', book);
+	const [title, setTitle] = useState<string>(`Edit Book: ${book.title}`);
 
 	const [formValues, setFormValues] = useState<any>({
 		cover_url: '',
@@ -50,16 +51,16 @@ export default function EditBook(url: URL) {
 	useEffect(() => {
 		if (book) {
 			setFormValues({
-				cover_url: book.cover_url,
+				cover_url: book.coverUrl,
 				title: book.title,
 				author: book.author,
 				publisher: book.publisher,
 				staffId: '45',
-				mediaType: book.media_type,
+				mediaType: book.mediaType,
 				edition: book.edition,
 				copies: book.copies,
-				isbnIssn: book.isbn_issn,
-				publicationYear: book.publication_year,
+				isbnIssn: book.isbnIssn,
+				publicationYear: book.publicationYear,
 				subject: book.subject,
 			});
 		}
@@ -82,14 +83,14 @@ export default function EditBook(url: URL) {
 				title: formValues.title,
 				author: formValues.author,
 				publisher: formValues.publisher,
-				media_type: formValues.mediaType,
+				mediaType: formValues.mediaType,
 				edition: formValues.edition,
-				staff_id: formValues.staffId,
+				staffId: formValues.staffId,
 				subject: formValues.subject,
 				copies: formValues.copies,
-				isbn_issn: formValues.isbnIssn,
+				isbnIssn: formValues.isbnIssn,
 				publication_year: formValues.publicationYear,
-				cover_url: base64Cover || selectedFile || formValues.cover_url,
+				coverUrl: base64Cover || selectedFile || formValues.cover_url,
 			};
 			// console.log('Book Data', bookData);
 			await axios.patch(`/api/books/editBook`, { bookData });

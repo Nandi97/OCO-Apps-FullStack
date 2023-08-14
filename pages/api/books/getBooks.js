@@ -12,7 +12,7 @@ export default async function handler(req, res) {
 		try {
 			const page = parseInt(req.query.page) || 1;
 			const perPage = parseInt(req.query.perPage) || 10;
-			const searchParam = req.query.searchParam || ''; // Default to empty string if not provided
+			const searchParam = req.query.searchParam || '';
 
 			const skip = (page - 1) * perPage;
 
@@ -20,6 +20,16 @@ export default async function handler(req, res) {
 			const totalPages = Math.ceil(totalItems / perPage);
 
 			const data = await prisma.book.findMany({
+				where: {
+					OR: [
+						{ author: { contains: searchParam, mode: 'insensitive' } },
+						{ title: { contains: searchParam, mode: 'insensitive' } },
+						{ mediaType: { contains: searchParam, mode: 'insensitive' } },
+						{ publisher: { contains: searchParam, mode: 'insensitive' } },
+						{ subject: { contains: searchParam, mode: 'insensitive' } },
+						// { ext: { contains: parseInt(searchParam) } },
+					],
+				},
 				include: {
 					staff: true,
 				},
@@ -29,7 +39,6 @@ export default async function handler(req, res) {
 
 			const links = [];
 
-			// Add "Previous" link
 			if (page > 1) {
 				links.push({
 					url: `/api/books/getBooks?page=${page - 1}`,
@@ -47,7 +56,6 @@ export default async function handler(req, res) {
 				});
 			}
 
-			// Add "Next" link
 			if (page < totalPages) {
 				links.push({
 					url: `/api/books/getBooks?page=${page + 1}`,
