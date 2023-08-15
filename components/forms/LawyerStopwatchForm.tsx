@@ -10,7 +10,6 @@ interface LawyerStopwatchFormProps {
 	onSelectChange: (event: React.ChangeEvent<HTMLSelectElement>) => void;
 	onChange: (event: React.ChangeEvent<HTMLInputElement>) => void;
 	onTextAreaChange: (event: React.ChangeEvent<HTMLTextAreaElement>) => void;
-	onSelectedMatterChange: any;
 }
 
 type Matter = {
@@ -29,7 +28,6 @@ export default function LawyerStopwatchForm({
 	onChange,
 	onSelectChange,
 	onTextAreaChange,
-	onSelectedMatterChange,
 }: LawyerStopwatchFormProps) {
 	const [showTimeInputs, setShowTimeInputs] = useState(false);
 	const [selectedMatter, setSelectedMatter] = useState<Matter | null>(null);
@@ -82,7 +80,6 @@ export default function LawyerStopwatchForm({
 				},
 			});
 		}
-		onSelectedMatterChange(value); // Call the callback function
 	};
 
 	const handleAddStopWatchItem = () => {
@@ -162,12 +159,39 @@ export default function LawyerStopwatchForm({
 													key={matter.id}
 													value={matter}
 													className={({ active }) =>
-														`cursor-pointer select-none p-2 ${
-															active ? 'bg-teal-200' : ''
+														`relative cursor-default select-none py-2 pl-10 pr-4 ${
+															active ? 'bg-ocobrown-200' : ''
 														}`
 													}
 												>
-													{matter.code}: {matter.description}
+													{({ selected, active }) => (
+														<>
+															<span
+																className={`block truncate ${
+																	selected
+																		? 'font-medium'
+																		: 'font-normal'
+																}`}
+															>
+																{matter.code}: {matter.description}
+															</span>
+															{selected ? (
+																<span
+																	className={`absolute inset-y-0 left-0 flex items-center pl-3 ${
+																		active
+																			? 'text-white'
+																			: 'text-ocobrown-600'
+																	}`}
+																>
+																	<Icon
+																		icon="heroicons:check"
+																		className="h-5 w-5"
+																		aria-hidden="true"
+																	/>
+																</span>
+															) : null}
+														</>
+													)}
 												</Combobox.Option>
 											))
 										)}
@@ -226,7 +250,11 @@ export default function LawyerStopwatchForm({
 								/>
 							</div>
 						</div>
-						<div className={`space-y-1 col-span-4  ${showTimeInputs ? '' : 'hidden'}`}>
+						<div
+							className={`space-y-1 col-span-4  ${
+								item.showTimeInputs ? '' : 'hidden'
+							}`}
+						>
 							<label
 								htmlFor="task"
 								className="block text-sm font-medium text-ocoblue-700"
@@ -244,7 +272,11 @@ export default function LawyerStopwatchForm({
 								/>
 							</div>
 						</div>
-						<div className={`space-y-1 col-span-4  ${showTimeInputs ? '' : 'hidden'}`}>
+						<div
+							className={`space-y-1 col-span-4  ${
+								item.showTimeInputs ? '' : 'hidden'
+							}`}
+						>
 							<label
 								htmlFor="task"
 								className="block text-sm font-medium text-ocoblue-700"
@@ -262,7 +294,11 @@ export default function LawyerStopwatchForm({
 								/>
 							</div>
 						</div>
-						<div className={`space-y-1 col-span-4  ${showTimeInputs ? '' : 'hidden'}`}>
+						<div
+							className={`space-y-1 col-span-4  ${
+								item.showTimeInputs ? '' : 'hidden'
+							}`}
+						>
 							<label
 								htmlFor="task"
 								className="block text-sm font-medium text-ocoblue-700"
