@@ -7,7 +7,6 @@ import Link from 'next/link';
 import { useRouter } from 'next/navigation';
 import toast from 'react-hot-toast';
 import BookForm from '@/components/forms/BookForm';
-import { Book } from '@/pages/types/Books';
 
 type URL = {
 	params: {
@@ -24,13 +23,10 @@ export default function EditBook(url: URL) {
 	const [selectedFile, setSelectedFile] = useState<File | null>(null);
 	const [base64Cover, setBase64Cover] = useState<string>('');
 
-	const { data: book } = useQuery<Book[]>({
+	const { data: book } = useQuery({
 		queryKey: ['detailBookEdit'],
 		queryFn: () => fetchDetails(url.params.slug),
 	});
-
-	// console.log('Books :', book);
-	const [title, setTitle] = useState<string>(`Edit Book: ${book.title}`);
 
 	const [formValues, setFormValues] = useState<any>({
 		cover_url: '',
@@ -89,11 +85,11 @@ export default function EditBook(url: URL) {
 				subject: formValues.subject,
 				copies: formValues.copies,
 				isbnIssn: formValues.isbnIssn,
-				publication_year: formValues.publicationYear,
-				coverUrl: base64Cover || selectedFile || formValues.cover_url,
+				publicationYear: formValues.publicationYear,
+				coverUrl: base64Cover || formValues.coverUrl,
 			};
-			// console.log('Book Data', bookData);
-			await axios.patch(`/api/books/editBook`, { bookData });
+
+			await axios.patch(`/api/books/editBook`, bookData);
 		},
 		{
 			onError: (error) => {
@@ -110,7 +106,7 @@ export default function EditBook(url: URL) {
 				});
 				setFormValues({
 					...formValues,
-					cover_url: '',
+					coverUrl: '',
 					title: '',
 					author: '',
 					publisher: '',
@@ -131,14 +127,15 @@ export default function EditBook(url: URL) {
 	const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
 		e.preventDefault();
 
-		toastBookID = toast.loading('Editing Your Book', { id: toastBookID });
 		mutate();
 	};
 
 	return (
 		<div className="space-y-2 bg-white">
 			<div className="sticky z-20 flex items-center justify-between gap-2 bg-white top-2">
-				<h1 className="text-lg font-extralight text-accent-700">{title}</h1>
+				<h1 className="text-lg font-extralight text-accent-700">
+					Edit Book: {book?.title}
+				</h1>
 			</div>
 			<form onSubmit={handleSubmit} className="rounded-md shadow-md shadow-ocoblue-200">
 				<div>

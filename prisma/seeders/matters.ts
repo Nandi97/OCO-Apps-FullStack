@@ -1,0 +1,23757 @@
+export function getMatters() {
+	return [
+		{
+			code: 'AAC1.1',
+			description:
+				'I.N.O APEX AFRICA CAPITAL HILL (SULTANALI AMIRALI KASSAMALI/NAZLIN)-HCCC NO. 277 OF 2015: SULTANALI KASSAMALI -VS- APEX AFRICA CAPITAL LTD & ANOTHER',
+		},
+		{
+			code: 'AAK1.1',
+			description: 'Redundancy Process for Africa Alliance Stock Brokering Division',
+		},
+		{
+			code: 'AAL1.1',
+			description: 'ASPIRE AFRICA - REAL ESTATE SOLUTIONS',
+		},
+		{
+			code: 'AAL2.1',
+			description: 'PROVISION OF LEGAL SERVICES TO APPTIVATE AFRICA LIMITED.',
+		},
+		{
+			code: 'AAW1.1',
+			description: 'ADEN ABDUBA WAKO',
+		},
+		{
+			code: 'ABA1.1',
+			description:
+				'DEMAND OF KSHS.4.8 M FROM MOEZ MANSURALI DIDARALI BY JOSEPH SUNDAY & LINDA ATIENO AKACH',
+		},
+		{
+			code: 'ABC1.1',
+			description:
+				'ATB AUTOMATIC TARIFF BUILDING LTD -VS- ADAMS BROWN & CO. LTD: HCCC NO 456 OF 2014',
+		},
+		{
+			code: 'ABD2.1',
+			description:
+				'REVIEW OF DRAFT MODEL LAW FOR THE EMERGENCE OF EXPORT TRADE COMPANIES IN AFRICA.',
+		},
+		{
+			code: 'ABJ1.1',
+			description: 'HCCC NO. 345 OF 2018 ASU BHALTIJA LIMITED VS. AKKAD SYSTEMS & ANOR',
+		},
+		{
+			code: 'ABK1.1',
+			description: 'BANKING FACILITIES TO AL-NASHIR NZAR GULAMHUSSEIN KURJI.',
+		},
+		{
+			code: 'ABK1.10',
+			description:
+				'E&LRC CAUSE NO. 1597 OF 2015 BANKING INSURANCE & FINANCE UNION (KENYA) -vs- BARCLAYS BANK OF KENYA LIMITED',
+		},
+		{
+			code: 'ABK1.11',
+			description: 'JOAN KIRAGU - TERMINATION OF EMPLOYMENT',
+		},
+		{
+			code: 'ABK1.12',
+			description: 'FELIX NDEREBA - TERMINATION OF EMPLOYMENT',
+		},
+		{
+			code: 'ABK1.13',
+			description: 'FRANCIS MWANGI MAINA - TERMINATION OF EMPLOYMENT',
+		},
+		{
+			code: 'ABK1.14',
+			description: "AUGASTINE NDEMANGE KING'OKU - TERMINATION OF EMPLOYMENT",
+		},
+		{
+			code: 'ABK1.15',
+			description: 'EVA NYOTA - TERMINATION OF EMPLOYMENT',
+		},
+		{
+			code: 'ABK1.16',
+			description: 'RISHIT CHUDASAMA - TERMINATION OF EMPLOYMENT',
+		},
+		{
+			code: 'ABK1.17',
+			description: 'JOHN GERIN MSAFARI AND ADRIANA SHALI MSAFARI.',
+		},
+		{
+			code: 'ABK1.18',
+			description: 'BANKING FACILITIES TO FAULU MICROFINANCE BANK LIMITED.',
+		},
+		{
+			code: 'ABK1.19',
+			description: 'BANKING FACILITIES TO STABEX INTERNATIONAL LIMITED',
+		},
+		{
+			code: 'ABK1.2',
+			description: 'BANKING FACILITIES TO DR. JAPHETH KIPLANGAT BIEGON',
+		},
+		{
+			code: 'ABK1.20',
+			description:
+				'BANKING FACILITIESTO MOSES STEVEN OKUNDI, CHARGE OVER NAIROBI/BLOCK/23/149',
+		},
+		{
+			code: 'ABK1.21',
+			description: 'BANKING FACILITIES TO SAFEGUARD WORKWEAR EPZ LIMITED.',
+		},
+		{
+			code: 'ABK1.22',
+			description:
+				'BANKING FACILITIES TO JACQUELINE MAHORO AND DANIEL MURENZI, CHARGE OVER APARTMENT C6, BLOCK C, L.R. NO.5/166, NAIROBI',
+		},
+		{
+			code: 'ABK1.23',
+			description:
+				'PURCHASE OF L.R. NO.209/10302/1 BY GURVEER BHACHU, CHARGE TO ABSA BANK KENYA PLC.',
+		},
+		{
+			code: 'ABK1.24',
+			description: 'BANKING FACILITIES TO AGRI SEEDCO LIMITED.',
+		},
+		{
+			code: 'ABK1.25',
+			description: 'BANKING FACILITIES TO ACCURATE STEEL MILLS LIMITED.',
+		},
+		{
+			code: 'ABK1.26',
+			description: 'BANKING FACILITIES TO MENENGAI OIL REFINERIES LIMITED.',
+		},
+		{
+			code: 'ABK1.27',
+			description: 'BANKING FACILITIES TO UZURI FOODS LIMITED',
+		},
+		{
+			code: 'ABK1.28',
+			description: 'BANKING FACILITIES TO SIMBISA BRANDS KENYA LIMITED',
+		},
+		{
+			code: 'ABK1.29',
+			description: 'BANKING FACILITIES TO INDUSTRIAL PROMOTION SERVICES (KENYA) LIMITED',
+		},
+		{
+			code: 'ABK1.3',
+			description:
+				'SALE OF APARTMENT NUMBER 3C ERECTED ON PROPERTY LAND REFERENCE NUMBER1870/I/633 (ORIGINAL NUMBER 1870/I/190);',
+		},
+		{
+			code: 'ABK1.30',
+			description: 'BANKING FACILITIES TO SAMIR AZIM HUSSEIN MOHAMED AND ARZINA JERAZ.',
+		},
+		{
+			code: 'ABK1.31',
+			description: 'CHARGE OVER HSE NO.2 ON LR NO.209/15778: JUDY MUMBI KAMAU',
+		},
+		{
+			code: 'ABK1.32',
+			description:
+				'BANKING FACILITY TO JEDIDAH AKINYI OCHIENG AND KEVIN OMONDI OUGO, CHARGE OVER APT D7, BLOCK 12, L.R. 28867, LIFESTYLE HEIGHTS TATU CITY, KIAMBU COUNTY',
+		},
+		{
+			code: 'ABK1.33',
+			description: 'BANKING FACILITIES TO KAPUTEI FARM PRODUCTS LIMITED',
+		},
+		{
+			code: 'ABK1.4',
+			description: 'Benard Otsieno Ayieko',
+		},
+		{
+			code: 'ABK1.5',
+			description: 'BANKING FACILITIES TO FRANCOIS GRONDIN.',
+		},
+		{
+			code: 'ABK1.6',
+			description: 'BANKING FACILITIES TO TREAD SETTERS TYRES LIMITED.',
+		},
+		{
+			code: 'ABK1.7',
+			description: 'BANKING FACILITIES TO PHILIP OKOTH OKUNDI -CHARGE OVER L.R. NO. 1/722',
+		},
+		{
+			code: 'ABK1.8',
+			description:
+				"PETITION AGAINST BANKS AND SUPERMARKET'S NON COMPLIANCE OF PUBLIC HEALTH & SANITATIONS REGULATIONS .",
+		},
+		{
+			code: 'ABK1.9',
+			description:
+				'E&LRC CONSTITUTIONAL PETITION NO.22 OF 2017: NAOMI CONNIE LUSITCHE VS. BARCLAYS BANK OF KENYA LIMITED.',
+		},
+		{
+			code: 'ABL0082.2',
+			description:
+				'CIVIL APPEAL NO. 164 OF 2014 AND A HIGH COURT PETITION NO. 72 OF 2011. MT. KENYA, RIFT VALLEY, NAIROBI  & KISII  BOTTLERS LIMITED VS THE AG, KRA & COMMISSIONER GENERAL, COMMISSIONER OF CUSTOMS & EXCISE DUTY',
+		},
+		{
+			code: 'ABL1.1',
+			description: 'E&LR CAUSE NO. 403 OF 2019 – JOYCE MANYASI VS. AFRICA BLOOMS LIMITED.',
+		},
+		{
+			code: 'ABL2.1',
+			description: 'COLLABORATION BETWEEN ORARO & CO. ADVOCATES AND ANANT BHATT LLP',
+		},
+		{
+			code: 'ABN1.1',
+			description: 'HCCC NO. 1241 OF 2001. ABNAMRO BANK LTD VS. ROSAFRIC LTD AND OTHERS',
+		},
+		{
+			code: 'ABP1.1',
+			description:
+				'CIVIL CASE NO. E365 OF 2020 METROPOLE HOLDINGS LIMITED & ANOR .VS. TRANSNATIONAL BANK LIMITED ',
+		},
+		{
+			code: 'ABP1.1/001',
+			description:
+				'CIVIL APPEAL NO. E331 OF 2023 | METROPOLE HOLDINGS LIMITED VS. ACCESS BANK (KENYA) PLC',
+		},
+		{
+			code: 'ABP1.2',
+			description:
+				'CIVIL APPEAL NO. E331 OF 2023 | METROPOLE HOLDINGS LIMITED VS. ACCESS BANK (KENYA) PLC',
+		},
+		{
+			code: 'ACB1.1',
+			description:
+				'ARTCAFFE COFFEE & BAKERY LIMITED -VS- COMPETITION AUTHORITY OF KENYA & NYARUAI GITONGA',
+		},
+		{
+			code: 'ACB1.10',
+			description:
+				'E&LRC CAUSE NO. 1466 OF 2019 SILAS TOM MUGANDAH -VS- ARTCAFFE COFFEE & BAKERY LIMITED',
+		},
+		{
+			code: 'ACB1.11',
+			description:
+				'E&LRC CAUSE NO. 863 OF 2019 ANN WANGARI OWUOR VS. ARTCAFFE COFFEE AND BAKERY LIMITED.',
+		},
+		{
+			code: 'ACB1.12',
+			description: 'Employment advisory on variation of contracts',
+		},
+		{
+			code: 'ACB1.13',
+			description:
+				'CMEL CAUSE NO. E1053 OF 2020 JARED OMULI SIOCHA VS. ARTCAFFE COFFEE & BAKERY LIMITED.',
+		},
+		{
+			code: 'ACB1.14',
+			description:
+				'CMEL CAUSE NO. E1202 OF 2020 KENYA HOTELS & ALLIED WORKERS UNION -VS- ARTCAFFE COFFEE & BAKERY LTD',
+		},
+		{
+			code: 'ACB1.15',
+			description:
+				'CMEL CAUSE NO. E027 OF 2021 DAVID OMONDI OTOYI –VS-  ARTCAFFE COFFEE & BAKERY LIMITED ',
+		},
+		{
+			code: 'ACB1.16',
+			description:
+				'ELRC CASE NO. E6555 OF 2020 MARION NYAMBISHI WATHUNGU -VS- ARTCAFFE COFFEE & BAKERY LIMITED ',
+		},
+		{
+			code: 'ACB1.17',
+			description:
+				'CMEL SUIT NO. 976 OF 2019 DALMAS AKOTO MUGAILWA -VS- ARTCAFFE COFFEE & BAKERY LIMITED ',
+		},
+		{
+			code: 'ACB1.18',
+			description:
+				'ELRC CAUSE NO. E345 OF 2021 PURITY MUTHONI EDITH –VS- ARTCAFFE COFFEE & BAKERY LIMITED ',
+		},
+		{
+			code: 'ACB1.19',
+			description:
+				'CM-ELRC CAUSE NO. E640 OF 2021: PACILOUS JEMUGUNI ISANZO -VS- ARTCAFFE COFFEE & BAKERY LTD',
+		},
+		{
+			code: 'ACB1.2',
+			description:
+				'CAUSE NO. 1142 OF 2017 POLINE MUKUKNGU CHABAGA VS ARTCAFFE COFFEE & BAKERY LIMITED',
+		},
+		{
+			code: 'ACB1.3',
+			description: 'EMPLOYMENT ADVISORY',
+		},
+		{
+			code: 'ACB1.4',
+			description:
+				'E&LRC CAUSE NO.569 OF 2018-LINAH MWENDWA NDOLO-VS-ARTCAFFE COFEE & BAKERY LIMITED',
+		},
+		{
+			code: 'ACB1.5',
+			description:
+				'E&LRC CASE NO. 208 OF 2018 STEPHEN OHUYU KADENYI VS. ARTCAFFE COFFEE & BAKERY LIMITED',
+		},
+		{
+			code: 'ACB1.6',
+			description:
+				'CMEL NO. 204 OF 2019 CARLITUS MUHAMBE HILLARY VS. ARTCAFFE COFFE AND BAKERY',
+		},
+		{
+			code: 'ACB1.7',
+			description:
+				"CMEL NO.762 OF 2019 GEORGE MATASO LIAKONGA VS. THE ARTCAFFE' COFFEE AND BAKERY.",
+		},
+		{
+			code: 'ACB1.8',
+			description:
+				"E&LR CAUSE NO. 1107 OF 2019 SHEILA KHAOYA AKALICHA -vs- ARTCAFFE' COFFEE & BAKERY LIMITED",
+		},
+		{
+			code: 'ACB1.8/001',
+			description:
+				'ELRC Appeal No. 31 of 2020 Sheila Khaoya Akaliche –vs-  Artcaffe Coffee & Bakery Ltd ',
+		},
+		{
+			code: 'ACB1.9',
+			description:
+				'CMEL NO. 1947 OF 2019 BENSON MBOGO KARIMI -VS- ARTCAFFE COFFEE & BAKERY LIMITED',
+		},
+		{
+			code: 'ACH3.1',
+			description: 'BENYA CAROLINE ACHIENG',
+		},
+		{
+			code: 'ACH4.1',
+			description:
+				'CMCC NO. 3420 OF 2007: TOM ACHODE VS THE AFRICAN LINE TRANSPORTERS CO. LTD',
+		},
+		{
+			code: 'ACH5.1',
+			description:
+				'C.M.C.C. CIVIL SUIT NO. 812 OF 2016 - KASSIM OMOLLO OWINO VS. RAMOGI TOURS & TRAVELS LIMITED & OTHERS',
+		},
+		{
+			code: 'ACK1.1',
+			description: 'ACK GARDEN HOUSE',
+		},
+		{
+			code: 'ACL1.1',
+			description: 'ACTIS LLP VS CB RICHARD ELLIS LTD',
+		},
+		{
+			code: 'ACL2.1',
+			description: 'REVIEW OF CONFIDENTIALITY AGREEMENT FOR ACACIA CEMENT LIMITED',
+		},
+		{
+			code: 'ACL2.2',
+			description: 'ACQUISITION OF SHARES IN SERUJI LIMITED',
+		},
+		{
+			code: 'ACL2.3',
+			description: 'SALE OF SHARES IN SERUJI LIMITED',
+		},
+		{
+			code: 'ACL3.1',
+			description: 'LEASE OVER TITLE NUMBERS DAGORETTI/MUTUINI/1477 & 1478',
+		},
+		{
+			code: 'ACL3.2',
+			description: 'CONTRACTS',
+		},
+		{
+			code: 'ACL3.3',
+			description:
+				'TRIBUNAL APPEAL NO. NET 17 OF 2019 WANJIKU MUGANE & 8 OTHERS -VS- THE DIRECTOR GENERAL, NEMA & 2 OTHERS',
+		},
+		{
+			code: 'ACL3.4',
+			description:
+				'ELC NO. 242 OF 2019  WANJIKU MUGANE & 2 OTHERS VS. DIRECTOR GENERAL NEMA & 2 OTHERS.',
+		},
+		{
+			code: 'ACL4.1',
+			description: 'DISPUTE BETWEEN MEDITEC SYSTEMS LIMITED & AFRICARE LIMITED.',
+		},
+		{
+			code: 'ACM1.2',
+			description:
+				'CLAIM FOR THE RECOVERY OF KSHS 56 MILLION STOLEN BY A FORMER EMPLOYEE/EMPLOYEE FRAUD',
+		},
+		{
+			code: 'ACT1.1',
+			description: 'INCORPORATION OF ACTS KENYA',
+		},
+		{
+			code: 'ADH1.1',
+			description: 'ESTATE OF LATE PROF OKOTH OGENDO - RUTH ADHIAMBO',
+		},
+		{
+			code: 'ADI1.1',
+			description: 'DIVORCE -VICKIE ADIEDO -VS-VINCENT OTIENO',
+		},
+		{
+			code: 'ADL1.1',
+			description: 'DEBT RECOVERY',
+		},
+		{
+			code: 'ADU1.1',
+			description:
+				'SALE AND PURCHASE OF TITLE NUMBER SUNA EAST/KAKRAO/9476, THOMAS NZAVAE KAVAI AND BERNARD ADUNDO & JOAN O ADUNDO',
+		},
+		{
+			code: 'AEL1.1',
+			description: 'ANCH ENTERPRISES LTD',
+		},
+		{
+			code: 'AEL1.2',
+			description: 'ANCH ENTERPRISES LTD',
+		},
+		{
+			code: 'AEN1.1',
+			description: 'ADONAI ENTERPRISES LTD',
+		},
+		{
+			code: 'AFL1.1',
+			description: 'ENGINEERING COMPANY LTD -VS- AFRIKON LTD: HCCC NO. 534 OF 2013 (NBO)',
+		},
+		{
+			code: 'AFP1.1',
+			description: 'AGENCE FRANCE -PRESSE - GENERAL FILE',
+		},
+		{
+			code: 'AFR1.1',
+			description: 'INCORPORATION OF AFRICAN STREET LIGHTS LIMITED',
+		},
+		{
+			code: 'AFR2.1',
+			description:
+				'PROPOSED SALE OF WANANCHI BUSINESS SERVICES UNIT TO CONVERGENCE AND EAST AFRICA CAPITAL PARTNERS',
+		},
+		{
+			code: 'AFR3.1',
+			description: 'Unfair/unlawful discrimination – breach of contract – Daniel Ohonde',
+		},
+		{
+			code: 'AFR3.2',
+			description: 'TERMINATION OF CONTRACT OF EMPLOYMENT BETWEEN AECF AND ELIZABETH ODETE.',
+		},
+		{
+			code: 'AFR3.3',
+			description: 'MILIMANI CMCC NO.48305 OF 2021 BAGUI DIARRA VS AECF.',
+		},
+		{
+			code: 'AGA1.1',
+			description: 'HCCC NO. 159 OF 2017: CHASE BANK LTD (IR) VS ZAFRULLAH KHAN & 19 OTHERS',
+		},
+		{
+			code: 'AGE1.1',
+			description: 'JOE AGER',
+		},
+		{
+			code: 'AGE2.1',
+			description:
+				'JOE OWAKA AGER (ADMINISTRATOR FOR THE ESTATE OF MARY SLECCOR ADEGA AGER (DECEASED)-VS- JOHN OTIENO AWINJE & 2 OTHERS: CIVIL SUIT NO. 332 OF 2013',
+		},
+		{
+			code: 'AGE2.2',
+			description: 'JOE OWAKA AGER -VS- ICEA LION GENERAL INSURANCE: CLAIM NO. M256459',
+		},
+		{
+			code: 'AGG1.1',
+			description: 'ABDIWAHID ABEY GEDOW',
+		},
+		{
+			code: 'AGG2.1',
+			description: 'HELLEN AGGARWAL',
+		},
+		{
+			code: 'AGL1.1',
+			description: 'ATLANTIC GROUP (K) LTD - COMPANY REGISTRATION NO. C115423',
+		},
+		{
+			code: 'AGO1.1',
+			description: 'KISUMU HCSC NO. 1349 OF 2013 IN THE ESTATE OF EDWIN OKELO AGOT.',
+		},
+		{
+			code: 'AGR1.1',
+			description:
+				'SHARI PATRICK - ALLIANCE FOR GREEN REVOLUTION IN AFRICA (AGRA) WHISTLE BLOWING POLICY',
+		},
+		{
+			code: 'AGR1.2',
+			description: 'ALLIANCE FOR GREEN REVOLUTION IN AFRICA (AGRA) -VS- NIXON BUGO',
+		},
+		{
+			code: 'AGR1.3',
+			description: 'ALLIANCE FOR GREEN REVOLUTION IN AFRICA',
+		},
+		{
+			code: 'AGR1.4',
+			description:
+				'ALLIANCE FOR GREEN REVOLUTION IN AFRICA (AGRA)/VICTORIA SABULA -VS- DOMINION FARMS LTD',
+		},
+		{
+			code: 'AGR1.5',
+			description:
+				'ALLIANCE FOR GREEN REVOLUTION IN AFRICA (AGRA) -VS- JACINTA W. KIMWAKI: E&L RELATIONS CAUSE NO. 7 OF 2015 (KIAMBU)',
+		},
+		{
+			code: 'AGR1.6',
+			description:
+				'NAIROBI E&LRC NO. 253 OF 2019 RENISON KYALO KILONZO VS ALLIANCE FOR A GREEN REVOLUTION IN AFRICA(AGRA)',
+		},
+		{
+			code: 'AGR2.1',
+			description: 'AGRO IRRIGATION',
+		},
+		{
+			code: 'AGU1.1',
+			description: 'DISPUTE RELATING TO SALE AND PURCHASE OF L.R. NO. KISUMU/PANDPIERI/2892',
+		},
+		{
+			code: 'AHL1.1',
+			description: 'SALE & PURCHASE OF UNIT B21,10TH FLOOR,SIGNATURE RESIDENCES,KILELESHWA',
+		},
+		{
+			code: 'AHL1.2',
+			description:
+				'PURCHASE OF OFFICE SUITES NOS. 3,4,5 AND 6 PARKING BAYS,AT THE MIRAGE LR. NO. 209/18559 NAIROBI',
+		},
+		{
+			code: 'AHL2.1',
+			description:
+				'OBJECTION DECISION TO LEGACY ASSESSMENT ORDER OF KSHS. 24,000 FOR ALLIA HOLDINGS LIMITED',
+		},
+		{
+			code: 'AHM1.1',
+			description:
+				'SOHAIL DEVELOPMENT LTD -VS- OLYMPIC TRADING COMPANY LTD: TITLE NO NRBI/BLOCK 17/318 NRBI: ELC NO. 259 OF 2012',
+		},
+		{
+			code: 'AID1.3',
+			description: 'CLEOPATRA KAMA MUGYENYI',
+		},
+		{
+			code: 'AID1.4',
+			description: 'SAMUEL OBARA ELRC NO. 339 OF 2016',
+		},
+		{
+			code: 'AID1.5',
+			description: 'KELVIN KINYUA MACHARIA ELRC NO. 338 OF 2016',
+		},
+		{
+			code: 'AID1.6',
+			description: 'ILLAH EVANCE ELRC NO. 340 OF 2016',
+		},
+		{
+			code: 'AIG1.1',
+			description: 'AIG INSURANCE COMPANY LTD/KENYA INS CO.LTD',
+		},
+		{
+			code: 'AIG1.2',
+			description:
+				'E&LRC CAUSE NO.E854 OF 2021 - JOSEPHAT MUINDI MBOYA VS. AIG KENYA INSURANCE COMPANY LTD.',
+		},
+		{
+			code: 'AIG1.3',
+			description: 'ELRC CAUSE NO. E915 OF 2022 BERNARD DULO VS AIG INSURANCE (K) CO. LTD',
+		},
+		{
+			code: 'AIG1.4',
+			description: 'PROVISION OF LEGAL SERVICES',
+		},
+		{
+			code: 'AIK1.1',
+			description:
+				'APPLICATION TO CENTRAL BANK OF KENYA FOR DEPOSIT TAKING MICROFINANCE LICENCE.',
+		},
+		{
+			code: 'AIL1.1',
+			description: 'MAYFLOWER HOLDINGS LIMITED',
+		},
+		{
+			code: 'AIL1.3',
+			description:
+				'SALE OF PROPERTY TITLE NUMBER NAIROBI/BLOCK 125/970; IMARA DAIMA BY ALLOTROPE INVESTMENTS LIMITED TO SOSPETER WAFUBWA ODWORI',
+		},
+		{
+			code: 'AIL2.1',
+			description:
+				'MOMBASA ELC PETITION NO. 1 OF 2017 GEOFFREY CLEMENT JEFWA & 12 OTHERS VS JAMES RAYMOND NJENGA & OTHERS',
+		},
+		{
+			code: 'AIL3.1',
+			description: 'PREPARATION OF SHAREHOLDERS AGREEMENT',
+		},
+		{
+			code: 'AIL4.1',
+			description:
+				'SALE & PURCHASE OF HOUSE NUMBER H, BEING A PART OF L.R. NO.7336/214, MIOTONI RIDGE',
+		},
+		{
+			code: 'AIP1.1',
+			description:
+				'AGRO IRRIGATION & PUMP SERVICES LIMITED VS M/S SOLITION TELMEC:  CLAIM OF KSHS. 1,104,751.74',
+		},
+		{
+			code: 'AIP1.2',
+			description:
+				'AGRO IRRIGATION & PUMP SERVICES - CR/SERVE ENGINEERING- DEMAND NOTICE OF KSHS. 714,731/=',
+		},
+		{
+			code: 'AIP1.5',
+			description: 'CMCC NO. 1855 OF 2010: AGRO IRRIGATION & PUMP SERVICES VS MOGI ANGWENYI',
+		},
+		{
+			code: 'AIP1.6',
+			description:
+				'NAIROBI CMCC NO.5429 OF 2012 AGRO IRRIGATION & PUMP SERVICES LIMITED VS. IMA FARMS LIMITED.',
+		},
+		{
+			code: 'AIR1.1',
+			description: 'JUDICIAL REVIEW APPLICATION IN RESPECT OF A TAX REFUND CLAIM',
+		},
+		{
+			code: 'AIR1.2',
+			description: 'PANALPINA AIRFLO LIMITED VS . THE COMMISSIONER OF DOMESTIC TAXES',
+		},
+		{
+			code: 'AIR1.2/001',
+			description:
+				'Provision of Legal Services to Panalpina Airflo Limited in defending Court of Appeal Civil Application No. 200 of 2019 against the Judgement of the High Court in ITA NO. 05 OF 2018',
+		},
+		{
+			code: 'AIR1.3',
+			description: 'APPEAL ON THE JUDICIAL REVIEW APPLICATION NO. 99 OF 2018',
+		},
+		{
+			code: 'AKC1.1',
+			description: 'OPINION ON  TRUSTS',
+		},
+		{
+			code: 'AKC1.2',
+			description:
+				'CIVIL CASE NO. 221 OF 2017 MANSOORALI ABDUL RAHIM NOORANI & GULAM MOHAMED AKBAR JIWA VS NILUFER KASSAM & NAWAAZ GULAM',
+		},
+		{
+			code: 'AKC1.3',
+			description:
+				'CIVIL CASE NO.320 OF 2016-MANSOORI ABDUL RAHIM NOORANI & ANOR VS.SHAFIK SACHEDINA',
+		},
+		{
+			code: 'AKE1.1',
+			description:
+				'LAURIE AKINYI AKELLO - PURCHASE OF APARTMENT SPG/22/L8/L001 ON L.R. 209 1400/2',
+		},
+		{
+			code: 'AKE2.1',
+			description:
+				"LAURIE AKINYI AKELLO -VS- CONVILLE OTUOMA: CHILDREN'S CASE NO. 861 OF 2015",
+		},
+		{
+			code: 'AKE3.1',
+			description:
+				'JUDICIAL REVIEW   APPLICATION ARISING FROM DICPLINARY TRIBUNAL NO. 187 OF 2019:',
+		},
+		{
+			code: 'AKE3.2',
+			description:
+				'JUDICIAL REVIEW  APPLICATION NO. 1103 OF 2020 ARISING FROM DISCPLINARY TRIBUNAL NO. 188 OF 2020.  ',
+		},
+		{
+			code: 'AKG1.1',
+			description: 'ACCESS KENYA GROUP LTD',
+		},
+		{
+			code: 'AKH1.1',
+			description:
+				'AGA KHAN HEALTH SERVICES KENYA/ DR MAJID TWAHIR -VS- MEDICAL PRACTITIONERS & DENTIST BOARD/EDITH AWINO OKETCH/ DR. RACHAEL RUKARIA: HC JR NOS. 94 & 95 OF 2015',
+		},
+		{
+			code: 'AKH1.2',
+			description:
+				'AGA KHAN HEALTH SERVICES KENYA/ DR. MAJID TWAHIR -VS- MEDICAL PRACTITIONERS & DENTIST BOARD & 2 OTHERS: HC JR NO. 95 OF 2015',
+		},
+		{
+			code: 'AKH1.3',
+			description:
+				'THE AGA KHAN UNIVERSITY HOSPITAL VS. MR. AMAAN KHALIFAN & GOOD PHARMACIES.',
+		},
+		{
+			code: 'AKH2.1',
+			description:
+				'AGA KHAN NATIONAL CONCILIATION AND ARBITRATION BOARD FOR KENYA -VS- HONOURABLE ATTORNEY GENERAL: HC. PETITION NO 332 OF 2015',
+		},
+		{
+			code: 'AKH2.2',
+			description:
+				'MISC. APP NO. 472 OF 2018 NAZIR JINNAH VS. HIS HIGHNESS PRINCE AGAKHAN SHIA ISMAILI NATIONAL CONCILIATION AND ARBITRATION BOARD OF KENYA & 3 OTHERS.',
+		},
+		{
+			code: 'AKH2.3',
+			description:
+				'Provision of legal services to the Aga Khan Council of Kenya & the Aga Khan Council of Tanzania (“the Councils”)',
+		},
+		{
+			code: 'AKH3.1',
+			description:
+				'AGA KHAN UNIVERSITY HOSPITAL (AKUH) & ANOTHER -VS- SAMUEL NJOROGE GACHIE: CMCC NO. 6694 OF 2010',
+		},
+		{
+			code: 'AKH3.11',
+			description:
+				'INDUSTRIAL CAUSE NO. 2051 OF 2011 ALFRED OTIENO OWANDA VS AGA KHAN UNIVERSITY HOSPITAL, NAIROBI',
+		},
+		{
+			code: 'AKH3.12',
+			description:
+				'ELR CAUSE NO.1093 OF 2011 PETER NJOROGE KAMAU VS AGA KHAN UNIVERSITY HOSPITAL NAIROBI',
+		},
+		{
+			code: 'AKH3.15',
+			description:
+				'CMCC NO. 6694 OF 2010 NAIROBI AGAKHAN UNIVERSITY HOSPITAL NAIROBI VS SAMUEL NJOROGE GACHIE',
+		},
+		{
+			code: 'AKH3.16',
+			description: 'TERMINATION OF EMPLOYMENT CONTRACT - MS FLORAH MWALA',
+		},
+		{
+			code: 'AKH3.17',
+			description:
+				'ELRC NO. 2618 OF 2016: STANLEY OMINDE KHAINGA VS AGA KHAN UNIVERSITY HOSPITAL',
+		},
+		{
+			code: 'AKH3.18',
+			description: 'ADVICE ON LAND RIGHTS',
+		},
+		{
+			code: 'AKH3.19',
+			description: 'CAUSE NO. 895 OF 2017: DR. CAROLINE KATHOMI MBUBA VS AKA KHAN UNIVERSITY',
+		},
+		{
+			code: 'AKH3.2',
+			description:
+				'NICHOLAS GITAHI NDEGWA VS AGA KHAN UNIVERSITY HOSPITAL (AKUH): INDUSTRIAL CAUSE NO 472 OF 2012',
+		},
+		{
+			code: 'AKH3.20',
+			description:
+				'JUDICIAL REVIEW APPL. NO. 18 OF 2017 - Republic vs The Director of Immigration Services, Ministry of Interior & Coordination of National Government, Hon. Attorney General, Radavan Boca',
+		},
+		{
+			code: 'AKH3.21',
+			description:
+				'ELRC NO. 2107 OF 2017 AGAKHAN UNIVERSITY HOSPITAL NAIROBI -VS-KENYA UNION OF DOMESTIC, HOTELS, EDUCATIONAL INSTITUTIONS & HOSPITALS WORKERS (KUDHEIHA)',
+		},
+		{
+			code: 'AKH3.22',
+			description:
+				'MILIMANI CMCC NO. 6431 OF 2016 (FORMERLY HCCC NO. 332 OF 2012) MOHAMED HASSAN EBRAHIM VARVANI -VS- THE AGA KHAN UNIVERSITY HOSPITAL',
+		},
+		{
+			code: 'AKH3.23',
+			description:
+				'ELRC NO. 2250 OF 2017 MR. GEOFFREY AGGREY OTIENO OUMA -VS- THE AGA KHAN HEALTH SERVICE KENYA T/A THE AGA KHAN UNIVERSITY HOSPITAL NAIROBI & AGNES KAMAU',
+		},
+		{
+			code: 'AKH3.24',
+			description: '`UTABIBU SOCIETY OPINION',
+		},
+		{
+			code: 'AKH3.25',
+			description:
+				'ELRC CAUSE NO.51 OF 2018-KENYA UNION OF DOMESTIC , HOTELS,EDUCATIONAL INSTITUTIONS AND HOSPITAL WORKERS UNION  (KUDHEIHA)-VS- THE AGA KHAN UNIVERSITY HOSPITAL NAIROBI',
+		},
+		{
+			code: 'AKH3.26',
+			description:
+				'JR NO.22 OF 2018,PROF.STANLEY KHAINGA & 3 OTHERS suing as the KENYA SOCIETY OF PLASTIC AND RECONSTRUCTIVE SURGERY-VS-KMPDB,COLUMBIA AFRICA HEALTH CARE LIMITED,AGA KHAN UNIVERSITY HOSPITAL NRB,DR.TILMAN S,DIRECTOR F IMMIGRATION SERVICES & 1 OTHER',
+		},
+		{
+			code: 'AKH3.27',
+			description:
+				'HCCC NO.237 OF 2017 AGA KHAN UNIVERSITY HOSPITAL NAIROBI-VS-KIBIBI ABDULLA & DR.CHRISTINE WENDO OBAGO',
+		},
+		{
+			code: 'AKH3.28',
+			description: 'KENNETH MACHARIA VS .THE AGA KHAN UNIVERSITY HOSPITAL',
+		},
+		{
+			code: 'AKH3.29',
+			description:
+				'HCCC NO. 160 OF 2018 SHAWN BOLOUKI & AGAKHAN UNIVERSITY HOSPITAL NAIROBI VS. DENNIS OWINO.',
+		},
+		{
+			code: 'AKH3.3',
+			description:
+				'DAVID LAWRENCE KIGERA GICHUKI VS AGA KHAN UNIVERSITY HOSPITAL (AKUH): HCC PETITION NO. 195 OF 2013',
+		},
+		{
+			code: 'AKH3.30',
+			description:
+				'RENEWAL OF LEASE OVER OFFICE SUITE NO.1 B (A) ON 1ST FLOOR OF UPPERHILL MEDICAL CENTRE ON L.R NO. 209/13699',
+		},
+		{
+			code: 'AKH3.31',
+			description:
+				'E&LRC NO. 293 OF 2019 PRISCILLA KARIRA KARIUKI VS. THE AGA KHAN UNIVERSITY HOSPITAL.',
+		},
+		{
+			code: 'AKH3.32',
+			description:
+				'E&LRC PETITION NO. 105 OF 2019 DR. EDNAH KEMUNTO GISORE -vs- AGA KHAN UNIVERSITY HOSPITAL.',
+		},
+		{
+			code: 'AKH3.33',
+			description: 'GENERAL FILE.',
+		},
+		{
+			code: 'AKH3.34',
+			description:
+				'THE AGA KHAN UNIVERSITY HOSPITAL VS. MR. AMAAN KHALIFAN & GOOD PHARMACIES.',
+		},
+		{
+			code: 'AKH3.35',
+			description:
+				'LEGAL OPINION ON SCOPE OF DINLAS PHARMA’S PROFESSIONAL INDEMNITY POLICY FOR COVID-19 VACCINE',
+		},
+		{
+			code: 'AKH3.36',
+			description: 'E287 OF 2021 - DAVID ITHAU WAMBUA .VS. THE AGA KHAN UNIVESITY HOSPITAL',
+		},
+		{
+			code: 'AKH3.37',
+			description: 'E&LRC CAUSE NO. E1019 OF 2021 - J.E.M VS AGA KHAN UNIVERSITY HOSPITAL.',
+		},
+		{
+			code: 'AKH3.4',
+			description:
+				'WILLIAM MOGEN MOMADI VS AGA KHAN UNIVERSITY HOSPITAL (AKUH): INDUSTRIAL CAUSE NO. 1766 OF 2013',
+		},
+		{
+			code: 'AKH3.5',
+			description: 'THE AGA KHAN UNIVERSITY(ESTABLISHMENT)',
+		},
+		{
+			code: 'AKH3.7',
+			description:
+				'AGA KHAN UNIVERSITY HOSPITAL (AKUH) NAIROBI REGISTERED TRUSTEES -VS- AGNES ATIENO AIRO: HCCC NO. 3 OF 2013',
+		},
+		{
+			code: 'AKH3.7/001',
+			description:
+				'CIVIL APPLICATION NO. 2 OF 2019 - AGNES ATIENO AIRO VS. AGA KHAN HEALTH SERVICES T/A AGA KHAN UNIVERSITY HOSPITAL.',
+		},
+		{
+			code: 'AKH3.8',
+			description:
+				'AGA KHAN UNIVERSITY HOSPITAL (AKUH) -VS- KUDHEIHA WORKERS UNION: E& LR CAUSE NO. 1150 OF 2012',
+		},
+		{
+			code: 'AKI1.1',
+			description: 'HILDEGARD ERNA AKIWUMI',
+		},
+		{
+			code: 'AKI1.2',
+			description:
+				'OUTSTANDING RENT DUE & OWING UNDER A LEASE AGREEMENT BETWEEN HILDEGARD ERNA AKIWUMI & PURITY NASHIPAE  KOYET',
+		},
+		{
+			code: 'AKI1.3',
+			description: 'THE LAST WILL AND TESTAMENT',
+		},
+		{
+			code: 'AKI1.4',
+			description:
+				'DISTRESS FOR RENT ARREARS: PURITY NASHIPAE KOIYET  APARTMENT NO B1,GREEN GARDEN; HATHERU ROAD -LAVINGTON',
+		},
+		{
+			code: 'AKI1.5',
+			description:
+				'SALE/PURCHASE OF APARTMENT NUMBER 7, BLOCK D, 3RD FLOOR, L.R.NO.209/390/4, NAIROBI',
+		},
+		{
+			code: 'AKI1.6',
+			description: 'SALE OF APARTMENT B1, GREEN GARDEN APARTMENTS, L.R NO. 330/49, NAIROBI',
+		},
+		{
+			code: 'AKI1.7',
+			description: 'SALE OF APT NO.B1, L.R. NO.330/49, NAIROBI TO EVANS NYAKENYANYA MANDUKU',
+		},
+		{
+			code: 'AKI1.8',
+			description:
+				"MONTHLY SALARY PAMENTS TO CARETAKER (ANTHONY PUTICHI IKUTWA- 0723413340) ON MRS AKIWUMI'S INSTRUCTION",
+		},
+		{
+			code: 'AKI1.9',
+			description: 'DEED OF TERMINATION',
+		},
+		{
+			code: 'AKI2.1',
+			description: 'HILDERGARD AKIWUMI',
+		},
+		{
+			code: 'AKI2.2',
+			description: 'SALE & PURCHASE OF APARTMENT NO. 7 BLOCK D ON LR. NO. 209/390/4 NAIROBI',
+		},
+		{
+			code: 'AKI3.1',
+			description: 'JOHANNES AKIWUMI',
+		},
+		{
+			code: 'AKI4.1',
+			description: 'MRS HILDERGARD ERNA AKIWUMI - SALE OF L.R NO. 12159/32 MARULA, KAREN',
+		},
+		{
+			code: 'AKI4.2',
+			description: 'HILDERGARD ERNA AKIWUMI - SALE OF APARTMENT B1 ON L.R NO. 330/49',
+		},
+		{
+			code: 'AKI5.1',
+			description: 'DEBT RECOVERY.',
+		},
+		{
+			code: 'AKI6.1',
+			description: 'PERSILA AKINYI -VS- COLLINS ODHIAMBO',
+		},
+		{
+			code: 'AKL1.3',
+			description: 'OPENING BALANCE ASAT 1 JANUARY 2016',
+		},
+		{
+			code: 'AKL2.1',
+			description: 'RAMISI SUGAR IRRIGATION SCHEME CONTRACTS',
+		},
+		{
+			code: 'AKL3.1',
+			description:
+				'PROVISION OF LEGAL SERVICES TO ALPHA MUNDI KENYA LTD WITH REGARD TO INSOLVENCY PROCEEDINGS AGAINST COUNTRYSIDE DAIRY LTD.',
+		},
+		{
+			code: 'AKL3.2',
+			description: 'REVIEW OF AN EMPLOYMENT CONTRACT.',
+		},
+		{
+			code: 'AKO1.1',
+			description: 'DIVORCE PROCEEDINGS',
+		},
+		{
+			code: 'AKO1.2',
+			description: 'DRAFTING A WILL',
+		},
+		{
+			code: 'AKU1.1',
+			description: 'THE AGA KHAN UNIVERSITY HOSPITAL VS ALFRED OTIENO',
+		},
+		{
+			code: 'AKU1.2',
+			description:
+				'LEGAL OPINION ON SCOPE OF DINLAS PHARMA’S PROFESSIONAL INDEMNITY POLICY FOR COVID-19 VACCINE',
+		},
+		{
+			code: 'AKU2.1',
+			description: 'JACKLINE CHIRCHIR KRHODA VS. THE AGAKHAN UNIVERSITY .',
+		},
+		{
+			code: 'AKU2.2',
+			description:
+				'LEGAL OPINION ON SCOPE OF DINLAS PHARMA’S PROFESSIONAL INDEMNITY POLICY FOR COVID-19 VACCINE',
+		},
+		{
+			code: 'AKU2.3',
+			description: 'REGISTRATION OF TRADEMARK IN 3 CLASSES (CLASS 16,25 AND 41)',
+		},
+		{
+			code: 'AKU2.4',
+			description: 'REGISTRATION OF 3 TRADEMARKS IN KENYA, UGANDA AND TANZANIA',
+		},
+		{
+			code: 'ALC1.1',
+			description: 'ALCANTARA LTD',
+		},
+		{
+			code: 'ALE1.1',
+			description:
+				'DISPUTE WITH THE RETIREMENT BENEFITS AUTHORITY ON THE SHAREHOLDING OF ELEXANDER FORBES',
+		},
+		{
+			code: 'ALI1.2',
+			description: 'E & LR NO.1486 OF 2015: AGNES MGHOI KABANYA VS SHEILLA LOLANI ALIBHAI',
+		},
+		{
+			code: 'ALI1.3',
+			description:
+				'E & LR CAUSE NO. 743 OF 2016 KEPHER MOKANDU MITIEKA VS SHEILA LOLANI ALIBHAI',
+		},
+		{
+			code: 'ALI2.2',
+			description:
+				'HIGH COURT OF KENYA AT MOMBASA, ELECTION PETITION NO. E003 OF 2022: YASIR NOOR M NOOR VS. IEBC & OTHERS',
+		},
+		{
+			code: 'ALL1.1',
+			description: 'SALE & PURCHASE OF PROPERTY IN MAANZONI',
+		},
+		{
+			code: 'AMB1.1',
+			description:
+				'PET ELC NO. 47 OF 2017 MURGIAN HOLDINGS LIMITED -VS- AMBER PROPERTIES LIMITED & OTHERS',
+		},
+		{
+			code: 'AME1.1',
+			description: 'CHASE BANK KENYA LIMITED',
+		},
+		{
+			code: 'AME2.1',
+			description: 'PROBATE AND ADMINISTRATION.',
+		},
+		{
+			code: 'AME3.1',
+			description:
+				'PROVISION OF LEGAL SERVICES TO NYAMWANGE AMENYA FOR UNFAIR TERMINATION ON ACCOUNT OF REDUNDANCY. ',
+		},
+		{
+			code: 'AMI1.1',
+			description:
+				'CATHERINE ADHIAMBO AMIMO VS UNIVERSITY OF EASTERN AFRICA BARATON: INDUSTRIAL CAUSE NO 1206 OF 2013',
+		},
+		{
+			code: 'AMI2.1',
+			description: 'SALE OF FLAT NO.C1,LAXMI COURT-NAIROBI',
+		},
+		{
+			code: 'AMI2.2',
+			description:
+				'SALE AND PURCHASE OF FLAT NUMBER C1, LAXMI COURT BY NIRMALABEN RATILAL AMIN.',
+		},
+		{
+			code: 'AMK1.1',
+			description: 'CEYLAN LIMITED VS. AUTOMARK KENYA',
+		},
+		{
+			code: 'AML1.1',
+			description: 'PROJECT ZEUS',
+		},
+		{
+			code: 'AML1.2',
+			description:
+				'PROVISION OF LEGAL SERVICES TO ASCENT CAPITAL MANAGEMENT AFRICA LTD (ASCENT) IN ITS PROPOSED ACQUISITION OF CERTAIN TARGET COMPANY ( THE COMPANY.)',
+		},
+		{
+			code: 'AML1.3',
+			description:
+				'LEASE OF PROPERTY LAND REFERENCE NUMBER 209/8855 AND 209/8863 FROM METRO PLASTIC (KENYA) LIMITED TO METRO CONCEPTS EAST AFRICA LIMITED',
+		},
+		{
+			code: 'AMO1.1',
+			description: 'provision of legal services',
+		},
+		{
+			code: 'AMY1.1',
+			description: 'Dispute pertaining to sale of property',
+		},
+		{
+			code: 'AMY1.1/001',
+			description: 'ELCA NO. EO61 OF 2021 TONNER HOLDINGS LIMITED VS GULAMHUSSEIN & ANOR.',
+		},
+		{
+			code: 'ANA1.1',
+			description: 'ACQUISITION OF SHARES IN DUFRY KENYA LIMITED',
+		},
+		{
+			code: 'ANC0089.1',
+			description: 'LAND REFERENCE NUMBER 20/8343/11',
+		},
+		{
+			code: 'ANC1.1',
+			description: 'PROJECT VORTEX',
+		},
+		{
+			code: 'AND1.1',
+			description: 'PURCHASE OF A PORTION OF LAND REFERENCE NUMBER 7445, KISUMU',
+		},
+		{
+			code: 'AND2.1',
+			description:
+				'NAIROBI ELRC CAUSE NO.  ...... OF 2019:  ANDREW OCHOLA VS. DELL EMERGING MARKETS (EMEA) LIMITED',
+		},
+		{
+			code: 'ANG1.1',
+			description: 'JOSHUA LNYAMAN ANGELEI - PURCHASE OF BAMBOO GARDENS APARTMENTS',
+		},
+		{
+			code: 'ANL1.1',
+			description: 'AFRICAN NATIONAL INDUSTRIES LTD',
+		},
+		{
+			code: 'ANY1.1',
+			description: 'ANGELA ANYEMBE - SALE OF UNIT J8 FIVE STAR GARDENS',
+		},
+		{
+			code: 'ANY2.1',
+			description:
+				'MRS DOREEN ATIENO ANYONA - DR. MOSLEY ODHIAMBO OWINO: TERMINATION OF LEASE AGREEMENT ON L.R NO. 1160/6341 L.R LANGATA - BOGANI ROAD',
+		},
+		{
+			code: 'AO1.1',
+			description: 'ANDREW ODUOR',
+		},
+		{
+			code: 'AOA1.1',
+			description: 'ALUKO & OYEBODE ADVOCATES',
+		},
+		{
+			code: 'APA1.1',
+			description:
+				'ARBITRATION BETWEEN APA INSURANCE & MCKINSEY & COMPANY INC. AFRICA (PTY) LTD',
+		},
+		{
+			code: 'APM1.1',
+			description: 'ADVISORY TO AMAGORO PARK MGT',
+		},
+		{
+			code: 'APM2.1',
+			description: 'ADVICE ON DISOLUTION OF GREATLAKES PORTS CFS LTD',
+		},
+		{
+			code: 'APM2.2',
+			description:
+				'PETITION NO. 2A OF 2021 – APM TERMINALS B.V VS. KENYA PORTS AUTHORITY & ANOR',
+		},
+		{
+			code: 'APS1.1',
+			description:
+				'RENEWAL OF LEASE FOR OFFICE SPACE ON LR. NO. 21763 - NAIROBI TO BAYER EAST AFRICA LIMITED',
+		},
+		{
+			code: 'AQL1.1',
+			description: 'AQUAMIST LIMITED VS PROVINCIAL INSURANCE COMPANY LTD',
+		},
+		{
+			code: 'ARA1.1',
+			description: 'HENNA ARAIN  VS AMS PROPERATION LTD- UNLAWFUL TERMINATION OF EMPLOYMENT',
+		},
+		{
+			code: 'ARB1.1',
+			description: 'AN ARBITRATION BETWEEN SPEED BAT FREIGHTERS K VS UNILEVER TEA LTD',
+		},
+		{
+			code: 'ARB1.2',
+			description: 'ARBITRATION BETWEEN AIRTEL NETWORKS KENYA LTD & NYUTU AGROVET LIMITED',
+		},
+		{
+			code: 'ARC1.1',
+			description: 'AFRICA REINSURANCE CORPORATION VS. KENYA REVENUE AUTHORITY.',
+		},
+		{
+			code: 'ARH1.1',
+			description: 'PROVISION OF LEGAL SERVICES.',
+		},
+		{
+			code: 'ARH1.10',
+			description:
+				'DEMAND FOR RESTITUTION IN RESPECT OF KSHS 604,702.00/= UNJUSTLY RETAINED BY AVTECH SYSTEMS LIMITED',
+		},
+		{
+			code: 'ARH1.11',
+			description:
+				'REVIEW OF MEMORANDUM OF AGREEMENT FOR PROVISION OF COMPREHENSIVE SERVICE OF Vi-cell. CELL VIABILITY ANALYZER',
+		},
+		{
+			code: 'ARH1.12',
+			description:
+				'REVIEW OF BULK SMS SERVICE AGREEMENT BETWEEN BONGATECH LIMITED AND AFRICAN RESEARCH COLLABORATION FOR HEALTH LIMITED, ARCH (KEMRI WELLCOME TRUST RESEARCH PROGRAMME)',
+		},
+		{
+			code: 'ARH1.13',
+			description:
+				'MEMORANDUM OF AGREEMENT FOR PROVISION OF PERSONAL COACHING BETWEEN AFRICAN RESEARCH COLLABORATION FOR HEALTH LIMITED, ARCH AND CAREER CONNETIONS LIMITED.',
+		},
+		{
+			code: 'ARH1.14',
+			description:
+				'REVIEW OF CONSULTANCY AGREEMENT FOR PROVISION OF RADIOLOGICAL SERVICES BETWEEN AFRICAN RESEARCH COLLABORATION FOR HEALTH LIMITED, ARCH AND DR. MICAH SIRABA OMINDE',
+		},
+		{
+			code: 'ARH1.15',
+			description:
+				'REVIEW OF UNDERSTANDING BETWEEN KWTRP AND RESULTS FOR DEVELOPMENT INSTITUTE',
+		},
+		{
+			code: 'ARH1.16',
+			description: 'REVIEW OF SUPPLY AGREEMENT FOR NON MODIFIED STREP-TACTIN XT',
+		},
+		{
+			code: 'ARH1.17',
+			description:
+				'REVIEW OF THE MEMORANDUM OF AGREEMENT ON SALARY SURVEY WITH DELIOTTE CONSULTING LIMITED.',
+		},
+		{
+			code: 'ARH1.18',
+			description: 'REVIEW OF CONFIDENTIALITY AGREEMENT',
+		},
+		{
+			code: 'ARH1.19',
+			description:
+				'REVIEW OF A FIXED PRICE SUB CONTRACT BETWEEN THE RECTOR AND VISITORS OF THE UNIVERSITY OF VIRGINIA AND AFRICAN RESEARCH COLLABORATION FOR HEALTH..',
+		},
+		{
+			code: 'ARH1.2',
+			description:
+				'Review of MOU Agreement Between Pwani University and KEMRI-Wellcome Trust Programme.',
+		},
+		{
+			code: 'ARH1.20',
+			description: 'REVIEW OF DATA SHARING AGREEMENT AND BI-LATERAL GRANT AGREEMENT.',
+		},
+		{
+			code: 'ARH1.21',
+			description:
+				'REVIEW OF COLLABORATIVE AGREEMENT FOR CREATION AND FACILITATION OF THE MENTAL HEALTH AWARENESS WALK BETWEEN AFRICAN RESEARCH COLLABORATION FOR HEALTH LIMITED, ARCH AND MALINDI DISTRICT CULTURAL ASSOCIATION, (MADCA)',
+		},
+		{
+			code: 'ARH1.22',
+			description:
+				'REVIEW OF MEMORANDUM OF AGREEMENT WITH DOCUMENTARY INSTITUTE OF EASTERN AFRICA',
+		},
+		{
+			code: 'ARH1.23',
+			description:
+				'REVIEW OF THE COLLABORATION AGREEMENT WITH THE LONDON SCHOOL OF HYGIENE & TROPICAL MEDICINE.',
+		},
+		{
+			code: 'ARH1.24',
+			description: 'Review of Research Services Agreement',
+		},
+		{
+			code: 'ARH1.25',
+			description:
+				'REVIEW OF MEMORANDUM OF AGREEMENT WITH SECURITY GROUP AFRICA (MOMBASA) LIMITED',
+		},
+		{
+			code: 'ARH1.26',
+			description: 'REVIEW OF DATA FOR GOOD LICENSE AGREEMENT',
+		},
+		{
+			code: 'ARH1.27',
+			description:
+				'REVIEW OF A DEMAND LETTER IN RELATION TO AN EMPLOYMENT CLAIM FROM JOHN GAITHO.',
+		},
+		{
+			code: 'ARH1.28',
+			description: 'REVIEW OF PARTNER AGREEMENT',
+		},
+		{
+			code: 'ARH1.29',
+			description:
+				'LEGAL OPINION IN RELATION TO RECOVERY OF COMPANY LIABILITIES FROM STAFF GROUP LIFE ASSURANCE & FINAL DUES',
+		},
+		{
+			code: 'ARH1.3',
+			description: 'PROVISION OF LEGAL SERVICES TO KEMRI',
+		},
+		{
+			code: 'ARH1.30',
+			description: 'REVIEW OF PARTICIPATING SITE AGREEMENT',
+		},
+		{
+			code: 'ARH1.31',
+			description: 'REVIEW OF GRANT AGREEMENT WITH THE FRED HOLLOWS FOUNDATION KENYA',
+		},
+		{
+			code: 'ARH1.32',
+			description: 'Review of Memorandum of Agreement with Iansoft Technologies Limited',
+		},
+		{
+			code: 'ARH1.33',
+			description: 'REVIEW OF COLLABORATION AGREEMENT AND DATA CONTROLLER AGREEMENT',
+		},
+		{
+			code: 'ARH1.34',
+			description:
+				'LEGAL OPINION ON ALLOCATION OF STAFF BENEFITS TO NOMINATED BENEFICIARIES.',
+		},
+		{
+			code: 'ARH1.35',
+			description:
+				'REVIEW OF A CONFIDENTIALITY AGREEMENT WITH HEYL CHEMISCH-PHARMAZEUTISCHE FABRIK GMBH & CO. KG',
+		},
+		{
+			code: 'ARH1.36',
+			description: 'REVIEW OF CONSORTIUM AGREEMENT',
+		},
+		{
+			code: 'ARH1.37',
+			description: 'REVIEW OF THERMOFISHER SERVICE CONTRACT',
+		},
+		{
+			code: 'ARH1.38',
+			description: 'Review of Sub-contract Research Agreement',
+		},
+		{
+			code: 'ARH1.39',
+			description: 'REVIEW OF COLLABORATION AGREEMENT WITH IAVI',
+		},
+		{
+			code: 'ARH1.4',
+			description: 'REVIEW OF DAYSTAR UNIVERSITY AND KWTRP M.O.U.',
+		},
+		{
+			code: 'ARH1.40',
+			description: 'REVIEW OF RESEARCH SUPPORT SERVICES AGREEMENT',
+		},
+		{
+			code: 'ARH1.41',
+			description: 'REVIEW OF SUPPORT SYSTEMS CONSORTIUM AGREEMENT',
+		},
+		{
+			code: 'ARH1.42',
+			description:
+				'REVIEW OF CLINICAL TRIAL AGREEMENT WITH AFRICAN CENTRE FOR CLINICAL TRIALS.',
+		},
+		{
+			code: 'ARH1.43',
+			description: 'REVIEW OF GRANT AGREEMENT WITH GOOD VENTURES FOUNDATION',
+		},
+		{
+			code: 'ARH1.44',
+			description: 'REVIEW OF COLLABORATION AGREEMENT WITH PUBLIC HEALTH - ENGLAND',
+		},
+		{
+			code: 'ARH1.45',
+			description:
+				'REVIEW OF GRANT AGREEMENT BETWEEN BILL & MELINDA GATES FOUNDATION AND AFRICAN RESEARCH COLLABORATION FOR HEALTH (ARCH)',
+		},
+		{
+			code: 'ARH1.46',
+			description:
+				'REVIEW OF COLLABORATION CONTRACT BETWEEN UNIVERSITY OF WASHINGTON AND KWTRP',
+		},
+		{
+			code: 'ARH1.47',
+			description:
+				'REVIEW OF A MASTER AGREEMENT FOR LICENSING SERVICES, SOFTWARE DEVELOPMENT AND CUSTOMISATION.',
+		},
+		{
+			code: 'ARH1.48',
+			description: 'REVIEW OF BIOLOGICAL MATERIAL TRANSFER AGREEMENT.',
+		},
+		{
+			code: 'ARH1.49',
+			description: 'REVIEW OF A PUBLISHING AGREEMENT.',
+		},
+		{
+			code: 'ARH1.5',
+			description: 'REVIEW OF SUB-AWARD AGREEMENT (ARCH & FREIE UNIVERSITAT BERLIN)',
+		},
+		{
+			code: 'ARH1.50',
+			description:
+				'LEGAL OPINION ON THE COMPLIANCE OF THE KWTRP STAFF HANDBOOK WITH THE PROVISIONS OF 42 CFR PART 50 SUBPART F',
+		},
+		{
+			code: 'ARH1.51',
+			description:
+				'REVIEW OF A PREVENTIVE MAINTENANCE AGREEMENT BETWEEN SCIENCE SCOPE LIMITED AND AFRICAN RESEARCH COLLABORATION FOR HEALTH LIMITED.',
+		},
+		{
+			code: 'ARH1.52',
+			description:
+				'REVIEW OF A COLLABORATION AGREEMENT WITH LONDON SCHOOL OF HYGIENE & TROPICAL MEDICINE.',
+		},
+		{
+			code: 'ARH1.53',
+			description:
+				'REVIEW OF GRANT AND DATA SHARING AGREEMENTS WITH BILL AND MELINDA GATES FOUNDATION.',
+		},
+		{
+			code: 'ARH1.54',
+			description:
+				'REVIEW OF COLLABORATION AGREEMENT AND MATERIAL TRANSFER FROM KILIMANJARO CHRISTIAN RESEARCH INSTITUTE (KCRI)',
+		},
+		{
+			code: 'ARH1.55',
+			description: 'REVIEW OF AGREEMENTS FROM UNITED KINGDOM HEALTH SECURITY AGENCY (UKHSA)',
+		},
+		{
+			code: 'ARH1.56',
+			description:
+				'REVIEW OF A CLINICAL TRIALS AGREEMENT BETWEEN IMPERIAL COLLEGE OF SCIENCE TECHNOLOGY AND MEDICINE AND KEMRI.',
+		},
+		{
+			code: 'ARH1.57',
+			description: 'ADVISE ON ELECTRONIC SIGNATURES',
+		},
+		{
+			code: 'ARH1.58',
+			description: 'REVIEW OF THE KWRTP AUDIT AREAS AND MOU',
+		},
+		{
+			code: 'ARH1.59',
+			description: 'REVIEW OF SERVICE CONTRACT BETWEEN SGA AND ARCH',
+		},
+		{
+			code: 'ARH1.6',
+			description: 'REVIEW OF A SUB-GRANT AGREEMENT WITH CGD EUROPE ',
+		},
+		{
+			code: 'ARH1.60',
+			description:
+				'REVIEW OF AMENDMENT ONE TO COLLABORATIVE AGREEMENT BETWEEN ALIVE AND A.R.C.H.',
+		},
+		{
+			code: 'ARH1.61',
+			description: 'REVIEW OF MAINTENANCE SERVICE CONTRACT WITH AFRICA BIOSYSTEMS LIMITED.',
+		},
+		{
+			code: 'ARH1.62',
+			description: 'ADVICE ON SAFEGUARDING POLICY',
+		},
+		{
+			code: 'ARH1.63',
+			description: 'REVIEW OF SUBCONTRACT RESEARCH AGREEMENT WITH HARVARD COLLEGE.',
+		},
+		{
+			code: 'ARH1.64',
+			description:
+				'REVIEW OF CONTRACT FOR PROVISION OF MEDICAL INSURANCE SERVICES BY OLD MUTUAL',
+		},
+		{
+			code: 'ARH1.65',
+			description:
+				'REVIEW OF MATERIAL TRANSFER AGREEMENT WITH GLAXOSMITHKLINE BIOLOGICALS SA',
+		},
+		{
+			code: 'ARH1.66',
+			description: 'REVIEW OF CONSULTANCY AGREEMENT WITH TOTO HEALTH LIMITED',
+		},
+		{
+			code: 'ARH1.67',
+			description:
+				'REVIEW OF CLINICAL TRIAL AGREEMENT AND PROTOCOL DOCUMENT BETWEEN ARCH AND IAVI.',
+		},
+		{
+			code: 'ARH1.68',
+			description:
+				'REVIEW OF SERVICE AGREEMENT WITH CEPHEID DIAGNOSTICS AND LIFE SCIENCES LTD',
+		},
+		{
+			code: 'ARH1.69',
+			description: 'REVIEW OF SERVICE CONTRACT WITH PATHCARE KENYA LTD.',
+		},
+		{
+			code: 'ARH1.7',
+			description:
+				'REVIEW OF A MEMORANDUM OF UNDERSTANDING WITH THE KENYA NATIONAL BUREAU OF STATISTICS & OTHERS.',
+		},
+		{
+			code: 'ARH1.70',
+			description:
+				'REVIEW OF COLLABORATION AGREEMENT AND RESEARCH CONTRACT WITH LONDON SCHOOL OF HYGIENE AND TROPICAL MEDICINE.',
+		},
+		{
+			code: 'ARH1.71',
+			description: 'REVIEW OF CLINICAL TRIAL AGREEMENT BETWEEN ARCH AND IAVI',
+		},
+		{
+			code: 'ARH1.72',
+			description:
+				'REVIEW OF INDEMNITY CLAUSES IN RELATION TO AGREEMENT WITH STANDARD GROUP PLC',
+		},
+		{
+			code: 'ARH1.73',
+			description: 'REVIEW OF COLLABORATION AGREEMENT BETWEEN KWTRP AND OTHERS',
+		},
+		{
+			code: 'ARH1.74',
+			description: 'REVIEW OF SERVICE AGREEMENT BETWEEN KWTRP AND LATERITE KENYA LIMITED.',
+		},
+		{
+			code: 'ARH1.75',
+			description:
+				'REVIEW OF GRANT AWARD FOR INITIATIVE TO DEVELOP AFRICAN RESEARCH LEADERS.',
+		},
+		{
+			code: 'ARH1.76',
+			description:
+				'LEGAL ADVISORY ON POTENTIAL DATA BREACH OF CONFIDENTIALITY UNDER CONTRACT AND GUIDANCE ON ENGAGEMENT WITH UAP OLD MUTUAL.',
+		},
+		{
+			code: 'ARH1.77',
+			description:
+				'REVIEW OF RESEARCH SUBCONTRACT BETWEEN ARCH AND THE UNIVERSITY OF LIVERPOOL',
+		},
+		{
+			code: 'ARH1.8',
+			description: 'REVIEW OF ACADEMIC COLLABORATION AGREEMENT.',
+		},
+		{
+			code: 'ARH1.9',
+			description:
+				'REVIEW OF RESEARCH COLLABORATION AGREEMENT BETWEEN ONA SYSTEMS INC. & ARCH',
+		},
+		{
+			code: 'ARI1.1',
+			description: 'ARIPO PATENT MAINTENANCE',
+		},
+		{
+			code: 'ARI2.1',
+			description: 'AGREEMENT (RESERCH)',
+		},
+		{
+			code: 'ARO1.1',
+			description: 'RADHIKA GENERAL',
+		},
+		{
+			code: 'ARS1.1',
+			description: 'INSOLVENCY PETITION NO. E006 OF 2018 IN THE MATTER OF PXAYOSHA LIMITED.',
+		},
+		{
+			code: 'ARS1.10',
+			description:
+				'E&LRC CAUSE NO. 9 OF 2019 ELIAS WAFULA WANJALA VS. ATHIRIVER STYEEL PLANT LIMITED (IN RECIEVERSHIP) & 2 OTHERS.',
+		},
+		{
+			code: 'ARS1.11',
+			description:
+				'E&LRC NO. 10 OF 2019 BARKAT AHMED NISAR VS. ATHI RIVER STEEL PLANT (IN RECIEVERSHIP) & 2 OTHERS',
+		},
+		{
+			code: 'ARS1.12',
+			description:
+				'E&LRC CAUSE NO. 11 OF 2018 PETER MBURU KARURU VS. ATHI RIVER STEEL PLANT LIMITED (IN RECIEVERSHIP) & 2 OTHERS',
+		},
+		{
+			code: 'ARS1.13',
+			description:
+				'E&LRC CAUSE NO./ 1578 OF 2018 ANN WANJUGU KIRAGU VS. ATHI RIVER STEEL PLANT LIMITED (IN RECIEVERSHIIP) & 2 OTHERS.',
+		},
+		{
+			code: 'ARS1.14',
+			description:
+				'E&LRC CAUSE NO. 1579 OF 2018 AKSHAY CHHABRA VS. ATHI RIVER STEEL PLANT LIMITED (IN RECIEVERSHIP) & 2 OTHERS',
+		},
+		{
+			code: 'ARS1.15',
+			description:
+				'E&LRC NO. CAUSE NO. 1580 OF 2018 SAMUEL MICHINO MUNUKU VS. ATHI RIVER STEEL PLANT LIMITED (IN RECIEVERSHIP) & 2 OTHERS.',
+		},
+		{
+			code: 'ARS1.16',
+			description:
+				'E&LRC CAUSE NO. 1581 OF 2018 MAHESH RAMANBHAI PATEL VS. ATHI RIVER STEEL PLANT LIMITED (IN RECIEVERSHIP) & 2 OTHERS.',
+		},
+		{
+			code: 'ARS1.17',
+			description:
+				'E&LRC CAUSE NO. 1582 OF 2018 WILSON KIARIE KURIA VS. ATHI RIVER STEEL PLANT LIMITED (IN RECVIEVERSHIP) & 2 OTHERS.',
+		},
+		{
+			code: 'ARS1.18',
+			description:
+				'E&LRC CAUSE NO 661 OF 2019 KENYA ENGINEERING WORKERS UNION -VS. ATHI RIVER STEEL PLANT. (IN RECIEVERSHIP) LIMITED & ANOTHER.',
+		},
+		{
+			code: 'ARS1.2',
+			description:
+				'E&LRC CAUSE NO. 01 OF 2019 ARJUN AGGARWAL VS. ATHI RIVER STEEL PLANT (IN RECIEVERSHIP) & 2 OTHERS.',
+		},
+		{
+			code: 'ARS1.3',
+			description:
+				'E&LRC CAUSE NO. 02 OF 2019 CHRISTOPHER MAKENZI MUTISYA VS. ATHI RIVER STEEL PLANT LIMITED (IN RECIEVERSHIP) & 2 OTHERS.',
+		},
+		{
+			code: 'ARS1.4',
+			description:
+				'E&LRC CAUSE NO. 03 OF 2019 ANNSHARON NASIMIYU SITATI VS.ATHIRIVER STEEL PLANT LIMITED (IN RECIEVERSHIP) & 2 OTHERS.',
+		},
+		{
+			code: 'ARS1.5',
+			description:
+				'E&LRC CAUSE NO. 04 OF 2019 CHRISTOPHER TIMOTHY MUKABA VS. ATHI RIVER STEEL PLANT LIMITED (IN RECIEVERSHIP) & 2 OTHERS.',
+		},
+		{
+			code: 'ARS1.6',
+			description:
+				'E&LRC NO. 05 OF 2019 RINAH NAYANGASI VS ATHI RIVER STEEL PLANT LIMITED (IN RECIEVERSHIP) & 2 OTHERS',
+		},
+		{
+			code: 'ARS1.7',
+			description:
+				'E&LRC NO. 06 OF 2019 BALWANT SINGH VS. ATHIRIVER STEEL PLANT (IN RECIEVERSHIP) & 2 OTHERS',
+		},
+		{
+			code: 'ARS1.8',
+			description:
+				'E&LRC CAUSE NO. 07 OF 2019 JOSEPH WASIKE MAASAI VS. ATHI RIVER STEEL PLANT LIMITED ( IN RECIEVERSHIP) & 2 OTHERS.',
+		},
+		{
+			code: 'ARS1.9',
+			description:
+				'E&LRC CAUSE NO. 08 OF 2019 EVANS BWIRE OKINYO VS. ATHI RIVER STEEL PLANT LIMITED (IN RECIEVERSHIP) & 2 OTHERS.',
+		},
+		{
+			code: 'ART1.1',
+			description: 'HCCC NO.2153 OF 1997:LANDINI LIMITED-VS-ARTSTONES LTD & 2 OTHERS.',
+		},
+		{
+			code: 'ART1.2',
+			description:
+				'DEVELOPMENT OF RESIDENTIAL UNITS ON LAND TITLE NUMBER IR 172104, THIKA MUNICIPALITY',
+		},
+		{
+			code: 'ARU1.1',
+			description: 'ABIGAEL ALUNGA - PETITION FOR DIVORCE',
+		},
+		{
+			code: 'ARU2.1',
+			description: 'VOONA ARUNA VS DAWA LIMITED.',
+		},
+		{
+			code: 'ARW1.1',
+			description:
+				'ELC CASE NO.47 OF 2015 WATER RESOURCES MANAGEMENT AUTHORITY-VS-KRYSTALINE SALT LINE',
+		},
+		{
+			code: 'ASC1.1',
+			description: 'LEGAL OPINION ON PENSION INDUSTRY',
+		},
+		{
+			code: 'ASI1.1',
+			description:
+				'SHAMA ASIF & 2 OTHERS -VS- DR. KAMAL S. GIDDIE: HCCC NO. 231 OF 2015 (NBO)',
+		},
+		{
+			code: 'ASI2.1',
+			description: 'PURCHASE OF A PORTION OF L.R. NUMBER 7445 (KIBOS)',
+		},
+		{
+			code: 'ASK1.1',
+			description:
+				'GRACE M. MANJURI/ JAMES N. GITONGA/ NAAMAN K. INIU -VS- AGRICULTURAL SOCIETY OF KENYA',
+		},
+		{
+			code: 'ASK2.1',
+			description:
+				'E&LRC CAUSE NO. E040 OF 2022 KENYA CHEMICAL WORKERS UNION VS. AGRI SEED CO (K) LTD.',
+		},
+		{
+			code: 'ASL1.1',
+			description: 'ACCIDENT ON 21ST JUNE 2016 AT WESTGATE MALL',
+		},
+		{
+			code: 'ASL1.10',
+			description: 'TAX ON SERVICE CHARGE & PROMOTION',
+		},
+		{
+			code: 'ASL1.11',
+			description: 'INCOME TAX REFUND CLAIMS.',
+		},
+		{
+			code: 'ASL1.12',
+			description:
+				'LEASE OF WESGATE SHOPPING MALL UNIT NO. 1.33 & 1.11A TO NAKUMATT HOLDINGS LTD',
+		},
+		{
+			code: 'ASL1.13',
+			description: 'NATIONAL COUNTER TERRORISM CENTER -WESTGATE SHOPPING MALL',
+		},
+		{
+			code: 'ASL1.14',
+			description:
+				'TAT APPEAL AGAINST KRA’S DISALLOWANCE OF TAX CREDIT UNDER SECTION 42 OF ITA',
+		},
+		{
+			code: 'ASL1.14/001',
+			description:
+				'HCCCOMMITA/E024/2023 ALTHAUS SERVICES LIMITED VERSUS THE COMMISSIONER FOR DOMESTIC TAXES ',
+		},
+		{
+			code: 'ASL1.15',
+			description:
+				"TAT APPEAL AGAINST KRA's DISALLOWANCE OF TAX REFUND FOR KES. 1,980,266 UNDER S.42",
+		},
+		{
+			code: 'ASL1.2',
+			description: 'LEASE OF OFFICE SPACE AT WESTGATE MALL TO IMPERIAL BANK',
+		},
+		{
+			code: 'ASL1.3',
+			description: 'CLAIM FOR COMPENSATION OF MRS. MALTI RAMESH VAYA',
+		},
+		{
+			code: 'ASL1.4',
+			description: 'PROPOSED AGREEMENT BETWEEN ALTHAUS SERVICES LTD AND HARMONY LIMITED',
+		},
+		{
+			code: 'ASL1.5',
+			description: 'VRIOUS INSURANCE POLICY WORDING MAYFAIR INSURANCE COMPANY LTD',
+		},
+		{
+			code: 'ASL1.6',
+			description: 'TAX APPEAL-KRA',
+		},
+		{
+			code: 'ASL1.7',
+			description:
+				'CIVIL APPEAL NO. 139 OF 2017 :  ALTHAUS MANAGEMENT & CONSULTANCY LTD VS KENYA REVENUE AUTHORITY',
+		},
+		{
+			code: 'ASL1.8',
+			description:
+				'TAT APPEAL NO. 95 OF 2017 : ALTHAUS MANAGEMENT & CONSULTANCY LTD VS COMMISSIONER OF DOMESTIC TAXES',
+		},
+		{
+			code: 'ASL1.9',
+			description: 'NAKUMATT HOLDINGS LIMITED - LEASE',
+		},
+		{
+			code: 'ATE1.1',
+			description: 'LYNN AKOTH ATENG',
+		},
+		{
+			code: 'ATE1.1/001',
+			description:
+				'CMCC CIVIL CASE NO. E5681 OF 2020 – LYNN AKOTH ATENG’ VS. DIRECTLINE ASSURANCE COMPANY LIMITED.',
+		},
+		{
+			code: 'ATE1.1/002',
+			description:
+				'CIVIL APPEAL NO. E084 OF 2021 – DENNIS NJIRU & ANOR VS. LYNN AKOTH ATENG’',
+		},
+		{
+			code: 'ATF1.1',
+			description:
+				'TAX ADVISORY TO AFRICAN AGRICULTURAL TECHNOLOGY FOUNDATION – TAX EXEMPTION.',
+		},
+		{
+			code: 'ATH1.1',
+			description: 'NGONG/NGONG/27-SALIM ALI ATHMAN',
+		},
+		{
+			code: 'ATI1.1',
+			description: 'LOUISA ODHIAMBO ATIENO-WILL',
+		},
+		{
+			code: 'ATJ1.1',
+			description:
+				'HIGH COURT CONSTITUTIONAL PETITION NO.E191 OF 2021: AUTO TERMINAL JAPAN LIMITED VS. AUDITOR GENERAL AND 4 OTHERS',
+		},
+		{
+			code: 'AUT0080.2',
+			description: 'LICENCE AGREEMENT OVER A PORTION OF LR 209/4162',
+		},
+		{
+			code: 'AVR1.1',
+			description: 'CONTRACTS',
+		},
+		{
+			code: 'AWA1.1',
+			description: 'PETER OKELLO VS AWAPH KISUMU ELRC 178/2016',
+		},
+		{
+			code: 'AWA2.1',
+			description:
+				'HIGH COURT OF KENYA  SUCCESSION CAUSE NO. 285 OF 2017 IN THE MATTER OF THE ESTATE OF GURNAM SINGH S/O PRITAM SINGH AMRIT KAUR GHATAHORA VS. JOGINDER SINGH BHANGRA AMRIT SINGH HEER & KIRPAL SINGH.',
+		},
+		{
+			code: 'AWK1.1',
+			description: 'SALE OF TITLE NO.NAIROBI/BLOCK 104/222 TO MOHAMED ABDI IBRAHIM',
+		},
+		{
+			code: 'AWU1.1',
+			description: 'PREPARATION OF WILL - DR. SYLVESTER WISDOM FORSHIE AWUYE',
+		},
+		{
+			code: 'AWU2.1',
+			description:
+				'SURGIPHAM LTD -VS- ISAAC AWUONDO & LIZA KIMBO: HCCC NO.1522 OF 2001 (NBO)',
+		},
+		{
+			code: 'AWU2.7',
+			description: 'PURCHASE OF LAND REF NO. 209/18558',
+		},
+		{
+			code: 'AWU2.8',
+			description:
+				'SALE AND PURCHASE OF APT NUMBER PH-1 BLOCK A "THE GATEWAY" ON L.R. NO.209/20425,NAIROBI',
+		},
+		{
+			code: 'AYA1.1',
+			description:
+				'SUCCESSION CAUSE NO. 694 OF 2016 IN THE MATTER OF THE ESTATE OF WILSON NDOLO AYAH (DECEASED)',
+		},
+		{
+			code: 'AYA1.2',
+			description:
+				'SALE OF LAND REFERENCE NUMBER 16615 KISUMU BY DR. AYAH TO ROSE AUMA ONYANGO',
+		},
+		{
+			code: 'AYI1.1',
+			description:
+				'AGREEMENT FOR LEASE; APT NO. UEB502 ON THE 5TH FLOOR OF BLOCK B - RIVERSIDE SQUARE ON LR. NO. 209/22217 TO MOLLY AYIEMBA & CHUKWUEMEKA BENEDICT.',
+		},
+		{
+			code: 'AZA1.1',
+			description: 'HON JUSTICE FESTUS AZANGALALA',
+		},
+		{
+			code: 'BAC1.1',
+			description: 'REVIEW OF AGREEMENTS',
+		},
+		{
+			code: 'BAC1.2',
+			description: 'CONFIDENTIALITY AGREEMENT WITH KIRUBE CONSULTING',
+		},
+		{
+			code: 'BAC1.3',
+			description: 'LETTER ON BEHALF OF CLIENT TO KENYA AIRPORTS AUTHORITY',
+		},
+		{
+			code: 'BAI1.1',
+			description:
+				'E&LRC CAUSE NO. 533 OF 2019 – IRENE ODERA KITINYA VS. BHARTI AIRTEL INTERNATIONAL (NETHERLANDS) B.V.-KENYA, T/A AIRTEL KENYA.',
+		},
+		{
+			code: 'BAK1.1',
+			description:
+				'E&LC CASE NUMBER 617 OF 1995: YOGENDRA PURSHOTTAM PATEL VS. PASCALE NIREILLE BAKSH, NILESH PRAHLADBHAI PATEL AND CHANCHALBHEN PURSHOTTAM PATEL',
+		},
+		{
+			code: 'BAL1.1',
+			description: 'BOLLORE AFRICA LOGISTICS',
+		},
+		{
+			code: 'BAL2.1',
+			description: 'BOWIP AGENCIES LIMITED VS NAKUMATT HOLDINGS LIMITED',
+		},
+		{
+			code: 'BAL2.2',
+			description: 'ELRC CAUSE NO. 2488 OF 2016 - LAWRENCE NDIBO -VS- BOWIP AGENCIES LIMITED',
+		},
+		{
+			code: 'BAL2.3',
+			description: 'EMPLOYMENT ADVISORY',
+		},
+		{
+			code: 'BAL2.4',
+			description: 'NAKURU CARGO LIMITED .VS.BOWIP AGENCIES LIMITED',
+		},
+		{
+			code: 'BAL3.1',
+			description:
+				'ADVISORY TO BROADBAND 4 AFRICA (CAREER OPTIONS AFRICA LIMITED) EMPLOYMENT DISPUTE AGAINST DERRICK ARINKA.',
+		},
+		{
+			code: 'BAN1.1',
+			description: 'ATHI RIVER STEEL COMPANY LIMITED',
+		},
+		{
+			code: 'BAN1.1/001',
+			description:
+				'INSOLVENCY CAUSE NO.16 OF 2018-ATHI RIVER STEEL PLANT LIMITED VS COMMERCIAL BANK OF AFRICA & 4 OTHERS',
+		},
+		{
+			code: 'BAN1.1/002',
+			description:
+				'CIVIL APPEAL NO. 592 OF 2019 – ATHI RIVER STEEL PLANT LIMITED VS. COMMERCIAL BANK OF AFRICA LIMITED & OTHERS.',
+		},
+		{
+			code: 'BAN1.1/003',
+			description:
+				'HCCC ELC NO. E007 OF 2020 IN THE MATTER OF INSOLVENCY, BANK OF AFRICA LIMITED, NCBA BANK KENYA LIMITED PLC, I & M BANK & KCB BANK LIMITED ATHI RIVER STEEL PLANT LIMITED ',
+		},
+		{
+			code: 'BAN1.1/004',
+			description:
+				'IC. No. E017 of 2020 - Credit Guarantee Insurance Corporation of Africa Ltd vs. PVR Rao & Athi River Steel Plant Ltd (In Receivership)',
+		},
+		{
+			code: 'BAN1.1/005',
+			description:
+				'COMM & TAX DIVISION CIVIL CASE NO. E325 OF 2022 - ATHI RIVER STEEL LTD & ANOR VS. PVR RAO & OTHERS.',
+		},
+		{
+			code: 'BAN1.2',
+			description:
+				'BARCLAYS BANK OF KENYA , AFRICA FINANCE CORPORATION, UBA BANK KENYA LTD (UBA), STANBIC BANK, BANK OF AFRICA (BOA) AND GUARANTY TRUST BANK KENYA',
+		},
+		{
+			code: 'BAN1.3',
+			description:
+				'MAVOKO PMCC NO. 999 OF 2018 MONICA SHIAFU MAKALE & FREDRICK OCHIENG LUTTA (SUING AS LEGAL ADMINISTRATORS OF THE ESTATE OF FREDRICK AKALA OLARIE (DECEASED)) VS. ATHI RIVER STEEL PLANT LIMITED.',
+		},
+		{
+			code: 'BAN2.1',
+			description: 'ESTABLISHMENT OF BANKING BUSINESS IN KENYA.',
+		},
+		{
+			code: 'BAR1.1',
+			description: 'GABRIEL BARGECHIR',
+		},
+		{
+			code: 'BAR2.1',
+			description:
+				'TOWN CONSRUCTION COMPANY LTD VS KEN N BARUA/AURELIA WAWEZYSKA: CIVIL CASE NO. 2389 OF 1998 & CIVIL APPEAL NO. 7 OF 2006',
+		},
+		{
+			code: 'BAR3.1',
+			description: 'PROVISION OF ADVICE ON SUPPLIES FINANCE PRODUCTS.',
+		},
+		{
+			code: 'BAR4.1',
+			description: 'DISPUTE OVER PROPERTY 33 KUJA LANE, KAREN',
+		},
+		{
+			code: 'BAU1.1',
+			description:
+				'MS. CATHERINE WEMBRIDGE BAUMGARTEN (KATE BARAKA): HCCC NO. 94 OF 2012 (MALINDI)',
+		},
+		{
+			code: 'BAU1.2',
+			description:
+				'MS. CATHERINE WEMBRIDGE BAUMGARTEN (KATE BARAKA): CONST. PETITION NO. 9 OF 2012 (MALINDI)',
+		},
+		{
+			code: 'BAX1.1',
+			description:
+				'Resealing of a foreign grant-the Estate of the late James Hamilton Russell',
+		},
+		{
+			code: 'BBA1.1',
+			description: 'PETITION TO WIND UP BLUE BIRD AVIATION LIMITED',
+		},
+		{
+			code: 'BBA1.2',
+			description:
+				'YUSSUF ABDI ADAN VS MOHAMMED ABDIKADIR ADAN, 748 AIR SERVICES (K) LTD, 748 AIR SERVICES BARBADOS LTD, ROLLSCOURT INVESTMENT LTD and BLUE BIRD AVIATION LTD',
+		},
+		{
+			code: 'BBA1.3',
+			description:
+				'CIVIL SUIT NO.197 OF 2017-YUSSUF ABDI  ADAN. VS. HUSSEIN AHMED FARAH ,SAFARI LINK AVIATION LIMITED & BLUE BIRD AVIATION LIMITED.',
+		},
+		{
+			code: 'BBA1.3/001',
+			description:
+				'CIVIL APPEAL NO. 238 OF 2019 AHMED FARAH VS. BLUE BIRD AVIATION LIMITED & 2 OTHERS.',
+		},
+		{
+			code: 'BBG1.1',
+			description: 'TAX ADVICE ON KENYAN ENTITY',
+		},
+		{
+			code: 'BBK1.1',
+			description: 'BARCLAYS BANK OF KENYA LTD & 3 OTHER VS KRISHAM KUMAR KAPOOR',
+		},
+		{
+			code: 'BBK1.10',
+			description: 'JOAN ADUNDO',
+		},
+		{
+			code: 'BBK1.100',
+			description: 'BANKING FACILITIES TO TRANSMARA SUGAR COMPANY LIMITED',
+		},
+		{
+			code: 'BBK1.101',
+			description: 'REDEMPTION OF LOAN TO KIMANI MARY MUTHONI BY BARCLAYS BANK',
+		},
+		{
+			code: 'BBK1.11',
+			description:
+				'BARCLAYS BANK OF KENYA LTD VS HABIHALIM CO. LTD: HCCC. NO. 13 OF 2014  NAIROBI',
+		},
+		{
+			code: 'BBK1.12',
+			description:
+				'BARCLAYS BANK OF KENYA LTD -VS- ACCESS BUSINESS MANAGEMENT CONFERENCING INTERNATIONAL LTD (ABMC): HCCC NO. 111 OF 2014 (NBO)',
+		},
+		{
+			code: 'BBK1.124',
+			description: 'BANKING FACILITIES TO BIDCORO AFRICA LIMITED',
+		},
+		{
+			code: 'BBK1.126',
+			description:
+				'TAKEOVER BY DIB BANK LIMITED OFF BBK BANKING FACILITIES TO CALEB ONYANGO GUDO,CHARGE OVER TITLE NUMBER KJD/KAPUTIEI NORTH/6238',
+		},
+		{
+			code: 'BBK1.130',
+			description:
+				'BANKING FACILITIES TO GEORGINA ZIITA WABWIRE,CHARGE OVER UNIT NO 1,DAGORETTI/RIRUTA/3894',
+		},
+		{
+			code: 'BBK1.14',
+			description: 'HENRY NDUNGU KINUTHIA VS BARCLAYS BANK OF KENYA LTD & TERRACRAFT LTD',
+		},
+		{
+			code: 'BBK1.140',
+			description: 'GENERAL ADVISORY FILE',
+		},
+		{
+			code: 'BBK1.141',
+			description: 'BANKING FACILITIES TO ZAHARAA KHANBHAI LR. NO. 209/54',
+		},
+		{
+			code: 'BBK1.142',
+			description: 'BANKING FACILITIES TO SIMBISA BRANDS KENYA LIMITED',
+		},
+		{
+			code: 'BBK1.144',
+			description:
+				'BANKING FACILITIES TO MIRIAM NJUGUINI NGIBUINI  NJUGUNA AND ANNETE WARUGA NJUGUNA,APARTMENT NUMBER A604,ERECTED ON L.R NO.330/34/6 & 330/34/7',
+		},
+		{
+			code: 'BBK1.15',
+			description: 'BARCLAYS BANK OF KENYA',
+		},
+		{
+			code: 'BBK1.150',
+			description:
+				'BANKING FACILITIES TO LEISURE PARK DEVELOPMENT LIMITED AND MODWAYS INVESTMENTS LIMITED',
+		},
+		{
+			code: 'BBK1.153',
+			description: 'BANKING FACILITIES TO MOGAS KENYA LTD.',
+		},
+		{
+			code: 'BBK1.155',
+			description:
+				'TERMINATION FROM EMPLOYMENT OF DOMINIC KASYOKA  MUENDO FROM BARCLAYS BANK OF KENYA',
+		},
+		{
+			code: 'BBK1.156',
+			description:
+				'BANKING FACILITIES TO JUDITH ELIZABETH OLOO, CHARGE OVER HOUSE NO.333, L.R. NO.28030/47',
+		},
+		{
+			code: 'BBK1.157',
+			description: 'BANKING FACILITIES TO NATIONAL HOUSING CORPORATION',
+		},
+		{
+			code: 'BBK1.158',
+			description: 'BANKING FACILITIES TO SHREEJI ENTERPRISES (KENYA) LIMITED',
+		},
+		{
+			code: 'BBK1.159',
+			description: 'BANKING FACILITIES TO FRANCIS NDEGWA WAINAINA',
+		},
+		{
+			code: 'BBK1.16',
+			description: 'BARCLAYS BANK OF KENYA( ENDUSA ONZERE)',
+		},
+		{
+			code: 'BBK1.160',
+			description: 'BANKING FACILITIES TO ERIC OCHIENG TAMBO',
+		},
+		{
+			code: 'BBK1.161',
+			description: 'BANKING FACILITIES TO ARNOLD ADEM OKANGA - CHARGE OVER NGONG/NGONG/91308',
+		},
+		{
+			code: 'BBK1.162',
+			description:
+				'BANKING FACILITIES TO TUNAI KIPUTIA KINYANGUK - CHARGE OVER KARAI/GIKAMBURA/4251',
+		},
+		{
+			code: 'BBK1.163',
+			description:
+				'BANKING FACILITIES TO GEOFFREY ODUOR GANGLA - CHARGE OVER MAISONETTE NUMBER 2, LAND REFERENCE NUMBER 4857/12.',
+		},
+		{
+			code: 'BBK1.164',
+			description: 'BANKING FACILITIES TO NORTHEND ESTATES LIMITED.',
+		},
+		{
+			code: 'BBK1.165',
+			description: 'BANKING FACILITIES TO JOHN GATHOGO CHARGE OVER L.R. NO.14968/18',
+		},
+		{
+			code: 'BBK1.166',
+			description: 'BANKING FACILITIES TO BOTANICAL EXTRACTS EPZ LIMITED.',
+		},
+		{
+			code: 'BBK1.167',
+			description: 'BANKING FACILITIES TO KIMANI VENTURES LIMITED',
+		},
+		{
+			code: 'BBK1.168',
+			description:
+				'EMPLOYMENT & LABOUR RELATIONS COURT,NAIROBI, CAUSE NO.216 OF 2020. DOMINIC KASYOKA MUENDO VS. ABSA BANK KENYA',
+		},
+		{
+			code: 'BBK1.169',
+			description: 'Banking facilities to Dr. Sam Johnson Otieno Oula',
+		},
+		{
+			code: 'BBK1.170',
+			description: 'BANKING FACILITIES TO DR. JAPHETH KIPLANGAT BIEGON',
+		},
+		{
+			code: 'BBK1.18',
+			description: 'RACHEL GATHONI GOTA',
+		},
+		{
+			code: 'BBK1.19',
+			description: 'BARCLAYS BANK OF KENYA & CHARVI INVESTMENT LTD',
+		},
+		{
+			code: 'BBK1.2',
+			description:
+				'BARCLAYS BANK OF KENYA LTD DIDACUS WANGA OTIENO/FRANCISCA OPONDO OTIENO FOR JOSEPHINE OMOKE OTIENO',
+		},
+		{
+			code: 'BBK1.20',
+			description: 'JOSEPHINE NJERI MWANGI',
+		},
+		{
+			code: 'BBK1.21',
+			description: 'SIMON AROKO OWOKO',
+		},
+		{
+			code: 'BBK1.22',
+			description: 'DALE FLORA LTD & BARCLAYS BANK OF KENYA',
+		},
+		{
+			code: 'BBK1.23',
+			description:
+				'BRAEBURN SCHOOLS LTD BANKING FACILITIES OFFER TO CHARGE OVER L.R. NO. 330/502, L.R. NO. 330/281, L.R NO. 330/50 & L.R NO. 330/779',
+		},
+		{
+			code: 'BBK1.24',
+			description: 'PETER ROBERT OWUOR',
+		},
+		{
+			code: 'BBK1.25',
+			description:
+				'PETER ROBERT OWUOR - BANKING FACILITIES ON L.R NO. KAJIADO/KAPUTTEI NORTH/26301',
+		},
+		{
+			code: 'BBK1.26',
+			description: 'FRED ODHIAMBO -BARCLAYS BANK OF KENYA',
+		},
+		{
+			code: 'BBK1.28',
+			description:
+				'MARK MUTHUI MBOGO - BANKING FACILITIES OVER CHARGE ON L.R NO. NDUMBERI/NDUMBERI/3126 FLAT NO. E20',
+		},
+		{
+			code: 'BBK1.29',
+			description:
+				'DENNIS MICHAEL OJIAMBO & BARCLAYS BANK OF KENYA: FURTHER CHARGE OVER L.R. NO. NJORO/NGATA BLOCK 1/6186',
+		},
+		{
+			code: 'BBK1.3',
+			description: 'BARCLAYS BANK OF KENYA LTD VS PETER KAMAU IKIGU',
+		},
+		{
+			code: 'BBK1.30',
+			description:
+				'MOGAS KENYA LIMITED & BARCLAYS BANK OF KENYA: FURTHER CHARGE ON L.R. KARATINA TOWN BLOCK 1/284',
+		},
+		{
+			code: 'BBK1.31',
+			description: 'HAWKERS PRIDE LTD',
+		},
+		{
+			code: 'BBK1.32',
+			description: 'HAWKERS PRIDE ENTERPRISES LTD',
+		},
+		{
+			code: 'BBK1.33',
+			description: 'DPL FESTIVE LIMITED',
+		},
+		{
+			code: 'BBK1.34',
+			description:
+				'TAKE OVER OF FACILITIES IN THE NAME OF MAISHA FLOUR MILLS LIMITED BY BARCLAYS BANK OF KENYA',
+		},
+		{
+			code: 'BBK1.35',
+			description: 'HCCC NO. 410 OF 2010-MOHAMMED ALI  MOTHA VS BARCLAYS BANK OF KENYA',
+		},
+		{
+			code: 'BBK1.36',
+			description: 'KSM HCCC NO. 108/2009 GORDON ORURE KAOKO VS BARCLAYS BANK OF KENYA',
+		},
+		{
+			code: 'BBK1.37',
+			description: 'BANKING FACILITIES 15, SITUATED ON LR NO. 330/591 TO TOM DAVID ODUOL',
+		},
+		{
+			code: 'BBK1.38',
+			description: 'BANKING FACILITIES TO INSTA PUMPS ENGINEERING LIMITED',
+		},
+		{
+			code: 'BBK1.4',
+			description: 'HCCC NO 1483 OF 2000 BARCLAYS BANK OF KENYA LTD VS VELEO KENYA LTD:',
+		},
+		{
+			code: 'BBK1.40',
+			description: 'BANKING FACILITIES TO SYMBION KENYA LIMITED (0722 247 011)',
+		},
+		{
+			code: 'BBK1.41',
+			description: 'MADUANI MERCHANTS VS BARCLAYS BANK OF KENYA LTD: HCCC NO. 263 OF 1999',
+		},
+		{
+			code: 'BBK1.42',
+			description:
+				"BRITE PRINT (K) LTD & GEORGE MAINA KING'ORI VS BARCLAYS BANK OF KENYA LTD: HCCC NO. 657 OF 2006",
+		},
+		{
+			code: 'BBK1.43',
+			description:
+				'JACKSON MUTUMBI VS BARCLAYS BANK OF KENYA LTD & KORA CONSTRUCTION LTD: CIVIL SUIT NO. 76 OF 2003',
+		},
+		{
+			code: 'BBK1.45',
+			description:
+				'STEPHEN MORRIS OTIENO ADHANJA VS BARCLAYS BANK OF KENYA LTD: HCCC NO 909 OF 2000',
+		},
+		{
+			code: 'BBK1.47',
+			description: 'ZABLON MBUGUA VS BARCLAYS BANK OF KENYA LTD: CMCC NO. 2325 OF 2004',
+		},
+		{
+			code: 'BBK1.5',
+			description:
+				'BARCLAYS BANK OF KENYA -VS- THEDDEUS MWOMA ONGORI: CMCC 565 OF 2008 (KISII)',
+		},
+		{
+			code: 'BBK1.51',
+			description:
+				'BECKIE WAGARA T/A EVOLUTION FASHION DESIGNERS & TAILORING VS BARCLAYS BANK OF KENYA LTD: RMCC NO. 1442 OF 2007',
+		},
+		{
+			code: 'BBK1.52',
+			description: 'JANET NJERI MWANGI VS BARCLAYS BANK OF KENYA LTD',
+		},
+		{
+			code: 'BBK1.53',
+			description:
+				'NJIIRI HARDWARE LTD & ANOTHER VS BARCLAYS BANK OF KENYA LTD: HCCC NO. 621 OF 2003',
+		},
+		{
+			code: 'BBK1.54',
+			description:
+				"JESTO M'ITHAI VS M'LIMONGO AKWALU & BARCLAYS BANK OF KENYA LTD: SRMCC NO. 150 OF 2000",
+		},
+		{
+			code: 'BBK1.56',
+			description:
+				'JOSEPH KIPROTICH RONO VS BARCLAYS BANK OF KENYA LTD: CIVIL SUIT NO. 52 OF 1999',
+		},
+		{
+			code: 'BBK1.57',
+			description:
+				'CHARLES WAINAINA NJEHIA VS BARCLAYS BANK OF KENYA LTD: CIVIL SUIT NO. 1263 OF 2003',
+		},
+		{
+			code: 'BBK1.6',
+			description: 'BARCLAYS BANK OF KENYA LTD VS NYANJUGU LTD: HCCC NO 207 OF 2008',
+		},
+		{
+			code: 'BBK1.61',
+			description: 'TAITA SUPERMARKET LTD VS BARCLAYS BANK OF KENYA LTD',
+		},
+		{
+			code: 'BBK1.63',
+			description:
+				'REBECCA MWIKALI MULILI VS BARCLAYS BANK OF KENYA LTD: HCCC NO. 384 OF 1999',
+		},
+		{
+			code: 'BBK1.64',
+			description:
+				'RODGERS JANGORO ODERO VS MAURICE ODIWUOR OGEDA & BARCLAYS BANK OF KENYA LTD: SRMCC NO. 248 OF 2006',
+		},
+		{
+			code: 'BBK1.66',
+			description:
+				'MARY AKOTH OWITI & TRUFOSA OWITI VS BARCLAYS BANK OF KENYA LTD: KSM HCCC NO. 24 OF 2007',
+		},
+		{
+			code: 'BBK1.67',
+			description: 'JOHN KURIA MACHANGI VS BARCLAYS BANK OF KENYA LTD',
+		},
+		{
+			code: 'BBK1.7',
+			description:
+				'BARCLAYS BANK OF KENYA & LLOYD MASIKA LTD -VS- JOSEPH NZYOKA MWANTHIA: BPRT C. NO. 1035 OF 2009',
+		},
+		{
+			code: 'BBK1.71',
+			description: 'JAPHETH G. MACHARIA VS BARCLAYS BANK OF KENYA LTD & ANOTHER',
+		},
+		{
+			code: 'BBK1.73',
+			description:
+				'GERALD GAKURU MUCHAGIA VS BARCLAYS BANK OF KENYA LTD: CMCC NO. 1842 OF 2014',
+		},
+		{
+			code: 'BBK1.76',
+			description: 'BANKING FACILITIES TO MABURUKA ISMAIL',
+		},
+		{
+			code: 'BBK1.78',
+			description: 'BANKING FACILITIES TO DHRUVESH NARENDRA TANK',
+		},
+		{
+			code: 'BBK1.82',
+			description:
+				'BANKING FACILITIES TO ATHMAN OMAR AHMED TO BE SECURED BY CHARGE OVER NAIROBI/BLOCK 82/8759',
+		},
+		{
+			code: 'BBK1.83',
+			description: 'BANKING FACILITIES TO MAXIMILLAR OKUMU',
+		},
+		{
+			code: 'BBK1.84',
+			description:
+				'BANKING FACILITIES TO MIRIAM WAMBERE MURIITHI, CHARGE OVER APARTMENT NUMBER A1 ON L.R. NO. 20917512, NAIROBI',
+		},
+		{
+			code: 'BBK1.85',
+			description: 'BANKING FACILITIES TO GALANA OIL KENYA LIMITED',
+		},
+		{
+			code: 'BBK1.86',
+			description: 'BANKING FACILITIES TO DR. SALAT GIRAD MOHAMED',
+		},
+		{
+			code: 'BBK1.87',
+			description: 'BANKING FACILITIES TO ABDULRAHMAN OPONDO OSAMA',
+		},
+		{
+			code: 'BBK1.88',
+			description:
+				'TRIBUNAL CASE NO. 757/2016 NAIROBI  JOSHUA WALTER VS BARCLAYS BANK OF KENYA LTD & GIMCO LIMITED',
+		},
+		{
+			code: 'BBK1.89',
+			description: 'BANKING FACILITIES TO BARACK JONATHAN WESONGA OBATSA',
+		},
+		{
+			code: 'BBK1.9',
+			description: 'BLISS FLORA LTD',
+		},
+		{
+			code: 'BBK1.90',
+			description: 'OPENING BALANCE AS AT 1 JANUARY 2016',
+		},
+		{
+			code: 'BBK1.92',
+			description:
+				'BANKING FACILITIES TO JAMES MWANGI WAINAINA & FLORENCE WANJIKU WAINAINA CHARGE OVER TITLE LR NO. 8392/20',
+		},
+		{
+			code: 'BBK1.93',
+			description:
+				'TRIBUNAL CASE NO. 760 OF 2016 NAIROBI JOSEPH NZYOKA MWATHI VS BARCLAYS PENSION SERVICES LTD',
+		},
+		{
+			code: 'BBK1.94',
+			description:
+				'CIVIL APPEAL NO. 18 OF 2014 ROBERT NJOKA MUTHARA & ANOR VS BARCLAYS BANK OF KENYA LTD & ANOR',
+		},
+		{
+			code: 'BBK1.95',
+			description: 'OPENING BALANCE TRUST',
+		},
+		{
+			code: 'BBK1.97',
+			description:
+				'BANKING FACILITIES TO WARWICK HOLDINGS LIMITED, CHARGE OVER L.R. NUMBER NAIROBI/BLOCK 91/407',
+		},
+		{
+			code: 'BBK1.98',
+			description: 'WARWICK HOLDINGS LIMITED',
+		},
+		{
+			code: 'BBK1.99',
+			description: 'BANKING FACILITIES TO SMART PRINTERS LIMITED',
+		},
+		{
+			code: 'BBK2.1',
+			description: 'BBK LTD',
+		},
+		{
+			code: 'BBL1.1',
+			description: 'ACQUISITION OF SHARES IN AFRIMAX ZAMBIA BV',
+		},
+		{
+			code: 'BBL1.2',
+			description: 'REGISTRATION OF TRADEMARK',
+		},
+		{
+			code: 'BBR1.1',
+			description:
+				'HCCC NO. 218 OF 2007: ASSOCIATED WAREHOUSING LTD VS CLARKSON & SOUTHERN LTD & 3 OTHERS',
+		},
+		{
+			code: 'BCA.1',
+			description: 'PETITION TO CHALLENGE THE CONSTITUTIONALITY OF THE FINANCE ACT, 2023',
+		},
+		{
+			code: 'BCA1.1',
+			description: 'PETITION TO CHALLENGE THE CONSTITUTIONALITY OF THE FINANCE ACT, 2023',
+		},
+		{
+			code: 'BCB1.1',
+			description: 'BUSARA CENTRE FOR BEHAVIORAL ECONOMICS',
+		},
+		{
+			code: 'BCL2.1',
+			description: 'EMPLOYMENT ADVISORY',
+		},
+		{
+			code: 'BCP1.1',
+			description: 'Advice in relation to R&D Agreement',
+		},
+		{
+			code: 'BDO1.1',
+			description: 'BUSINESS DEVELOPMENT GENERAL FILE.',
+		},
+		{
+			code: 'BEA1.1',
+			description: 'Claim by Lake Turkana Helicopter Crash Victims',
+		},
+		{
+			code: 'BEA1.1/001',
+			description:
+				'GEHANE RIBEYRE (SUING AS THE ADMINISTRATIX OF THE ESTATE OF ESTATE OF BRANDON STAPPER) VS. KWAE ISLAND DEVELOPMENT LIMITED.',
+		},
+		{
+			code: 'BEA1.1/002',
+			description:
+				'HOPE FORTI (SUING AS THE ADMINISTRATRIX OF THE ESTATE OF KYLE JOHN FORTI)',
+		},
+		{
+			code: 'BEA1.1/003',
+			description: 'TIMOTHY BAKER (SUING AS THE EXECUTOR OF THE ESTATE OF DAVID BAKER).',
+		},
+		{
+			code: 'BEA1.2',
+			description:
+				'GEHANE RIBEYRE (suing as the Administratix of the Estate of Estate of BRANDON STAPPER) vs. KWAE ISLAND DEVELOPMENT LIMITED.',
+		},
+		{
+			code: 'BEH1.1',
+			description: 'BEHAN & OKERO ADVOCATES GENERAL FILE',
+		},
+		{
+			code: 'BEH1.2',
+			description: 'GENERAL FILE',
+		},
+		{
+			code: 'BEK1.2',
+			description: 'BERKELEY ENERGY TAX',
+		},
+		{
+			code: 'BEK1.3',
+			description: 'UNFAIR & UNLAWWFUL TERMINATION OF EDWARD KIHARA',
+		},
+		{
+			code: 'BEK1.5',
+			description: 'EMPLOYMENT ADVISORY',
+		},
+		{
+			code: 'BEL1.6',
+			description:
+				'BELOILCO HOLDINGS LTD -VS- NYACHOTI & COMPANY ADVOCATES: HC MISC. APPL. NO. 70 OF 2015 (MALINDI)',
+		},
+		{
+			code: 'BEL2.1',
+			description: 'CIVIL APPEAL NO. 249 OF 2015',
+		},
+		{
+			code: 'BEL3.1',
+			description: 'REVIEW OF OF CONTRACTS.',
+		},
+		{
+			code: 'BEL3.2',
+			description:
+				'E&LC CAUSE NO. E234 OF 2021 - ALEXANDRA BELL & ANOR VS. THE DIRECTOR GENERAL, NATIONAL ENVIRONMENT MANAGEMENT AUTHORITY & ANOR.',
+		},
+		{
+			code: 'BEL3.3',
+			description: 'CIVIL CASE NO. OF 2022 - DAVID M. MEREKA VS. ALEXANDRIA BELL',
+		},
+		{
+			code: 'BEL4.1',
+			description: 'blueengineeringltd@gmail.com',
+		},
+		{
+			code: 'BFS1.1',
+			description:
+				'ANWAR MAHENDRA PANDYA VS BUSINESS FORMS & SYSTEMS LTD & 3 OTHERS: HCCC NO. 717 OF 2009',
+		},
+		{
+			code: 'BGL1.1',
+			description:
+				'TAX APPEAL NO. TAT/173 OF 2015: BRAEBURN SCHOOL LIMITED VS THE COMMISSIONER OF DOMESTIC TAXES',
+		},
+		{
+			code: 'BGL1.2',
+			description:
+				'APPEAL NO. 173 OF 2015-BRAEBURN GROUP OF SCHOOLS VS COMMISIONER OF DOMESTICS TAXES',
+		},
+		{
+			code: 'BGL1.3',
+			description:
+				'APPEAL AT THE COURT OF APPEAL AGAINST HC. ITA NO. 11 OF 2017: COMMISIONER OF DOMESTIC TAXES VS. BRAEBURN SCHOOLS LIMITED.',
+		},
+		{
+			code: 'BGL1.4',
+			description:
+				'CIVIL APPEAL NO. E191 OF 2020; THE COMMISSIONER OF DOMESTIC TAXES .VS. BRAEBURN SCHOOLS LIMITED',
+		},
+		{
+			code: 'BHA1.1',
+			description:
+				'OL-DONYO MANAGEMENT LTD (STAR PROPERTIES LTD) VS SUDHIR MAROO AND ANOTHER: CMCC 3468 OF 2014',
+		},
+		{
+			code: 'BHA2.1',
+			description: 'LEASE - VIJYA LAXMI BHALLA TO OXFAM GB',
+		},
+		{
+			code: 'BHA3.1',
+			description: 'CMEL CASE NO. 808 OF 2019 SILVESTER OKOTH OFUNYA -VS.- C. S. BHARIJ',
+		},
+		{
+			code: 'BHA4.1',
+			description:
+				'HCCC NO. 208 OF 2019 SAYTEAN KIMAR BHANUPRASHAD PATEL VS. HIGHGROVE HOLDINGS LIMITED AND I&M BANK LIMITED. ',
+		},
+		{
+			code: 'BHA5.1',
+			description: 'SALE/PURCHASE OF SHARES IN TYCHEROS HOLDINGS LIMITED (PVT-PJURMZ5)',
+		},
+		{
+			code: 'BHC1.1',
+			description:
+				'DEMAND FOR USD 2,174,812.00 OWED TO BHAGWANJI HANSRAJ & COMPANY LIMITED BY THE UNITED MISSION IN SOUTYH SUDAN ARISIG FROM THE VARIOUS AGREEMENTS BETWEEN THE PARTIESE',
+		},
+		{
+			code: 'BHL1.1',
+			description:
+				'CMEL CAUSE NO.1860 OF 2019 WILLIS OCHIENG’ NYAMUODA -VS.- BETA HEALTHCARE INTERNATIONAL LIMITED.',
+		},
+		{
+			code: 'BHL1.2',
+			description:
+				'ELRC Cause No. 1632 of 2017 Brian Kavila -vs- Beta Healthcare International Limited ',
+		},
+		{
+			code: 'BHL1.3',
+			description:
+				'ELRC Cause No. 1667 of 2016 Nelson Odhiambo -vs- Beta Healthcare International Ltd ',
+		},
+		{
+			code: 'BHL1.4',
+			description: 'E&LRC CAUSE NO.810 OF 2021: VINCENT NYAKWAMA VS. BETH HEALTHCARE LIMITED',
+		},
+		{
+			code: 'BHL1.5',
+			description:
+				'ELDORET CIVIL SUIT NO.E237 OF 2021: EDWIN KHAKULI WESA VS. BETA HEALTHCARE INTERNATIONAL LTD',
+		},
+		{
+			code: 'BHL1.6',
+			description: 'GENERAL ADVISORY',
+		},
+		{
+			code: 'BID1.1',
+			description: 'BIDCO OIL REFENERIES LTD VS MUCHIRU GITHUKA STORE',
+		},
+		{
+			code: 'BID1.10',
+			description:
+				'NAIROBI ELRC NO 146 OF 2016: JASON OYUGI MATOKE & 15 OTHERS -VS- BIDCO AFRICA LTD',
+		},
+		{
+			code: 'BID1.11',
+			description:
+				'E & LRC NO 155 OF 2015 (NYERI): ISAAC JUMA KASERA & 10 OTHERS -VS- BIDCO AFRICA LTD.',
+		},
+		{
+			code: 'BID1.12',
+			description: 'E & LRC NO 154 OF 2015 (NYERI): JERRY OUMA OSORO -VS- BIDCO AFRICA LTD.',
+		},
+		{
+			code: 'BID1.13',
+			description:
+				'E & LRC NO 213 OF 2015 (NYERI): PETER KABANJA NDUNGU & 35 OTHERS -VS- BIDCO AFRICA LTD.',
+		},
+		{
+			code: 'BID1.14',
+			description: 'PETER KARANJA & OTHERS -VS- BIDCO OIL REFINERIES',
+		},
+		{
+			code: 'BID1.15',
+			description: 'BIDCO AFRICA LTD -VS- SAKINA DISTRIBUTIORS',
+		},
+		{
+			code: 'BID1.16',
+			description:
+				'BIDCO AFRICA LTD -VS- COMMISSIONER OF INCOME TAXT, KENYA REVENUE AUTHORITY: HC INCOME TAXT APPEAL NO. 81 OF 2005',
+		},
+		{
+			code: 'BID1.17',
+			description:
+				"BIDCO OIL REFINERIES LTD -VS- COLINCE VUSAKA LUGONGO: E & LR CAUSE NO. 1034 'B' OF 2015 (NBO)",
+		},
+		{
+			code: 'BID1.18',
+			description:
+				'BIDCO OIL REFINERIES LTD -VS- ALFRED MUTAMBI LIKHAYA: E & LR CAUSE NO. 1006 OF 2015 (NBO)',
+		},
+		{
+			code: 'BID1.19',
+			description:
+				'BIDCO OIL REFINERIES LTD -VS- CHRISTOPHER KAMAU MUTHINJI: E & LR CASE NO. 143 OF 2015 (NAKURU)',
+		},
+		{
+			code: 'BID1.2',
+			description:
+				'BIDCO OIL REFINERY VS COMMISSIONER OF INCOME TAX/KENYA REVENUE AUTHORITY: HC INCOME  TAX APPEAL NO. 13 OF 2005',
+		},
+		{
+			code: 'BID1.20',
+			description:
+				'BIDCO OIL REFINERIES LTD -VS- HOSEA AKUNGA OMBWORI: E & LR CAUSE/APPEAL NO. 171 OF 2015 (NAKURU)',
+		},
+		{
+			code: 'BID1.21',
+			description:
+				'BIDCO AFRICA LTD -VS- MARTIN WAMAE WANGU & 294 OTHERS: ELC NO. 1936 OF 2015 (NBO)',
+		},
+		{
+			code: 'BID1.21/001',
+			description:
+				'E&LRC CAUSE NO.1936 OF 2015; MARTIN WAMAE & 294 OTHERS VS. BIDCO AFRICA LIMITED',
+		},
+		{
+			code: 'BID1.22',
+			description: 'BIDCO AFRICA LTD',
+		},
+		{
+			code: 'BID1.23',
+			description: 'NRB ELRC NO. 295 OF 2016: DAVID OTIENO OGADA VS BIDCO AFRICA LIMITED',
+		},
+		{
+			code: 'BID1.24',
+			description: 'ELRC NO. 145 OF 2016 ANTHONY MURIGI KIARIE',
+		},
+		{
+			code: 'BID1.25',
+			description: 'EMMANUEL SIMIYU WEPUKHULU ELRC NO. 136 OF 2016',
+		},
+		{
+			code: 'BID1.26',
+			description: 'OPENING BALANCE AS AT 1 JANAUARY 2016 G00/8050',
+		},
+		{
+			code: 'BID1.28',
+			description:
+				'ELRC NO. 1958 OF 2016 NAIROBI ROISE WAIRIMU NJAU VS DAVID MBURU KIMANI & 2 OTHERS',
+		},
+		{
+			code: 'BID1.29',
+			description:
+				'NYERI ELRC NO. 35 OF 2015 DICKSON ODUOR OTIENO VS BIDCO OIL REFINERIES LIMITED',
+		},
+		{
+			code: 'BID1.3',
+			description: 'BIDCO OIL REFENERIES',
+		},
+		{
+			code: 'BID1.30',
+			description:
+				'NAIROBI ELRC NO. 1695 OF 2012, ROBERT MATOYA MAGETO VS BIDCO OIL REFINERIES LIMITED',
+		},
+		{
+			code: 'BID1.31',
+			description:
+				'NAIROBI ELRC NO. 1203 OF 2014, STEPHEN MUTHOKA KITIVI VS BIDCO OIL REFINERIES LIMITED',
+		},
+		{
+			code: 'BID1.32',
+			description:
+				'NAIROBI ELRC NO. 1047 OF 2014, SAMUEL OMONDI WAGA VS BIDCO OIL REFINERIES LIMITED',
+		},
+		{
+			code: 'BID1.33',
+			description:
+				'NAIROBI ELRC NO. 83 OF 2013, SAMSON ODERA OPONDO VS BIDCO OIL REFINERIES LIMITED',
+		},
+		{
+			code: 'BID1.34',
+			description:
+				'NAIROBI ELRC NO. 712 OF 2013, TOBIAS TABU APIYO VS BIDCO OIL REFINERIES LIMITED',
+		},
+		{
+			code: 'BID1.35',
+			description:
+				'NAIROBI ELRC NO. 2470 OF 2012, NELSON OKELLO GUNGA VS BIDCO OIL REFINERIES LIMITED',
+		},
+		{
+			code: 'BID1.36',
+			description:
+				'NAIROBI ELRC NO. 2559 OF 2016, MICHAEL ODHIAMBO OPIYO VS BIDCO OIL REFIERIES LIMITED',
+		},
+		{
+			code: 'BID1.37',
+			description:
+				'NAIROBI HCCC NO. 678 OF 2003: NGONG HILLS SUPERMARKET LIMITED VS BIDCO OIL REFINERIES LIMITED',
+		},
+		{
+			code: 'BID1.38',
+			description: 'GENERAL AUDIT',
+		},
+		{
+			code: 'BID1.39',
+			description:
+				'ELRC NO. 1916 OF 2011 : ROBERT KIPKEMBOI KIRWA & ANOR VS BIDCO AFRICA LTD',
+		},
+		{
+			code: 'BID1.40',
+			description: 'INCORPORATION OFTHE  BIDCO FOUNDATION',
+		},
+		{
+			code: 'BID1.42',
+			description:
+				'NOTICE  OF PROPOSED DECISION BY THE COMPETITION AUTHORITY OF KENYA (CAK) UNDER SECTION 34 OF THE COMPETITION ACT NO. 12 OF 2010 (THE ACT)',
+		},
+		{
+			code: 'BID1.43',
+			description:
+				'CMCE CAUSE NO. 7 OF 2019 THIKA DAMARIS MUTHEU SELEE VS. BIDCO AFRICA LIMITED',
+		},
+		{
+			code: 'BID1.44',
+			description: 'E&LRC NO. 298 OF 2019 EDDAH ANYANGO AKUMU VS. BIDCORO AFRICA LIMITED',
+		},
+		{
+			code: 'BID1.45',
+			description:
+				'NAKURU - E&LRC CAUSE NO. 37 OF 2019 ZACHARY KINYUA VS. BIDCO AFRICA LIMITED',
+		},
+		{
+			code: 'BID1.46',
+			description: 'RUIRU E&LRC NO. 16 OF 2019 JACOB MUSYOKA KALESO -vs BIDCO AFRICA LIMITED',
+		},
+		{
+			code: 'BID1.47',
+			description: 'ARBITRATION BETWEEN BIDCO AFRICA LIMITED AND SHIDBARBAR LIMITED.',
+		},
+		{
+			code: 'BID1.48',
+			description:
+				'GATUNDU MISC. APP. NO. E14 OF 2021 PAULINE KERE NJUKI –VS-  BIDCO AFRICA LIMITED  ',
+		},
+		{
+			code: 'BID1.49',
+			description: 'BIDCO DEMAND LETTERS – DEBT COLLECTION',
+		},
+		{
+			code: 'BID1.5',
+			description:
+				'BIDCO OIL REFINERY VS COMMISSIONER OF INCOME TAX APPEAL 13 / KENYA REVENUE AUTHORITY',
+		},
+		{
+			code: 'BID1.50',
+			description:
+				'THIKA MCELRC NO. 3 OF 2021 SILVIA WAWIRA NDEGE –VS- BIDCO AFRICA LIMITED ',
+		},
+		{
+			code: 'BID1.51',
+			description: 'CAPITAL REDUCTION',
+		},
+		{
+			code: 'BID1.52',
+			description:
+				'KISUMU E.L.R.C. NO. 188 OF 2021 – ANTHONIE AMRAM ALOO VS. BIDCO AFRICA LIMITED',
+		},
+		{
+			code: 'BID1.53',
+			description: 'CLAIM NO. E1174 OF 2021: BIDCO AFRICA LTD VS. AFROLYTIX LIMITED.',
+		},
+		{
+			code: 'BID1.54',
+			description:
+				"THIKA- CHIEF MAGISTRATE'S COURT CASE NO..... OF 2022: JOHN KAMAU GWEKA VS. BIDCO AFRICA LIMITED",
+		},
+		{
+			code: 'BID1.55',
+			description:
+				'MACHAKOS SCCCC NO.E219 OF 2022: DAVID KALELI MAWEU VS. BIDCORO AFRICA LIMITED & TIMOTHY MUSYOKA.',
+		},
+		{
+			code: 'BID1.56',
+			description:
+				'SMCCCC NO.E222 OF 2022: SAMUEL KITEME MAWEU VS. BIDCORO AFRICA LIMITED & TIMOTHY MUSYOA',
+		},
+		{
+			code: 'BID1.57',
+			description:
+				'SCCCC NO.E220 OF 2022: DAVID NZOMO WAEMA VS. BIDCORO AFRICA LMITED & TIMOTHY MUSYOKA',
+		},
+		{
+			code: 'BID1.58',
+			description: 'E&LRC NO. E502 OF 2022: EVANS ODUNDO VS. BIDCO AFRICA LIMITED.',
+		},
+		{
+			code: 'BID1.6',
+			description: 'KENYA CHEMICAL & ALLIED WORKERS UNION -VS- BIDCO OIL REFINERIES LTD',
+		},
+		{
+			code: 'BID1.8',
+			description: 'BIDCO AFRICA LTD - CASUAL/EMPLOYEES UNLAWFUL TERMINATION',
+		},
+		{
+			code: 'BID1.9',
+			description: 'BIDCO AFRICA LTD -VS- BEATRICE JERONO RON (CUSTOMER COMPLAINT)',
+		},
+		{
+			code: 'BID2.1',
+			description:
+				'IN THE ESTATE OF LIHASI BIDALI (DECEASED): SUCCESSION CAUSE NO. 2388 OF 2012',
+		},
+		{
+			code: 'BIF1.1',
+			description:
+				'DISPUTE WITH THE MINISTRY OF WATER & SANITATION AND IRRIGATION WITH REGARD TO PROJECT: KENYA WATER SECURITY & CLIMATE RESILIENCE PROGRAMME  ',
+		},
+		{
+			code: 'BIJ1.1',
+			description: 'SHAREHOLDERS DISPUTE',
+		},
+		{
+			code: 'BIL1.1',
+			description:
+				'PELTON (EA) COMPANY VS BHACHU INDUSTRIES LTD/SIMBA COLT MOTORS LTD: HCCC NO. 530 OF 2012',
+		},
+		{
+			code: 'BIL1.2',
+			description: 'BHACHU INDUSTRIES LTD. - SALE OF LR NO. 12648/10',
+		},
+		{
+			code: 'BIL1.3',
+			description: 'BHACHU INDUSTRIES-CONVEYANCING',
+		},
+		{
+			code: 'BIL1.4',
+			description: 'BHACHU INDUSTRIES LIMITED VS BALWINDER SINGH',
+		},
+		{
+			code: 'BIL1.5',
+			description: 'ARBITRATION BETWEEN BOLMIC INVESTMENTS LIMITED & BHACHU INDUSTRIES',
+		},
+		{
+			code: 'BIL1.6',
+			description: 'DEMAND FOR RENTAL ARREARS AND IN RESPECT OF LEASE DATED 2/09/2015',
+		},
+		{
+			code: 'BIL1.7',
+			description: 'BREACH OF CONTRACT',
+		},
+		{
+			code: 'BIL2.1',
+			description: 'IN THE MATTER OF THE ESTATE OF THE LATE SATWANT KAUR BILKHU (DECEASED)',
+		},
+		{
+			code: 'BIL2.2',
+			description: 'PROVISIONAL TITLE',
+		},
+		{
+			code: 'BIO1.1',
+			description: 'ACQUISITION OF SHARES IN REAL IPM KENYA LIMITED',
+		},
+		{
+			code: 'BIR1.1',
+			description: 'ZAWADI MARIA BIRYA',
+		},
+		{
+			code: 'BIT1.1',
+			description: 'JMM GENERAL ( GILDER BITUMEN)',
+		},
+		{
+			code: 'BLL1.1',
+			description: "ELRC NO.E25 OF 2020 - DICK KIVEU DARACHA VS. BIDCO LAND O'LAKES LIMITED",
+		},
+		{
+			code: 'BML1.1',
+			description: 'BEBA MTOTO LTD',
+		},
+		{
+			code: 'BOA1.1',
+			description: 'BANK OF AFRICA DISCHARGE OF FACILITIES TO DENNIS MICHAEL OJIAMBO',
+		},
+		{
+			code: 'BOA1.2',
+			description: 'GENERAL FILE',
+		},
+		{
+			code: 'BOA1.4',
+			description: 'OUSTANDING LOAN BY S.A.M COMPANY LIMITED',
+		},
+		{
+			code: 'BOA1.5',
+			description: 'NAKUMATT HOLDINGS LIMITED-IN ADMNISTRATION ("NHL")',
+		},
+		{
+			code: 'BOA1.6',
+			description:
+				'HCCC NO.E385 OF 2019: COLLOGNE INVESTMENTS LIMITED VS. BANK OF AFRICA LIMITED & OTHERS',
+		},
+		{
+			code: 'BOA1.7',
+			description:
+				'Legal Advisory to Bank of Africa with respect to a Facility Agreement entered into between Dari Coffee Garden & Restaurant Limited (Dari) and East African Development Bank (EADB) for a loan amounting to USD 9,300,000.00',
+		},
+		{
+			code: 'BOA1.8',
+			description: 'ENFORCEMENT OF PERSONAL GUARANTEE',
+		},
+		{
+			code: 'BOA1.9',
+			description: 'BANKING FACILITY TO SUSAN WANJIKU MUGO',
+		},
+		{
+			code: 'BOB1.1',
+			description:
+				'MALINDI ELC NO. 194 OF 2016 KSC INTERNATIONAL LIMITED  (IN RECEIVERSHIP) VS BANK OF BARODA (K) LTD',
+		},
+		{
+			code: 'BOL1.1',
+			description: ' Provision of Legal Services to Bolt Support Kenya Ltd ',
+		},
+		{
+			code: 'BOL1.2',
+			description: 'PROVISION OF LEGAL SERVICES',
+		},
+		{
+			code: 'BOS1.2',
+			description: 'H.C. ELC NO.491 OF 2015: SAMUEL E.O. BOSIRE VS THE HON. ATTORNEY GENERAL',
+		},
+		{
+			code: 'BOV1.1',
+			description: 'BOB BOVER VS EMIRATES',
+		},
+		{
+			code: 'BOW1.1',
+			description: 'PROVISION OF LEGAL ADVISE',
+		},
+		{
+			code: 'BOY1.1',
+			description: 'PROVISION OF LEGAL SERVICES.',
+		},
+		{
+			code: 'BOY1.2',
+			description: 'DRAFTING A PAYMENT SERVICES AGREEMENT.',
+		},
+		{
+			code: 'BOY1.3',
+			description: 'REGISTRATION OF THE BOYA BRAND',
+		},
+		{
+			code: 'BOY1.4',
+			description: 'ADVISING IN RELATION TO A SEPARATION AGREEMENT WITH JULIANA ROTICH',
+		},
+		{
+			code: 'BOY1.4/001',
+			description:
+				'MILIMANI CMCC CIVIL SUIT NO. E068 OF 2023: JULIANA CHEBET ROTICH -VERSUS- BOYA LIMITED',
+		},
+		{
+			code: 'BPL1.1',
+			description: 'BELLADONA PHARMACY LTD -VS- JUDY WACERA NJAU: ELC NO 2080 OF 2015 (NBO)',
+		},
+		{
+			code: 'BPS1.1',
+			description: 'BASE PREPARATORY SCHOOL VS BEATRICE WANJIRU NDONGA',
+		},
+		{
+			code: 'BPS2.1',
+			description:
+				'LEASE AGREEMENT BETWEEN BARCLAYS PENSION SERVICES LIMITED AND EPIX INVESTMENTS LIMITED',
+		},
+		{
+			code: 'BPS3.1',
+			description:
+				'PROVISION OF LEGAL SERVICES IN RELATION TO INCORPORATION OF A COMPANY LIMITED BY SHARES',
+		},
+		{
+			code: 'BRA1.1',
+			description: 'JAGDEED SIGNH BRA',
+		},
+		{
+			code: 'BRA2.1',
+			description: 'SEPARATION AGREEMENT BETWEEN BRAC INTERNATIONAL AND RUTH OKOWA',
+		},
+		{
+			code: 'BRI2.1',
+			description: 'GENERAL ADVICE',
+		},
+		{
+			code: 'BRI3.1',
+			description: 'Ocorian corporate services (Mauritius) Limited',
+		},
+		{
+			code: 'BRI3.2',
+			description: 'SERVICE OF LEGAL NOTICE',
+		},
+		{
+			code: 'BRU1.1',
+			description: 'MELANIE BRUNS - SALE OF LR. NO. 2951/481 AND 2951/482/481',
+		},
+		{
+			code: 'BRY1.1',
+			description: 'DIVORCE CAUSE.',
+		},
+		{
+			code: 'BSL1.1',
+			description: 'BENDALE SERVICES LTD -VS- GENTION AG: HCCC NO. 8 OF 2015 (MSA)',
+		},
+		{
+			code: 'BSL1.2',
+			description:
+				'BENDALE SERVICES LTD -VS- NYACHOTI & COMPANY ADVOCATES: HC MISC. APPL. NO. 346 OF 2015 (MSA)',
+		},
+		{
+			code: 'BSL2.1',
+			description:
+				'BRAEBURN SCHOOLS LTD VS TONY NJOROGE MSEE & MARGARET NJOROGE: HCCC ELC NO. 152 OF 2010',
+		},
+		{
+			code: 'BSL3.1',
+			description: 'IN THE MATTER OF BASHAMAKH LIMITED',
+		},
+		{
+			code: 'BSS1.1',
+			description:
+				'CMCC NO.193 OF 2018 FIONA JEPKORIR LETIBA VS. BANKI KUU SAVINGS & CREDIT COOPERATIVE SOCIETY LIMITED',
+		},
+		{
+			code: 'BSS1.2',
+			description:
+				'CMCCC NO. 194 OF 2018 HARON ONGERA STEPHEN VS. BANKI KUU SAVINGS & COOPERATIVE SOCIETY LIMITED.',
+		},
+		{
+			code: 'BSS1.3',
+			description:
+				'DANIEL LABOSO KOECH VS. BANKI KUU SAVINGS & CREDIT CO-OPERATIVE SOCIETY LTD',
+		},
+		{
+			code: 'BTL1.1',
+			description: 'Provision of Legal Services to Scintl Holdings Limited',
+		},
+		{
+			code: 'BTL2.1',
+			description: 'REGISTRATION OF A CROSS-BORDER PAYMENT SERVICE PROVIDER.',
+		},
+		{
+			code: 'BTL3.1',
+			description:
+				'ADVISING ON A SETTLEMENT WITH THE CENTRE FOR BUSINESS SUPPORT EAST AFRICA LTD.',
+		},
+		{
+			code: 'BUR1.1',
+			description: 'PROBATE: PETITION FOR THE ESTATE OF MARY HELEN AGGARWAL',
+		},
+		{
+			code: 'BUS1.1',
+			description:
+				'BUSURU RICHARD MARK T/A BUSUR RM & PARTNERS ARCHITECTS VS B.A OMUSE T/A AFRO ANGLO INVESTMENT LTD: HC MISC. CIV. APPL. NO 1300 OF 2002 (NBO)',
+		},
+		{
+			code: 'BUT1.1',
+			description: 'BASHIR AHMED BUTT',
+		},
+		{
+			code: 'BUT2.1',
+			description: 'PROVISION OF LEGAL SERVICES',
+		},
+		{
+			code: 'BUY1.1',
+			description: 'ROZAAH AKINYI BUYU VS MERCELINE ATIENO OLLOWS: CMCC NO 3831 OF 2008',
+		},
+		{
+			code: 'BVS1.1',
+			description: 'BUREAU VERITAS SOUTH AFRICA: MISC. CIV. APPL. NO. JR. 17 OF 2012 NBI',
+		},
+		{
+			code: 'BWK1.1',
+			description:
+				'CMCC NO. E1031 OF 2023 - GRANTO SUPPLIERS LIMITED V. BUILDERS WAREHOUSE (KENYA) LIMITED',
+		},
+		{
+			code: 'CAJ1.1',
+			description: 'THE COMMISSION ON ADMINISTRATIVE JUSTICE',
+		},
+		{
+			code: 'CAK1.4',
+			description: 'COMMUNICATION AUTHORITY OF KENYA',
+		},
+		{
+			code: 'CAK1.5',
+			description: 'COMMUNICATIONS AUTHORITY OF KENYA',
+		},
+		{
+			code: 'CAK1.6',
+			description: 'COMMUNICATIONS AUTHORITY OF KENYA  VS TETRA RADIO LIMITED',
+		},
+		{
+			code: 'CAK1.7',
+			description:
+				'COMMUNICATION COMMISSION OF KENYA VS TETRA RADIO LTD & OTHERS: CIVIL APPEAL NO. 122 OF 2012',
+		},
+		{
+			code: 'CAK1.8',
+			description:
+				'CIVIL APPEAL NO. 35 OF 2016 WILBERT CHOGE & 6 OTHERS VS COMMUNICATIONS AUTHORITY OF KENYA, CABINET SECRETARY MOIC, ATTORNEY GENERAL & OTHERS',
+		},
+		{
+			code: 'CAK1.9',
+			description: 'CIVIL APPLICATION NO. 103 OF 2016 WILBERT CHOGE & OTHER -VS- CA & OTHERS',
+		},
+		{
+			code: 'CAL1.1',
+			description:
+				'CHAMPION AFRIK LTD (CA) AND ADIEL GITARI TANA (AGT) - AGREEMENT FOR SALE OF MINERAL RIGHTS',
+		},
+		{
+			code: 'CAL2.1',
+			description: 'CNOOC AFRICA LTD',
+		},
+		{
+			code: 'CAL3.1',
+			description:
+				'CIVIL APPL.NO 65 OF 2017 (UR 53/2017) MTWAPA EPZ LIMITED .VS. COAST APPAREL EPZ LTD & I& M BANK LTD',
+		},
+		{
+			code: 'CAL4.1',
+			description: 'REGISTRATION OF A COMPANY  ',
+		},
+		{
+			code: 'CAP1.1',
+			description: 'APPLICATION FOR INCOME TAX EXEMPTION',
+		},
+		{
+			code: 'CAR2.1',
+			description: 'DAVID AND MARIANNE CARTER',
+		},
+		{
+			code: 'CAS1.1',
+			description: 'CLAIM FOR COMPENSATION FOR LOSS RESULTING FROM A FIRE INCIDENT.',
+		},
+		{
+			code: 'CAT1.1',
+			description:
+				'DISPUTE BETWEEN ANHUI CONSTRUCTION ENGINEERING GROUP CO. LTD CHINA NATIONAL AERO - TECHNOLOGY INTERNATIONAL ENGINEERING CORPORATION AND KENYA AIRPORTS AUTHORITY',
+		},
+		{
+			code: 'CAT1.1/001',
+			description: 'ICC MEDIATION PROCEEDINGS IN THE DISPUTE BETWEEN ACEG-CATIC VS. KAA.',
+		},
+		{
+			code: 'CAT1.2',
+			description:
+				'POTENTIAL CLAIM BY CATIC FOR THE RECOVERY OF OUTSTANDING SUMS UNDER P2 & P3A CONTRACTS.',
+		},
+		{
+			code: 'CBA1.1',
+			description: 'BENJAMIN MUTUKU KAMANGA',
+		},
+		{
+			code: 'CBA1.10',
+			description: 'PAULI MIYARE OWARA - CHARGE OVER L.R NO. NBI/BL291/158, GIGIRI ESTATE.',
+		},
+		{
+			code: 'CBA1.12',
+			description: 'DIONYSIOUS KIHIKA KIAMBI - CHARGE OVER MAI. NO. 13 ON L.R NO. 5/153 NBI',
+		},
+		{
+			code: 'CBA1.13',
+			description: 'CHARLES KYALO MUKITI',
+		},
+		{
+			code: 'CBA1.14',
+			description: 'JACKLINE KAGAMWA',
+		},
+		{
+			code: 'CBA1.15',
+			description: 'KENNEDY OTIENO OGARE - CHARGE OVER L.R. NO. NBI/BL160/142',
+		},
+		{
+			code: 'CBA1.16',
+			description: 'CONNECTA AFRICA LTD - DISCHARGE OF CHARGE OVER L.R. NO. 12346/4, KABETE',
+		},
+		{
+			code: 'CBA1.17',
+			description: 'KIHINGO VILLAGE (WARIDI GARDENS) LTD',
+		},
+		{
+			code: 'CBA1.18',
+			description: 'NORAH AKONGO OBUDHO - LEGAL CHARGE',
+		},
+		{
+			code: 'CBA1.19',
+			description: 'LYDIA JANE W. KINONA - SALE OF NAIROBI BL 82/5232',
+		},
+		{
+			code: 'CBA1.2',
+			description:
+				'MANISHA MADASIA & NITIN MANILAL K CHOHAN - CHARGE OVER APAPRTMENT NO B1 ON L.R NO. 209/99/7 BATU BATU GARDENS, NBI',
+		},
+		{
+			code: 'CBA1.20',
+			description: 'EASTZONE DISTRIBUTORS LTD - CHARGE OVER L.R. NO. 209/11095/33',
+		},
+		{
+			code: 'CBA1.21',
+			description: 'JULIUS NYERERE NGESA - CHARGE OVER HOUSE NO 895 JAMBO ESTATE',
+		},
+		{
+			code: 'CBA1.22',
+			description: 'DR CHEIKH MBOW',
+		},
+		{
+			code: 'CBA1.23',
+			description:
+				'LINDA DINA ACHIENG - SALE OF APARTMENT NO. C9 ON NGONG/NGONG/57742, MZIZI ESTATE',
+		},
+		{
+			code: 'CBA1.24',
+			description: 'BERNARD CHWADI OMOLO - PLOT NO. 475 KASARANI',
+		},
+		{
+			code: 'CBA1.25',
+			description: 'DAISY W GITHINJI - CHARGE OVER APARTMENT NO. D3 ON L.R. NO. 1/285 NBI',
+		},
+		{
+			code: 'CBA1.26',
+			description: 'MAVJI LALJI VARSANI&ANOTHER VS COMMERCIAL BANK OF AFRICA',
+		},
+		{
+			code: 'CBA1.27',
+			description: 'MANOJ KESHAVLAL SHAH VS COMMERCIAL BANK OF AFRICA, KIHINGA VILLAGE',
+		},
+		{
+			code: 'CBA1.28',
+			description: 'BENJAMIN MUTUKU KAMANGA',
+		},
+		{
+			code: 'CBA1.29',
+			description:
+				'COMMERCIAL BANK OF AFRICA & ANNETTE MUTHONI NGUGI: CHARGE OVER APRT.NO 1A ON BLE LORESHO',
+		},
+		{
+			code: 'CBA1.3',
+			description: 'COMMERCIAL BANK OF AFRICA & CAROLINE W. WAUDO',
+		},
+		{
+			code: 'CBA1.30',
+			description: 'THE STANDARD GROUP LIMITED',
+		},
+		{
+			code: 'CBA1.31',
+			description:
+				'COMMERCIAL BANK OF AFRICA & TERRY WAIRIMU KAMAU: CHARGE OVER APRT.NO.C3,BL C GELAI GARDENS',
+		},
+		{
+			code: 'CBA1.32',
+			description: 'ATHUR MILIMO TUMWA 12 MEDIA PALMS LR NO 28035',
+		},
+		{
+			code: 'CBA1.33',
+			description: 'COMMERCIAL BANK OF AFRICA -VS- ACHELIS MATERIALS HANDLING LTD',
+		},
+		{
+			code: 'CBA1.34',
+			description: 'RAI PLYWOOD KENYA LTD  & CBA K LTD',
+		},
+		{
+			code: 'CBA1.35',
+			description: 'STEPHEN ALLAN KISAKYE',
+		},
+		{
+			code: 'CBA1.36',
+			description:
+				'BANKING FACILITIES TO WINNIE MEJASITAH LANGO, CHARGE OVER HOUSE NO.25C, THE GABLES PARK, L.R. NO.12715',
+		},
+		{
+			code: 'CBA1.37',
+			description: 'DR BERNAND ODUOR OLAYO',
+		},
+		{
+			code: 'CBA1.38',
+			description:
+				'COMMERCIAL BANK OF AFRICA - BANKING FACILITIES TO STANLEY KIPKOSGEY KIPTANUI',
+		},
+		{
+			code: 'CBA1.39',
+			description:
+				'COMMERCIAL BANK OF AFRICA & McLEOD & COMPANY EAST AFRICA - DEBENTURE FOR USD 2,000,000',
+		},
+		{
+			code: 'CBA1.4',
+			description:
+				'KIBUWA ENTERPRISES LTD - CHARGE OVER L.R. NO. 209/1827 & L.R NO. 209/1828 NBI',
+		},
+		{
+			code: 'CBA1.40',
+			description:
+				'COMMERCIAL BANK OF AFRICA & PETER ANDREW CHEYNEY - SALE OF L.R. NO. 1/362',
+		},
+		{
+			code: 'CBA1.41',
+			description:
+				'BANKING FACILITIES TO CORRINE IMISA INGONGA- LEGAL CHARGE OVER MAVOKO TOWN BLOCK12/1740',
+		},
+		{
+			code: 'CBA1.42',
+			description:
+				'COMMERCIAL BANK OF AFRICA - BANKING FACILITIES TO PAUL MIYARE OWORA & THE ADVERTISING COMPANY',
+		},
+		{
+			code: 'CBA1.44',
+			description: 'COMMERCIAL BANK OF AFRICA & SILAS O KITINYA & IRENE ODERA KITINYA',
+		},
+		{
+			code: 'CBA1.45',
+			description:
+				'COMMERCIAL BANK OF AFRICA & JOHN MORRIS OHAGA - CHARGE OVER L.R. NO 1108/88',
+		},
+		{
+			code: 'CBA1.46',
+			description:
+				'COMMERCIAL BANK OF AFRICA -BANKING FACILITIES TO NORAH AKONGO ABUDHO (LOAN)',
+		},
+		{
+			code: 'CBA1.47',
+			description: 'COMMERCIAL BANK OF AFRICA & DAVID OKETCH OWINO (BORROWER)',
+		},
+		{
+			code: 'CBA1.48',
+			description:
+				'COMMERCIAL BANK OF AFRICA BANKING FACILITIES TO PAMELA ACHIENG ONYANGO OVER HOUSE NO. 5 ON LR NO 209/7722 NBI',
+		},
+		{
+			code: 'CBA1.49',
+			description:
+				'COMMERCIAL BANK OF AFRICA -BANKING FACILITIES TO SYLVIA ENDESIA ELAVISA (BORROWER): LEGAL CHARGE OVER FLAT NO. 402 BLOCK P ON L.R. NO. 12715/631 BLUE BELLS GARDENS MLOLONGO',
+		},
+		{
+			code: 'CBA1.5',
+			description: 'EUNICE WANZA KURIA - TAKE OVER FACILITIES BY KCB',
+		},
+		{
+			code: 'CBA1.50',
+			description: 'COMMERCIAL BANK OF AFRICA -BANKING FACILITIES TOBILL STEVES OWUOR',
+		},
+		{
+			code: 'CBA1.51',
+			description:
+				"COMMERCIAL BANK OF AFRICA -TAKE OVER OF FACILITIES TO JANET AGUTU OCHIENG' & JOHN PATRICK OCHIENG' OWINO BY KENYAN PIPELINE SECURED BY CHARGE OVER RESIDENTIAL PROPERTY HOUSE NO. G6-7 ON L.R. 12422/23",
+		},
+		{
+			code: 'CBA1.52',
+			description: 'COMMERCIAL BANK OF AFRICA',
+		},
+		{
+			code: 'CBA1.53',
+			description: 'GILBERT TINDIVALE NDUGUYU',
+		},
+		{
+			code: 'CBA1.54',
+			description:
+				'HCCC NO. 241 OF 2011: JOSEPH ALUR OTIENO VS ALICE WANJIKU KARIUKI & 2 OTHERS',
+		},
+		{
+			code: 'CBA1.55',
+			description: 'BANKING FACILITY TO TRUE BLAQ LIMITED',
+		},
+		{
+			code: 'CBA1.56',
+			description: 'BANKING FACILITIES TO ITALIAN KITCHENS LIMITED',
+		},
+		{
+			code: 'CBA1.57',
+			description: 'BANKING FACILITIES TO NANCY NJOKI NTINU',
+		},
+		{
+			code: 'CBA1.58',
+			description: 'BANKING FACILITIES TO ROSEMARY AYITSO',
+		},
+		{
+			code: 'CBA1.59',
+			description:
+				'BANKING FACILITIES TO SARAH GATITU CHEGE, CHARGE OVER LAND REFERENCE NUMBER 209/10481/13 FOR KSHS 5,450,000',
+		},
+		{
+			code: 'CBA1.6',
+			description: 'FLORENCE NDILO SIMBA -  CHARGE OVER L.R. NO. BL/3/1354, MAVOKO TOWN',
+		},
+		{
+			code: 'CBA1.60',
+			description:
+				'BANKING FACILITIES TO PETER NJOROGE NDEGWA, CHARGE OVER TITLE NUMBER KAJIADO/KAPUTIEI NORTH/91836',
+		},
+		{
+			code: 'CBA1.61',
+			description:
+				'BANKING FACILITIES TO ERIC NGALI MUTINDA, CHARGE OVER APARTMENT NO. C5, ERECTED ON L.R. NO. 7149/122, MOMBASA ROAD, NAIROBI',
+		},
+		{
+			code: 'CBA1.62',
+			description:
+				'BANKING FACILITIES TO ERIC NGALI MUTINDA, CHARGE OVER APARTMENT NO. C5, ERECTED ON L.R. 7149/122, MOMBASA ROAD, NAIROBI',
+		},
+		{
+			code: 'CBA1.63',
+			description: 'BANKING FACILITIES TO SEBASTIAN MUNENGI MULANDI',
+		},
+		{
+			code: 'CBA1.64',
+			description:
+				'BANKING FACILITIES TO JULIUS NYERERE NGESA, CHARGE OVER NAIROBI BLOCK 72/985',
+		},
+		{
+			code: 'CBA1.65',
+			description:
+				'HCCC NO. 593 OF 2008 STIRLING CIVIL ENGINEERING, JITENDRA CHOTABHAI PATEL & NAVEEN PARKASH SHARMA -VS- CBA & HCCC NO. 631 OF 2008 CBA -VS- JITENDRA CHOTABHAI PATEL & NAVEEN PARKASH SHARMA',
+		},
+		{
+			code: 'CBA1.66',
+			description:
+				'CIVIL SUIT NO. 593 OF 2008: STIRLING CIVIL ENGINEERING LTD & 2 OTHERS VS COMMERCIAL BANK OF AFRICA LIMITED',
+		},
+		{
+			code: 'CBA1.67',
+			description:
+				'BANKING FACILITIES TO JOHN OHAGA, CHARGE OVER L.R. NO. 1008/88 (ORIGINAL NUMBER 1008/4/5), MIOTONI ROAD, KAREN, NAIROBI',
+		},
+		{
+			code: 'CBA1.68',
+			description: 'CREDIT FACILITY TO KAREN ENTERPRISES LIMITED',
+		},
+		{
+			code: 'CBA1.69',
+			description:
+				'BANKING FACILITIES TO ISABELLA MANDI, CHARGE OVER FLAT NO. D801, L.R. NO. 209/2996, NAIROBI',
+		},
+		{
+			code: 'CBA1.7',
+			description: 'EUNICE NYAWEGA MARANGA',
+		},
+		{
+			code: 'CBA1.70',
+			description:
+				'BANKING FACILITIES TO ENGINEERING DEVELOPMENT LIMITED, CHARGE OVER L.R. NOS 12596/43 & 12596/44, NAIROBI',
+		},
+		{
+			code: 'CBA1.71',
+			description: 'BANKING FACILITIES TO FRANCIS NDEGWA WAINAINA',
+		},
+		{
+			code: 'CBA1.72',
+			description: 'JUDICIAL REVIEW APPLICATION',
+		},
+		{
+			code: 'CBA1.73',
+			description: 'BANKING FACILITIES TO DAVID IRERI',
+		},
+		{
+			code: 'CBA1.74',
+			description: 'BANKING FACILITIES TO JUDITH JEBET KIPTOO,L.R. NO.NGONG/NGONG/50828',
+		},
+		{
+			code: 'CBA1.75',
+			description: 'BANKING FACILITIES TO JAYNE EVE AWINO OGENDO',
+		},
+		{
+			code: 'CBA1.76',
+			description:
+				'BANKING FACILITIES TO DEBORAH LILIAN ACHIENG AMADI,CHARGE OVER APT,NO.9,BLOCK 24,ERECTED ON LR.NO.12715/288,MLOLONGO,360 DEGREES,PHASE II',
+		},
+		{
+			code: 'CBA1.77',
+			description:
+				'BANKING FACILITIES TO ROBERT NDUNGU KARURU,CHARGE OVER RUIRU/RUIRU/KIU BLOCK 5/2319 THIKA',
+		},
+		{
+			code: 'CBA1.78',
+			description:
+				'BANKING FACILITIES TO ROBERT NDUNGU KARURU ("THE BORROWER") - FIRST RANKING LEGAL CHARGE OVER TITLE NO. RUIRU/RUIRU/KIU BLOCK 5/2319, THIKA',
+		},
+		{
+			code: 'CBA1.79',
+			description:
+				"BANKING FACILITIES TO ST.CHRISTOPHER'S HOLDINGS LIMITED OVER LAND REFERENCE NUMBER 1055/74,1055/75 & 1055/76",
+		},
+		{
+			code: 'CBA1.8',
+			description: 'RAI PLYWOODS (K) LTD - DEBENTURE OVER ALL THE ASSETS',
+		},
+		{
+			code: 'CBA1.80',
+			description:
+				'BANKING FACILITIES TO WILFRED RAPANDO & ESTHER NEKESA OGUTU,CHARGE OVER MAISONETTE.NO.41,ERECTED ON TITLE NO.KJD/KITENGELA/76873',
+		},
+		{
+			code: 'CBA1.81',
+			description:
+				"BANKING FACILITIES TO AGUNGU'RAPHAEL OWINO-CHARGE OVER APARTMENT NO. C18,ERECTED ON PORTION OF L.R . NO.1/249,NAIROBI",
+		},
+		{
+			code: 'CBA1.83',
+			description: 'BANKING FACILITIES TO INVISIBLE CROWN LIMITED',
+		},
+		{
+			code: 'CBA1.84',
+			description: 'BANKING FACILITIES TO AXLE HOLDINGS LIMITED.',
+		},
+		{
+			code: 'CBA1.85',
+			description:
+				'LEGAL OPINION ON THE STRENGTH OF FINASTRA GLOBAL LIMITED\'S ("FINASTRA")CLAIMS OVER ALLEGATIONS OF NON-COMPLIANCE AND OVER-USAGE OF THE CREDIT QUEST SOFTWARE',
+		},
+		{
+			code: 'CBA1.86',
+			description:
+				'BANKING FACILITIES TO WALTER NYAMOKO ONCHWARI & JUDITH NYABOKE ONCHWARI CHARGE OVER APARTMENT NO. C7, 3RD FLOOR,BLOCK C, LR. NO. 330/250,NAIROBI.',
+		},
+		{
+			code: 'CBA1.87',
+			description: 'BANKING FACILITIES TO THAMANI CONCIERGE LTD',
+		},
+		{
+			code: 'CBA1.88',
+			description:
+				'BANKING FACILITIES TO GALILEO ABUR OMONDI OVER TITLE NUMBER KARAI/KARAI/2910',
+		},
+		{
+			code: 'CBA1.89',
+			description: 'Banking facilities to Eunice Wambui Ndiang’ui',
+		},
+		{
+			code: 'CBA1.9',
+			description:
+				'LINDA DINA ACHIENG - CHARGE OVER APARTMENT MA10 ON L.R NO. NGONG/36787 & 36787 KAJIADO',
+		},
+		{
+			code: 'CBA1.90',
+			description:
+				'BANKING FACILITIES TO CHARLES DAVID OMONDI, CHARGE OVER FLAT NO. B, BLOCK 2, L.R. NO.209/9661/13, NAIROBI',
+		},
+		{
+			code: 'CBA2.1',
+			description:
+				'COMMERCIAL BANK OF AFRICA/NIC BANK LTD/NATIONAL LAND COMMISSION & OTHERS -VS- APEX STEEL LTD: ELC PETITION NO. 1028 OF 2015 (NBO)',
+		},
+		{
+			code: 'CBG1.1',
+			description: 'D.J.  LOWE & COMPANY LTD -VS- BANQUE INDOSUEZ',
+		},
+		{
+			code: 'CBG1.1/001',
+			description: 'HC APPL. 63 OF 2016 BANQUE INDOSUEZ VS REGISTRAR OF TITLES, MSA',
+		},
+		{
+			code: 'CBG1.2',
+			description:
+				'MISC CIVIL APP. NO. 296 OF 2015: C.B. GOR & GOR ADVOCATES VS ORIENTAL COMMERCIAL BANK LTD',
+		},
+		{
+			code: 'CBG2.1',
+			description: 'C.B GOR &GOR ADVOCATES LEASE OF MOMBASA BLOCK XII/17,18,19',
+		},
+		{
+			code: 'CBG2.2',
+			description: 'JR. 43 OF 2015 ACACIA HOLDINGS LIMITED',
+		},
+		{
+			code: 'CBG2.4',
+			description: 'GENERAL FILE',
+		},
+		{
+			code: 'CBG3.1',
+			description: 'C.B.GOR&GOR ADVOCATES VS BANK OF INDIA',
+		},
+		{
+			code: 'CBK1.1',
+			description:
+				'ROBERT OKERI OMBEKA VS CENTRAL BANK OF KENYA: HCCC NO. 3611 OF 1995 - CIVIL APPEAL NO 105 OF 2007',
+		},
+		{
+			code: 'CBK1.10',
+			description: 'CENTRAL BANK VS PETER OKUTOYI',
+		},
+		{
+			code: 'CBK1.100',
+			description:
+				'E&LRC 453 OF 2022 - STEPHEN NDIRANGU NDEGWA VS. CBK, INSPECTOR GENERAL OF POLICE AND THE A.G.',
+		},
+		{
+			code: 'CBK1.101',
+			description:
+				'HCCC NO. E154 OF 2022 - WILLIAM KABOGO GITAU VS. CENTRAL BANK OF KENYA & 3 OTHERS.',
+		},
+		{
+			code: 'CBK1.102',
+			description: 'PETITION NO. E300 OF 2022: OUR OPEN MARKET LIMITED VS. CBK ',
+		},
+		{
+			code: 'CBK1.103',
+			description: 'TERMINATION OF HENRY K. ROTICH',
+		},
+		{
+			code: 'CBK1.104',
+			description: 'CAMILLA CHEBET TALAM',
+		},
+		{
+			code: 'CBK1.105',
+			description:
+				'HCCC NO. E324 OF 2022 ROBERT LEMERKETO -VS- ECOBANK KENYA LIMITED & CENTRAL BANK OF KENYA',
+		},
+		{
+			code: 'CBK1.106',
+			description:
+				'KITUO CHA SHERIA, BIZIMANA SCHANDRACK BOZI & ANOTHER VS. CENTRAL BANK OF KENYA.',
+		},
+		{
+			code: 'CBK1.107',
+			description:
+				'HIGH COURT OF KENYA AT BUNGOMA CONSTITUTIONAL PETITION NUMBER 11 OF 2022: FRANCIS W. LUKORITO VS THE CENTRAL BANK OF KENYA AND THE ATTORNEY GENERAL',
+		},
+		{
+			code: 'CBK1.108',
+			description:
+				'PETITION NO. E471 OF 2022: DR. MARTIN ELIA LOMURO VS. THE CO-OPERATIVE BANK OF KENYA LIMITED AND CBK.',
+		},
+		{
+			code: 'CBK1.109',
+			description: 'INSURANCE CLAIM NO. CBK STAFF C/NRB/2525/2016/56632 MIKE LANZEY WANDU.',
+		},
+		{
+			code: 'CBK1.11',
+			description:
+				'JOHN HARUN MWAU T/A JOHN HARUN GROUP VS ANDREW MULLEI/CENTRAL BANK OF KENYA: HCCC NO 283 OF 2007',
+		},
+		{
+			code: 'CBK1.110',
+			description: 'IMPLEMENTATION OF THE PERSONS WITH DISABILITIES ACT, 2003',
+		},
+		{
+			code: 'CBK1.111',
+			description:
+				'HCC NO. E535 OF 2022; BENARD ODERO OKELLO & KEVIN NDOHO MACHARIA AND ANOR .VS. ATTORNEY GENERAL, THE OFFICE OF THE PRESIDENT, PARLIAMENTARY BUDGET OFFICE, CS NATIONAL TREASURY, CENTRAL BANK AND OTHERS',
+		},
+		{
+			code: 'CBK1.112',
+			description:
+				'ELRC HIGH COURT, NAIROBI, CAUSE NO.E888 OF 2022: AGNES WANJIKU WAWERU V CENTRAL BANK OF KENYA',
+		},
+		{
+			code: 'CBK1.113',
+			description:
+				'HCCC NO. E124 OF 2023 ISHMAEL NYARIBO t/a I. N. NYARIBO & CO. ADVOCATES -VS- PUBLIC SERVICE COMMISSION, THE ATTORNEY GENERAL & CENTRAL BANK OF KENYA',
+		},
+		{
+			code: 'CBK1.114',
+			description: 'MOBILE PAY LIMITED',
+		},
+		{
+			code: 'CBK1.115',
+			description:
+				'HCCC NO. E028 OF 2023 MOBILE PAY LIMITED -VS- GOVERNOR, CENTRAL BANK OF KENYA & CENTRAL BANK OF KENYA',
+		},
+		{
+			code: 'CBK1.12',
+			description: 'CHASTERHOUSE BANK LTD',
+		},
+		{
+			code: 'CBK1.13',
+			description:
+				'JOHANNES JOHN VS CHARTERHOUSE BANK LTD, ROSE DETHO & CENTRAL BANK OF KENYA: HCCC NO. 35 OF 2007',
+		},
+		{
+			code: 'CBK1.14',
+			description:
+				'CENTRAL BANK OF KENYA VS GIRO COMMERCIAL BANK LTD & 4 OTHERS: CIVIL CASE NO. 204 OF 2004',
+		},
+		{
+			code: 'CBK1.15',
+			description:
+				'KITUO CHA SHERIA- V-S CENTRAL BANK OF KENYA & OTHERS: HC PETITION NO. 292 OF 2011 (NBO)',
+		},
+		{
+			code: 'CBK1.16',
+			description:
+				'AN ARBITRATION BETWEEN ZADDOCK FURNITURE SYSTEMS AND CENTRAL BANK OF KENYA',
+		},
+		{
+			code: 'CBK1.18',
+			description:
+				'TRUST BANK LTD VS CENTRAL BANK OF KENYA LTD & OTHERS: HCCC NO. 875 OF 2001 NBO',
+		},
+		{
+			code: 'CBK1.19',
+			description:
+				'REPUBLIC VS MINISTER OF FINANCE & OTHERS: HC. MISC. APPL. NO. 365 OF 2012 (NBO) (JRD)',
+		},
+		{
+			code: 'CBK1.2',
+			description: 'CENTRAL BANK VS JAMES KABINGA KIBUGU',
+		},
+		{
+			code: 'CBK1.20',
+			description:
+				'AWAKE AFRICA VS GOVERNOR OF THE CENTRAL BANK OF KENYA & 7 OTHERS: HC PET. NO 47 OF 2012',
+		},
+		{
+			code: 'CBK1.21',
+			description:
+				'TONY KETER VS STANLEY KANGETHE KINYANJUI & 3 OTHERS: HC ELC PET. NO. 90 OF 2012 (NBO)',
+		},
+		{
+			code: 'CBK1.22',
+			description:
+				'LYDIA WAMUYU MACHARIA -VS- BOARD OF TRUSTEES, CENTRAL BANK OF KENYA PENSION FUND: HCCC NO. 37 OF 2010',
+		},
+		{
+			code: 'CBK1.23',
+			description:
+				'CENTRAL BANK OF KENYA & 2 OTHERS -VS- TSAVO SECURITIES LTD & 2 OTHERS: HC PETITION NO. 118 OF 2013 (NBO)- SATUTORY NOTICE OF SALE TO FT  MWENI',
+		},
+		{
+			code: 'CBK1.24',
+			description:
+				'CONSOLATA NABWIRE WADIEIEAUA - MORTGAGE OVER FLAT NO. A45 ON L.R. NO. 12715/290',
+		},
+		{
+			code: 'CBK1.25',
+			description:
+				'CENTRAL BANK OF KENYA & ROSE DETHO -VS- HIDAYA MOHAMED LOO & OTHERS: CIVIL APPEAL NO 313 OF 2006 (MSA)',
+		},
+		{
+			code: 'CBK1.26',
+			description:
+				'CENTRAL BANK OF KENYA & ANOTHER -VS- RATILAL AUTO MOBILES & 10 OTHERS: CIVIL APPEAL NO 22 OF 2006',
+		},
+		{
+			code: 'CBK1.27',
+			description:
+				'CENTRAL BANK OF KENYA & ROSE DETHO -VS- AHMED NASSIR: CIVIL APPEAL NO 312 OF 2006 (MSA)',
+		},
+		{
+			code: 'CBK1.28',
+			description:
+				'BEVAJ FURNITURE LTD/CENTRAL BANK OF KENYA VS FURSYS K. LIMITED & 2 OTHERS (JR 399/2014) (JR 401/2013)',
+		},
+		{
+			code: 'CBK1.29',
+			description:
+				'CENTRAL BANK OF KENYA & OTHERS -VS- AZIM TAIBJEE & OTHERS: HC PETITION NO. 1173 OF 2007 (NBO)',
+		},
+		{
+			code: 'CBK1.3',
+			description: 'DAVIES KIVIEKO MUTETI -VS- CENTRAL BANK OF KENYA',
+		},
+		{
+			code: 'CBK1.30',
+			description:
+				'STEP UP HOLDINGS K LTD & OTHERS -VS- CENTRAL BANK OF KENYA & OTHERS: HC PET. NO 29 OF 2014 (NAKURU)',
+		},
+		{
+			code: 'CBK1.31',
+			description:
+				'CENTRAL BANK OF KENYA LTD/DEVELOPMENT BANK OF KENYA -VS- PALM HEALTHCARE INTERNATIONAL LTD: HCCC NO. 264 OF 2010 (NBO)',
+		},
+		{
+			code: 'CBK1.32',
+			description:
+				'ODERA OBAR & CO ADVOCATES - CHARTERHOUSE BANK LTD: CHARTERHOUSE BANK -VS- CENTRAL BANK & OTHERS: HCCC NO 329 OF 2006 & MISC. APPL. NO. 365 OF 2014',
+		},
+		{
+			code: 'CBK1.33',
+			description: 'central bank of kenya  ( Rose Detho)',
+		},
+		{
+			code: 'CBK1.34',
+			description: 'CMCC NO. 8827 OF 2005 DEOGRATIUS K OKUMU VS CENTRAL BANK OF KENYA',
+		},
+		{
+			code: 'CBK1.35',
+			description: 'CENTRAL BANK OF KENYA',
+		},
+		{
+			code: 'CBK1.36',
+			description:
+				'CIVIL CASE NO. 644 OF 2005 KENYA AKIBA MICROFINANCE LIMITED VS EZEKIEL CHEBII & 14 OTHERS',
+		},
+		{
+			code: 'CBK1.37',
+			description: 'ARTHUR M TUMWA',
+		},
+		{
+			code: 'CBK1.38',
+			description: 'MIDDLE TOWN FOREX BUREAU LTD',
+		},
+		{
+			code: 'CBK1.39',
+			description:
+				'ALEX MAUTIA MORUME & ANOTHER -VS- CENTRAL & THE ATTORNEY GENERAL: HCCC NO. 250 OF 2015 (NBO)',
+		},
+		{
+			code: 'CBK1.4',
+			description: 'ESTHER MIRIAM WANGARI MINDO VS CENTRAL BANK OF KENYA',
+		},
+		{
+			code: 'CBK1.40',
+			description:
+				'GODFREY PAUL OKUTOYI VS HABIL OLAKA & CENTRAL BANK OF KENYA: HC PETITION NO. 457 OF 2015',
+		},
+		{
+			code: 'CBK1.41',
+			description: 'DUBAI BANK IN KENYA LTD (IN LIQUIDATION) AND CENTRAL BANK OF KENYA.',
+		},
+		{
+			code: 'CBK1.42',
+			description:
+				'CONCERNED CITIZEN KENYA/BRADLEY OUMA -VS-THE GOVERNOR, CENTRAL BANK OF KENYA & 5 OTHERS: HC. MISC. PET. NO 449 OF 2014 (NBO)',
+		},
+		{
+			code: 'CBK1.43',
+			description: 'H.C. MISC APPN. NO. 78 OF 2016 KENYA DEPOSIT INSURANCE CORPORATION',
+		},
+		{
+			code: 'CBK1.44',
+			description:
+				'NAIROBI C.A NO. 158 OF 2010 SHEETAL KAPILA & ANOR VS SUDHIR K SHAH & 27 OTHERS',
+		},
+		{
+			code: 'CBK1.45',
+			description: 'NAIROBI ELRC CAUSE NO 50 OF 2016',
+		},
+		{
+			code: 'CBK1.46',
+			description: 'H.C. MISC. APPN. NO. 29 OF 2016 KENYA DEPOSIT INSURANCE CORPORATION',
+		},
+		{
+			code: 'CBK1.47',
+			description: 'H.C. MISC APPN NO. 60 OF 2016 KENYA DEPOSIT INSURANCE CORPORATION',
+		},
+		{
+			code: 'CBK1.49',
+			description:
+				'ELRC NO. 2263 OF 2012 ALICE NJERI WAMUIGA (FORMERLY HCC NO. 1930 OF 1999)',
+		},
+		{
+			code: 'CBK1.5',
+			description: 'PETRONILA NAFULA KHAEMBA -VS- AGI & CENTRAL BANK OF KENYA',
+		},
+		{
+			code: 'CBK1.50',
+			description: 'H.C. MISC APPN. NO. 61 OF 2016 KENYA DEPOSIT INSURANCE CORPORATION',
+		},
+		{
+			code: 'CBK1.51',
+			description: 'ROSE FLORENCE WANJIRU VS CENTRAL BANK OF KENYA & 2 OTHERS',
+		},
+		{
+			code: 'CBK1.52',
+			description: 'DUBAI BANK IN LIQUIDATION',
+		},
+		{
+			code: 'CBK1.53',
+			description:
+				'CIVIL APPEAL NO. 77 OF 2014: JOSEPH ILELI KIKUNDU VS CENTRAL BANK OF KENYA',
+		},
+		{
+			code: 'CBK1.54',
+			description: 'HCCC NO. 622 OF 2007: ISAAC GITHUTHU VS TRUST FINANCE LIMITED',
+		},
+		{
+			code: 'CBK1.55',
+			description: 'CENTRAL BANK OF KENYA GENERAL MATTERS',
+		},
+		{
+			code: 'CBK1.56',
+			description: 'HCCC NO. 1299/2003 WILSON K KIPKOTI VS CBK & ANOR',
+		},
+		{
+			code: 'CBK1.57',
+			description: 'HCCC NO. 1871 OF 1999: CATHERINE N KINUTHIA & 2 OTHERS VS CBK',
+		},
+		{
+			code: 'CBK1.58',
+			description: 'HCCC NO. 587/1998 CHESILYOT ENT. LTD VS CENTRAL BANK OF KENYA & 3 OTHERS',
+		},
+		{
+			code: 'CBK1.59',
+			description:
+				'H.C. MISC CIVIL APPLN NO. 437/2004 RPUBLIC OF KENYA VS THE COMMISSIONER OF INCOME TAX & OTHERS',
+		},
+		{
+			code: 'CBK1.6',
+			description:
+				'CENTRAL BANK OF KENYA VS THOMAS OWEN ONDIEKI & ANOTHER: CIVIL APPEAL NO. 182 OF 2011 IN HCCC NO.175 OF 1999',
+		},
+		{
+			code: 'CBK1.60',
+			description: 'HCCC NO. 5/2007 DAVID JOHNSON VS CHARTERHOUSE BANK LTD & 2 OTHERS',
+		},
+		{
+			code: 'CBK1.61',
+			description: 'HCCC NO. 292/2008 HEZEKIAH W. GICHOHI VS CENTRAL BANK OF KENYA & OTHERS',
+		},
+		{
+			code: 'CBK1.62',
+			description: 'INSOLVENCY-DUBAI BANK (IN LIQUIDATION)',
+		},
+		{
+			code: 'CBK1.63',
+			description:
+				'CMCC NO. 1421 OF 2007: JOSEPH KABIRI NDIRANGU VS KENYA AKIBA MICRO FINANCE AND ANOTHER',
+		},
+		{
+			code: 'CBK1.64',
+			description:
+				'PAUL NGARI NGUGI VS CENTRAL BANK OF KENYA LTD MISC. CIVIL APPLICATION NO. 1455 OF 1994',
+		},
+		{
+			code: 'CBK1.65',
+			description:
+				"HERBERT OCHOLLA OJWANG' AND TWO OTHERS VS CENTRAL BANK AND TWO OTHERS MISC CIVIL SUIT 205 OF 2003.",
+		},
+		{
+			code: 'CBK1.66',
+			description:
+				'CENTRAL BANK OF KENYA LTD MS.MARY WACEKE MUIA.UNLAWFUL TERMINATION OF CONTRACT.',
+		},
+		{
+			code: 'CBK1.67',
+			description:
+				'CIVIL CASE NO. 482/2014 (O.S.) NJUCA CONSOLIDATED CO. LTD & OTHERS VS CBK & ANOR',
+		},
+		{
+			code: 'CBK1.68',
+			description: 'DUBAI BANK VS TORINO ENTERPRISES LIMITED',
+		},
+		{
+			code: 'CBK1.69',
+			description:
+				'CIVIL APPLICATION NO. 285 OF 2015: MUEMA KITULU & CO. ADVOCATES VS KENYA DEPOSIT INSURANCE CORPORATION',
+		},
+		{
+			code: 'CBK1.7',
+			description: 'PHILIP ACHOKI NDUBI VS AKIBA MICRO FINANCE: MISC CAUSE NO 54 OF 2006',
+		},
+		{
+			code: 'CBK1.70',
+			description: 'CHASE BANK (K) LIMITED (In Receivership)',
+		},
+		{
+			code: 'CBK1.71',
+			description:
+				'KITALE ELC CASE NO. 116 OF 2017: KUZA FARMS & ALLIED LTD VS DUBAI BANK (K) LTD (IN LIQUIDATION)',
+		},
+		{
+			code: 'CBK1.72',
+			description:
+				'CIVIL SUIT NO. 213 OF 1991 - JACARANDA INVESTMENTS LTD VS TRADE BANK LIMITED & 2 OTHERS',
+		},
+		{
+			code: 'CBK1.73',
+			description:
+				'CIVIL CASE NO. 6087 OF 2017: EMILY MINAYO CHANGILWA VS MANAGING DIRECTOR EQUITY BANK (KENYA) LIMITED & 3 OTHERS',
+		},
+		{
+			code: 'CBK1.74',
+			description:
+				'CBK - HC JR PETITION NO. 75 OF 2010: CRESCENT CONSTRUCTION COMPANY LTD VS ROSE DETHO & 2 OTHERS',
+		},
+		{
+			code: 'CBK1.75',
+			description: 'CBK:HCCC NO.813 OF 1999:ISAAC S. GITHUTHU VS.TRUST FINANCE LIMITED',
+		},
+		{
+			code: 'CBK1.76',
+			description: 'DISCIPLINARY PROCEEDINGS AGAINST MR.HARRISON NYENDE MUMIA-STAFF NO.3178',
+		},
+		{
+			code: 'CBK1.77',
+			description: 'E&LRC NO. 1380 OF 2018 STANLEY IMBAYI MUSONYE VS. CENTRAL BANK OF KENYA.',
+		},
+		{
+			code: 'CBK1.78',
+			description:
+				'NYERI MISC APPLICATION NO.128 OF 2003 ESTHER MIRRIAM WANGARI MINDO VS CENTRAL BANK OF KENYA & ANOTHER',
+		},
+		{
+			code: 'CBK1.79',
+			description:
+				'PETITION NO. 220 OF 2019. BARBARA GEORGINA KHAEMBA VS. CENTRAL BANK OF KENYA & 2 OTHERS',
+		},
+		{
+			code: 'CBK1.8',
+			description: 'JOHN HARUN MWAU VS ANDREW MULLEI, CENTRAL BANK OF KENYA & 2 OTHERS',
+		},
+		{
+			code: 'CBK1.80',
+			description:
+				'PETITION NO. 210 OF 2019: HON. SIMON MBUGUA VS. CENTRAL BANK OF KENYA & OTHERS  AND PETITION NO. 214 OF 2019: OKIYA OTATA OKOITI VS. CENTRAL BANK OF KENYA & OTHERS.',
+		},
+		{
+			code: 'CBK1.81',
+			description:
+				'CIVIL APPEAL NO. 490 OF 2019 OKIYA OMTATAH OKOITI -VS- CBK, DR. PATRICK NJOROGE, THE HON. ATTORNEY GENERAL & SIMON MBUGUA.',
+		},
+		{
+			code: 'CBK1.82',
+			description:
+				'ELC CASE NO. 2267 OF 2007 (O.S) BEATRICE WAMBUI MUTURI VS. LUBUMBULA KWATEMBA & OTHERS.',
+		},
+		{
+			code: 'CBK1.83',
+			description: "PROF. KINANDU MURAGU'S  EMPLOYMENT CONTRACT",
+		},
+		{
+			code: 'CBK1.84',
+			description:
+				'HCCC NO.687 OF 2006: KARIUKI MUIGUA T/A KARIUKI MUIGUA & CO. ADVOCATES VS. ANDREW MULLEI & ANOTHER',
+		},
+		{
+			code: 'CBK1.85',
+			description:
+				'CONSTITUTIONAL PETITION NO. 56 OF 2020 MICHAEL WANJIHIA -VS- CENTRAL BANK OF KENYA AND THE ATTORNEY GENERAL',
+		},
+		{
+			code: 'CBK1.86',
+			description:
+				'DIASY ONGUTI NAMACHANJA vs LUCH IJAI BUREZA NAMACHANJA, CBK & LEE FUNERAL HOME',
+		},
+		{
+			code: 'CBK1.87',
+			description:
+				'HCCC NO.E274 OF 2020: DEBORAH NGUGI KARANJA VS. FAMILY BANK LTD AND CENTRAL BANK OF KENYA',
+		},
+		{
+			code: 'CBK1.88',
+			description:
+				'HCCC NO.49 OF 2020 – GULF AFRICAN BANK LIMITED VS. NICKSON OKOTH OGONJI (T/A CRYSTAL COMPUTERS TECHNOLOGY) AND CENTRAL BANK OF KENYA',
+		},
+		{
+			code: 'CBK1.89',
+			description:
+				'ELDORET ELRC NO.47 OF 2020 - WEBB DONALD OLILLO VS CENTRAL BANK OF KENYA.',
+		},
+		{
+			code: 'CBK1.89/001',
+			description: 'ELDORET EACC CASE NO. 4 OF 2020: REPUBLIC -VS- DONALD OLILLO',
+		},
+		{
+			code: 'CBK1.9',
+			description:
+				'CENTRAL BANK OF KENYA & ROSE DETHO -VS-RATILAL AUTOMOBILES & OTHERS: CIVIL APPEAL NO 279 OF 2006',
+		},
+		{
+			code: 'CBK1.90',
+			description:
+				'CIVIL SUIT NO. E6072 OF 2020 – REGINA KAVUTHA FRANCIS VS. CENTRAL BANK OF KENYA & 3 OTHERS.',
+		},
+		{
+			code: 'CBK1.91',
+			description:
+				'THIKA ELC OS NO.8 OF 2021: NAOMI NIMAZURI ZANI & TWO OTHERS VS. LETTAS DEVELOPERS LIMITED & CENTRAL BANK OF KENYA.',
+		},
+		{
+			code: 'CBK1.92',
+			description:
+				'CHARTERHOUSE BANK LIMITED (IN LIQUIDATION) –REQUEST FOR INFORMATION BY DEPOSITORS',
+		},
+		{
+			code: 'CBK1.93',
+			description:
+				'MSC CRIMINAL APPLICATION NO. E1875 OF 2021 DIRECTORATE OF CRIMINAL INVESTIGATIONS VS. CENTRAL BANK OF KENYA & LIQUIDATOR CHARTERHOUSE BANK LIMITED',
+		},
+		{
+			code: 'CBK1.94',
+			description:
+				'HCCC 2977 OF 1993 KURIA WAMBUGU & OTHERS VS CENTRAL BANK OF KENYA AND ANOTHER',
+		},
+		{
+			code: 'CBK1.95',
+			description:
+				'HC PET NO. E362 OF 2020 MOSES WAFULA -VS- SAFARICOM LIMITED, THE HON. ATTORNEY GENER, CENTRAL BANK OF KENYA, THE CABINET SECRETARY FOR NATIONAL TREASURY AND COMPETITION AUTHORITY.',
+		},
+		{
+			code: 'CBK1.96',
+			description:
+				'HCCC NO. E708 OF 2021 SANJAY SHAH, MANOJ SHAH & CHARTER HOUSE BANK LTD VS. CBK, KDIC, NATIONAL POLICE SERVICE, DCI AND ATTORNEY GENERAL. ',
+		},
+		{
+			code: 'CBK1.96/001',
+			description:
+				'CIVIL APPLICATION NO.NAI.E273 OF 2022 CIVIL APPLICATION NO.NAI.E273 OF 2022 SANJAY SHAH, MANOJ SHAH & CHARTER HOUSE BANK LTD VS. CBK, KDIC, NATIONAL POLICE SERVICE, DCI AND ATTORNEY GENERAL.',
+		},
+		{
+			code: 'CBK1.97',
+			description:
+				'CASE NO.E889 OF 2021:OUR OPEN MARKET LIMITED & ANOR VS. CENTRAL BANK OF KENYA.',
+		},
+		{
+			code: 'CBK1.98',
+			description: 'ACCESS TO INFORMATION SUITS',
+		},
+		{
+			code: 'CBK1.99',
+			description:
+				'E&LRC CAUSE NO.E991 OF 2021 - GEOFFREY CHUNGULI MUDANYA VS. KENYA SCHOOL OF MONETARY STUDIES',
+		},
+		{
+			code: 'CBK2.1',
+			description: 'CENTRAL BANK OF KENYA',
+		},
+		{
+			code: 'CBL1.1',
+			description:
+				'CHARTER HOUSE BANK LTD - AJIT SINGH RANA: CHARGE OVER L.R NO. 209/8524/120: HCCC NO. 173 OF 2013',
+		},
+		{
+			code: 'CBL1.2',
+			description:
+				'MOHAMMED HASHAM ALI T/A KITALE AUTO SPARES VS CHARTER HOUSE BANK LTD: HC ELC NO 678 OF 2013',
+		},
+		{
+			code: 'CBL1.3',
+			description: 'CHARTERHOUSE  BANK LIMITED',
+		},
+		{
+			code: 'CBL1.4',
+			description:
+				'JOHN NDAMBUKI MUILU DISCHARGE OF CHARGE OVER LR NO. 205/60- RIVERSIDE DRIVE, NAIROBI',
+		},
+		{
+			code: 'CBL1.5',
+			description: 'SUNCITY EXHIBITORS',
+		},
+		{
+			code: 'CBL1.6',
+			description:
+				'KITALE:ELC CASE NO.187 OF 2017:MOHAMMED HARSHAM ALIMOHAMMED VS.CHARTER HOUSE BANK LTD (UNDER STATUTORY MANAGEMENT)',
+		},
+		{
+			code: 'CBL1.7',
+			description: 'REQUEST FOR INFORMATION',
+		},
+		{
+			code: 'CBL2.1',
+			description: 'CHARTERHOUSE BANK LTD VS FRANK KAMAU: HCCC NO. 263 OF 2008',
+		},
+		{
+			code: 'CBL2.2',
+			description:
+				'CHARTERHOUSE BANK LTD -VS- JAYENDRA .B. SOLANKI/SANGEETA JAYENDRA SOLANKI: HCCC NO. 440 OF 2015 (NBO): CHARGE ON L.R NO 209/10345/16/2',
+		},
+		{
+			code: 'CBL2.3',
+			description: 'CHARTERHOUSE BANK LTD -VS- SAVANNAH ACADEMY',
+		},
+		{
+			code: 'CBL2.4',
+			description:
+				'NAIROBI CIVIL CASE NO. E393 OF 2018 STINGRAY LIMITED VS. CHARTERHOUSE BANK LIMITED (UNDER STATUTORY MANAGEMENT) & ANOR',
+		},
+		{
+			code: 'CBL2.5',
+			description:
+				'KHAWAJA SOJAIL DEEN AND LUBNA KHAWAJA VS. CHARTERHOUSE BANK LTD (UNDER STATUTORY MANAGEMENT) AND CENTRAL BANK OF KENYA',
+		},
+		{
+			code: 'CBL3.1',
+			description: 'CHASE BANK  K LIMITED',
+		},
+		{
+			code: 'CBL3.2',
+			description: 'STATE BANK OF MAURITIUS (SBM) KENYA LIMITED. GENERAL ADVICE FILE.',
+		},
+		{
+			code: 'CBN1.1',
+			description: 'PROVISION OF LEGAL SERVICES',
+		},
+		{
+			code: 'CCB1.1',
+			description: 'PROVISION OF LEGAL ADVICE TO CONGREGATION OF CHRISTIAN BROTHERS.',
+		},
+		{
+			code: 'CCL1.1',
+			description: 'CARBACID CO2 LTD VS COUNTY GOVERNMENT OF KIAMBU',
+		},
+		{
+			code: 'CCL1.2',
+			description: 'ROYALTY PAYMENTS FOR CARBON DIOXIDE GAS SALES',
+		},
+		{
+			code: 'CCL1.3',
+			description: 'CARBACID CO2 LTD RESTRUCTURING OPINION',
+		},
+		{
+			code: 'CCL1.4',
+			description: 'COUNTY GOVERNMENT OF UASIN GISHU VS. CARBACID (CO2) LIMITED',
+		},
+		{
+			code: 'CCL1.5',
+			description:
+				'LEGAL OPINION ON SEIZURE OF REFILLABLE CO2 CYLINDERS FROM CARBACID (CO2) LIMITED BY THE ANTI-COUNTERFEIT AUTHORITY. ',
+		},
+		{
+			code: 'CCL1.6',
+			description: 'SUMMONS TO CARBACID (CO2) LIMITED BY PUBLIC ACCOUNTS COMMITTEE',
+		},
+		{
+			code: 'CCL1.7',
+			description:
+				'ADVISING IN RELATION TO THE TERMS AND CONDITIONS IN THE SOSIANI MINE LICENCE.',
+		},
+		{
+			code: 'CCL2.1',
+			description: 'CAREER CONNECTIONS LIMITED -INVESTIGATIONS BY AFRICA DEVELOPMENT BANK.`',
+		},
+		{
+			code: 'CCP1.1',
+			description:
+				'TRIBUNAL APPEAL NO. 006 OF 2019 RUNDA ASSOCIATION VS. KIWA RUNDA ASSOCIATION & 3 OTHERS',
+		},
+		{
+			code: 'CCP1.1/001',
+			description:
+				'ELC APPEAL NO. 60 OF 2019 - RUNDA ASSOCIATION Vs KINUTHIA MACHARIA AND 3 OTHERS',
+		},
+		{
+			code: 'CDL1.1',
+			description: 'KENYA REVENUE AUTHORITY VS. CARDIFF DEVELOPERS LIMITED',
+		},
+		{
+			code: 'CED1.1',
+			description:
+				'JOINT VENTURE AGREEMENT BETWEEN CEDAR HOLDINGS LIMITED AND VAAL REAL ESTATE LIMITED',
+		},
+		{
+			code: 'CED1.2',
+			description:
+				'JOINT VENTURE BETWEEN CEDAR HOLDINGS LIMITED AND PAKSA CONSTRUCTION  LIMITED',
+		},
+		{
+			code: 'CEG1.1',
+			description:
+				'COMPANY INCORPORATION,FINANCING ARRANGEMENT,DRAFTING AND REVIEW OF INVESTMENT DOCUMENTATION.',
+		},
+		{
+			code: 'CEM1.1',
+			description: 'COMPTOIR EXPORT MATIÈRES PREMIÈRES -VS- SWEET R US  LIMITED.',
+		},
+		{
+			code: 'CEN1.1',
+			description: 'CENTUNION',
+		},
+		{
+			code: 'CEN1.2',
+			description: 'CENTUNION CONTRACT AGREEMENT',
+		},
+		{
+			code: 'CEP1.1',
+			description:
+				'CHRIST EVANGELICAL PRESBYTERIAN CHURCH VS. GLOBAL FIELD EVANGELISM MINISTRIES',
+		},
+		{
+			code: 'CFL1.1',
+			description: 'PURCHASE OF KISUMU/MIWANI/MIWANI, BLOCK 1/19, 20 & 21 (ONYINORE)',
+		},
+		{
+			code: 'CFS1.1',
+			description: 'REVIEW OF A NEW COLLECTIVE INVESTMENT SCHEME INCORPORATION',
+		},
+		{
+			code: 'CGC1.1',
+			description: 'CHARTUR GROUP OF COMPANIES',
+		},
+		{
+			code: 'CGL1.1',
+			description: 'ADVICE ON DATA PRIVACY MATTERS',
+		},
+		{
+			code: 'CGS1.1',
+			description: 'CHEMILIL GREEN SOLAR ENERGY LTD',
+		},
+		{
+			code: 'CHA1.1',
+			description:
+				'DANJIT KAUR CHANNA FOR THE ESTATE OF THE LATE BALBIR KAUR W/O SAWARN SIGNH (DECEASED): HCSC 1270 OF 1989',
+		},
+		{
+			code: 'CHA2.1',
+			description: 'IN THE MATTER OF THE ESTATE OF MR. ANJUM KAMAL CHAUDRY',
+		},
+		{
+			code: 'CHA3.1',
+			description:
+				'MADATALI SABURALI CHATUR/DIRECTOR OF PUBLIC PROSECUTIONS -VS- REPUBLIC: HC. JR. MISC APPL. NO. 11 OF 2015 (NBO)',
+		},
+		{
+			code: 'CHA4.1',
+			description: 'TERMINATION OF EMPLOYMENT',
+		},
+		{
+			code: 'CHA4.2',
+			description:
+				'CHAKAVA - DISPUTE BETWEEN  ANDIA LAURA CHAKAVA AND ALPHA AFRICA ASSET MANAGERS',
+		},
+		{
+			code: 'CHA6.1',
+			description:
+				'PURCHASE OF HOUSE NO. 30C, RUNDA PARK LIMITED, TITLE NUMBER NAIROBI/BLOCK 112/2',
+		},
+		{
+			code: 'CHA7.1',
+			description:
+				'BENJAMIN KIRANDI .VS. CHARVI INVESTMENT LIMITED CIVIL SUIT NO. 123 OF 2020 ',
+		},
+		{
+			code: 'CHA7.2',
+			description: 'NAKURU E135 OF 2021: PETER MUTISO MULWA VS. CHARVI INVESTMENTS LIMITED.',
+		},
+		{
+			code: 'CHE1.1',
+			description: 'CHINA HUASHI ENTERPRISES CORPORATION',
+		},
+		{
+			code: 'CHE1.2',
+			description:
+				'CHINA HUASHI ENTERPRISES CORPORATION - DAVID NJOROGE KARIUKI & RUTH MUTHONI KARIUKI',
+		},
+		{
+			code: 'CHE2.1',
+			description: 'IN THE MATTER OF THE ESTATE OF LATE FREDRICK WAMBARI CHEGE (DECEASED)',
+		},
+		{
+			code: 'CHE3.1',
+			description: 'PURCHASE OF APARTMENT NUMBER C404 ON LR.NO.330/1375;NAIROBI (ASTORIA)',
+		},
+		{
+			code: 'CHE3.2',
+			description: 'THE CHESEREM’S GENERAL FILE  ',
+		},
+		{
+			code: 'CHE4.1',
+			description: 'CMCC NO.6147 OF 2005:IRENE CHEBET & ANOR VS.GEORGE MUGWIMA NJOROGE',
+		},
+		{
+			code: 'CHE5.1',
+			description: 'SALE/PURCHASE OF KARAI/RENGUTI/1568, KIAMBU',
+		},
+		{
+			code: 'CHE6.1',
+			description: 'DIVORCE BETWEEN PETER KIPTOO CHESEREM & VICTORIA NJAMBI KIBIRO',
+		},
+		{
+			code: 'CHE7.1',
+			description: 'SALE OF SHARES - GOLF COURSE ESTATES LIMITED (MIMOSA)',
+		},
+		{
+			code: 'CHE8.1',
+			description:
+				'MISC. CASE NO. E138 OF 2023 - WANGARI NDIRANGU & CO. ASSOCIATES VS. STEPHEN KARANJA CHEGE',
+		},
+		{
+			code: 'CHI1.1',
+			description: 'REPUBLIC -VS- GABRIEL WAFULA & 2 OTHERS: CRIMINAL CASE NO. 96 OF 2015',
+		},
+		{
+			code: 'CHL1.1',
+			description:
+				'SYNERGY INDUSTRIAL CREDIT LTD VS CAPE HOLDINGS LTD: HC MISC. CAUSE NO. 84 OF 2013',
+		},
+		{
+			code: 'CHL2.1',
+			description: 'CMC HOLDINGS LTD VS MARS GROUP KENYA',
+		},
+		{
+			code: 'CHL3.1',
+			description:
+				'LEASE -CANARIAN HOLDINGS LIMITED TO KENYA OIL COMPANY LIMITED PLOT NO. VIMN/3071 WAKF OF ALI AL-AMIN MAZRUI',
+		},
+		{
+			code: 'CHL3.2',
+			description:
+				'MSA E&LC NO. 300 OF 2018 CANARIAN HOLDINGS LIMITED VS MOHAMED SAID ABDULREHMAN (sued as the attorney of the Wakf of the late harith Al-Amin Bin Mazrui)',
+		},
+		{
+			code: 'CHL3.3',
+			description: 'CANARIAN HOLDINGS LIMITED VS. NATIONAL LAND COMMISION.',
+		},
+		{
+			code: 'CHL3.4',
+			description:
+				"TAT APPEAL AGAINST KRA's DISALLOWNACE OF TAX REFUND FOR KES. 2,248,833/- UNDER S.42",
+		},
+		{
+			code: 'CHL3.5',
+			description:
+				'SALE OF ONE-HALF UNDIVIDED SHARE IN ALL THOSE PROPERTIES BEING TITLE NUMBER NAIROBI/BLOCK 31/230 AND TITLE NUMBER NAIROBI/BLOCK 31/15, NAIROBI',
+		},
+		{
+			code: 'CHL4.1',
+			description: 'PROVISION OF LEGAL ADVISE ON MERGER RELIEF',
+		},
+		{
+			code: 'CHR1.1',
+			description:
+				'BANKING FACILITIES TO DESMOND ONYANGO MTULA AND CHRISTINE ATIENO MTULA – CHARGE OVER TITLE NUMBER NAIROBI/BLOCK 82/1166',
+		},
+		{
+			code: 'CHS1.1',
+			description: 'CHASE BANK (K) LTD - CALIM BY CANNON ASSURANCE (K) LTD',
+		},
+		{
+			code: 'CHS1.2',
+			description: 'CHASE BANK -VS- KEVIN GIKONYO MURIUKI: CMCC NO. 5553 OF 2015 (NBO)',
+		},
+		{
+			code: 'CHS2.1',
+			description:
+				'HCCC E019 OF 2022 - DR. AHMED YAKUB KALEBI VS. CERBA HEALTHCARE SAS & 4 OTHERS.',
+		},
+		{
+			code: 'CHT1.1',
+			description: 'LEGAL ADVISE AND DRAFTING CONSULTANCY AGREEMENT.',
+		},
+		{
+			code: 'CHU1.1',
+			description:
+				'IRENE JOYCE KITUR CHUMO VS COUNTY GOVERNMENT OF NAIROBI/CITY COUNCIL OF NAIROBI/EPCO BUILDERS LTD: HCCC NO. 547 OF 2013',
+		},
+		{
+			code: 'CIC1.1',
+			description:
+				"CIC INSURANCE GROUP LTD/HENRY K. NG'ANG'A -VS- JUDY WARUGURU MANGONDU: HCCC NO. 529 OF 2012",
+		},
+		{
+			code: 'CIC1.10',
+			description: 'DUNCAN GITUNGO KITHINJI VS. CIC GENERAL INSURANCE LIMITED',
+		},
+		{
+			code: 'CIC1.11',
+			description:
+				'M.C.E.L.R.C. NO. E1020 OF 2021 – POLINE WAWIRA NJOKA VS. CIC GENERAL INSURANCE LIMITED',
+		},
+		{
+			code: 'CIC1.12',
+			description: 'GRACE MUTHONI NDWIGA VS. CIC GENERAL INSURANCE',
+		},
+		{
+			code: 'CIC1.13',
+			description: 'WAMBUI NJOGU VS. CIC INSURANCE GROUP PLC',
+		},
+		{
+			code: 'CIC1.14',
+			description:
+				'HCCC NO. E507 OF 2022 - JOSEPH GAKAMI NDUNGI VS. COOPERATIVE BANK & CIC INSURANCE GROUP',
+		},
+		{
+			code: 'CIC1.15',
+			description:
+				'HCCHRPET/E006/2023 - CHRISPINE O. ODHIAMBO & HENRY N. SHITANDA VS. CIC GENERAL INSURANCE LTD',
+		},
+		{
+			code: 'CIC1.2',
+			description:
+				'CIC GENERAL INSURANCE LTD -VS- GEORGE ERNEST MWANGI WANJOHI: UNLAWFUL TERMINATION OF EMPLOYMENT',
+		},
+		{
+			code: 'CIC1.4',
+			description:
+				'GREGORY NYAKWARA VS CIC GENERAL INSURANCE LTD - UNLAWFUL TERMINATION OF EMPLOYMENT',
+		},
+		{
+			code: 'CIC1.6',
+			description: 'CIC GENERAL INSURANCE CO LTD VS FRANCISCA KYENGO',
+		},
+		{
+			code: 'CIC1.7',
+			description:
+				'HCCC NO. 38 OF 2012 GETRIO INSURANCE BROKERS VS CIC INSURANCE GROUP & ANOTHER',
+		},
+		{
+			code: 'CIC1.8',
+			description:
+				'MOMBASA CIVIL SUIT NO. 73 OF 2016 ABDULHAKIM ABDULLA MOHAMED & MULKYS IMPOTERS LIMITED VS KENYA POWER & LIGHTING COMPANY LIMITED',
+		},
+		{
+			code: 'CIC1.9',
+			description:
+				'ELRC CAUSE NO.610 OF 2018-DAVID KAGURU NJOROGE VS.CIC INSURANCE GROUP LTD',
+		},
+		{
+			code: 'CIC2.1',
+			description: 'CIC INSURANCE COMPANY',
+		},
+		{
+			code: 'CIC3.1',
+			description:
+				'- E&LRC NO. E696 OF 2021: LOUISE W. WANJOHI VS. CENTUM INVESTMENT COMPANY PLC.',
+		},
+		{
+			code: 'CIC3.2',
+			description: 'TERESIA MUTHONI VS. CENTUM INVESTMENT COMPANY PLC. .',
+		},
+		{
+			code: 'CIC4.1',
+			description:
+				'LEASE OVER PROPERTY WATERMARK BUSINESS PARK BY CONSELLATION INVESTMENT CO. LTD TO THE NATURE CONSERVANCY',
+		},
+		{
+			code: 'CIL1.1',
+			description:
+				'REA TRADING LIMITED, CAPITAL MARKETS TAKEOVER AND MERGERS REGULATIONS 2002',
+		},
+		{
+			code: 'CIL1.2',
+			description: 'TERESIA MUTHONI VS. CENTUM INVESTMENT COMPANY PLC',
+		},
+		{
+			code: 'CIL3.1',
+			description: 'AN APPEAL FROM THE HIGH COURT',
+		},
+		{
+			code: 'CIL4.1',
+			description:
+				'CAPITAL MARKETS TRIBUNAL APPEAL NO. 2 OF 2021 – KIUNA NGUGI KIUNA V. CAPITAL MARKETS AUTHORITY & OTHER',
+		},
+		{
+			code: 'CIL4.1/001',
+			description:
+				'HC PETITION NO 001 OF 2021 – LUCY MUTHONI NJOROGE V. CARBACID INVESTMENTS PLC & 5 OTHERS',
+		},
+		{
+			code: 'CIL4.1/002',
+			description:
+				'Judicial Review No. E066 of 2021 – Anju M. Shah & 6 Others v Capital Markets Authority.  ',
+		},
+		{
+			code: 'CIM1.1',
+			description: 'CIMMYT -VS- STAMO INVESTMENTS LTD',
+		},
+		{
+			code: 'CIT1.1',
+			description: 'CITY BANK N.A KENYA BRANCH -VS- KENYA REVENUE AUTHORITY',
+		},
+		{
+			code: 'CIT1.10',
+			description: 'GENERAL FILE',
+		},
+		{
+			code: 'CIT1.12',
+			description: 'BANKING FACILITIES TO ADRIAN KENYA LIMITED',
+		},
+		{
+			code: 'CIT1.13',
+			description:
+				'IN THE HIGH COURT OF KENYA AT NAIROBI - CONSTITUTIONAL AND HUMAN RIGHTS DIVISION, MISC APPLICATION NO.E025 OF 2022',
+		},
+		{
+			code: 'CIT1.3',
+			description: 'CITI BANK N.A KENYA',
+		},
+		{
+			code: 'CIT1.4',
+			description: 'DESBRO (KENYA) LTD-CITI BANK DEBENTURE',
+		},
+		{
+			code: 'CIT1.5',
+			description:
+				'CITY BANK N.A -VS- MARJORIE WASONGA NANGULU/ELIZABETH SYENDA MAKHULO: E&LC CAUSE NO. 1479 OF 2015',
+		},
+		{
+			code: 'CIT1.6',
+			description: 'CLAIM FOR UNFAIR TERMINATION OF KIOKO MUSYIMI',
+		},
+		{
+			code: 'CIT1.7',
+			description: 'BANKING FACILITIES TO MABATI ROLLING MILLS LIMITED',
+		},
+		{
+			code: 'CIT1.8',
+			description: 'BIFU VS CITIBANK NA ELRC NO. 169 OF 2017',
+		},
+		{
+			code: 'CIT1.9',
+			description:
+				'ELC CASE NO. 96 OF 2017: TIMOTHY ONDIEKI BERRE & ANOR VS JOHN LAWRENCE MWANGI MUGO & OTHERS',
+		},
+		{
+			code: 'CIT1.9/001',
+			description: 'MCCR/138/2017:REPUBLIC VS.JOHN LAWRENCE MWANGI MUGO',
+		},
+		{
+			code: 'CIT2.1',
+			description: 'CITEMON LIMITED',
+		},
+		{
+			code: 'CIV1.1',
+			description: 'CIVICON LTD VS KIVUWAIT LTD: HCCC NO. 36 OF 2013',
+		},
+		{
+			code: 'CKB1.1',
+			description:
+				'COOPER K. BRANDS LTD -VS- KENYA REVENUE AUTHORITY: HC JR MISC. CIV. APP. NO. 458 OF 2013',
+		},
+		{
+			code: 'CKL1.1',
+			description: 'HCC NO 3244 OF 2017:NICHOLAS KYALO MBITHE VS.CELTIC KENYA LIMITED',
+		},
+		{
+			code: 'CKL1.2',
+			description: 'CELTIC KENYA LIMITED VS. MOLO SOUTH BUDS LIMITED',
+		},
+		{
+			code: 'CLE1.2',
+			description: 'WILL/LIVING WILL',
+		},
+		{
+			code: 'CMA1.1',
+			description:
+				'HCCC NO. 229 OF 2008 NYAGA STOCK BROKERS LIMITED (UNDER STATUTORY MANAGEMENT BY THE CMA) VS. PATRICK NDIGWA GAKIAVIH & OTHERS.',
+		},
+		{
+			code: 'CMA1.2',
+			description:
+				"HCCC NO. 77 OF 2010 SEBASTIAN MUTIMU KANG'ATA VS. CAPITAL MARKETS AUTHORITY.",
+		},
+		{
+			code: 'CMA1.3',
+			description:
+				'MISC. APPL NO. E680 OF 2020 WPP SCANGROUP PLC -VS- CAPITAL MARKETS AUTHORITY  ',
+		},
+		{
+			code: 'CMA1.4',
+			description:
+				'AN APPEAL TO THE CAPITAL MARKETS TRIBUNAL CONCERNING THE DECISION OF THE ADHOC COMMITTEE AGAINST DRR. AMBUNYA & OTHERS.',
+		},
+		{
+			code: 'CMC1.1',
+			description: 'CMC MOTORS',
+		},
+		{
+			code: 'CMC1.2',
+			description: 'JAMES WATENGA KAMAU HCCC NO. 601 OF 2007',
+		},
+		{
+			code: 'CMI1.1',
+			description: 'GENERAL FILE (CARMELITIES OF MARY IMMACULATE)',
+		},
+		{
+			code: 'CML1.1',
+			description: 'CFAO MOTORS KENYA LIMITED VS. CYPRIAN NYAKUNDI',
+		},
+		{
+			code: 'CML1.2',
+			description: 'CFAO MOTORS KENYA LIMITED VS. COUNTY GOVERNMENT OF LAIKIPIA',
+		},
+		{
+			code: 'CML2.1',
+			description: 'IN THE MATTER OF CARTON MANUFACTURERS LIMITED',
+		},
+		{
+			code: 'COC1.1',
+			description:
+				'LICENCE OF OFFICE SPACE MEASURING 748 SQF-SITUATE ON THE 4TH FLOOR OF ACK GARDEN ANNEX BETWEEN ORARO & CO.ADVOCATES AND CO-OPERATIVE COMPUTING EAST AFRICA LTD',
+		},
+		{
+			code: 'COC1.2',
+			description: 'CO-OPERATIVE COMPUTING (EA) LIMITED VS.DESIGNSPACE HOLDINGS LIMITED',
+		},
+		{
+			code: 'COC1.3',
+			description: 'iMANAGE GENERATOR TEST.',
+		},
+		{
+			code: 'COG1.1',
+			description:
+				'ELRC NO. 792 OF 2010 EUNICE AYOYI CHOTI VS EVANS ASENEKA T/A CHILD OF GOD ACADEMY',
+		},
+		{
+			code: 'COM1.1',
+			description:
+				'INSTRUCTION TO PRESENT THE COMMISSION FOR THE IMPLIMENTATION OF THE CONSTITUTION OF KENYA IN A PETITION ON PROPOSED CONSTITUTION AMENDMENT IN KNEYA BILL OF 2013',
+		},
+		{
+			code: 'COM3.1',
+			description: 'GENERAL CORPORATE ADVISE',
+		},
+		{
+			code: 'COM4.1',
+			description: 'GENERAL CORPORATE ADVICE.',
+		},
+		{
+			code: 'CON1.1',
+			description:
+				"CLAIM BY LADY 'X' WITH RESPECT TO MAINTENANCE OF MINOR 'Y' AND RELATED MATTERS",
+		},
+		{
+			code: 'CON2.1',
+			description: 'CONSOLIDATED BANK OF KENYA LTD VS SECURICOR SECURITY SERVICES',
+		},
+		{
+			code: 'CON2.2',
+			description: 'GEORGE KIRATHE WAWERU - CHARGE OVER LR.NO.KIAMBU/BLK 111/42',
+		},
+		{
+			code: 'CON3.1',
+			description: 'PUCHASE OF HOUSE, FROM CITIC ENTERPRISES LTD (FANTASIA HOMES)',
+		},
+		{
+			code: 'COO1.2',
+			description: 'WINNIE KAMAU VS CO-OPORATIVE BANK OF KENYA',
+		},
+		{
+			code: 'COU1.1',
+			description: 'COURTVILLE BUSINESS SOLUTIONS KENYA LTD',
+		},
+		{
+			code: 'CPF1.1',
+			description: 'JOINT LEGAL ADVISORY FOR THE REGISTRATION OF AN I-REIT',
+		},
+		{
+			code: 'CPL1.1',
+			description: 'CARNATION PLANTS LTD',
+		},
+		{
+			code: 'CPL2.1',
+			description:
+				'DISPUTE BETWEEN COSMOS PHARMACEUTICALS LIMITED AND LIQUID TECHNOLOGIES LIMITED  ',
+		},
+		{
+			code: 'CPL2.2',
+			description: 'EMPLOYMENT LEGAL ADVISORY',
+		},
+		{
+			code: 'CPL2.3',
+			description: 'TERMINATION OF CONTRACT NO. KEMSA/ONT01/2023-2023',
+		},
+		{
+			code: 'CQI1.1',
+			description:
+				'MISC. APP NO. E008 OF 2022 - ENZYNE CREATIONS LIMITED VS. CHINA QINGJIAN INTERNATIONAL GROUP (K) LTD & KURA.',
+		},
+		{
+			code: 'CRE1.1',
+			description:
+				'CREDIT BANK LTD & 2 OTHER -CS- NYANZA SPINNING & WEAVING MILLS LTD: C.A CIVIL APPEAL NO. 233 OF 2011',
+		},
+		{
+			code: 'CRE1.2',
+			description:
+				'CREDIT BANK LTD & 2 OTHER -CS- NYANZA SPINNING & WEAVING MILLS LTD: HCCC NO. 28 OF 2012',
+		},
+		{
+			code: 'CRE1.4',
+			description:
+				'ENFORCEMENT OF JUDGEMENT AGAINST ILLULUWE DEVELOPMENT LIMITED AND VILELE DEVELOPMENT LIMITED',
+		},
+		{
+			code: 'CRE1.5',
+			description: 'PETER VINCENT CHIERA GICHURU;PURCHASE OF KIAMBU/RUAKA 520',
+		},
+		{
+			code: 'CRI1.1',
+			description: 'OPINION-DAVID DENG',
+		},
+		{
+			code: 'CRL1.1',
+			description: 'Provision of Legal Services to Crediation Limited',
+		},
+		{
+			code: 'CRO1.1',
+			description: 'GEORGE WAMBUA MUTUKU VS CROWN INDUSTRIES LTD',
+		},
+		{
+			code: 'CRO1.2',
+			description:
+				'CROWN INDUSTRIES LTD VS MEDITERANEAN SHIPPING COMPANY SA SUING THROUGH OCEAN FREIGHT EA: CASE NO. 3 OF 2004, MSA',
+		},
+		{
+			code: 'CRO1.3',
+			description: 'CMCC NO. 5278 OF 2011 RICHARD LUNGAHI MISIGO VS CRWN INDUSTRIES LIMITED',
+		},
+		{
+			code: 'CRO1.4',
+			description: 'ELRC NO. 807 OF 2011 RICHARD LUNGAHI MISIGO',
+		},
+		{
+			code: 'CRO1.5',
+			description:
+				'NAIROBI CMCC NO. 6513 OF 2012. GEORGE WAMBUA MUTUKU -VS- CROWN INDUSTRIES LTD & CHETAN SHAH',
+		},
+		{
+			code: 'CRP1.1',
+			description: 'CYCAD REAL PROPERTY LTD',
+		},
+		{
+			code: 'CRP1.2',
+			description:
+				'CYCAD PROPERTIES LTD -VS- THE ATTORNEY GENERAL & 4 OTHERS: PETITION NO 70 OF 2010',
+		},
+		{
+			code: 'CSM1.1',
+			description: 'CREATIVE SPACE MEDIA',
+		},
+		{
+			code: 'CSS1.1',
+			description: 'COMMCARRIER SATELLITE SERVICES LTD',
+		},
+		{
+			code: 'CTL1.2',
+			description:
+				'CARREL TECHNOLOGIES LIMITED - EMPLOYMENT CLAIM AGAINST PATRICK IRUNGU NGARI',
+		},
+		{
+			code: 'CVL1.1',
+			description: 'CONSTRUCTION OF APARTMENTS',
+		},
+		{
+			code: 'CYT1.1',
+			description: 'PURCHASE OF 546 PLOTS IN KISERIAN FROM SALIM SULEMAN',
+		},
+		{
+			code: 'CYT1.10',
+			description: 'LR NO. 28223/3 RIDGEWAYS WILLIAM K KINYANJUI',
+		},
+		{
+			code: 'CYT1.11',
+			description:
+				'ENG. ERASTUS MWONGERA & OTHERS VS NATIONAL ENVIRONMENT MANAGEMENT AUTHORITY',
+		},
+		{
+			code: 'CYT1.11/001',
+			description:
+				"ELC APPEAL NO. 20 OF 2019 KAREN LANG'ATA DISTRICT ASSOCIATION VS. CYTONN INVESTMENTS MANAGEMENT LTD & ANOR.",
+		},
+		{
+			code: 'CYT1.12',
+			description:
+				'CYTONN INVESTMENTS MANAGEMENT LTD VS KENYA URBAN ROADS AUTHORITY & 2 OTHERS',
+		},
+		{
+			code: 'CYT1.14',
+			description:
+				'IN THE MATTER OF THE ACCOUNTANTS ACT NO. 15 OF 2008, BRITAM ASSET MANAGERS (K) LTD VS ELIZABETH NAILANTEI NKUKUU',
+		},
+		{
+			code: 'CYT1.15',
+			description: 'CYTONN TAX MATTERS-GENERAL',
+		},
+		{
+			code: 'CYT1.16',
+			description: 'CYTONN INVESTMENTS MANAGEMENT LTD VS NAKUMATT HOLDINGS LIMITED',
+		},
+		{
+			code: 'CYT1.17',
+			description: 'CYTONN PROJECT NOTES LLP',
+		},
+		{
+			code: 'CYT1.18',
+			description: 'SALE OF APARTMENTS IN TARAJI HEIGHTS',
+		},
+		{
+			code: 'CYT1.18/001',
+			description:
+				'SALE OF A THREE BEDROOM APARTMENT IN PROPOSED RESIDENTIAL DEVELOPMENT TO BE KNOWN AS TARAJI HEIGHTS TO SIMON MWANGI GACHOKA',
+		},
+		{
+			code: 'CYT1.18/002',
+			description:
+				'SALE OF A THREE BEDROOM APARTMENT IN PROPOSED RESIDENTIAL DEVELOPMENT TO BE KNOWN AS TARAJI HEIGHTS TO SOPHIA NJERI KAMAU & PETER MAINA WACHIRA',
+		},
+		{
+			code: 'CYT1.18/003',
+			description:
+				'SALE OF A THREE BEDROOM APARTMENT IN THE PROPOSED RESIDENTIAL DEVELOPMENT TO BE KNOWN AS "TARAJI HEIGHTS" TO ELIZABETH NKUKUU',
+		},
+		{
+			code: 'CYT1.18/004',
+			description:
+				'SALE OF A 3 BEDROOM APARTMENT (E-22) IN THE PROPOSED RESIDENTIAL DEVELOPMENT TO BE KNOWN AS "TARAJI HEIGHTS", NAIROBI TO GETRUDE MAINA',
+		},
+		{
+			code: 'CYT1.19',
+			description:
+				'HCCC JR NO. 394 OF 2016 KENYA URBAN ROADS AUTHORITY & 2 OTHERS VS COUNTRY CLOCK K AND CYTONN INVETSMENTS MANAGEMENT',
+		},
+		{
+			code: 'CYT1.2',
+			description: 'THE ALMA RUAKA - GENERAL FILE',
+		},
+		{
+			code: 'CYT1.2/001',
+			description: 'PURCHASE OF APARTMENT B804, UNIT NO. F303, THE ALMA, RUAKA',
+		},
+		{
+			code: 'CYT1.2/002',
+			description:
+				'SALE OF THREE BEDROOM APARTMENT B 804 IN THE ALMA RUAKA TO EDWIN H. DANDE',
+		},
+		{
+			code: 'CYT1.2/003',
+			description: 'PURCHASE OF 2 BEDROOM APARTMENT AT THE ALMA, RUAKA',
+		},
+		{
+			code: 'CYT1.2/004',
+			description:
+				'PURCHASE OF 3 BEDROOM APARTMENT NO.B-804, THE ALMA, RUAKA BY PAUL OMONDI OBIERO',
+		},
+		{
+			code: 'CYT1.2/005',
+			description: 'PURCHASE OF 3 BEDROOM APARTMENT AT THE ALMA, RUAKA BY EDWIN H DANDE',
+		},
+		{
+			code: 'CYT1.2/006',
+			description: 'SALE OF THREE BEDROOM APARTMENY F702 AT ALMA TO EDWIN DANDE',
+		},
+		{
+			code: 'CYT1.2/007',
+			description: 'SALE OF 3 BEDROOM APARTMENT AT THE ALMA, RUAKA TO THOMAS KISIMBI',
+		},
+		{
+			code: 'CYT1.2/008',
+			description: 'SALE OF 3 BEDROOM APT IN "THE ALMA" RUAKA TO EDWARD O. OJUOK',
+		},
+		{
+			code: 'CYT1.2/009',
+			description:
+				'SALE OF 3 BEDROOM APT AT "THE ALMA" RUAKA TO JOB O. IKWAE & EUNICE C.A OWITI',
+		},
+		{
+			code: 'CYT1.2/010',
+			description: 'SALE OF 3 BEDROOM APT AT "THE ALMA" RUAKA TO MARTIN OTIENO OBUO',
+		},
+		{
+			code: 'CYT1.2/011',
+			description: 'PURCHASE OF 2 BEDROOM APT F403, IN THE ALMA RUAKA BY GERTRUDE B. MAINA',
+		},
+		{
+			code: 'CYT1.2/012',
+			description:
+				'PURCHASE OF 2 BEDROOM APARTMENT, D901, IN THE ALMA RUAKA, BY GERTRUDE B. MAINA',
+		},
+		{
+			code: 'CYT1.2/013',
+			description: 'SALE OF 3 BEDROOM APT A 302 IN THE ALMA RUAKA TO GERTRUDE B. MAINA',
+		},
+		{
+			code: 'CYT1.2/014',
+			description:
+				'SALE OF 3 BEDROOM APARTMENT F-802, AT THE ALMA RUAKA TO SERAH MWIKALI KATUSYA',
+		},
+		{
+			code: 'CYT1.2/015',
+			description:
+				'SALE OF 3 BEDROOM APT, UNIT F-101, AT THE ALMA RUAKA TO JOSEPH WAFULA & AGNES MINIDILA',
+		},
+		{
+			code: 'CYT1.2/016',
+			description: 'SALE OF THREE BEDROOM APARTMENT, B-505, AT ALMA RUAKA, TO NYAMU WANYOIKE',
+		},
+		{
+			code: 'CYT1.2/017',
+			description: 'SALE OF A THREE BEDROOM APARTMENT A606, AT ALMA RUAKA TO JAMES MBAI',
+		},
+		{
+			code: 'CYT1.2/018',
+			description: 'SALE OF UNIT NO. A-502 AT ALMA RUAKA, TO WILSON GAKUO KARIUKI',
+		},
+		{
+			code: 'CYT1.2/019',
+			description:
+				"SALE OF THREE BEDROOM APARTMENT F-401 AT ALMA RUAKA TP PAULINE WANJIRU NG'ANG'A",
+		},
+		{
+			code: 'CYT1.2/020',
+			description: 'SALE OF THREE BEDROOM APARTMENT B-305 AT ALMA RUAKA TO NURADIN DIRIE',
+		},
+		{
+			code: 'CYT1.2/021',
+			description:
+				'SALE OF THREE BEDROOM APARTMENT F-202 AT ALMA RUAKA TO SANDRA ADHIAMBO ALAI',
+		},
+		{
+			code: 'CYT1.2/022',
+			description:
+				'SALE OF THREE BEDROOM APARTMENT C-205 AT ALMA RUAKA TO ABDIRASHID MOHAMOUD HASHI',
+		},
+		{
+			code: 'CYT1.2/023',
+			description: 'SALE OF THREE BEDROOM APARTMENT  B-302 AT ALMA RUAKA TO ABDINASIR ISSA',
+		},
+		{
+			code: 'CYT1.2/024',
+			description:
+				'SALE OF THREE BEDROOM APARTMENT F-103 AT ALMA RUAKA TO SAITOTI MAIKA & CAROL SHOONA',
+		},
+		{
+			code: 'CYT1.2/025',
+			description: 'SALE OF THREE BEDROOM APT  B-102, AT ALMA RUAKA, TO ELIZABETH ONUNGA',
+		},
+		{
+			code: 'CYT1.2/026',
+			description: 'SALE OF THREE BEDROOM APARTMENT C-205 AT ALMA RUAKA TO NINA AWINO LAI',
+		},
+		{
+			code: 'CYT1.2/027',
+			description:
+				'SALE OF THREE BEDROOM APARTMENT A-602, AT ALMA RUAKA TO ISAAC MACHARIA NGARANGE',
+		},
+		{
+			code: 'CYT1.2/028',
+			description:
+				'SALE OF THREE BEDROOM APARTMENT C-405 AT ALMA RUAKA TO MOSES ERICK OPONDO &GRACE AKINYI OTUTO',
+		},
+		{
+			code: 'CYT1.2/029',
+			description:
+				'SALE OF THREE BEDROOM APARTMENT F-801 AT ALMA RUAKA TO JUDY WANJERI KINYANJUI',
+		},
+		{
+			code: 'CYT1.2/030',
+			description:
+				'SALE OF THREE BEDROOM APARTMENT, B-405 AT THE ALMA, RUAKA TO VIRGINIA GIKORI',
+		},
+		{
+			code: 'CYT1.2/031',
+			description:
+				'SALE OF THREE BEDROOM APARTMENT, A-202, AT THE ALMA RUAKA TO ROBERT GITAU & AGNES WAMBUA MBUGUA',
+		},
+		{
+			code: 'CYT1.2/032',
+			description:
+				'SALE OF THREE BEDROOM APARTMENT C-305, AT ALMA RUAKA,TO MARY WANJIKU NDUNGO AND BARIU DOUGLAS ITUMBIRI ',
+		},
+		{
+			code: 'CYT1.2/033',
+			description:
+				'SALE OF A THREE BEDROOM APARTMENT, E-403, AT ALMA RUAKA, TO BAKULCHANDRA KOTHARI & PRAFULLA KOTHARI',
+		},
+		{
+			code: 'CYT1.2/034',
+			description:
+				'SALE OF A THREE BEDROOM APARTMENT, E-303, AT ALMA RUAKA, TO MANISH SHAVADIA & SAPNA SHAVADIA',
+		},
+		{
+			code: 'CYT1.2/035',
+			description:
+				'SALE OF THREE BEDROOM APARTMENT, F-501, AT ALMA RUAKA, TO ROSELINE MWENDWA MUTUA',
+		},
+		{
+			code: 'CYT1.2/036',
+			description:
+				'SALE OF THREE BEDROOM APARTMENT, J-501, AT ALMA RUAKA, TO ESTHER NYAGUTHI MUNDERU',
+		},
+		{
+			code: 'CYT1.2/037',
+			description:
+				'SALE OF THREE BEDROOM APARTMENT, F-301, AT ALMA RUAKA, TO ROSE CAROL MUTHONI NJIRAINI AND JOSEPH NJOROGE MATHENGE',
+		},
+		{
+			code: 'CYT1.2/038',
+			description:
+				'SALE OF ATHREE BEDROOM APARTMENT, F-302, AT ALMA RUAKA, TO FRANCIS MUKURIA',
+		},
+		{
+			code: 'CYT1.2/039',
+			description: 'SALE OF THREE BEDROOM APARTMENT, B-203, AT ALMA RUAKA, TO SHAKOOR YUSUF',
+		},
+		{
+			code: 'CYT1.2/040',
+			description:
+				'SALE OF THREE BEDROOM APARTMENT, E-503, AT ALMA RUAKA TO MALKIT SINGH RIYAT',
+		},
+		{
+			code: 'CYT1.2/041',
+			description: 'SALE OF THREE BEDROOM APARTMENT, A-206, AT ALMA, RUAKA TO EZEKIEL ODUK',
+		},
+		{
+			code: 'CYT1.2/042',
+			description: 'SALE OF ONE BEDROOM APARTMENT, H-201 AT ALMA RUAKA TO FRANCIS MUKURIA',
+		},
+		{
+			code: 'CYT1.2/043',
+			description: 'SALE OF A THREE BEDROOM APARTMENT, F-602, AT ALMA RUAKA, TO GRACE KIMANI',
+		},
+		{
+			code: 'CYT1.2/044',
+			description:
+				'SALE OF A TWO  BEDROOM APARTMENT, C-802 AT ALMA RUAKA, TO AMRITPAL CHAGGAR',
+		},
+		{
+			code: 'CYT1.2/045',
+			description: 'SALE OF THREE BEDROOM APARTMENT, F-601 AT ALMA RUAKA TO FARAJA NDANA',
+		},
+		{
+			code: 'CYT1.2/046',
+			description: 'SALE OF A TWO BEDROOM APARTMENT, H-709, AT ALMA RUAKA TO TAHA MOHAMEDALI',
+		},
+		{
+			code: 'CYT1.2/047',
+			description: 'SALE OF TWO BEDROOM APARTMENT, C-501, AT ALMA RUAKA, TO PATRICK SHIFUMA',
+		},
+		{
+			code: 'CYT1.2/048',
+			description:
+				'SALE OF 2 BEDROOM APARMENT D-902 AT THE ALMA RUAKA TO AGNES NKUNDABAGENZI',
+		},
+		{
+			code: 'CYT1.2/049',
+			description:
+				'SALE OF 1 BEDROOM APARTMENT A-701 AT THE ALMA- RUAKA TO AGNES NKUNDABAGENZI',
+		},
+		{
+			code: 'CYT1.2/050',
+			description:
+				"SALE OF 3 BEDROOM APARTMENT (E-702) IN THE PROPOSED RESIDENTIAL DEVELOPMENT TO BE KNOWN AS 'THE ALMA' RUAKA TO ANITA KABUGA & KEVIN MACHINE",
+		},
+		{
+			code: 'CYT1.2/051',
+			description:
+				'SALE OF 2 BEDROOM APARTMENT IN THE PROPOSED RESIDENTIAL DEVELOPMENT TO BE KNOWN AS "THE ALMA-RUAKA" TO STEPHEN YESWA',
+		},
+		{
+			code: 'CYT1.2/052',
+			description:
+				'SALE OF THREE BEDROOM APARTMENT IN THE PROPOSED RESIDENTIAL DEVELOPMENT TO BE KNOWN AS "THE ALMA-RUAKA" TO WALTER AMOKO',
+		},
+		{
+			code: 'CYT1.2/053',
+			description:
+				'SALE OF A TWO (2) BEDROOM APARTMENT (E-701) IN THE PROPOSED RESIDENTIAL DEVELOPMENT TO BE KNOWN AS "THE ALMA"',
+		},
+		{
+			code: 'CYT1.2/054',
+			description:
+				'SALE OF A TWO BEDROOM APARTMENT (A-404) IN THE PROPOSED RESIDENTIAL DEVELOPMENT TO BE KNOWN AS "THE ALMA", RUAKA TO ROSE MWAURA',
+		},
+		{
+			code: 'CYT1.2/055',
+			description:
+				'SALE OF TWO BEDROOM APARTMENT (D-604) IN THE PROPOSED RESIDENTIAL DEVELOPMENT TO BE KNOWN AS "THE ALMA" RUAKA TO JANE CHEGE',
+		},
+		{
+			code: 'CYT1.2/056',
+			description:
+				"SALE OF (TWO) 2 BEDROOM APARTMENT (B-701) IN THE PROPOSED RESIDENTIAL DEVELOPMENT TO BE KNOWN AS 'THE ALMA' RUAKA TO JANE GATUMBI and DAVID GATENDE",
+		},
+		{
+			code: 'CYT1.2/057',
+			description:
+				'SALE OF A 2 BEDROOM APARTMENT (B-503);THE ALMA -RUAKA TO EDWIN NDUATI AND MARY NDUATI',
+		},
+		{
+			code: 'CYT1.2/058',
+			description:
+				'SALE OF A 2 BEDROOM APARTMENT (D-1005) IN THE PROPOSED RESIDENTIAL DEVELOPMENT TO BE KNOWN AS "THE ALMA" TO AZIM VIRJEE',
+		},
+		{
+			code: 'CYT1.2/059',
+			description:
+				'SALE OF A 2 BEDROOM APARTMENT (D-1007) IN THE PROPOSED RESIDENTIAL DEVELOPMENT TO BE KNOWN AS "THE ALMA" TO AZIM VIRJEE',
+		},
+		{
+			code: 'CYT1.2/060',
+			description:
+				'SALE OF A THREE BEDROOM APARTMENT (E-203) IN THE PROPOSED RESIDENTIAL DEVELOPMENT TO BE KNOWN AS "THE ALMA" RUAKA TO P&G TRANSPORTERS LTD',
+		},
+		{
+			code: 'CYT1.2/061',
+			description:
+				'SALE OF A TWO BEDROOMED APARTMENT (D-508) AT THE ALMA RUAKA TO P AND G TRANSPORTERS LIMITED',
+		},
+		{
+			code: 'CYT1.2/062',
+			description:
+				'SALE OF A 2 BEDROOMED APARTMENT (B-5040 IN THE PROPOSED RESIDENTIAL DEVELOPMENT TO BE KNOWN AS "THE ALMA" RUAKA TO STEPHEN MAINA YESWA.',
+		},
+		{
+			code: 'CYT1.2/063',
+			description:
+				'SALE OF A 3 BEDROOM APARTMENT (A-106) IN THE PROPOSED RESIDENTIAL DEVELOPMENT TO BE KNOWN AS “THE ALMA”; RUAKA TO ELIZABETH NKUKUU',
+		},
+		{
+			code: 'CYT1.2/064',
+			description:
+				'SALE OF A 3 BEDROOM APARTMENT (H-101) IN THE PROPOSED RESIDENTIAL DEVELOPMENT TO BE KNOWN AS “THE ALMA” RUAKA TO SOPHIA KAMAU & PETER WACHIRA',
+		},
+		{
+			code: 'CYT1.2/065',
+			description:
+				'SALE OF A 2 BEDROOM APARTMENT (D710) AT THE ALMA; RUAKA TO TAHA MOHAMEDALI',
+		},
+		{
+			code: 'CYT1.2/066',
+			description:
+				'SALE OF A THREE (3) BEDROOM APARTMENT E103 IN THE PROPOSED RESIDENTIAL DEVELOPMENT TO BE KNOWN AS THE ALMA-RUAKA TO ELIZABETH NKUKUU.',
+		},
+		{
+			code: 'CYT1.2/067',
+			description:
+				'SALE OF A 1 BEDROOM APARTMENT (A-705) AT THE ALMA-RUAKA TO ELIZABETH NKUKUU',
+		},
+		{
+			code: 'CYT1.2/068',
+			description:
+				'SALE OF A THREE 3 BEDROOM APARTMENT NO. H-702 AT THE ALMA; RUAKA TO EDWIN H. DANDE.',
+		},
+		{
+			code: 'CYT1.2/069',
+			description:
+				'SALE OF A THREE (3) BEDROOM APARTMENT  NO. F903 SITUATED IN THE PROPOSED RESIDENTIAL DEVELOPMENT TO BE KNOWN AS THE ALMA-RUAKA TO EDWIN D. DANDE',
+		},
+		{
+			code: 'CYT1.2/070',
+			description:
+				'SALE OF A TWO (2) BEDROOM APARTMENT  NO. D 908 SITUATED IN THE PROPOSED RESIDENTIAL DEVELOPMENT TO BE KNOWN AS THE ALMA-RUAKA TO EDWIN D. DANDE',
+		},
+		{
+			code: 'CYT1.2/071',
+			description:
+				'SALE OF A 3 BEDROOM APARTMENT (J-205) THE ALMA-RUAKA BY CYTONN INTEGRATED PROJECT LLP TO ISAAC NGARANGE',
+		},
+		{
+			code: 'CYT1.2/072',
+			description:
+				'SALE OF A 2 BEDROOM APARTMENT (D-203) THE ALMA RUAKA BY CYTONN INTEGRATED PROJECT LLP TO JORIM NYAMOR & CAROLINE NYAMOR',
+		},
+		{
+			code: 'CYT1.2/073',
+			description: 'SALE OF A 1 BEDROOM APARTMENT (H-1206); ALMA RUAKA TO ELECTIVE AFRICA',
+		},
+		{
+			code: 'CYT1.2/074',
+			description:
+				'SALE OF A 3 BEDROOM APARTMENT (H-401) - THE ALMA; RUAKA TO NAHASHON KARANJA.',
+		},
+		{
+			code: 'CYT1.2/075',
+			description:
+				'SALE OF A 3 BEDROOM APARTMENT (H-601) - THE ALMA; RUAKA TO NAHASHON KARANJA.',
+		},
+		{
+			code: 'CYT1.2/076',
+			description: 'SALE OF A 3 BEDROOM APARTMENT (H-801) THE ALMA; RUAKA TO DAVID GATENDE',
+		},
+		{
+			code: 'CYT1.2/077',
+			description: 'SALE OF A 3 BEDROOM APARTMENT (J-905) THE ALMA; RUAKA TO DAVID GATENDE',
+		},
+		{
+			code: 'CYT1.2/078',
+			description: 'SALE OF A 2 BEDROOM APARTMENT (D-103) THE ALMA; RUAKA TO DAVID GATENDE',
+		},
+		{
+			code: 'CYT1.2/079',
+			description: 'SALE OF A 2 BEDROOM APARTMENT (D-208) THE ALMA; RUAKA TO DAVID GATENDE.',
+		},
+		{
+			code: 'CYT1.2/080',
+			description:
+				'SALE OF 3 BEDROOM STANDARD APARTMENT NO. F-901 IN THE PROPOSED RESIDENTIAL DEVELOPMENT TO BE KNOWN AS "THE ALMA" RUAKA TO ISABELLAH BARASA',
+		},
+		{
+			code: 'CYT1.2/081',
+			description:
+				'SALE OF 3 BEDROOM STANDARD APARTMENT (F-901) TO BE KNOWN AS "THE ALMA"- RUAKA TO ISABELLAH BARASA.',
+		},
+		{
+			code: 'CYT1.20',
+			description:
+				'REPUBLIC VS INSTITUTE OF CERTIFIED PUBLIC ACCOUNTANTS & ELIZABETH NKUKUU (J.R NO. 474 OF 2016)',
+		},
+		{
+			code: 'CYT1.21',
+			description: 'THE RIDGE',
+		},
+		{
+			code: 'CYT1.21/001',
+			description:
+				'SALE OF ONE BEDROOM APARTMENT IN THE PROPOSED RESIDENTIAL DEVELOPMENT TO BE KNOWN AS THE RIDGE-NAIROBI TO CAROLINE MUJAW AND FRANCIS MUJAW',
+		},
+		{
+			code: 'CYT1.21/002',
+			description:
+				'SALE OF TWO BEDROOM APARTMENT IN THE PROPOSED RESIDENTIAL DEVELOPMENT TO BE KNOWN AS THE RIDGE-NAIROBI TO FRANCIS MUJAW',
+		},
+		{
+			code: 'CYT1.21/003',
+			description:
+				'SALE OF 2 BEDROOM APARTMENT IN THE PROPOSED RESIDENTIAL DEVELOPMENT TO BE KNOWN AS THE RIDGE-NAIROBI TO GRACE OTIENO',
+		},
+		{
+			code: 'CYT1.21/004',
+			description:
+				'SALE OF A THREE BEDROOM APARTMENT IN THE PROPOSED  RESIDENTIAL DEVELOPMENT TO BE KNOWN AS THE RIDGE TO JOEL NJOROGE and CAROLINE NJOROGE',
+		},
+		{
+			code: 'CYT1.21/005',
+			description:
+				'SALE OF 1 BEDROOM APARTMENT (A-408) IN THE PROPOSED RESIDENTIAL DEVELOPMENT TO BE KNOWN AS "THE RIDGE" NAIROBI TO CHRISTINE ABONDO',
+		},
+		{
+			code: 'CYT1.21/006',
+			description:
+				'SALE OF A TWO BEDROOM APARTMENT (G-508) IN THE PROPOSED RESIDENTIAL DEVELOPMENT TO BE KNOWN AS \'THE RIDGE", NAIROBI TO ROSE MWAURA',
+		},
+		{
+			code: 'CYT1.21/007',
+			description:
+				'SALE OF A THREE (3) BEDROOM APARTMENT DSQ IN THE PROPOSED RESIDENTIAL DEVELOPMENT TO BE KNOWN AS "THE RIDGE", NAIROBI TO ELIZABETH NKUKUU',
+		},
+		{
+			code: 'CYT1.21/008',
+			description:
+				'SALE OF A ONE (1) BEDROOM APARTMENT IN THE PROPOSED RESIDENTIAL DEVELOPMENT TO BE KNOWN AS "THE RIDGE", NAIROBI TO ELIZABETH NKUKUU',
+		},
+		{
+			code: 'CYT1.21/009',
+			description:
+				"SALE OF A THREE (3) BEDROOM DSQ PREMIER APARTMENT (B-901) IN THE PROPOSED RESIDENTIAL DEVELOPMENT TO BE KNOWN AS 'THE RIDGE' TO GRACE KIMANI",
+		},
+		{
+			code: 'CYT1.21/010',
+			description:
+				'SALE OF ATHREE (3) BEDROOM APARTMENT IN THE PROPOSED RESIDENTIAL DEVELOPMENT TO BE KNOWN AS "THE RIDGE", NAIROBI TO GERTRUDE MAINA',
+		},
+		{
+			code: 'CYT1.21/011',
+			description:
+				'SALE OF A TWO (2) BEDROOM APARTMENT IN THE PROPOSED RESIDENTIAL DEVELOPMENT TO BE KNOWN AS "THE RIDGE", NAIROBI TO GERTRUDE MAINA',
+		},
+		{
+			code: 'CYT1.21/012',
+			description:
+				'SALE OF A THREE (3) BEDROOM DSQ PREMIER APARTMENT (B-502) IN THE PROPOSED RESIDENTIAL DEVELOPMENT TO BE KNOWN AS "THE RIDGE", NAIROBI TO P and G TRANSPORTERS LTD',
+		},
+		{
+			code: 'CYT1.21/013',
+			description:
+				'SALE OF A 2 BEDROOM APARTMENT (G-904) IN THE PROPOSED RESIDENTIAL DEVELOPMENT TO BE KNOWN AS "THE RIDGE", NAIROBI TO GEOFFREY KARIKU THUO',
+		},
+		{
+			code: 'CYT1.21/014',
+			description:
+				'SALE OF A PENTHOUSE APARTMENT NO. C1001 IN THE PROPOSED RESIDENTIAL DEVELOPMENT "THE RIDGE"- NAIROBI',
+		},
+		{
+			code: 'CYT1.21/015',
+			description:
+				'SALE OF A 2 BEDROOM APARTMENT NO.G-807 IN THE PROPOSED RESIDENTIAL DEVELOPMENT TO BE KNOWN AS "THE RIDGE"-NAIROBI',
+		},
+		{
+			code: 'CYT1.21/016',
+			description: 'SALE OF A 1 BEDROOM APT (H-1002) - "THE RIDGE" TO ASHLEY NJOROGE',
+		},
+		{
+			code: 'CYT1.22',
+			description:
+				'CRIMINAL CASE NO. 1735 OF 2016 ELIZABETH NAILANTEI NKUKUU, SHIV ANOOP ARORA, PATRICIA NJERI WANJAMA & EDWIN HAROLD DANDE',
+		},
+		{
+			code: 'CYT1.23',
+			description:
+				'SUCCESSION CAUSE NO. 1067 OF 1991 - IN THE MATTER OF THE ESTATE OF KAPOYA OLE MOSIRO (DECEASED)',
+		},
+		{
+			code: 'CYT1.25',
+			description:
+				'SALE OF PROPERTY LAND REFERENCE NUMBER 1153/88 BY WYNDHAM HOLDINGS LIMITED TO CYTONN INVESTMENTS MANAGEMENT LIMITED',
+		},
+		{
+			code: 'CYT1.26',
+			description: 'GENERAL-PROJECT ATHI',
+		},
+		{
+			code: 'CYT1.26/001',
+			description: 'DEVELOPMENT OF A GOVERNANCE STRUCTURE-PROJECT ATHI',
+		},
+		{
+			code: 'CYT1.27',
+			description:
+				'J.R. NO. 8 OF 2017-EDWIN DANDE & 3 OTHERS VS THE DIRECTOR OF PUBLIC PROSECUTION & ANOTHER',
+		},
+		{
+			code: 'CYT1.27/001',
+			description:
+				'CIVIL APPLICATION NO. 265 OF 2018 EDWIN HAROLD DAYAN DANDE & 3 OTHERS VS THE DIRECTOR OF PUBLIC PROSECUTIONS & 2 OTHERS',
+		},
+		{
+			code: 'CYT1.27/002',
+			description:
+				'SUPREME COURT PETITION NO.4 (E005) OF 2022 - EDWIN HAROLD DANDE & 3 OTHERS VS. THE DPP & 2 OTHERS.',
+		},
+		{
+			code: 'CYT1.28',
+			description:
+				'PETITION NO. 539 OF 2016 EDWIN DANDE & 3 OTHERS VS BRITISH AMERICAN INVESTMENTS COMPANY & ANOTHER',
+		},
+		{
+			code: 'CYT1.28/001',
+			description:
+				'CIVIL APPEAL (APPLICATION) NO 147 OF 2019 - BRITISH AMERICAN INVESTMENTS CO. (K) LTD & ANOR VS. EDWIN HAROLD DAYANE DANDE & 3 OTHERS',
+		},
+		{
+			code: 'CYT1.28/002',
+			description:
+				'SUPREME COURT PETITION NO.8 (E007) OF 2022 - EDWIN HAROLD DANDE & 3 OTHERS VS. THE DPP & 2 OTHERS',
+		},
+		{
+			code: 'CYT1.3',
+			description: 'AMARA RIDGE KAREN - GENERAL FILE',
+		},
+		{
+			code: 'CYT1.3/001',
+			description: 'CYTONN AMARA RIDGE: INCORPORATION OF AMARA RIDGE MANAGEMENT LTD',
+		},
+		{
+			code: 'CYT1.3/002',
+			description:
+				'SALE OF VILLA NO. 5 ON L.R 10051 AT AMARA IN KAREN TO MS. YUGNI HOLDINGS LTD',
+		},
+		{
+			code: 'CYT1.3/003',
+			description:
+				'SALE OF VILLA NO. 3, AMARA RIDGE,  L.R. NO.10051, NAIROBI TO JAMES LUAL ATAK',
+		},
+		{
+			code: 'CYT1.3/004',
+			description: 'PURCHASE OF AMARA RIDGE, KAREN VILLA NO. 4 BY DR. SAMEUL THENYA MAINA',
+		},
+		{
+			code: 'CYT1.3/005',
+			description:
+				'SALE OF VILLA NO.8,L.R. NO. 10051, AMARA RIDGE, TO PRIME HOME APPLIANCES LIMITED',
+		},
+		{
+			code: 'CYT1.3/006',
+			description:
+				'PURCHASE OF VILLA NO. 06 IN THE PROPOSED RESIDENTIAL DEVELOPMENT TO BE KNOWN AS AMARA RIDGE ALONG FOREST EDGE ROAD, KAREN TO CAROLINE WAIRIMU MBURU, ALICE NDUTA MBURU AND JULIETTE MBURU',
+		},
+		{
+			code: 'CYT1.3/007',
+			description:
+				'PURCHASE OF VILLA NO. 07 IN THE PROPOSED RESIDENTIAL DEVELOPMENT TO BE KNOWN AS AMARA RIDGE ALONG FOREST EDGE ROAD, KAREN TO CAROLINE WAIRIMU MBURU, ALICE NDUTA MBURU AND JULIETTE MBURU',
+		},
+		{
+			code: 'CYT1.3/008',
+			description:
+				'SALE OF VILLAS NOS. 1,9 & 10 IN AMARA RIDGE ERECTED ON PROPERTY LAND REFERENCE NUMBER 1005 NAIROBI LOCATED ALONG FOREST EDGE ROAD, KAREN TO NANGOMA LIMITED',
+		},
+		{
+			code: 'CYT1.3/009',
+			description:
+				"SALE OF A FIVE BEDROOM VILLA (HOUSE NO.2) IN THE PROPOSED RESIDENTIAL DEVELOPMENT TO BE KNOWN AS 'AMARA RIDGE' TO AHMED SAID ABAKIYO",
+		},
+		{
+			code: 'CYT1.3/010',
+			description:
+				"SALE OF A5 BEDROOM VILLA (HOUSE NO. 7) IN THE PROPOSED RESIDENTIAL DEVELOPMENT TO BE KNOWN AS 'AMARA RIDGE'",
+		},
+		{
+			code: 'CYT1.3/011',
+			description:
+				'SALE OF VILLA NO. 7 ON LR NO. 10051; NAIROBI ALONG FOREST EDGE ROAD, KAREN-AMARA RIDGE TO MANABO HOLDINGS',
+		},
+		{
+			code: 'CYT1.3/012',
+			description:
+				'SALE NOF VILA NO. 2 ON LR. NO. 10051 AMARA RIDGE TO SIMON CHELUGUI AND FRANCISCA MULANDI',
+		},
+		{
+			code: 'CYT1.3/013',
+			description:
+				'SALE OF VILLAS NOs 1, 9 & 10 ON LR. NO. 10051, NAIROBI AT THE AMARA RIDGE TO HON. AMOS WAKO',
+		},
+		{
+			code: 'CYT1.3/014',
+			description:
+				'SALE OF A 5 BEDROOM VILLA HOUSE 6 AT THE AMARA RIDGE; KAREN TO NEW MEGA AFRICA.',
+		},
+		{
+			code: 'CYT1.3/015',
+			description:
+				'SALE OF A 5 BEDROOM VILLA HOUSE 6 AT THE AMARA RIDGE; KAREN TO NEW MEGA AFRICA',
+		},
+		{
+			code: 'CYT1.3/016',
+			description: 'AMARA RIDGE CYTONN REAL ESTATE',
+		},
+		{
+			code: 'CYT1.3/017',
+			description: 'SALE OF VILLA NUMBER 6, AMARA RIDGE KAREN TO TRIBE ESTATES LIMITED',
+		},
+		{
+			code: 'CYT1.32',
+			description:
+				'SALE AND PURCHASE OF LAND REFERENCE NUMBER 1055/29; MIOTONI ROAD, KAREN FROM CHRISTOPHER BAGOT & TWO OTHERS TO CYTONN INVEESTMENT MANAGEMENT LIMITED',
+		},
+		{
+			code: 'CYT1.33',
+			description: 'CYTONN GENERAL-LITIGATION',
+		},
+		{
+			code: 'CYT1.34',
+			description:
+				'AGREEMENT FOR SALE OF TITLE NUMBERS KJD/OLOOLOITIKOSHI/KITENGELA/66525, 22526 AND 66527',
+		},
+		{
+			code: 'CYT1.35',
+			description:
+				'SALE OF A THREE (3) BEDROOM DSQ PREMIER APARTMENT (B-502) IN THE PROPOSED RESIDENTIAL DEVELOPMENT TO BE KNOWN AS "THE RIDGE", NAIROBI TO P and G TRANSPORTERS LTD',
+		},
+		{
+			code: 'CYT1.36',
+			description: 'DISCIPLINARY CAUSE NO. 5 OF 2015 PATRICIAH NJERI WANJAMA',
+		},
+		{
+			code: 'CYT1.36/001',
+			description:
+				'CONSTITUTIONAL PETITION NO. 541 OF 2017 BRITAM ASSET MANAGERS (KENYA) LIMITED VS ADVOCATES DISCIPLINARY TRIBUNAL & PATRICIA NJERI WANJAMA',
+		},
+		{
+			code: 'CYT1.37',
+			description: 'GENERAL - COMMERCIAL/CONVEYANCING',
+		},
+		{
+			code: 'CYT1.38',
+			description: 'DOMAIN NAME DISPUTE - JOSEPH MWANGI',
+		},
+		{
+			code: 'CYT1.39',
+			description: 'GENERAL CORPORATE ADVICE',
+		},
+		{
+			code: 'CYT1.4',
+			description: 'SALE OF KIAMBU/RUAKA/520, KIAMBU BY PETER VINCENT CHIERA GICHURU',
+		},
+		{
+			code: 'CYT1.40',
+			description:
+				'JR NO. 435 OF 2014 - REPUBLIC VS THE IG NATIONAL POLICE SERVICE & THE DIRECTOR , THE DIRECTORATE OF CRIMINAL INVESTIGATIONS',
+		},
+		{
+			code: 'CYT1.40/001',
+			description:
+				'SUPREME COURT PETITION NO.6 (E007) OF 2022 - EDWIN HAROLD DANDE & 3 OTHERS VS. THE DPP & 2 OTHERS.',
+		},
+		{
+			code: 'CYT1.41',
+			description: 'ADVISORY ON PUBLIC OFFERS',
+		},
+		{
+			code: 'CYT1.42',
+			description: 'GENERAL FILE - RIVERRUN ESTATES',
+		},
+		{
+			code: 'CYT1.42/001',
+			description:
+				'SALE OF A 4 BEDROOM DSQ VILLA NO.C-33 IN THE PROPOSED MASTER PLANNED DEVELOPMENT TO BE KNOWN AS "RIVERRUN ESTATES"TO GEDRUDE MAINA',
+		},
+		{
+			code: 'CYT1.42/002',
+			description:
+				'SALE OF (AN EIGHTH ACRE STANDARD) PROPERTY D-44 IN THE PROPOSED RESIDENTIAL DEVELOPMENTTO BE KNOWN AS "RIVERRUN ESTATES TO ELLEN KIMANI',
+		},
+		{
+			code: 'CYT1.42/003',
+			description:
+				'SALE OF (AN EIGHTH ACRE STANDARD) PROPERTY IN A MASTER PLANNED MIXED USE DEVELOPMENT (C-10) "RIVERRUN ESTATES" TO EUNICE OPONDO',
+		},
+		{
+			code: 'CYT1.42/004',
+			description:
+				'SALE OF (AN EIGHTH ACRE STANDARD) (D-15) IN THE PROPOSED MASTER PLANNED MIXED USE RESIDENTIAL DEVELOPMENT KNOWN AS "RIVERRUN ESTATES" TO PATRICK KANGETHE CHARAGU.',
+		},
+		{
+			code: 'CYT1.42/005',
+			description:
+				'SALE OF (AN EIGHTH ACRE STANDARD) PROPERTY IN A MASTER PLANNED MIXED USE DEVELOPMENT (C-9) "RIVERRUN ESTATES" TO EUNICE OPONDO.',
+		},
+		{
+			code: 'CYT1.42/006',
+			description: 'SALE OF A QUARTER ACRE STANDARD KNOWN AS RIVERRUN ESTATE.',
+		},
+		{
+			code: 'CYT1.42/007',
+			description:
+				'SALE OF A QUARTER ACRE STANDARD C-02 IN THE PROPOSED MASTER PLANNED MIXED USE RESIDENTIAL DEVELOPMENT KNOWN AS RIVERRUN ESTATES TO ERIC NDAMBIRI.',
+		},
+		{
+			code: 'CYT1.42/008',
+			description:
+				'SALE OF AN ACRE STANDARD NO. D41 IN THE PROPOSED MASTER PLANNED MIXED USE RESIDENTIAL DEVELOPMENT KNOWN AS RIVERRUN ESTATE TO DR. CHRISTINA MWANGI.',
+		},
+		{
+			code: 'CYT1.42/009',
+			description:
+				'SALE OF AN EIGHTH OF ACRE IN THE PROPOSED MASTER LANNNED MIXED USE RESIDENTIAL DEVELOPMENT KNOWN AS RIVERRUN ESTATE TO ANDREW PAVAO & MRS. EVELYN PAVAO',
+		},
+		{
+			code: 'CYT1.42/010',
+			description:
+				'SALE OF AN EIGHT ACRE STANDARD NO. DO2 IN THE PROPOSED MASTER PLANNED MIXED USE DEVELOPMENT TO BE KNOWN AS RIVERRUN ESTATE TO PETER KIMARU MUGUKU',
+		},
+		{
+			code: 'CYT1.42/011',
+			description:
+				'SALE OF AN EIGHT ACRE STANDARD NO. D18 IN THE PROPOSED MASTER PLANNED MIXED USE RESIDENTIAL DEVELOPMENT KNOWN AS RIVERRUN ESTATE TO ESTHER KIBATHI',
+		},
+		{
+			code: 'CYT1.42/012',
+			description:
+				'SALE OF AN EIGHTH ACRE STANDARD NO. D18 IN THE PROPOSED MASTER PLANNED MIXED USE RESIDENTIAL KNOWN AS RIVERRUN ESTATES TO ESTHER KIBATHI',
+		},
+		{
+			code: 'CYT1.42/013',
+			description:
+				'SALE OF AN EIGHTH ACRE STANDARD NO. D40 IN THE PROPOSED MASTER PLANNED MIXED USE RESIDENTIAL KNOWN AS RIVERRUN ESTATES TO DR. CHRISTINA MWANGI',
+		},
+		{
+			code: 'CYT1.42/014',
+			description:
+				'SALE OF AN EIGHTH ACRE STANDARD NO. B27 IN THE PROPOSED MASTER PLANNED MIXED USE RESIDENTIAL KNOWN AS RIVERRUN ESTATES TO SAMUEL JOSEPH KAMARA.',
+		},
+		{
+			code: 'CYT1.42/015',
+			description:
+				'SALE OF AN EIGHTH ACRE STANDARD NO. C-08 IN THE PROPOSED MASTER PLANNED MIXED USE RESIDENTIAL KNOWN AS RIVERRUN ESTATES TO KINLAND ENTERPRISE LIMITED.   ',
+		},
+		{
+			code: 'CYT1.42/016',
+			description:
+				'SALE OF AN EIGHTH ACRE STANDARD NO. D29 IN THE PROPOSED MASTER PLANNED MIXED USE RESIDENTIAL KNOWN AS RIVERRUN ESTATES TO CATHERINE GICHUKI.',
+		},
+		{
+			code: 'CYT1.42/017',
+			description:
+				'SALE OF AN EIGHTH ACRE STANDARD NO. C20 IN THE PROPOSED MASTER PLANNED MIXED USE RISDENTIAL DEVELOPMENT KNOWN AS RIVERRUN ESTATES TO CATHERINE GICHUKI.',
+		},
+		{
+			code: 'CYT1.42/018',
+			description:
+				'SALE OF AN EIGHTH ACRE STANDARD KNOWN AS C-20 IN THE PROPOSED MASTER PLANNED MIXED USE RESIDENTIAL DEVELOPMENT KNOWN AS "RIVERRUN" ESTATES TO WA-OMAERA SACCO LTD',
+		},
+		{
+			code: 'CYT1.42/019',
+			description:
+				'SALE OF AN EIGHTH NO. B11 IN THE PROPOSED MASTER PLANNED MIXED USE RESIDENTIAL DEVELOPMENT KNOWN AS "RIVERRUN" ESTATES TO KANORA SERVICES FZE',
+		},
+		{
+			code: 'CYT1.42/020',
+			description:
+				'SALE OF AN EIGHTH ACRE NO. B12 IN THE PROPOSED MASTER PLANNED MIXED USE RESIDENTIAL DEVELOPMENT KNOWN AS "RIVERRUN" ESTATES TO KANORA SERVICES FZE.',
+		},
+		{
+			code: 'CYT1.42/021',
+			description:
+				'SALE OF AN EIGHTH ACRE NO. B13 IN THE PROPOSED MASTER PLANNED MIXED USE RESIDENTIAL DEVELOPMENT KNOWN AS "RIVERRUN" ESTATES TO KANORA SERVICES FZE',
+		},
+		{
+			code: 'CYT1.42/022',
+			description:
+				'SALE OF AN EIGHTH ACRE NO. B14 IN THE PROPOSED MASTER PLANNED MIXED USE RESIDENTIAL DEVELOPMENT KNOWN AS "RIVERRUN" ESTATES TO KANORA SERVICES FZE.',
+		},
+		{
+			code: 'CYT1.42/023',
+			description:
+				'SALE OF AN EIGHTH ACRE NO. B15 IN THE PROPOSED MASTER PLANNED MIXED USE RESIDENTIAL DEVELOPMENT KNOWN AS "RIVERRUN" ESTATES TO KANORA SERVICES FZE.',
+		},
+		{
+			code: 'CYT1.42/024',
+			description:
+				'SALE OF AN EIGHTH ACRE NO. B17 IN THE PROPOSED MASTER PLANNED MIXED USE RESIDENTIAL DEVELOPMENT KNOWN AS "RIVERRUN" ESTATES TO KANORA SERVICES FZE',
+		},
+		{
+			code: 'CYT1.42/025',
+			description:
+				'SALE OF AN EIGHTH ACRE NO. B19 IN THE PROPOSED MASTER PLANNED MIXED USE RESIDENTIAL DEVELOPMENT KNOWN AS "RIVERRUN" ESTATES TO KANORA SERVICES FZE',
+		},
+		{
+			code: 'CYT1.42/026',
+			description:
+				'SALE OF (AN EIGHTH ACRE STANDARD) KNOWN AS DEVELOPMENT PROPERTY (NO. C-19) IN THE PROPOSED MASTER PLANNED MIXED USE RESIDENTIAL DVELOPMENT KNOWN AS "RIVERRUN"',
+		},
+		{
+			code: 'CYT1.42/027',
+			description:
+				'SALE OF (AN EIGHTH ACRE STANDARD) DEVELOPMENT PROPERTY (NO D-01) IN THE PROPOSED MASTER PLANNED MIXED USE RESIDENTIAL DEVELOPMENT KNOWN AS "RIVERRUN" ESTATES TO PAUL CHEPKWESI.',
+		},
+		{
+			code: 'CYT1.42/028',
+			description:
+				'SALE OF (AN EIGHTH ACRE STANDARD) DEVELOPMENT PROPERTY NO. D-17 IN THE PROPOSED MASTER PLANNED MIXED USE RESIDENTIAL KNOWN AS "RIVERRUN" ESTATES TO ERIC WANENE and MRS. RAHAB NJENGA',
+		},
+		{
+			code: 'CYT1.42/029',
+			description:
+				'SALE OF (AN EIGHTH ACRE STANDARD) NO. D-28 IN THE PROPOSED MASTER PLANNED MIXED USE RESIDENTIAL DEVELOPMENT KNOWN AS "RIVERRUN" ESTATES TO CHARLES THUKU.',
+		},
+		{
+			code: 'CYT1.42/030',
+			description:
+				'SALE OF A QUARTER ACRE STANDARD DEVELOPMENT PROPERTY (NO. D-43) IN THE PROPOSED MASTER PLANNED MIXED USE RESIDENTIAL DEVELOPMENT KNOWN AS "RIVERRUN" ESTATES TO ZACHAUES CHORU KARANJA & CATHERINE CHORU.',
+		},
+		{
+			code: 'CYT1.42/031',
+			description:
+				'SALE OF A QUARTER ACRE STANDARD DEVELOPMENT PROPERTY (NO. D-32) IN THE PROPOSED MASTER PLANNED MIXED USE RESIDENTIAL DVELOPMENT KNOWN AS "RIVERRUN" ESTATES TO ZACHAUES CHORU KARANJA & CATHERINE CHORU.',
+		},
+		{
+			code: 'CYT1.42/032',
+			description:
+				'SALE OF A QUARTER ACRE STANDARD DEVELOPMENT PROPERTY (NO. D-31) IN THE PROPOSED MASTER PLANNED MIXED USE RESIDENTIAL DEVELOPMENT KNOWN AS "RIVERRUN" ESTATE TO ZACHAUES CHORU KARANJA & CATHERINE CHORU',
+		},
+		{
+			code: 'CYT1.42/033',
+			description:
+				'SALE OF A QUARTER ACRE STANDARD DEVELOPMENT PROPERTY (NO. C-06) IN THE PROPOSED MASTER PLANNED MIXED USE RESIDENTIAL DEVELOPMENT KNOWN AS "RIVERRUN" ESTATE TO ZACHAUES CHORU KARANJA & CATHERINE CHORU.',
+		},
+		{
+			code: 'CYT1.42/034',
+			description:
+				'SALE OF A QUARTER ACRE STANDARD DEVELOPMENT PROPERTY (NO. C-07) IN THE PROPOSED MASTER PLANNED MIXED USE RESIDENTIAL DEVELOPMENT KNOWN AS "RIVERRUN" ESTATE TO ZACHAUES CHORU KARANJA & CATHERINE CHORU.',
+		},
+		{
+			code: 'CYT1.42/035',
+			description:
+				'SALE OF (AN EIGHTH ACRE STANDARD) DEVELOPMENT PROPERTY (NO. D-22) IN THE PROPOSED MASTER PLANNED MIXED USE RESIDENTIAL DEVELOPMENT KNOWN AS "RIVERRUN"ESTATES TO KENNETH MACAKIAGE',
+		},
+		{
+			code: 'CYT1.42/036',
+			description:
+				'SALE OF (AN EIGHTH ACRE STANDARD) DEVELOPMENT PROPERTY (NO. D-23) IN THE PROPOSED MASTER PLANNED MIXED USE RESIDENTIAL DEVELOPMENT KNOWN AS "RIVERRUN"ESTATES TO KENNETH MACAKIAGE',
+		},
+		{
+			code: 'CYT1.42/037',
+			description:
+				'SALE OF A QUARTER ACRE STNDARD DEVELOPMENT PROPERTY (NO.D-30) IN THE PROPOSED MASTER PLANNED MIXED USE RESIDENTIAL DEVELOPMENT KNOWN AS "RIVERRUN" ESTATES TO ZACHAUES CHORU and CATHERINE CHORU',
+		},
+		{
+			code: 'CYT1.42/038',
+			description:
+				'SALE OF AN EIGHTH ACRE STANDARD APARTMENT NO. D-36 TO BE KNOWN AS RIVERRUN ESTATES TO FEISAL AHMED SAAD.',
+		},
+		{
+			code: 'CYT1.42/039',
+			description:
+				'SALE OF AN EIGHTH ACRE STANDARD KNOWN AS PROPERTY D-16 RIVERRUN ESTATES TO ARIF FEISAL SAAD.',
+		},
+		{
+			code: 'CYT1.42/040',
+			description:
+				'SALE OF AN EIGHTH ACRE STANDARD KNOWN AS DEVELOPMENT PROPERTY NO. C-17 RIVERRUN ESTATES TO STEPHEN AREBA',
+		},
+		{
+			code: 'CYT1.42/041',
+			description:
+				'SALE OF AN EIGHTH ACRE STANDARD KNOWN AS DEVELOPMENT PROPERTY NO.C-23 RIVERRUN ESTATES TO STEPHEN AREBA.',
+		},
+		{
+			code: 'CYT1.42/042',
+			description:
+				'SALE OF AN EIGHTH ACRE STANDARD KNOWN AS DEVELOPMENT PROPERTY D-28 RIVERRUN ESTATES TO MERCY WANJIKU KANGÁRA',
+		},
+		{
+			code: 'CYT1.42/043',
+			description:
+				'SALE OF AN EIGHTH ACRE STANDARD KNOWN AS DEVELOPMENT PROPERTY NO. D-26 RIVERRUN ESTATES TO MORRIS NJAGI & MRS. BLANDINE NDIKUMASABO',
+		},
+		{
+			code: 'CYT1.42/044',
+			description:
+				'SALE OF AN EIGHTH ACRE STANDARD KNOWNAS DEVELOPMENT PROPERTY NO. D-25 RIVERRUN ESTATES TO MORRIS NJAGI.',
+		},
+		{
+			code: 'CYT1.42/045',
+			description:
+				'SALE OF AN EIGHTH ACRE STANDARD KNOWN AS DEVELOPMENT PROPERTY NO.C-2 RIVERRUN ESTATES TO A LINE INVESTMENT LTD',
+		},
+		{
+			code: 'CYT1.42/046',
+			description:
+				'SALE OF AN EIGHTH ACRE STANDARD NO. C-23 TO BE KNOWN AS RIVERRUN ESTATES TO STEPHEN AREBA',
+		},
+		{
+			code: 'CYT1.42/047',
+			description:
+				'SALE OF AN EIGHTH ACRE STANDARD NO. C-22 TO BE KNOWN AS RIVERRUN ESTATES TO JOHN OGETO',
+		},
+		{
+			code: 'CYT1.42/048',
+			description:
+				' SALE OF DEVELOPMENT PROPERTY NO. B-16 IN THE RESIDENTIAL DEVELOPMENT KNOWN AS "RIVERRUN ESTATES" TO HUI DING AND SILAS ATEKU  ',
+		},
+		{
+			code: 'CYT1.42/049',
+			description:
+				'SALE OF AN EIGHTH ACRE STANDARD DEVELOPMENT (D-16) KNOWN AS "RIVERRUN ESTATES" TO LEONARD NYOKE ORIWO.',
+		},
+		{
+			code: 'CYT1.42/050',
+			description:
+				'SALE OF AN EIGHTH ACRE STANDARD DEVELOPMENT (D-17) KNOWN AS "RIVERRUN ESTATES") TO LEONARD NYAOKE ORIWO',
+		},
+		{
+			code: 'CYT1.43',
+			description: 'CYTONN LEARNING PROGRAM',
+		},
+		{
+			code: 'CYT1.44',
+			description: 'TAX ADVICE ON DREITS',
+		},
+		{
+			code: 'CYT1.45',
+			description: 'TAX ADVICE & STRUCTURING OF CYTONN PROJECT NOTES',
+		},
+		{
+			code: 'CYT1.46',
+			description: 'CYTONN PURCHASE OF EQUITY STAKE IN HORIZONS GROUP LIMITED',
+		},
+		{
+			code: 'CYT1.47',
+			description:
+				'DOMAIN NAME DISPUTE - CYTONN INVESTMENTS MANAGEMENT LTD VS JOYCE WAIRIMU NDUNGU',
+		},
+		{
+			code: 'CYT1.48',
+			description:
+				'CYTONN INVESTMENTS PARTNERS VS KILIMANI PROJECT FOUNDATION (CYTONN TOWERS PROJECT)',
+		},
+		{
+			code: 'CYT1.49',
+			description:
+				'CYTONN INVESTMENT PARTNERS VS NAIROBI CITY COUNTY (CYTONN TOWERS PROJECT)',
+		},
+		{
+			code: 'CYT1.49/001',
+			description:
+				'CONSTITUTIONAL PETITION NO. 338 OF 2018 KILIMANI PROJRCT FOUNDATION & 2 OTHERS VS COUNTY GOVERNMENT OF NAIROBI & 4 OTHERS',
+		},
+		{
+			code: 'CYT1.5',
+			description:
+				'CYTONN INVESTMENT PARTNERS ONE LLP. L.R. NOS 5830/7 & 5954/2 KAREN, NAIROBI',
+		},
+		{
+			code: 'CYT1.50',
+			description:
+				'SALE OF A 2 BEDROOM APARTMENT (D-1007) IN THE PROPOSED RESIDENTIAL DEVELOPMENT TO BE KNOWN AS "THE ALMA" TO AZIM VIRJEE',
+		},
+		{
+			code: 'CYT1.51',
+			description:
+				'ELRC CAUSE NO.647 OF 2018:REUBEN MWANYOLO MABISHI VS.CYTONN INVESTMENTS MANAGEMENT LIMITED',
+		},
+		{
+			code: 'CYT1.52',
+			description: 'RE-ORGANISATION OF EPAZEC COMPANY LIMITED',
+		},
+		{
+			code: 'CYT1.53',
+			description: 'LEGAL OPINION ON A PROPOSED FINANCING BY TAALERI AFRIKKA RAHASTO II KY',
+		},
+		{
+			code: 'CYT1.54',
+			description: 'CYTONN INVESTMENTS MANAGEMENT LTD VS KENYA WALL STREET & ERIC ASUMA',
+		},
+		{
+			code: 'CYT1.55',
+			description: 'CYTONN INVESTMENTS MANAGEMENT LIMITED VS CYPRIAN NYAKUNDI',
+		},
+		{
+			code: 'CYT1.56',
+			description: 'REGISTRATION OF CIS( COLLECTIVE INVESTMENT SCHEME)',
+		},
+		{
+			code: 'CYT1.57',
+			description:
+				'SALE OF A 2 BEDROOM APARTMENT NO.G-807 IN THE PROPOSED RESEDENTIAL DEVELOPMENT TO BE KNOWN AS "THE RIDGE"-NAIROBI',
+		},
+		{
+			code: 'CYT1.58',
+			description: 'SALE OF SITU VILLAGE PROPERTY',
+		},
+		{
+			code: 'CYT1.58/001',
+			description:
+				'SALE OF ATHREE BEDROOM COTTAGE "THE PROPERT"C-18 KNOWN AS SITU VILLAGE TO JULIET MWELU MUANGE',
+		},
+		{
+			code: 'CYT1.58/002',
+			description:
+				'SALE OF A 3 BEDROOM COTTAGE KNOWN AS C2 ON LR. NO. 57380/7 and 5954/2; NAIROBI (THE SITU).',
+		},
+		{
+			code: 'CYT1.59',
+			description:
+				'CMEL CASE NO. 476 OF 2018 COLLINA KHAYI MILIMU VS. CYTONN INVESTMENTS MANAGEMENT LIMITED.',
+		},
+		{
+			code: 'CYT1.6',
+			description:
+				'CIVIL SUIT NO. 352/353/354/361/362 OF 2014 - BRITISH AMERICAN ASSET MANAGERS LTD VS VARIOUS PARTIES',
+		},
+		{
+			code: 'CYT1.6/001',
+			description:
+				'CIVIL APPEAL NO. 277 OF 2017 - EDWIN DANDE & OTHERS VS BRITISH AMERICAN ASSET MANAGERS LIMITED & OTHERS',
+		},
+		{
+			code: 'CYT1.60',
+			description:
+				'ADVICE ON LOAN AGREEMENT BETWEEN OLOLUA ESTATES LLP &TT REAL ESTATE AFRICA COMPANY.',
+		},
+		{
+			code: 'CYT1.61',
+			description:
+				'SALE OF 3 BEDROOMED APARTMENT (E203) IN THE PROPOSED RESIDENTIAL DEVELOPMENT TO BE KNOWN AS "THE ALMA" RUAKA  TO P&G TRANSPORTERS LTD.',
+		},
+		{
+			code: 'CYT1.62',
+			description: 'GENERAL FILE-APPLEWOOD',
+		},
+		{
+			code: 'CYT1.63',
+			description: 'ADVICE ON THE PROPOSED DEBT RESTRUCTURING.',
+		},
+		{
+			code: 'CYT1.64',
+			description: 'ADVISE ON DISTRIBUTION OF CIS FUNDS.',
+		},
+		{
+			code: 'CYT1.66',
+			description:
+				'Arbitration between Kilimanjaro Construction Limited and Cytonn Real Estate',
+		},
+		{
+			code: 'CYT1.67',
+			description: 'YTONN RESIDENCES LLP VS. TRIANUM MANAGEMENT LIMITED',
+		},
+		{
+			code: 'CYT1.7',
+			description:
+				'CYTONN INVESTMENT CASH MANAGEMENT SOLUTIONS LLP AND EDWIN HAROLD DAYAN DANDE',
+		},
+		{
+			code: 'CYT1.8',
+			description: 'CYTONN CMS',
+		},
+		{
+			code: 'CYT1.9',
+			description:
+				'CYTONN INVESTMENTS LTD - RESA IMBUYE & PAUL OREM: JOINT VENTURE AGREEMENT',
+		},
+		{
+			code: 'CYT2.1',
+			description: 'CYTONN INTERGRATED PROJECT LLP VS INTERPHASE CONSULTANTS',
+		},
+		{
+			code: 'CYT2.2',
+			description:
+				'SALE OF A 2 BEDROOM APARTMENT (B-503);THE ALMA-RUAKA TO EDWIN NDUATI AND MARY NDUATI',
+		},
+		{
+			code: 'CYT3.1',
+			description: 'CYTONN INVESTMENTS PARTNERS ELEVEN LLP VS LEXCON ENTERPRISES',
+		},
+		{
+			code: 'CYT4.1',
+			description:
+				'CMCC SUIT NO. 905 OF 2019 - AIG KENYA INSURANCE COMPANY LIMITED VS. CYTONN INVESTMENT PARTNERS FIVE LLP & ANOR',
+		},
+		{
+			code: 'DAN1.1',
+			description:
+				'DENTSU AEGIS NETWORK VS. KENYA NATIONAL BUREAU OF STATISTICS & APEX PORTER NOVELLI',
+		},
+		{
+			code: 'DAR1.1',
+			description: 'DARELLE LIMITED',
+		},
+		{
+			code: 'DAR3.1',
+			description: 'PROBATE AND ADMINISTRATION.',
+		},
+		{
+			code: 'DAT1.1',
+			description: 'DELOITTE AND TOUCHE',
+		},
+		{
+			code: 'DAV1.1',
+			description: 'SALE/PURCHASE OF PROPERTY.',
+		},
+		{
+			code: 'DAV2.1',
+			description: 'SALE/PURCHASE OF LAND REFERENCE NO.3734/744, NAIROBI',
+		},
+		{
+			code: 'DBI1.1',
+			description: 'JULIE KARIUKI -VS- DYER & BLAIR INVESTMENT BANK- LEGAL DEMAND',
+		},
+		{
+			code: 'DBI1.3',
+			description: 'TRIBERT RUJUGIRO -VS- DYER & BLAIR INVESTMENTS',
+		},
+		{
+			code: 'DBI1.4',
+			description:
+				'JOHN KUNGU KIARIE VS DYRE & BLAIR INVESTMENT BANK & STANBIC BANK KENYA LIMITED',
+		},
+		{
+			code: 'DBI1.5',
+			description:
+				'JOHN KUNGU KIARIE VS DYRE & BLAIR INVESTMENT BANK & STANBIC BANK KENYA LTD',
+		},
+		{
+			code: 'DBI1.5/001',
+			description:
+				'SUP. APP. NO. E023 OF 2023 - JOHN KUNGU KIARIE VS. DYER & BLAIR INVESTMENT BANK LIMITED & ANOR',
+		},
+		{
+			code: 'DBI1.7',
+			description:
+				'CIVIL CASE NO. 83 OF 2016: SIDCUP ENTERPRISES LTD VS JOHN SEREWA KAURAI & 2 OTHERS',
+		},
+		{
+			code: 'DBI1.8',
+			description: 'NGEI MATIBO VS. DYER AND BLAIR INVESTMENT BANK LIMITED',
+		},
+		{
+			code: 'DBK1.1',
+			description: 'DEVELOPMENT BANK OF KENYA LTD  - IRENE KAMENE MUMINA (EX STAFF)',
+		},
+		{
+			code: 'DBK1.2',
+			description: 'KISUMU CONCRETE PRODUCTS LTD',
+		},
+		{
+			code: 'DBK1.3',
+			description: 'AGGREGATE CONCRETE QUARRELS LTD',
+		},
+		{
+			code: 'DBK1.4',
+			description:
+				'RUPA COTTON MILLS(EPZ)LTD VS DEVELOPMENT BANK OF KENYA LTD: HCCC NO.190 0F 2014',
+		},
+		{
+			code: 'DBK1.5',
+			description: 'DEVELOPMENT BANK OF KENYA LTD  - KISUMU CONCRETE PRODUCTS',
+		},
+		{
+			code: 'DBK1.6',
+			description: 'RIGHTS ISSUE',
+		},
+		{
+			code: 'DDE1.1',
+			description: 'DONGBU DAEWOO ELECTRONICS',
+		},
+		{
+			code: 'DDL1.1',
+			description: 'DIMENSION DATA',
+		},
+		{
+			code: 'DEL1.1',
+			description: 'ALLAN HAROLD GERVAIS DELOIRIE',
+		},
+		{
+			code: 'DEL2.1',
+			description:
+				'ADVISING IN RELATION TO TRANSFER OF EMPLOYEES AND SERVICE LEVEL AGREEMENT.',
+		},
+		{
+			code: 'DEL2.2',
+			description: 'ADVISING IN RELATION TO JOINT EMPLOYMENT',
+		},
+		{
+			code: 'DES1.1',
+			description: 'NIKHIL DESAI, JOHN MILES & COMPANY/ GRANT THORNTON',
+		},
+		{
+			code: 'DEU1.1',
+			description: 'Provision of Legal Services',
+		},
+		{
+			code: 'DEV1.1',
+			description: 'BINDYA DEVANI',
+		},
+		{
+			code: 'DFA1.1',
+			description: 'DALY & FIGGIS',
+		},
+		{
+			code: 'DFG1.1',
+			description: 'JUDICIAL REVIEW APPLICATION IN RESPECT OF A TAX REFUND CLAIM',
+		},
+		{
+			code: 'DGL1.1',
+			description: 'DATA GROUP IT LTD COMPANY FORMATION',
+		},
+		{
+			code: 'DGL1.2',
+			description: 'DEBT COLLECTION: DATA GROUP IT LTD VS SEVEN SEAS TECHNOLOGIES LTD',
+		},
+		{
+			code: 'DGL1.3',
+			description:
+				'DEBT COLLECTION - INNOVATIVE TECHNOLOGIES AFRICA LTD VS. DATAGROUPIT LTD - USD 20,657.73',
+		},
+		{
+			code: 'DGL1.4',
+			description: 'JUNIPER INTAKES LTD - DEBT OF USD26,771',
+		},
+		{
+			code: 'DGL1.5',
+			description: 'REVERE TECHNOLOGIES - DEBT OF USD19,939',
+		},
+		{
+			code: 'DGL1.6',
+			description: 'SECURE LINE - DEBT OF USD30,404',
+		},
+		{
+			code: 'DGL1.7',
+			description: 'NEXT TECHNOLOGIES: OUTSTANDING DEBT USD102K',
+		},
+		{
+			code: 'DGS1.1',
+			description: 'DILPUN G SHAH',
+		},
+		{
+			code: 'DHA1.1',
+			description: 'SALE OF ARBOR HOUSE',
+		},
+		{
+			code: 'DHL1.1',
+			description:
+				'REVIEWING THE JOINT VENTURE AGREEMENT FOR THE PROPOSED DEVELOPMENT OF THE BROOKSIDE GROVE PROPERTY WITH DELTAR M.N. PROPERTIES LIMITED',
+		},
+		{
+			code: 'DIA1.1',
+			description:
+				'NKU ELC NO. 257 OF 2013 AKUISI FARMERS COMPANY LTD VS MILMET ESTATE LTD & SALT MANUFACTURERS K LTD',
+		},
+		{
+			code: 'DIB1.2',
+			description: 'BANKING FACILITIES TO BLISS GVS HEALTH CARE LIMITED',
+		},
+		{
+			code: 'DIB1.3',
+			description: 'PROJECT BE',
+		},
+		{
+			code: 'DIB1.4',
+			description:
+				'PARTIAL SELLDOWN OF THE ISLAMIC BANKING PORTFOLIO HELD BY SBM BANK (KENYA) LIMITED',
+		},
+		{
+			code: 'DIB1.5',
+			description: 'REVIEW OF CODE OF CONDUCT.',
+		},
+		{
+			code: 'DIB1.6',
+			description:
+				'HCCC NO E171 OF 2023: IRENE NJERI NJENGA & PATRICK THURANIRA RIMBERIA VS. DIB BANK KENYA LIMITED',
+		},
+		{
+			code: 'DIL1.1',
+			description:
+				'WORLD DUTY FREE CO LTD T/A KENYA DUTY FREE COMPLEX VS KENYA AIRPORTS AUTHORITY & OTHERS: HCCC NO. 45 OF 2015',
+		},
+		{
+			code: 'DIL1.2/001',
+			description: 'CIVIL APPEAL NO.390 OF 2018',
+		},
+		{
+			code: 'DIL1.4',
+			description: 'DUFRY INTERNATIONAL - TAX MATTERS',
+		},
+		{
+			code: 'DIL1.5',
+			description:
+				'BREACH OF CONTRACT IN RESPECT OF CONCESSION TO OPERATE DUTY FREE SHOPS AT JOMO KENYATTA INTERNATIONA AIRPORT - BY MR. WELLINGTON OMODHO',
+		},
+		{
+			code: 'DIL1.6',
+			description: 'CATHERINE NYAMBURA THUITA -VS- DUFRY KENYA LIMITED',
+		},
+		{
+			code: 'DIL1.7',
+			description: 'GENERAL ADVISORY',
+		},
+		{
+			code: 'DIL2.1',
+			description: 'Provision of Legal Services',
+		},
+		{
+			code: 'DKT1.1',
+			description:
+				'SALE OF L.R. NO.15985/1, KISUMU TO LIONS CLUBS INTERNATIONAL DISTRICT 411',
+		},
+		{
+			code: 'DLI1.1',
+			description: 'OBTAINING MONEY BY FALSE PRETENCE',
+		},
+		{
+			code: 'DLK1.1',
+			description:
+				'OUTSTANDING DEBT OWED BY CHINA PETROLEUM TECHNOLOGY & DEVELOPMENT CORPORATION',
+		},
+		{
+			code: 'DLK1.2',
+			description: 'JOHN KIMINGI',
+		},
+		{
+			code: 'DLK1.3',
+			description: 'E&LRC NO. 1546 OF 2018 JOHN KIMINGI VS. DAMCO LOGISTICS KENYA LIMITED',
+		},
+		{
+			code: 'DLK1.4',
+			description:
+				'CIVIL CASE NO. 169 OF 2010 DAMCO LOGISTICS KENYA LIMITED .VS. AZMINA AZIZI HABIB KASSIM & 2 OTHERS',
+		},
+		{
+			code: 'DLK1.5',
+			description: 'TERMINATION OF SARAH ASIYO',
+		},
+		{
+			code: 'DML1.1',
+			description: 'DEMAND MOBILE LTD',
+		},
+		{
+			code: 'DOH1.1',
+			description: 'ADVICE ON SURROGACY',
+		},
+		{
+			code: 'DOO1.1',
+			description: 'DAVID ORARO ONYANGO .VS. EPICENTER TRADING CO.LTD & ERICK KANJA WAIRIUKO',
+		},
+		{
+			code: 'DOO2.1',
+			description: 'GENERAL FILE',
+		},
+		{
+			code: 'DPF1.1',
+			description: 'MUHAMAD AHMED',
+		},
+		{
+			code: 'DPF1.3',
+			description: 'DEPOSIT PROTECTION FUND',
+		},
+		{
+			code: 'DPF1.4',
+			description: 'DEPOSIT PROTECTION FUND',
+		},
+		{
+			code: 'DPF2.1',
+			description:
+				'CIVIL APPEAL NO. 171 OF 2010 DAIMA BANK LIMITED (IL) VS PROF DAVID MUSYIMI NDETEI',
+		},
+		{
+			code: 'DPL1.1',
+			description: 'DELPHIS BANK LIMITED',
+		},
+		{
+			code: 'DPL2.1',
+			description: 'LEGAL OPINION FOR A CFDs FOREX BROKER ON REVERSE SOLICITATION',
+		},
+		{
+			code: 'DPS1.1',
+			description:
+				'ELRC CAUSE NO. 152 OF 2020  ELRC CAUSE NO. 152 OF 2020:FENSWA OKUTA-VERSUS- DIPLOMATIC PROTECTIVE SERVICES LIMITED ',
+		},
+		{
+			code: 'DRY1.1',
+			description: 'RECOVERY OF CP FUNDS OWED TO AMANA CAPITAL LIMITED',
+		},
+		{
+			code: 'DRY1.2',
+			description:
+				'COMPLAINS BY AMANA CAPITAL LTD & MRS. BARBARA BELCHER AGAINST SPENSCE DRY.',
+		},
+		{
+			code: 'DRY1.3',
+			description:
+				'HCCC NO.536 OF 2011: DRY ASSOCIATES LTD & OTHERS VS. TIMOTHY KARUNGU KARANJA & OTHERS.',
+		},
+		{
+			code: 'DRY2.1',
+			description:
+				'PURCHASE OF APT NO. B1103 TOGETHER WITH TWO(2) PARKING SPACES ON LR. NO. 1870/III/150 MATUNDU LANE, NAIROBI.',
+		},
+		{
+			code: 'DSA1.1',
+			description: 'DENTONS SOUTH AFRICA: EMPLOYMENT LAW REGUALTORY MATTERS IN KENYA (SITA)',
+		},
+		{
+			code: 'DSO1.1',
+			description:
+				'INTERPLEADER APPLICATION WITH RESPECT TO TENANCY OF LAND REFERENCE NUMBER 209/8336/226, NAIROBI.',
+		},
+		{
+			code: 'DSP1.1',
+			description:
+				'HCCC ELC NO.721 OF 2007:NIZAR HUDANI VS.ELIZABETH MUGURE MUKUNYA & 5 OTHERS',
+		},
+		{
+			code: 'DTB1.1',
+			description: 'DIAMOND TRUST',
+		},
+		{
+			code: 'DTB1.2',
+			description:
+				'RACIAL DISCRIMINATION & MALICIOUS PROSECUTION OF JOSEPHINE WARUGURU MWANGI',
+		},
+		{
+			code: 'DTB1.3',
+			description:
+				'CIVIL CASE NO. 2983 OF 2016: CORNELIUS KEVIN OTIENO VS DIAMOND TRUST BANK LTD',
+		},
+		{
+			code: 'DTB1.4',
+			description:
+				'LEGAL OPINION ON THE BANKING (AMENDMENT) BILL, 2015 IN RESPECT OF THE MORTGAGE SCHEME FOR GREATWALL GARDENS PROJECT DEVELOPER-ERDEMANN PROPERTY LIMITED',
+		},
+		{
+			code: 'DTB1.6',
+			description: 'DIAMOND TRUST BANK KENYA LIMITED VS PAULINE MUTHIGA',
+		},
+		{
+			code: 'DTB1.7',
+			description:
+				'ELRC CAUSE NO. 1608 OF 2017: EVANS EDDY OJIAMBO & 2 OTHERS -VS- DIAMOND TRUST BANK KENYA LIMITED',
+		},
+		{
+			code: 'DTB1.8',
+			description:
+				'NAIROBI ELRC NO. 444 OF 2019: DENIS OURU OKINYI VS. DIAMOND TRUST BANK KENYA LIMITED',
+		},
+		{
+			code: 'DTB1.9',
+			description: 'SECURITY DOCUMENTATION',
+		},
+		{
+			code: 'DTB2.1',
+			description: 'DIAMOND TRUST BANK LTD',
+		},
+		{
+			code: 'DTB2.10',
+			description: 'DIAMOND TRUST BANK (K) LTD FACILITIES TO TRUCKMART EAST AFRICA LTD',
+		},
+		{
+			code: 'DTB2.100',
+			description:
+				'PROVISION OF LEGAL SERVICES IN RELATION TO THE RESTRUCTURING OF THE FACILITIES ADVANCED TO ABYSSINIA IRON AND STEEL LIMITED & PRIME STEEL MILLS LIMITED BY DIAMOND TRUST BANK KENYA LIMITED.',
+		},
+		{
+			code: 'DTB2.101',
+			description: 'RECOVERY SUIT AGAINST MARGARET KHABEKO',
+		},
+		{
+			code: 'DTB2.102',
+			description: 'RECOVERY SUIT AGAINST SAID KAIM  ',
+		},
+		{
+			code: 'DTB2.103',
+			description: 'RECOVERY SUIT AGAINST TAUFIQ ABDULAZIZ',
+		},
+		{
+			code: 'DTB2.104',
+			description: 'RECOVERY SUIT AGAINST BENTA RABUOGI',
+		},
+		{
+			code: 'DTB2.105',
+			description:
+				'INVESTIGATION INTO THE TRANSFER OF THE PROPERTY KNOWN AS I.R NO. 209/1063 SITUATE IN NAIROBI TO LAVINGTON HOUSING & INVESTMENT LIMITED',
+		},
+		{
+			code: 'DTB2.106',
+			description:
+				'KISUMU E&LRC CAUSE NO.E024 OF 2023: MARTIN TEDKING ISANDA (SUING AS THE WIDOWER, LEGAL REPRESENTATIVE AND ADMINISTRATOR OF THE ESTATE OF THE LATE ISABELAH KENANA KIBERIA dcd VS. DIAMOND TRUST BANK KENYA LIMITED',
+		},
+		{
+			code: 'DTB2.11',
+			description: 'GENERAL FILE',
+		},
+		{
+			code: 'DTB2.12',
+			description: 'SEARCHES',
+		},
+		{
+			code: 'DTB2.13',
+			description: 'ALLEGED UNLAWFUL DISMISSAL OF LYDIA KASAE',
+		},
+		{
+			code: 'DTB2.14',
+			description:
+				'NAIROBI ELRC CAUSE NO:2153 OF 2017-LYNDA VIHENGA CHIMWANI - VS-DIAMOND TRUST BANK KENYA LIMITED',
+		},
+		{
+			code: 'DTB2.15',
+			description: 'DIAMOND TRUST BANK  LIMITED VS.AUGUSTINE M.MUNYOKI',
+		},
+		{
+			code: 'DTB2.16',
+			description: 'DIAMOND TRUST BANK LIMITED VS.LYNDA VIHENDA CHIMWANI',
+		},
+		{
+			code: 'DTB2.17',
+			description: 'DIAMOND TRUST BANK LIMITED VS.ANDREW OTIENO OWINO',
+		},
+		{
+			code: 'DTB2.18',
+			description: 'DIAMOND TRUST BANK ( LIMITED VS.EVANS EDDY OJIAMBO',
+		},
+		{
+			code: 'DTB2.19',
+			description: 'DIAMOND TRUST BANK LIMITED VS.KENNETH PHELIX OLONDE',
+		},
+		{
+			code: 'DTB2.2',
+			description:
+				'MONICA HARDWARE  LTD -VS- DIAMOND TRUST BANK (K) LTD - UNCLAIMED CHEQUES A/C NO. 0803863002',
+		},
+		{
+			code: 'DTB2.20',
+			description:
+				'TAX OPINION ON THE POWERS OF KRA IN LIGHT OF JUDGEMENT IN PETITION NO.212 OF 2016',
+		},
+		{
+			code: 'DTB2.21',
+			description:
+				'MILIMANI CMCC NO.6988 OF 2018-FADY ROSTOM VS DIAMOND TRUST BANK KENYA LTD',
+		},
+		{
+			code: 'DTB2.22',
+			description:
+				'ENFORCEMENT OF SHARED SECURITY GIVEN BY COLLOGNE INVESTMENT LIMITED IN FAVOUR OF BOA/SCB/DTB/KCB',
+		},
+		{
+			code: 'DTB2.23',
+			description:
+				'MOMBASA E&LRC NO. 489 OF 2018 SUAAD SALIM FADHIL VS. DIAMOND TRUST BANK (KENYA) LIMITED',
+		},
+		{
+			code: 'DTB2.23/001',
+			description:
+				'CIVIL APPEAL NO.E058 OF 2023: DIAMOND TRUST BANK KENYA LTD VS SUAAD SALIM FADHIL',
+		},
+		{
+			code: 'DTB2.24',
+			description: 'REVIEW OF VARIOUS AGREEMENTS/PROJECT INNOVATE',
+		},
+		{
+			code: 'DTB2.25',
+			description: 'DUE DILIGENCE.',
+		},
+		{
+			code: 'DTB2.26',
+			description:
+				'E&LRC NO. 16 OF 2019 GEORGE KAMAKIA MWANGI VS. DIAMOND TRUST BANK KENYA LIMITED',
+		},
+		{
+			code: 'DTB2.27',
+			description:
+				'ELRC CAUSE NO.1 OF 2019:DENNIS ODHIAMBO OKEYO VS.DIAMOND TRUST BANK KENYA LIMITED',
+		},
+		{
+			code: 'DTB2.28',
+			description:
+				'MOMBASA E&LRC NO. 1 OF 2019 MOMBASA RUKIYA ABDUL JABBAR VS. DIAMOND TRUST BANK KENYA LTD.',
+		},
+		{
+			code: 'DTB2.29',
+			description: 'REPUBLIC VS. DIAMOND TRUST BANK LIMITED',
+		},
+		{
+			code: 'DTB2.29/001',
+			description:
+				'CONSTITUTIONAL PETITION NO.E393 OF 2020: OKIYA OMTATAH OKOITI VS. STANDARD CHARTERED BANK (K) LTD & OTHERS',
+		},
+		{
+			code: 'DTB2.3',
+			description: 'MANFRED WALTER SCHITT , SPARKYBEN LTD VS DIAMOND TRUST BANK LTD',
+		},
+		{
+			code: 'DTB2.30',
+			description: 'CRIMINAL CASE NO. 741 OF 2017 REPUBLIC VS. SUAAD SALIM FADHIL & ANOR',
+		},
+		{
+			code: 'DTB2.31',
+			description:
+				'E&LRC NO. 282 OF 2019 PETER OTIENO ODEBYO VS. DIAMOND TRUST BANK KENYA LTD',
+		},
+		{
+			code: 'DTB2.32',
+			description:
+				'E&LRC NO. 560 OF 2019 FRED KUYI IDOYO VS. DIAMOND TRUST BANK KENYA LIMITED.',
+		},
+		{
+			code: 'DTB2.33',
+			description:
+				'DISPUTE BETWEEN POSTAL CORPORATION OF KENYA AND DIAMOND TRUST BANK KENYA LTD',
+		},
+		{
+			code: 'DTB2.34',
+			description:
+				'HC PETITION NO. E421 OF 2018: PEVANS EAST AFRICA LTD VA. KENYA REVENUE AUTHORITY',
+		},
+		{
+			code: 'DTB2.35',
+			description:
+				'HCCC NO.E166 OF 2019: YOGESH PATTNI & OTHERS VS. DIAMOND TRUST BANK (K) LTD & OTHERS',
+		},
+		{
+			code: 'DTB2.36',
+			description: 'BANK GUARANTEE OF KSHS.3M',
+		},
+		{
+			code: 'DTB2.37',
+			description:
+				'MOMBASA CMCC NO. 809 OF 2019: SUAAD SALIM FADHIL VS. DTB BANK & THE ATTORNEY GENERAL',
+		},
+		{
+			code: 'DTB2.38',
+			description:
+				'CMCC NO.317 OF 2019 KWALE: MARY TAMASHA TSENGA & ANOTHER VS. DIAMOND TRUST BANK (KENYA) LTD & DENIS KIMANI',
+		},
+		{
+			code: 'DTB2.39',
+			description:
+				'HCCC NO.34 OF 2018:  ARKAY INDUSTRIES LTD VS. DIAMOND TRUST BANK KENYA LIMITED & ANOTHER',
+		},
+		{
+			code: 'DTB2.4',
+			description:
+				'DIAMOND TRUST BANK KENYA LTD & 3 OTHERS -VS- MANFRED WALTER SCHMITT: HCC&J PETITION NO. 293 OF 2013 (NBO)',
+		},
+		{
+			code: 'DTB2.40',
+			description:
+				'NAIROBI E&LRC NO. 444 OF 2019: DENIS OURU OKINYI VS. DIAMOND TRUST BANK KENYA LTD.',
+		},
+		{
+			code: 'DTB2.41',
+			description:
+				'CIVIL APPLICATION NO. NAI 137 OF 2019: ASHITE CHANDRAKANTAPATEL & ANOR VS. DIAMOND TRUST BANK LIMITED.',
+		},
+		{
+			code: 'DTB2.42',
+			description:
+				'NAIROBI ELC CASE NO.724 OF 2017: CANCER INVESTMENTS LIMITED & ANOTHER VS. DIAMOND TRUST BANK KENYA LTD',
+		},
+		{
+			code: 'DTB2.43',
+			description:
+				'NAIROBI ELC CASE NO.725 OF 2017: JANNAT MUKHTAR AHMED & 2 OTHERS VS. DIAMOND TRUST BANK KENYA LIMITED',
+		},
+		{
+			code: 'DTB2.44',
+			description:
+				'NAIROBI HCCC NO.366 OF 2018: MORRIS AND COMPANY (2004) LIMITED VS. DIAMOND TRUST BANK KENYA LIMITED & 3 OTHERS',
+		},
+		{
+			code: 'DTB2.45',
+			description:
+				'NAIROBI ELC CASE NO.726 OF 2017: JANNAT MUKHTAR AHMED & ANOR VS. DIAMOND TRUST BANK KENYA LTD',
+		},
+		{
+			code: 'DTB2.46',
+			description:
+				'BANKING FACILITIES TO MWALIMU NATIONAL SAVINGS & CREDIT CO-OPERATIVE SOCIETY LIMITED & MWALIMU ASSET MANAGEMENT LIMITED.',
+		},
+		{
+			code: 'DTB2.47',
+			description:
+				'NAIROBI E&LRC CAUSE NO.1217 OF 2019: GEORGE OTIENO AROGO VS. DIAMOND TRUST BANK KENYA LIMITED',
+		},
+		{
+			code: 'DTB2.48',
+			description:
+				'CMCC CIVIL SUIT NO.467 OF 2019: ZUKA GROUP LTD VS. DIAMOND TRUST BANK KENYA LTD',
+		},
+		{
+			code: 'DTB2.5',
+			description: 'DIAMOND TRUST BANK INDUSTRIAL COURTS',
+		},
+		{
+			code: 'DTB2.50',
+			description:
+				'NAIROBI ELRC CAUSE NO.614 OF 2019: ALICE SITUMA ANINDO VS. DIAMOND TRUST BANK KENYA LTD',
+		},
+		{
+			code: 'DTB2.51',
+			description:
+				'KISII ELC CASE NO. 29 OF 2019: ESTHER KEMUMA MOGAKA VS. DTB KENYA LTD & 2 OTHERS',
+		},
+		{
+			code: 'DTB2.52',
+			description: 'BIZONE LIMITED AND PRINTING IMPRESSIONS LTD VS. DTB KENYA LTD',
+		},
+		{
+			code: 'DTB2.53',
+			description: 'DEMAND BY MUSLIM BHADALA SECONDARY SCHOOL.',
+		},
+		{
+			code: 'DTB2.54',
+			description:
+				'NAIROBI E&LRC CAUSE NO.378 OF 2019: JAVAN OMONDI OMBAI VS. DIAMOND TRUST BANK KENYA LIMITED.',
+		},
+		{
+			code: 'DTB2.55',
+			description: 'DEMAND BY SAVANNA COUNTRY LODGE HOTEL',
+		},
+		{
+			code: 'DTB2.56',
+			description:
+				'ENFORCEMENT OF A SECURITY GIVEN BY JAMES MUCHINA RIMUI IN FAVOUR OF DIAMOND TRUST BANK (K) LTD',
+		},
+		{
+			code: 'DTB2.57',
+			description: 'INSOLVENCY PETITION NO. E002 OF 2020: IN THE MATTER OF BIZONE LIMITED',
+		},
+		{
+			code: 'DTB2.58',
+			description:
+				'INSOLVENCY PETITION NO. E003 OF 2020: IN THE MATTER OF PRINTING IMPRESSONS LTD',
+		},
+		{
+			code: 'DTB2.59',
+			description:
+				'PROVISION OF LEGAL ADVISE ON DTB’S STATUTORY ALIGNMENT TO THE LABOUR LAWS.',
+		},
+		{
+			code: 'DTB2.60',
+			description: 'Credit applications and security documents review',
+		},
+		{
+			code: 'DTB2.61',
+			description: 'Banking facilities to TUSKER MATTRESSES LIMITED',
+		},
+		{
+			code: 'DTB2.62',
+			description:
+				'HIGH COURT OF UGANDA AT KAMPALA, COMMERCIAL DIVISION, MISC APP NO.654 OF 2020',
+		},
+		{
+			code: 'DTB2.63',
+			description:
+				'PROFESSIONAL UNDERTAKING WITH REGARD TO L.R. NO.36/VII/484, CHAI STREET EASTLEIGH, NAIROBI CHARGED TO AL-KHEYR PROPERTIES LIMITED',
+		},
+		{
+			code: 'DTB2.64',
+			description:
+				'H.C. MISC CAUSE NO.E653 OF 2019: JAMBO EAST AFRICA LIMITED VS. JAMBO BISQUITS (K) LIMITED & OTHERS',
+		},
+		{
+			code: 'DTB2.64/001',
+			description: 'IN THE MATTER OF BRITANIA FOOD LIMITED',
+		},
+		{
+			code: 'DTB2.64/002',
+			description:
+				'HC INSOLVENCY CAUSE E002 OF 2020- IN THE MATTER OF BRITANIA FOODS LIMITED.',
+		},
+		{
+			code: 'DTB2.64/003',
+			description:
+				'MISCELLANEOUS APPLICATION NO. E578 OF 2022 - PETER KAHI V. BRITANIA FOODS LIMITED',
+		},
+		{
+			code: 'DTB2.65',
+			description: 'BANKING FACILITIES TO VOI POINT LIMITED.',
+		},
+		{
+			code: 'DTB2.66',
+			description:
+				'MOMBASA HCCC NO.72 OF 2012: FUAD MAHAMOUD MOHAMED VS. DIAMOND TRUST BANK KENYA LIMITED & ANOTHER',
+		},
+		{
+			code: 'DTB2.67',
+			description: 'ALPHA FINE FOODS LIMITED – SETTLEMENT PROPOSAL.',
+		},
+		{
+			code: 'DTB2.68',
+			description: 'INSOLVENCY CONCERING HOGGERS LIMITED & DIAMOND TRUST BANK KENYA LIMITED.',
+		},
+		{
+			code: 'DTB2.68/001',
+			description:
+				'NAIROBI HCCC COMM. INSOLVENCY PETITION NO.E003 OF 2021: IN THE MATTER OF HOGGERS LIMITED (IN ADMINISTRATION)',
+		},
+		{
+			code: 'DTB2.69',
+			description:
+				'HCCC NO., 608 OF 2014 MISTRY JADVA PARBAT & COMPANY LIMITED -VS- GOLDEN JUBILEE LIMITED',
+		},
+		{
+			code: 'DTB2.7',
+			description: 'DIAMOND TRUST BANK LTD -  SPECIAL RESTITUTION',
+		},
+		{
+			code: 'DTB2.70',
+			description:
+				'NOTICE OF COPYRIGHT INFRINGEMENT WITH RESPECT TO EZLINK ENTERPRISE SWITCH BY SMART BANKING SOLUTIONS LIMITED (SBS)/PURPLEFIRE LIMITED/NERAMO LIMITED',
+		},
+		{
+			code: 'DTB2.71',
+			description:
+				'CMCC CASE NO. MCCOMMSO/E411 OF 2020 TRADCO SERVICES LIMITED -VS- BRITANIA FOODS LIMITED & ANOR.',
+		},
+		{
+			code: 'DTB2.72',
+			description: 'DIAMOND TRUST BANK TRAINING',
+		},
+		{
+			code: 'DTB2.73',
+			description:
+				'CIVIL SUIT NO. E054 OF 2020 (OS) HARIT SHETH ADVOCATES -VS- JAMBO E.A. LIMITED & 6 OTHERS',
+		},
+		{
+			code: 'DTB2.74',
+			description:
+				'MSA HCCC NO.131 OF 2014 - ANWAR MOHAMED BAYUSUF LTD VS DIAMOND TRUST BANK KENYA LIMITED.',
+		},
+		{
+			code: 'DTB2.75',
+			description: 'MOMBASA MISC CRIMINAL APP NO.E134 OF 2022 - NAKUMATT HOLDINGS LIMITED',
+		},
+		{
+			code: 'DTB2.76',
+			description:
+				'MILIMANI COMMERCIAL SCCC/E773 OF RICHARD MALONZA KANYI .VS. SIFA CLEANING AND BINS SERVICES LIMITED & DIAMOND TRUST BANK KENYA LIMITED',
+		},
+		{
+			code: 'DTB2.77',
+			description:
+				'MILIMANI COMMERCIAL COURTS CIVIL MISC NO.1037 OF 2016 - FRED ODHIAMBO ODEK V PETER MAXWELL OTIENO & STANDARD CHARTERED BANK KENYA LIMITED',
+		},
+		{
+			code: 'DTB2.78',
+			description:
+				'CIVIL CASE NO. E2132 OF 2022; NORAH CHEPKOECH.VS. JOSHUA MUCHUGIA NDUGI & 2 OTHERS.',
+		},
+		{
+			code: 'DTB2.79',
+			description:
+				'Civil case no.131 of 2022 Busia - Petronilla Makokha vs Invesco Assurance Company Limited and Another',
+		},
+		{
+			code: 'DTB2.8',
+			description: 'DIAMOND TRUST BANK LTD',
+		},
+		{
+			code: 'DTB2.80',
+			description:
+				'RECOVERY OF OUTSTANDING BALANCES FROM NAKUMATT HOLDINGS LIMITED (IN LIQUIDATION)',
+		},
+		{
+			code: 'DTB2.81',
+			description: 'DIAMOND TRUST BANK LOAN FACILITY TO KENAFRIC PROPERTIES LIMITED',
+		},
+		{
+			code: 'DTB2.82',
+			description:
+				'CIVIL CASE NO.131 OF 2022 BUSIA. PETRONILLA MAKOKHA VS. INVESCO ASSURANCE COMPANY LIMITED AND ANOTHER.',
+		},
+		{
+			code: 'DTB2.83',
+			description:
+				'MOMBASA ELRC NO.E057 OF 2022: MERCY MIMA MUSYOKA VS. DIAMOND TRUST BANK KENYA LIMITED',
+		},
+		{
+			code: 'DTB2.84',
+			description: 'BANKING FACILITY TO MODERN TRUCKERS LIMITED.',
+		},
+		{
+			code: 'DTB2.85',
+			description: 'Review of contractual agreements for the custodial business',
+		},
+		{
+			code: 'DTB2.86',
+			description: 'RECOVERY SUIT AGAINST XBIONET GORAO CO. LTD',
+		},
+		{
+			code: 'DTB2.87',
+			description: 'RECOVERY SUIT AGAINST DIPAK KURJI',
+		},
+		{
+			code: 'DTB2.88',
+			description: 'RECOVERY SUIT AGAINST JOHN RONO',
+		},
+		{
+			code: 'DTB2.89',
+			description: 'RECOVERY SUIT AGAINST KEVAL DODHIA',
+		},
+		{
+			code: 'DTB2.9',
+			description: 'DIAMOND TRUST BANK LTD RIGHTS ISSUE 2014',
+		},
+		{
+			code: 'DTB2.90',
+			description: 'RECOVERY SUIT AGAINST MARIAM SALIM SHEIKH OMAR',
+		},
+		{
+			code: 'DTB2.91',
+			description: 'RECOVERY SUIT AGAINST ALICE ANINDO',
+		},
+		{
+			code: 'DTB2.92',
+			description: 'RECOVERY SUIT AGAINST WILSMART INSURANCE BROKERS LTD',
+		},
+		{
+			code: 'DTB2.93',
+			description: 'RECOVERY SUIT AGAINST SHEZAN MUNIR',
+		},
+		{
+			code: 'DTB2.94',
+			description: 'RECOVERY SUIT AGAINST DENNIS ONDIEKI MOTURI',
+		},
+		{
+			code: 'DTB2.95',
+			description: 'RECOVERY SUIT AGAINST RENGCOM COMMUNICATIONS LIMITED.',
+		},
+		{
+			code: 'DTB2.96',
+			description: 'RECOVERY SUIT AGAINST LAVENDER AKOTH ODHIAMBO',
+		},
+		{
+			code: 'DTB2.97',
+			description: 'RECOVERY SUIT AGAINST AEA LIMITED',
+		},
+		{
+			code: 'DTB2.98',
+			description: 'RECOVERY SUIT AGAINST AZIM JIWAN',
+		},
+		{
+			code: 'DTB2.99',
+			description: 'RECOVERY SUIT AGAINST WILLY MWANGI KURIA',
+		},
+		{
+			code: 'DUM1.1',
+			description: 'DUMA INVESTMENT LTD',
+		},
+		{
+			code: 'DUN1.1',
+			description: 'DR. MALAKI DUNDU & PAMELA OWILI',
+		},
+		{
+			code: 'DUR1.1',
+			description: 'FAMILY LAW',
+		},
+		{
+			code: 'DUR1.2',
+			description: 'DIVORCE – GUILLAUME SERGE DURAND',
+		},
+		{
+			code: 'EAB1.1',
+			description: 'COMHARD LIMITED VS UGANDA BREWERIES LIMITED',
+		},
+		{
+			code: 'EAB1.1/001',
+			description: 'CIVIL CASE NO.3946 OF 2010-CONHARD LIMITED VS.KENYA BREWERIES LTD',
+		},
+		{
+			code: 'EAB1.1/002',
+			description: 'CIVIL CASE NO.3949 OF 2010-COMHARD LIMITED VS.UDV KENYA LIMITED',
+		},
+		{
+			code: 'EAB1.10',
+			description:
+				'PETITION NO. 84 OF 2011 EAST AFRICAN BREWERIES LIMITED VS THE HON. ATTORNEY GENERAL & 2 OTHERS',
+		},
+		{
+			code: 'EAB1.10/001',
+			description:
+				'CIVIL APPEAL NO. 344 OF 2013 EAST AFRICA BRWERIES LIMITED VS. THE ATTORNEY GENERAL & 2 OTHERS',
+		},
+		{
+			code: 'EAB1.12',
+			description:
+				'HC PETITION NO. 524 OF 2016: PLATINUM DISTILLERS  LIMITED VS EAST AFRICAB BREWERIES LIMITED & 4 OTHERS',
+		},
+		{
+			code: 'EAB1.13',
+			description: 'PLATINUM DISTILLERS LTD CONSTITUTIONAL PETITION NO. 524 OF 2016',
+		},
+		{
+			code: 'EAB1.14',
+			description:
+				'CMCC NO. 1 OF 2017 (KERICHO) GUEST HOUSE ENTERPRISES LIMITED VS KENYA BREWERIES LIMITED',
+		},
+		{
+			code: 'EAB1.15',
+			description:
+				'E&LRC NO. 1868 OF 2013: MOSES KURIA NGUMO VS EAST AFRICAN BREWERIES LIMITED',
+		},
+		{
+			code: 'EAB1.16',
+			description: 'CRIMINAL CASE NO. 181 OF 2017-KANDARA LAW COURTS',
+		},
+		{
+			code: 'EAB1.16/001',
+			description: "KENYA BREWERIES LIMITED VS. MICHAEL NJOROGE KING'ARA & 5 OTHERS",
+		},
+		{
+			code: 'EAB1.17',
+			description: 'IMPLICATIONS OF THE AMENDMENTS OF BETTING LOTTERIES AND GAMING ACT',
+		},
+		{
+			code: 'EAB1.18',
+			description: "CRIMINAL CASE NO. 431 OF 2017- REPUBLIC VS MICHAEL KIN'GARA",
+		},
+		{
+			code: 'EAB1.19',
+			description: 'ARBITRATION BETWEEN SAFARI PARTNERS LTD AND KENYA BREWERIES LIMITED',
+		},
+		{
+			code: 'EAB1.2',
+			description: 'ALCOHOLIC DRINKS CONTROL ACT 2010 (ACDA)',
+		},
+		{
+			code: 'EAB1.20',
+			description:
+				'CIVIL CASE NO.3007 OF 2017-PETER NJERU MUGO VS. EAST AFRICAN BREWRIES LIMITED.',
+		},
+		{
+			code: 'EAB1.21',
+			description: 'PROPERTY SEARCHES FOR "JIJENGE NA KA-QUATER PROMOTION"',
+		},
+		{
+			code: 'EAB1.22',
+			description:
+				'CIVIL APPEAL NO.447 OF 2009:VAN DORN LIMITED VS. EAST AFRICA BREWERIES LIMITED',
+		},
+		{
+			code: 'EAB1.23',
+			description: 'EMPLOYMENT ADVISORY ON REDUNDANCY',
+		},
+		{
+			code: 'EAB1.24',
+			description: 'EABL - JILK CONSTRUCTION CO. LTD VS. EAST AFRICA BREWERIES LIMITED',
+		},
+		{
+			code: 'EAB1.24/001',
+			description:
+				'MISC APPLICATION NO.E782 OF 2021: JILK CONSTRUCTION CO. LTD VS. KENYA BREWERIES LIMITED',
+		},
+		{
+			code: 'EAB1.25',
+			description:
+				'CRIMINAL CASE NO. 3847 OF 2019 – CORNEL MWABILI & OTHERS VS. EAST AFRICA BREWERIES LIMITED',
+		},
+		{
+			code: 'EAB1.25/001',
+			description:
+				'HCCC NO.E101 OF 2022: JAMES KIMEMIA & AMBROSE MWEMA VS. ATTORNEY GENERAL, THE DIRECTOR OF PROSECUTIONS & KBL',
+		},
+		{
+			code: 'EAB1.26',
+			description: 'MCCR No. 620 of 2020 – Republic vs. Joseph Muita Muriithi & 4 Others',
+		},
+		{
+			code: 'EAB1.27',
+			description:
+				'ELRC CAUSE NO.212 OF 2020: JAMES KANG’ARA KIMEMIA VS. EAST AFRICAN BREWERIES LIMITED & 2 OTHERS',
+		},
+		{
+			code: 'EAB1.28',
+			description:
+				'ELRC CAUSE NO.296 OF 2020: BRENDA KIMENGICH VS. EAST AFRICAN BREWERIES LIMITED & 2 OTHERS',
+		},
+		{
+			code: 'EAB1.29',
+			description: "KENYA BREWERIES LIMITED VS. MICHAEL NJOROGE KING'ARA & 5 OTHERS",
+		},
+		{
+			code: 'EAB1.3',
+			description:
+				'ELC NO. 331 OF 2010 ASSETS PROCUREMENT & DEVELOPMENT CO. LIMITED .VS. KENYA BREWERIES LIMITED & 2 OTHERS. ',
+		},
+		{
+			code: 'EAB1.4',
+			description: 'COMHARD LIMITED VS KENYA BREWERIES LIMITED',
+		},
+		{
+			code: 'EAB1.5',
+			description: 'UMOJA VENTURE LIMITED  VS EAST AFRICA BREWERIES LTD',
+		},
+		{
+			code: 'EAB1.7',
+			description: 'KENYA BREWERIES LIMITED LEASE TO BROOKSIDE DAIRY TENANCY',
+		},
+		{
+			code: 'EAB1.8',
+			description: 'KENYA BREWERIES LTD -VS- KENYA FILM CLASSIFICATION BOARD (KFCB)',
+		},
+		{
+			code: 'EAB1.9',
+			description: 'EAST AFRICAN BREWERIES GENERAL FILE',
+		},
+		{
+			code: 'EAC1.1',
+			description:
+				'CIVIL APPEAL NO. 84 OF 2017: THE ETHICS AND ANTI CORRUPTION COMMISSION VS MARSHALLS EAST AFRICA LIMITED & ANOTHER',
+		},
+		{
+			code: 'EAD1.2',
+			description:
+				'EAST AFRICA DEVELOPMENT BANK -  BANKING FACILITIES TO SOFCO INTERNATIONAL LTD',
+		},
+		{
+			code: 'EAP1.1',
+			description:
+				'EAST AFRICA PORTLAND CEMENT COMPANY LTD MANAGING DIRECTOR RENEWAL OF CONTRACT',
+		},
+		{
+			code: 'EAP1.2',
+			description:
+				'SUPERIOR HOMES LTD VS EAST AFRICA PORTLAND CEMENT COMPANY LTD: HC ELC CASE NO. 931 OF 2013',
+		},
+		{
+			code: 'EAS1.1',
+			description: 'REGISTRATION OF TRADEMARK',
+		},
+		{
+			code: 'EBL1.1',
+			description:
+				'ISAAC ODHIAMBO OKEYO & 2 OTHERS VS DEPOSIT PROTECTION FUND BOARD & 2 OTHERS: HC ELC NO. 537 OF 2013 (NBO)',
+		},
+		{
+			code: 'EBL1.2',
+			description:
+				'CIVIL APPEAL NO. 84 OF 2014: EUROBANK LIMITED LTD VS SHAH MUNGE & PARTNERS',
+		},
+		{
+			code: 'ECB1.1',
+			description:
+				'EQUATORIAL COMMERCIAL BANK, FAROUK RAVATE & JUSTIN SAMOURGOMPOULLE -VS- ERICK AGBEKO, PHILIP NYAMBOK, RAVASAM DEVELOPMENT COMPANY LTD/PHILIP KOECH: HCCC NO. 450 OF 2011',
+		},
+		{
+			code: 'ECB1.2',
+			description:
+				'RAVASAMI DEVELOPMENT COMPANY LTD -VS- EQUITORIAL COMMERCIAL BANK & ANOTHER: HCCC NO. 476 OF 2015',
+		},
+		{
+			code: 'ECB2.1',
+			description:
+				'CHINA YOUNG TAI ENGINEERING COMPANY LTD & RAVASAM DEVELOPMENT COMPANY LTD VS EQUITORIAL COMMERCIAL BANK LTD: IN THE MATTER OF ARBITRATION DISPUTE OVER THE CONSTRUCTION OF A PROJECT KNOWN AS ELYSEE PLAZA ON L.R NO. 2/189 BNI',
+		},
+		{
+			code: 'ECO1.1',
+			description: 'ECO BANK- REPUBLIC VS W N OROKO & M MONARI',
+		},
+		{
+			code: 'ECO1.10',
+			description: 'BANKING FACILITY TO HANNS KENYA LIMITED',
+		},
+		{
+			code: 'ECO1.11',
+			description:
+				'CLAIM FOR RECOVERY OF FUNDS ADVANCED TO ZAKHEM INTERNATIONAL NIGERIA LIMITED',
+		},
+		{
+			code: 'ECO1.13',
+			description: 'BANKING FACILITIES TO MAYFORD INVESTMENTS LIMITED.',
+		},
+		{
+			code: 'ECO1.15',
+			description:
+				'H.C. MISC NO.E043 OF 2020: EAST AFRICAN CABLES PLC VS. ECO BANK KENYA LIMITED',
+		},
+		{
+			code: 'ECO1.16',
+			description: 'Ecobank Kenya Limited vs. The Estate of the Late Mbiyu Koinange',
+		},
+		{
+			code: 'ECO1.17',
+			description:
+				'SALE BY CHARGEE OF APARTMENT NO. C9 ERECTED ON L.R. NO. 1/308 (THE "PROPERTY")  ECOBANK KENYA LIMITED AND RASAM MASOUD JUMAAN ',
+		},
+		{
+			code: 'ECO1.18',
+			description:
+				'CLAIM FOR COMPENSATION FOR ALLEGED MALICIOUS PROSECUTION AGAINST ECOBANK KENYA LIMITED BY PETER NDEGWA GATHAIYA',
+		},
+		{
+			code: 'ECO1.19',
+			description: 'PROJECT MAGHARIBI',
+		},
+		{
+			code: 'ECO1.2',
+			description: 'CLOSURE OF 4 BRANCHES',
+		},
+		{
+			code: 'ECO1.20',
+			description: 'CREDIT FACILITIES TO MAYFORD INVESTMENT LIMITED.',
+		},
+		{
+			code: 'ECO1.21',
+			description: 'CREDIT FACILITIES TO MAYFORD INVESTMENT LIMITED',
+		},
+		{
+			code: 'ECO1.3',
+			description: 'ECO BANK LTD - GENERAL FILE',
+		},
+		{
+			code: 'ECO1.4/001',
+			description: 'SECURITY AUDIT-SEARCHES',
+		},
+		{
+			code: 'ECO1.5',
+			description:
+				'HCCC NO. 450 OF 2013 BELL PACIFIC INTERNATIONAL LIMITED VS ECOBANK KENYA LIMITED',
+		},
+		{
+			code: 'ECO1.5/001',
+			description:
+				'CIVIL APPEAL NO. 416 OF 2017-ECOBANK KENYA LTD VS. BELL PACIFIC INTERNATIONAL LIMITED',
+		},
+		{
+			code: 'ECO1.8',
+			description: 'TERMINATION OF EMPLOYMENT',
+		},
+		{
+			code: 'EDC1.1',
+			description: 'EXPORT DEVELOPMENT CANADA',
+		},
+		{
+			code: 'EDL1.1',
+			description: 'ELRC NO. 1230 OF 2016 FRANCIS MATUERE OSIAGO',
+		},
+		{
+			code: 'EDL1.2',
+			description: 'IN THE MATTER OF THE ESTATE OF JOSEPH MOSHE (DECEASED)',
+		},
+		{
+			code: 'EDL1.3',
+			description:
+				'CMEL NO. E563 OF 2022; DOMINIC MWANGO MULI .VS. ENGINEERING DEVELOPMENT LIMITED',
+		},
+		{
+			code: 'EDS1.1',
+			description: 'MPYISI EDSON & KATHERINE',
+		},
+		{
+			code: 'EET1.1',
+			description: 'EL-KO ELEKRIK TRADE COMPANY',
+		},
+		{
+			code: 'EFL1.1',
+			description: 'COMPLAINT AGAINST LEO MASORE NYANGAU ADVOCATE-P.105/1709/88',
+		},
+		{
+			code: 'EFL1.2',
+			description:
+				"MISC. CIVIL APPLICATION NO. 205 OF 2017 - MASORE NYANG'AU & CO. ADVOCATES VS SOLAI GROUP OF COMPANIES & ENKASITI FLOWER GROWERS LTD",
+		},
+		{
+			code: 'EFP1.1',
+			description: 'EFP CONSULTING (KENYA) LTD/ THOMAS OMOGI',
+		},
+		{
+			code: 'EGF1.1',
+			description: 'EDUCATE GLOBAL FUND',
+		},
+		{
+			code: 'EGF1.2',
+			description: 'DUE DILIGENCE CHECKLIST',
+		},
+		{
+			code: 'EGF1.3',
+			description: 'PROJECT NUTRICO',
+		},
+		{
+			code: 'EGF1.5',
+			description: 'PROJECT BLUE',
+		},
+		{
+			code: 'EGF2.1',
+			description: 'PROJECT NUTRICO',
+		},
+		{
+			code: 'EGF2.2',
+			description: 'Project AquaCo',
+		},
+		{
+			code: 'EIL1.1',
+			description: 'EPIX INVESTMENTS LIMITED VS COMMISSIONER OF INVESTIGATIONS & ENFORCEMENT',
+		},
+		{
+			code: 'EIL2.1',
+			description: 'PURCHASE OF UNIT NO. 1611 "88 NAIROBI" ON LR. NO. 209/3006 NAIROBI.',
+		},
+		{
+			code: 'EIL2.3',
+			description: 'PURCHASE OF UNIT NUMBER 1611"88 NAIROBI" ON LR. NO. 209/3006 NAIROBI',
+		},
+		{
+			code: 'EIL2.4',
+			description:
+				'HCCC NO. 207 OF 2019 ELFLO INVESTMENTS LIMITED VS. HIGHGROVE HOLDINGS LIMITED & I&M BANK LIMITED',
+		},
+		{
+			code: 'EIL3.1',
+			description: 'OBJECTION TO REJECTION OF PIN/TAX OBLIGATION',
+		},
+		{
+			code: 'EIN1.1',
+			description: 'MRS AGNES ACAM EINYU VS FELIX KYENGO: RENT REFUND FROM FELIX KYENGO',
+		},
+		{
+			code: 'EKL1.1',
+			description: 'LEASE OF L.R. NO. 209/4160 TO SAFEZONE AUTO CARE LIMITED',
+		},
+		{
+			code: 'EKL1.2',
+			description: 'LEASE BETWEEN ELLIOTS KENYA LIMITED AND SHIVAM ENTERPRISES',
+		},
+		{
+			code: 'EKL1.3',
+			description: 'LEASE BETWEEN ELLIOTS KENYA LIMITED AND CLAUSTE MOTORS',
+		},
+		{
+			code: 'EKL2.1',
+			description: 'ECOSCAPES KENYA LIMITED VS. ALMOND ENGINEERING LIMITED',
+		},
+		{
+			code: 'EKM1.1',
+			description: 'DEFAMATION BY GIDEON MUTEMI MULYUNGI',
+		},
+		{
+			code: 'EKM1.2',
+			description: 'CIVIL SUIT NO:190 OF 2017 ERIC K. MUTUA VS GIDEON MULYUNGI',
+		},
+		{
+			code: 'EKO1.1',
+			description: 'INCORPORATION OF A COMPANY',
+		},
+		{
+			code: 'ELC1.1',
+			description: 'DATA PRIVACY:CLINIQUE CLINICAL REALITY APP (the"App")',
+		},
+		{
+			code: 'ELF1.1',
+			description: 'LEGAL OPINION ON LEASING OF AN AIRCRAFT ENGINE',
+		},
+		{
+			code: 'ELF1.2',
+			description: 'PROVISION OF AN UPDATED OPINION ON LEASING OF AN AIRCRAFT ENGINE.',
+		},
+		{
+			code: 'ELI1.1',
+			description:
+				'RANSFER OF PROPERTIES TITLE NUMBERS ELD MUN BLOCK 14/346, 14/347 AND 14/1333',
+		},
+		{
+			code: 'ELL1.1',
+			description: 'REVIEW OF LEASING DOCUMENTATION FOR THE KENYA MARKET',
+		},
+		{
+			code: 'EMK1.1',
+			description:
+				'OBJECTION TO THE KENYA REVENUE AUTHORITY AND POTENTIAL APPEAL TO THE APPEALS TRIBUNAL ON FINDINGS REGARDING TARIFF CLASSIFICATION DECISION.',
+		},
+		{
+			code: 'ENK1.1',
+			description: 'ENKONG ENCHORO EREMIT LIMITED -COMPANY INCORPORATION',
+		},
+		{
+			code: 'EPL1.1',
+			description: 'PHILIP NYABANDO MISOI',
+		},
+		{
+			code: 'EPL1.10',
+			description:
+				'E&LRC CAUSE NO.1485 OF 2017-JULIUS NZYOKI MUOKI-VS-ELLAMS PRODUCTS LIMITED',
+		},
+		{
+			code: 'EPL1.11',
+			description:
+				'E&LRC CAUSE NO.1486 OF 2017-ANDREW KAGATHI WANJOHI-VS-ELLAMS PRODUCTS LIMITED',
+		},
+		{
+			code: 'EPL1.12',
+			description:
+				'E&LRC CAUSE NO.1487 OF 2017-ERICK OUMA OMWOMBO-VS-ELLAMS PRODUCTS LIMITED',
+		},
+		{
+			code: 'EPL1.13',
+			description:
+				'E&LRC CAUSE NO.1488 OF 2017-ERICK KITHUKA KATHOKA-VS-ELLAMS PRODUCTS LIMITED',
+		},
+		{
+			code: 'EPL1.14',
+			description:
+				'E&LRC CAUSE NO.1489 OF 2017-FAITH KATHINI KYAMENYE-VS-ELLAMS PRODUCTS LIMITED',
+		},
+		{
+			code: 'EPL1.15',
+			description:
+				'E&LRC NO. 1486 OF 2017 ANDREW KIGATHI WANJOHI VS. ELLAMS PRODUCTS LIMITED',
+		},
+		{
+			code: 'EPL1.16',
+			description: 'CMCC NO. 3013 OF 2018 CLIFF ONYARI AMENYA VS. ELLAMS PRODUCTS LIMITED',
+		},
+		{
+			code: 'EPL1.17',
+			description: 'EMPLOYMENT ADVISORY.',
+		},
+		{
+			code: 'EPL1.18',
+			description:
+				'E&LRC CAUSE NO. E630 OF 2021 - BENSON NGULI MBUVI .VS. ELLAMS PRODUCTS LIMITED',
+		},
+		{
+			code: 'EPL1.2',
+			description: 'AUSTIN OLUOCH OCHOLLA',
+		},
+		{
+			code: 'EPL1.3',
+			description: 'UNFAIR DISMISSAL OF ELKANAH NYAKUNDI ONCHOKE',
+		},
+		{
+			code: 'EPL1.4',
+			description: 'GEDION MULUNGU WACHORO',
+		},
+		{
+			code: 'EPL1.5',
+			description:
+				'CMCC NO. 4822 OF 2017-NAIROBI JOSEPH NDAMBUKI MUASA -VS- ELLAMS PRODUCTS LIMITED',
+		},
+		{
+			code: 'EPL1.6',
+			description: 'ADVISORY ON RETIREMENT AND/OR REDUNDANCY FOR ELLAMS PRODUCTS LIMITED',
+		},
+		{
+			code: 'EPL1.7',
+			description:
+				'E&LRC CAUSE NO.1482 OF 2017-BENSON OTIENO DACHO-VS-ELLAMS PRODUCTS LIMITED',
+		},
+		{
+			code: 'EPL1.8',
+			description:
+				'E&LRC CAUSE NO.1483 OF 2017-JARED ONYANGO OGANGO-VS-ELLAMS PRODUCTS LIMITED',
+		},
+		{
+			code: 'EPL1.9',
+			description:
+				'E&LRC CAUSE NO.14834OF 2017-JPATRICK WYCLIFFE ODHIAMBO-VS-ELLAMS PRODUCTS LIMITED',
+		},
+		{
+			code: 'ESA1.1',
+			description: 'PROVISION OF LEGAL SERVICES TO E SERVICES AFRICA LIMITED',
+		},
+		{
+			code: 'ESL1.1',
+			description: 'PROVISION OF LEGAL SERVICES',
+		},
+		{
+			code: 'EWG1.1',
+			description:
+				'ELRC AT MOMBASA CAUSE CAUSE NO.439 OF 2018 JAMES MTONGOLO WAKOLI -VS-BRIDGELANE INTERNATIONAL LTD',
+		},
+		{
+			code: 'EXO1.1',
+			description:
+				"ADVISING ON THE COMPANY'SRIGHTS AS A SHARE HOLDER IN UNITED HOUSING ESTATE LIMITED.",
+		},
+		{
+			code: 'EXO1.2',
+			description: 'EXOBI (FINANCE HOUSE) LIMITED .VS. ZAHID A.A. NANJI & 2 OTHERS',
+		},
+		{
+			code: 'EXO1.2/001',
+			description:
+				'CIVIL APPEAL (APPLICATION) NO. E434 OF 2020 – ZAHID A.A. NANJI & 2 OTHERS VS. EXOBI (FINANCE HOUSE) LIMITED',
+		},
+		{
+			code: 'EXO1.3',
+			description:
+				'CIVIL APPEAL (APPLICATION) NO. E434 OF 2020 – ZAHID A.A. NANJI & 2 OTHERS VS. EXOBI (FINANCE HOUSE) LIMITED',
+		},
+		{
+			code: 'EYN1.1',
+			description: 'ADVISORY ON TERMINAL DUES FOR EMPLOYEES FOR COMPANY UNDER RECEIVERSHIP',
+		},
+		{
+			code: 'FAF1.1',
+			description:
+				'PURCHASE OF MAISONETTE NO. 3 ERECTED ON LAND REFERENCE NO. 330/591 (ORIG NO. 330/236/2 AND 330/237/1), NAIROBI FROM NASIM HASSAN HAJI',
+		},
+		{
+			code: 'FBS1.1',
+			description: 'PROVISION OF CORPORATE LEGAL SERVICES',
+		},
+		{
+			code: 'FCB1.1',
+			description:
+				'ELC CAUSE NO. 1100 OF 2017: CAROLYN WANJIKU NJOROGE -VS- FIRST COMMUNITY BANK LIMITED',
+		},
+		{
+			code: 'FCB1.2',
+			description:
+				'NAIROBI - ELR CAUSE NO. 1394 OF 2017: MOHAMED TAHIR VS FIRST COMMUNITY BANK LIMITED',
+		},
+		{
+			code: 'FCB1.3',
+			description:
+				'NAIROBI - ELR CAUSE NO. 1573 OF 2017: VICTOR K. MUTISYA VS FIRST COMMUNITY BANK LIMITED',
+		},
+		{
+			code: 'FCB1.4',
+			description:
+				'NAIROBI-CAUSE NO.2018 OF 2018:SAMIRA MBARAK AHMED VS.FIRST COMMUNITY BANK LIMITED',
+		},
+		{
+			code: 'FCB1.5',
+			description:
+				'NAIROBI - E&LRC NO. 657 OF 2018: ABDALLA ABDI ALI VS. FIRST COMMUNITY BANK LIMITED',
+		},
+		{
+			code: 'FCB1.6',
+			description:
+				'NAIROBI - E&LRC NO. 656 OF 2018: JAMAL ABDALLAH AWADH VS. FIRST COMMUNITY BANK LIMITED',
+		},
+		{
+			code: 'FCB1.7',
+			description: 'ELRC CAUSE NO.806 OF 2019: SAKINA AMIN VS. FIRST COMMUNITY BANK',
+		},
+		{
+			code: 'FCL1.1',
+			description: 'FEDHA CONNECT LTD',
+		},
+		{
+			code: 'FCL2.1',
+			description: 'FARMERS CHOICE LIMITED VS. THE NATIONAL LAND COMMISSION.',
+		},
+		{
+			code: 'FEC1.1',
+			description:
+				'MISC APP NO. ARB 001 OF 2020: CIVICOM LIMITED VS. FUJI ELECTRIC COMPANY LIMITED & ANOTHER',
+		},
+		{
+			code: 'FEC1.2',
+			description:
+				'ARBITRATION PROCEEDINGS BETWEEN WILKEN ENERGY LIMITED VS. CIVICON LIMITED',
+		},
+		{
+			code: 'FEC1.2/001',
+			description:
+				'HCCOMM NO.E359 OF 2022: CIVICON LIMITED VS. FUJI ELECTRIC CO. LIMITED & 2 OTHERS',
+		},
+		{
+			code: 'FEL1.1',
+			description: 'FELIX/CHARLES OGALLO',
+		},
+		{
+			code: 'FFF1.1',
+			description: 'PROVISION OF LEGAL SERVICES',
+		},
+		{
+			code: 'FGM1.1',
+			description: 'REGISTRATION OF SOCIETY',
+		},
+		{
+			code: 'FHF1.1',
+			description:
+				'PROVISION OF LEGAL SERVICES IN THE REVIEW OF THE FOUNDATION’S CONSTITUTION',
+		},
+		{
+			code: 'FHK1.1',
+			description: 'CELESTINE SHISHA WASURA VS FAITH HOMES OF KENYA',
+		},
+		{
+			code: 'FIC1.1',
+			description:
+				'COMMISSIONER OF DOMESTIC TAXES/KENYA REVENUE AUTHORITY -VS- FIDELITY SHEILD INSURANCE COMPANY LTD: HC MISC. CIVIL APPL. NO. 343 OF 2014 NBO',
+		},
+		{
+			code: 'FIC1.2',
+			description:
+				'COMMISSIONER OF DOMESTIC TAXES/KENYA REVENUE AUTHORITY -VS- FIDELITY SHEILD INSURANCE COMPANY LTD: HC MISC. CIVIL APPL. NO. 343 OF 2014 NBO',
+		},
+		{
+			code: 'FIC1.3',
+			description: 'HCCC NO. 2165 OF 2000 DESBRO (K) LIMITED VS FIDELITY SHIELD INSURANCE',
+		},
+		{
+			code: 'FIL1.1',
+			description: 'FLEUR INVESTMENTS LTD (A TRACHTENBERG) -VS- KENYA REVENUE AUTHORITY',
+		},
+		{
+			code: 'FIL1.2',
+			description:
+				'FLEUR INVESTMENTS LTD -VS- COMMISSIONER OF DOMESTIC TAXES/KENYA REVENUE AUTHORITY',
+		},
+		{
+			code: 'FIL1.3',
+			description:
+				'HCCC NO. 596 OF 2009 THE A.G. & P.S. MIN OF ROADS VS WILSON GACHANJA, ADEITA COMPANY LIMITED & FLEUR INVESTMENTS LIMITED',
+		},
+		{
+			code: 'FIL1.4',
+			description: 'CIVIL APPEAL NO. 114 OF 2014 PS MINISTRY OF ROADS & ATTORNEY GENERAL',
+		},
+		{
+			code: 'FIL1.5',
+			description:
+				'TAT APPEAL NO. 28 OF 2017 : FLEUR INVESTMENTS LIMITED VS COMMISSIONER OF DOMESTIC TAXES',
+		},
+		{
+			code: 'FIL1.6',
+			description:
+				'CIVIL APPEAL NO. 158 OF 2017 : FLEUR INVESTMENTS LTD VS COMMISSIONER OF DOMESTIC TAXES',
+		},
+		{
+			code: 'FIL1.7',
+			description:
+				'CERTIFICATE OF REGISTRATION -INCOME TAX ON RENTAL INCOME AND FICTITIOUS CLAIMS.',
+		},
+		{
+			code: 'FIL1.7/001',
+			description: 'JR APPLICATION FOR ENFORCEMENT',
+		},
+		{
+			code: 'FKE1.1',
+			description: 'DEFAMATION CASE',
+		},
+		{
+			code: 'FKO1.1',
+			description: 'LANDSCAPING CONTRACT WITH FLYING KITES ORGANIZATION',
+		},
+		{
+			code: 'FKO1.2',
+			description:
+				'NAKURU E&LRC CAUSE NO.E51 OF 2021 - REUBEN KIRUTHUI MUTAHI VS. THE BOARD OF MANAGEMENT FLYING KITES LEADERSHIP CENTRE & FLYING KITES LEADERSHIP ACADEMY.',
+		},
+		{
+			code: 'FLO1.1',
+			description:
+				'EUGINO FLORAVANTI - LEASE OF HOUSE ON LR.NO 1371 (430/20) MALINDI-CASE NO.72 OF 2013',
+		},
+		{
+			code: 'FLO2.1',
+			description:
+				'EUGENIO FLORAVANTI -VS- ROBERTO PIAVOLELA/ELVIS CHIVATSI NGALA: CMCC NO. 100 OF 2014 (MALINDI)',
+		},
+		{
+			code: 'FLT1.1',
+			description:
+				'CIVIL APPEAL NO. 342 OF 2017 - KENYA POWER & LIGHTING COMPANY LTD VS. FRIENDS OF LAKE TURKANA TRUST & 2 OTHERS',
+		},
+		{
+			code: 'FLY1.1',
+			description: 'REGISTRAR OF COMPANIES & OTHERS -VS- FLYOVER LTD: HCCC NO. 66 OF 2015',
+		},
+		{
+			code: 'FLY1.2',
+			description: 'FLYOVER LTD',
+		},
+		{
+			code: 'FON1.1',
+			description: 'ACCESS TO MINOR-TASHA FONTEIN',
+		},
+		{
+			code: 'FOO1.1',
+			description: 'CALCULATION OF CAPITAL GAINS TAX',
+		},
+		{
+			code: 'FOO1.2',
+			description: 'AGREEMENT FOR SALE OF PLOT NO. F79 AND SHARES',
+		},
+		{
+			code: 'FRE2.1',
+			description: 'Legal Opinion on Restructuring of Free the Children Operations in Kenya',
+		},
+		{
+			code: 'FRE3.1',
+			description:
+				'CIVIL APPEAL NO. OF 2022 - MARIE ROSE DEGRYSE & 2 OTHERS VS. EDGER GEAR INVESTMENT LTD & 2 OTHERS',
+		},
+		{
+			code: 'FSL1.1',
+			description: 'DEBT COLLECTION',
+		},
+		{
+			code: 'FSN1.1',
+			description: 'ADVICE ON REGULATORY AND COMPLIANCE REQUIREMENTS',
+		},
+		{
+			code: 'FSN1.2',
+			description: 'PROVISION OF LEGAL SERVICES',
+		},
+		{
+			code: 'FSN1.3',
+			description: 'LEGAL CLAIM FOR COMPENSATION FOR UNFAIR TERMINATION',
+		},
+		{
+			code: 'FSN1.4',
+			description: 'PROVISION OF LEGAL SERVICES',
+		},
+		{
+			code: 'FSN1.5',
+			description:
+				'VALIDATION OF THE SALARY PROJECT TOOL ,TAXABLE BENEFIT ON GAINS OR PROFIT OF EMPLOYMENT INCOME',
+		},
+		{
+			code: 'FSN1.6',
+			description: 'SONIA DO SACRAMENTO NICOLAU.',
+		},
+		{
+			code: 'FSN1.7',
+			description: 'REGISTRATION OF THE FRENCH SCHOOL TRADE MARK.',
+		},
+		{
+			code: 'FTH1.1',
+			description: 'FLAME TREE HILL LTD (BHACHU)',
+		},
+		{
+			code: 'FTM1.1',
+			description:
+				'ELC CASE NO. 1167 OF 2016: BIG FIVE BREWERIES LTD VS FORTIS TOWER MANAGEMENT LTD',
+		},
+		{
+			code: 'FTM1.2',
+			description:
+				'ELC CASE NO. 606 OF 2017 TORTOISE INVESTMENT LTD & 3 OTHERS VS HEATHERS PROPERTIES LTD & 3 OTHERS',
+		},
+		{
+			code: 'FWK1.1',
+			description:
+				'F.W KEW GARDENS LTD - DEFAMATORY STATEMENTS APPEARING IN THE LETTER DATED 3RD APRIL 2014',
+		},
+		{
+			code: 'G4S1.1',
+			description: 'G4S KENYA LTD VS PASTEL OFFICE SOLUTIONS: DEMAND LETTER',
+		},
+		{
+			code: 'G4S2.1',
+			description: 'REVIEW OF CONTRACT WITH DAYKIO PLANTATIONS LIMITED',
+		},
+		{
+			code: 'G4S2.1/001',
+			description:
+				'REVIEWING A SERVICE LEVEL AGREEMENT BETWEEN METROFILE RECORDS MANAGEMENT KENYA LIMITED AND DAYKIO PLANTATIONS LIMITED',
+		},
+		{
+			code: 'GAB1.1',
+			description: 'REVIEW OF AGENCY AGREEMENT WITH ISLAMIC DEVELOPMENT BANK',
+		},
+		{
+			code: 'GAC0092.1',
+			description: 'PERSONAL INJURY TO JOSEPH GACHECHEH',
+		},
+		{
+			code: 'GAC1.1',
+			description: 'R N GACHOGU',
+		},
+		{
+			code: 'GAC2.1',
+			description:
+				'HCCC MISC/E094/2021: REVIVAL HOLDINGS LIMITED VS. GRAND AFRIQUE CONSULTING GROUP LTD.',
+		},
+		{
+			code: 'GAC3.2',
+			description:
+				'MISC CIVIL APP. NO. 96 OF 2017: MARC GACHECHEH -VS- ROBERT TIMOTHY GACHECHEH & 4 OTHERS',
+		},
+		{
+			code: 'GAC3.4',
+			description:
+				'PURCHASE OF MAISONETTE NO.2 ERECTED ON LR.NO.3734/278 FROM HENRY KAMAU KARUGU & JOCYLENE WAITHIRA MUGUIYI TO MARIE JOSEE GACHECHEH',
+		},
+		{
+			code: 'GAC3.6',
+			description: 'ESTATE OF THE LATE ROBERT TIMOTHY GACHECHEH',
+		},
+		{
+			code: 'GAC3.7',
+			description:
+				'HCCC NO…….. OF 2021: MARIE-ANNICK GACHECHEH VS. MARIE-JOSEE GACHECHEH & OTHERS',
+		},
+		{
+			code: 'GAC3.8',
+			description: 'HC P&A NO.E151 OF 2023: IN THE ESTATE OF MARIE ANNICK GACHECHEH',
+		},
+		{
+			code: 'GAR0096.1',
+			description: 'OPENING BALANCE AS AT 01 JANUARY 2016',
+		},
+		{
+			code: 'GAT1.1',
+			description: 'EVANS THIGA GATURU ADVOCATE',
+		},
+		{
+			code: 'GAT2.1',
+			description: 'ROAD ACCIDENT IN KAREN',
+		},
+		{
+			code: 'GBD1.1',
+			description: 'GARDAWORLD (KENYA) LIMITED VS. DEREK JAMES OATWAY AND OTHERS.',
+		},
+		{
+			code: 'GBD1.2',
+			description:
+				'ADVISORY TO GBD LLP ACTING FOR VENDORS OF KK SECURITY ON THE PENSION SCHEME (UNPAID LIFE INSURANCE BENEFITS)',
+		},
+		{
+			code: 'GBH1.1',
+			description:
+				'GRAIN BULK HUNDLERS LTD VS KENYA REVENUE AUTHORITY-JAFFER MUJTABA MOHAMED',
+		},
+		{
+			code: 'GBH1.2',
+			description:
+				'CIVIL APPLICATION NO NAI.17 OF 2018:GRAIN BULK HANDLERS LTD VS.KENYA REVENUE AUTHORITY & OTHERS',
+		},
+		{
+			code: 'GBH1.3',
+			description:
+				'TAT APPEAL NO.OF 2018-GRAIN BULK HANDLERS LTD VS THE COMMISSIONER OF INVESTIGATION & ENFORCEMENT',
+		},
+		{
+			code: 'GBH1.3/001',
+			description:
+				'INCOME TAX APPEAL NO. E005 OF 2020 - COMMISSIONER OF INVESTIGATIONS AND ENFORCEMENT VS. GRAIN BULK HANDLERS LIMITED',
+		},
+		{
+			code: 'GBH1.4',
+			description:
+				'TAX APPEAL NO.( ) OF 2018-GRAINBULK HANDLERS LIMITED VS.THE COMMISSIONER OF INVESTIGATIONS & ENFORCEMENT',
+		},
+		{
+			code: 'GBH1.5',
+			description:
+				'MISC.CIVIL APP.NO.80 OF 2018-GRAIN BULK HANDLERS LTD VS. THE COMMISSIONER OF INVESTIGATIONS & ENFORCEMENT',
+		},
+		{
+			code: 'GBL1.1',
+			description: 'JOINT VENTURE WITH DYNAMO DIGITAL COMPANY LIMITED',
+		},
+		{
+			code: 'GDC1.1',
+			description: 'REVIEW OF SHAREHOLDERS AGREEMENT',
+		},
+		{
+			code: 'GEL1.1',
+			description: 'GLENCORE ENERGY VS KENYA PIPELINE COMPANY LTD: HCCC 244 OF 2009 NAIROBI',
+		},
+		{
+			code: 'GEN1.2',
+			description: "SALE OF CENTUM'S STAKE IN GENAFRICA ASSET MANAGERS LIMITED",
+		},
+		{
+			code: 'GEN1.4',
+			description:
+				'REVIEW OF THE POLICY ON ANTI-MONEY LAUNDERING & COMBATING FINANCING OF TERRORISM',
+		},
+		{
+			code: 'GEN1.5',
+			description:
+				'POTENTIAL CLAIM BY EQUITY INVESTMENT BANK AGAINST GENAFRICA ASSET MANAGERS',
+		},
+		{
+			code: 'GER1.1',
+			description:
+				'BENTER ALOO GER- SALE OF TITLE NO. NRBI/BLOCK 136/2804 TO MONICA ATIENO MUGA',
+		},
+		{
+			code: 'GER2.1',
+			description: 'ESTATE OF THE LATE SAMSON OWINO GER',
+		},
+		{
+			code: 'GFL1.1',
+			description: 'GENRAL CORPORATE ADVICE',
+		},
+		{
+			code: 'GGO1.1',
+			description: 'GENERAL FILE',
+		},
+		{
+			code: 'GIC1.1',
+			description:
+				'PUBLICATION OF DEFAMATORY STATEMENTS  AGAINST  MAJORGENERAL (RTD) MICHAEL GICHANGI     ',
+		},
+		{
+			code: 'GIL1.1',
+			description:
+				'PURCHASE OF FLAT NO. C1 ON L.R. No. 330/157 (ORIGINAL NO. 330/39/10), NAIROBI HICHAM MOURTADA MOURTADA TO GALYWEN INVESTMENTS LIMITED.',
+		},
+		{
+			code: 'GIL2.1',
+			description: 'PROVISION OF LEGAL SERVICES TO GRIFFIN INSURANCE LIMITED',
+		},
+		{
+			code: 'GIL2.2',
+			description: 'REGISTRATION OF TWO LAMI TRADE MARKS',
+		},
+		{
+			code: 'GIT1.1',
+			description: 'IVY WAMBUI GITAU VS DIRECT PAY LTD: UNLAWFUL TERMINATION',
+		},
+		{
+			code: 'GIT2.1',
+			description: 'STANLEY MUNGA GITHUNGURI',
+		},
+		{
+			code: 'GIT2.10',
+			description:
+				'MISC APPLICATION NO. 290 OF 2016 MOGENI & COMPANY ADVOCATES VS HON. S.M. GITHUNGURI',
+		},
+		{
+			code: 'GIT2.100',
+			description: 'REGISTRATION OF STANLEY GARDENS TRADEMARK',
+		},
+		{
+			code: 'GIT2.101',
+			description: 'REGISTRATION OF THE ‘RIDGEWAYS MALL’ TRADEMARK',
+		},
+		{
+			code: 'GIT2.11',
+			description: 'RIDGEWAYS MALL',
+		},
+		{
+			code: 'GIT2.11/001',
+			description: 'LEASE RENEWAL - INNSCOR (K) LIMITED',
+		},
+		{
+			code: 'GIT2.11/002',
+			description: 'LEASE RENEWAL - PARADISE SAFARI PARK LIMITED',
+		},
+		{
+			code: 'GIT2.11/003',
+			description: 'RIDGEWAYS MALL LEASE RENEWAL-EUGEN KLEIN SHOP LIMITED.',
+		},
+		{
+			code: 'GIT2.11/004',
+			description: 'RIDGEWAYS MALL LEASE RENEWAL - GOODLIFE PHARMACY LIMITED',
+		},
+		{
+			code: 'GIT2.11/005',
+			description:
+				'LEASE RENEWAL-RIDGEWAYS MALL:MUNGA HOLDINGS LIMITED TO AUTO XPRESS LIMITED',
+		},
+		{
+			code: 'GIT2.11/006',
+			description:
+				'LEASE RENEWAL-RIDGEWAYS MALL:MUNGA HOLDINGS LIMITED TO MORGAN FOREX BUREAU DE CHANGE LIMITED',
+		},
+		{
+			code: 'GIT2.11/007',
+			description:
+				'LEASE RENEWAL-RIDGEWAYS MALL:MUNGA HOLDINGS LIMITED  TO MARGARET WANGUI CHEGE T/A MAWACHE FLORIST',
+		},
+		{
+			code: 'GIT2.11/008',
+			description:
+				'LEASE RENEWAL-RIDGEWAYS MALL:MUNGA HOLDINGS LIMITED TO HUNKAR TRADING CO.LIMITED',
+		},
+		{
+			code: 'GIT2.11/009',
+			description:
+				'LEASE RENEWAL - RIDGEWAYS MALL: MUNGA HOLDINGS LIMITED TO STANDARD CHARTERED BANK KENYA LIMITED',
+		},
+		{
+			code: 'GIT2.11/010',
+			description:
+				'LEASE RENEWAL - RIDGEWAYS MALL: MUNGA HOLDINGS LIMITED TO BARCLAYS BANK (K) LIMITED',
+		},
+		{
+			code: 'GIT2.11/011',
+			description:
+				'LEASE RENEWAL - RIDGEWAYS MALL: MUNGA HOLDINGS LIMITED TO MEGLINK VENTURES LIMITED',
+		},
+		{
+			code: 'GIT2.11/012',
+			description:
+				'LEASE RENEWAL - RIDGEWAYS MALL: MUNGA HOLDINGS LIMITED TO FAMILY HIRE HOLDING CO. LIMITED',
+		},
+		{
+			code: 'GIT2.11/013',
+			description:
+				'LEASE RENEWAL - RIDGEWAYS MALL: MUNGA HOLDINGS LIMITED TO JAQUELINE KULO T/A XXL FASHIONS',
+		},
+		{
+			code: 'GIT2.11/014',
+			description:
+				'LEASE RENEWAL - RIDGEWAYS MALL: MUNGA HOLDINGS LIMITED TO INTERWORLD WINE AGENCY',
+		},
+		{
+			code: 'GIT2.11/015',
+			description:
+				'LEASE RENEWAL - RIDGEWAYS MALL: MUNGA HOLDINGS LIMITED TO GOSHEN GARDENS LIMITED',
+		},
+		{
+			code: 'GIT2.11/016',
+			description:
+				'LEASE RENEWAL - RIDGEWAYS MALL: MUNGA HOLDINGS LIMITED TO NAKUMATT HOLDINGS',
+		},
+		{
+			code: 'GIT2.11/017',
+			description:
+				'LEASE RENEWAL - RIDGEWAYS MALL: MUNGA HOLDINGS LIMITED TO CO-OPERATIVE BANK OF KENYA LIMITED',
+		},
+		{
+			code: 'GIT2.11/018',
+			description:
+				'LEASE RENEWAL - RIDGEWAYS MALL: MUNGA HOLDINGS LIMITED TO NATIONAL BANK (K) LIMITED',
+		},
+		{
+			code: 'GIT2.11/019',
+			description:
+				'LEASE RENEWAL - RIDGEWAYS MALL: MUNGA HOLDINGS LIMITED TO COCO BANANA GIFTS AND ACCESSORIES',
+		},
+		{
+			code: 'GIT2.11/020',
+			description:
+				'LEASE RENEWAL - RIDGEWAYS MALL: MUNGA HOLDINGS LIMITED TO NELLY MILIA T/A DEEDS PRODUCTION',
+		},
+		{
+			code: 'GIT2.11/021',
+			description:
+				'LEASE RENEWAL - RIDGEWAYS MALL: MUNGA HOLDINGS LIMITED TO SMOOTHIE LIFE LIMITED',
+		},
+		{
+			code: 'GIT2.11/022',
+			description:
+				'LEASE RENEWAL - RIDGEWAYS MALL: MUNGA HOLDINGS LIMITED TO ROBERT WANDERI IRUNGU, SHADRACK BUNDI KINYUA & MARTHA WANJIRU MWANGI T/A DREP MOVIES',
+		},
+		{
+			code: 'GIT2.11/023',
+			description:
+				'LEASE RENEWAL - RIDGEWAYS MALL: MUNGA HOLDINGS LIMITED TO JAMII TELECOMMUNICATIONS LIMITED',
+		},
+		{
+			code: 'GIT2.11/024',
+			description:
+				'LEASE RENEWAL - RIDGEWAYS MALL: MUNGA HOLDINGS LIMITED TO KENYA DATA NETWORKS LIMITED',
+		},
+		{
+			code: 'GIT2.11/025',
+			description:
+				'LEASE RENEWAL - RIDGEWAYS MALL: MUNGA HOLDINGS LIMITED TO JOYCE NTHIGA T/A FIORANA ENTERPRISE',
+		},
+		{
+			code: 'GIT2.11/026',
+			description:
+				'LEASE RENEWAL - RIDGEWAYS MALL: MUNGA HOLDINGS LIMITED TO WATER INTERNATIONAL (K) LIMITED',
+		},
+		{
+			code: 'GIT2.11/027',
+			description:
+				'LEASE RENEWAL - RIDGEWAYS MALL: MUNGA HOLDINGS LIMITED TO MPAKA VETERINARY CLINIC',
+		},
+		{
+			code: 'GIT2.11/028',
+			description:
+				'LEASE RENEWAL - RIDGEWAYS MALL: MUNGA HOLDINGS LIMITED TO MARIDADY ENTERPRISES LIMITED',
+		},
+		{
+			code: 'GIT2.11/029',
+			description:
+				'LEASE RENEWAL - RIDGEWAYS MALL: MUNGA HOLDINGS LIMITED TO LOGISTICS MATRIX LIMITED',
+		},
+		{
+			code: 'GIT2.11/030',
+			description:
+				'LEASE RENEWAL - RIDGEWAYS MALL: MUNGA HOLDINGS LIMITED TO KAHUNA LIMITED T/A DELIGHTS',
+		},
+		{
+			code: 'GIT2.11/031',
+			description:
+				'LEASE RENEWAL - RIDGEWAYS MALL: MUNGA HOLDINGS LIMITED TO WHITE HOUSE PAUL GEORGE LIMITED',
+		},
+		{
+			code: 'GIT2.11/032',
+			description:
+				'LEASE RENEWAL - RIDGEWAYS MALL: MUNGA HOLDINGS LIMITED TO IGNITE CONSULTING & INVESTMENT LIMITED',
+		},
+		{
+			code: 'GIT2.11/033',
+			description:
+				'LEASE RENEWAL - RIDGEWAYS MALL: MUNGA HOLDINGS LIMITED TO MUKAMI SUSAN MUNDERU T/A BABY HOUSE OUTLETS',
+		},
+		{
+			code: 'GIT2.11/034',
+			description:
+				'LEASE RENEWAL - RIDGEWAYS MALL: MUNGA HOLDINGS LIMITED TO RISTES GROUP LIMITED',
+		},
+		{
+			code: 'GIT2.11/035',
+			description:
+				'LEASE RENEWAL - RIDGEWAYS MALL: MUNGA HOLDINGS LIMITED TO BEADLES LIMITED T/A INTREND SHOES',
+		},
+		{
+			code: 'GIT2.11/036',
+			description:
+				'LEASE RENEWAL - RIDGEWAYS MALL: MUNGA HOLDINGS LIMITED TO BATA SHOE COMPANY LIMITED',
+		},
+		{
+			code: 'GIT2.11/037',
+			description:
+				'LEASE RENEWAL - RIDGEWAYS MALL: MUNGA HOLDINGS LIMITED TO SCOTCHIES AGENCIES LIMITED',
+		},
+		{
+			code: 'GIT2.11/038',
+			description:
+				'LEASE RENEWAL - RIDGEWAYS MALL: MUNGA HOLDINGS LIMITED TO CAFE KRISTINA LIMITED',
+		},
+		{
+			code: 'GIT2.11/039',
+			description:
+				'LEASE RENEWAL - RIDGEWAYS MALL: MUNGA HOLDINGS LIMITED TO CHASE BANK (K) LIMITED',
+		},
+		{
+			code: 'GIT2.11/040',
+			description:
+				'LEASE RENEWAL - RIDGEWAYS MALL: MUNGA HOLDINGS LIMITED TO GALAXY MOBILE ACCESSORIES LIMITED',
+		},
+		{
+			code: 'GIT2.11/041',
+			description:
+				'LEASE RENEWAL - RIDGEWAYS MALL: MUNGA HOLDINGS LIMITED TO ISAAC GICHIA T/A ALL SEASONS SERVICES LIMITED',
+		},
+		{
+			code: 'GIT2.11/042',
+			description: 'RENEWAL OF LEASE - RIDGEWYAS MALL TO MIMOSA PHARMACY LIMITED',
+		},
+		{
+			code: 'GIT2.11/043',
+			description: 'RENEWAL OF LEASE - RIDGEWAYS MALL TO BONFIRE ADVENTURES & EVENTS LTD',
+		},
+		{
+			code: 'GIT2.11/044',
+			description: 'RENEWAL OF LEASE - RIDGEWAYS MALL TO EQUITY BANK KENYA LIMITED',
+		},
+		{
+			code: 'GIT2.11/045',
+			description: 'LEASE-RIDGEWAYS MALL TO SHOPRITE CHECKERS KENYA LIMITED',
+		},
+		{
+			code: 'GIT2.11/046',
+			description: 'LEASE-RIDGEWAYS MALL TO KUMON STUDY CENTRE',
+		},
+		{
+			code: 'GIT2.11/047',
+			description: 'LEASE-RIDGEWAYS MALL TO ROYAL JEWELLERS ENTERPRISES',
+		},
+		{
+			code: 'GIT2.11/048',
+			description:
+				'LEASE OF UNIT G29:RIDGEWAYS MALL BY MUNGA HOLDINGS LTD TO RIMI GENERAL TRADING LIMITED',
+		},
+		{
+			code: 'GIT2.11/049',
+			description:
+				'LICENCE OF OPEN WALKWAY SPACE-RIDGEWAYS MALL BY MUNGA HOLDINGS LTD TO ZEEPO LIMITED',
+		},
+		{
+			code: 'GIT2.11/050',
+			description:
+				'LEASE OF UNIT G8 RIDGEWAYS MALL BY MUNGA HOLDINGS LIMITED TO MAX FRESH GREEN GROCERY LIMITED',
+		},
+		{
+			code: 'GIT2.11/051',
+			description:
+				'LEASE OF UNIT NO.WWK6 RIDGEWAYS MALL ON L.R  NO. 27/48 BY MUNGA HOLDINGS LIMITED TO FUSCHIA LIMITED',
+		},
+		{
+			code: 'GIT2.11/052',
+			description:
+				'LEASE OVER UNIT NO. G4. ON GROUND FLOOR OF RIDGEWAYS MALL BY MUNGA HGOLDINGS LIMITED TO MARGARET ROSE WAIRIMU T/A TASHAN COLLECTIONS.',
+		},
+		{
+			code: 'GIT2.11/053',
+			description:
+				'LEASE OVER UNIT F.3 ON 1ST FLOOR OF RIDGEWAYS MALL BY MUNGA HOLDINGS LIMITED TO ROMAG COMPANY LIMITED',
+		},
+		{
+			code: 'GIT2.12',
+			description:
+				'MISC APPLICATION NO. 557 OF 2016 KELVIN MOGENI T/A MOGENI & COMPANY ADVOCATES VS HON. S.M. GITHUNGURI',
+		},
+		{
+			code: 'GIT2.13',
+			description:
+				'MISC APPLICATION NO. 558 OF 2016 MOGENI & COMPANY ADVOCATES VS HON. S.M. GITHUNGURI',
+		},
+		{
+			code: 'GIT2.14',
+			description:
+				'MISC APPLICATION NO. 54 OF 2016 MOGENI & COMPANY ADVOCATES VS HON. S.M. GITHUNGURI',
+		},
+		{
+			code: 'GIT2.15',
+			description:
+				'MISC APPLICATION NO. 51 OF 2016 MOGENI & COMPANY ADVOCATES VS HON. S.M. GITHUNGURI',
+		},
+		{
+			code: 'GIT2.16',
+			description:
+				'MISC APPLICATION NO. 490 OF 2016 MOGENI & COMPANY ADVOCATES VS HON. S.M. GITHUNGURI',
+		},
+		{
+			code: 'GIT2.2',
+			description:
+				'WITHDRAWAL OF COURT CASES ON FEE NOTES AND RELATED MATTERS BY MOGENI & COMPANY ADVOCATES',
+		},
+		{
+			code: 'GIT2.20',
+			description:
+				'ELRC CAUSE NO. 1514 OF 2013 - JOSEPH NDUNGU WARIUKO VS TASSIA COFFEE ESTATE LIMITED  STANLEY MUNGA GITHUNGURI',
+		},
+		{
+			code: 'GIT2.21',
+			description: 'RIDGEWAYS MALL DEBT COLLECTION',
+		},
+		{
+			code: 'GIT2.22',
+			description: 'ELC CASE NO. 2175 OF 2007 -JOSEPH KURIA KIBURU VS THE ATTORNEY GENERAL',
+		},
+		{
+			code: 'GIT2.23',
+			description:
+				'MISC APPLICATION NO. 291 OF 2016 - MOGENI & CO. ADVOCATES VS STANLEY GITHUNGURI',
+		},
+		{
+			code: 'GIT2.24',
+			description:
+				'MISC APLICATION NO. 137 OF 2017 KELVIN MOGENI T/A MOGENI & CO. ADVOCATES VS MUKAWA HOTELS HOLDINGS',
+		},
+		{
+			code: 'GIT2.25',
+			description:
+				'ELRC CAUSE NO. 1988 OF 2015 - JAMES MWAURA KINYANJUI VS  MUKAWA HOLDINGS T/A NAIROBI SAFARI CLUB',
+		},
+		{
+			code: 'GIT2.26',
+			description:
+				'GITHUNGURI - BOUNDARY WALL CLAIM BY JOMAKI ENTERPRISES LTD TO STANLEY MUNGA GITHUNGURI',
+		},
+		{
+			code: 'GIT2.27',
+			description: 'GITHUNGURI - FORENSIC INVESTIGATION IN RESPECT OF NAIROBI SAFARI CLUB',
+		},
+		{
+			code: 'GIT2.29',
+			description: 'RIDGEWAYS MALL PARKING SYSTEM',
+		},
+		{
+			code: 'GIT2.3',
+			description: 'STANLEY MUNGA GITHUNGURI-SALE OF L.R. NO. 2804, MOMBASA-ENGEN',
+		},
+		{
+			code: 'GIT2.30',
+			description:
+				'NRB HCC JR MISC APPLICATION NO. 118 OF 2014 MUNGA HOLDINGS T/A RIDGEWAYS MALL VS KENYA NATIONAL HIGHWAYS AUTHORITY & ANOR',
+		},
+		{
+			code: 'GIT2.31',
+			description:
+				'CIVIL SUIT NO. 840 OF 2013 - ABEDNEGO MUSEMBI REUBEN VS NATIONAL SAFARI CLUB',
+		},
+		{
+			code: 'GIT2.32',
+			description: 'LEASE - JACARANDA AVENUE HOUSE NO. 26 TO CARE INTERNATIONAL',
+		},
+		{
+			code: 'GIT2.33',
+			description: 'GENERAL FILE - POA',
+		},
+		{
+			code: 'GIT2.36',
+			description: 'WITHDRAWAL OF CAVEAT RIDGEWAYS MALL - SAFARICOM LIMITED',
+		},
+		{
+			code: 'GIT2.37',
+			description: 'ELC NO. 1060 OF 2013: JOHN GAITI VS KARANJA MATE & STANLEY GITHUNGURI',
+		},
+		{
+			code: 'GIT2.38',
+			description: 'REVIEW OF CONTRACT',
+		},
+		{
+			code: 'GIT2.39',
+			description:
+				'GITHUNGURI - POTENTIAL DISPUTE IN CONNECTION WITH LILIAN TOWERS & MR. ALLAN IGAMBI ISABWA',
+		},
+		{
+			code: 'GIT2.4',
+			description: 'WILL OF STANLEY MUNGA GITHUNGURI',
+		},
+		{
+			code: 'GIT2.40',
+			description:
+				'ELC MISC 178 OF 2017 - MUNGA IKIBANGA & COMPANY ADVOCATES VS STANLEY MUNGA GITHUNGURI',
+		},
+		{
+			code: 'GIT2.41',
+			description: 'EMPLOYMENT ADVISORY',
+		},
+		{
+			code: 'GIT2.42',
+			description: 'RENEWAL OF LEASE-RIDGEWAYS MALL TO SHOPRITE CHECKERS KENYA LIMITED',
+		},
+		{
+			code: 'GIT2.43',
+			description: 'DISCIPLINARY ACTION AGAINST SIMON KARANJA',
+		},
+		{
+			code: 'GIT2.44',
+			description: 'DISPLINARY ACTION AGAINST DANIEL OKELO',
+		},
+		{
+			code: 'GIT2.45',
+			description: 'JHAMIELA SMITH DUNN.VS.NAIROBI SAFARI CLUB HOTEL',
+		},
+		{
+			code: 'GIT2.46',
+			description:
+				'LEASE OF MAISONETTE NO.1 IN KURJI COURT BY MUNGA HOLDINGS LTD TO ZHEN WANG',
+		},
+		{
+			code: 'GIT2.47',
+			description:
+				'EMPLOYMENT & LABOUR RELATIONS COURT CAUSE NO .371 OF 2015-SHAFFIQUE OTIENO SHAMSHUDIN -VS-NAIROBI SAFARI CLUB',
+		},
+		{
+			code: 'GIT2.48',
+			description:
+				'LEASE OF A HOUSE AT LANGATA;STANLEY MUNGA GITHUNGURI TO RYDEN INTERNATIONAL',
+		},
+		{
+			code: 'GIT2.49',
+			description:
+				'NAIROBI CIVICC SUITE NO.1307 OF 2018-ANTHONY KAMAU WAWERU-VS-NAIROBI SAFARI CLUB',
+		},
+		{
+			code: 'GIT2.5',
+			description: 'GENERAL FILE',
+		},
+		{
+			code: 'GIT2.50',
+			description:
+				'MISC.APPLICATION TO 46 OF 2017-MUNGA KIBANGA & COMPANY ADVOCATES VS. HON.STANLEY MUNGA GITHUNGURI',
+		},
+		{
+			code: 'GIT2.51',
+			description: 'ELC NO.825 OF 2013-STANLEY MUNGA GITHUNGURI VS. MILELE VENTURES LIMITED',
+		},
+		{
+			code: 'GIT2.52',
+			description: 'APARTMENT NO.B3;CASTLE ROCK-LR.NO.209/12760 (IR 104765/1)',
+		},
+		{
+			code: 'GIT2.53',
+			description:
+				'APARTMENT NO.B7;CASTLE ROCK-LR.NO.209/12760 (IR 70001/23):OBTAINING A PROVISIONAL TITLE',
+		},
+		{
+			code: 'GIT2.54',
+			description: 'HOUSE NO.25A;JAMHURI ESTATE-LR.NO.209/6689/54:PROVISIONAL TITLE',
+		},
+		{
+			code: 'GIT2.55',
+			description:
+				'JAMBO VILLAS MAISONETTE NO.19-LR.NO.3734/972:SERCH AND OBTAINING A PROVISIONAL TITLE.',
+		},
+		{
+			code: 'GIT2.56',
+			description: 'LAVINGTON VILLAS-LR.NO.3734/1161:OBTAINING A PROVISIONAL TITLE',
+		},
+		{
+			code: 'GIT2.57',
+			description: 'KILELESHWA-LR.NO.209/7979:OBTAINING A PROVISIONAL TITLE',
+		},
+		{
+			code: 'GIT2.58',
+			description: 'CONSTRUCTION OF WATER TOWER',
+		},
+		{
+			code: 'GIT2.59',
+			description:
+				'LEASE OF MAISONETTE NO.3 IN KURJI COURT BY MUNGA HOLDINGS LTD TO MARY MUTHONI NENE',
+		},
+		{
+			code: 'GIT2.6',
+			description:
+				'HCCC NO. 129 OF 2010 FRANCIS BEN NJUGUNA T/A PROPENSITY PROPERTIES & CONSULTANTS VS STANLEY M. GITHUNGURI & TASSIA COFFEE ESTATE LTD',
+		},
+		{
+			code: 'GIT2.60',
+			description:
+				'LEASE OF MAISONETTE NO.2 IN KURJI COURT BY MUNGA HOLDINGS LTD TO DIANA NJERI MAINA',
+		},
+		{
+			code: 'GIT2.61',
+			description:
+				'LEASE OF MAISONETTE NO.4 IN KURJI COURT BY MUNGA HOLDINGS LTD TO XU HUANWEN',
+		},
+		{
+			code: 'GIT2.62',
+			description:
+				'HC CIVIL APPEAL NO. 495 OF 2011 MUKAWA (HOTELS) HOLDINGS LTD t/a NAIROBI SAFARI CLUB-VS-WILSON CHACHA MUHONO',
+		},
+		{
+			code: 'GIT2.63',
+			description: 'ELC NO. 333 OF 2018 BLISS LIMITED VS. MUKAWA',
+		},
+		{
+			code: 'GIT2.64',
+			description:
+				'LEASE OF UNIT NO. 1 ON LR NO. 27/48; KIAMBU-RIDGEWAYS: TO ALICE WANJIRU NJOGU',
+		},
+		{
+			code: 'GIT2.65',
+			description: 'LEASE OF UNIT NO. 2 ON LR NO. 27/48, KIAMBU RIDGEWAYS TO KAJUJU KAGEENU',
+		},
+		{
+			code: 'GIT2.66',
+			description:
+				'LEASE OF UNIT NO 6. ON LR NO. 27/48; KIAMBU RIDGEWAYS TO JAMES CHEGE GAKERE',
+		},
+		{
+			code: 'GIT2.67',
+			description:
+				'LEASE OF UNIT NO.7 ON LR NO. 27/48; KIAMBU RIDGEWAYS TO MARGARITA WANGU MWAI',
+		},
+		{
+			code: 'GIT2.68',
+			description:
+				'LEASE OF UNIT NO. 8 ON LR NO. 27/48; KIAMBU RIDGEWAYS TO MERCY WANJERI KAIRU',
+		},
+		{
+			code: 'GIT2.69',
+			description:
+				'LEASE OF UNIT NO. 9 ON LR NO. 27/48; KIAMBU RIDGEWAYS TO ELIZABETH WANGUI MBUGUA',
+		},
+		{
+			code: 'GIT2.7',
+			description:
+				'MISC APPLICATION NO. 133 OF 2016 KELVIN MOGENI ADVOCATES VS STANLEY GITHUNGURI',
+		},
+		{
+			code: 'GIT2.70',
+			description:
+				'LEASE OF UNIT NO. 10 ON LR NO. 27/48; KIAMBU RIDGEWAYS TO BYRON ABWAO BELLE & GLADYS EGEHIZA BELLE',
+		},
+		{
+			code: 'GIT2.71',
+			description:
+				'LEASE OF UNIT NO. 12 ON LR NO. 27/48; KIAMBU RIDGEWAYS TO CATHERINE MUTHONI KIMANI',
+		},
+		{
+			code: 'GIT2.72',
+			description: 'LIQUIDATION OF LILIAN HOLDINGS LIMITED',
+		},
+		{
+			code: 'GIT2.73',
+			description:
+				'LEASE STANLEY MUNGA GITHUNGURI TO HARRIETTE KEMUNTO ONYONO LR. NO. 72/2265 UHURU GARDENS ESTATE',
+		},
+		{
+			code: 'GIT2.74',
+			description: 'LEASE STANLEY GITHUNGURI TO HOTEL HERMES ON LR. NO. MOMBASA/BLOCK XX/203',
+		},
+		{
+			code: 'GIT2.75',
+			description: 'STANLEY MUNGA GITHUNGURI VS. KENYA NATIONAL HIGHWAYS AUTHORITY (KENHA)',
+		},
+		{
+			code: 'GIT2.76',
+			description: 'STANLEY MUNGA GITHUNGURI VS THE KENYA FOREST SERVICE (K.F.S.)',
+		},
+		{
+			code: 'GIT2.77',
+			description:
+				'MISC APPLICATION NO. 53 OF 2016 MOGENI & COMPANY ADVOCATES VS. STANLEY MUNGA GITHUNGURI.',
+		},
+		{
+			code: 'GIT2.78',
+			description:
+				'MISC APPLICATION NO E069 OF 2018 KELVIN MOGENI ADVOCATE VS. MUKAWA (HOTELS) HOLDINGS LIMITED',
+		},
+		{
+			code: 'GIT2.79',
+			description: 'HCCC NO. 130 OF 2015 MUNGA HOLDINGS LIMITED & 2 OTHERS VS. JAMES KARIUKI',
+		},
+		{
+			code: 'GIT2.8',
+			description:
+				'MISC APPLICATION NO. 134 OF 2016 KELVIN MOGENI ADVOCATES VS STANLEY GITHUNGURI',
+		},
+		{
+			code: 'GIT2.80',
+			description:
+				'MISC. APPLICATION NO. E084 OF 2018 KELVIN MOGENI VS. MUKAWA (HOTELS) HOLDINGS LIMITED',
+		},
+		{
+			code: 'GIT2.81',
+			description: 'MUNGA HOLDINGS LIMITED -VS- COCO BANANA GIFTS AND ACCESSORIES',
+		},
+		{
+			code: 'GIT2.82',
+			description:
+				'LEASE OF HOUSE NUMBER 3 LAVINGTON VILLAS FROM LUCKY PROPERTY INVESTMENTS LTD TO DOROTHY NDUKU KITUNDU',
+		},
+		{
+			code: 'GIT2.83',
+			description:
+				'LEASE OF APARTMENT NO. 4 ON LR. NO. 27/48 KIAMBU RIDGEWAYS TO JOHN MUNGARA',
+		},
+		{
+			code: 'GIT2.84',
+			description: 'CRIMINAL CASE NO.40 OF 2019',
+		},
+		{
+			code: 'GIT2.85',
+			description: 'GENERAL CORPORATE ADVICE FILE',
+		},
+		{
+			code: 'GIT2.86',
+			description:
+				'MISC. CAUSE NO. 396 OF 2017 MUNGA KIBANGA & COMPANY ADVOCATES VS. HON STANLEY MUNGA GITHUNGURI.',
+		},
+		{
+			code: 'GIT2.87',
+			description:
+				'RENT RESTRICTION CAS:PAULINE NYAMBURA KAIRU .VS . STANLEY GITHUNGURI AND MUNGA HOLDINGS LIMITED.',
+		},
+		{
+			code: 'GIT2.88',
+			description:
+				'RENT RESTRICTION CASE NO. 388 OF 2019 ELIZABETH MBUGUA VS. MUNGA HOLDINGS LIMITED AND SEMA ESTATE AGENTS',
+		},
+		{
+			code: 'GIT2.89',
+			description:
+				'RENT RESTRICTION APT NO. B8 MERCY WANJERI KAIRU VS. MUNGA HOLDINGS LIMITED.',
+		},
+		{
+			code: 'GIT2.9',
+			description:
+				'ELRC MISC APPLICATION NO. 118 OF 2016 MOGENI & COMPANY ADVOCATES VS HON. S.M. GITHUNGURI',
+		},
+		{
+			code: 'GIT2.90',
+			description: 'ADVISORY ON REDUNDANCY.',
+		},
+		{
+			code: 'GIT2.92',
+			description: 'FIRE ACCIDENT AT RIDGEWAYS APARTMENT',
+		},
+		{
+			code: 'GIT2.93',
+			description:
+				'TRIBUNAL CASE NO. 606 OF 2019 JOHN & EMAR HOMES LIMITED .VS. STANLEY MUNGA GITHUNGURI',
+		},
+		{
+			code: 'GIT2.93/001',
+			description:
+				'BPRT TRIBUNAL CASE NO. E111 OF 2022 - GLADWELL W. MACHARIA VS. STANLEY M. GITHUNGURI & ANOR',
+		},
+		{
+			code: 'GIT2.94',
+			description:
+				'HON. STANLEY MUNGA GITHUNGURI VS. ROSEMARY WANJIKU GITHINGURI & SERAH NJOKI.',
+		},
+		{
+			code: 'GIT2.95',
+			description: 'IN THE MATTER OF THE ESTATE OF ELIZABETH KARUNGARI MUNGA GITHUNGURI',
+		},
+		{
+			code: 'GIT2.96',
+			description: 'DISPUTE OVER TITLE NO. NAIROBI/BLOCK 97/1736',
+		},
+		{
+			code: 'GIT2.98',
+			description: 'MLIMA KENYA HOLIDAY HOMES LTD',
+		},
+		{
+			code: 'GIT2.99',
+			description: 'REGISTRATION OF THE PIRATES TRADEMARK',
+		},
+		{
+			code: 'GIT3.2',
+			description: 'REPLACEMENT OF TITLES.',
+		},
+		{
+			code: 'GIT4.1',
+			description:
+				'ELRC CAUSE NO. 1322 OF 2010 - JAMES GITONGA VS TRUSTEES OF AGRICULTURAL SOCIETY OF KENYA',
+		},
+		{
+			code: 'GIT6.1',
+			description: 'CAROLINE GITAU VS. ZANA AFRICA GROUP LIMITED.',
+		},
+		{
+			code: 'GKI1.1',
+			description: 'GENESIS KENYA INVESTMENT MANAGEMENT LTD',
+		},
+		{
+			code: 'GKI2.1',
+			description: 'EMPLOYMENT ADVISORY-BADI MAULIDI',
+		},
+		{
+			code: 'GKI2.2',
+			description: 'LINKING GRAIN PRO TO e-CITIZEN AND CHANGE OF DIRECTORS OF THE COMPANY',
+		},
+		{
+			code: 'GLL1.1',
+			description: 'RECOVERY OF THE AMOUNTS OWED TO GALPHA LABORATORIES LTD',
+		},
+		{
+			code: 'GML1.1',
+			description: 'SALE OF GREENSPAN MALL LIMITED',
+		},
+		{
+			code: 'GOA1.1',
+			description: 'ADVISORY ON REGISTRATION;TAX AND EMPLOYMENT LAW',
+		},
+		{
+			code: 'GOK1.1',
+			description: 'STRATEGIC INTERVENTIONS TO RESTRUCTURE KENYA AIRWAYS',
+		},
+		{
+			code: 'GON1.1',
+			description: 'GENERAL MATTERS - PAUL GONDI',
+		},
+		{
+			code: 'GOO1.1',
+			description: '15 ACRES LOODARIAK',
+		},
+		{
+			code: 'GOO1.2',
+			description: 'ICC ARBITRATION REF. 27051',
+		},
+		{
+			code: 'GOS1.1',
+			description:
+				'FALCON PROPERTIES LTD -VS- LEE MWATHI KIMANI: CIVIL APPEAL NO. 156 OF 2010',
+		},
+		{
+			code: 'GPL1.1',
+			description: 'DELTA SALE OF TOWER A',
+		},
+		{
+			code: 'GPL1.2',
+			description: 'GARDEN PROPERTIES LTD- SALE OF L.R NO. 1870/X/106 WESTLANDS',
+		},
+		{
+			code: 'GPL2.1',
+			description: 'HCCC NO.69 OF 2018:DILPACK KENYA LIMITED -VS-GENERAL PRINTERS LIMITED',
+		},
+		{
+			code: 'GPL3.1',
+			description: 'provision of legal services',
+		},
+		{
+			code: 'GRA1.1',
+			description: 'A CLAIM FOR REFUND OF DEPOSIT PAID IN A TENANCY AGREEMENT',
+		},
+		{
+			code: 'GRA2.1',
+			description:
+				'Matter Description PURCHASE OF 1 BED UNIT NO.B102, BLOCK B, ASTORIA, L.R. NO.330/1375, MBAAZI AVENUE, LAVINGTON, NAIROBI ',
+		},
+		{
+			code: 'GRL1.1',
+			description:
+				'AN ARBITRATION BETWEEN GRAVET LTD & MOHAMMED HASSAN MAALIM, ADAN ABDI MUSA & GULED HOUSING COMPANY LTD BEFORE THE HONOURABLE JUSTICE(RTD)AARON RINGERA',
+		},
+		{
+			code: 'GSS1.1',
+			description: 'PURPORTED NOTICE OF TERMINATION OF LEASE.',
+		},
+		{
+			code: 'GTB1.1',
+			description: 'DEBT RECOVERY BY GTBANK FROM NAKUMATT HOLDINGS LIMITED.',
+		},
+		{
+			code: 'GTB1.10',
+			description: 'GENERAL FILE.',
+		},
+		{
+			code: 'GTB1.11',
+			description: 'BANKING FACILITIES TO MENENGAI OIL REFINERIES LIMITED',
+		},
+		{
+			code: 'GTB1.12',
+			description:
+				'BANKING FACILITIES TO ESTHER MATARIA MUKANGU T/A FOUR SEASONS BOUTIQUE AND SALON',
+		},
+		{
+			code: 'GTB1.13',
+			description: 'BANKING FACILITIES TO SPRINGTECH (K) LTD - KAJIADO/KAPUTIEI NORTH/46563.',
+		},
+		{
+			code: 'GTB1.2',
+			description:
+				'HCCC NO. 421 OF 2017 SUNRISE PROPERTIES LTD & ANOR VS GUARANTY TRUST BANK & ANOR',
+		},
+		{
+			code: 'GTB1.3',
+			description: 'BANKING FACILITIES TO AFRICAN COTTON INDUSTRIES LIMITED',
+		},
+		{
+			code: 'GTB1.4',
+			description: 'BANKING FACILITIES TO MIMOSA INVESTMENTS LIMITED.',
+		},
+		{
+			code: 'GTB1.5',
+			description: 'BANKING FACILITIES TO OLSUSWA ENERGY LIMITED',
+		},
+		{
+			code: 'GTB1.6',
+			description: 'BANKING FACILITIES TO FINANCE PLAN LTD',
+		},
+		{
+			code: 'GTB1.7',
+			description: 'BANKING FACILITIES TO TAKKS LIMITED',
+		},
+		{
+			code: 'GTB1.8',
+			description: 'BANKING FACILITIES TO ROKOH (K) CONSTRUCTION LIMITED.',
+		},
+		{
+			code: 'GTB1.9',
+			description: 'BANKING FACILITIES TO TEXAS ENERGY LIMITED.',
+		},
+		{
+			code: 'GTC1.1',
+			description:
+				'MUWA TRADING COMPANY LTD -VS- KENYA POWER & LIGHTING COMPANY: HCCC NO. 217 OF 2015 (NBO)',
+		},
+		{
+			code: 'GTL1.1',
+			description:
+				'GLOBAL TRAVEL LTD & 2 OTHERS VS TRANSNATIONAL BANK LTD: HCCC NO 91 OF 2005',
+		},
+		{
+			code: 'GUR1.1',
+			description:
+				'ESTATE OF GURBEER SINGH PADHAAL SALE OF LAND REFERENCE NUMBER 3097, KIBIGORI KISUMU, TARANJEET SINGH PADHAAL TO RICHARD OCHIENG OLWENGE',
+		},
+		{
+			code: 'GWD1.1',
+			description:
+				'LEGAL OPINION ON PROMOTION OF GEOTHERMAL STEAM PRODUCTION AND POWER GENERATION BY GREAT WALL DRILLING COMPANY',
+		},
+		{
+			code: 'GWL1.1',
+			description: 'LEGAL OPINION',
+		},
+		{
+			code: 'GZI1.2',
+			description: 'SALE OF EQUIPMENT TO GZI MAURITIUS LIMITED',
+		},
+		{
+			code: 'GZI1.3',
+			description:
+				'HCCC NO. E397 OF 2018 MASTER POWER SYSTEMS LIMITED VS. CIVICON ENGINEERING AFRICA & GZI KENYA LTD',
+		},
+		{
+			code: 'GZI1.4',
+			description:
+				'PROVISION OF LEGAL ADVICE ON THE SALE OF SHARES FROM GZI MAURITIUS LIMITED TO UNIVERSAL SHELTER AFRICA LIMITED.',
+		},
+		{
+			code: 'HAL1.1',
+			description:
+				'BORU HALAKHA VS MINISTRY OF DEFENCE: PETITION NO. 90 OF 2012 & PETITION NO 7 OF 2012',
+		},
+		{
+			code: 'HAL2.1',
+			description: 'IN THE MATTER OF THE ESTATE OF THE LATE DAVENDRA VALJI HALAI (DECEASED)',
+		},
+		{
+			code: 'HAL3.1',
+			description: 'HCCC NO. 833 OF 2007: HALKANO MOLU VS KENYA BROADCASTING CORPORATION',
+		},
+		{
+			code: 'HAM1.1',
+			description:
+				'CMCC NO.3032 OF 2003-MOMBASA:TECHNOSOFT LTD-VS-COAST COMPUTER BUREAU LTD & ANOR',
+		},
+		{
+			code: 'HAN1.1',
+			description:
+				'VAISHALI MADAN HANDA FOR THE ESTATE OF THE LATE AMIN MIOHAM ED.PYARALI NANJI JUMA',
+		},
+		{
+			code: 'HAN1.2',
+			description:
+				'VAISHALI MADAN HANDA FOR THE ESTATE OF THE LATE ZEBUNISHA AMINMOHAMED NANJI JUMA',
+		},
+		{
+			code: 'HAN1.3',
+			description: 'RESEALING OF GRANT- THE LATE MOHAMMED JUMA',
+		},
+		{
+			code: 'HAN2.1',
+			description: 'KAVI HANDA VS CHIEF MAGISTRATE',
+		},
+		{
+			code: 'HAN3.1',
+			description:
+				'SUBDIVISION SALE BY LUCY ELIZABETH HANNAN TO JO NICKOLLS AND MILES BREDIN',
+		},
+		{
+			code: 'HAN4.1',
+			description: 'ESTATE OF THE LATE THOMAS EDWARD HANNAH',
+		},
+		{
+			code: 'HBL1.1',
+			description:
+				'HEART BEAT LIMITED -VS- DICKSON OPINYO OCHUTU & 2 OTHERS: MISCELLEANOUS HCCC NO 111/2013',
+		},
+		{
+			code: 'HBL1.2',
+			description:
+				'HEART BEAT LIMITED -VS- DICKSON OPINYO OCHUTU & 2 OTHERS: MISCELLEANOUS HCCC NO 111/2013',
+		},
+		{
+			code: 'HBL2.1',
+			description:
+				'DISPUTE ON OUTSTANDING PAYMENTS BY CATHERINE ONYANGO ARISING FROM A CONSTRUCTION CONTRACT',
+		},
+		{
+			code: 'HBL2.2',
+			description:
+				'DISPUTE ON OUTSTANDING PAYMENTS BY ROSA ONGESO ARISING FROM A CONSTRUCTION CONTRACT',
+		},
+		{
+			code: 'HBL2.3',
+			description:
+				'MISC. APPLICATION NO. 221 OF 2019 - ROSA ONGESO & ANOR Vs. HARIN BUILDERS LTD & ANOR.',
+		},
+		{
+			code: 'HBL3.1',
+			description: 'HABIB BANK LIMITED - STAFF FRAUD - MOMBASA',
+		},
+		{
+			code: 'HBL3.2',
+			description:
+				'HABIB BANK LIMITED - E&LR CAUSE NO. 168 OF 2017: BANKING INSURANCE & FINANCE UNION (KENYA) -VS- HABIB BANK LTD',
+		},
+		{
+			code: 'HBL3.3',
+			description: 'HABIB BANK LIMITED - DEBT COLLECTION - ALLSTAR COMPANY LIMITED',
+		},
+		{
+			code: 'HCL1.1',
+			description: 'HARVEST COMMODITIES LTD (PRIMEBANK) -CHARGE OVER',
+		},
+		{
+			code: 'HCL2.2',
+			description: 'PROVISION OF LEGAL SERVICES TO HOUSEMART COMPANY LIMITED.',
+		},
+		{
+			code: 'HCL2.3',
+			description: 'CRIM CASE NO……REPUBLIC -VS- SARAH WANJIRU MWANGI ',
+		},
+		{
+			code: 'HCL2.4',
+			description: 'ALICE ACHIENG OBWANDA VS. SUNDA (KENYA) INDUSTRIAL COMPANY LTD',
+		},
+		{
+			code: 'HCL2.5',
+			description:
+				'NAIROBI E&LRC CAUSE NO. 2031 OF 2016: KENYA UNION OF COMMERCIAL, FOOD AND ALLIED WORKERS -VS- HOUSEMART COMPANY LTD.',
+		},
+		{
+			code: 'HCL2.6',
+			description:
+				'NAIROBI E&LRC CAUSE NO. 697 OF 2015 (CONSOLIDATED WITH CAUSE NO.696 - 702 OF 2015: JEREMIAH ODHIAMBO MAOGA -VS- HOUSEMART COMPANY LIMITED.',
+		},
+		{
+			code: 'HCL2.7',
+			description: 'CR. CASE NO. E383 OF 2022: REPUBPLIC -VERSUS- ZENG WEI ALIAS CHRIST.',
+		},
+		{
+			code: 'HCL2.8',
+			description:
+				'E&LRC CAUSE NO. E 2059 OF 2021: JOSEPHAT MAISIBI MOCHERE -VS- HOUSEMART COMPANY LIMITED.',
+		},
+		{
+			code: 'HCO1.1',
+			description: 'H.C.O. GENERAL FILE',
+		},
+		{
+			code: 'HCO1.2',
+			description:
+				'IN THE MATTER OF UNFAIR TERMINATION AND UNLAWFUL TERMINATION OF EMPLOYMENT:MARYANNE KARIUKI VS.CRECHE INTERNATIONAL DAY CARE & KINDERGARTEN',
+		},
+		{
+			code: 'HCO1.3',
+			description:
+				'ARBITRATION -DISPUTE BETWEEN TRANAFRICA MEDIA EAST AFRICA LIMITED VS.KENYA RUGBY UNION',
+		},
+		{
+			code: 'HCO1.4',
+			description: 'TECHVILLE COMPANY LIMITED VS. MAFI EAST AFRICA LIMITED',
+		},
+		{
+			code: 'HCO1.5',
+			description: 'DISPUTE BETWEEN NAJMA HUSSEIN ALI VERSUS MOHAMED KASSIM MOHAMUD',
+		},
+		{
+			code: 'HDL1.1',
+			description: 'DISPUTE BETWEEN MOK PETRO ENERGY FZC AND BLUE SKY ENERGY LIMITED',
+		},
+		{
+			code: 'HDS1.1',
+			description: 'EMPLOYMENT ADVISORY ON SUPPLIER CODE OF CONDUCT',
+		},
+		{
+			code: 'HEA1.1',
+			description:
+				'SALE AND PURCHASE OF TITLE  NUMBER RUIRU TOWN/2016, MONICAH MURUGI NYONGO AND HEALTHY U TWO THOUSAND LIMITED',
+		},
+		{
+			code: 'HEG1.1',
+			description: 'PROVISION  OF LEGAL SERVICES TO HEGAZY AND PARTNERS',
+		},
+		{
+			code: 'HFC1.1',
+			description:
+				'HOUSING FINANCE COMPANY OF KENYA & ANOTHER VS PATRICK DENNIS IRUNGU: CIVIL SUIT NO. 388 OF 2003',
+		},
+		{
+			code: 'HFC1.11',
+			description:
+				'HOUSING FINANCE COMPANY OF KENYA -VS- PETER KURIA MUNYUIRA: HCCC NO. 460 OF 2016',
+		},
+		{
+			code: 'HFC1.12',
+			description: 'HOUSING FINANCE COMPANY OF KENYA VS ANNE BUHASYO OKINYO',
+		},
+		{
+			code: 'HFC1.13',
+			description:
+				'NELLY NYAGUTHI MURIU VS HOUSING FINANCE COMPANY OF KENYA: CMCC NO. 12980 OF 2006',
+		},
+		{
+			code: 'HFC1.16',
+			description: "HOUSING FINANCE COMPANY OF KENYA -VS- PHILIP K KANG'ETHE & ANOTHER",
+		},
+		{
+			code: 'HFC1.17',
+			description: 'HOUSING FINANCE COMPANY OF KENYA VS SWING LTD',
+		},
+		{
+			code: 'HFC1.18',
+			description: 'HOUSING FINANCE COMPANY OF KENYA -VS- PHILIP MUIRURI WAWERU ',
+		},
+		{
+			code: 'HFC1.19',
+			description:
+				'HOUSING FINANCE COMPANY OF KENYA -VS- J.F McCLOY LTD: CMCC NO. 6978 OF 2013 (NBO)',
+		},
+		{
+			code: 'HFC1.20',
+			description:
+				'ECO-METROPOLITAN DEVELOPMENT LTD -VS- HOUSING FINANCE CORPORATION OF KENYA & GARAM: HC ELC NO. 425 OF 2014',
+		},
+		{
+			code: 'HFC1.21',
+			description: 'HOUSING FINANCE CO. KENYA',
+		},
+		{
+			code: 'HFC1.22',
+			description: 'HOUSING FINANCE CO. OF KENYA',
+		},
+		{
+			code: 'HFC1.23',
+			description:
+				'CMCC NO. 4370 OF 2016 CAROL ABURI VS ACHUKA COUNTRY ESTATES LIMITED & 3 OTHERS',
+		},
+		{
+			code: 'HFC1.24',
+			description: 'ELR CAUSE NO. 1445/2016: KEVIN ISIKA MULE VS HFC LIMITED',
+		},
+		{
+			code: 'HFC1.26',
+			description: 'HOUSING FINANCE COMPANY OF KENYA - GENERAL FILE',
+		},
+		{
+			code: 'HFC1.27',
+			description: 'CIVIL CASE NO. 34 OF 2006 GEOFFREY KURIA GITHAMBO VS H.F.C.K & 2 OTHERS',
+		},
+		{
+			code: 'HFC1.28',
+			description:
+				'CIVIL SUIT NO. 458 OF 2016 MARCO FRANCESCO FERDI NANDO BELLACCI VS HFC LIMITED & 2 OTHERS',
+		},
+		{
+			code: 'HFC1.29',
+			description:
+				'CMCC NO.769 OF 2017.GILBERT KINYUA MURIMI & SALOME WANJA NDIRITU VS HOUSING FINANCE COMPANY OF KENYA',
+		},
+		{
+			code: 'HFC1.3',
+			description: 'HOUSING FINANCE (GENERAL ADVICE)',
+		},
+		{
+			code: 'HFC1.30',
+			description: 'HFC - DEFAMATION CASE AGAINST CYPRIAN NYAKUNDI',
+		},
+		{
+			code: 'HFC1.31',
+			description: 'HCCC NO.41 OF 2018-SAMUEL OCHIENG OKETCH VS.HFC LIMITED',
+		},
+		{
+			code: 'HFC1.31/001',
+			description:
+				'CMCC CIVIL CASE NO. 6010 OF 2019 - MARY ANYANGO VS. HOUSING FINANCE CORPORATION OF KENYA LIMITED',
+		},
+		{
+			code: 'HFC1.32',
+			description: 'CMCC NO.4906 OF 2019: KEVIN ISIKA MULE VS. HFC LIMITED & ANOTHER',
+		},
+		{
+			code: 'HFC1.33',
+			description:
+				'CIVIL APPEAL NOS... 31 & 32 OF 2016 NAIROBI HOUSING FINANCE CORPORATION -vs- SHAROK KHER MOHAMMED ALI H.',
+		},
+		{
+			code: 'HFC1.34',
+			description: 'CMCC No. E367 of 2020 – Peter Maina Gatuha v HFC Limited',
+		},
+		{
+			code: 'HFC1.35',
+			description: 'KALSAN INVESTMENT COMPANY .VS. HFC LIMITED & 2 OTHERS ',
+		},
+		{
+			code: 'HFC1.36',
+			description: 'E&LRC CAUSE NO. E772 OF 2020 JOSEPHINE WAMBUI KIRUMBA .VS. HFC LIMITED ',
+		},
+		{
+			code: 'HFC1.37',
+			description: 'ELRC CAUSE NO. E771 OF 2020 JAEL ACHIENG ONYANGO .VS. HFC LIMITED',
+		},
+		{
+			code: 'HFC1.38',
+			description:
+				'HIGH COURT PETITION NO. E301 OF 2020 FIROZ NURALI VS. SHAROK KHER & OTHERS.',
+		},
+		{
+			code: 'HFC1.39',
+			description:
+				'CMCC NO.468 OF 2018: ROSEMARY KINANU GITUMA VS. HOUSING FINANCE COMPANY OF KENYA LTD.',
+		},
+		{
+			code: 'HFC1.39/001',
+			description:
+				'HCCOMM/034/2022 - ROSEMARY KINANU GITUMA VS. HOUSING FINANCE COMPANY LIMITED & 3 OTHERS',
+		},
+		{
+			code: 'HFC1.4',
+			description: 'HOUSING FINANCE COMPANY OF KENYA VS ANN NJERI MWANGI',
+		},
+		{
+			code: 'HFC1.40',
+			description: 'CMCC NO. MCCC/E792/2022 - JULIUS WAINAINA MIIRA VS. HFC LIMITED',
+		},
+		{
+			code: 'HFC1.41',
+			description: 'HFC LIMITED VS. ALFRED M. NDONGONGI VS. LUCY K. MWANIKI',
+		},
+		{
+			code: 'HFC1.42',
+			description:
+				'PETITION NO. E337 OF 2022 - RUFUS MOGERE WAITHAKA VS. HOUSING FINANCE BANK GROUP & ANOR.',
+		},
+		{
+			code: 'HFC1.5',
+			description:
+				'HOUSING FINANCE COMPANY OF KENYA VS NATHANIEL NGURE KIHIU: CMCC NO. 2691 OF 2013',
+		},
+		{
+			code: 'HFC1.7',
+			description:
+				'MARY NYAKINYUA NDIRANGU VS HOUSING FINANCE COMPANY OF KENYA LTD. & 3 OTHERS: HCCC NO. 261 OF 2005.MILIMANI',
+		},
+		{
+			code: 'HFC1.8',
+			description: 'HOUSING FINANCE COMPANY OF KENYA VS SAMUEL KIMANI WAINAINA',
+		},
+		{
+			code: 'HFC1.9',
+			description: 'HOUSING FINANCE COMPANY OF KENYA VS JAMES KIMINDA NDEGWA',
+		},
+		{
+			code: 'HHL1.1',
+			description: 'GENERAL FILE HABITAT HEIGHTS LIMITED',
+		},
+		{
+			code: 'HHL1.2',
+			description:
+				'SALE OF UNIT NO. 041405 IN HABITAT HEIGHTS; MAVOKO ON LR. NO. 7815/31 (HABITAT HEIGHTS LIMITED TO JANE NJERI MUIRU)',
+		},
+		{
+			code: 'HHM0081.2',
+			description: 'JUDICIAL REVIEW CIVIL CASE NO. 472 OF 2014',
+		},
+		{
+			code: 'HHM2.2',
+			description:
+				'JR HIGH COURT MISC CIVIL APPLICATION NO. 458 OF 2013 COOPER K BRANDS LIMITED VS KENYA REVENUE AUTHORITY',
+		},
+		{
+			code: 'HHM2.3',
+			description: 'JR MISC APPL. NO. 478 OF 2014 COSMOS LIMITED VS KENYA REVENUE AUTHORITY',
+		},
+		{
+			code: 'HHM2.4',
+			description:
+				'HIGH COURT PETITION NO. 22 OF 2015 KENYA ASSOCIATION OF STOCK BROKERS AND INVESTMENTS BANKS',
+		},
+		{
+			code: 'HHM2.5',
+			description:
+				'PETITION NO. 605 OF 2014 - SWK & OTHERS VS MEDECINS SANS FRONTIERS & OTHERS',
+		},
+		{
+			code: 'HIL1.1',
+			description: 'HARROW INVESTMENT',
+		},
+		{
+			code: 'HIL2.1',
+			description: 'HARROW INVESTMENTS LTD (ALYPOPAT)',
+		},
+		{
+			code: 'HIN1.1',
+			description: 'ESTATE OF WALTER HINDS',
+		},
+		{
+			code: 'HIND.1',
+			description: 'ESTATE OF WALTER HINDS',
+		},
+		{
+			code: 'HLA1.1',
+			description:
+				'PROVISION OF LEGAL SERVICES TO HAPAG-LLOYD AFRICA (PTY) LTD IN RELATION TO THE INCORPORATION OF A KENYAN COMPANY TO CARRY OUT THE BUSINESS OF A SHIPPING AGENT',
+		},
+		{
+			code: 'HLL1.1',
+			description: 'HOGAN LOVELLS LLP',
+		},
+		{
+			code: 'HLL1.2',
+			description: 'HOGAN LOVELLS US LLP',
+		},
+		{
+			code: 'HLL1.3',
+			description: 'HOGAN LOVELLS US LLP- SAN FRANSISCO CA 94111',
+		},
+		{
+			code: 'HLL1.4',
+			description: 'HOGAN LOVELLS - HERBERT SMITH DUBAI',
+		},
+		{
+			code: 'HLL1.5',
+			description:
+				'ADVISING IN RELATION TO THE KENYAN DATA PROTECTION LAW FOR CITI GROUP INC.',
+		},
+		{
+			code: 'HOG1.1',
+			description: 'TRANSFER OF SHARES',
+		},
+		{
+			code: 'HON1.1',
+			description: 'CMCC 1824 OF 2013 HUBERT S. HONGO VS SAMUEL MBUTHIA & AMOR',
+		},
+		{
+			code: 'HON2.1',
+			description:
+				'ELRC Petition No.51 of 2018:Okiya Omtata Okoiti vs.Joseph Kinyua & 2 Others',
+		},
+		{
+			code: 'HON2.10',
+			description:
+				'SUPREME COURT ELECTION PETITION NO. E002, E003 & E007 OF 2022 - YOUTH ADVOCACY AFRICA & OTHERS V. IEBC & OTHERS',
+		},
+		{
+			code: 'HON2.2',
+			description:
+				'PETITION NO. 327 OF 2018 OKIYA OMTATA VS. THE HON. ATTORNEY GENERAL & ANOR',
+		},
+		{
+			code: 'HON2.3',
+			description:
+				'E&LRC PETITION NO. 138 OF 2018 CENTRAL ORGANISATION OF TRADE UNIONS (COTU) VS. CS, NATIONAL TREASURY & OTHERS.',
+		},
+		{
+			code: 'HON2.4',
+			description:
+				'CIVIL APPEAL NO. 8 OF 2019 THE HON ATTORNEY GENERAL VS. OKIYA OMTATAH OKOITI & ANOR.',
+		},
+		{
+			code: 'HON2.5',
+			description:
+				'E&LRC PETITION NO. 40 OF 2019 PAUL CHERUIYOT SIGEI & OTHERS VS. CS. NATIONAL TREASURY & OTHERS.',
+		},
+		{
+			code: 'HON2.6',
+			description:
+				'E&LRC PETITION NO. 31 OF 2019 TRADE UNION CONGRESS OF KENYA VS. CS TREASURY & OTHERS.',
+		},
+		{
+			code: 'HON2.7',
+			description:
+				'E&LRC PETITION NO. 2 OF 2019 FEDERATION OF KENYA EMPPLOYERS VS CS. MINISTRY OF INFRASTACTURE & OTHERS.',
+		},
+		{
+			code: 'HON2.8',
+			description:
+				'E&LRC PETITION NO. 72 OF 2019 KENYA NATIONAL UNION OF NURSES VS. THE CABINET SECRETARY,THE NATIONAL TREASURY & OTHERS.',
+		},
+		{
+			code: 'HON2.9',
+			description:
+				'CONSTITUTIONAL PETITION NO. E282 OF 2020 – DAVID NDII & OTHERS V. THE ATTORNEY GENERAL & OTHERS',
+		},
+		{
+			code: 'HOT1.1',
+			description: 'WATCHING BRIEF FOR SHAILESH KANANI',
+		},
+		{
+			code: 'HOT1.2',
+			description:
+				'An Appeal to the Tax Appeals Tribunal against KRA’s Objection Decision and Tax Demand for Kshs. 24,675,098',
+		},
+		{
+			code: 'HOT1.2/001',
+			description:
+				'AN APPEAL TO THE HIGH COURT AGAINST TAT JUDGEMENT IN T.A.T 380 OF 2020 HOTPOINT APPLIANCES LTD VS COMMISSIONER OF CUSTOMS BORDER CONTROL.',
+		},
+		{
+			code: 'HOT1.3',
+			description:
+				'RESPONSE TO APPLICATION FOR EXTENSION OF TIME: INCOME TAX APPEAL NO. E074 OF 2023 COMMISSIOER OF DOMESTIC DTD .VS. HOTPOINT APPLIANCES LIMITED',
+		},
+		{
+			code: 'HPL1.1',
+			description: 'WILSON NDOLO AYAH & HOMESCOPE PROPERTIES LTD',
+		},
+		{
+			code: 'HPL1.2',
+			description:
+				"KAREN NGONG'  VIEW ESTATE/COUNTY GOVERNMENT OF NAIROBI -VS- HOMESCOPE PROPERTIES LTD/DR. PAUL OCHAND SAOKE: HC E&LC NO 793 OF 2013",
+		},
+		{
+			code: 'HSS1.1',
+			description:
+				'HARAMBEE SACCO SOCIETY LTD VS WEKESA SIKUTA LUSWETI: CO-OP TRIBUNAL CASE NO. 226 OF 2012',
+		},
+		{
+			code: 'HSS1.10',
+			description: 'NAIROBI CITY COUNCIL -VS- HARAMBEE SACCO SOCIETY LTD',
+		},
+		{
+			code: 'HSS1.11',
+			description:
+				'HCCC NO. 1358 OF 1998: HARAMBEE SACCO SOCIETY VS MUNIKAH & COMPANY ADVOCATES',
+		},
+		{
+			code: 'HSS1.12',
+			description: 'HARAMBEE SACCO SOCIETY',
+		},
+		{
+			code: 'HSS1.13',
+			description: 'HARAMBEE SACCO SOCIETY',
+		},
+		{
+			code: 'HSS1.14',
+			description: 'JAMES WANDERA VS HARAMBEE SACCO SOCIETY LTD',
+		},
+		{
+			code: 'HSS1.15',
+			description:
+				'HARAMBEE SACCO SOCIETY LTD -VS- MUNIKAH & COMPANY ADVOCATES: HCCC NO 894 OF 1996 (NBO)',
+		},
+		{
+			code: 'HSS1.16',
+			description: 'HARAMBEE SACCO SOCIETY LTD GENERAL FILE',
+		},
+		{
+			code: 'HSS1.17',
+			description:
+				'LAWRENCE N MBUNGU & OTHERS -VS- HARAMBEE SACCO SOCIETY LTD: CMCCC NO. 1050 OF 2015',
+		},
+		{
+			code: 'HSS1.18',
+			description:
+				'HARAMBEE CO-OP SACCO SOCIETY LTD -VS- SAMSON MARIGO MAKUBO: CO-OP TRIBUNAL CASE NO. 555 OF 2013',
+		},
+		{
+			code: 'HSS1.19',
+			description:
+				'HARAMBEE SACCO SOCIETY LTD - DORCAS BONARERI ISABOKE: CO-OP TRIBUNAL CASE NO. 170 OF 2015',
+		},
+		{
+			code: 'HSS1.2',
+			description:
+				'HARAMBEE SACCO SOCIETY LTD (J.N MALOBA WANDERA -VS- COMMISSIONER OF POLICE & ANOTHER: MISC. CR. APPL. NO.      OF 2012)',
+		},
+		{
+			code: 'HSS1.20',
+			description:
+				'HARAMBEE CO-OP SACCO/REPUBLIC -VS- EVANS BOSIRE, PAUL OCHIENG, EVANS NYATICHI & THOMAS OKWAYO: CRIMINAL APPEAL NO 28 OF 2015',
+		},
+		{
+			code: 'HSS1.21',
+			description:
+				'HARAMBEE SACCO SOCIETY LTD/GEORGE MBESA KINGOO -VS- GODFREY MAGONDA: CMCC NO. 3966 OF 2014 (NBO)',
+		},
+		{
+			code: 'HSS1.22',
+			description:
+				"HARAMBEE CO-OPERATIVE SAVINGS AND CREDIT SOCIETY LTD -VS- EZEKIEL OCHINEG' OJUOK (OUTSTANDING LIABILITY Kshs. 4,377,496.91",
+		},
+		{
+			code: 'HSS1.23',
+			description:
+				'HARAMBEE SACCO SOCIETY LTD -VS- ROSETTE RESTAURANT:NBPRT CASE NO. 699 OF 2015',
+		},
+		{
+			code: 'HSS1.24',
+			description:
+				'HARAMBEE SACCO SOCIETY LTD -VS- ABUODHA & OMINO ASSOCIATES -TERMS OF TENANCY',
+		},
+		{
+			code: 'HSS1.25',
+			description: 'CHARLES GITONGA VS HARAMBEE SACCO SOCIETY LTD',
+		},
+		{
+			code: 'HSS1.26',
+			description:
+				'HARAMBEE SACCO SOCIETY LTD -VS- ACTS BUSINESS SYSTEMS - TENANCY EXTENSION TERMS',
+		},
+		{
+			code: 'HSS1.27',
+			description:
+				'HARAMBEE SACCO SOCIETY LTD-VS- GARDREGAL (K) LTD - TENANCY EXTENSION TERMS',
+		},
+		{
+			code: 'HSS1.28',
+			description:
+				'ROSEMARY NJOGU T/A ROSETTE RESTAURANT -VS- HARAMBEE SACCO SOCIETY LTD & ANOTHER: NAIROBI BUSINESS RENT TRIBUNAL CASE NO. 882 OF 2015',
+		},
+		{
+			code: 'HSS1.29',
+			description: 'CIVIL SUIT NO. 5792 OF 2005',
+		},
+		{
+			code: 'HSS1.29/001',
+			description: 'CIVIL APPEAL NO. 551 OF 2016 SAMMY CHACHA RIOBA VS. HARAMBEE SACCO.',
+		},
+		{
+			code: 'HSS1.3',
+			description:
+				'DAVID OWIYO VS HARAMBEE SACCO SOCIETY LTD: HC MISC. APPL. NO. 238 OF 2013',
+		},
+		{
+			code: 'HSS1.30',
+			description: 'NAIROBI CITY COUNTY CRIMINAL CASE NO. 12950 OF 2014',
+		},
+		{
+			code: 'HSS1.31',
+			description:
+				'MANSIONETTES A, D & E HARAMBEE HOUSES, PARKLANDS AND LIMURU ROAD: RENT COLLECTION',
+		},
+		{
+			code: 'HSS1.32',
+			description: "EZEKIEL OCHIENG' OJUOK",
+		},
+		{
+			code: 'HSS1.33',
+			description:
+				'CO-OP TRIBUNAL CASE NO. 112/2010 (ELD) GEOFFREY O. ONTIERI VS HARAMBEE SACCO & OTHERS',
+		},
+		{
+			code: 'HSS1.34',
+			description: 'SALE OF LR NO. 1870/111/329 NAIROBI MATUNDU LANE',
+		},
+		{
+			code: 'HSS1.35',
+			description: 'SALE OF LR NO. 209/7548 NAIROBI LIMURU ROAD',
+		},
+		{
+			code: 'HSS1.36',
+			description: 'ROY EVANS OTIENO  & 2 OTHERS TRIBUNAL CASE NO 422/2016',
+		},
+		{
+			code: 'HSS1.38',
+			description: "HARAMBEE SACCO SOCIETY CO. LTD & 5 OTHERS -JOE O K'OUKO",
+		},
+		{
+			code: 'HSS1.39',
+			description:
+				'NBI CO-OP TRIBUNAL CASE NO. 295 OF 2017: FRANCIS MISATI NYACHIRO VS HARAMBEE SACCO & ANOTHER',
+		},
+		{
+			code: 'HSS1.4',
+			description:
+				'HCCC NO. 121 OF 2011 NAIROBI HARAMBEE SACCO SOCIETY LTD & ANOTHER -VS- TOSHIKE CONSTRUCTION COMPANY LTD:',
+		},
+		{
+			code: 'HSS1.40',
+			description:
+				'NBI CO-OP TRIBUNAL CASE NO. 334 OF 2017: CYRUS MUSA KARANI VS HARAMBEE SACCO & 3 OTHERS',
+		},
+		{
+			code: 'HSS1.41',
+			description:
+				'NBI CO-OP TRUNAL CASE NO. 604 OF 2017: FRENCHSON BUNDI NYAGA -VS-HARAMBEEE SACCO LTD & 3 OTHERS',
+		},
+		{
+			code: 'HSS1.42',
+			description:
+				'NBI CO-OP TRIBUNAL CASE NO.280 OF 2017:NAHASHON MURIITHI NYAGA-VS-HARAMBEE SACCO LTD & 3 OTHERS',
+		},
+		{
+			code: 'HSS1.43',
+			description: 'GENERAL FILE',
+		},
+		{
+			code: 'HSS1.44',
+			description:
+				'HCCC NO.50 OF 2017:ROBERT MOFAT ODHIAMBO VS.HARAMBEE  SACCO SOCIETY LIMITED',
+		},
+		{
+			code: 'HSS1.45',
+			description: 'CIVIL APPEAL NO.51 OF 2018',
+		},
+		{
+			code: 'HSS1.46',
+			description:
+				'NBI CO-OP.TRIBUNAL CASE NO.101 OF 2018:DELIP OGANGO BOLO & 8 OTHERS VS.HARAMBEE SACCO SOCIETY LTD',
+		},
+		{
+			code: 'HSS1.47',
+			description:
+				'NBI CO-OP.TRIBUNAL CASE NO.101 OF 2018:JENIFFER MUKIRI KIJOGI VS.HARAMBEE SACCO SOCIETY LTD',
+		},
+		{
+			code: 'HSS1.48',
+			description:
+				'NBI CMC CIVIL MISC APPLICATION NO. 391 OF 2018: JOVAH H. KARIUKI T/A MORAN AUCTIONEERS VS. HARAMBEE SACCO SOCIETY LIMITED',
+		},
+		{
+			code: 'HSS1.49',
+			description:
+				'NAIROBI HCCC NO. 10412 OF 2018 TRIOSCAPE PLANNINGSERVICES LIMITED VS. HARAMBEE SACCO SOCIETY LIMITED',
+		},
+		{
+			code: 'HSS1.5',
+			description:
+				'ARBITRATION BETWEEN ALFA TECH. CONTACTORS LTD (FORMERLY KNWOWN AS MUTEC GENERAL CONTRACTORS LTD)  AND HARAMBEE SACCO SOCIETY LTD',
+		},
+		{
+			code: 'HSS1.50',
+			description:
+				'E&LRC NO. 101 OF 2019 NAIROBI RENICE AKINYI DULO VS. HARAMBEE SACCO SOCIETY LIMITED.',
+		},
+		{
+			code: 'HSS1.51',
+			description:
+				'MISC APP NO. 229 OF 2014 MUNIKAH AND COMPANY ADVOCATES VS. HARAMBEE SACCO LTD',
+		},
+		{
+			code: 'HSS1.52',
+			description: 'TERMINATION OF EMPLOYMENT-ANNALD NYASINGA',
+		},
+		{
+			code: 'HSS1.53',
+			description: 'NBI E&LRC NO.671 OF 2019: SALOME MUNYITE VS. HARAMBEE SACCO LTD.',
+		},
+		{
+			code: 'HSS1.54',
+			description: 'NBI E&RLC NO.670 PF 2019: ALICE NJERI WANUTHI VS. HARAMBEE SACCO LTD.',
+		},
+		{
+			code: 'HSS1.55',
+			description: 'NBI E&LRC NO.669 OF 2019: MARY KITHEKA VS. HARAMBEE SACCO LTD.',
+		},
+		{
+			code: 'HSS1.56',
+			description: 'NBI CMCC NO.7694 OF 2019: JAMES WANDERA VS. SASRA & 2 OTHERS',
+		},
+		{
+			code: 'HSS1.57',
+			description:
+				'CO-OP TRIBUNAL NO. 745 OF 2019: MESHACK ODERO NYANGUTE VS. HARAMBEE SACCO',
+		},
+		{
+			code: 'HSS1.58',
+			description:
+				'KERUGOYA CIVIL APPEAL NO.25 OF 2020: JOHN MARINGA VERSUS HARAMBEE SACCO SOCIETY LIMITED.',
+		},
+		{
+			code: 'HSS1.59',
+			description:
+				'NBI BPRT CASES NO.688, 689, 695 ( 698 F 2015: D.M.K. MUATHE & ASSOCIATES VS. HARAMBEE SACCO',
+		},
+		{
+			code: 'HSS1.6',
+			description:
+				'DAVID WANYONYI ANYONA VS HARAMBEE SACCO SOCIETY LTD: TRIBUNAL CASE NO. 520 OF 2013',
+		},
+		{
+			code: 'HSS1.60',
+			description:
+				'Nrb Co-op. Tribunal Case No. 226 of 2020 Jevons Simiyu Mukhongo -vs- Harambee Sacco Society Ltd ',
+		},
+		{
+			code: 'HSS1.61',
+			description:
+				'Co-op. Tribunal Case No. 72 of 2020 – Maroa Gimase -vs- Harambee Cooperative Savings & Credit Society Ltd & Ano.',
+		},
+		{
+			code: 'HSS1.62',
+			description:
+				'Nairobi CMCC No. E5985 of 2020 Samuel Otieno Obudo -vs- Harambee Sacco Society Limited & Another. ',
+		},
+		{
+			code: 'HSS1.63',
+			description:
+				'NAIROBI ELC CASE NO. E191 OF 2020 JOSEPH KARANJA KIBIRI & 5 OTHERS -VS- HARAMBEE SACCO LIMITED. ',
+		},
+		{
+			code: 'HSS1.64',
+			description: 'H.C.MISC APP NO.E003 OF 2021: JOHN MARINGA VS. HARAMBEE SACCO',
+		},
+		{
+			code: 'HSS1.65',
+			description:
+				'KERUGOYA MSC. APP. NO. E007 OF 2021 JOHN MARINGA -VS- HARAMBEE SACCO SOCIETY LIMITED',
+		},
+		{
+			code: 'HSS1.66',
+			description:
+				'TRIBUNAL CASE NO. 58 OF 2021; MARK NYAKERI BOSIRE -VS- HARAMBEE SAVINGS CO-OPERATIVE SOCIETY LIMITED.',
+		},
+		{
+			code: 'HSS1.67',
+			description:
+				'TRIBUNAL CASE NO. 472 OF 2020; CHURCHILL ODHIAMBO OSANO -VS- HARAMBEE CO-OPERATIVE SACCO LTD',
+		},
+		{
+			code: 'HSS1.68',
+			description:
+				'E&LRC PETITION NO. E061 OF 2021:  D.K & ANOTHER -VS- RILEY SERVICES LTD & ANOTHER.',
+		},
+		{
+			code: 'HSS1.69',
+			description:
+				'NBI ELRC NO.E616 of 2022: ELIZABETH WANJUGU KARIUKI VS. HARAMBEE SACCO LTD',
+		},
+		{
+			code: 'HSS1.7',
+			description:
+				'HARAMBEE SACCO SOCIETY LTD/GLADYS GICHOHI -VS- JACKSON OMWENGA T/A JACKSON OMWENGA & COMPANY ADVOCATES: HCCC NO. 487 OF 2013 (NBO)',
+		},
+		{
+			code: 'HSS1.8',
+			description:
+				'HARAMBEE SACCO SOCIETY MAISONETTES A,D AND E OFF LIMURU ROAD, ELITE COMPUTERS LIMITED.',
+		},
+		{
+			code: 'HSS1.9',
+			description:
+				'PETER N KAMAU & OTHERS -VS- HARAMBEE SACCO SOCIETY LTD & 4 OTHERS: CO-OP TRIBUNAL CAUSE NO. 123 OF 2014',
+		},
+		{
+			code: 'HSS2.1',
+			description: 'WANDERA JAMES N.M vs. HARAMBEE SACCO',
+		},
+		{
+			code: 'HSS3.1',
+			description: 'JAMES WANDERA VS HARAMBEE SACCO SOCIETY LTD',
+		},
+		{
+			code: 'HTC1.1',
+			description:
+				'PROVISION OF LEGAL SERVICES IN RELATIONS TO VARIOUS DEFAMATORY PUBLICATIONS BY WEEKLY CITIZEN',
+		},
+		{
+			code: 'HTL1.1',
+			description: 'BOARD CHARTER - CENTRE FOR PUBLIC HEALTH AND DEVELOPMENT.',
+		},
+		{
+			code: 'HTL1.2',
+			description: 'LEGAL SERVICES IN RELATION TO DEBT AND EQUITY TRANSACTION.',
+		},
+		{
+			code: 'HUG1.1',
+			description:
+				'BAKER HUGHES-DEBT RECOVERY OF USD 339, 989.00 FROM AKIIRAA GEOTHERMAL LIMITED',
+		},
+		{
+			code: 'HUG2.1',
+			description: "TEA WORKER PURSUERS V. JAMES FINLAY (KENYA) LIMITED ('JFK')",
+		},
+		{
+			code: 'HUG2.2',
+			description:
+				'LEGAL OPINION ON THE ASSESSMENT OF QUANTUM IN A PERSONAL INJURY CLAIM BASED ON KENYAN LAW PRINCIPLES',
+		},
+		{
+			code: 'HUN1.1',
+			description: 'NAIROBI AIRPORT TOLL ROAD PROJECT',
+		},
+		{
+			code: 'HUN1.2',
+			description: 'Legal Advice to Schmidt Futures',
+		},
+		{
+			code: 'HUN1.3',
+			description: 'MILLENNIUM CHALLENGE CORPORATION IN KENYA.',
+		},
+		{
+			code: 'HUN1.4',
+			description: 'THE PROCTER & GAMBLE COMPANY',
+		},
+		{
+			code: 'HUN1.5',
+			description:
+				'ESTÉE LAUDER COMPANIES / REVIEW OF “LE LABO” CONSUMER PRIVACY NOTICE – 047791.0000407',
+		},
+		{
+			code: 'HUR1.1',
+			description: 'LAND CLAIM IN RESPECT OF MATRIMONIAL PROPERTY',
+		},
+		{
+			code: 'HYU1.2',
+			description: 'OLKARIA 1 AU GEOTHERMAL POWER PLANT PROJECT',
+		},
+		{
+			code: 'IAA1.1',
+			description: 'INTRA AFRICA ASSURANCE CO LTD',
+		},
+		{
+			code: 'IAA1.10',
+			description: 'EMPLOYMENT ADVISORY THOMAS MUTUNGA KITHUNZI.',
+		},
+		{
+			code: 'IAA1.11',
+			description:
+				'ELRC CAUSE NO 1066 OF 2018:PHILIS WANGARI NGANGA-VS-INTRA AFRICA ASSURANCE COMPANY LTD',
+		},
+		{
+			code: 'IAA1.2',
+			description: 'MARINE W.E TILLEY M.LTD',
+		},
+		{
+			code: 'IAA1.3',
+			description: 'INTRA AFRICA ASSURANCE COMPANY LTD',
+		},
+		{
+			code: 'IAA1.4',
+			description:
+				'HCCC NO. 56/2005 INTRA AFRICA ASSURANCE COMPANY LIMITED VS SELECT & PROTECT INSURANCE BROKERS.',
+		},
+		{
+			code: 'IAA1.5',
+			description: 'HCCC NO. 237/2010 INTRA AFRICA ASSURANCE CO. LTD VS DICKSON MBUGUA',
+		},
+		{
+			code: 'IAA1.6',
+			description: 'EMPLOYMENT ADVISORY',
+		},
+		{
+			code: 'IAA1.7',
+			description:
+				'ELRC CAUSE NO.456 OF 2018-IDAH WAIRIMU-VS-INTRA AFRICA ASSURANCE COMPANY LTD',
+		},
+		{
+			code: 'IAA1.8',
+			description:
+				'ELRC CAUSE NO.457 OF 2018-MERCY KWAMBOKA OKEMWA -VS-INTRA AFRICA ASSURANCE COMPANY LTD',
+		},
+		{
+			code: 'IAA1.9',
+			description:
+				'HCC NO 382 OF 2011:INTRA AFRICA ASSURANCE CO. LTD VS. KIRINYAGA CONSTRUCTION LIMITED',
+		},
+		{
+			code: 'IAH1.1',
+			description:
+				'TAX ADVICE TO IZWE LIMITED ON TRANSFER PRICING;THIN CAPITILISATION & BENEFITS.',
+		},
+		{
+			code: 'IAH1.2',
+			description: 'LEGAL OPINION ON THE APPEAL BY PATRICK GACHUHI KIOI.',
+		},
+		{
+			code: 'IAH1.3',
+			description:
+				'PROVISIONS OF LEGAL SERVICES TO IZWE LOANS LIMITED ON THE INTENDED REDUNDANCY PROCESS.',
+		},
+		{
+			code: 'IAH1.4',
+			description: 'TAX ADVICE ON IMPLICATIONS OF FINANCE ACT, 2022',
+		},
+		{
+			code: 'IAL1.1',
+			description: 'GENERAL CORPORATE AND EMPLOYMENT ADVICE',
+		},
+		{
+			code: 'IBK1.1',
+			description: 'ISON BPO KENYA LTD -VS- CLIFF MARIITA ISOE: CMCC NO. 2557 OF 2015 (NBO)',
+		},
+		{
+			code: 'IBK1.2',
+			description:
+				'E&LRC JUDICIAL REVIEW MISCELLANEOUS APPLICATION NO. E126 OF 2022: BETWEEN ISON BPO KENYA LIMITED AND NATIONAL LABOUR BOARD.',
+		},
+		{
+			code: 'IBL1.1',
+			description:
+				'PINTU BUILDERS LTD - BANKING & CREDIT FACILITIES FOR LEGAL FIRST SECURITY CHARGE OVER VILLA B1 & A3 ON L.R. 29324/2',
+		},
+		{
+			code: 'IBL1.2',
+			description:
+				'IMPERIAL BANK LTD -VS- JANCO INVESTMENT LTD & 10 OTHERS: HCCC NO. 523 OF 2015 (NBO)',
+		},
+		{
+			code: 'IBL1.3',
+			description:
+				'IN THE MATTER OF THE ESTATE OF ABDULMALEK JANMOHAMMEND (DECEASED): HC SUCCESSION CAUSE NO. 2626 OF 2015',
+		},
+		{
+			code: 'IBL1.4',
+			description: 'IMPERIAL BANK LTD -VS- W.E. TILLEY (MUTHAIGA) LTD: HCCC NO. 522 OF 2015',
+		},
+		{
+			code: 'IBL1.5',
+			description:
+				'MISC. CIVIL APPLICATION NO. 43 OF 2016 IMPERIAL BANK LIMITED VS CENTRAL BANK AND KENYA DEPOSIT INSURANCE CORPORATION',
+		},
+		{
+			code: 'IBL1.6',
+			description:
+				'MISC. CIVIL APPLICATION NO. 43 OF 2016 IMPERIAL BANK LIMITED VS CENTRAL BANK AND KENYA DEPOSIT INSURANCE CORPORATION',
+		},
+		{
+			code: 'ICD1.1',
+			description: 'KISII HCC NO. 37A OF 2008: GUDKA WESTEND MOTORS LTD VS ICDC',
+		},
+		{
+			code: 'ICD1.2',
+			description:
+				'E&LRC PETITION NO. 128 OF 2018 ANTHONY KIBANDI WATUKU VS. INDUSTRIAL & COMMERCIAL DEVELOPMENT CORPORATION',
+		},
+		{
+			code: 'ICD2.1',
+			description:
+				'Provision of Post-Transaction Legal Support in relation to the sale of shares in TEPZ and TSA',
+		},
+		{
+			code: 'ICE1.1',
+			description: 'GEORGE ODINGA ORARO-ICEA LION MARKET FUND',
+		},
+		{
+			code: 'ICI1.1',
+			description:
+				'JR NO. E039 OF 2020 – REPUBLIC OF KENYA VS. INSTITUTE OF CERTIFIED INVESTMENT AND FINANCIAL ANALYSTS (ICIFA) EX-PARTE ANDRE DESIMONE',
+		},
+		{
+			code: 'ICL1.1',
+			description: 'ELRC NO. 715 OF 2017 JOHN NJERU VS INTEX CONSTRUCTION LIMITED',
+		},
+		{
+			code: 'ICL1.2',
+			description:
+				'HCCC NO. 282 OF 2017 – AFRICAN BANKING CORPORATION LIMITED V INTEX CONSTRUCTION LIMITED & KERRA',
+		},
+		{
+			code: 'ICL1.3',
+			description:
+				'HCCC NO. 104 OF 2018 – LEENA GEHLOT AND RISHI RAMRAKHA V AFRICAN BANKING CORPORATION',
+		},
+		{
+			code: 'ICL1.4',
+			description:
+				'HCCC NO. 104 OF 2018 – LEENA GEHLOT AND RISHI RAMRAKHA V AFRICAN BANKING CORPORATION',
+		},
+		{
+			code: 'ICL1.5',
+			description:
+				'HCCC NO. E607 OF 2021 – INTEX CONSTRUCTION LIMITED & 5 OTHERS V. AFRICAN BANKING CORPORATION.',
+		},
+		{
+			code: 'ICL1.6',
+			description: 'REVIEW OF EMPLOYMENT CONTRACT',
+		},
+		{
+			code: 'ICL1.7',
+			description:
+				'MISCELLANEOUS CIVIL SUIT NO. 430 OF 2017 - AFRICAN BANKING CORPORATION LIMITED V. INTEX CONSTRUCTION LIMITED & ANOTHER.',
+		},
+		{
+			code: 'ICL1.8',
+			description: 'INSOLVENCY CAUSES NO. E032/2022 + E033/2022 + E034/2022 + E036 OF 2022.',
+		},
+		{
+			code: 'ICL1.9',
+			description:
+				'E&LRC CASE NO. E559 OF 2020: KENYA CONCRETE STRUCTURAL, CERAMIC TILES, WOOD PLYS AND INTERIOR DESIGN WORKERS UNION VS. INTEX COMPANY LIMITED.',
+		},
+		{
+			code: 'ICO1.1',
+			description: 'E&LRC CAUSE NO.E599 OF 2023: GEORGE OSINA VS. ICOLO LIMITED.',
+		},
+		{
+			code: 'ICR1.1',
+			description:
+				'INTERNATIONAL CENTRE FOR RESEARCH IN AGRO FORESTRY (ICRAF) - TRADEMARK REGISTRATION',
+		},
+		{
+			code: 'ICR1.2',
+			description: 'INTERNATIONAL CENTRE FOR RESEARCH IN AGROFORESTRY GENERAL FILE',
+		},
+		{
+			code: 'ICR1.2/001',
+			description:
+				'ELC NO. 1310 OF 2018 JOSHUA MULEI KIMWELI VS. INTERNATIONAL CENTER FOR RESEARCH IN AGRO FORESTRY.',
+		},
+		{
+			code: 'ICR1.3',
+			description:
+				'AN OPINION A HIGHLY CONFIDENTIAL LABOUR RELATIONS MATTER BETWEEN ICRAF and JIMMY KIIO & DANIEL MWANGANGI',
+		},
+		{
+			code: 'IDL1.1',
+			description:
+				'ELC CAUSE NO. 283 OF 2017 RUTH WAVINYA MUNYAO VS ILLULUWE DEVELOPMENT LIMITED AND ANOTHER',
+		},
+		{
+			code: 'IDL1.2',
+			description:
+				'CMCC NO. 2159 OF 2019 JUDITH ACHIENG OMONDI VS ILULUWE DEVELOPMENT LIMITED.',
+		},
+		{
+			code: 'IGL1.2',
+			description:
+				'HCC NO. 370 of 2010 INTERACTIVE GAMING & LOTTERIES LTD -VS- FREDRICK NGATIA & CHASE BANK LTD (IN RECEIVERSHIP)',
+		},
+		{
+			code: 'IHO1.1',
+			description: 'EMPLOYMENT ADVISORY.',
+		},
+		{
+			code: 'IHO1.2',
+			description: "REVIEWING AND REVISING THE ORGANIZATION'S INTERNAL STAFF REGULATIONS.",
+		},
+		{
+			code: 'IIE1.1',
+			description:
+				'PROVISION OF LEGAL SERVICES TO IMPACT INVESTMENT EXCHANGE PTE. LTD (“IIX”)',
+		},
+		{
+			code: 'IKL1.1',
+			description: 'ICOPOWER KENYA LIMITED VS LAVINGTON MALL',
+		},
+		{
+			code: 'IKL1.2',
+			description: 'ICOPOWER KENYA LIMITED VS WINDSOR GOLF HOTEL AND COUNTRY CLUB LIMITED',
+		},
+		{
+			code: 'IKL1.3',
+			description: 'ICOPOWER KENYA LIMITED VS MODWAYS INVESTMENTS LIMITED',
+		},
+		{
+			code: 'IKL1.4',
+			description: 'CASE NUMBER MCELRC/E844/2020',
+		},
+		{
+			code: 'IKM1.1',
+			description:
+				'ISEME KAMAU & MAEMA ADVOCATES FOR ALBERT KIGERA KARUME & OTHERS -VS- GEORGE NGUGI WAIRERI & OTHERS: CIVIL CAUSE NO 125 OF 2015 (OS)',
+		},
+		{
+			code: 'IKM2.1',
+			description: 'ELC CASE NO. 56 OF 2019 EACC VS. ZABLON MABEA AGWATA & 4 OTHERS.',
+		},
+		{
+			code: 'ILR1.1',
+			description:
+				'HCCC NO. 204 OF 2015 (NBO) INTERNATIONAL LIVESTOCK RESEARCH INSTITUTE (ILRI) & THE ATTORNEY GENERAL -VS- IBRAHIM NDADEMA ADENYA',
+		},
+		{
+			code: 'ILR1.10',
+			description: 'TERMINATION OF EMPLOYMENT-ABDI ELIAS JAMA',
+		},
+		{
+			code: 'ILR1.11',
+			description:
+				'POTENTIAL CLAIM ON DEFAMATORY STATEMENTS AGAINST DR. MARY KERUBO NYASIMI.',
+		},
+		{
+			code: 'ILR1.12',
+			description:
+				'CMCC APP. NO. 34 OF 2019: JULIUS MUTIE MUTUA & 2 OTHERS (SUING ON BEHALF OF KWA MBAU SOCIETY)',
+		},
+		{
+			code: 'ILR1.13',
+			description:
+				'E&LRC CAUSE NO.E391 OF 2020: ABDI JAMA VS. INTERNATIONAL LIVESTOCK RESEARCH INSTITUTE.',
+		},
+		{
+			code: 'ILR1.14',
+			description:
+				'DEMAND TO BENJAMIN MUTETI KIAWA BY INTERNATIONAL LIVERSTOCK RESEARCH INSTITUTE (ILRI).',
+		},
+		{
+			code: 'ILR1.15',
+			description: 'E&LC MACHAKOS CASE NO.80 OF 2022: WILSON IRUNGU NDIRANGU VS. ILRI & KWS',
+		},
+		{
+			code: 'ILR1.16',
+			description: 'LEGAL ADVISORY TO ILRI ON SEVERANCE PAY',
+		},
+		{
+			code: 'ILR1.2',
+			description:
+				'INTERNATIONAL LIVESTOCK RESEARCH INSTITUTE (ILRI) -VS- JAMES ANDANGO ONGONDO (DECEASED)',
+		},
+		{
+			code: 'ILR1.3',
+			description:
+				'KAPITI PLAINS ESTATE LIMITED - LR NOS.8332,1731,9918/4 AND 7374 - PAYMENT OF LAND RENT',
+		},
+		{
+			code: 'ILR1.5',
+			description: 'LEGAL OPINION ON DISCIPLINARY ACTION AGAINST MR. OBED KIGEN',
+		},
+		{
+			code: 'ILR1.6',
+			description: 'INTERNATIONAL LIVESTOCK RESEARCH INSTITUTE VS FIDELIS MUJIBI',
+		},
+		{
+			code: 'ILR1.7',
+			description:
+				'ILRI - E&LC CASE NO. 81 OF 2017 : HARRISSON NGUI & OTHERS VS INTERNATIONAL LIVESTOCK RESEARCH INSTITUTE',
+		},
+		{
+			code: 'ILR1.8',
+			description: 'ILRI - CATHERINE MUENI MUTUKU - TERMINATION FROM EMPLOYMENT',
+		},
+		{
+			code: 'ILR1.9',
+			description: 'MCCR/45 OF 2019:REPUBLIC VS.MUTHIANI MWANGANGI & EVERLINE MBITHE',
+		},
+		{
+			code: 'IMB1.2',
+			description: 'CIVIL SUIT NO. 7857 OF 2015 COLIN MARGARET FORBES VS I & M BANK LIMITED',
+		},
+		{
+			code: 'IMB1.4',
+			description: 'SUPERDRILL INTERNATIONAL LTD CMCC NO. 7392 OF 2016',
+		},
+		{
+			code: 'IMB1.5',
+			description: 'MISC APPLICATION NO 939 OF 2016 FAISAL NASSER KHLFAN AL KHATRI',
+		},
+		{
+			code: 'IMB1.6',
+			description:
+				'CIVIL SUIT NO. 55 OF 2017 MEHTA ELECTRICALS LTD VS I & M BANK LIMITED & SYNOHYDRO CORPORATION LTD',
+		},
+		{
+			code: 'IMB1.7',
+			description:
+				'CIVIL CASE NO. 1042 OF 2017 FAISAL NASSER KHALFAN AL KHATRI VS MOSES ZACHARIA JOHNSON AMBUKU & I & M BANK LIMITED',
+		},
+		{
+			code: 'IMB1.8',
+			description:
+				'CIVIL CASE NO. 435 OF 2017 - BIMALROY CHHOTAHLAL SHAH & MEERA SHAH VS I & M BANK LIMITED',
+		},
+		{
+			code: 'IMB1.9',
+			description:
+				'BANKING FACILITIES TO METRO CONCEPTS EAST AFRICA LIMITED (the “Borrower”)',
+		},
+		{
+			code: 'IMR1.1',
+			description: 'ISAAC MRUTTU',
+		},
+		{
+			code: 'IMR1.2',
+			description: 'ISAAC MRUTTU',
+		},
+		{
+			code: 'IMR1.3',
+			description: 'SALE OF EIGHT FLATS IN USHIRIKA ESTATE TO MOHAMED ABDULQUADER AL  SAWAE',
+		},
+		{
+			code: 'IMR1.4',
+			description: 'COMPANY ICORPORATION: LUMI LEADING LODGES(4L HOTELS LIMITED)',
+		},
+		{
+			code: 'INT1.1',
+			description: 'INTL INTERNATIONAL JLT',
+		},
+		{
+			code: 'INT1.1/001',
+			description: 'PETITION NO. 247 OF 2017',
+		},
+		{
+			code: 'INT2.1',
+			description: 'REVIEW OF CONTRACTS',
+		},
+		{
+			code: 'INT2.2',
+			description: 'GENERAL FILE',
+		},
+		{
+			code: 'INT2.3',
+			description: 'LEGAL OPINION ON SERVICE LEVEL AGREEMENT AND TRIPATITE AGREEMENT',
+		},
+		{
+			code: 'INT2.4',
+			description: 'REVIEW OF UAP AND BROKER(AON) SLA POLICY',
+		},
+		{
+			code: 'INT2.5',
+			description: 'ICRC AND AON KENYA INSURANCE BROKERS AND UAP INSURANCE COMPANY LIMITED',
+		},
+		{
+			code: 'INT2.6',
+			description:
+				'RED CROSS - CIVIL SUIT NO. 667 OF 2017 : PATRICK ALWAL ODONGO -VS- INTERNATIONAL COMMITTEE OF THE RED CROSS',
+		},
+		{
+			code: 'INT2.7',
+			description:
+				'RED CROSS - CIVIL SUIT NO. 69 OF 2017: PATRICK ALWAL ODONGO & 7 OTHERS -VS- INTERNATIONAL COMMITEE OF THE RED CROSS',
+		},
+		{
+			code: 'INT2.8',
+			description: 'SALE/PURCHASE OF LR NO. 11392/1,NAIROBI',
+		},
+		{
+			code: 'INY1.2',
+			description:
+				'SALE OF APARTMENT NUMBER A31-BLOCK A,2ND FLOOR ON LR. NO. 2/475 SARU GARDENS KILIMANI BY SOLOMON LUMUMBA INYANI. TO HERBERT KUNJIRA MURAYI & JACKLINE RATEMO.',
+		},
+		{
+			code: 'IPC1.1',
+			description: 'EMPLOYMENT ADVISORY',
+		},
+		{
+			code: 'IPC1.2',
+			description: 'ADVISING IN RELATION TO ANNUAL LEAVE PROVISIONS IN HR HANDBOOK',
+		},
+		{
+			code: 'IPC1.3',
+			description:
+				'EMPLOYMENT AND LABOUR RELATIONS CONSTITUTIONAL PETITION NO. E128 OF 2021: BETHWEL KIPKOECH LAGAT -VS- INTERNATIONAL POTATO CENTER & CAREE DEVELOPMENT LIMITED',
+		},
+		{
+			code: 'IPC1.4',
+			description:
+				'ADVISING IN RELATION TO THE REVISION AND IMPLEMENTATION OF THE PENSION SCHEME',
+		},
+		{
+			code: 'IPM1.1',
+			description:
+				'IKON PRINTS MEDIA COMPANY LTD -VS- CITY COUNCIL OF NAIROBI: HC JR NO. 120 OF 2013',
+		},
+		{
+			code: 'IPM1.2',
+			description:
+				'IKON PRINTS MEDIA COMPANY LTD VS CITY COUNCIL OF NAIROBI: HC JR NO 120 OF 2013',
+		},
+		{
+			code: 'IPM1.3',
+			description:
+				'IKON PRINTS MEDIA COMPANY LTD VS KENYA HIGHWAYS AUTHORITY: PETITION NO 513 OF 2013',
+		},
+		{
+			code: 'IPM1.4',
+			description: 'HYUNDAI ENGINEERING -VS- GLOBAL EMPOWERMENT AFRICA & 20 OTHERS',
+		},
+		{
+			code: 'IRE1.1',
+			description:
+				'PURCHASE OF APARTMENT NUMBER A2, ERECTED ON LAND REFERENCE NUMBER 14225/74, NAIROBI',
+		},
+		{
+			code: 'IRS1.1',
+			description: 'INFORMATION RESEARCH SOLUTIONS- TOBIAS ODHIAMBO',
+		},
+		{
+			code: 'ISA1.1',
+			description: 'JAMES ISABIRYE -VS- DORON WEBER & ANOTHER: CIVIL SUIT NO 555 OF 2003',
+		},
+		{
+			code: 'ISO1.1',
+			description: 'ELIZABETH ISOYI ISABWA VS MORARA RESENI OMBATI: HCDC NO.     OF 2013',
+		},
+		{
+			code: 'ITC1.1',
+			description: 'GENERAL CORPORATE ADVICE',
+		},
+		{
+			code: 'ITF1.1',
+			description:
+				'FRAUDULENT CLOSURE OF PUBLIC ROAD RESERVE ALONG THE OLD TIGONI-KABUKU ROAD & FRAUDULENT ALLOCATION OF THE SAME TO MBUGUA ENTERPRISES LIMITED.',
+		},
+		{
+			code: 'IVL1.1',
+			description: 'GENERAL CORPORATE ADVICE',
+		},
+		{
+			code: 'IVY1.1',
+			description: 'UNLAWFUL TERMINATION OF IVY GITAU',
+		},
+		{
+			code: 'JAD1.1',
+			description: 'MISTRY JADVA PARBAT  ARBITRATION',
+		},
+		{
+			code: 'JAL1.1',
+			description: 'Incorporation of a Private Limited Company',
+		},
+		{
+			code: 'JAP1.1',
+			description:
+				'CRIMINAL MISCELLANEOUS APPLICATION NO. E1465 OF 2023; DCI PARKLANDS NAIROBI AND MRUNALINI TIMO JAPPINEN & 3 OTHERS',
+		},
+		{
+			code: 'JBB1.1',
+			description:
+				'MISC. CAUSE NO. 668 OF 2012 SINGH GITAU ADVOCATES VS CITY FINANCE BANK LIMITED',
+		},
+		{
+			code: 'JEA1.1',
+			description: 'LEGAL DISPUTE OVER SALE OF SHARES IN KENYA SAFARI LIMITED',
+		},
+		{
+			code: 'JEA1.2',
+			description: 'DISPUTE OVER SALE OF SHARES IN KENYA SAFARI LIMITED',
+		},
+		{
+			code: 'JEC1.1',
+			description: 'ROSE W. MUTHEMBA VS JUPITER CONSTRUCTION AND ELECTRICAL LTD',
+		},
+		{
+			code: 'JEI1.1',
+			description:
+				'SUCCESSION CAUSE NO.321 OF 2012 IN THE MATTER OF ESTATE OF MICHAEL MWENDWA NGILU (DECEASED)',
+		},
+		{
+			code: 'JEM1.1',
+			description:
+				'PURCHASE OF HOUSE NUMBER G4-2(UNIT PLAN NUMBER 41) IN MUTHAIGA PIPELINE ESTATE ERECTED ON LAND REFERENCE NUMBER 12422/23 KARURA',
+		},
+		{
+			code: 'JET1.1',
+			description:
+				'LAHORI JETHANAND MANGHNANI & IN THE MATTER OF SACHDEVA & COMPANY ADVOCATES: MISC DISCIPLINARY CAUSE NO. 25 OF 2015',
+		},
+		{
+			code: 'JGR1.1',
+			description: 'REGISTRATION OF A BRANCH',
+		},
+		{
+			code: 'JIL1.1',
+			description: 'JUBILEE INSURANCE LTD -VS- BUPA INTERNATIONAL LTD',
+		},
+		{
+			code: 'JIL1.10',
+			description:
+				'ELRCC NO. 1004 OF 2017  - ROSEMARY WAMBUI NGUKU VS THE JUBILEE INSURANCE COMPANY OF KENYA LIMITED',
+		},
+		{
+			code: 'JIL1.100',
+			description:
+				'CMCC NO. 2714 OF 2016 - JULIUS KINOTI MUGA & ANOR VS. JUBILEE INSURANCE COMPANY OF KENYA LIMITED',
+		},
+		{
+			code: 'JIL1.101',
+			description: 'STANLEY MWANGI CHEGE VS. JUBILEE LIFE INSURANCE LIMITED',
+		},
+		{
+			code: 'JIL1.102',
+			description:
+				'LEASE OF OFFICE NO.S 405, 406, 407 & 408 - 4TH FLOOR ON LR. NO. 209/3526 JUBILEE INSURANCE HOUSE TO KABIRO NDAIGA & CO. ADVOCATES.',
+		},
+		{
+			code: 'JIL1.103',
+			description:
+				'IAT APPEAL NO. 11 OF 2022 - DAVID OTIENO AYUGI & ANOR VS. JUBILEE HEALTH INSURANCE LIMITED & ANOR',
+		},
+		{
+			code: 'JIL1.104',
+			description:
+				'JR APPLICATION NO…OF 2022 - REPUBLIC VS. JUBILEE INSURANCE COMPANY LIMITED & RBA.',
+		},
+		{
+			code: 'JIL1.105',
+			description:
+				'NGUMO CO-OP SAVINGS & CREDIT SOCIETY LTD VS. JUBILEE INSURANCE COMPANY LIMITED',
+		},
+		{
+			code: 'JIL1.106',
+			description:
+				'APPLICATION FOR REVOCATION OF RECOGNITION AGREEMENT WITH THE UNION (BIFU).',
+		},
+		{
+			code: 'JIL1.107',
+			description:
+				'SCCCOMM/E014/2022 - JASON ASSELSTINE VS. JUBILEE INSURANCE COMPANY OF KENYA LIMITED.  ',
+		},
+		{
+			code: 'JIL1.108',
+			description:
+				'JUBILEE INSURANCE COMPANY OF KENYA LIMITED VS. KENYA REINSURANCE CORPORATION LIMITED',
+		},
+		{
+			code: 'JIL1.109',
+			description: 'ERIC KINUTHIA KARUMA VS. JUBILEE HEALTH INSURANCE LIMITED.',
+		},
+		{
+			code: 'JIL1.11',
+			description:
+				'CIVIL SUIT NO.4607 OF 2017-EGGEN JOINENEX LIMITED VS. JUBILEE INSURANCE CO.(K) LIMITED & SHANNAX KARA',
+		},
+		{
+			code: 'JIL1.110',
+			description: 'JUBILEE INSURANCE - PROJECT SWAN',
+		},
+		{
+			code: 'JIL1.111',
+			description:
+				'MCCC NO. E599 OF 2022 - JANE WAMBUI MAINA VS. JUBILEE HEALTH INSURANCE LTD',
+		},
+		{
+			code: 'JIL1.112',
+			description: 'IRENE AWUOR OGUNAH VS. JUBILEE INSURANCE CO. OF KENYA LIMITED',
+		},
+		{
+			code: 'JIL1.113',
+			description: 'CECELIA MWANGI VS. JUBILEE INSURANCE COMPANY OF KENYA LTD',
+		},
+		{
+			code: 'JIL1.114',
+			description:
+				'APPEAL FROM BPRT CASE NO. 216 OF 2008 - SUPER COSMETICS LIMITED VS. JUBILEE INSURANCE COMPANY OF KENYA LIMITED',
+		},
+		{
+			code: 'JIL1.115',
+			description: 'JUDY NGURU VS. JUBILEE HEALTH INSURANCE LIMITED',
+		},
+		{
+			code: 'JIL1.116',
+			description: 'JANE AKINYI ORIYA VS. JUBILEE HEALTH INSURANCE LIMITED',
+		},
+		{
+			code: 'JIL1.117',
+			description:
+				'SCCCOMM/E164/2022 - SAMWEL ONYANGO OMINDE VS. JUBILEE LIFE INSURANCE LIMITED.',
+		},
+		{
+			code: 'JIL1.118',
+			description: 'PAUL THUITA MAINA VS. JUBILEE HEALTH INSURANCE LIMITED',
+		},
+		{
+			code: 'JIL1.119',
+			description:
+				'SCCCOMM/E6784/2022 – LOYDA KWAMBOKA V JUBILEE INSURANCE COMPANY OF KENYA LIMITED',
+		},
+		{
+			code: 'JIL1.120',
+			description:
+				'LEASE FOR OFFICE NO. 420, 421, 422 &423 ON 4TH FLOOR AT JUBILEE INSURANCE EXCHANGE (LR. NO. 209/494914)',
+		},
+		{
+			code: 'JIL1.121',
+			description: 'LOISE NYAWIRA WACHIRA VS. JUBILEE HEALTH INSURANCE LTD',
+		},
+		{
+			code: 'JIL1.122',
+			description: 'AQUAMIST LIMITED VS. JUBILEE LIFE INSURANCE LIMITED',
+		},
+		{
+			code: 'JIL1.123',
+			description: 'DR. KEVIN ARUNGA VS. JUBILEE HEALTH INSURANCE LIMITED',
+		},
+		{
+			code: 'JIL1.124',
+			description:
+				'ELRC CAUSE NO. E063 OF 2023 - CHRISTINE IVY NGIMA KAROKI VS. JUBILEE LIFE INSURANCE LIMITED',
+		},
+		{
+			code: 'JIL1.125',
+			description: 'AGILE BUSINESS SOLUTIONS LIMITED VS. JUBILEE FINANCIAL SERVICES LIMITED.',
+		},
+		{
+			code: 'JIL1.126',
+			description: 'JUBILEE LIFE INSURANCE LIMITED VS. IDENTISYS LIMITED',
+		},
+		{
+			code: 'JIL1.127',
+			description:
+				"CIVIL APPEAL NO. E046 OF 2023 - JUBILEE INSURANCE COMPANY LIMITED VS. MAXWELL OGENG'O NANGIRA",
+		},
+		{
+			code: 'JIL1.128',
+			description:
+				'LEASE FOR OFFICE NO. 219, 2ND FLOOR ON LR. NO. 209/4914 AT JUBILEE INSURANCE EXCHANGE TO VIMERC LIMITED',
+		},
+		{
+			code: 'JIL1.129',
+			description: 'THE LATE IGNATIUS LOKAALE - MEMBER NO. 11751339',
+		},
+		{
+			code: 'JIL1.13',
+			description: 'MAUREEN MATARA KERUBO VS THE JUBILEE INSURANCE COMPANY OF KENYA LIMITED',
+		},
+		{
+			code: 'JIL1.130',
+			description:
+				'HCCOMMMISC/E409/2023 - MUSYOKI BENSON & ASSOCIATES ADVOCATES JUBILEE HEALTH INSURANCE LIMITED',
+		},
+		{
+			code: 'JIL1.131',
+			description: 'JAMES MBURU MAINA VS.JUBILEE LIFE INSURANCE LIMITED',
+		},
+		{
+			code: 'JIL1.14',
+			description: 'HC MISC. NO. 189 OF 2016 - MOHAMED & SAMNAKAY VS NIZAR JUMA',
+		},
+		{
+			code: 'JIL1.15',
+			description: 'PETER MBITHI MUTIA VS JUBILEE INSURANCE COMPANY OF KENYA LIMITED',
+		},
+		{
+			code: 'JIL1.16',
+			description:
+				'EMPLOYMENT & LABOUR RELATIONS CAUSE NO. 1392 OF 2017 - SIMON WAMBUA NTHIWA VS JUBILEE INSURANCE COMPANY OF KENYA',
+		},
+		{
+			code: 'JIL1.17',
+			description:
+				'PETITION NO. 413 OF 2017 ANNE MUTINDI MWINZILA VS JUBILEE INSURANCE & 2 OTHERS',
+		},
+		{
+			code: 'JIL1.18',
+			description:
+				'ESTATE OF ERICK MAKAU MUSYOKA -VS- JUBILEE INSURANCE CO. OF KENYA LIMITED',
+		},
+		{
+			code: 'JIL1.19',
+			description:
+				'WYCLIFFE INGOSI KALAKACHA VS THE JUBILEE INSURANCE COMPANY OF KENYA LIMITED  ',
+		},
+		{
+			code: 'JIL1.2',
+			description:
+				'J.W. SEAGON & CO. INSURANCE BROKERS (K) LTD VS JUBILEE INSURANCE CO. LIMITED & 2 OTHERS',
+		},
+		{
+			code: 'JIL1.20',
+			description: 'BETH SHEILA NYAGA VS JUBILEE INSURANCE COMPANY OF KENYA LIMITED',
+		},
+		{
+			code: 'JIL1.21',
+			description: 'THE JUBILEE INSURANCE COMPANY OF KENYA LTD VS HOMEWARD AGENCIES LTD',
+		},
+		{
+			code: 'JIL1.22',
+			description:
+				'CIVIL SUIT NO 8016 OF 2017 - GLADYS MUTHONI VS THE JUBILEE INSURANCE COMPANY OF KENYA LIMITED',
+		},
+		{
+			code: 'JIL1.23',
+			description:
+				'JUBILEE INSURANCE COMPANY OF KENYA LIMITED VS BEAUTY WHOLESALE (K) LIMITED',
+		},
+		{
+			code: 'JIL1.24',
+			description: 'JUBILEE INSURANCE COMPANY OF KENYA LTD VS OCEANIC OIL LIMITED',
+		},
+		{
+			code: 'JIL1.25',
+			description: 'JUBILEE INSURANCE COMPANY OF KENYA LTD VS.THE JUDICIARY',
+		},
+		{
+			code: 'JIL1.26',
+			description:
+				'DR.JOSEPH OCHIENG WASUNGU VS THE JUBILEE INSURANCE COMPANY OF KENYA LIMITED',
+		},
+		{
+			code: 'JIL1.27',
+			description: 'JUBILEE INSURANCE COMPANY OF KENYA LTD VS AGGREY MULUMBI',
+		},
+		{
+			code: 'JIL1.28',
+			description:
+				'ELRC NO.2126 OF 2016-DAN CAXTON UNDUSU-VS-THE JUBILEE INSURANCE OF KENYA LTD',
+		},
+		{
+			code: 'JIL1.29',
+			description:
+				'E &LRC CAUSE NO.300 OF 2018-BANKING INSURANCE AND FINANCE UNION VS.JUBILEE INSURANCE CO. OF KENYA LTD',
+		},
+		{
+			code: 'JIL1.3',
+			description:
+				'JUBILEE INSURANCE COMPANY OF KENYA LIMITED VS EAGLE AFRICA INSURANCE BROKERS LIMITED',
+		},
+		{
+			code: 'JIL1.30',
+			description:
+				'E&LRC CAUSE NO.395 OF 2018-JOSHUA THUKU MUITA & 3 OTHERS VS.THE JUBILEE INSURANCE  COMPANY OF KENYA LIMITED',
+		},
+		{
+			code: 'JIL1.31',
+			description:
+				'THE JUBILEE INSURANCE COMPANY OF KENYA LIMITED VS.NDEDA & COMPANY ADVOCATES & 2 OTHERS.',
+		},
+		{
+			code: 'JIL1.32',
+			description:
+				'THE JUBILEE INSURANCE COMPANY OF KENYA LTD VS.P.J KAKAD & COMPANY ADVOCATES',
+		},
+		{
+			code: 'JIL1.33',
+			description: 'VICTORIA MIGUDA BONYO VS.JUBILEE INSURANCE COMPANY OF KENYA LIMITED',
+		},
+		{
+			code: 'JIL1.34',
+			description:
+				'ETHICS & ANTI-CORRUPTION COMMISSION VS. THE JUBILEE INSURANCE COMPANY OF KENYA LIMITED (KENYA BUREAU OF STANDARDS MEDICAL INSURANCE COVER)',
+		},
+		{
+			code: 'JIL1.35',
+			description:
+				'CATHERINE WANDIA KABINGA VS. THE JUBILEE INSURANCE COMPANY OF KENYA LIMITED',
+		},
+		{
+			code: 'JIL1.36',
+			description:
+				'JUBILEE INSURANCE COMPANY OF KENYA LIMITED VS. THE COUNTY GOVERNMENT OF MOMBASA',
+		},
+		{
+			code: 'JIL1.37',
+			description: 'THE JUBILEE INSURANCE  COMPANY OF KENYA LIMITED',
+		},
+		{
+			code: 'JIL1.38',
+			description:
+				'THE JUBILEE INSURANCE  COMPANY LIMITED OF KENYA LTD VS.CONSOLIDATED BANK OF KENYA & MOSTAFA ATHMAN MOHAMMED (DECEASED)',
+		},
+		{
+			code: 'JIL1.39',
+			description:
+				'CMCC 6609 OF 2018-SALIM N. YAMANI T/A MBAO AND ALLIED ENTERPRISES LTD VS JUBILEE INSURANCE CO. OF KENYA LTD',
+		},
+		{
+			code: 'JIL1.39/001',
+			description:
+				'HCCA E830 OF 2022 - SALIM N. YAMANI VS. JUBILEE INSURANCE COMPANY OF KENYA LIMITED',
+		},
+		{
+			code: 'JIL1.4',
+			description:
+				'JUBILEE INSURANCE COMPANY OF KENYA LIMITED VS AMS INSURANCE BROKERS LIMITED',
+		},
+		{
+			code: 'JIL1.40',
+			description: 'SHERINA BADURALI SAMNANI VS.JUBILEE INSURANCE COMPANY OF KENYA LIMITED',
+		},
+		{
+			code: 'JIL1.41',
+			description:
+				'CAREER CONNECTIONS LIMITED VS THE JUBILEE INSURANCE COMPANY OF KENYA LIMITED',
+		},
+		{
+			code: 'JIL1.42',
+			description:
+				'JUBILEE INSURANCE COMPANY OF KENYA LIMITED VS. MUKURU SLUMS DEVELOPMENT PROJECTS',
+		},
+		{
+			code: 'JIL1.43',
+			description: 'JUBILEE INSURANCE COMPANY OF KENYA LIMITED VS. HYGENIC SALON LIMITED',
+		},
+		{
+			code: 'JIL1.44',
+			description: 'THE JUBILEE INSURANCE COMPANY OF KENYA LIMITED VS. THE MUG LIMITED',
+		},
+		{
+			code: 'JIL1.45',
+			description: 'JUBILEE INSURANCE COMPANY OF KENYA LIMITED VS. JEREMIAH NDIRANGU',
+		},
+		{
+			code: 'JIL1.46',
+			description:
+				'JUBILEE INSURANCE COMPANY OF KENYA LIMITED VS. ELTECH COMMUNICATIONS LIMITED',
+		},
+		{
+			code: 'JIL1.47',
+			description:
+				'HCCC NO. 817 OF 1998 PIONEER HOLDINGS (AFRICA) LIMITED  VS. JUBILEE INSURANCE COMPANY OF KENYA LIMITED',
+		},
+		{
+			code: 'JIL1.48',
+			description:
+				'CRIMINAL CASE NO. 324A OF 2018 NAIROBI CITY COUNTY VS. THE JUBILEE INSURANCE COMPANY OF KENYA LIMITED',
+		},
+		{
+			code: 'JIL1.49',
+			description: 'VICTORIA MISEDA VS. THE JUBILEE INSURANCE COMPANY OF KENYA LIMITED',
+		},
+		{
+			code: 'JIL1.5',
+			description:
+				'HCCC NO. 15 OF 2017 MIRIAM MBUIYA THUKU VS JUBILEE INSURANCE COMPANY LIMITED & THE CHIEF OF DEFENCE FORCES',
+		},
+		{
+			code: 'JIL1.50',
+			description:
+				'CMCC NO. 10107 OF 2018  MARION WAMBUI WANJAIYA VS. THE JUBILEE INSURANCE COMPANY OF KENYA & ANOR.',
+		},
+		{
+			code: 'JIL1.51',
+			description:
+				'THE JUBILEE INSURANCE COMPANY INSURANCE COMPANY OF KENYA LIMITED VS. INTERPHASE CONSULTANTS AND SYMBION KENYA.',
+		},
+		{
+			code: 'JIL1.52',
+			description: 'MOLARS LIMITED VS. THE JUBILEE INSURANCE COMPANY OF KENYA LIMITED.',
+		},
+		{
+			code: 'JIL1.53',
+			description:
+				'FREDDIE WAMBARI NJOROGE VS THE JUBILEE INSURANCE COMPANY OF KENYA LIMITED',
+		},
+		{
+			code: 'JIL1.54',
+			description: 'THE JUBILEE INSURANCE COMPANY OF KENYA LTD VS GREGO CONSULTANTS.',
+		},
+		{
+			code: 'JIL1.55',
+			description:
+				'BLUE WAVE INSURANCE AGENCY LIMITED VS. THE  JUBILEE INSURANCE COMPANY OF KENYA LIMITED.',
+		},
+		{
+			code: 'JIL1.56',
+			description: 'HELINA WAHURA MURAGU VS. THE JUBILEE INSURANCE COMPANY OF KENYA LTD',
+		},
+		{
+			code: 'JIL1.57',
+			description: 'CMCCC NO. 1277 OF 2019 SHERILA BABURALI VS. JUBILEE INSURANCE COMPANY',
+		},
+		{
+			code: 'JIL1.58',
+			description:
+				'EX HON. FLORENCE TSINDOLI MACHIO VS. THE JUBILEE INSURANCE COMPANY OF KENYA LTD',
+		},
+		{
+			code: 'JIL1.59',
+			description: 'BOB ORINA OSANO VS. THE JUBILEE INSURANCE COMPANY OF KENYA LTD',
+		},
+		{
+			code: 'JIL1.6',
+			description: 'JUBILEE INSURANCE VS MASILAHI INSURANCE BROKERS LIMITED',
+		},
+		{
+			code: 'JIL1.60',
+			description: 'THE JUBILEE INSURANCE COMPANY OF KENYA VS. MILANO ICE CREAM.',
+		},
+		{
+			code: 'JIL1.61',
+			description:
+				'JOSEPHINE IRENE WANJIKU MBATIA VS. THE JUBILEE INSURANCE COMPANY OF KENYA LIMITED.',
+		},
+		{
+			code: 'JIL1.62',
+			description: 'THE JUBILEE INSURANCE COMPANY OF KENYA VS. KUKU FOODS KENYA LTD.(KFC)',
+		},
+		{
+			code: 'JIL1.63',
+			description: 'JUBILEE INSURANCE COMPANY OF KENYA LIMITED VS. OPTIMAL COMPANY LTD',
+		},
+		{
+			code: 'JIL1.64',
+			description:
+				'JOSEPH BIRUNDU MOGENDI VS.The JUBILEE INSURANCE COMPANY OF KENYA LIMITED.',
+		},
+		{
+			code: 'JIL1.65',
+			description:
+				'HCCC NO. 761 OF 1999 KISHOR RAMJI HIRANI, RAMJI GOVIND HIRANI & MRS. R. HIRANI .VS. JUBILEE INSURANCE COMPANY LIMITED',
+		},
+		{
+			code: 'JIL1.66',
+			description: 'ROSELYNE MERIKO VS. THE JUBILEE INSURANCE COMPANY OF KENYA LIMITED',
+		},
+		{
+			code: 'JIL1.67',
+			description: 'JANET NDINDA DAVID VS. THE JUBILEE INSURANCE COMPANY OF KENYA LIMITED.',
+		},
+		{
+			code: 'JIL1.68',
+			description:
+				'THE JUBILEE INSURANCE COMPANY OF KENYA LIMITED.VS SATIN GEMS BEAUTY AND BRIDAL CENTRE LIMITED.',
+		},
+		{
+			code: 'JIL1.69',
+			description:
+				'ABAGUSII CULTURAL DEVELOPMENT COUNCIL VS. THE JUBILEE INSURANCE COMPANY LTD.',
+		},
+		{
+			code: 'JIL1.7',
+			description:
+				'DR. RICHARD KURIA & ROSEMARY WAMBUI NGUKU T/A IVORY HEALTH SOLUTIONS LTD VS JUBILEE INSURANCE LTD',
+		},
+		{
+			code: 'JIL1.70',
+			description:
+				'ELRC Cause No. 133 of 2020 – Jackline Atieno Kunja vs. The Jubilee Insurance Company of Kenya Ltd',
+		},
+		{
+			code: 'JIL1.71',
+			description:
+				'CMCC Civil Suit No. 849 of 2020 – Mercy Wanja Nyamu vs. The Jubilee Insurance Company of Kenya Ltd',
+		},
+		{
+			code: 'JIL1.72',
+			description: 'Joshua Ochieng Ochiel vs. The Jubilee Insurance Company of Kenya Ltd',
+		},
+		{
+			code: 'JIL1.73',
+			description:
+				'BPRT Case No. 490 of 2020 – James Kamau T/A Aqua Imperial Health Services Vs. The Jubilee Insurance Company of Kenya Ltd & Anor',
+		},
+		{
+			code: 'JIL1.74',
+			description: 'Michael Edwin Ondondo Vs. The Jubilee Insurance Company of Kenya Ltd',
+		},
+		{
+			code: 'JIL1.75',
+			description:
+				'JUBILEE INSURANCE COMPANY KENYA LIMITED -vs- TAYO GROUP CONSULTING LIMITED',
+		},
+		{
+			code: 'JIL1.76',
+			description:
+				'E&LRC CAUSE NO. E380 OF 2021 PATRICK K. KINUTHIA VS. JUBILEE LIFE INSURANCE LIMITED',
+		},
+		{
+			code: 'JIL1.77',
+			description:
+				'HCCC No. E103 of 2020 - Universities Academic Staff Union Vs. The Jubilee Insurance Company of Kenya Ltd & 3 Others',
+		},
+		{
+			code: 'JIL1.78',
+			description: 'ANNE WANJIRU NJENGA -VS-JUBILEE LIFE INSURANCE LTD ',
+		},
+		{
+			code: 'JIL1.79',
+			description: 'Kamba Nyaga Njeru -vs- Jubilee Life Insurance Limited',
+		},
+		{
+			code: 'JIL1.8',
+			description:
+				'ELRC CAUSE NO.844 0F 2017-EVANS MUSYA MUSUNZA VS. JUBILEE INSURANCE  COMPANY OF KENYA LIMITED',
+		},
+		{
+			code: 'JIL1.80',
+			description: 'GEDION TONUI VS.  JUBILEE LIFE INSURANCE LIMITED',
+		},
+		{
+			code: 'JIL1.81',
+			description: 'BENJAMIN WANGILA WACHIYE VS.  JUBILEE LIFE INSURANCE LIMITED.',
+		},
+		{
+			code: 'JIL1.82',
+			description:
+				'CONSTITUTIONAL PETITION NO. E030 OF 2021 – EDNA CHIRU POLLE VS. JUBILEE INSURANCE COMPANY OF KENYA LIMITED',
+		},
+		{
+			code: 'JIL1.83',
+			description: 'BONFACE SILA MUNYAO VS. JUBILEE LIFE INSURANCE LIMITED.',
+		},
+		{
+			code: 'JIL1.84',
+			description:
+				'ELRC CAUSE NO. E40 OF 2020 – MAXWELL OGONG’O NANGIRA VS.JUBILEE INSURANCE COMPANY LIMITED',
+		},
+		{
+			code: 'JIL1.84/001',
+			description:
+				"ELRC APPEAL NO. 8 OF 2022 - JUBILEE INSURANCE COMPANY LIMITED VS. MAXWELL OGENG'O NANGIRA",
+		},
+		{
+			code: 'JIL1.84/002',
+			description:
+				"CIVIL APPEAL NO. E046 OF 2023 - JUBILEE INSURANCE COMPANY LIMITED VS. MAXWELL OGENG'O NANGIRA",
+		},
+		{
+			code: 'JIL1.85',
+			description: 'ERIC WACHIRA VS. JUBILEE LIFE INSURANCE LIMITED',
+		},
+		{
+			code: 'JIL1.86',
+			description: 'IVAN NZAMBU VS. JUBILEE LIFE INSURANCE LIMITED',
+		},
+		{
+			code: 'JIL1.87',
+			description:
+				'IRA APPEALS TRIBUNAL CASE NO. 1 OF 2020 – PHILLIP ONDIEKI T/A PERSPECTIVE INSURANCE VS. JUBILEE INSURANCE COMPANY LIMITED',
+		},
+		{
+			code: 'JIL1.88',
+			description: 'CELINE & DENNIS MOGIKOYO VS. JUBILEE INSURANCE COMPANY LIMITED',
+		},
+		{
+			code: 'JIL1.89',
+			description: 'PETER KAPISTRAN VS. JUBILEE INSURANCE COMPANY LIMITED',
+		},
+		{
+			code: 'JIL1.9',
+			description:
+				'ELRC CAUSE NO. 226 OF 2017 - DIANA ADHIAMBO ODHIAMBO VS THE JUBILEE INSURANCE CO. OF KENYA LTD',
+		},
+		{
+			code: 'JIL1.90',
+			description: 'JUBILEE LIFE INSURANCE COMPANY LIMITED VS. FRANCIS MARISIA',
+		},
+		{
+			code: 'JIL1.91',
+			description: 'JOHNSON JUMA VS. JUBILEE LIFE INSURANCE LTD',
+		},
+		{
+			code: 'JIL1.92',
+			description: 'ROSEMARIE PHILOMENA OKWARO VS. JUBILEE LIFE INSURANCE LTD',
+		},
+		{
+			code: 'JIL1.93',
+			description: 'DEMAND BY PATRICK MBUTHIA KARANJA',
+		},
+		{
+			code: 'JIL1.94',
+			description: 'ALICE ODHIAMBO VS.JUBILEE LIFE INSURANCE LIMITED',
+		},
+		{
+			code: 'JIL1.95',
+			description: 'HELLEN KAGENDO MUNYUA VS. JUBILEE LIFE INSURANCE LIMITED',
+		},
+		{
+			code: 'JIL1.96',
+			description:
+				'LEASE OF JUBILEE INSURANCE EXCHANGE ON KAUNDA STREET LR.NO.209/4914 – NAIROBI.',
+		},
+		{
+			code: 'JIL1.96/001',
+			description:
+				'LEASE BETWEEN JUBILEE LIFE INSURANCE LIMITED & STAR OPTICS LIMITED (SHOP NO. 13) ON LR. NO. 209/4914, GROUND FLOOR OF JUBILEE INSURANCE EXCHANGE BIULDING - KAUNDA STREET.',
+		},
+		{
+			code: 'JIL1.96/002',
+			description:
+				'LEASE OF OFFICE NO. 409,410 & 411 ON LR NO. 209/3526 FOURTH FLOOR AT JUBILEE INSURANCE HOUSE, KAUNDA STREET TO TINY BEES CREDIT KENYA LTD',
+		},
+		{
+			code: 'JIL1.96/003',
+			description:
+				'LEASE OF OFFICE NO. 418B ON 4TH FLOOR AT JUBILEE INSURANCE EXCHANCE TO JUMBO CO-OPERATIVE SAVINGS & CREDIT LTD',
+		},
+		{
+			code: 'JIL1.96/004',
+			description:
+				'LEASE OF OFFICE NO. 506 - 5TH FLOOR AT ON LR. NO. 209/4914 AT JUBILEE INSURANCE EXCHANGE TO KIMEMIAH ENGINEERING CONSTRUCTION COMPANY LIMITED.',
+		},
+		{
+			code: 'JIL1.96/005',
+			description:
+				'LEASE OF OFFICE NO.S 405, 406, 407 & 408 - 4TH FLOOR ON LR. NO. 209/3526 JUBILEE INSURANCE HOUSE TO KABIRO NDAIGA & CO. ADVOCATES.',
+		},
+		{
+			code: 'JIL1.96/006',
+			description:
+				'LEASE OF SHOP NO. 5 GROUND FLOOR ON LR. NO. 209/4914 AT JUBILEE INSURANCE EXCHANCE TO BATA SHOE KENYA PLC',
+		},
+		{
+			code: 'JIL1.96/007',
+			description:
+				'LEASE OF OFFICE NO. 220, 2ND FLOOR ON LR. NO. 209/3526 AT JUBILEE INSURANCE EXCHANGE BUILDING TO MAZEL INVESTMENTS COMPANY LIMITED. ',
+		},
+		{
+			code: 'JIL1.96/008',
+			description:
+				'LEASE FOR OFFICE NO. 113 ON 1ST FLOOR AT JUBILEE INSURANCE HOUSE ON LR. NO. 209/3526 TO CALIBERCODE LIMITED.',
+		},
+		{
+			code: 'JIL1.96/009',
+			description:
+				'LEASE FOR OFFICE NO. 552 ON 5TH FLOOR AT JUBILEE INSURANCE EXCHANGE ON LR. NO.209/4914 TO AFRICAN DANGEL TRAVEL & TOURS LTD',
+		},
+		{
+			code: 'JIL1.96/010',
+			description:
+				'LEASE FOR OFFICE NO. 510 ON 5TH FLOOR AT JUBILEE INSURANCE EXCHANGE ON LR. NO. 209/4914 TO ENIGMA ELEVATE',
+		},
+		{
+			code: 'JIL1.96/011',
+			description:
+				'LEASE OF OFFICE NO. 526 ON 5TH FLOOR AT JUBILEE INSURANCE EXCHANGE-LR. NO. 209/4914 TO PORCHLIGHT SOLUTIONS LIMITED.',
+		},
+		{
+			code: 'JIL1.96/012',
+			description:
+				'LEASE FOR OFFICE NO. 438 ON 4TH FLOOR AT JUBILEE INSURANCE EXCHANCE-LR. NO. 209/4914 TO CLIFFORD BOB KEYA.',
+		},
+		{
+			code: 'JIL1.96/013',
+			description:
+				'LEASE FOR OFFICE NO. 415C & 415D ON 4TH FLOOR AT JUBILEE INSURANCE EXCHANGE TO SAMEEN TRAVEL AND TOURS LTD',
+		},
+		{
+			code: 'JIL1.96/014',
+			description:
+				'LEASE OF OFFICE NO. 602 ON 6TH FLOOR AT JUBILEE INSURANCE EXCHANGE LR.NO. 209/4914 TO MEDI-GATE DIAGNOSTIC CENTRE LIMITED.',
+		},
+		{
+			code: 'JIL1.96/015',
+			description:
+				'LEASE FOR OFFICE NO. 405 ON 4TH FLOOR AT JUBILEE INSURANCE EXCHANGE LR.NO. 209/4914 TO SUDI MAIRURA MAUTI t/a MAIRURA & COMPANY ADVOCATES',
+		},
+		{
+			code: 'JIL1.96/016',
+			description: 'LEASE OF OFFICE ON 5TH FLOOR JUBILEE EXCHANGE TO CHADOR AUCTIONEERS',
+		},
+		{
+			code: 'JIL1.96/017',
+			description:
+				'LEASE FOR OFFICE NO. 215 ON SECOND FLOOR AT JUBILEE INSURANCE EXCHANGE ON LR.NO. 209/4914 TO BRYBELL MASTER LIMITED.',
+		},
+		{
+			code: 'JIL1.96/018',
+			description:
+				'LEASE FOR OFFICE NO. 543 ON FIFTH FLOOR AT JUBILEE INSURANCE EXCHANGE ON LR. NO. 209/4914 TO AMINA KERUBA BOSIRE t/a FACEFAB BEAUTY',
+		},
+		{
+			code: 'JIL1.96/019',
+			description:
+				'LEASE FOR OFFICE NO. 544,545 AND 546 ON 5TH FLOOR AT JUBILEE INSURANCE EXCHANGE (LR. NO. 209/4914) TO AIR FARES TRAVEL AGENCY LIMITED',
+		},
+		{
+			code: 'JIL1.96/020',
+			description:
+				'LEASE FOR OFFICE NO. 420, 421, 422 &423 ON 4TH FLOOR AT JUBILEE INSURANCE EXCHANGE (LR. NO. 209/494914)',
+		},
+		{
+			code: 'JIL1.96/021',
+			description:
+				'LEASE FOR OFFICE NO. 208 ON 2ND FLOOR AT JUBILEE INSURANCE EXCHANGE TO THE EAST AFRICAN BUSINESS TIMES LIMITED',
+		},
+		{
+			code: 'JIL1.96/022',
+			description:
+				'LEASE OF SHOP NO. 1B ON GROUND FLOOR AT JUBILEE INSURANCE PALCE TO HYGIENIC SALONS LIMITED',
+		},
+		{
+			code: 'JIL1.96/023',
+			description: 'LEASE FOR OFFICE NO. 207 ON 2ND FLOOR AT JUBILEE INSURANCE EXCHANGE',
+		},
+		{
+			code: 'JIL1.96/024',
+			description:
+				'LEASE FOR OFFICE NO. 213 ON 2ND FLOOR AT JUBILEE INSURANCE EXCHANGE TO ADJUNCT SYSTEMS & FISCAL SOLUTIONS LIMITED',
+		},
+		{
+			code: 'JIL1.96/025',
+			description:
+				'LEASE FOR OFFICE NO. 632 ON 6TH FLOOR AT JUBILEE INSURANCE EXCHANGE TO SKAVTECH SOLUTIONS LIMITED',
+		},
+		{
+			code: 'JIL1.96/026',
+			description:
+				'LEASE FOR EXCHANGE LAYOUT ROOMS 245, 246 & 247 ON 2ND FLOOR TO RADIANT DENTAL & ORTHODONTIC CENTRE LTD',
+		},
+		{
+			code: 'JIL1.96/027',
+			description: 'LEASE FOR OFFICE NO.212 ON 2ND FLOOR TO KESHI ANKARA AFRICA',
+		},
+		{
+			code: 'JIL1.96/028',
+			description:
+				'LEASE FOR OFFICE NO. 236 ON 2ND FLOOR TO ALFIRDOWS GENRAL TRADING CO. LIMITED',
+		},
+		{
+			code: 'JIL1.96/029',
+			description:
+				'LEASE OVER OFFICE NUMBER 408D ON FOURTH FLOOR OF JUBILEE INSURANCE HOUSE KAUNDA STREET ON TITLE NUMBER NAIROBI/BLOCK 28/21 TO NEMI ADVENTURES LIMITED.',
+		},
+		{
+			code: 'JIL1.96/030',
+			description:
+				'LEASE FOR OFFICE NOs 139 & 140 ON THE 1ST FLOOR AT JUBILEE INSURANCE EXCHANGE TO LEWIS THAGICHU KARANJA t/a BLAZERS, TROUSERS AND TOPS COLLECTION',
+		},
+		{
+			code: 'JIL1.96/031',
+			description:
+				'LEASE FOR OFFICE NO. 408C ON THE 4TH FLOOR AT JUBILEE INSURANCE EXCHANGE TO ANTONY KINGORI MWANIKI t/a KOBOLE INSURANCE AGENCY',
+		},
+		{
+			code: 'JIL1.96/032',
+			description:
+				'LEASE FOR OFFICES NOs. 701, 702 & 703 ON THE 7th FLOOR AT JUBILEE INSURANCE EXCHANCE TO JUBILEE FINANCIAL SERVICES LIMITED',
+		},
+		{
+			code: 'JIL1.96/033',
+			description:
+				'LEASE FOR OFFICE NO. 141 ON THE 1ST FLOOR AT JUBILEE INSURANCE EXCHANGE - LR NO. 209/4914 TO LAMECK OWIRA SEKA t/a ELEGANT MOUNTED FRAMES',
+		},
+		{
+			code: 'JIL1.96/034',
+			description:
+				'LEASE FOR OFFICE NO. 409A ON THE 4TH FLOOR AT JUBILEE INSURANCE EXCHANGE - LR. NO. 209/4914 TO THE LOOKOUT TRAVEL LIMITED.',
+		},
+		{
+			code: 'JIL1.96/035',
+			description:
+				'LEASE FOR OFFICE NO. 223 & 224 ON 2ND FLOOR AT JUBILEE INSURANCE EXCHANGE - LR. NO. 209/4914 TO MARANI GLOBAL PROPERTIES LIMITED',
+		},
+		{
+			code: 'JIL1.96/036',
+			description:
+				'LEASE FOR OFFICE NO. 415B ON THE 4TH FLOOR AT JUBILEE INSURANCE EXCHANGE TO MWANGANGI JANE ADVOCATE.',
+		},
+		{
+			code: 'JIL1.96/037',
+			description:
+				'LEASE FOR OFFICE NOS. 636 & 637 ON THE 6TH FLOOR AT JUBILEE INSURANCE EXCHANGE TO TRINITY CREDIT CO. LIMITED',
+		},
+		{
+			code: 'JIL1.96/038',
+			description:
+				'LEASE FOR OFFICE NO. 532 ON THE 5TH FLOOR AT JUBILEE INSURANCE EXCHANGE TO ARCLIGHT TECHNOLOGIES LIMITED',
+		},
+		{
+			code: 'JIL1.96/039',
+			description:
+				'LEASE FOR OFFICE NO. 635 ON THE 6TH FLOOR AT JUBILEE INSURANCE EXCHANGE - LR.NO. 209/4914 TO ADOW ABDI IBRAHIM',
+		},
+		{
+			code: 'JIL1.96/040',
+			description:
+				'LEASE OVER OFFICE NUMBERS 223 AND 224 ON LAND REFERENCE NUMBER 28/21 OF JUBILEE INSURANCE EXCHANGE, KAUNDA STREET TO MARANI GLOBAL PROPERTIES LIMITED',
+		},
+		{
+			code: 'JIL1.96/041',
+			description:
+				'LEASE OVER OFFICE NUMBER 630, 6TH FLOOR ON LAND REFERENCE NUMBER 209/4914 OF JUBILEE INSURANCE EXCHANGE, KAUNDA STREET TO BAJAS ENTERPRISES (K) LIMITED',
+		},
+		{
+			code: 'JIL1.96/042',
+			description:
+				'LEASE FOR OFFICE NO. 640, 6TH FLOOR ON LR. NO. 209/4914 AT JUBILEE INSURANCE EXCHANGE TO COTRUST INSURANCE AGENCY',
+		},
+		{
+			code: 'JIL1.96/043',
+			description:
+				'LEASE FOR OFFICE NO. 219, 2ND FLOOR ON LR. NO. 209/4914 AT JUBILEE INSURANCE EXCHANGE TO VIMERC LIMITED',
+		},
+		{
+			code: 'JIL1.96/044',
+			description:
+				'LEASE FOR OFFICE NO. 536 ON THE 5TH FLOOR AT JUBILEE INSURANCE EXCHANGE; LR. NO. 209/4914 TO AIR NERD LIMITED',
+		},
+		{
+			code: 'JIL1.96/045',
+			description:
+				'LEASE FOR OFFICE NO. 315 ON THE 3RD FLOOR AT JUBILEE INSURANCE HOUSE; LR NO. 209/3526 TO JOSEPHINE WARUGURU KANGORO T/A TARNEC INSURANCE AGENCY',
+		},
+		{
+			code: 'JIL1.96/046',
+			description:
+				'LEASE FOR OFFICE NO. 219 ON THE 2ND FLOOR AT JUBILEE INSURANCE EXCHANGE, NAIROBI - LR.NO. 209/4914 TO VIMERC LIMITED',
+		},
+		{
+			code: 'JIL1.96/047',
+			description:
+				'LEASE FOR OFFICE NO. 512 ON THE 5TH FLOOR AT JUBILEE INSURANCE EXCHANGE; NAIROBI - LR NO. 209/4914 TO SAGANA POSHFARM DAIRY LIMITED',
+		},
+		{
+			code: 'JIL1.96/048',
+			description:
+				'LEASE FOR OFFICE NO. 206 ON THE SECOND FLOOR AT JUBILEE INSURANCE EXCHANGE, NAIROBI, L.R. NO. 209/4914 TO FLY HIGH AGENCY LIMITED.',
+		},
+		{
+			code: 'JIL1.96/049',
+			description:
+				'LEASE FOR OFFICE NUMBER 216 ON THE 2ND FLOOR AT JUBILEE INSURANCE EXCHANCE ON LR. NO. 209/4914 TO JEPHYS AUCTIONEERS',
+		},
+		{
+			code: 'JIL1.96/050',
+			description:
+				"LEASE FOR OFFICE NUMBER 537 ON THE 5TH FLOOR AT JUBILEE INSURANCE EXCHANGE ON LR NO. 209/4914 TO TAUREAN'S ENTERPRISES",
+		},
+		{
+			code: 'JIL1.96/051',
+			description:
+				'LEASE FOR OFFICE NUMBER 222 ON THE SECOND FLOOR AT JUBILEE INSURANCE EXCHANGE ON LR. NO. 209/4914 TO GENIMA STUDIOS LIMITED',
+		},
+		{
+			code: 'JIL1.96/052',
+			description:
+				'LEASE FOR OFFICE NUMBER 541 ON THE FIFTH FLOOR AT JUBILEE INSURANCE EXCHANGE ON LR NO. 209/4914 TO MARTIN GACHUHI NJUGUNA T/A GACHUHI NJUGUNA AND COMPANY',
+		},
+		{
+			code: 'JIL1.96/053',
+			description:
+				'LEASE FOR SHOP NO. 1 ON THE GROUND FLOOR AT JUBILEE INSURANCE EXCHANGE TO SUPERCOSMETICS LIMITED',
+		},
+		{
+			code: 'JIL1.96/054',
+			description:
+				'LEASE FOR OFFICE NO. 409C ON THE FOURTH FLOOR AT JUBILEE INSURANCE EXCHANGE, NAIROBI TO SERVILE VENTURES LIMITED.',
+		},
+		{
+			code: 'JIL1.96/055',
+			description:
+				'LEASE OVER OFFICE NUMBER 414B ON THE 4TH FLOOR ON NAIROBI/BLOCK 28/21 OF JUBILEE INSURANCE HOUSE; KAUNDA STREET TO TAWILA SUPPLIES LIMITED',
+		},
+		{
+			code: 'JIL1.96/056',
+			description:
+				'LEASE OVER OFFICE NUMBER 631 ON THE 6TH FLOOR ON NAIROBI/BLOCK 28/21 OF JUBILEE INSURANCE HOUSE; KAUNDA STREET TO NAIRANA INSURANCE AGENCY LIMITED',
+		},
+		{
+			code: 'JIL1.96/057',
+			description:
+				'LEASE OVER OFFICE NUMBER 515 ON THE 5TH FLOOR ON NAIROBI/BLOCK 28/21 OF JUBILEE INSURANCE HOUSE; KAUNDA STREET TO RUMERS INVESTMENT LIMITED',
+		},
+		{
+			code: 'JIL1.97',
+			description: 'MARTIN EDWIN NDWIGA VS. JUBILEE LIFE INSURANCE LIMITED.',
+		},
+		{
+			code: 'JIL1.98',
+			description: 'DAVID RIAGA VS. JUBILEE HEALTH INSURANCE LIMITED',
+		},
+		{
+			code: 'JIL1.99',
+			description:
+				'GATHIMAINI PHARMACY COMPANY LIMITED VS. JUBILEE HEALTH INSURANCE CO. LIMITED',
+		},
+		{
+			code: 'JIL2.1',
+			description: 'CLAIM AGAINST UNLAWFUL TERMINATION AND DISCRIMINATION',
+		},
+		{
+			code: 'JIT1.1',
+			description: 'JITIHADA LIMITED',
+		},
+		{
+			code: 'JIV1.1',
+			description:
+				'INCORPORATION OF A COMPANY LIMITED BY GUARANTEE AND COMPANY LIMITED BY SHARES.',
+		},
+		{
+			code: 'JKL1.1',
+			description: 'LEGAL OPINION ON THE APPLICABILITY OF EXCISE ON BOTTLED WATER',
+		},
+		{
+			code: 'JKL2.1',
+			description:
+				'AGREEMENT BETWEEN JUBILEE INSURANCE COMPANY OF KENYA & THE KENYA POWER & LIGHTING LIMITED AND GEORGE ORARO, SC.',
+		},
+		{
+			code: 'JKU1.1',
+			description: 'JKUAT STAFF RETIREMENT BENEFIT SCHEME - ACCORN MANAGEMENT LTD',
+		},
+		{
+			code: 'JKU1.2',
+			description:
+				'JOMO KENYATTA UNIVERSITY OF AGRICULTURE & TECHNOLOGY (JKUAT) STAFF RETIREMENT BENEFITS SCHEME',
+		},
+		{
+			code: 'JMC1.2',
+			description: 'J MILES & COMPANY GENERAL FILE',
+		},
+		{
+			code: 'JMC1.3',
+			description: 'MEMORANDUM OF CO-OPERATION',
+		},
+		{
+			code: 'JMC1.4',
+			description:
+				'MATTER ENFORCEMENT OF ARBITRAL AWARD (KIVUWATT LTD & ANOR VS. CIVICON LTD (KENYA) & ANOTHER',
+		},
+		{
+			code: 'JMM1.1',
+			description: 'GENERAL ADVICE FILE',
+		},
+		{
+			code: 'JOB2.1',
+			description: 'GENERAL ADVICE',
+		},
+		{
+			code: 'JOD1.1',
+			description:
+				'MARTHA ILABONGA VS JIRAQ JODAI & 2 OTHERS: INDUATRIAL CAUSE NO. 1465 OF 2012',
+		},
+		{
+			code: 'JOE1.1',
+			description: 'TRANSFER OF MAVOKO TOWN BLOCK 2/3272',
+		},
+		{
+			code: 'JOS1.1',
+			description:
+				'SALE OF LR. NO. 330/1267 DAGORETTI LANE -KILIMANI TO JOSEPH H. OTIN & WILSON D. ONYANGO TO FINSERVE SOLUTIONS (EA) LTD',
+		},
+		{
+			code: 'JOS2.1',
+			description: 'LAST EXPENSE-JOHN MUTUNE MBENGEI',
+		},
+		{
+			code: 'JOW1.1',
+			description: 'HCCC NO. 620 OF 2009 SATPAL SINGH JOWHAL V AAKIF VIRANI & OTHERS',
+		},
+		{
+			code: 'JPM1.1',
+			description:
+				'JR. NO. 26 OF 2019 REPUBLIC  BETWEEN HUMPHREY NGUMA MACHARIA & GERALD KIREKE ONGORO VS. PASTOR JEAN PIERRE MAIYWA & PASTOR PETER NYAGA.',
+		},
+		{
+			code: 'JRF1.1',
+			description: 'JUJA ROAD FANCY STORE LIMITED VS. MATER HOSPITAL',
+		},
+		{
+			code: 'JUB1.1',
+			description: 'Jubilee Insurance v Dr. Mukesh',
+		},
+		{
+			code: 'JUM1.1',
+			description:
+				'CMCC NAIROBI CIVIL SUIT NO.6147 OF 2005 - IRENE CHEBET & OTHERS VS. GEORGE MUGWIMA NJOROGE',
+		},
+		{
+			code: 'JVA1.1',
+			description: 'ESTATE OF KEVIN OMBAJO (DECEASED)',
+		},
+		{
+			code: 'JVM1.1',
+			description:
+				'BELTRAMI MARIAGELA VS JOHARI VILLAS MANAGEMENT LTD: CMCC NO.108 OF 2014,MALINDI',
+		},
+		{
+			code: 'JVM1.3',
+			description: 'JOHARI VILLAS MANAGEMENT -VS- MELVILLE LTD',
+		},
+		{
+			code: 'JVM1.4',
+			description: 'JOHARI VILLAS MANAGEMENT VS MELVILLE LTD: CMCC NO. 406 OF 2013',
+		},
+		{
+			code: 'JVM1.5',
+			description:
+				'JOHARI VILLAS MANAGEMENT LTD & ROBERTO CIAVOLELLA -VS- PAOLO TARLAZZI: HCCC NO. 206 OF 2013',
+		},
+		{
+			code: 'JVM1.6',
+			description: 'CMCC NO. 15 OF 2014 MELVILLE LIMITED',
+		},
+		{
+			code: 'JVM2.1',
+			description: 'JOHAZI VILLAS MANAGEMENT',
+		},
+		{
+			code: 'JZE1.1',
+			description:
+				'ISAAC GICHUKI WANJOHI VS JIANGXI ZHONGMEI ENGINEERING CONSTRUCTION COMPANY LTD/MR. FRANCIS KIILU: CMCC NO. 77 OF 2013',
+		},
+		{
+			code: 'KAC1.1',
+			description: 'KENINDIA ASSURANCE COMPANY LTD -VS- UKWALA SUPERMARKETS',
+		},
+		{
+			code: 'KAC1.10',
+			description: 'MOMBASA CEMENT-LEGAL OPINION',
+		},
+		{
+			code: 'KAC1.11',
+			description:
+				"KENINDIA ASSURANCE COMPANY LTD & 2 OTHERS -VS- ROBERT MATHENGE NDUNGU FOR THE ESTATE OF MARTHE CATHERINE WANJIRU NDUNG'U: HCCC NO 235 OF 2013 (NBO)",
+		},
+		{
+			code: 'KAC1.12',
+			description: 'KENINDIA ASSURANCE CO',
+		},
+		{
+			code: 'KAC1.13',
+			description: 'DENNIS AWUNYA VS CRATER AUTOMOBILES',
+		},
+		{
+			code: 'KAC1.14',
+			description: 'KENINDIA ASSURANCE CO',
+		},
+		{
+			code: 'KAC1.16',
+			description: 'INJURY TO SHAMSHAD ASARIA AT WESTGATE SHOPPING MALL ON 12TH AUGUST 2015',
+		},
+		{
+			code: 'KAC1.17',
+			description:
+				'TAX APPEAL NO. 15 OF 2015-KENINDIA ASSURANCE COMPANY VS COMMISSIONER OF DOMESTIC TAXES',
+		},
+		{
+			code: 'KAC1.18',
+			description: 'CMCC NO. 1115 OF 2010, NAIROBI: KENNEDY AMBECHI MAHIVA',
+		},
+		{
+			code: 'KAC1.19',
+			description: 'E&LR NO. 178 OF 2012 SAMUEL OKEMWA ORURU VS KENINDIA ASSURANCE CO. LTD',
+		},
+		{
+			code: 'KAC1.20',
+			description: 'HCC NO. 311 OF 2012-COMPLY INDUSTRIES LTD VS P.N. MASHRU LIMITED',
+		},
+		{
+			code: 'KAC1.21',
+			description: 'CIVIL CASE NO.88 OF 2014 NGURE EDWARD KAREGA',
+		},
+		{
+			code: 'KAC1.23',
+			description:
+				'PETITION OF APPEAL NO. 7 OF 2016-DHANJAL INVESTMENTS LTD VS KENINDIA ASSURANCE CO. LIMITED',
+		},
+		{
+			code: 'KAC1.24',
+			description:
+				'HCCC NO. 25 OF 2012 SUSAN WANJIKU & PHILIP WAKABA KAMAU (Suing as Personal Representative & Administrator of the Estate of the Late JANE WAIRIMU WAKABA (DCD) -vs- NAKUMATT HOLDINGS & THE KENYA POWER & LIGHTING',
+		},
+		{
+			code: 'KAC1.25',
+			description:
+				"HCC NO.53 OF 2010 SARAH MUTHEU KIVUVO & JAMES MUTUA (Suing as Representative & Admnistrator of the Estate of the Late PETER SERRY ODERA HWENY'S (DCD)-vs-NAKUMATT HOLDINGS & THE KENYA POWER & LIGHTING",
+		},
+		{
+			code: 'KAC1.26',
+			description:
+				'HCC NO.126 OF 2010 HARON SITATI WANJALA & NABWANA ROSE SIKKUKU (Suing as Personal Representative & Admnistrator of the Estate of the Late BEATRICE LIHAVI (DCD)-vs-NAKUMATT HOLDINGS & THE KENYA POWER & LIGHTING',
+		},
+		{
+			code: 'KAC1.27',
+			description:
+				'HCCC NO.538 OF 2010 BERYL ANYANGO OUMA & FRANCIS ODHIAMBO OUMA (Suing as Personal Representative & Admniistrator of the Estate of the Late JANET OUMA (DCD)-VS-NAKUMATT HOLDINGS & THE KENYA POWER & LIGHTING',
+		},
+		{
+			code: 'KAC1.28',
+			description:
+				'HCCC NO.437 JOSEPH MUNYAO MAITHYA & RODAH NTHAMBI MAITHYA (Suing as Personal Representative & Admnistrator of the Estate of the Late RUTH SASIVA MAITHYA (DCD) -VS-NAKUMATT HOLDINGS & THE KENYA POWER & LIGHTING',
+		},
+		{
+			code: 'KAC1.29',
+			description:
+				'HCCC NO.398 OF 2011 DINAR STEPHEN KAPANAT & WILSON P. KAPANAT (suing as Personal Representative & Admnistrator of the Estate of the Late TULIAPUS KASACHON (DCD)-vs- NAKUMATT HOLDINGS & THE KENYA POWER & LIGHTING  (THIRD PARTY)',
+		},
+		{
+			code: 'KAC1.3',
+			description:
+				'NAKUMATT HOLDINGS LTD VS JULIUS MWAKONDO MWABORA/BENSON MLAMBO MWAKINA FOR THE ESTATE OF THE LATE CHRISTINA KOKUMARAMARA: HCCC NO. 403 OF 2011',
+		},
+		{
+			code: 'KAC1.30',
+			description:
+				'HCCC NO.397 0F2011 FREDRICK ONYANGO ORONDO (Suing as Personal Representative & Admnistrator of the Estate of the Late MONICA ACHIENG WAMRONO (DCD) -vs-NAKUMATT HOLDINGS & KENYA POWER & LIGHTING (THIRD PARTY)',
+		},
+		{
+			code: 'KAC1.31',
+			description:
+				'HCCC NO.222 OF 2011 IRENE NCABIRA RIUNGU & JOHN MURIUNGI MUTUNGI (Suing as Personal Representative & Admnistrator of the Estate of the Late TERRY GACHERI RIUNGU (DCD) -vs-NAKUMATT HOLDINGS & KENYA POWER LIGHTING (THIRD PARTY)',
+		},
+		{
+			code: 'KAC1.32',
+			description:
+				'HCCC NO.125 OF 2010 WILLY KIM CHESBOL & ALEX CHEPTROT HESBON (Suing as Personal Representative & Admnistrator of the Estate of the Late LOYCE NEHEMIAH (DCD)-vs-NAKUMATT HOLDINGS & THE KENYA POWER & LIGHTING (THIRD PARTY)',
+		},
+		{
+			code: 'KAC1.33',
+			description:
+				'HCCC NO. 54 OF 2010 NICHOLAS WAINAINA NDUNGI (Suing as Personal Representative & Administrator of the Estate of the Late ANGELA WAMAITHA WANAINA (DCD) -vs- NAKUMATT HOLDINGS & THE KENYA POWER & LIGHTING (THIRD PARTY)',
+		},
+		{
+			code: 'KAC1.34',
+			description:
+				'HCCC NO. 24 OF 2012 JANET WAMBUKU KAMAU & PATRICK KAMUYU WAKABA (Suing as Personal Representative & Administrator of the Estate of the Late SAMUEL KAMAU WAKABA (DCD)) -vs- NAKUMATT HOLDINGS & THE KENYA POWER & LIGHTING (THIRD PARTY)',
+		},
+		{
+			code: 'KAC1.35',
+			description:
+				'HCCC NO. 489 OF 2011 FREDRICK NDIRI MUKILWE (Suing as Personal Representative & Administrator of the Estate of the Late EVERLYNE REBECCA MUKOLWE (DCD)) -vs- NAKUMATT HOLDINGS & THE KENYA POWER & LIGHTING (THIRD PARTY)',
+		},
+		{
+			code: 'KAC1.36',
+			description:
+				'CMCC NO. 3240 OF 2010 SPIN KNIT DAIRY LIMITED -VS- KENINDIA ASSURANCE COMPANY LIMITED',
+		},
+		{
+			code: 'KAC1.37',
+			description: 'GENERAL FILE',
+		},
+		{
+			code: 'KAC1.38',
+			description:
+				'HCCC NO.285 OF 2012-KENYA POWER & LIGHTING COMPANY VS ALLIANCE MEDIA KENYA  LTD',
+		},
+		{
+			code: 'KAC1.39',
+			description:
+				'NAIROBI CMCC NO.5791 OF 2018-AFRICAN BANKING CORPORATION LIMITED .VS .KENINDIA ASSURANCE COMPANY LTD',
+		},
+		{
+			code: 'KAC1.4',
+			description:
+				'REDINGTON KENYA LTD VS KENINDIA ASSURANCE COMPANY LTD: HCCC NO. 458 OF 2012',
+		},
+		{
+			code: 'KAC1.40',
+			description:
+				'HCCC NO. 119 OF 2019 JACK & JILL SUPERMARKET LTD VS. KENINDIA ASSURANCE COMPANY LTD',
+		},
+		{
+			code: 'KAC1.41',
+			description: 'APPEAL AGAINST HC INCOME TAX APPEAL NO. 2 OF 2016',
+		},
+		{
+			code: 'KAC1.42',
+			description:
+				'HCCOMM/E121/2023 - ICK INSURANCE BROKERS LIMITED VS. KENNDIA ASSURANCE COMPANY LIMITED',
+		},
+		{
+			code: 'KAC1.5',
+			description:
+				'MR. NAWAAZ MEGHJI VS KENINDIA ASSURANCE COMPANY LTD/JASPAL NAGI KAUR: FRAUD CASE OF KSHS. 15,000,000',
+		},
+		{
+			code: 'KAC1.6',
+			description: 'REDINGTON KENYA LTD VS KENINDIA ASSURANCE COMPANY LTD: HCCC 547 OF 2012',
+		},
+		{
+			code: 'KAC1.7',
+			description:
+				'KENINDIA ASSURANCE COMPANY LTD -VS- CRATER AUTOMOBILE (NRB) LTD: HCCC NO. 167 OF 2012 (KSM)',
+		},
+		{
+			code: 'KAC1.9',
+			description:
+				'DHANJAL INVESTMENTS LTD -VS- KENINDIA ASSURANCE COMPANY LTD: HC MISC. CIVIL CASE NO 4 OF 2009 (MSA)',
+		},
+		{
+			code: 'KAE1.1',
+			description:
+				'JOSEPH LEKISHON KAELO & 28 OTHERS -VS- BEN LEITATO NTUTU & 6 OTHERS: HCCC NO 83 OF 2013',
+		},
+		{
+			code: 'KAE2.1',
+			description: 'KAPECO ENTEPRISES',
+		},
+		{
+			code: 'KAF1.1',
+			description:
+				'REVIEW OF CONFIDENTIALITY AGREEMENT, ADVISING ON KENBRIGHT OUTPATIENT PRODUCT',
+		},
+		{
+			code: 'KAH1.1',
+			description: 'PURCHASE OF THE TITLE NUMBER NGONG/NGONG/91058',
+		},
+		{
+			code: 'KAI1.1',
+			description: 'PARTNERSHIP FOR AFRICAN SOCIAL & GOVERNANCE RESEARCH',
+		},
+		{
+			code: 'KAI2.1',
+			description: 'DIVORCE CAUSE NO. 197 OF 2017 CHARLES GITHINJI GICHOBI VS LELA BADI KAIM',
+		},
+		{
+			code: 'KAL1.1',
+			description:
+				'SALE OF TITLE NO. NAIROBI/BLOCK 72/1693, ZAKAYO KIPKEMOI TUM TO CATHERINE MUENI KALIMBA',
+		},
+		{
+			code: 'KAM1.1',
+			description:
+				'JOHN G. KAMUYU AND ANOTHER VS. SAFARIPARK MOTORS LTD: CIVIL SUIT NO 1013 OF 1994',
+		},
+		{
+			code: 'KAM2.1',
+			description: 'MARCO CAROLE & SAMUEL KAMONDAI - INCORPORATION OF COMPANY',
+		},
+		{
+			code: 'KAM3.1',
+			description: 'JANE KAMITA',
+		},
+		{
+			code: 'KAM4.1',
+			description: 'PETER NJOROGE KAMAU',
+		},
+		{
+			code: 'KAM5.1',
+			description:
+				'CONSTITUTIONAL PETITION AGAINST THE BAN ON THE MANUFACTURE OF PLASTIC BAGS',
+		},
+		{
+			code: 'KAM5.2',
+			description: 'DESPUTE ON THE REVISION OF EXCISE DUTY RATES IN ACTS 2019',
+		},
+		{
+			code: 'KAM6.1',
+			description: 'SALE/PURCHASE OF FLAT NO. 2, BLOCK I, L.R. NO.209/16435, NAIROBI',
+		},
+		{
+			code: 'KAM7.1',
+			description:
+				'PURCHASE OF APARTMENT NUMBER K7, KENTMERE VALLEY, L.R. NO.209/11872, NAIROBI',
+		},
+		{
+			code: 'KAN1.1',
+			description: 'SALE OF PROPERTY LR. NO. 12599/4; KAREN-NAIROBI.',
+		},
+		{
+			code: 'KAP1.1',
+			description:
+				'TROPICAL WATER HOLDINGS LTD- DINESH CONSTRUCTION LTD & 5 OTHERS -VS- MOHAMED ADAN MOHAMED & 5 OTHERS: HC ELC NO 378 OF 2011 (NBO)',
+		},
+		{
+			code: 'KAP2.1',
+			description:
+				'MARCOS BRANDALISE VS OMESH KAPILA/DINESH KAPILA/D.V.KAPILA & CO.ADVOCATES: HCCC NO. 511 OF 2012',
+		},
+		{
+			code: 'KAP3.1',
+			description: 'PROBATE AND ADMINISTRATION.',
+		},
+		{
+			code: 'KAR1.1',
+			description:
+				'CHARLES MWANGI KARIUKI- PETER NJENGA GIATU -VS- KARIUKI THUKU: CMCC 5650 OF 2015 (NBO)',
+		},
+		{
+			code: 'KAR2.1',
+			description: 'NGURE EDWARD KARENGA VS YUSUF DORAN NASIR',
+		},
+		{
+			code: 'KAR3.1',
+			description: 'PURITY KAUMO KARAO',
+		},
+		{
+			code: 'KAR4.1',
+			description: 'SUCC. CAUSE NO. 1007 OF 1993 ESTATE OF JOSEPH THIGA MAINA',
+		},
+		{
+			code: 'KAR5.1',
+			description:
+				'CIVIL CASE NO. 5774 OF 2011 ROSE WANJIRU KARIUKI VS LAWRENCE NGINYO KARIUKI',
+		},
+		{
+			code: 'KAR7.1',
+			description:
+				'PROVISION OF LEGAL SERVICES IN RELATIONS TO THE ESTATE OF KARIUKI WILSON MWANGI ALIAS JAMES KARIUKI MWANGI (DECEASED).',
+		},
+		{
+			code: 'KAR8.1',
+			description:
+				'ARBITRATION DISPUTE BETWEEN KAREN HILLS LIMITED VS. JUDY KARORI & KAMAU KARORI',
+		},
+		{
+			code: 'KAS1.1',
+			description:
+				'MONICA KATUNGE KASINGA -VS- ESTHER NJAMBI MURAGURI MWANGI: CMCC NO. 4205 OF 2015 (NBO)',
+		},
+		{
+			code: 'KAS2.1',
+			description: 'MONICA KATUNGE KASINGA -VS- ROBERT NOEL WAHOME',
+		},
+		{
+			code: 'KAT1.1',
+			description: 'NICHOLAS KILINGA KATANA',
+		},
+		{
+			code: 'KAU1.1',
+			description:
+				'AMRIT KAUR BRAR & TEJPAL SINGH KAUR - SALE OF L.R NO. 6097 AND 1590/1,2 AND 3, KISUMU',
+		},
+		{
+			code: 'KAU1.2',
+			description: 'SALE OF L.R. NO. 6097, KISUMU BY AMRIT KAUR BRAR',
+		},
+		{
+			code: 'KAU1.2/001',
+			description:
+				'KISUMU ELC (O.S) NO. 10 OF 2022 - ORARO & COMPANY ADVOCATES VS. FREDRICK OTIENO OYUGI & ANOR',
+		},
+		{
+			code: 'KAU2.1',
+			description:
+				'MR. KEN V. KAUNDA -VS- KENYA AIRPORTS AUTHORITY COMPANY- TERMINATION OF SERVICES',
+		},
+		{
+			code: 'KAV1.1',
+			description:
+				'PATRICK MACHARIA NDERITU & ANN NJERI GITANYU -VS- KAVIT HANDA & ANOTHER: CIVIL SUIT NO. 7236 OF 2015',
+		},
+		{
+			code: 'KAV1.2',
+			description: 'KAVIT HANDA - JUDICIAL REVIEW',
+		},
+		{
+			code: 'KBL1.1',
+			description:
+				'AN APPEAL FROM THE DECISION OF THE HIGH COURT GRANTING CONSERVATORY ORDERS',
+		},
+		{
+			code: 'KBL1.10',
+			description:
+				'CIVIL CASE NO. 7 OF 2017 - KERICHO GUEST HOUSE ENTREPRISES LIMITED VS KENYA BREWERIES LTD',
+		},
+		{
+			code: 'KBL1.11',
+			description: 'ELRC NO.1511 OF 2017 RODGERS  MUTINDA VS. KENYA BREWERIES LIMITED',
+		},
+		{
+			code: 'KBL1.12',
+			description:
+				'ELC CAUSE NO. 1542 OF 2018 SAMUEL WACHIRA WANJA VS. EST AFRICAN BREWERIES LIMITED.',
+		},
+		{
+			code: 'KBL1.13',
+			description: 'LEGAL OPINION ON THE EFFECT OF LEGAL NOITICE NO. 239 OF 2018',
+		},
+		{
+			code: 'KBL1.15',
+			description:
+				'E&LRC CAUSE NO 677 OF 2019 MARTIN IRUNGU MWANGI -VS- KENYA BREWERIES LIMITED.',
+		},
+		{
+			code: 'KBL1.16',
+			description: 'CIDER CONCENTRATE CLASSIFICATION DISPUTE.',
+		},
+		{
+			code: 'KBL1.16/001',
+			description:
+				'APPEAL AT THE HIGH COURT FROM TAT NO. 282 OF 2020: COMMISSIONER OF DOMESTIC TAXES VS. KENYA BREWERIES LIMITED. ',
+		},
+		{
+			code: 'KBL1.17',
+			description:
+				'SUPREME COURT PETITION NO.15 OF 2020:BIA TOSHA DISTRIBUTORS LTD .vs. KENYA BREWERIES LIMITED & OTHERS',
+		},
+		{
+			code: 'KBL1.17/001',
+			description:
+				'PETITION NO. 249 OF 2016 - BIA TOSHA DISTRIBUTORS LIMITED V. KENYA BREWERIES LIMITED & OTHERS',
+		},
+		{
+			code: 'KBL1.17/002',
+			description:
+				'HCCC NO. E075 OF 2021 - TONY WEST LIMITED V. KENYA BREWERIES LIMITED & UDV (KENYA) LIMITED',
+		},
+		{
+			code: 'KBL1.17/003',
+			description:
+				'HCCC NO. E127 OF 2023 - NGONG MATONYOK WHOLESALERS LIMITED & ANOTHER V. KENYA BREWERIES LIMITED & UDV (KENYA) LIMITED',
+		},
+		{
+			code: 'KBL1.17/004',
+			description:
+				'IN THE SUPREME COURT OF KENYA AT NAIROBI, APPLICATION NO. E012 OF 2023 - BIA TOSHA DISTRIBUTORS LIMITED VS. KENYA BREWERIES LIMITED & OTHERS',
+		},
+		{
+			code: 'KBL1.18',
+			description:
+				'CIVIL SUIT NO. 4 OF 2019 – KERICHO GUEST HOUSE ENTERPRISES LTD VS. KENYA BREWERIES LIMITED & ANOR',
+		},
+		{
+			code: 'KBL1.19',
+			description:
+				'TAT APPEAL AGAINST KRA’S CHALLENGING THE COMMISSIONER’S TARIFF CLASSIFICATION RULING ON APPLE PLUS CONCENTRATE UNDER IMPORT ENTRY 2021MSA7898714.',
+		},
+		{
+			code: 'KBL1.2',
+			description: 'TAX OPINION ON EXCISE DUTY',
+		},
+		{
+			code: 'KBL1.2/001',
+			description:
+				'EXCISE DUTY & VAT ASSESSMENT  - JUNE 2016 - NOVEMBER 2016 TAT APPEAL NO. 40 OF 2017',
+		},
+		{
+			code: 'KBL1.2/002',
+			description:
+				'EXCISE DUTY & VAT ASSESSMENT - DECEMBER 2016 - JANUARY 2017 & TAT APPEAL NO. 110 OF 2017',
+		},
+		{
+			code: 'KBL1.2/003',
+			description: 'EXCISE DUTY & VAT ASSESSMENT - FEBRUARY - MARCH 2017',
+		},
+		{
+			code: 'KBL1.2/004',
+			description: 'EXCISE DUTY & VAT ASSESSMENT - JUNE 2015 - MAY 2016',
+		},
+		{
+			code: 'KBL1.2/005',
+			description: 'LEGAL OPINION ON THE EFFECT OF LEGAL NOTICE NO. 239 OF 2018',
+		},
+		{
+			code: 'KBL1.2/006',
+			description: 'OBJECTION TO EXCISE DUTY AND VALUE ADDED TAX (VAT) ASSESMENT.',
+		},
+		{
+			code: 'KBL1.20',
+			description: 'REVIEW OF VACATED DEMAND NOTICE - KSHS. 182,985,050/=',
+		},
+		{
+			code: 'KBL1.3',
+			description:
+				'CIVIL APPEAL NO. 288 OF 2016: UDV(K) LTD VS BIA TOSHA DISTRIBUTORS & OTHERS',
+		},
+		{
+			code: 'KBL1.4',
+			description:
+				'INTENTION BY THE COUNTY OF KISUMU TO ACQUIRE THAT PARCEL OF LAND KNOWN AS KISUMU MUNICIPALITY/BLOCK 4/161 BELONGING TO KENYA BREWERIES LIMITED',
+		},
+		{
+			code: 'KBL1.5',
+			description:
+				'HCCC NO. 11 OF 2017 KENYA FILM CLASSIFICATION BOARD VS KENYA BREWERIES LIMITED & AFRICA SPIRITS LIMITED',
+		},
+		{
+			code: 'KBL1.6',
+			description:
+				'H.C. CIVIL APPEAL NO. 122 OF 2010: SOLOMON K. TOO VS KENYA BREWERIES LIMITED',
+		},
+		{
+			code: 'KBL1.7',
+			description:
+				'SUPREME COURT PETITION NO. 10 OF 2017: BIA TOSHA DISTRIBUTORS LTD VS KENYA BREWERIES LTD & 6 OTHERS',
+		},
+		{
+			code: 'KBL1.8',
+			description:
+				'CIVIL APPEAL NO. 232 OF 2017: ALCOHOLIC BEVERAGES ASSOCIATION OF KENYA VS KENYA FILM CLASSIFICATION BOARD',
+		},
+		{
+			code: 'KBL1.9',
+			description: 'LEGAL OPINION - PROJECT SUNRISE',
+		},
+		{
+			code: 'KCB1.1',
+			description: 'KENYA COMMERCIAL BANK LTD VS KITAMAIYU LTD',
+		},
+		{
+			code: 'KCB1.100',
+			description: 'ZACHARY OMWERI OYUGI VS KENYA COMMERCIAL BANK LTD: HCCC NO. 778 OF 1994',
+		},
+		{
+			code: 'KCB1.101',
+			description:
+				'KENYA COMMERCIAL BANK STAFF PENSION FUND LTD VS SKYFLIERS LIMITED: HCCC NO. 747 OF 1996',
+		},
+		{
+			code: 'KCB1.102',
+			description:
+				'KENYA COMMERCIAL BANK LTD VS HOSIERY MANUFACTURERS LTD: HCCC NO. 4537 OF 1992',
+		},
+		{
+			code: 'KCB1.103',
+			description:
+				'KENYA COMMERCIAL BANK LTD VS HOSIERY MANUFACTURERS LTD: HCCC NO. 1457 OF 1992',
+		},
+		{
+			code: 'KCB1.104',
+			description:
+				'KENYATTA NATIONAL HOSPITAL VS KENYA COMMERCIAL BANK LTD & 2 OTHERS: HCCC NO. 667 OF 1997',
+		},
+		{
+			code: 'KCB1.105',
+			description:
+				'KENYA COMMERCIAL BANK LTD VS BELL CHEMICALS INDUSTRIES LTD: HCCC NO. 2368 OF 1994',
+		},
+		{
+			code: 'KCB1.107',
+			description: 'KENYA COMMERCIAL BANK LTD VS DIANI REEF GRAND HOTEL',
+		},
+		{
+			code: 'KCB1.108',
+			description: 'EDNA WANJIRU MWANGI VS EQUITY BANK & KENYA COMMERCIAL BANK',
+		},
+		{
+			code: 'KCB1.109',
+			description: 'KENYA COMMERCIAL BANK LTD VS BURNT FOREST SERVICE STATION & SHEA LTD',
+		},
+		{
+			code: 'KCB1.11',
+			description: 'ANGELA MIGOWA & DR SAMMY NGIHABS',
+		},
+		{
+			code: 'KCB1.110',
+			description: 'ABUBAKAR SALIM BASLUM VS KENYA COMMERCIAL BANK LTD: HCCC NO 27 OF 2008',
+		},
+		{
+			code: 'KCB1.111',
+			description:
+				"EDWARD KAMAUNG'ANG'A VS KENYA COMMERCIAL BANK LTD: CMCC NO. 13709 OF 2004",
+		},
+		{
+			code: 'KCB1.112',
+			description:
+				'KENYA COMMERCIAL BANK LTD VS HUMPHREY GICHOHI: BANKRUPTCY CAUSE NO. 17 OF 1998',
+		},
+		{
+			code: 'KCB1.113',
+			description:
+				'PAUL KIPKETER LANGAT VS KENYA COMMERCIAL BANK LTD & DILIGENT AUCTIONEERS LTD: HCCC NO. 656 OF 2000',
+		},
+		{
+			code: 'KCB1.114',
+			description:
+				'KENYA COMMERCIAL BANK LTD VS MOSES KACHORI SEKETO: CMCC NO. EJ 25 OF 2001',
+		},
+		{
+			code: 'KCB1.115',
+			description: 'KENYA COMMERCIAL BANK LTD VS ADOW MURSAL MOHAMED (TEMPORARY FILE)',
+		},
+		{
+			code: 'KCB1.116',
+			description:
+				'KENYA COMMERCIAL BANK LTD VS BUSINESS SYSTEMS SERVICES LTD: CMCC NO. 8344 OF 1995',
+		},
+		{
+			code: 'KCB1.117',
+			description: 'KENYA COMMERCIAL BANK LTD VS TIGER FARM LTD',
+		},
+		{
+			code: 'KCB1.118',
+			description: 'KENYA COMMERCIAL BANK LTD VS MAHAT DEROW ADAN: HCCC NO. 1195 OF 1995',
+		},
+		{
+			code: 'KCB1.119',
+			description:
+				'SIMION P.W. KARIMI VS KENYA COMMERCIAL BANK SAVINGS & LOAN KENYA LTD: CIVIL APPEAL NO. 168 OF 2006',
+		},
+		{
+			code: 'KCB1.12',
+			description: 'KCB FOUNDATION',
+		},
+		{
+			code: 'KCB1.120',
+			description:
+				'KENYA COMMERCIAL BANK LTD VS BUSINESS CENTRE KENYA LTD: HCCC NO. 1151 OF 1994',
+		},
+		{
+			code: 'KCB1.121',
+			description:
+				'KENYA COMMERCIAL BANK LTD VS SPECIALISED SUPPLIERS LTD & ANOTHER: HCCC NO. 3571 OF 1993',
+		},
+		{
+			code: 'KCB1.122',
+			description:
+				'GHELANI INDUSTRIES LTD VS KENYA COMMERCIAL BANK STAFF PENSION FUND TRUST LTD: HCCC NO. 745 OF 1996',
+		},
+		{
+			code: 'KCB1.123',
+			description: 'KENYA COMMERCIAL BANK LTD VS MBATIA KIMANI NDIKO',
+		},
+		{
+			code: 'KCB1.124',
+			description: 'KENYA COMMERCIAL BANK LTD VS AGROMED KENYA LTD: HCCC NO. 3698 OF 1994',
+		},
+		{
+			code: 'KCB1.125',
+			description: 'KENYA COMMERCIAL BANK LTD VS PAUL KIMANZI MUTEMI: HCCC NO. 842 OF 1995',
+		},
+		{
+			code: 'KCB1.126',
+			description:
+				'MIRITINI VET AGRO SUPPLIES LTD & 4 OTHERS VS KENYA COMMERCIAL BANK PENSION FUND TRUST',
+		},
+		{
+			code: 'KCB1.127',
+			description: 'KENYA COMMERCIAL BANK LTD VS TRAVEL MART LTD',
+		},
+		{
+			code: 'KCB1.128',
+			description:
+				'SHADRACK JOSEPH KINYENYE VS KENYA COMMERCIAL BANK LTD & THE ATTORNEY GENERAL: HCCC NO. 2581 OF 1996',
+		},
+		{
+			code: 'KCB1.129',
+			description:
+				'KENYA COMMERCIAL BANK LTD VS MR & MRS BENSON R. NJANE & ANOTHER: HCCC NO. 2572 OF 1994',
+		},
+		{
+			code: 'KCB1.13',
+			description:
+				'LYDIA AKUMU OUTTA -  MORTGAGE FACILITY ON L.R NO. 209/19341, HOUSE NO. 45',
+		},
+		{
+			code: 'KCB1.130',
+			description:
+				'IN THE MATTER OF THE ESTATE OF THE LATE KIBORO THAARA: SUCCESSION CAUSE NO. 336 OF 2000',
+		},
+		{
+			code: 'KCB1.131',
+			description:
+				'KENYA COMMERCIAL BANK LTD VS WEST MINISTER INVESTMENTS LTD: CMCC NO. 6980 OF 1995',
+		},
+		{
+			code: 'KCB1.132',
+			description:
+				'KENYA COMMERCIAL BANK LTD VS OLIVER MUNGAI WAINAINA: HCCC NO. 879 OF 1998',
+		},
+		{
+			code: 'KCB1.133',
+			description:
+				'SIMON NGIGI MWANGI VS CHINA WU YI COMPANY & KENYA COMMERCIAL BANK PENSION SCHEME FUND: HCCC NO. 68 OF 2011',
+		},
+		{
+			code: 'KCB1.134',
+			description:
+				'LUCY WAMAITHA CHEGE VS KENYA COMMERCIAL BANK LTD & 2 OTHERS: CIVIL SUIT NO. 1655 OF 2002',
+		},
+		{
+			code: 'KCB1.135',
+			description:
+				'KIRUNDI & COMPANY ADVOCATES VS KENYA COMMERCIAL BANK LTD: MISC. APPLICATION NO. 650 OF 2003',
+		},
+		{
+			code: 'KCB1.136',
+			description: 'KENYA COMMERCIAL BANK LTD VS OLYMPIC SPORTS HOUSE',
+		},
+		{
+			code: 'KCB1.137',
+			description:
+				'KENYA COMMERCIAL BANK LTD VS SAMSON GITHINJI KOINANGE: BANKRUPTCY CAUSE NO. 1 OF 2001',
+		},
+		{
+			code: 'KCB1.138',
+			description:
+				'MUMO GENERAL SUPPLIERS VS KENYA COMMERCIAL BANK LTD: HCCC NO. 1875 OF 1995',
+		},
+		{
+			code: 'KCB1.139',
+			description:
+				'ZAKARIA MUIGAI GAKIBE T/A EQUITORIAL BUILDERS VS KENYA COMMERCIAL BANK LTD: HCCC NO. 1850',
+		},
+		{
+			code: 'KCB1.140',
+			description: 'KENYA COMMERCIAL BANK LTD VS MELTON OLE SHANI: HCCC NO. 348 OF 2001',
+		},
+		{
+			code: 'KCB1.141',
+			description:
+				"KENYA COMMERCIAL BANK LTD VS SIMON WANYOIKE NG'ANG'A: CIVIL APPEAL NO. 176 OF 2003",
+		},
+		{
+			code: 'KCB1.142',
+			description: 'KENYA COMMERCIAL BANK LTD VS BENFLO FISH INDUSTRIES',
+		},
+		{
+			code: 'KCB1.143',
+			description: 'KENYA COMMERCIAL BANK LTD VS THIKA RUBBER INDUSTRIES LTD',
+		},
+		{
+			code: 'KCB1.144',
+			description: 'KENYA COMMERCIAL BANK LTD VS SILAS GACHANJA KANYEKI',
+		},
+		{
+			code: 'KCB1.145',
+			description:
+				'PROSCA TABU NANUA VS KENYA COMMERCIAL BANK LTD: CIVIL APPEAL NO. 690 OF 2003',
+		},
+		{
+			code: 'KCB1.146',
+			description: 'CHAPEX LIMITED VS KENYA COMMERCIAL BANK LTD: HCCC NO. 1722 OF 1999',
+		},
+		{
+			code: 'KCB1.147',
+			description: 'KENYA COMMERCIAL BANK LTD VS KIPSIGIS TRADERS LTD: HCCC NO. 430 OF 2008',
+		},
+		{
+			code: 'KCB1.148',
+			description:
+				'GEORGE KIMAIYO KIPKEMBOI VS KENYA COMMERCIAL BANK LTD & ANOTHER: HCCC NO. 2871 OF 1990',
+		},
+		{
+			code: 'KCB1.149',
+			description:
+				'BEST CAMPING TOURS & SAFARIS LTD VS BAGEINE KARANJA MBUU LTD & KENYA COMMERCIAL BANK PENSION FUND TRUST LTD: HCCC NO. 1487 OF 1997',
+		},
+		{
+			code: 'KCB1.15',
+			description: 'SHIRAZ NAZMUDIN & RAHIM KAMRUDIN -VS- KENYA COMMERCIAL BANK LTD',
+		},
+		{
+			code: 'KCB1.150',
+			description: 'KENYA COMMERCIAL BANK LTD VS MICHAEL N. NJENGA: HCCC NO. 1969 OF 1993',
+		},
+		{
+			code: 'KCB1.151',
+			description:
+				'KENYA COMMERCIAL BANK LTD VS JOSEPH D WAINAINA T/A INTERTRUST ENTERPRISES COMPANY',
+		},
+		{
+			code: 'KCB1.152',
+			description: 'KENYA COMMERCIAL BANK LTD VS KAPUTEI MEAT PRODUCTS',
+		},
+		{
+			code: 'KCB1.153',
+			description: 'KENYA COMMERCIAL BANK LTD VS BAHATI CHEMIST',
+		},
+		{
+			code: 'KCB1.154',
+			description:
+				'KENYA COMMERCIAL BANK LTD T/A KENCOM HOUSE LTD VS INTER AFRICA BOOK DISTRIBUTORS',
+		},
+		{
+			code: 'KCB1.155',
+			description: 'PAUL MUIGAI VS KENYA COMMERCIAL BANK LTD: HCCC NO. 111 OF 1996',
+		},
+		{
+			code: 'KCB1.156',
+			description:
+				'BANKING FACILITIES TO ROBERT MATHU WACHIRA BY KCB TO PURCHASE APARTMENT NO. C BLOCK2 ON L.R. NO. 209/19713, DAIMA SPRINGS, NAIROBI COUNTY',
+		},
+		{
+			code: 'KCB1.157',
+			description:
+				'BANKING FACILITY TO DAVID MAINA KAMAU BY KCB TO PURCHASE APARTMENT NO. B10 ON L.R. NO. 7149/26, MACHAKOS',
+		},
+		{
+			code: 'KCB1.158',
+			description: 'GENERAL FILE - KENYA COMMERCIAL BANK LTD',
+		},
+		{
+			code: 'KCB1.159',
+			description: 'BANKING FACILITY TO MULTIPLE ICD (KENYA) LTD',
+		},
+		{
+			code: 'KCB1.16',
+			description: "GODFREY WAHOME NG'AYO - TRANSFER OF LR. NO. 2951/482, NAIROBI",
+		},
+		{
+			code: 'KCB1.160',
+			description:
+				'TAKEOVER OF FACILITIES OVER LR. NO. 9042/607 & 608 IN MULTIPLE HAULIERS (E.A) LTD AND DEBENTURE TO STANDARD CHARTERED BANK KENYA LIMITED',
+		},
+		{
+			code: 'KCB1.161',
+			description:
+				'NAIROBI ELRC NO. 2591 OF 2016, JOSEPHINE OCHIENG VS KENYA COMMERCIAL BANK LIMITED',
+		},
+		{
+			code: 'KCB1.162',
+			description:
+				'BANKING FACILITIES BY KCB BANK KENYA LIMITED TO STRAMAN EAST AFRICA LIMITED',
+		},
+		{
+			code: 'KCB1.163',
+			description:
+				'FINANCING OF A ROAD PROJECT BY INTEX RAF 1 LIMITED (ROAD ANNUITY PROGRAMME)',
+		},
+		{
+			code: 'KCB1.164',
+			description:
+				'HCCC NO. 358 OF 1994: CAPT. S. CHEPKWONY VS KENYA COMMERCIAL FINANCE COMPANY LIMITED',
+		},
+		{
+			code: 'KCB1.165',
+			description: 'BANKING FACILITIES TO UCHUMI SUPERMARKETS LIMITED',
+		},
+		{
+			code: 'KCB1.166',
+			description:
+				'KCB1-HCCC NO.38 OF 2018:LAVINGTON SECURITY LIMITED VS.KENYA COMMERCIAL BANK LTD & OTHERS',
+		},
+		{
+			code: 'KCB1.167',
+			description:
+				'BANKING FACILITIES TO MOEZZ MAHMOOD MIR-CHARGE OVER SKY VILLA,2ND FLOOR,AZURE BLOCK 1,LAND REFERENCE NUMBER 1870/11/480,NAIROBI',
+		},
+		{
+			code: 'KCB1.168',
+			description:
+				'E &LR CAUSE NO.192 OF 2018:BANKING ,INSURANCE & FINANCE UNION (K) VS.KENYA COMMERCIAL BANK LTD & OTHERS',
+		},
+		{
+			code: 'KCB1.169',
+			description:
+				'E&LRC CAUSE NO. 1423 OF 2018 GABRIEL ODHIAMBO OKOMO VS. KENYA COMMERCIAL BANK LIMITED & OTHERS',
+		},
+		{
+			code: 'KCB1.17',
+			description:
+				'SINGH GITAU &CO ADV VS JAMII BORA BANK LTD: CLAIM OF KSHS. 19,000,000 ON LR NO. 13472/8',
+		},
+		{
+			code: 'KCB1.170',
+			description:
+				'E&LR CAUSE NO.1513 OF 2018:JAMES MOGAKA OMOKE VS.KENYA COMMERCIAL BANK LTD & 0THERS',
+		},
+		{
+			code: 'KCB1.171',
+			description: 'E&LRC NO. 1569 OF 2018. ROY SYLVESTER AKALA VS. KCB BANK.LTD.  ',
+		},
+		{
+			code: 'KCB1.172',
+			description:
+				'E&LRC NO. 1615 OF 2018 BANKING INSURANCE AND FINANCE UNION KENYA LTD VS. KENYA COMMERCIAL BANK LTD.',
+		},
+		{
+			code: 'KCB1.173',
+			description: 'E&LRC NO. 80 OF 2019 GABRIEL ODHIAMBO OKOMO VS. KCB BANK KENYA LTD',
+		},
+		{
+			code: 'KCB1.174',
+			description: 'ELRC CAUSE NO. 48 OF 2019 JAMES MOGAKA OMOKE -VS- KCB BANK KENYA LIMITED',
+		},
+		{
+			code: 'KCB1.175',
+			description:
+				'BANKING FACILITIES TO MS. MISBAH MUGHAL – FOOT PRINT NO.28 ON L.R. NO.2781/3',
+		},
+		{
+			code: 'KCB1.176',
+			description: 'MORTGAGE FACILITY TO HON. JUSTICE PATRICK OKWARO OTIENO',
+		},
+		{
+			code: 'KCB1.177',
+			description:
+				'HCCC NO. E269 OF 2020 – COLLOGNE INVESTMENTS LIMITED V KENYA COMMERCIAL BANK LIMITED & ANOTHER',
+		},
+		{
+			code: 'KCB1.178',
+			description:
+				'Civil Appeal (Application) No.Nai.81 of 2004:S.K Macharia & 2 Others vs.KCB Bank Ltd  & Another',
+		},
+		{
+			code: 'KCB1.179',
+			description:
+				'KENYA COMMERCIAL BANK VS. WILLIAM ROGERS MALUMBE T/A KENTUR IMPORT & EXPORT',
+		},
+		{
+			code: 'KCB1.18',
+			description:
+				'JAMLICK GICHUHI MWANGI -VS- THE BANK & CREDIT REFERENCE BUREAU AFRICA LTD: HCCC NO 311 OF 2012',
+		},
+		{
+			code: 'KCB1.180',
+			description: 'HCCC NO.1205 OF 2001: KENYA COMMERCIAL BANK LTD VS. MICHAEL MUITA MUGI',
+		},
+		{
+			code: 'KCB1.181',
+			description: 'IN THE MATTER OF THE ESTATE OF ANNE FRANCISCA NDINDA KIWURE',
+		},
+		{
+			code: 'KCB1.182',
+			description:
+				'BANKING FACILITIES TO AFRICA APPARELS EPZ LIMITED BY KCB BANK KENYA LIMITED.',
+		},
+		{
+			code: 'KCB1.183',
+			description:
+				'HCCC E062 OF 2021 – NAKUMATT HOLDINGS LIMITED V. KCB BANK KENYA LIMITED & 2 OTHERS',
+		},
+		{
+			code: 'KCB1.184',
+			description:
+				'CMCC NO.1562 OF 2003: PETER M. MBUGUA VS. MARGARET NJOKI & KENYA COMMERCIAL BANK.',
+		},
+		{
+			code: 'KCB1.185',
+			description:
+				'NAIROBI CMELR CAUSE NO.E899 OF 2021: DOUGLAS NYAMWAMU BOGITA VS.  KENYA COMMERCIAL BANK LIMITED.',
+		},
+		{
+			code: 'KCB1.186',
+			description: 'CORPORATE GOVERNANCE REVIEW',
+		},
+		{
+			code: 'KCB1.187',
+			description: 'E&LRC E633 OF 2021: LORNA CHEPNG’ENO VERSUS KCB BANK KENYA LIMITED.',
+		},
+		{
+			code: 'KCB1.188',
+			description: 'BANKING FACILITIES TO STABEX INTERNATIONAL LIMITED FOR USD 100,000,000.',
+		},
+		{
+			code: 'KCB1.189',
+			description: 'BANKING FACILITIES TO CROWN PAINTS KENYA PLC .',
+		},
+		{
+			code: 'KCB1.190',
+			description: 'PROJECT DUA',
+		},
+		{
+			code: 'KCB1.190/001',
+			description:
+				'HCCC NO. E202 OF 2022 - PEARL BEACH HOTELS LIMITED V. KCB BANK (K) LIMITED & KAMAL BHATT',
+		},
+		{
+			code: 'KCB1.190/002',
+			description:
+				'COURT OF APPEAL CIVIL APPLICATION NO. E261 OF 2022 - KCB BANK (K) LIMITED & ANOTHER V. PEARL BEACH HOTELS LIMITED',
+		},
+		{
+			code: 'KCB1.191',
+			description: 'BANKING FACILITIES TO OSCAR WAYOBOYA OBUNA',
+		},
+		{
+			code: 'KCB1.192',
+			description: 'REVIEW OF MUMIAS SUGAR COMPANY LITIGATION MATTERS',
+		},
+		{
+			code: 'KCB1.193',
+			description:
+				'ELRC CAUSE NO.E684 OF 2022: PETER KIMEU KAMUTI VS. KCB BANK KENYA LIMITED',
+		},
+		{
+			code: 'KCB1.194',
+			description: 'BANKING FACILITIES TO ESTHER KINYA RINTARI',
+		},
+		{
+			code: 'KCB1.195',
+			description: 'Banking facilities to Sammy Kioko Mutua',
+		},
+		{
+			code: 'KCB1.196',
+			description:
+				'E&LRC NO. E423 OF 2023: EVANS KIPKEKU KAINO VS. KCB LTD & JUSTUS KIOOKO .',
+		},
+		{
+			code: 'KCB1.197',
+			description: 'BANKING FACILITIES TO ANNCETA GACHERI WAFUKHO',
+		},
+		{
+			code: 'KCB1.198',
+			description:
+				'E&LRC CAUSE NO. E365 OF 2023 - XAVIER SHIKUKU MAKUBA V. KCB BANK (K) LIMITED',
+		},
+		{
+			code: 'KCB1.2',
+			description:
+				'CHARLES MUTHEE VS KENYA COMMERCIAL BANK LTD & 2 OTHERS: HCCC NO. 156 OF 2007',
+		},
+		{
+			code: 'KCB1.20',
+			description:
+				'ANTHONY AKETCH INDIEKA -VS- DAVID CHIANDA & KENYA COMMERCIAL BANK LIMITED: CMCC NO 7232 OF 2014',
+		},
+		{
+			code: 'KCB1.21',
+			description:
+				'IN THE MATTER OF THE ARBITRATION BETWEEN ERAD SUPPLIERS  & GENERAL CONTRACTS LTD -VS- NATIONAL CEREALS & PRODUCE BOARD: HC MISC. C. APPL. NO 639 OF 2009 (NBO)',
+		},
+		{
+			code: 'KCB1.22',
+			description: 'PATRICK WANJOHI PARAKUO - SALE OF HOUSE ON L.R NGONG/NGONG/54362',
+		},
+		{
+			code: 'KCB1.23',
+			description:
+				'MARTHA KARAMBU KOOME - MORTGAGE FOR CONSTRUCTION OF L.R NO. KIAMBU/111/135, RUNDA ESTATE',
+		},
+		{
+			code: 'KCB1.24',
+			description: 'EMMA KANINI MUTINDA:  L.R NO. 209/2965/2 APARTMENT NO. A1, KILELESHWA',
+		},
+		{
+			code: 'KCB1.25',
+			description: 'JOSHUA OIGARA CONTRACT OF EMPLOYMENT',
+		},
+		{
+			code: 'KCB1.26',
+			description: 'LYDIA AKUMU OUTTA',
+		},
+		{
+			code: 'KCB1.27',
+			description: 'HARRISON NGAMBI MAKUTU - L.R. NO NAIROBI/BLOCK 133/106, FLAT NO. 26',
+		},
+		{
+			code: 'KCB1.28',
+			description: 'PAMKOYO COMPANY LTD - L.R NO. 209/390',
+		},
+		{
+			code: 'KCB1.29',
+			description: 'CYRUS GACHIRA THAIRU & JANE MUGU',
+		},
+		{
+			code: 'KCB1.3',
+			description:
+				'KENYA COMMERCIAL BANK LTD & ANOTHER VS MAKSAM PIONEERS SERVICES LTD: CIVIL SUIT NO. 1180 OF 2001',
+		},
+		{
+			code: 'KCB1.30',
+			description: 'NAKUMATT HOLDINGS LTD',
+		},
+		{
+			code: 'KCB1.31',
+			description: 'NEW NYANZA WHOLESALERS LTD',
+		},
+		{
+			code: 'KCB1.32',
+			description: 'ABYUB MARUVU KAMAU',
+		},
+		{
+			code: 'KCB1.33',
+			description:
+				'SIXTUS P.K. KARUTHI VS KENYA COMMERCIAL BANK LTD: NYERI INDUSTRIAL CAUSE NO. 5 OF 2014',
+		},
+		{
+			code: 'KCB1.35',
+			description:
+				'VIRGINIA WANGUI NGUU -VS- STEPHEN KAMAU & WINNIE WATIRI KAHUKI: HCCC NO.1823 OF 2002 & ELC. NO 732 OF 2015',
+		},
+		{
+			code: 'KCB1.36',
+			description: 'KENYA COMMERCIAL BANK LTD VS EMCO BILLETS&STEEL WORKS LTD',
+		},
+		{
+			code: 'KCB1.37',
+			description: 'OLIVE METET',
+		},
+		{
+			code: 'KCB1.38',
+			description: 'KENYA COMMERCIAL BANK LTD VS GEORGE KWANYA ODIDI: HCCC NO. 46 OF 2006',
+		},
+		{
+			code: 'KCB1.39',
+			description: 'KENYA COMMERCIAL BANK',
+		},
+		{
+			code: 'KCB1.4',
+			description:
+				'KENYA COMMERCIAL BANK LTD VS JOYCE KEMUNTO & ANOTHER: HCCC NO. 74 OF 1997',
+		},
+		{
+			code: 'KCB1.40',
+			description: 'KENYA COMMERCIAL BANK',
+		},
+		{
+			code: 'KCB1.41',
+			description:
+				'ELC CASE NO. 917 OF 2005(AS CONSOLIDATED WITH HCCC NO. 5245 OF 1998) PATRICIA WAIRIMU KUNGU VS.KENYA COMMERCIAL BANK LIMITED & ANOR.',
+		},
+		{
+			code: 'KCB1.42',
+			description:
+				'KENYA COMMERCIAL BANK LTD VS EAST AFRICA ADVISORY SERVICES LTD & 2 OTHERS: CMCC NO. 7915 OF 2005',
+		},
+		{
+			code: 'KCB1.43',
+			description: 'KCB v Zachariah C',
+		},
+		{
+			code: 'KCB1.44',
+			description: 'KENYA COMMERCIAL BANK',
+		},
+		{
+			code: 'KCB1.45',
+			description:
+				'EXTRADITE COMMODITIES KENYA LTD VS KENYA COMMERCIAL BANK LTD: HCCC NO. 1228 OF 2000',
+		},
+		{
+			code: 'KCB1.46',
+			description:
+				'HCC CIVIL SUIT NO. 4077 OF 1994 UNITED AIRLINES LIMITED VS. KENYA COMMERCIAL BANK LIMITED.',
+		},
+		{
+			code: 'KCB1.47',
+			description:
+				"KENYA COMMERCIAL BANK LTD VS PENINAH NG'ENDO MUNGA & PETER MUNGAI WAWERU: HCCC NO . 1348 OF 1997",
+		},
+		{
+			code: 'KCB1.48',
+			description:
+				'KENYA COMMERCIAL BANK vs STEPHEN MUKIRI NDEGWA & CONTINENTAL MARKETING LTD: HCCC NO. 172 OF 1997',
+		},
+		{
+			code: 'KCB1.49',
+			description:
+				'SHEIKH OSMAN MOHAMED VS KENYA COMMERCIAL BANK LTD: CIVIL SUIT NO. 191 OF 2004; CIVIL APPEAL NO. 179 OF 2010',
+		},
+		{
+			code: 'KCB1.5',
+			description:
+				'NESCO SERVICES LTD VS KENCOM HOUSE LTD HCCC. NO. 961 OF 2001 CIVIL APPEAL NO 118 OF 2009',
+		},
+		{
+			code: 'KCB1.50',
+			description: 'KCB GENERAL',
+		},
+		{
+			code: 'KCB1.51',
+			description:
+				'KENYA COMMERCIAL BANK LTD & ANOTHER -VS- MUIRI COFFEE ESTATE LTD & ANOTHER',
+		},
+		{
+			code: 'KCB1.52',
+			description: 'KENYA COMMERCIAL BANK VS SOSUMA SCIENTIFIC SUPPLIES LTD',
+		},
+		{
+			code: 'KCB1.53',
+			description:
+				'KENYA COMMERCIAL BANK LTD VS SAMSON KEENGU NYAMWEYA: CIVIL APPEAL NO. 107 OF 2013',
+		},
+		{
+			code: 'KCB1.53/001',
+			description: 'ENFORCEMENT OF SECURITIES AGAINST SAMSON KEENGU NYAMWEYA',
+		},
+		{
+			code: 'KCB1.54',
+			description: 'KENYA COMMERCIAL BANK LTD VS LUSAKA ROAD AUTO GARAGE',
+		},
+		{
+			code: 'KCB1.55',
+			description:
+				'KENYA COMMERCIAL BANK LTD VS JOEL HUMPHREY NYABINDA: MISC. APPLICATION NO. 1786 OF 1995',
+		},
+		{
+			code: 'KCB1.56',
+			description: 'KENYA COMMERCIAL BANK LTD VS JOHN WARUINGI JOSEPH: RMCC NO. 5158 OF 1989',
+		},
+		{
+			code: 'KCB1.57',
+			description: 'KENYA COMMERCIAL BANK LTD VS AFRICAN TOURS AND TRAVEL',
+		},
+		{
+			code: 'KCB1.58',
+			description:
+				'KENYA COMMERCIAL BANK LTD & 2 OTHERS VS PETER MUIGAI MBUGUA & ANOTHER: CIVIL APPEAL NO. 909 OF 2004',
+		},
+		{
+			code: 'KCB1.59',
+			description: 'KENYA COMMERCIAL BANK LTD VS PETER L.B. KUBEBEA',
+		},
+		{
+			code: 'KCB1.6',
+			description: 'KENYA COMMERCIAL BANK LTD VS PATRICK MURIITHI NYAGA: CASE NO. 6 OF 2006',
+		},
+		{
+			code: 'KCB1.60',
+			description:
+				'SUN TRADING LTD VS KENYA COMMERCIAL BANK STAFF PENSION FUND TRUST LTD: CIVIL CASE NO. 1847 OF 1996',
+		},
+		{
+			code: 'KCB1.61',
+			description:
+				'KENYA COMMERCIAL BANK LTD VS PERFECT DRIVERS AND TOURS LTD: CIVIL CASE NO. 3925 OF 1992',
+		},
+		{
+			code: 'KCB1.62',
+			description:
+				'KENYA COMMERCIAL BANK LTD VS BUSINESS CENTRE KENYA LTD: CMCC NO. EJ 25 OF 1994',
+		},
+		{
+			code: 'KCB1.63',
+			description:
+				'HELLEN ONYANGO (AS THE ADMINISTARTOR OF THE ESTATE OF GORDON ONYANGO t/a DONLEEN HOLDINGS) VS KENYA COMMERCIAL BANK LTD',
+		},
+		{
+			code: 'KCB1.64',
+			description: 'KENYA COMMERCIAL BANK LTD VS ROBINAIR LTD: CIVIL CASE NO. 4268 OF 1994',
+		},
+		{
+			code: 'KCB1.65',
+			description:
+				'KENYA COMMERCIAL BANK LTD VS BANKING INSURANCE & FINANCE UNION (KENYA): CIVIL SUIT NO. 519 OF 2007',
+		},
+		{
+			code: 'KCB1.66',
+			description:
+				'KENYA COMMERCIAL BANK LTD VS JOSEPH KIUNA KAMAU & ALLAN NJENGA GICHUHI: HCCC NO. 100 OF 1997',
+		},
+		{
+			code: 'KCB1.67',
+			description:
+				'KENYA COMMERCIAL BANK LTD VS ISAAC NDISO MALINDA & 2 OTHERS: HCCC NO. 4599 OF 1993',
+		},
+		{
+			code: 'KCB1.68',
+			description:
+				'COMPUTRAIN SECRETARIAL SERVICES LTD VS KENYA COMMERCIAL BANK LTD STAFF PENSION FUND TRUST LTD: BPRT CASE NO. 26 OF 2003',
+		},
+		{
+			code: 'KCB1.69',
+			description:
+				'KENYA COMMERCIAL BANK LTD VS AFRIGUMS LTD & ABDI ALI SAMATAR: HCCC NO. 6 OF 2001',
+		},
+		{
+			code: 'KCB1.7',
+			description:
+				'KENYA COMMERCIAL BANK LTD VS WILFRED CHARLES W. KARIUKI: HCCC NO. 1325 OF 2005',
+		},
+		{
+			code: 'KCB1.71',
+			description:
+				'KENYA COMMERCIAL BANK LTD VS BEATRICE MBETI LUKU & 2 OTHERS: RMCC 3186 OF 1996',
+		},
+		{
+			code: 'KCB1.72',
+			description: 'KENYA COMMERCIAL BANK LTD VS BENTA LIMITED',
+		},
+		{
+			code: 'KCB1.73',
+			description: 'KENYA COMMERCIAL BANK LTD VS KAPUTEI MEAT PRODUCTS LTD',
+		},
+		{
+			code: 'KCB1.74',
+			description:
+				'KENYA COMMERCIAL BANK LTD VS KAPUTEI MEAT PRODUCTS LTD: CIVIL CASE NO. 558 OF 2004',
+		},
+		{
+			code: 'KCB1.75',
+			description:
+				'KENYA COMMERCIAL BANK LTD VS CATHERINE NYAMBURA KARUNDITU & 3 OTHERS: HCCC NO. 1339 OF 1994',
+		},
+		{
+			code: 'KCB1.76',
+			description:
+				'KENYA COMMERCIAL BANK LTD VS ABDIWELLI SHERIFF ABO & 3 OTHERS: CIVIL CASE NO. 1749 OF 2000',
+		},
+		{
+			code: 'KCB1.77',
+			description: 'KENCOM HOUSE LTD VS TRANSFIELD AUCTIONEERS LTD',
+		},
+		{
+			code: 'KCB1.78',
+			description: 'KENYA COMMERCIAL BANK LTD VS GREYSTONE HOLDINGS LTD',
+		},
+		{
+			code: 'KCB1.79',
+			description:
+				'KENYA COMMERCIAL BANK LTD VS KENAFREX MINING COMPANY LTD & 3 OTHERS: CIVIL SUIT NO. 32 OF 2001',
+		},
+		{
+			code: 'KCB1.8',
+			description: 'KENYA COMMERCIAL BANK LTD VS ZION CREDIT LTD',
+		},
+		{
+			code: 'KCB1.80',
+			description:
+				'KENYA COMMERCIAL BANK LTD VS DORWIN ENTERPRISES LTD & OTHERS: HCCC NO. 100 OF 1997',
+		},
+		{
+			code: 'KCB1.81',
+			description:
+				'KENYA COMMERCIAL BANK LTD VS BENJA INVESTMENTS LTD: HCCC NO. 1833 OF 2002',
+		},
+		{
+			code: 'KCB1.82',
+			description: 'KENYA COMMERCIAL BANK LTD VS MISTRY INVESTMENT LTD: HCCC NO. 445 OF 2002',
+		},
+		{
+			code: 'KCB1.83',
+			description:
+				'BENSON KINYANJUI VS KENYA COMMERCIAL BANK LTD: CIVIL SUIT NO. 260 OF 2003',
+		},
+		{
+			code: 'KCB1.84',
+			description: 'HCCC NO. 122/2016 PETER CHOMBA GACHINA VS KENYA COMMERCIAL BANK  LIMITED',
+		},
+		{
+			code: 'KCB1.85',
+			description:
+				'DICKSON MATEI KINGOTI T/A MARCHET AUCTIONEERS VS KENYA COMMERCIAL BANK LTD: HCCC MISC. CAUSE NO. 944 OF 2010',
+		},
+		{
+			code: 'KCB1.86',
+			description: 'SOLOMON NJENGA KIO VS KENYA COMMERCIAL BANK LTD: PMCC NO. 10251 OF 2001',
+		},
+		{
+			code: 'KCB1.87',
+			description:
+				'STEPHEN MUSYOKA MOGAKA VS KENYA COMMERCIAL BANK LTD & ALBAN MWENDAR: CMCC NO. 1044 OF 2005',
+		},
+		{
+			code: 'KCB1.88',
+			description:
+				'KENYA COMMERCIAL BANK LTD VS PACE INTERNATIONAL LTD & ALBERT MARIO CORDEIRO: HCCC NO. 881 OF 1998',
+		},
+		{
+			code: 'KCB1.89',
+			description: 'IGWARE LIMITED VS KENYA COMMERCIAL BANK LTD: SPMCC NO. 6702 OF 1995',
+		},
+		{
+			code: 'KCB1.9',
+			description: 'KENYA COMMERCIAL BANK LTD VS SIMBA VILLA LTD',
+		},
+		{
+			code: 'KCB1.91',
+			description: 'KENYA COMMERCIAL BANK LTD VS NEW PILLION ESTATE LTD',
+		},
+		{
+			code: 'KCB1.92',
+			description: 'SAMSON MASABA MUNIKAH VS CHAPEX & KENYA COMMERCIAL BANK LTD',
+		},
+		{
+			code: 'KCB1.93',
+			description: 'JANE JEPKOECH TOO VS KENYA COMMERCIAL BANK LTD: HCCC 254 OF 2011',
+		},
+		{
+			code: 'KCB1.94',
+			description: 'AJIT KAUR & 3 OTHERS VS KENYA COMMERCIAL BANK LTD: HCCC. NO 2411 OF 1999',
+		},
+		{
+			code: 'KCB1.95',
+			description:
+				'BENJOH AMALGAMATED LTD & MUIRURI COFFEE ESTATES LTD VS KENYA COMMERCIAL BANK LTD & ANOTHER: HCCC NO. 494 OF 2008',
+		},
+		{
+			code: 'KCB1.96',
+			description:
+				'KENYA COOPERATIVE CREMERIES LTD (IN RECEIVERSHIP) VS KENYA COMMERCIAL BANK LTD: CIVIL SUIT NO. 1728 OF 2000',
+		},
+		{
+			code: 'KCB1.97',
+			description:
+				'KENYA COMMERCIAL BANK LTD VS DAVID M. KARANJA & 3 OTHERS: CIVIL CASE NO. 2156 OF 1990',
+		},
+		{
+			code: 'KCB1.98',
+			description: 'JACKSON K. KIBOR VS JOYCE KEMUNTO & ANOTHER: HCCC NO. 74 OF 1997',
+		},
+		{
+			code: 'KCB1.99',
+			description:
+				'KENYA COMMERCIAL BANK LTD VS NALIN NAIL WORKERS LTD: HCCC NO. 2083 OF 2000',
+		},
+		{
+			code: 'KCB2.1',
+			description:
+				'SALE OF 3 BEDROOM BUNGALOW AT LUKENYA HILLS PARK ATHI RIVER TO JENNIFER KAGWIRIA KARACHI',
+		},
+		{
+			code: 'KCB2.2',
+			description: 'KENYA COMMERCIAL BANK',
+		},
+		{
+			code: 'KCFC1.1',
+			description: 'NGOSO GENERAL CONSTRUCTORS LIMITED',
+		},
+		{
+			code: 'KCFC1.2',
+			description: 'JAIRO ANGOTE vs KENYA COMMERCIAL BANK',
+		},
+		{
+			code: 'KCG1.1',
+			description: 'KISUMU COUNTY GOVERNMENT VS. DCI HEADQUARTERS.',
+		},
+		{
+			code: 'KCL1.1',
+			description: 'KEL CHEMICALS LTD -VS- DAWA LTD',
+		},
+		{
+			code: 'KCO1.1',
+			description: 'KILELESHWA VILLA/RIVERFRONT VILLA NO. 7',
+		},
+		{
+			code: 'KCP1.1',
+			description: 'KISUMU CONCRETE PRODUCTS LTD',
+		},
+		{
+			code: 'KDC1.1',
+			description: 'BANKING FACILITIES TO SIRIKWA ELDORET HOTEL LIMITED',
+		},
+		{
+			code: 'KDI1.10',
+			description: 'Petition No.601 OF 2017 Nafisi Kanji and others Vs CBK and KDIC',
+		},
+		{
+			code: 'KDI1.11',
+			description:
+				'PETITION NO 611 OF 2017:DONALD EARLE SMITH VS.CENTRAL BANK OF KENYA & KDFC.',
+		},
+		{
+			code: 'KDI1.12',
+			description: 'POWER OF ATTONEY',
+		},
+		{
+			code: 'KDI1.13',
+			description:
+				'DISCHARGE OF CHARGE OVER LAND TITLE NOS KJD/KITENGELA/3389 AND KJD/KITENGELA/2332',
+		},
+		{
+			code: 'KDI1.14',
+			description: 'KDIC: GENERAL FILE',
+		},
+		{
+			code: 'KDI1.15',
+			description:
+				'HC MISC APP.NO 64 OF 2018:MUEMA KITULU T/A.MUEMA KITULU & COMPANY ADVOCATES VS.KENYA DEPOSIT INSURANCE CORPORATION',
+		},
+		{
+			code: 'KDI1.16',
+			description:
+				'HC MISC APP.NO 63 OF 2018:MUEMA KITULU T/A.MUEMA KITULU & COMPANY ADVOCATES VS.KENYA DEPOSIT INSURANCE CORPORATION',
+		},
+		{
+			code: 'KDI1.17',
+			description:
+				'HCCC NO.131 OF 2018:IMARAN LIMITED & 11 OTHERS VS.KENYA DEPOSIT INSURANCE CORPORATION & OTHERS',
+		},
+		{
+			code: 'KDI1.18',
+			description:
+				'HCC NO.131 OF 2018: IMARAN LTD & 9 OTHERS VS.DR.PATRICK NJOROGE & 4 OTHERS',
+		},
+		{
+			code: 'KDI1.19',
+			description: 'CLAIM BY KENYA DEPOSIT INSURANCE AGAINST PKF',
+		},
+		{
+			code: 'KDI1.2',
+			description:
+				'TRANSFER OF VARIOUS PROPERTIES TO CHASE BANK KENYA LIMITED (IN RECEIVERSHIP)',
+		},
+		{
+			code: 'KDI1.20',
+			description:
+				'E&LR CAUSE NO.73 OF 2015:TERRY NJAGI MUIA VS.CHASE BANK KENYA LIMITED & 2 OTHERS',
+		},
+		{
+			code: 'KDI1.21',
+			description:
+				'CIVIL SUIT NO. 44 OF 2013- KWANZA ESTATES LTD VS. KENYA DEPOSIT INSURANCE CORPORATION (LIQUIDATOR) & ANOTHER',
+		},
+		{
+			code: 'KDI1.21/001',
+			description: 'MEDIATION - KWANZA ESTATES LTD VS. DUBAI BANK KENYA LTD (IL) & 2 OTHERS',
+		},
+		{
+			code: 'KDI1.22',
+			description:
+				'CASE NO. 303 OF 2018; KENYA TEA DEVELOPMENT AGENCY LTD VS. CENTRAL BANK OF KENYA, KDIC AND IMPERIAL BANK LTD (IN RECEIVERSHIP)',
+		},
+		{
+			code: 'KDI1.23',
+			description:
+				'CIVIL CASE NO.330 OF 2018:GEORGE TOWEY & OTHERS VS. CHASE BANK KENYA LIMITED (IN RECEIVERSHIP) & 4 OTHERS',
+		},
+		{
+			code: 'KDI1.24',
+			description:
+				'HCCC NO 339 OF 2018:GEORGE TOWEY & 3 OTHERS vs. CHASE BANK (K) LTD (IR) & 4 OTHERS.',
+		},
+		{
+			code: 'KDI1.25',
+			description:
+				'HCC NO.302 OF 2018:MAHOOD KHAMBIYE & ANOTHER VS. CBK 1ST DEFENDANT,KDIC AND IMPERIAL BANK LTD (IR) AND ANOTHER',
+		},
+		{
+			code: 'KDI1.26',
+			description: 'KENYA DEPOSIT INSURANCE CORPORATION  VS. SULEIMAN ENTERPRISES LIMITED.',
+		},
+		{
+			code: 'KDI1.27',
+			description:
+				'MISC. CIVIL SUIT NO 266 OF 2018-KEMUSALT PACKERS PRODUCTION LIMITED VS.PETER KATIC & ANOTHER.',
+		},
+		{
+			code: 'KDI1.28',
+			description:
+				'PENDING TRADES BETWEEN NATIONAL BANK OF KENYA (NBK) & CHASE BANK IN RECEIVERSHIP (CBIR)',
+		},
+		{
+			code: 'KDI1.29',
+			description:
+				'MISC APP 456 OF 2018-KEMUSALT PACKERS LTD -VS- PETER KAHI & ANTHONY MUTHUSI',
+		},
+		{
+			code: 'KDI1.30',
+			description:
+				'NAIROBI E&LRC PETITION NO. 136 OF 2018 CHASE BANK KENYA LTD EMPLOYEE OWNERSHIP PLAN & ANOTHER VS. KENYA DEPOSIT INSURANCE CORPORATION AND 4 OTHERS',
+		},
+		{
+			code: 'KDI1.32',
+			description:
+				'HCCC NO. E052 OF 2019 ANDREW MUMMA & OTHERS VS. DELOITTE & TOUCHE EA & 5 OTHERS',
+		},
+		{
+			code: 'KDI1.32/001',
+			description:
+				'CIVIL APPEAL NO.E311 OF 2020: MUMA & KANJAMA ADVOCATES & OTHER VS. DELOITTE & TOUCHE EAST AFRICA & OTHERS.',
+		},
+		{
+			code: 'KDI1.33',
+			description: 'OPINION ON REVIEW OF ANALYSIS OF KDI ACT 2012',
+		},
+		{
+			code: 'KDI1.34',
+			description: 'PROJECT IRIS',
+		},
+		{
+			code: 'KDI1.35',
+			description:
+				'E&LRC NO. 275 OF 2019 SIDNEY LOUIS SHILAKO VS. CHASE BANK (IN RECIEVERSHIP) AND KDIC',
+		},
+		{
+			code: 'KDI1.36',
+			description:
+				'E&LRC CAUSE NO. 130 OF 2019 SIDNEY LOUIS SHILAKO VS. CHASE BANK (IN RECIEVERSHIP) AND KDIC',
+		},
+		{
+			code: 'KDI1.37',
+			description:
+				'ADVISING ON SETTLEMENT AGREEMENT BETWEEN IMPERIAL BANK LTD AND GENGHIS CAPITAL LTD.',
+		},
+		{
+			code: 'KDI1.38',
+			description:
+				'LEGAL OPINION ON KENYA DEPOSIT INSURANCE CORPORATION AUTHORITY TO RESTRICT ACCESS TO SAFETY DEPOSIT LOCKERS.',
+		},
+		{
+			code: 'KDI1.39',
+			description:
+				'HCCC NO. E004 OF 2020 – NAUSHAD TRADING COMPANY LIMITED & ANOTHER V SBM BANK KENYA LIMITED & KDIC',
+		},
+		{
+			code: 'KDI1.39/001',
+			description:
+				'MEDIATION NO. 044 OF 2023 – NAUSHAD TRADING COMPANY LIMITED & ANOTHER V SBM BANK KENYA LIMITED & KDIC',
+		},
+		{
+			code: 'KDI1.4',
+			description:
+				'KDIC: CLAIM BY IMPERIAL BANK LIMITED (IN RECEIVERSHIP) AGAINST JADE PETROLUEM',
+		},
+		{
+			code: 'KDI1.40',
+			description:
+				'H.C. CONST. PET NO. E203 OF 2021: RASHIK KUMAR PUNJA SHAH & ANOR VS. KDIC & CHASE BANK LIMITED (IL)',
+		},
+		{
+			code: 'KDI1.41',
+			description: 'REQUEST FOR INFORMATION BY KAPLAN & STRATTON',
+		},
+		{
+			code: 'KDI1.42',
+			description:
+				'CONSTITUTIONAL PETITION NO. E299 OF 2020 OFFSHORE TRADING COMPANY VS. KDIC & OTHERS.',
+		},
+		{
+			code: 'KDI1.43',
+			description: 'HCCOMM NO.E779 OF 2021: DUNCAN KABUI GICHU VS. KDIC & OTHERS',
+		},
+		{
+			code: 'KDI1.44',
+			description: 'HCCOMM NO.E779 OF 2021: DUNCAN KABUI GICHU VS. KDIC & OTHERS',
+		},
+		{
+			code: 'KDI1.45',
+			description:
+				"SBM BANKS'S IRREGULAR OCCUPATION OF RIVERSIDE MEWS L.R. NO.4275/13 BELONGING TO RIVERSIDE MEWS LIMITED.",
+		},
+		{
+			code: 'KDI1.46',
+			description: 'CHASE BANK LTD / RIVERSIDE MEWS LTD - ISSUES',
+		},
+		{
+			code: 'KDI1.47',
+			description:
+				'HCCC NO. E825 OF 2021 ALS LIMITED -VS- IMPERIAL BANK LIMITED, DR. PATRICK NJOROGE, CENTRAL BANK OF KENYA & KENYA DEPOISIT INSURANCE CORPORATION.',
+		},
+		{
+			code: 'KDI1.48',
+			description: 'RINASCIMENTO PROPERTIES LIMITED - LAND REFERENCE NUMBER 4580/20',
+		},
+		{
+			code: 'KDI1.49',
+			description:
+				'HCC MISC. CIVIL SUIT NO. 021 OF 2022: KUZA FARMS & ALLIED LTD -VS- DUBAI BANK (IL)',
+		},
+		{
+			code: 'KDI1.5',
+			description:
+				'KDIC - CLAIM BY IMPERIAL BANK LIMITED (IN RECEIVERSHIP) AGAINST ADRA INTERNATIONAL LTD',
+		},
+		{
+			code: 'KDI1.50',
+			description:
+				'HCCC NO.E838 OF 2021: DR. ROHIT G. RADIA & 6 OTHERS VS. IMPERIAL BANK LIMITED (Under Receivership) & 3 OTHERS.',
+		},
+		{
+			code: 'KDI1.51',
+			description:
+				'CONSTITUTIONAL PETITION NO. E529 OF 2021 - RINASCIMENTO GLOBAL LIMITED & OTHERS V. KDIC & OTHERS',
+		},
+		{
+			code: 'KDI1.51/001',
+			description:
+				'CIVIL APPEAL NO. E527 OF 2022 - RINASCIMENTO GLOBAL LIMITED & OTHERS V. KDIC & ANOTHER.',
+		},
+		{
+			code: 'KDI1.52',
+			description:
+				'MACHAKOS E&LC (OS) NO. 16 OF 2021 PETER MUENDO & OTHERS -VS- MATHATANI LIMITED.',
+		},
+		{
+			code: 'KDI1.52/001',
+			description:
+				'ELC PETITION - CHASE BANK KENYA LIMITED (IL) VS. COUNTY GOVERNMENT OF MACHAKOS & MATHATANI LIMITED',
+		},
+		{
+			code: 'KDI1.53',
+			description: 'CHASE BANK SPV PROPERTIES',
+		},
+		{
+			code: 'KDI1.54',
+			description: 'CHASE BANK AUDIT REPORT',
+		},
+		{
+			code: 'KDI1.55',
+			description:
+				'HCCC NO.E950 OF 2021: RINASCIMENTO GLOBAL LIMITED & 13 OTHERS VS. DELOITTE & TOUCHE LLP',
+		},
+		{
+			code: 'KDI1.56',
+			description:
+				'PROVISION OF LEGAL SERVICES IN RELATION TO APPOINTMENT OF DIRECTORS AND CONVERSION OF DEBT.',
+		},
+		{
+			code: 'KDI1.57',
+			description: 'PROVISION OF LEGAL ADVICE IN RELATION TO RECEIVERSHIP',
+		},
+		{
+			code: 'KDI1.58',
+			description: 'PREPARATION AND REGISTRATION OF A SPECIFIC POWER OF ATTORNEY',
+		},
+		{
+			code: 'KDI1.6',
+			description:
+				'KDIC: CLAIM BY IMPERIAL BANK LIMITED (IN RECEIVERSHIP) AGAINST METRO PETROLEUM LIMITED',
+		},
+		{
+			code: 'KDI1.7',
+			description:
+				'HCCC NO. 405 OF 2017: KENYA TEA DEVELOPMENT AGENCY LIMITED VS CENTRAL BANK OF KENYA, KENYA DEPOSIT INSURANCE CORPORATION',
+		},
+		{
+			code: 'KDI1.8',
+			description: 'EQUITY BANK (K) LIMITED, LIEN & SET-OFF',
+		},
+		{
+			code: 'KDI1.9',
+			description:
+				'HCCC NO.511 OF 2017-UNITED BANK LIMITED & ANOR VS CHASE BANK (K) LIMITED (IR) & KENYA DEPOSIT INSURANCE CORPORATION (KDIC)',
+		},
+		{
+			code: 'KDL1.1',
+			description: 'DISPUTE BETWEEN KINANGOP DAIRY LIMITED VS. TETRA PAK LIMITED',
+		},
+		{
+			code: 'KDL1.2',
+			description:
+				'CIVIL SUIT NO. 3860 OF 2018: POUL FISKER T/A GLOCAL COOLING CONSULT VS. KINANGOP DAIRY LIMITED',
+		},
+		{
+			code: 'KEA1.1',
+			description:
+				'MISC. APPL NO. 1531 OF 2005 ABDUL WAHEED SHEIKH & ABDUL HAMEED SHEIKH -VS- COMMISSIONER OF LANDS & 4 OTHERS.',
+		},
+		{
+			code: 'KED1.1',
+			description:
+				'DUE DILIGENCE AND PURCHASE OF PROPERTY LR. NO. 1590/04 AND 1590/05 – KISUMU BY KEDA (KENYA) CERAMICS CO. LTD FROM CHARLES ONYANGO ODIDA',
+		},
+		{
+			code: 'KEL1.1',
+			description:
+				'KARIRANA ESTATES LTD -VS- QUECONSULT LTD/ENGINEER S. AUSTIN S. KITOLOLO: HCCC NO. 524 OF 2005',
+		},
+		{
+			code: 'KEL2.1',
+			description: 'SALE OF PROPERTY LR NO.14902/98,COFFE GARDEN ESTATE TO SEGENET KELEMU',
+		},
+		{
+			code: 'KEL3.1',
+			description: 'PROVISION OF LEGAL SERVICES TO KAPSON ECHOCHEM LIMITED (THE “COMPANY”)',
+		},
+		{
+			code: 'KEM1.1',
+			description:
+				'MEDIATION NO.53 OF 2017-KEMU SALT PACKERS PRODUCTION LTD (IN RECEIVERSHIP) VS.KRYSTALLINE SALT LIMITED',
+		},
+		{
+			code: 'KEM1.2',
+			description:
+				'ELC NO.71 OF 2018-SULEIMAN ENTERPRISES LIMITED VS.KEMUSALT PACKERS PRODUCTION LTD (IN RECEIVERSHIP)',
+		},
+		{
+			code: 'KEN0097.1',
+			description: 'OPENING BALANCE AS AT 1 JANUARY 2016 REF:GOO/6584',
+		},
+		{
+			code: 'KEN1.1',
+			description:
+				'KENYA ELECTRICITY GENERATING COMPANY LTD (KENGEN) VS JANE NYAMBURA MURIGI',
+		},
+		{
+			code: 'KEN1.10',
+			description: 'ALL GENERAL CORRESPONDENCE RELATING TO KENGEN RBS',
+		},
+		{
+			code: 'KEN1.11',
+			description: 'OPENING BALANCE TRUST 2015',
+		},
+		{
+			code: 'KEN1.12',
+			description:
+				'SALE OF 4 BEDROOM TOWN HOUSE IN ROSSLYN SPRINGS,LR.NO .NUMBER 21/1/23 NAIROBI',
+		},
+		{
+			code: 'KEN1.13',
+			description:
+				'SALE OF 4 BEDROOM TOWN HOUSE IN ROSSLYN SPRINGS,HOUSE NUMBER 14,L.R.NO.NUMBER 21/1/23 NAIROBI',
+		},
+		{
+			code: 'KEN1.14',
+			description:
+				'SALE OF HOUSE NO.1,ROSSLYN SPRINGS,L.R.NO.NUMBER 21/1/23 NAIROBI,DOUGLAS MUTHAURA ABUURU AND CHRISTINE TIRINDI MUTHAURA',
+		},
+		{
+			code: 'KEN1.15',
+			description:
+				'SALE OF HOUSE NO. 10 ROSSLYN SPRINGS LR. NO. 21/1/225 NAIROBI,GEORGE KABUGA MWANGI AND ELIZABETH WANJIRU MACHARIA.',
+		},
+		{
+			code: 'KEN1.16',
+			description:
+				'PURCHASE/SALE OF HSE NO.1, ROSSLYN SPRINGS, ROSSLYN LONE TREE, L.R. NO.21/1/225, NAIROBI BY RAJESH SENNIK',
+		},
+		{
+			code: 'KEN1.17',
+			description:
+				'TERESIA ODHIAMBO - PURCHASE OF HOUSE NUMBER 9, ROSSLYN SPRINGS, LAND REFERENCE NUMBER 21/1/225, NAIROBI',
+		},
+		{
+			code: 'KEN1.18',
+			description:
+				'SALE/PURCHASE OF HOUSE NUMBER 4, ROSSLYN SPRINGS, L.R. NO.21/1/225, NAIROBI – SINIKINESH BEYENE JIMMA',
+		},
+		{
+			code: 'KEN1.19',
+			description:
+				'SALE/PURCHASE OF HOUSE NO.3, ROSSLYN SPRINGS-CECILIA WAIRIMU SEBATINDIRA (THE "PURCHASER")',
+		},
+		{
+			code: 'KEN1.2',
+			description: 'MANSUR MUATHE ISSA',
+		},
+		{
+			code: 'KEN1.20',
+			description:
+				'NAIROBI HCCC NO. 536 OF 2011; EDWARD NJOROGE & KENGEN -VS- AHMEDNASIR ABDULAHI & THE LAW MONTHLY LIMITED',
+		},
+		{
+			code: 'KEN1.21',
+			description:
+				'SALE/PURCHASE OF HOUSE NO.7, ROSSLYN SPRINGS - MAHESH PRADHAN & SANDHYA SHRESTHA PRADHAN',
+		},
+		{
+			code: 'KEN1.22',
+			description: 'ENGAGEMENT WITH PRESIDENTIAL TASKFORCE ON REVIEW OF PPAs',
+		},
+		{
+			code: 'KEN1.23',
+			description: 'KENGEN & AKIIRA GEOTHERMAL JOINT DEVELOPMENT AGREEMENT',
+		},
+		{
+			code: 'KEN1.24',
+			description:
+				'SHEM ARUNGU ARIWI & DOREEN MWENDWA MBAYA - SALE/PURCHASE OF HOUSE NUMBER 15, ROSSLYN LONE TREE, L.R. NO.21/1/225, NAIROBI',
+		},
+		{
+			code: 'KEN1.25',
+			description:
+				'SALE OF TOWNHOUSE NUMBER 15-ROSSLYN SPRINGS ON LR. NO. 2 (ORIG. NO. 21/1/23 BY KENGEN STAFF RETIREMENT BENEFITS SCHEME TO SHEM A. ARIWI & DOREEN MBAYA',
+		},
+		{
+			code: 'KEN1.26',
+			description: 'SALE/PURCHASE OF HOUSE NUMBER 6, LR NO.21/1/25, NAIROBI BY LEMWO LIMITED',
+		},
+		{
+			code: 'KEN1.27',
+			description:
+				'SALE/PURCHASE OF 4 BEDROOM TOWNHOUSE, ROSSLYN SPRINGS, ROSSLYN LONE TREE, L.R. NO. 21/1/225, HOUSE NO.7',
+		},
+		{
+			code: 'KEN1.28',
+			description: 'SALE/PURCHASE OF HOUSE NO.8, ROSSLYN SPRINGS - SAM G. MUCHUKI',
+		},
+		{
+			code: 'KEN1.3',
+			description:
+				'KENGEN RETIREMENT BENEFIT SCHEME: SALE OF PROPERTY - 4 BEDROOM TOWN HOUSE NO. 12 TO CROSSBOW WOOD VENTURES LTD ON L.R NO. 21/1/23 ROSSLYN LONE TREE ROSSLYN SPRINGS',
+		},
+		{
+			code: 'KEN1.4',
+			description: 'LUWEI PEARSON : PEARSON - HSE NO 5 ROSSLYN SPRINGS',
+		},
+		{
+			code: 'KEN1.5',
+			description:
+				'KENGEN STAFF RETIREMENT BENEFITS SCHEME - SALE OF HOUSE NO. 14 L.R 21/1/23 NRBI ROSSLYN LONE TREE TO FAITH KAMAU WANJUHI',
+		},
+		{
+			code: 'KEN1.6',
+			description:
+				'KENGEN STAFF RETIREMENT BENEFITS SCHEME - SALE OF HOUSE NO. 5 L.R 21/1/23 NRBI ROSSLYN LONE TREE TO MANDEEP JANOU',
+		},
+		{
+			code: 'KEN1.7',
+			description:
+				'MOHAMED IQBAL MOHAMED - SALE & PURCHASE OF 4 BEDROOM TOWNHOUSE WITH STAFF QUARTERS IN ROSSLYN SPRINGS, ROSSLYN LONE TREE. L.R NO. 21/1/23 HOUSE NO. 13',
+		},
+		{
+			code: 'KEN1.8',
+			description: 'PETER CHEYNEY ROSSLYN SPRINGS NRB',
+		},
+		{
+			code: 'KEN1.9',
+			description:
+				'BERNARD MUIRURI NDUNGU - PURCHASE OF 4 BEDROOM TOWN HOUSE  IN ROSSLYN SPRINGS HSEROSSLYN LONE TREE LR NO. 21/1/23 HSE NO. 13',
+		},
+		{
+			code: 'KEN2.1',
+			description: 'REGISTRATION OF THE KENGEN FOUNDATION',
+		},
+		{
+			code: 'KEN3.1',
+			description: 'DEVELOPMENT AND OPERATION OF A FOREIGN EXCHANGE SERVICE AT J.K.I.A.',
+		},
+		{
+			code: 'KEN4.1',
+			description:
+				'PURCHASE OF TOWN HOUSE NO. B-15, LORESHO RIDGE HOUSING DEVELOPMENT ON L.R. NO. 21080/38, NAIROBI',
+		},
+		{
+			code: 'KEN4.2',
+			description: 'PURCHASE OF HOUSE NO. V12 ON LAND REFERENCE NUMBER 21080/38',
+		},
+		{
+			code: 'KEN6.1',
+			description: 'LEGAL OPINION ON MINING ACT',
+		},
+		{
+			code: 'KER1.1',
+			description: 'IN THE MATTER OF THE ESTATE OF DEDI ODHIAMBO MAGANGA',
+		},
+		{
+			code: 'KFC1.1',
+			description: 'LEGAL OPINION ON MINING ACT',
+		},
+		{
+			code: 'KFC1.2',
+			description: 'KENYA FLOURSPAR COMPANY LTD VS. THE COMMISSIONER OF DOMESTIC TAXES',
+		},
+		{
+			code: 'KFL1.1',
+			description: 'PROVISION OF LEGAL SERVICES',
+		},
+		{
+			code: 'KGO1.1',
+			description: 'KILELESHWA VILLA/RIVERFRONT VILLA GEORGE ORARO',
+		},
+		{
+			code: 'KHA1.1',
+			description: 'KENBRIGHT HEALTHCARE ADMINISTRATORS VS KNEC: RETURN OF FILES',
+		},
+		{
+			code: 'KHA1.2',
+			description:
+				'KENYA LITERATURE BUREAU, KENBRIGHT HEALTHCARE ADMINISTRATORS LIMITED AND THE JUBILEE INSURANCE COMPANY OF KENYA LIMITED',
+		},
+		{
+			code: 'KHA1.3',
+			description:
+				'CIVIL SUIT NO. 4138 OF 2017 - THE NAIROBI SOUTH HOSPITAL LIMITED -VS- KENBRIGHT HEALTHCARE ADMINISTRATORS LIMITED',
+		},
+		{
+			code: 'KHA1.4',
+			description:
+				'DEBT COLLECTION - KENBRIGHT HEALTHCARE ADMINISTRATORS LTD VS MERIDIAN MEDICAL CENTRE',
+		},
+		{
+			code: 'KHA2.2',
+			description: 'DEMANDS-GENERAL',
+		},
+		{
+			code: 'KHA3.1',
+			description:
+				'JOINT VENTURE AGREEMENT- L.R NO. 2/479 AND L.R NO. 2/480, KIRICHWA ROAD, KILIMANI, NAIROBI COUNTY',
+		},
+		{
+			code: 'KHA3.2',
+			description: 'JOINT VENTURE AGREEMENT RELATING TO THE CONVENT DRIVE PROPERTY',
+		},
+		{
+			code: 'KIA1.1',
+			description:
+				'PURCHASE OF PLOT NUMBER 11, ON A PORTION OF L.R. NO.KWALE/DIANI BEACH BLOCK/1064, KWALE',
+		},
+		{
+			code: 'KIB1.1',
+			description: 'DOREEN JEPKOSGEI KIBET - PURCHASE OF  KTD/KIT/28379 FROM PETER WAWERU',
+		},
+		{
+			code: 'KIB2.1',
+			description: 'DEVELOPMENT EDUCATION SERVICES FOR COMMUNITY EMPOWERMENT (DESECE)',
+		},
+		{
+			code: 'KIB3.1',
+			description:
+				'IN THE MATTER OF AN APPLICATION FOR GUARDIANSHIP BY MARY WAMAITHA KIBOGO & SAMUEL WAMBUGU KIBOGO.',
+		},
+		{
+			code: 'KIB3.1/001',
+			description: 'PREPARING A WILL.',
+		},
+		{
+			code: 'KIB4.1',
+			description: 'REFUND FOR 4081.97 USD',
+		},
+		{
+			code: 'KID1.1',
+			description:
+				"N THE CHILDREN'S COURT AT NAIROBI: IN THE MATTER OF GEORGIA ROSE NYAMUNGA - MINOR: GEORGE JARATENT NYAMUNGA (SUING AS A FATHER AND BEST FRIEND TO THE MINOR) VS. YUCABETH RACHEL KIDENDA",
+		},
+		{
+			code: 'KIE1.2',
+			description: 'ME TO WE - IMMIGRATION ADVICE',
+		},
+		{
+			code: 'KIE1.3',
+			description: 'ME TO WE - POTENTIAL EMPLOYMENT CLAIM',
+		},
+		{
+			code: 'KIE1.4',
+			description: 'ME TO WE - TAX ADVICE',
+		},
+		{
+			code: 'KIE1.5',
+			description: 'ME TO WE - NGO RELATED ADVICE',
+		},
+		{
+			code: 'KIE1.7',
+			description: 'GENERAL FILE – INVESTIGATION',
+		},
+		{
+			code: 'KIG1.1',
+			description: 'MARGERET WAMBUI KIGUTA VS JULIET KIGUTA',
+		},
+		{
+			code: 'KIL1.2',
+			description:
+				'PURCHASE OF PROPERTY LR. NO. 4945/13; GOLDEN FLEECE LIMITED TO STELLA NGUSYE KILONZO and KILONZO MUSAU',
+		},
+		{
+			code: 'KIL1.3',
+			description:
+				'SALE OF APARTMENT NUMBER A1 BLOCK 1 ON LR. NO. 1/1161 BY STELLA KILONZO TO FRANCIS AREMO ODERO',
+		},
+		{
+			code: 'KIL2.1',
+			description: 'EMPLOYMENT DISPUTE BETWEEN CHRIS SWANSON AND KIDOGO INNOVATIONS LIMITED',
+		},
+		{
+			code: 'KIL3.1',
+			description: 'IN THE MATTER OF THE ESTATE OF HON. MUTULA KILONZO (DECEASED)',
+		},
+		{
+			code: 'KIL3.1/001',
+			description: 'THE ESTATE OF HON. MUTULA KILONZO (KRA)',
+		},
+		{
+			code: 'KIM1.1',
+			description: 'KILELESHWA VILLA/RIVERFRONT VILLA ISAAC MRUTTU',
+		},
+		{
+			code: 'KIM2.1',
+			description: 'STEPHEN J. KIMWELE - SALE OF LR. NO. 209/10769',
+		},
+		{
+			code: 'KIM3.1',
+			description: 'ANTHONY KIMARU',
+		},
+		{
+			code: 'KIM4.1',
+			description: 'PLOT NUMBER L.R. NO.21932, LANGATA, NAIROBI',
+		},
+		{
+			code: 'KIM5.1',
+			description: 'CASE NO. MCELRC E254 OF 2021 MESHACK MUTALI SUMBATI VS PHYLLIS KIMANI',
+		},
+		{
+			code: 'KIN3.1',
+			description: 'MODE V JOSPHAT KIBOGO KINYUA',
+		},
+		{
+			code: 'KIO1.1',
+			description: 'MIRIAM NZILANI KIOKO -VS- INVESTEQ CAPITAL LTD: CMCC NO. 3656 OF 2013',
+		},
+		{
+			code: 'KIO2.1',
+			description:
+				'CIVIL APPEAL NO.   OF 2020 KIOGORA MUTAI VS LEE KIMATHI MANYARA & 2 OTHERS',
+		},
+		{
+			code: 'KIP1.1',
+			description: 'DR BENJAMIN EDGAR KIPKORIR -VS- EAST AFRICAN EDUCATION PUBLISHERS LTD',
+		},
+		{
+			code: 'KIP2.1',
+			description: 'JAMES KIPKORIR',
+		},
+		{
+			code: 'KIP3.1',
+			description: 'IN THE MATTER OF THE LATE BENJAMIN EDGAR KIPKORIR',
+		},
+		{
+			code: 'KIP4.2',
+			description: 'ACCIDENT CLAIM',
+		},
+		{
+			code: 'KIR1.1',
+			description:
+				"ANGELA NJERI KIRABA -VS- PETER MICHAEL KIBETT HURT: CHILDREN'S CASE NO 1489 OF 2015 (NBO)",
+		},
+		{
+			code: 'KIR2.1',
+			description: 'MS. SHRADA KIRITKUMAR DAVE',
+		},
+		{
+			code: 'KIR3.1',
+			description:
+				'JUDICIAL REVIEW CAUSE NO. ………2020 KIRAGU KIMANI & 23 OTHERS VERSUS LAW SOCIETY OF KENYA.',
+		},
+		{
+			code: 'KIS1.1',
+			description:
+				'PAYMENT OF INTEREST ON OUTSTANDING BALANCES ON SALE OF L.R. NO. 12882/159',
+		},
+		{
+			code: 'KIS1.2',
+			description:
+				'MC.COMM NO E651 OF 2022 M/S. Kaddi Construction Company Limited vs. Mr. Jacob Kisa & Mrs. Priscilla Kisa',
+		},
+		{
+			code: 'KIS1.3',
+			description: 'LAND REFERENCE NUMBER 12882/159, KAREN, NAIROBI',
+		},
+		{
+			code: 'KIS2.1',
+			description:
+				'CIVIL APPEAL NO 164 OF 2013 & HIGH COURT PETITION NO 72 OF 2011 KISII BOTTLERS LTD VS THE AG,THE KRA, THE COM GEN OF KRA& THE COM OF CUSTOMS AND EXCISE DUTY',
+		},
+		{
+			code: 'KIS3.1',
+			description:
+				'SALE OF PROPERTY LR.NO 12882/162 JACK JACOB KISA & PRISCILLA SILINGI KISA TO SUSAN KIHIKA',
+		},
+		{
+			code: 'KIT1.1',
+			description: 'SCHOLA ACHIENG\' KITINYA "WILL"',
+		},
+		{
+			code: 'KIW1.1',
+			description: 'WILLIAM ANDREW KIWAIYA',
+		},
+		{
+			code: 'KIW2.1',
+			description: 'SALE/PURCHASE OF APT A1301, KAISA GARDENS, L.R. 4857/125.',
+		},
+		{
+			code: 'KIZ1.1',
+			description: 'INCORPORATION OF DIGILEARN EDUCATIONAL RESOURCES NETWORK LTD',
+		},
+		{
+			code: 'KJA1.1',
+			description: 'KILELESHWA VILLA/RIVERFRONT VILLA J A OUGO',
+		},
+		{
+			code: 'KKO1.1',
+			description: 'REPUBLIC VS KINGDOM KENYA LTD',
+		},
+		{
+			code: 'KKO1.2',
+			description:
+				'ELR CAUSE NO.90 OF 2017:STANLEY OLONANA NTUTU & OTHERS-VS- KINGDOM KENYA 01 LIMITED',
+		},
+		{
+			code: 'KMA1.1',
+			description:
+				'KENYA MEDICAL ASSOCIATION HOUSING CO-OPERATIVE SACCO -VS- DR. JANE WANJIRU KARIUKI: CMCC NO. 3789 OF 2015 (NBO)',
+		},
+		{
+			code: 'KMA1.2',
+			description:
+				'CIVIL SUIT NO. 705 OF 1999- KMA VS NYAMA GI WARE CO. LIMITED & REGENT VALUERS INT. LIMITED',
+		},
+		{
+			code: 'KMA1.3',
+			description:
+				'ELC NO. 2017 - KENYA MEDICAL ASSOCIATION HOUSING CO-OP  SOCIETY VS ARTHI HIGHWAY DEVELOPERS LTD',
+		},
+		{
+			code: 'KMA1.4',
+			description:
+				'CIVIL APPEAL NO.218 OF 2004-THE CO-OPERATIVE BANK PF KENYA VS THE KENYA MEDICAL ASSOCIATION',
+		},
+		{
+			code: 'KMA1.4/001',
+			description:
+				'HCCC NO. 345 OF 2002 - KENYA MEDICAL ASSOCIATION HOUSING CO-OPERATIVE SOCIETY LIMITED VS. THE COOPERATIVE BANK OF KENYA LIMITED',
+		},
+		{
+			code: 'KMA1.5',
+			description:
+				'DINESH CONSTRUCTION LIMITED VS. KENYA MEDICAL ASSOCIATION HOUSING CO-OPERATIVE SOCIETY LIMITED.',
+		},
+		{
+			code: 'KMA1.6',
+			description:
+				'E&LC PETITION NUMBER 20 OF 2020: K.M.A.LANGATA RESIDENTS WELFARE ASSOCIATION & ANOR VS. KENYA MEDICAL ASSOCIATION HOUSING CO-OPERATIVE SOCIETY LIMITED & OTHERS',
+		},
+		{
+			code: 'KMS1.1',
+			description:
+				'E&LRC PETITION NO.E174 OF 2021: ANTHONY NYUTU CHEGE & ANOTHER VS. KENYA MEDICAL SUPPPLIES AUTHORITY (KEMSA) & OTHERS',
+		},
+		{
+			code: 'KMS1.2',
+			description:
+				'E&LRC PETITION NO. E173 OF 2021: KENYA MEDICAL PRACTITIONERS, PHARMACISTS AND DENTIST UNION (KMPDU) -V-S- KENYA MEDICAL SUPPLIES AUTHORITY (KEMSA) & OTHERS.',
+		},
+		{
+			code: 'KMS1.3',
+			description: 'PETITION NO. 187 OF 2021, DR. MAGARE G.J. BENJAMIN VS. KEMSA & OTHERS.',
+		},
+		{
+			code: 'KMS1.4',
+			description:
+				'ELRC PETITION NO.E080 OF 2022: NELSON ANDAYI HAVI VS. KENYA MEDICAL SUPPLIES AUTHORITY & OTHERS',
+		},
+		{
+			code: 'KMS1.4/001',
+			description:
+				'E&LRC PETITION NO. E089 OF 2022: DAVID NJOE KITHUKA VS. KENYA MEDICAL SUPPLIES AUTHORITY & OTHERS.',
+		},
+		{
+			code: 'KMS1.4/002',
+			description:
+				'HIGH COURT PETITION NO.E&LRC PETITION NO. E076 OF 2022; PETER AGORO & ANOTHER VS. TERRY KIUNGE RAMADHANI & OTHERS.',
+		},
+		{
+			code: 'KMS1.4/003',
+			description:
+				'HIGH COURT PETITION NO.E243 OF 2022: SHERIA MTAANI na SHADRACK WAMBUI VS. KENYA MEDICAL SUPPLIES AUTHORITY & OTHERS',
+		},
+		{
+			code: 'KMS1.4/004',
+			description:
+				'HIGH COURT PETITION NO.E166 OF 2022: PHARMACEUTICAL SOCIETY OF KENYA VS. THE CS, MINISTRY OF HEALTH & OTHERS',
+		},
+		{
+			code: 'KMS1.5',
+			description: 'IN THE MATTER OF FINAL DUES OWED BY KEMSA TO DR. JONAH MANJARI MWANGI.',
+		},
+		{
+			code: 'KMS1.6',
+			description:
+				'E&LRC NAIROBI CAUSE NO.E466 OF 2020 - FREDRICK WANYONYI SIMIYU VS. AG. CEO KEMSA AND B.O.D KEMSA.',
+		},
+		{
+			code: 'KMS1.7',
+			description:
+				'PETITION NO. E&LRC PETITION NO .E149/2022: IN THE MATTER OF ENOS NAMASAKA & 9 OTHERS VS KENYA MEDICAL SUPPLIES AUTHORITY (KEMSA) & 4 OTHERS',
+		},
+		{
+			code: 'KNI1.1',
+			description: 'KENBRIGHT NBC LIMITED',
+		},
+		{
+			code: 'KNI1.10',
+			description: 'DEBT RECOVERY - PROFESSIONAL CONSULTANTS',
+		},
+		{
+			code: 'KNI1.11',
+			description: 'DEBT RECOVERY - DAVID OLE SANKORI',
+		},
+		{
+			code: 'KNI1.2',
+			description:
+				'KENBRIGHT INSURANCE BROKERS VS CONTEMPORARY ELECTRICALS - OUTSTANDING PREMIUM OF KSHS. 17,369',
+		},
+		{
+			code: 'KNI1.3',
+			description: 'KENBRIGHT NBC INSURANCE BROKERS',
+		},
+		{
+			code: 'KNI1.4',
+			description: 'KENBRIGHT HOLDINGS LTD',
+		},
+		{
+			code: 'KNI1.5',
+			description: 'OUTSTANDING PREMIUMS - INTERNATIONAL GREEN STRUCTURES',
+		},
+		{
+			code: 'KNI1.6',
+			description: 'DEBT COLLECTION',
+		},
+		{
+			code: 'KNI1.7',
+			description: 'CLAIM FOR OUTSTANDINGPREMIUMS 155671 BY GREAT RIFT DRILLING LIMITED',
+		},
+		{
+			code: 'KNI1.8',
+			description:
+				'CLAIM FOR OUTSTANDING PREMIUM 605,018 BY INTERNATIONAL GREEN STRUCTURES LIMITED',
+		},
+		{
+			code: 'KNI1.9',
+			description: 'CLAIM FOR OUTSTANDING PREMIUM OF 5,496202 BY NAROK COUNTY GOVERNMENT.',
+		},
+		{
+			code: 'KNU1.1',
+			description: 'KENYA NATIONAL UNION OF TEACHERS (KNUT) VS KUPPET: CMCC NO. 97 OF 2012',
+		},
+		{
+			code: 'KNU1.10',
+			description:
+				'KENYA NATIONAL UNION OF TEACHERS (KNUT) & TEACHERS SERVICE COMMISSION -VS- KENYA UNION OF POST PRIMARY EDUCATION TEACHERS: HC JR MISC. APPL. NO. 428 OF 2013-UNION MEMBERSHIP DISPUTE',
+		},
+		{
+			code: 'KNU1.11',
+			description:
+				'KENYA NATIONAL UNION OF TEACHERS (KNUT) -VS- HON ATTORNEY GENERAL & 2 OTHERS: HC PETITION NO. 127 OF 2014 (NBO)',
+		},
+		{
+			code: 'KNU1.12',
+			description:
+				'KENYA NATIONAL UNION OF TEACHERS (KNUT) -VS- CABINET SECRETARY FOR LABOUR, SOCIAL SOCIETY & SERVICES, TEACHERS SERVICE COMMISSION & KUPPET: PETITION NO. 3 OF 2015',
+		},
+		{
+			code: 'KNU1.13',
+			description:
+				'KENYA NATIONAL UNION OF TEACHERS (KNUT) -VS- CABINET SECRETARY FOR LABOUR, SOCIAL SOCIETY & SERVICES, TEACHERS SERVICE COMMISSION & KUPPET: INDUSTRIAL COURT JR NO. 291 OF 2014',
+		},
+		{
+			code: 'KNU1.14',
+			description: 'BENSON KIOKO vs KNUT',
+		},
+		{
+			code: 'KNU1.15',
+			description:
+				"KENYA NATIONAL UNION OF TEACHERS (KNUT) - TEACHERS' SERVICE COMMISSION -VS- TRADE UNION CONGRESS OF KENYA: E & LC PETITION NO. 83 OF 2015 (NBO)",
+		},
+		{
+			code: 'KNU1.16',
+			description:
+				'KENYA NATIONAL PROPERTIES ASSOCIATION -VS- KENYA NATIONAL UNION OF TEACHERS (KNUT): INDUSTRIAL COURT PETITION NO. 74 OF 2014',
+		},
+		{
+			code: 'KNU1.17',
+			description:
+				'KENYA NATIONAL UNION OF TEACHERS (KNUT) & 2 OTHERS -VS- TEACHERS SERVICE COMMISSION (TSC): E & LC PETITION NO. 72 OF 2015 (NBO)',
+		},
+		{
+			code: 'KNU1.18',
+			description:
+				"KENYA NATIONAL UNION OF TEACHERS (KNUT) - TEACHERS' SERVICE COMMISSION -VS- TRADE UNION CONGRESS OF KENYA: E & LC PETITION NO. 83 OF 2015 (NBO)",
+		},
+		{
+			code: 'KNU1.19',
+			description:
+				'KENYA NATIONAL UNION OF TEACHERS. VALIDATION OF UNION MEMBERSHIP/DEVOLUTION/REMISSION',
+		},
+		{
+			code: 'KNU1.2',
+			description:
+				'KENYA NATIONAL UNION OF TEACHERS (KNUT) -VS- SAMUEL ADERO NYAMBURI: INDUSTRIAL CAUSE NO 726 OF 2012',
+		},
+		{
+			code: 'KNU1.20',
+			description: 'ELRC NO. 1325 OF 2012: JAMES OYUGI MANGLA',
+		},
+		{
+			code: 'KNU1.21',
+			description: 'IMPLEMENTATION OF KNUT MEMBERSHIP FORMS',
+		},
+		{
+			code: 'KNU1.22',
+			description:
+				'KENYA NATIONAL UNION OF TEACHERS VS KENYA UNION OF POST PRIMARY EDUCATION TEACHERS',
+		},
+		{
+			code: 'KNU1.23',
+			description:
+				'ELRC NO.1246 OF 2015-WALTER ONYANGO ODAGO VS KNUT HEADQUARTERS & KNUT MIGORI BRANCH',
+		},
+		{
+			code: 'KNU1.24',
+			description: 'KENYA NATIONAL UNION OF TEACHERS VS KENYA TEACHERS CONGRESS',
+		},
+		{
+			code: 'KNU1.25',
+			description:
+				'E&LR PETITION NO. 83 OF 2017 - PATRICK NJUGUNA VS WILSON SOSSION & KENYA NATIONAL UNION OF TEACHERS',
+		},
+		{
+			code: 'KNU1.26',
+			description: 'KENYA NATIONAL UNION OF TEACHERS VS THE CABINET SECRETARY FOR EDUCATION',
+		},
+		{
+			code: 'KNU1.27',
+			description: 'KENYA NATIONAL UNION OF TEACHERS & WILSON SOSION VS.PETER AMUNGA',
+		},
+		{
+			code: 'KNU1.28',
+			description:
+				'PETITION NO.26 OF 2018-KENNETH WAHWAH BANDE & 6 OTHERS VS HON WILSON SOSSIAN & KENYA NATIONAL UNION OF TEACHERS',
+		},
+		{
+			code: 'KNU1.29',
+			description:
+				'MISC.CIVIL APPLICATION NO.28 OF 2018:KENYA NATIONAL UNION OF TEACHERS VS. KENYA UNION OF POST PRIMARY EDUCATION TEACHERS & ANOR',
+		},
+		{
+			code: 'KNU1.30',
+			description: 'KNUT VS TSC (Delocalization)',
+		},
+		{
+			code: 'KNU1.31',
+			description:
+				'KENYA NATIONAL UNION OF TEACHERS (NAIROBI BRANCH) VS. TEACHERS SERVICE COMMISSION',
+		},
+		{
+			code: 'KNU1.32',
+			description:
+				'NAKURU ELRC CAUSE NO.220 OF 2018-MUNGAI MUHIA VS. NATIONAL UNION OF TEACHERS NAKURU BRANCH & ANOTHER',
+		},
+		{
+			code: 'KNU1.33',
+			description:
+				'E&LRC AMENDED PETITION NO. 126 OF 2018 KENYA NATIONAL UNION OF TEACHERS VS. KENYA UNION OF POST PRIMARY EDUCATION TEACHERS.',
+		},
+		{
+			code: 'KNU1.34',
+			description:
+				'E&LRC NO. 7 OF 2018 NAOMI DAMA PONDA VS. KENYA NATIONAL UNION OF TEACHERS & 3 OTHERS.',
+		},
+		{
+			code: 'KNU1.35',
+			description:
+				'PETITION NO. 151 OF 2018 TEACHERS SERVICE COMMISSION VS. KENYA NATIONAL UNION OF TEACHERS & ANOR',
+		},
+		{
+			code: 'KNU1.36',
+			description:
+				'J.R. APPLICATION NO. OF 2019 KENYA NATIONAL UNION OF TEACHERS VS. TEACHERS SERVICE COMMISSION.',
+		},
+		{
+			code: 'KNU1.37',
+			description:
+				'PETITION NO. 80 OF 2019 DAVID MURIITHI & 11 OTHERS VS. THE PUBLIC SERVICE COMMISSION & 2 OTHERS,',
+		},
+		{
+			code: 'KNU1.38',
+			description:
+				'KENYA NATIONAL UNION OF TEACHERS VS (KNUT). Vs. KENYA WOMEN TEACHERS ASSOCIATION.(KEWOTA)',
+		},
+		{
+			code: 'KNU1.39',
+			description:
+				'E&LRC NO. 158 OF 2019 KENYA NATIONAL UNION OF TEACHERS VS THE TEACHERS SERVICE COMMISSION.',
+		},
+		{
+			code: 'KNU1.4',
+			description:
+				'WILLY SONGY MASAI VS SECRETARY GENERAL, KENYA NATIONAL UNION OF TEACHERS (KNUT): INDUSTRIAL CASE NO. 389 OF 2013',
+		},
+		{
+			code: 'KNU1.40',
+			description:
+				'KNUT VS. TSC- KNUT POST-PRIMARY MEMBERSHIP DROP IN THE MONTH OF SEPTEMBER 2019.',
+		},
+		{
+			code: 'KNU1.41',
+			description:
+				'PETITION NO. 224 OF 2019 – HON. WILSON SOSSION & ANOR VS. TEACHERS SERVICE COMMISSION.',
+		},
+		{
+			code: 'KNU1.42',
+			description:
+				'E&LRC CAUSE NO. 819 OF 2019 – DOROTHY MUTHONI IKIARA VS. KENYA NATIONAL UNION OF TEACHERS',
+		},
+		{
+			code: 'KNU1.43',
+			description: 'Benter Akinyi Opande vs. Kenya National Union of Teachers',
+		},
+		{
+			code: 'KNU1.44',
+			description:
+				'E&LRC No. 260 of 2020 – Jacinta W. Ndegwa vs. Kenya National Union of Teachers',
+		},
+		{
+			code: 'KNU1.45',
+			description:
+				'E&LRC Kisumu No. 26 of 2020 – Lucy Machuki & 2 Others vs. Kenya National Union of Teachers & 4 Others',
+		},
+		{
+			code: 'KNU1.46',
+			description:
+				'E&LRC Cause No. E423 of 2020 – Michael Ndungu Mutua Muna vs. Kenya National Union of Teachers',
+		},
+		{
+			code: 'KNU1.47',
+			description:
+				'E&LRC Cause No. 31 of 2020 – Bonuves Kemei Tenai vs. Kenya National Union of Teachers & 3 Others',
+		},
+		{
+			code: 'KNU1.48',
+			description:
+				'E&LRC Petition No. E032 of 2020 – Stanley Kipkurui Mutai & 3 Others vs. Kenya National Union of Teachers & Another',
+		},
+		{
+			code: 'KNU1.48/001',
+			description:
+				'E&LRC CAUSE NO. E001 OF 2021 – STANLEY KIPKURUI MUTAI & 2 OTHERS VS. KENYA NATIONAL UNION OF TEACHERS.',
+		},
+		{
+			code: 'KNU1.48/002',
+			description:
+				'NAKURU CAUSE NO. E001 OF 2021 – STANLEY KIPKURUI MUTAI & 2 OTHERS VS. KENYA NATIONAL UNION OF TEACHERS',
+		},
+		{
+			code: 'KNU1.49',
+			description:
+				'E&LRC Cause No. 60 of 2020 – John Wesonga Lutta  vs. Kenya National Union of Teachers & 3 Others',
+		},
+		{
+			code: 'KNU1.5',
+			description:
+				'WILLY MASAI VS. SECRETARY GENERAL, KENYA NATIONAL UNION OF TEACHERS (KNUT)',
+		},
+		{
+			code: 'KNU1.50',
+			description:
+				'JR Application No. 4 of 2020 – Republic  vs. Kenya National Union of Teachers &  Others',
+		},
+		{
+			code: 'KNU1.51',
+			description:
+				'E&LRC No. 61 of 2020 – Rosemary Adongo Opande vs. Kenya National Union of Teachers & 3 Others',
+		},
+		{
+			code: 'KNU1.52',
+			description: 'Dissolution of Parliament',
+		},
+		{
+			code: 'KNU1.53',
+			description:
+				'E&LRC CAUSE NO. 67 OF 2020 – JEMIMA ADOYO OKOTH VS. KENYA NATIONAL UNION OF TEACHERS & 2 OTHERS',
+		},
+		{
+			code: 'KNU1.54',
+			description:
+				'E&LRC CAUSE NO. EA19 OF 2020 – EDNAH  KALUNDE MUTINDA VS. KENYA NATIONAL UNION OF TEACHERS & 2 OTHERS',
+		},
+		{
+			code: 'KNU1.55',
+			description:
+				'ELRC CASE NO. E001 OF 2020 – KITTU TOM GWENGWELE VS. KENYA NATIONAL UNION OF TEACHERS & OTHERS',
+		},
+		{
+			code: 'KNU1.56',
+			description:
+				'NAKURU ELRC CAUSE NO. E003 OF 2021 – MATHIAS KIPKORIR LANGAT VS. KENYA NATIONAL UNION OF TEACHERS & 2 OTHERS',
+		},
+		{
+			code: 'KNU1.57',
+			description:
+				"PETITION NO.E371 OF 2021: ESTHER AWUOR ADERO ANG'AWA VS. CABINET SECRETARY FOR EDUCATION & 7 OTHERS",
+		},
+		{
+			code: 'KNU1.58',
+			description:
+				'E&LRC CONSTITUTIONAL PETITION NO. 24 OF 2021 – JOSEPH NGETHE KARANJA VS. TEACHERS SERVICE COMMISSION & 7 OTHERS',
+		},
+		{
+			code: 'KNU1.59',
+			description:
+				'PETITION NO. E079 OF 2022 - IBRAHIM M. FARAH VS. KENYA NATIONAL UNION OF TEACHERS & ANOR.',
+		},
+		{
+			code: 'KNU1.60',
+			description:
+				'NAKURU ELRC CAUSE NO. 29 OF 2022 - SIMON MAINA KAIRU VS. KENYA NATIONAL UNION OF TEACHERS',
+		},
+		{
+			code: 'KNU1.61',
+			description:
+				'MALINDI CMCC NO. 238 OF 2022 - MUDZO KUHENDERWA NZILI VS. KENYA NATIONAL UNION OF TEACHERS',
+		},
+		{
+			code: 'KNU1.62',
+			description:
+				'ELRC CAUSE NO. E228 OF2023.- CLEMENT GICHARU GITAU VS. KENYA NATIONAL UNION OF TEACHERS',
+		},
+		{
+			code: 'KNU1.62/001',
+			description:
+				'E&LRC CAUSE NO. E229 OF 2023 - CLEMENT GICHARA GITAU VS. KNUT - KIAMBU EAST BRANCH',
+		},
+		{
+			code: 'KNU1.63',
+			description: 'NIXON ODHIAMBO NGUTU VS. KENYA NATIONAL UNION OF TEACHERS',
+		},
+		{
+			code: 'KNU1.64',
+			description: 'JOHN MACHARIA MWAURA VS. KENYA NATIONAL UNION OF TEACHERS',
+		},
+		{
+			code: 'KNU1.7',
+			description:
+				'KENYA NATIONAL UNION OF TEACHERS (KNUT) VS LUCIE MILDRED AKINYI: CASE 647 OF 2011',
+		},
+		{
+			code: 'KNU1.8',
+			description:
+				'KENYA NATIONAL UNION OF TEACHERS (KNUT) -VS- GEORGE WESONGA OJWANG: INDUSTRIAL CAUSE NO. 282 OF 2012',
+		},
+		{
+			code: 'KNU1.9',
+			description:
+				'TEACHERS SERVICE COMMISSION VS KENYA NATIONAL UNION OF TEACHERS (KNUT): PETITION NO. 23 OF 2013',
+		},
+		{
+			code: 'KOA1.1',
+			description:
+				'KOTOS APARTMENTS SALE OF BLOCK B, UNIT 3 ON L.R NO 209/9683 (MARY WALINGO)',
+		},
+		{
+			code: 'KOD1.1',
+			description:
+				'PURCHASE OF APARTMENT NO. SA7 ON LR.NO.MN/1/13875 STONE DEVELOPERS LTD. DORCAS ATIENO KODADA',
+		},
+		{
+			code: 'KOI1.1',
+			description: 'KENYA ORIENT INSURANCE VS ORARO & CO. (H',
+		},
+		{
+			code: 'KOK1.1',
+			description: 'JOSEPH OMONDI KOKO  - SALE OF HOUSE A12  ON L.R 12715/617',
+		},
+		{
+			code: 'KOL1.1',
+			description: 'KENYA OATMEAL LTD',
+		},
+		{
+			code: 'KOL2.1',
+			description: 'NATASHA KOLI & 4 OTHERS VS. JASCH HOLDINGS LIMITED.',
+		},
+		{
+			code: 'KOM1.1',
+			description: 'CMCC No 7536 OF 2012 FOTON EAST AFRICA LTD',
+		},
+		{
+			code: 'KOO1.1',
+			description: 'APPLICATION FOR DEVELOPEMENT ON PLOT NO. 1017 SECTION XXVI/MI',
+		},
+		{
+			code: 'KOO1.2',
+			description:
+				'CMCC NO. E088 OF 2021 - HAROLD R. FENWICK & ASSOCIATES LTD VS KOOBA KENYA LIMITED.',
+		},
+		{
+			code: 'KOU1.1',
+			description: 'JASWINDER KAUR KOUNDU',
+		},
+		{
+			code: 'KPC1.1',
+			description:
+				'KAKAMEGA PAPER CONVERTERS VS MOHANLAL ARORA & 4 OTHERS: HCCC NO. 91 OF 2011 KKG',
+		},
+		{
+			code: 'KPC1.2',
+			description:
+				'CIVIL APPEAL NO.98 OF 2018:KAKAMEGA PAPER CONVERTERS LIMITED AND MOHANLAL ARORO,SULSHILA MOHANLAL ARORA,BANK OF BARODA (KENYA) LIMITED',
+		},
+		{
+			code: 'KPC2.1',
+			description:
+				'IN THE MATTER OF THE ARBITRATION BETWEEN VICTORIA FURNITURES LIMITED (through DONWOODS COMPANY LIMITED) AND KENYA PIPELINE COMPANY LIMITED.',
+		},
+		{
+			code: 'KPE1.1',
+			description:
+				'KAPITI PLAINS ESTATE LTD -VS- MACHAKOS COUNTY GOVERNMENT: HCCC NO. 40 OF 2015 (MKS)',
+		},
+		{
+			code: 'KPE1.10',
+			description:
+				'CMCC APP. NO. 34 OF 2019: JULIUS MUTIE MUTUA & 2 OTHERS (Suing on behalf of Kwa Mbau Society) ',
+		},
+		{
+			code: 'KPE1.11',
+			description:
+				'ELC PETITION NO.180 OF 2018 – MACHAKOS: PAUL NZEI & OTHERS VS. THE KAPITI PLAINS ESTATE LIMITED',
+		},
+		{
+			code: 'KPE1.12',
+			description:
+				'MKS ELC CASE NO.58 OF 2021 - TITO MUEKE & OTHERS VS. KAPITI PLAINS ESTATE LIMITED.',
+		},
+		{
+			code: 'KPE1.13',
+			description:
+				'MILIMANI CRIMINAL CAUSE NO. MCCR/45/2019: REPUBLIC -VS- MUTHIANI MWANGANGI AND EVERLINE MBITHE - (KAPITI PLAINS ESTATE LTD)',
+		},
+		{
+			code: 'KPE1.2',
+			description: 'DEBT COLLECTION',
+		},
+		{
+			code: 'KPE1.3',
+			description: 'KAPITI PLAINS ESTATE LIMITED-L.R. NO. 7374/4',
+		},
+		{
+			code: 'KPE1.4',
+			description:
+				'H.C. ELC NO. 52 OF 2017: NEW KONZA RANCH ASSOCIATION -VS- KAPITI PLAINS ESTATE LIMITED',
+		},
+		{
+			code: 'KPE1.5',
+			description:
+				'SPMCC ELC SUIT NO.19 OF 2018:KIMUTWA WELFARE ASSOCIATION-VS-KAPITI PLAINS ESTATE LIMITED & ANOTHER',
+		},
+		{
+			code: 'KPE1.6',
+			description:
+				'ELC SUIT NO.24 OF 2018:KIMUTWA WELFARE ASSOCIATION-VS-KAPITI PLAINS ESTATE LIMITED & ANOTHER',
+		},
+		{
+			code: 'KPE1.7',
+			description:
+				'ELC SUIT NO. 235 OF 2018 KIMUTWA WELFARE ASSOCIATION VS. KAPITI PLAINS ESTATE LIMITED & ANOTHER',
+		},
+		{
+			code: 'KPE1.8',
+			description:
+				'TASKFORCE ON CURRENT STATUS OF OWNERSHIP OF LAND IN MAVOKO,MACHAKOS COUNTY AND INVASION BY SQUATTERS',
+		},
+		{
+			code: 'KPE1.9',
+			description:
+				'MACHAKOS ELC PETITION NO.10 OF 2019: HARRISON NGUI & OTHERS VS. THE HON. ATTORNEY GENERAL & OTHERS',
+		},
+		{
+			code: 'KPG1.1',
+			description:
+				'KENYA QUARRY & MINES WORKERS UNION VS KILIMA PESA GOLD (PYT) LTD: INDUSTRIAL CAUSE NO. 175 OF 2013 NKR)',
+		},
+		{
+			code: 'KPL1.1',
+			description:
+				'PETITION NO.392 OF 2018 OKIYA OMTATAH OKOITI & ANOR VS. KENYA POWER AND LIGHTING COMPANY LIMITED & 4 OTHERS',
+		},
+		{
+			code: 'KPL1.2',
+			description:
+				'J.R. APPLICATION NO.... OF 2020: KPLC VS. PUBLIC PROCUREMENT ADMINISTRATIVE REVIEW BOARD',
+		},
+		{
+			code: 'KPL2.1',
+			description:
+				'H.C. PETITION NO.EO72 OF 2021: KAKUZI PLC VS. KENYA HUMAN RIGHTS COMMISSION (KHRC) & ANOTHER',
+		},
+		{
+			code: 'KPW1.1',
+			description: 'POTENTIAL EMPLOYMENT DISPUTE-MS.ADRIANA JOY LANGAT',
+		},
+		{
+			code: 'KQD1.1',
+			description: 'KENYA AIRWAYS FRAUD INVESTIGATION',
+		},
+		{
+			code: 'KQL1.1',
+			description: 'GENERAL FILE',
+		},
+		{
+			code: 'KQL1.10',
+			description:
+				'KENYA AIRWAYS LTD & OTHERS -VS- AVIATION & ALLIED WORKERS UNION KENYA: INDUSTRIAL CAUSE NO. 1616 OF 2012',
+		},
+		{
+			code: 'KQL1.11',
+			description:
+				'JUSTUS MUHATI IHAJI -VS- KENYA AIRWAYS LTD: INDUSTRIAL CAUSE NO. 1369 OF 2012',
+		},
+		{
+			code: 'KQL1.12',
+			description:
+				'KENYA AIRWAYS LTD & OTHERS -VS- AVIATION & ALLIED WORKERS UNION KENYA: INDUSTRIAL CAUSE NO. 2088 OF 2012',
+		},
+		{
+			code: 'KQL1.14',
+			description:
+				'WYCLIFF OTIENO OCHILLO VS KENYA AIRWAYS LTD: INDUSTRIAL CAUSE NO. 178 OF 2012',
+		},
+		{
+			code: 'KQL1.15',
+			description:
+				'PATRICK KILEMBI MUSEMBI -VS- KENYA AIRWAYS LTD LIMITED: EL&RC CAUSE NO. 432 OF 2013',
+		},
+		{
+			code: 'KQL1.17',
+			description: 'KENYA AIRWAYS LTD -VS- HOWARD ANDREW NYERERE: S/NC 3882',
+		},
+		{
+			code: 'KQL1.18',
+			description: 'AVIATION & ALLIED WORKERS UNION KENYA VS KENYA AIRWAYS LTD',
+		},
+		{
+			code: 'KQL1.19',
+			description: 'AVIATION & ALLIED WORKERS UNION KENYA VS KENYA AIRWAYS LTD LTD',
+		},
+		{
+			code: 'KQL1.23',
+			description: 'HC PETITION NO. 411 OF 2014 NRB',
+		},
+		{
+			code: 'KQL1.25',
+			description: 'ELRC NO. 1184 OF 2013 AMOS OTIENO ONYANGO',
+		},
+		{
+			code: 'KQL1.26',
+			description: 'AVIATION & ALLIED WORKERS VS KENYA AIRWAYS',
+		},
+		{
+			code: 'KQL1.27',
+			description: 'HCCC NO. 221 OF 2010 FRANKLINE LUSEGA KIDULA VS KENYA AIRWAYS',
+		},
+		{
+			code: 'KQL1.29',
+			description: 'KENYA AIRWAYS VS DONALD OSEWE OLUOCH',
+		},
+		{
+			code: 'KQL1.30',
+			description: 'INDUSTRIAL COURT CAUSE NO. 1247 OF 2011 JULIUS WERE VS KENYA AIRWAYS',
+		},
+		{
+			code: 'KQL1.32',
+			description: 'CAPTAIN JEFFREY KIPKOECH KEDUIWA ELRC NO. 2089/2011',
+		},
+		{
+			code: 'KQL1.33',
+			description: 'CMCC NO. 7033 OF 2009 KENYA AIRWAYS -VS. GEORGE NGUMO NJAMA',
+		},
+		{
+			code: 'KQL1.34',
+			description:
+				'ELC CASE NO. E282 OF 2021: AFRICAN EXPRESS AIRWAYS (KENYA) LIMITED -VS- KENYA AIRWAYS PLC.',
+		},
+		{
+			code: 'KQL1.35',
+			description: 'CONTRACTUAL DISPUTE WITH AERO INDUSTRIAL SALES',
+		},
+		{
+			code: 'KQL1.36',
+			description:
+				'ELCC EO61 OF 2023: AFRICAN AIRLINES INTERNATIONAL LTD .VS. KENYA AIRWAYS PLC',
+		},
+		{
+			code: 'KQL1.37',
+			description:
+				'E&LC CASE NO. 14 OF 2023: SEVEN FOUR EIGHT AIR SERVICES (K) LIMITED -VS- KENYA AIRWAYS PLC',
+		},
+		{
+			code: 'KQL1.38',
+			description:
+				'EKC CASE NO. E039 OF 2023: SEVEN FOUR EIGHT AIR SERVICES (K) LIMITED .VS. KENYA AIRWAYS PLC',
+		},
+		{
+			code: 'KQL1.5',
+			description: 'KENYA AIRWAYS LTD VS GIBSON WARURU: CAUSE NO. 208 O0F 2012',
+		},
+		{
+			code: 'KQL1.6',
+			description: 'REPUBLIC VS KENYA AIRWAYS LTD',
+		},
+		{
+			code: 'KQL1.7',
+			description:
+				'KENYA AIRWAYS LTD VS FRANCIS WAKHU SHIUNZI: INDUSTRIAL CAUSE NO. 95 OF 2012',
+		},
+		{
+			code: 'KQL1.8',
+			description:
+				'KENYA AIRWAYS LTD & OTHERS -VS- AVIATION & ALLIED WORKERS UNION KENYA: INDUSTRIAL CAUSE NO. 1360 OF 2012',
+		},
+		{
+			code: 'KQL1.9',
+			description:
+				'AVIATION & AIRPORT SERVICE WORKERS UNION VS KENYA AIRWAYS LTD: INDUSTRIAL CAUSE NO. 1530 OF 2012',
+		},
+		{
+			code: 'KRA1.1',
+			description: 'REPUBLIC VS KRA AND OTHERS EXPARTE-MASTERMIND TOBACCO LTD',
+		},
+		{
+			code: 'KRA1.2',
+			description:
+				'CIVIL APPEAL NO. 44 OF 2013 MASTERMIND TOBACCO (K) LTD VS COMMISSIONER OF DOMESTIC TAXES & 2 OTHERS',
+		},
+		{
+			code: 'KRC1.1',
+			description: 'DANIEL G NDIANGUI',
+		},
+		{
+			code: 'KRC1.2',
+			description:
+				'ELC NO. 1789 OF 2015 GEORGE OCHIENG ODODA & OTHERS VS. KENYA RAILWAYS CORPORATION & ANOR',
+		},
+		{
+			code: 'KRC2.1',
+			description:
+				'KENYA RAILWAYS CORPORATION -VS- CATHERINE GAKE NYAMWEYA: HCCC NO. 168 OF 2004',
+		},
+		{
+			code: 'KRC2.10',
+			description: 'CMCC NO. 4623 OF 2004: PATRICK MWANGI MBUGUA VS BUSTRACK LTD & KRC',
+		},
+		{
+			code: 'KRC2.11',
+			description: 'PMCC NO. 5080 OF 2004: ROSE NTHENYA MUTUKU VS KENYA RAILWAYS CORPORATION',
+		},
+		{
+			code: 'KRC2.12',
+			description: 'RMCC NO. 4618 OF 2004: NANCY WANJIKU VS BUSTRACK & KRC',
+		},
+		{
+			code: 'KRC2.13',
+			description: 'CMCC NO. 4269 OF 2004: JAMES IBARA NGARI VS KENYA RAILWAYS CORPORATION',
+		},
+		{
+			code: 'KRC2.14',
+			description: 'CMCC NO. 4622 OF 2004: EDITH WANDIA GATHATWA VS BUSTRACK LTD & KRC',
+		},
+		{
+			code: 'KRC2.15',
+			description: 'NAKURU CMCC NO. 4637 OF 2002 THOMAS M. MBULA VS KRC',
+		},
+		{
+			code: 'KRC2.16',
+			description:
+				'MISC APP. NO. 412 OF 2004 (OS) ARISTOCRATS ARBITARTION BETWEEN CONCRETE CO. LTD  VS KENYA RAILWAYS',
+		},
+		{
+			code: 'KRC2.17',
+			description: 'CMCC NO. 7029 OF 2002: FRANCIS NDIRANGU VS BUSTRACK LTD & KRC',
+		},
+		{
+			code: 'KRC2.18',
+			description:
+				'CIVIL APPEAL APPN NO. 62/2015 ROSE WANGUI KARUGA VS KENYA RAILWAYS CORPORATION',
+		},
+		{
+			code: 'KRC2.19',
+			description: 'NAKURU HCCC NO. 397/1998 GEORGE OCHIENG ODODA & OTHERS VS KRC',
+		},
+		{
+			code: 'KRC2.2',
+			description:
+				'KENYA RAILWAYS CORPORATION LTD VS HILLSIDE ESTATE LTD: HCCC NO 281 OF 2004',
+		},
+		{
+			code: 'KRC2.20',
+			description: 'HCCC NO. 1367/2005 JUMA IBRAHIM VS KENYA RAILWAYS CORPORATION',
+		},
+		{
+			code: 'KRC2.21',
+			description: 'KENYA RAILWAYS GOLF CLUB VS KENYA RAILWAYS CORPORATION',
+		},
+		{
+			code: 'KRC2.22',
+			description:
+				'CIVIL APPEAL NO. 544 OF 2008 - MWEMA MWANGI VS KENYA RAILWAYS CORPORATION',
+		},
+		{
+			code: 'KRC2.23',
+			description:
+				'KRC - CMCC NO. 5109 OF 2003: YUANITA MARY AWINO AGUNDE T/A HIPPO POINT RESTAURANT -VS- KENYA RAILWAYS CORPORATION',
+		},
+		{
+			code: 'KRC2.24',
+			description: 'KRC - HCCC NO. 1351 OF 2004: ROKEN LTD VS KENYA RAILWAYS CORPORATION',
+		},
+		{
+			code: 'KRC2.25',
+			description: 'KRC - C.M. CRI NO. 151 OF 2006: REPUBLIC -VS- KENYA RAILWAYS CORPORATION',
+		},
+		{
+			code: 'KRC2.26',
+			description:
+				'KRC - MISC APP NNO. 397 OF 2002: TADCOM SERVICES -VS- KENYA RAILWAYS CORPORATION',
+		},
+		{
+			code: 'KRC2.27',
+			description:
+				'KRC - CMCC NO. 11698 OF 2005: RICHMOND GATU MUREITHI T/A SINTMOND TECHNICAL SERVICES -VS- KENYA RAILWAYS CORPORATION',
+		},
+		{
+			code: 'KRC2.28',
+			description:
+				'KRC - MISC CIVIL APPL NO. 200 OF 2003: MEEREKA & COMPANY ADVOCATES -VS- KENYA RAILWAYS CORPORATION',
+		},
+		{
+			code: 'KRC2.29',
+			description:
+				'KRC - CMCC NO. 8357 OF 2002: CALTEX OIL (K) LIMITED -VS- KENYA RAILWAYS CORPORATION',
+		},
+		{
+			code: 'KRC2.3',
+			description:
+				'BENSON AMIMO OWIYO BUNDE -VS- KENYA RAILWAYS CORPORATION/BUS TRACK LTD: RMCC 10216 OF 2004',
+		},
+		{
+			code: 'KRC2.30',
+			description:
+				'KRC - ELRC CAUSE NO. 803 OF 2013: THOMAS NGUTI & OTHERS -VS- KENYA RAILWAYS CORPORATION',
+		},
+		{
+			code: 'KRC2.31',
+			description:
+				'KRC - HCCC NO. 2191 OF 2007: LOKI DEVELOPERS LTD -VS- KENYA RAILWAYS CORPORATION',
+		},
+		{
+			code: 'KRC2.32',
+			description: 'GENERAL FILE - KENYA RAILWAYS CORPORATION',
+		},
+		{
+			code: 'KRC2.33',
+			description:
+				'ELRC CAUSE NO. 1625 OF 2017: RIFT VALLEY RAILWAYS WORKERS UNION (K) VS KENYA RAILWAYS CORPORATION & 2 OTHERS',
+		},
+		{
+			code: 'KRC2.34',
+			description:
+				'ELRC CAUSE NO. 783 OF 2017: RIFT VALLEY RAILWAYS WORKERS UNION (K) VS KENYA RAILWAYS CORPORATION & ANOTHER',
+		},
+		{
+			code: 'KRC2.35',
+			description:
+				'MISC APPLN NO.197 OF 2017 :RIFT VALLEY RAILWAYS WORKERS UNION (K) VS.KENYA RAILWAYS CORPORATION & 2 OTHERS',
+		},
+		{
+			code: 'KRC2.36',
+			description:
+				'HCCC NO.1419 OF 2000:MEREKA & COMPANY ADVOCATES VS.KENYA RAILWAYS CORPORATION',
+		},
+		{
+			code: 'KRC2.37',
+			description:
+				'MISC CIVIL APPLN.964 OF 2002:MEREKA & COMPANY ADVOCATES VS.KENYA RAILWAYS CORPORATION',
+		},
+		{
+			code: 'KRC2.38',
+			description:
+				'CMCC NO.8576 OF 2003:HOSEA MUYULA ARUNGA T/A WEATHER PRINTERS AND STATIONERS VS.KENYA RAILWAYS CORPORATION',
+		},
+		{
+			code: 'KRC2.39',
+			description:
+				'CMCC NO.11449 OF 2015:PHYLIS NETONDO WABUKE VS.KENYA RAILWAYS CORPORATION',
+		},
+		{
+			code: 'KRC2.4',
+			description:
+				'KENYA RAILWAYS CORPORATION LTD VS PHILIP JASPER WISHAMINYA: HCC 564 OF 2009',
+		},
+		{
+			code: 'KRC2.40',
+			description:
+				'SRMCC NO .153 OF 2004:MBISIMUTUA (SUING THROUGH MUTAMUNDU) VS.KENYA RAILWAYS CORPORATION',
+		},
+		{
+			code: 'KRC2.41',
+			description: 'HCCC NO.2760 OF 1996:PAUL MBATIA VS.KENYA RAILWAYS CORPORATION',
+		},
+		{
+			code: 'KRC2.42',
+			description: 'BPRT NO.144 OF 2002:JOSEPH NJUGUNA VS.KENYA RAILWAYS CORPORATION',
+		},
+		{
+			code: 'KRC2.43',
+			description: 'GENERAL FILE',
+		},
+		{
+			code: 'KRC2.44',
+			description:
+				'NAIROBI ELRC CAUSE NO.120 OF 2016:RIFT VALLEY RAILWAYS WORKERS UNION (K)-VS-KENYA RAILWAYS CORPORATION  & OTHERS',
+		},
+		{
+			code: 'KRC2.45',
+			description:
+				'HCCC NO.191 OF 2001:JAMES WAWERU & OTHERS-VS-KENYA RAILWAYS CORPORATION LTD & OTHERS',
+		},
+		{
+			code: 'KRC2.46',
+			description: 'CIVIL APPEAL NO.683 OF 2006:GITHAIGA-VS-KENYA RAILWAYS CORPORATION',
+		},
+		{
+			code: 'KRC2.47',
+			description:
+				'ELC NO.1789 OF 2015:GEORGE OCHIENG ODODA & OTHERS -VS-KENYA RAILWAYS CORPORATION & ANOTHER',
+		},
+		{
+			code: 'KRC2.48',
+			description:
+				'ELRC NO. 1789 OF 2015 GEORGE OCHIENG ODODA & OTHERS VS. KENYA RAILWAYS CORPORATION & ANOR',
+		},
+		{
+			code: 'KRC2.49',
+			description:
+				'ELC NO. 294 OF 2019 IN THE MATTER OF MWANGI KAMAU & ANOR VS. KENYA RAILWAYS CORPORATION & ANOR.',
+		},
+		{
+			code: 'KRC2.50',
+			description: 'ELC NO.342 OF 2019: YOUTH LTD VS. KENYA RAILWAYS & 4 OTHERS',
+		},
+		{
+			code: 'KRC2.51',
+			description:
+				'HCCC NO.E275 OF 2020: SOUTHERN ENGINEERING COMPANY LTD VS. KENYA RAILWAYS CORPORATION & ANOTHER',
+		},
+		{
+			code: 'KRC2.52',
+			description:
+				'MILIMANI ELRC MISC. NO. EO32 OF 2020 RIFT VALLEY RAILWAYS WORKERS UNION (K) .vs. KENYA RAILWAYS & 2 OTHERS ',
+		},
+		{
+			code: 'KRC2.53',
+			description:
+				'MILIMANI ELRC MISC. NO. E151 OF 2020 PATPLEX SOLUTIONS LIMITED & 7 OTHERS .vs. KENYA RAILWAYS & 3 OTHERS ',
+		},
+		{
+			code: 'KRC2.54',
+			description:
+				'MILIMANI ELRC MISC NO.E032 OF 2020 – RIFT VALLEY RAILWAYS WORKERS UNION (K) – VS. KENYA RAILWAYS STAFF RETIREMENT BENEFITS SCHEME & 2 OTHERS',
+		},
+		{
+			code: 'KRC2.55',
+			description:
+				'NAIROBI CA, CIVIL APPLICATION  NO. 149 OF 2020 RIFT VALLEY RAILWAY WORKERS UNION .VS. KENYA RAILWAYS CORPORATION & 6 OTHERS ',
+		},
+		{
+			code: 'KRC2.56',
+			description:
+				'NAIROBI HC PETITION E. 336 OF 2020 BENSON MAKORI MAKWORO .VS. KENYA RAILWAYS CORPORATION & 2 OTHERS',
+		},
+		{
+			code: 'KRC2.57',
+			description:
+				'ELC SUIT NO. 244 OF 2020; RIFT VALLEY RAILWAYS WORKERS UNION(K) -VS-  KENYA RAILWAYS CORPORATION & 5 OTHERS',
+		},
+		{
+			code: 'KRC2.58',
+			description:
+				'HCCC NO.077 OF 2001: EPHANTUS MUCHERU MWANGI VS. KENYA RAILWAYS CORPORATION & ANOTHER.',
+		},
+		{
+			code: 'KRC2.59',
+			description:
+				'NRB CMCC NO. 2327 OF 2002: PHILEMON OTIENO ONDORO & ANOTHER VS. KENYA RAILWAYS CORPORATION & ANOTHER',
+		},
+		{
+			code: 'KRC2.6',
+			description:
+				'EDWARD NGINYI STEPHENSON VS KENYA RAILWAYS CORPORATION: INDUSTRIAL COURT PET. NO. 18 OF 2013',
+		},
+		{
+			code: 'KRC2.60',
+			description:
+				'ELC NO. E064 OF 2021: ARTS 680 LIMITED VS. THE KENYA RAILWAYS CORPORATION LIMITED & 3 OTHERS',
+		},
+		{
+			code: 'KRC2.61',
+			description:
+				'NAIROBI RMCC NO. 7680 OF 2006: THE AFRICAN HIGHLAND PRODUCE CO. LTD VS. KENYA RAILWAYS CORPORATION',
+		},
+		{
+			code: 'KRC2.62',
+			description:
+				'KISUMU ELC PETITION NO. 020 OF 2021:SOLOMON MUSA & ANO. VS- KENYA RAILWAYS CORPORATION & 2 OTHERS',
+		},
+		{
+			code: 'KRC2.63',
+			description:
+				'KISUMU HCCC NO.E009 OF2022: VENTRA LOCOMOTIVES VS. KENYA RAILWAYS CORPORATION',
+		},
+		{
+			code: 'KRC2.64',
+			description:
+				'NRB ELRC NO.565 OF 2015: VIOLET YAKAMA KEIZA VS. RIFT VALLEY RAILWYS (K) LTD & ANOTHER',
+		},
+		{
+			code: 'KRC2.65',
+			description: 'NAIROBI ELC NO.E392 OF 2022: YOUTH LIMITED VS.KENYA RAILWAYS CORPORATION',
+		},
+		{
+			code: 'KRC2.7',
+			description:
+				'RIFT VALLEY RAILWAYS WORKERS UNION -VS- KENYA RAILWAYS STAFF RETIREMENT BENEFITS SCHEME & 6 OTHERS: ELR & C CAUSE NO 2289 OF 2015',
+		},
+		{
+			code: 'KRC2.8',
+			description:
+				'HCCC NO. 88 OF 2010 NAIROBI: ALEXANDER MUNGAI MAINA VS KENYA RAILWAYS CORPORATION LTD',
+		},
+		{
+			code: 'KRC2.9',
+			description: 'HCCC NO. 456 OF 2004: KENYA BUS SERVICES VS KENYA RAILWAYS CORPORATION',
+		},
+		{
+			code: 'KRC4.1',
+			description:
+				'PETITION NO.1 OF 2019 HON. GEOFFREY KIPNGETICH KORIR  AND KENYA RED CROSS ELECTION COMMITTEE.',
+		},
+		{
+			code: 'KRE1.1',
+			description: 'K-REP BANK LTD VS JAMES MWANGI NDWIGA',
+		},
+		{
+			code: 'KRE1.10',
+			description: 'CIVIL CASE NO. 397/2006 ANDREW MATINDI NYAMU',
+		},
+		{
+			code: 'KRE1.2',
+			description:
+				'CHRISTOPHER MELLY KIPKOECH -VS- K-REP BANK LTD: INDUSTRIAL CAUSE NO. 1708 OF 2012',
+		},
+		{
+			code: 'KRE1.3',
+			description: 'THE K-REP GROUP',
+		},
+		{
+			code: 'KRE1.4',
+			description: 'K-REP BANK LTD: CRIMINAL CASE NO. 225/289 OF 2013',
+		},
+		{
+			code: 'KRE1.5',
+			description: 'K-Rep Bank Ltd v George O. R',
+		},
+		{
+			code: 'KRE1.6',
+			description: 'CHRISTOPHER MELLY KIPKOECH',
+		},
+		{
+			code: 'KRE1.7',
+			description: 'K-Rep Gen',
+		},
+		{
+			code: 'KRE2.1',
+			description: "KREP BANK LIMITED-Gerald Otieno K'Opiyo 4",
+		},
+		{
+			code: 'KRL1.1',
+			description: 'KRAMAR ELECCTRONICS LTD OPINION',
+		},
+		{
+			code: 'KRL2.1',
+			description: 'KEDONG RANCH LIMITED',
+		},
+		{
+			code: 'KRS1.1',
+			description: 'KENT RO SYSTEMS LTD VS SUPERIOR PRINTER LTD',
+		},
+		{
+			code: 'KRS1.2',
+			description: 'TRADE MARK REGISTRATION.',
+		},
+		{
+			code: 'KSA1.1',
+			description:
+				'KAPLAN & STRATTON ADVOCATES VS DIRECTOR OF PUBLIC PROSECUTIONS & BANKING & FRAUD INVESTIGATION UNIT',
+		},
+		{
+			code: 'KSA1.2',
+			description:
+				'CIVIL CASE NO. 16 OF 2017 - KAPLAN & STRATTON ADVOCATES VS BRIAN WASUNA & 2 OTHERS',
+		},
+		{
+			code: 'KSA1.3',
+			description:
+				'HCCC NO.E205 OF 2020: KAPLAN & STRATTON ADVOCATES VS. HON Amb.ROBINSON NJERU GITHAE & ANOTHER',
+		},
+		{
+			code: 'KSA2.1',
+			description: 'STEPHEN ALLAN KISAKYE',
+		},
+		{
+			code: 'KSL1.1',
+			description:
+				'KENYA SHELL LTD VS HAMILTON HARRISON & MATHEWS/KOBIL PETROLEUM LTD: HCC APPL. NO. NAI 57 OF 2006',
+		},
+		{
+			code: 'KSL1.2',
+			description: 'KENYA SHELL LTD -VS- KRA',
+		},
+		{
+			code: 'KST1.1',
+			description:
+				'DEBT RECOVERY: KSHS. 56M OWED BY ARJUN RUZAIK & SUNITA RUZAIK TO THE ESTATE OF THE LATE VIJAY KUMAR RATILAL SHAH',
+		},
+		{
+			code: 'KTN1.1',
+			description: 'Baraza Ltd t/a  Kenya Tel Network - Christopher N Murungaru',
+		},
+		{
+			code: 'KTN1.2',
+			description:
+				'CIVIL SUIT NO.39 OF 2012:WANJUKI MUCHEMI.VS.KENYA TELIVISION NETWORK AND BARAZA LIMITED',
+		},
+		{
+			code: 'KUA1.1',
+			description: 'KENYA UNION OF COURIER & ALLIED WORKERS',
+		},
+		{
+			code: 'KUB1.1',
+			description:
+				'KURBAN BHALOO & ANOTHER -VS- SHASHIKANT VITHALDAS BADIAN & ANOTHER: HCCC NO. 204 OF 2009',
+		},
+		{
+			code: 'KUN2.1',
+			description:
+				'KENYATTA UNIVERSITY STAFF RETIREMENT BENEFITS SCHEME VS ATHI WATER SERVICE BOARD (AWSB)',
+		},
+		{
+			code: 'KUN2.2',
+			description: 'PAYMENT OF BALANCES OF RETIREMENT BENEFITS TO SIMON W. CHEGE',
+		},
+		{
+			code: 'KUR1.1',
+			description:
+				'ABRAHAM KURUNGA: PURCHASE OF PROPERTY - TOWNHOUSE NO. 22 ON L.R. NO. 12715/29',
+		},
+		{
+			code: 'KUR2.1',
+			description: 'INVESTIGATIONS INTO THE DEATH OF ARSHAD SHERIF MOHAMMED.',
+		},
+		{
+			code: 'KVL1.1',
+			description: 'INSTALLATION OF SAFARICOM MAST',
+		},
+		{
+			code: 'KWA2.1',
+			description: 'REPUBLIC CRIMINAL CASE NO. 1545 OF 2010',
+		},
+		{
+			code: 'KWA3.1',
+			description:
+				'SALE OF CMS HOUSE UNIT 7-B1, 7TH FLOOR ON L.R. NO. 1/850, NAIROBI - MATUMAINI PROPCO LIMITED TO ERASTUS AND AGNES KWAKA',
+		},
+		{
+			code: 'KWA4.1',
+			description: 'DIVORCE PROCEEDINGS.',
+		},
+		{
+			code: 'KWA5.1',
+			description:
+				'PURCHASE OF CMS AFRICA HOUSE, UNIT G-1, GROUND FLOOR, L.R. NO.1/850, NAIROBI.',
+		},
+		{
+			code: 'KWH1.1',
+			description: 'KILINDINI WARE HOUSE (K) LTD',
+		},
+		{
+			code: 'KWH1.2',
+			description:
+				'CIVIL APPEAL NO.23 OF 2018 - JOSEPH SOMBO & OTHERS VS. NYARI INVESTMENTS & OTHERS.',
+		},
+		{
+			code: 'LAF1.1',
+			description:
+				'LORDSHIP AFRICA FUND MANAGEMENT LIMITED VS COMMISSIONER OF INVESTIGATIONS & ENFORCEMENT',
+		},
+		{
+			code: 'LAF1.2',
+			description: 'WENDY MUCHIRU VS LORDSHIP AFRICA FUND MANAGEMENT LIMITED',
+		},
+		{
+			code: 'LAF1.3',
+			description: 'FRANCIS NGUNJIRI KUNINA VS LORDSHIP AFRICA FUND MANAGEMENT LIMITED',
+		},
+		{
+			code: 'LAL2.1',
+			description: 'SULTAN HASHAN LALJI',
+		},
+		{
+			code: 'LAL3.1',
+			description:
+				'LEGAL OPINION ON JOINT VENTURE BETWEEN NAIROBI CITY COUNTY AND LORDSHIP AFRICA FOR THE RE-DEVELOPMENT OF NGONG ROAD ESTATE',
+		},
+		{
+			code: 'LAL3.2',
+			description: 'LORDSHIP AFRICA MANAGEMENT LIMITED VS NATIONAL CITY COUNCIL',
+		},
+		{
+			code: 'LAL3.3',
+			description: 'SCOPE DESIGNS SYSTEMS VS LORDSHIP AFRICA LIMITED',
+		},
+		{
+			code: 'LAL3.4',
+			description: 'JOHN MUTAHI KIRUTHU & JONATHAN JACKSON',
+		},
+		{
+			code: 'LAL4.1',
+			description: 'Provision of Legal Services in Relation to an Asset Lease Agreement',
+		},
+		{
+			code: 'LAM1.1',
+			description: 'Provision of legal services',
+		},
+		{
+			code: 'LAM1.2',
+			description: 'ADVISING ON THE OPTIONS FOR A FOREIGN WORKER TO LEGALLY WORK IN KENYA.',
+		},
+		{
+			code: 'LAN1.1',
+			description:
+				'SAMUEL CHERUYIOT LANGAT -VS- HON. BWATRICE KONES & 3 OTHERS: HCCC NO 79 OF 2010 (KERICHO)',
+		},
+		{
+			code: 'LCL1.1',
+			description:
+				'CAUSE NO. 340 OF 2014 KENYA CONCRETE STRUCTURAL CERAMIC TILES WOOD & ANOR VS LAXMANBHAI CONSTRUCTION LIMITED & OTHERS',
+		},
+		{
+			code: 'LCL1.2',
+			description: 'DEMAND FOR NSSF PAYMENTS',
+		},
+		{
+			code: 'LCP1.1',
+			description: 'INVESTMENT',
+		},
+		{
+			code: 'LDA1.1',
+			description: 'ADVISORY (EMPLOYMENT) LEIGH DAY',
+		},
+		{
+			code: 'LES1.1',
+			description:
+				'MATRIMONIAL CAUSE NO. 60 OF 2018 JANE SILANTOI LETEIPEN VS. JOSEPH KIPLAGAT LESIEW.',
+		},
+		{
+			code: 'LEY1.1',
+			description: 'DANIELE LEYMARIE -VS- JAPHETH MWANIKI GITUKU',
+		},
+		{
+			code: 'LGE1.1',
+			description: 'L.G ELECTRONICS',
+		},
+		{
+			code: 'LGE2.1',
+			description: 'LG ELECTRONICS LOGISTICS FZE -VS- CHARLES KIMARI: HCCC NO. 346 OF 2012',
+		},
+		{
+			code: 'LIG1.1',
+			description: 'DISPUTE ON OUTSTANDING PAYMENT BY STELLAR BUILDERS LIMITED',
+		},
+		{
+			code: 'LIL1.1',
+			description:
+				'LEXIS INVESTMENTS LTD - KENYA CREDIT TRADERS LTD: BPRT CASE NO. 29 OF 2007 (KISUMU)',
+		},
+		{
+			code: 'LIL1.4',
+			description:
+				'LEO INVESTMENTS LTD- THE BUSINESS PREMISES RENT TRIBUNAL & BEATRICE CHOMBA & RAPHAEL CHOMBA: HC MISC. CIV. APPL. NO 102 OF 2015',
+		},
+		{
+			code: 'LIL1.5',
+			description:
+				'LEO INVESTMENT LTD & OTHERS -VS- MAGMAN ENTERPRISES LTD: HCCC NO 94 OF 2015',
+		},
+		{
+			code: 'LIL1.6',
+			description:
+				'LEISURE LODGES LTD - Y.A SHRETTA - LEISURE LODGES LTD: HC MISC. CIV. APPL. NO. 288 OF 2014 (NBO)',
+		},
+		{
+			code: 'LIL1.7',
+			description: 'OPENING BALANCE TRUST 2015',
+		},
+		{
+			code: 'LIL2.1',
+			description: 'GIRO BANK BUILDING KISUMU',
+		},
+		{
+			code: 'LIL2.2',
+			description: 'ARBITRATION BETWEEN LEXIS INVESTMENTS LTD VS MT. KENYA UNIVERSITY',
+		},
+		{
+			code: 'LIL2.3',
+			description: 'LEXIS INVESTMENTS LIMITED VS UNIVERSITY OF NAIROBI',
+		},
+		{
+			code: 'LIL2.4',
+			description: 'GEORGE ORARO-CAPITAL REDUCTION',
+		},
+		{
+			code: 'LIL2.5',
+			description: 'NOMINATED MATTER-NCBA MONEY MARKET FUND',
+		},
+		{
+			code: 'LIN1.1',
+			description:
+				'CASE NUMBER SCCOMM/E435 OF 2023 - THIKA; GODFREY NGUGI KABIRU .VS. HAULTECH LIMITED & LINCOLN MUASYA MUTUA',
+		},
+		{
+			code: 'LMV1.1',
+			description: 'LEO MONTIS VENTURES V. PLAZA 500 HOTELS LIMITED & OTHERS',
+		},
+		{
+			code: 'LOK1.1',
+			description:
+				'REVIEW OF GRANT IN L.R. NO. 209/11152 BY NATIONAL LAND COMMISSION (OUTERING ROAD PROPERTY)',
+		},
+		{
+			code: 'LOK1.3',
+			description:
+				'NATIONAL LAND COMMISSION PROCEEDINGS IN RESPECT OF L.R. NO. 102661/1, ZAMBEZI-KIKUYU',
+		},
+		{
+			code: 'LOO1.1',
+			description: 'LENA ONCHWARI GENERAL FILE',
+		},
+		{
+			code: 'LPL1.1',
+			description: 'LATEMA PHARMACEUTICALS LIMITED',
+		},
+		{
+			code: 'LPL2.1',
+			description:
+				'LARKSPUR PROPERTIES LIMITED VS COMMISSIONER OF INVESTIGATIONS & ENFORCEMENT',
+		},
+		{
+			code: 'LPL2.2',
+			description: 'HASS CONSULT LIMITED VS LARKSPUR PROPERTIES LIMITED',
+		},
+		{
+			code: 'LPL2.3',
+			description: 'LEGAL OPINION ON DEVELOPMENT EIGHTY EIGHT (88) IN NAIROBI',
+		},
+		{
+			code: 'LPS1.1',
+			description: 'LIGHT PACK SERVICES LTD',
+		},
+		{
+			code: 'LPS2.1',
+			description:
+				'PURCHASE OF OFFICE SUITE NO. 4 ON 6TH FLOOR ON LR. NO. 209/11440; GREENRIFT CHALETS LIMITED BY LELA PRINTERS & STATIONERS LIMITED',
+		},
+		{
+			code: 'LRL1.1',
+			description:
+				'HC ITA E155 OF 2021 LE RUSTIQUE LIMITED .VS. COMMISSIONER OF DOMESTIC TAXES',
+		},
+		{
+			code: 'LRO1.1',
+			description: 'RENEE GENERAL FILE',
+		},
+		{
+			code: 'LSK1.1',
+			description: 'LAW SOCIETY OF KENYA',
+		},
+		{
+			code: 'LSK1.3',
+			description: "LAW SOCIETY OF KENYA -VS- FRANK OCJIENG' WALUKWE & ANOTHER",
+		},
+		{
+			code: 'LSK1.4',
+			description: 'APPEAL FOR REFUND OF VAT BY KRA',
+		},
+		{
+			code: 'LSK1.5',
+			description: 'TAX ADVICE ON TAX EXEMPTION STATUS',
+		},
+		{
+			code: 'LSK1.7',
+			description:
+				'CONSTITUTIONAL PETITION No.36 of 2018:JACQUELINE OKEYO MANANI & 5 OTHERS VS.THE ATTONEY GENERAL AND THE LAW SOCIETY OF KENYA',
+		},
+		{
+			code: 'LSK1.8',
+			description: 'FUND FOR WILLIE KIMANI ADVOCATE.',
+		},
+		{
+			code: 'LST1.1',
+			description: 'LS TELCOM SAS V KENYA BROADCASTING CORPORATION',
+		},
+		{
+			code: 'LUB0079.2',
+			description: 'POTENTIAL DEFAMATION SUIT',
+		},
+		{
+			code: 'LUB1.1',
+			description: 'SHADRECK LUBASI & RAEL LUBASI',
+		},
+		{
+			code: 'LUB3.1',
+			description:
+				'PURCHASE OF APARTMENT NO.D3,BLOCK D,LANTANA THOMPSON,ON L.R.NO.330/735,MASANDUKU LANE,THOMPSON ESTATE,NAIROBI',
+		},
+		{
+			code: 'LUM1.1',
+			description:
+				'ALLEGED CHARACTER ASSASSINATION AND DEFAMATION BY DR. MOHAN LUMBA ON 25TH JANUARY 2020 DURING THE GENERAL SABHA MEETING TOWARDS MR. SURESH SOFAT',
+		},
+		{
+			code: 'LUN1.1',
+			description: 'JOSEPH LUNANI -VS- ABRAHAM LANKEU',
+		},
+		{
+			code: 'LUV1.1',
+			description:
+				'MILIMANI CMCC NO.498 OF 2007: TOM S. LUVUGA VS. AFRICAN LINE TRANSPORT COMPANY LTD',
+		},
+		{
+			code: 'LYL1.1',
+			description: 'LYPALO LTD',
+		},
+		{
+			code: 'M101.1',
+			description: 'IN THE MATTER OF CONSULTANCY CHARGES',
+		},
+		{
+			code: 'MAB1.1',
+			description: 'EUNICE CHACHA & CHACHA MABANGA ',
+		},
+		{
+			code: 'MAC1.1',
+			description: 'ADOPTION',
+		},
+		{
+			code: 'MAC2.1',
+			description:
+				'PROF. KINUTHIA MACHARIA .VS. NAIROBI STAR PUBLICATIONS LIMITED & 3 OTHERS',
+		},
+		{
+			code: 'MAC3.1',
+			description: 'TERMINATION OF EMPLOYMENT',
+		},
+		{
+			code: 'MAD1.1',
+			description: 'PROBATE AND ADMINISTRATION ESTATE OF THE LATE RAMESH KUMAL MADAN',
+		},
+		{
+			code: 'MAG1.1',
+			description: 'JOSEPH ALEXANDER MAKORI MAGEMBE',
+		},
+		{
+			code: 'MAG2.1',
+			description: 'MATHEW NDAU KANYI T/A PANAMA ROVERS VS ALI ABDI SHEIKH',
+		},
+		{
+			code: 'MAG2.2',
+			description:
+				'MAGEREZA SAVINGS & CREDIT CO SOCIETY: AWARD OF TRIBUNAL - CASE NO 525 OF 2011',
+		},
+		{
+			code: 'MAG2.3',
+			description: 'DISMISSAL OF FORMER C.E.O.-MS.JANE WANGARI OMBONGI',
+		},
+		{
+			code: 'MAG2.4',
+			description:
+				'E&LRC CAUSE NO. 641 OF 2019 JANE WANGARI OMBONGI -VS- MAGEREZA SAVINGS AND CREDIT CO-OPERATIVE SOCIETY LTD.',
+		},
+		{
+			code: 'MAG2.5',
+			description:
+				'IN THE HIGH COURT OF KENYA AT NAIROBI, MILIMANI LAW COURTS CIVIL DIVISION, MISC CIVIL NO.225 OF 2020 ',
+		},
+		{
+			code: 'MAG2.6',
+			description:
+				'MISC CASE NO.E001 OF 2022 INNOCENT OOGA ABUYA VS B.O.D OF MAGEREZA SAVINGS AND CREDIT CO-OPERATIVE SOCIETY LIMITED.',
+		},
+		{
+			code: 'MAH1.1',
+			description: 'M A HASSAN & MS AHMED VS REPUBLIC: CASE NO. 3 OF 2014',
+		},
+		{
+			code: 'MAH2.1',
+			description: 'DISPUTE BETWEEN GERALD MAHINDA & KONZA SILICON COMPANY LIMITED',
+		},
+		{
+			code: 'MAI1.1',
+			description: 'CATHERINE MBITHE MAINGI -VS- MR SHAH: INDUSTRIAL CAUSE NO. 1609 OF 2012',
+		},
+		{
+			code: 'MAI2.1',
+			description: 'REPUBLIC VS JOHN MAINA: TR NO. 4418 OF 2012',
+		},
+		{
+			code: 'MAI3.1',
+			description: 'RHEAL MBEMBERSHIP NO.162266',
+		},
+		{
+			code: 'MAI4.1',
+			description: 'TERMINATION OF EMPLOYMENT WITH ARCH',
+		},
+		{
+			code: 'MAJ1.1',
+			description:
+				'IN THE MATTER OF A COMPLAINT AGAINST MR. SAMIR INAMDAR AND MAJOR (RETIRED) NISHIT DHANVANTRAI MARU: DISCIPLINARY COMMITTEE CAUSE NO. 159 OF 2014',
+		},
+		{
+			code: 'MAJ2.1',
+			description:
+				'SALE OF APARTMENT NO. A ON BLOCK 1 LIFESTYLE TERRACES ON LR. NO. 12715/538 FARHEEN MOHAMED ABDULKARIM TO MICHAEL KAMALIZA MAJRNGOH AND EVERLINE AKETCH ANTONE',
+		},
+		{
+			code: 'MAK2.1',
+			description: 'SALE/PURCHASE OF APT 10B, ON L.R. NO.3734/354, OTHAYA ROAD, NAIROBI',
+		},
+		{
+			code: 'MAK2.2',
+			description: 'SERVICE REQUEST: LEGAL NOTICE TO TENANT',
+		},
+		{
+			code: 'MAK3.1',
+			description:
+				'BULLEN ALIER MAKOR (Suing as a personal representative of the Estate of Nyiel Makor Alier) )',
+		},
+		{
+			code: 'MAL1.1',
+			description: 'MICRO AFRICA VS LETSHEGO HOLDINGS LTD',
+		},
+		{
+			code: 'MAL2.1',
+			description: 'PURCHASE OF UNIT 9, DEERPARK LR. NO. 1008/57 NAIROBI.',
+		},
+		{
+			code: 'MAL3.1',
+			description: 'General Corporate Advice',
+		},
+		{
+			code: 'MAM1.1',
+			description:
+				'KISUMU CMCC NO. 119 OF 2007 MUNICIPAL COUNCIL OF KISUMU VS KENYA POWER & LIGHTING CO. LIMITED',
+		},
+		{
+			code: 'MAN1.1',
+			description: 'FRIDAH MANJI - SALE OF PLOT NO. 5973/79 LR NO. 209/10769',
+		},
+		{
+			code: 'MAN2.1',
+			description: 'TRIPAT SINGH MANGAT .VS.MANAGAT ,I.B.PATEL & PARTNERS',
+		},
+		{
+			code: 'MAN3.2',
+			description:
+				'HCCOMM/E238 OF 2023: UNITED ENGINEERING SUPPLIES LTD VS. DINKAR R. PATEL & PARAG D. PATEL.',
+		},
+		{
+			code: 'MAP1.1',
+			description: 'PROVISION OF LEGAL SERVICES.',
+		},
+		{
+			code: 'MAR1.1',
+			description: 'HON. KENNETH MARENDE -  DISCHARGE OVER LR. NO. 209/17402',
+		},
+		{
+			code: 'MAR1.2',
+			description:
+				'CIVIL CASE NO. 611 OF 2010 -HON. KENNETH MARENDE VS PEOPLE MEDIA GROUP & 2 OTHERS',
+		},
+		{
+			code: 'MAR1.3',
+			description:
+				'ELC NO. 565 OF 2011 MINESH KANTABHAI VS NAMANGA ROAD PROPERTIES AND 4 OTHERS',
+		},
+		{
+			code: 'MAR1.4',
+			description: 'HON  KENNETH MARENDE & HON. EKWE ETHURO VS. DIRECTORS OF PENSIONS',
+		},
+		{
+			code: 'MAR2.1',
+			description: 'HON KENNETH MARENDE',
+		},
+		{
+			code: 'MAR2.2',
+			description:
+				"HON KENNETH MARENDE -VS- JENNIFER NKOWUA: CHILDREN'S CASE NO 119 OF 2014 (NBO)",
+		},
+		{
+			code: 'MAR3.1',
+			description:
+				'IN THE MATTER OF THE ESTATE OF THE LATE JOHNSON MWOBOBIA MARETE (DECEASED)',
+		},
+		{
+			code: 'MAT2.1',
+			description: 'VIRGINIA WANGUI MATHENGE',
+		},
+		{
+			code: 'MAT2.2',
+			description: 'IN MATTER OF THE ESTATE OF LATE MATHENGE (DECEASED)',
+		},
+		{
+			code: 'MAT3.1',
+			description:
+				'TAX APPEAL NO. 119 OF 2007 - MATCH MASTERS LIMITED VS KENYA REVENUE AUTHORITY',
+		},
+		{
+			code: 'MAT3.2',
+			description:
+				'CIVIL APPEAL NO. 237 0F 2013 MATCHMASTERS LIMITED VS KENYA REVENUE AUTHORITY',
+		},
+		{
+			code: 'MAT4.1',
+			description:
+				'PURCHASE OF APARTMENT NUMBER A301 ERECTED ON L.R. NO. 1/1030 NAIROBI JUNDA COMPANY LTD TO MARGARET ESTHER MATEE.',
+		},
+		{
+			code: 'MAU1.1',
+			description: 'SALE OF L.R. NO.209/20523,NAIROBI',
+		},
+		{
+			code: 'MAU2.1',
+			description:
+				'DEMAND FOR OUTSTANDING RENT ARREARS-HSE NO.14;EAGLES  PLAINS;NAIROBI TO DR.FIONA DHAHABU BAYA',
+		},
+		{
+			code: 'MAU2.2',
+			description:
+				'RENT ARREARS MADARAKA ESTATE HOUSE NO. 813/69 FROM JAMES KARUTHIRU NDEGWA',
+		},
+		{
+			code: 'MAX1.1',
+			description: 'INCORPORATION OF OFF-SHORE COMPANY',
+		},
+		{
+			code: 'MAY1.1',
+			description: 'THOMSON REUTERS',
+		},
+		{
+			code: 'MAY1.2',
+			description:
+				'RECOGNITION AND ENFORCEMENT OF ARBITRAL AWARD IN FAVOUR OF SALEM CONSTRUCTION LIMITED .',
+		},
+		{
+			code: 'MAZ1.1',
+			description: 'ESTABLISHMENT OF MAZZONI LB IN KENYA',
+		},
+		{
+			code: 'MBA1.1',
+			description: 'DISPUTE BETWEEN SUSAN KAVINDU MBATHI & RESOLUTION HEALTH',
+		},
+		{
+			code: 'MBA3.1',
+			description:
+				'KAJIADO ELC CASE MISC NO. 39 OF 2017 - REPUBLIC VS KAJIADO NORTH LAND DISPUTES TRIBUNAL - EX-PARTE RACHEL GATHONI MBAI',
+		},
+		{
+			code: 'MBA4.1',
+			description: 'ELC NO.462 OF 2017-KATANI COMMUNITY SHG VS.TOM MBALUTO & 11 OTHERS',
+		},
+		{
+			code: 'MBA4.2',
+			description:
+				'ELC Petition No. 14 of 2020 | Sammy Mutua & Others v Tom Mbaluto & Others',
+		},
+		{
+			code: 'MBA4.3',
+			description:
+				'JR APPLICATION NO. E008 OF 2020 - NZUKI MAITHIA & 18 OTHERS VS. HON. ATTORNEY GENERAL OF KENYA & 6 OTHERS.',
+		},
+		{
+			code: 'MBA4.4',
+			description: 'ESTATE OF THE LATE MARGARET NZILANI MBALUTO',
+		},
+		{
+			code: 'MBA4.5',
+			description: 'ESTATE OF THE LATE ANGELA KATUMBI.',
+		},
+		{
+			code: 'MBA5.1',
+			description: 'PAUL LOKI MBALUTO VS KING STEEL KENYA LIMITED.',
+		},
+		{
+			code: 'MBB1.1',
+			description: 'MERIDIEN BIAO BANK (K) LTD VS SUNWISE TRAVEL LTD',
+		},
+		{
+			code: 'MBB1.2',
+			description:
+				'BENEY AWINO ONYANGO (SUING AS THE ADMINISTRATOR OF THE ESTATE OF DISMAS JUMA ONYANGO KAMB (DECEASED) .VS. MERIDIEN BIAO BANK LIMITERD (IN LIQUIDATION)',
+		},
+		{
+			code: 'MBL1.1',
+			description:
+				'SCCCOMM/E200/2023 - MADAWA PHARMACEUTICALS LIMITED VS. MAERSK BANGLADESH LIMITED & ANOR',
+		},
+		{
+			code: 'MBO1.1',
+			description: 'MARTIN MBOGO -VS- TULLOW OIL K. LTD',
+		},
+		{
+			code: 'MBO2.1',
+			description: 'ZACHARIA MBORI & ANOR',
+		},
+		{
+			code: 'MBO3.1',
+			description: 'GLADYS MBOYA -VS- JANE NGARUIYA',
+		},
+		{
+			code: 'MBO4.1',
+			description: 'SALE/PURCHASE OF L.R. NO.3754/243, NAIROBI (ORIGINAL NUMBER 3734/5/130)',
+		},
+		{
+			code: 'MBU1.1',
+			description:
+				"ZAWERIAH THERU WANG'OMBE VS EDDAH NJERI MBURU CIVIL CASE NO. 1638 OF 2008",
+		},
+		{
+			code: 'MBU2.1',
+			description: 'JOHN C MWAURA &PATRICIA M.W MBUGUA - SALE OF L.R NO. 170/58',
+		},
+		{
+			code: 'MBU4.1',
+			description:
+				'DIVORCE CAUSE NO. E483 OF 2021: AMY KEMUNTO MOKAYA VS. EZEKIEL MACHARIA MBURU',
+		},
+		{
+			code: 'MCE1.1',
+			description: 'TAUSI ASSURANCE COMPANY LIMITED VS. METRO CONCEPTS EAST AFRICA LIMITED',
+		},
+		{
+			code: 'MCE1.2',
+			description:
+				'CMEL CAUSE NO. E1675 - SAMUEL WAMBUA MBITHUKA .VS. METRO CONCEPTS EAST AFRICA LIMITED',
+		},
+		{
+			code: 'MCE1.3',
+			description: 'E&LRC MISCELLANEOUS APPLICATION NO. E127 OF 2021',
+		},
+		{
+			code: 'MCE1.4',
+			description:
+				'ELDORET CMCC NO. E296 OF 2021: RICHARD KIPTOO MISOI -VS- METRO CONCEPTS EAST AFRICA LIMITED & ANOTHER.',
+		},
+		{
+			code: 'MCE1.5',
+			description:
+				'KAJIADO CMCC NO. E237 OF 2021: LORA AKINYI ODHIAMBO -VS- METRO CONCEPTS EAST AFRICA LIMITED.',
+		},
+		{
+			code: 'MCE1.6',
+			description: 'GENERAL ADVICE FILE',
+		},
+		{
+			code: 'MCE1.7',
+			description:
+				'CIVIL SUIT NO. E1966 OF 2022: GEOFFREY NYONGESA & OTHERS Suing on behalf of dependents of the Estate of CHRISPINE MIRIAGO (Deceased) -VS- METROCONCEPTS EAST AFRICA LIMITED)',
+		},
+		{
+			code: 'MCE1.8',
+			description: 'DESERTION FROM EMPLOYMENT - JAYESHBHAI MAHINDRABHAI PATEL.',
+		},
+		{
+			code: 'MCE1.9',
+			description:
+				'CMEL NO. E1203 OF 2023; VINCENT MOMANYI OBUYA.VS. METRO CONCEPTS EAST AFRICA LIMITED',
+		},
+		{
+			code: 'MCI1.1',
+			description:
+				'CIVIL CASE NO. 316 OF 2016-MOHAMMED ANWAR VS MOHAMED ASHRAF & CRESCO INVESTMENT LIMITED',
+		},
+		{
+			code: 'MCK1.1',
+			description:
+				'HCCC NO.        OF 2020: MITCHELL COTTS KENYA LTD VS. NATION MEDIA & 3 OTHERS',
+		},
+		{
+			code: 'MCK1.2',
+			description: 'DEBT COLLECTION AGAINST MASTER STEEL LIMITED FOR US$323,324.50',
+		},
+		{
+			code: 'MCL1.1',
+			description: 'LEGAL ADVICE ON TRANSFER OF SHARES',
+		},
+		{
+			code: 'MCP1.1',
+			description: 'MAKERERE CAPITAL PARTNERS LTD & SAFE PAY (SP) SOLUTIONS LTD',
+		},
+		{
+			code: 'MDI1.1',
+			description: 'MVITA  DEVELOPMENT & INVESTMENT LTD PHASE TWO',
+		},
+		{
+			code: 'MDI1.10',
+			description: 'TRANSFER OF APARTMENT H1 TO SHAHINOOR VISRAM',
+		},
+		{
+			code: 'MDI1.11',
+			description: 'TRANSFER OF APARTMENT H9 TO ZARINA JAMAL',
+		},
+		{
+			code: 'MDI1.12',
+			description: 'TRANSFER OF APARTMENT H3 TO ALSHAD JAMAL',
+		},
+		{
+			code: 'MDI1.13',
+			description:
+				'HCCC NO. 1259 OF 2003 TELEPOSTA PENSION SCHEME TRUSTEES VS MVITA DEVELOPMENT & INVESTMENT LTD',
+		},
+		{
+			code: 'MDI1.14',
+			description:
+				"SALE OF APARTMENT H15 TOGETHER WITH A SERVANT'S QUATER ON L.R. NO. 209/11872; TO CHRISTIAN CALLEDE AND ROBERTINA KUCHAL",
+		},
+		{
+			code: 'MDI1.15',
+			description: 'SALE OF APT NO. H1 TO SHAHINOOR VISRAM',
+		},
+		{
+			code: 'MDI1.16',
+			description: 'SALE OF APT. NO. H9 TO ZARINA FATEHAZI',
+		},
+		{
+			code: 'MDI1.17',
+			description:
+				'MVITA  DEVELOPMENT & INVESTMENT LTD:SALE OF APARTMENT NO. K15 & SQ ON LR NO 209/11872,NRB TO MAHMUD MAGAN,ALSHAD FATEHALI & ZARINA FATEHALI',
+		},
+		{
+			code: 'MDI1.18',
+			description:
+				'SALE OF 4 BEDROOM DUPLEX G14 WITH A SERVANT QUARTER ON KENTMERE VALLEY TO NICHOLAS MRUTTU.',
+		},
+		{
+			code: 'MDI1.2',
+			description:
+				'MVITA DEVELOPMENT & INVESTMENT LTD: SALE OF APARTMENT WITH SQ AT KENTMERE VALLEY, KILELESHWA ON L.R 209/11872 TO JOSEPH K YAA & TABU S YAA',
+		},
+		{
+			code: 'MDI1.3',
+			description:
+				'MVITA DEVELOPMENT & INVESTMENT LTD: SALE OF APARTMENT WITH SQ AT KENTMERE VALLEY, KILELESHWA ON L.R 209/11872 TO DAVID KIMATHI IGWETA',
+		},
+		{
+			code: 'MDI1.4',
+			description:
+				'MVITA DEVELOPMENT & INVESTMENT LTD: SALE OF APARTMENT WITH SQ AT KENTMERE VALLEY, KILELESHWA ON L.R 209/11872 TO JOYCE NYAGUTHII',
+		},
+		{
+			code: 'MDI1.5',
+			description:
+				'MVITA DEVELOPMENT & INVESTMENT LTD: SALE OF APARTMENT WITH SQ AT KENTMERE VALLEY, KILELESHWA ON L.R 209/11872 TO FIONA LINDA AMANYA',
+		},
+		{
+			code: 'MDI1.6',
+			description: 'MVITA DEV. & INVEST. LTD VS ABDALLA HASSAN ABDALLA',
+		},
+		{
+			code: 'MDI1.7',
+			description: 'COMPANY INCORPORATION-KENTMERE VALLEY MANAGEMENT LIMITE',
+		},
+		{
+			code: 'MDI1.8',
+			description: 'TRANSFER OF APARTMENT D10 ARCADIA VALLEY JACKIE MARURA MRUTTU',
+		},
+		{
+			code: 'MDI1.9',
+			description: 'TRANSFER OF APARTMENT K16 KENTMERE VALLEY NONI MARISSA MRUTTU',
+		},
+		{
+			code: 'MDI2.1',
+			description: 'HASSEN/EBRAHIM/VIRJEE',
+		},
+		{
+			code: 'MDI2.10',
+			description:
+				'MVITA DEVELOPMENT & INVESTMENT LTD: SALE OF DUPLEX B14  AT KENTMERE VALLEY, KILELESHWA ON L.R 209/11872 TO NICHOLAS SAUKA MRUTTU',
+		},
+		{
+			code: 'MDI2.11',
+			description:
+				'MVITA DEVELOPMENT & INVESTMENT LTD: SALE OF APARTMENT AT KENTMERE VALLEY, KILELESHWA ON L.R 209/11872 TO AMB. AMINA MOHAMMED',
+		},
+		{
+			code: 'MDI2.12',
+			description:
+				'MVITA DEVELOPMENT & INVESTMENT LTD: SALE OF APARTMENT  AT KENTMERE VALLEY, KILELESHWA ON L.R 209/11872 TO MANASSEH NSHUTI',
+		},
+		{
+			code: 'MDI2.13',
+			description:
+				'MVITA DEVELOPMENT & INVESTMENT LTD: SALE OF APARTMENT  AT KENTMERE VALLEY, KILELESHWA ON L.R 209/11872 TO ANDREW NUGENT YULE AND ROSALIND MUTHONI YULE',
+		},
+		{
+			code: 'MDI2.14',
+			description:
+				'MVITA DEVELOPMENT & INVESTMENT LTD: SALE OF APARTMENT  AT KENTMERE VALLEY, KILELESHWA ON L.R 209/11872 TO DALBIT PETROLEUM LIMITED',
+		},
+		{
+			code: 'MDI2.15',
+			description:
+				'MVITA DEVELOPMENT & INVESTMENT LTD: SALE OF APARTMENT  AT KENTMERE VALLEY, KILELESHWA ON L.R 209/11872 TO ROBERT THINJI MUREITHI AND SUSAN MUTHOKA',
+		},
+		{
+			code: 'MDI2.16',
+			description:
+				'MVITA DEVELOPMENT & INVESTMENT LTD: SALE OF APARTMENT  AT KENTMERE VALLEY, KILELESHWA ON L.R 209/11872 TO DALBIT PETROLEUM LIMITED',
+		},
+		{
+			code: 'MDI2.17',
+			description:
+				'MVITA DEVELOPMENT & INVESTMENT LTD: SALE OF APARTMENT  AT KENTMERE VALLEY, KILELESHWA ON L.R 209/11872 TO EUGENE NYAMUNGA',
+		},
+		{
+			code: 'MDI2.18',
+			description:
+				"MVITA DEVELOPMENT & INVESTMENT LTD: SALE OF APARTMENT  AT KENTMERE VALLEY, KILELESHWA ON L.R 209/11872 TO KOO'YOON",
+		},
+		{
+			code: 'MDI2.19',
+			description:
+				'MVITA DEVELOPMENT & INVESTMENT LTD: SALE OF APARTMENT  AT KENTMERE VALLEY, KILELESHWA ON L.R 209/11872 TO JOHN WATSON MASABA',
+		},
+		{
+			code: 'MDI2.2',
+			description:
+				'MVITA DEVELOPMENT & INVESTMENT LTD: SALE OF APARTMENT NO. B2 BL B & A12 B7  AT KENTMERE VALLEY, KILELESHWA ON L.R 209/11872 TO WILLIE BUTIA',
+		},
+		{
+			code: 'MDI2.20',
+			description:
+				'MVITA DEVELOPMENT & INVESTMENT LTD: SALE OF APARTMENT  AT KENTMERE VALLEY, KILELESHWA ON L.R 209/11872 TO',
+		},
+		{
+			code: 'MDI2.21',
+			description:
+				'MVITA DEVELOPMENT & INVESTMENT LTD: SALE OF APARTMENT  AT KENTMERE VALLEY, KILELESHWA ON L.R 209/11872 TO MONICA, TESSA,& CINDY ORARO',
+		},
+		{
+			code: 'MDI2.22',
+			description:
+				'MVITA DEVELOPMENT & INVESTMENT LTD: SALE OF APARTMENT  AT KENTMERE VALLEY, KILELESHWA ON L.R 209/11872 TO MARY URUJENI KAMARI',
+		},
+		{
+			code: 'MDI2.23',
+			description:
+				'MVITA DEVELOPMENT & INVESTMENT LTD: SALE OF APARTMENT  AT KENTMERE VALLEY, KILELESHWA ON L.R 209/11872 TO COLLETTE A SUDA',
+		},
+		{
+			code: 'MDI2.24',
+			description:
+				'MVITA DEVELOPMENT & INVESTMENT LTD: SALE OF APARTMENT NO. H8 AT KENTMERE VALLEY, KILELESHWA ON L.R 209/11872 TO FRANCOIS UWIRAGIYE',
+		},
+		{
+			code: 'MDI2.25',
+			description:
+				'MVITA DEVELOPMENT & INVESTMENT LTD: SALE OF APARTMENT NO. H2 & SQ AT KENTMERE VALLEY, KILELESHWA ON L.R 209/11872 TO RICHARD SALLAH',
+		},
+		{
+			code: 'MDI2.26',
+			description:
+				'MVITA DEVELOPMENT & INVESTMENT LTD: SALE OF APARTMENT  AT KENTMERE VALLEY, KILELESHWA ON L.R 209/11872 TO MIKE & MERCY HALLIWELL',
+		},
+		{
+			code: 'MDI2.27',
+			description: "JOHN OCHIENG' PURCHASE OF APARTMENT F10 & BLOCK F SERVANT QUARTER",
+		},
+		{
+			code: 'MDI2.28',
+			description:
+				'MVITA DEVELOPMENT & INVESTMENT LTD: SALE OF APARTMENT  AT KENTMERE VALLEY, KILELESHWA ON L.R 209/11872 TO MOHAMED NYAOGA',
+		},
+		{
+			code: 'MDI2.29',
+			description:
+				'MVITA DEVELOPMENT & INVESTMENT LTD -VS- WINCHESTER PARK LTD. L.R. NO 209/11872 & L.R NO. 209/14990/7',
+		},
+		{
+			code: 'MDI2.3',
+			description:
+				'MVITA DEVELOPMENT & INVESTMENT LTD: SALE OF APARTMENT AT KENTMERE VALLEY, KILELESHWA ON L.R 209/11872 TO GRACE WANJIKU MUITATI',
+		},
+		{
+			code: 'MDI2.30',
+			description:
+				'MVITA DEVELOPMENT & INVESTMENT LTD: SALE OF APARTMENT  AT KENTMERE VALLEY, KILELESHWA ON L.R 209/11872 TO RASHEED RAHJI & TAWAKALTU ABIODUN',
+		},
+		{
+			code: 'MDI2.31',
+			description:
+				'MVITA DEVELOPMENT & INVESTMENT LTD: SALE OF APARTMENT  AT KENTMERE VALLEY, KILELESHWA ON L.R 209/11872 TO CHRISTIAN NDIKUMAGENGE',
+		},
+		{
+			code: 'MDI2.32',
+			description:
+				'MVITA DEVELOPMENT & INVESTMENT LTD: SALE OF APARTMENT  AT KENTMERE VALLEY, KILELESHWA ON L.R 209/11872 TO EDDY NTAYAGABIRI & JOCELYNE NINTERETSE',
+		},
+		{
+			code: 'MDI2.33',
+			description: 'GILBERT CHERUIYOT BETT',
+		},
+		{
+			code: 'MDI2.34',
+			description: 'JOSEPH FREDRICK ADEWA - SALE OF APARTMENT NO. K2 ON L.R 209/1872 NAIROBI',
+		},
+		{
+			code: 'MDI2.4',
+			description:
+				'MVITA DEVELOPMENT & INVESTMENT LTD: SALE OF APARTMENT NO. 9A & SQ NO. 9A AT KENTMERE VALLEY, KILELESHWA ON L.R. NO. 209/11872 TO NAOMI NASINYARI MRUTTU',
+		},
+		{
+			code: 'MDI2.5',
+			description:
+				'MVITA DEVELOPMENT & INVESTMENT LTD:  SALE OF APARTMENT NO. A5 7 SQ NO. 5A AT KENTMERE VALLEY, KILELESHWA ON L.R 209/11872 TOTO VERYDIANA KHAYANGA ANDABWA',
+		},
+		{
+			code: 'MDI2.6',
+			description:
+				'MVITA DEVELOPMENT & INVESTMENT LTD SALE OF APARTMENT NO. A11 AT KENTMERE VALLEY, KILELESHWA ON L.R 209/11872 TO ERICK KOECH',
+		},
+		{
+			code: 'MDI2.7',
+			description:
+				'MVITA DEVELOPMENT & INVESTMENT LTD: SALE OF APARTMENT  AT KENTMERE VALLEY, KILELESHWA ON L.R 209/11872 TO HON JOYCE WANJALAH LAY',
+		},
+		{
+			code: 'MDI2.8',
+			description:
+				'MVITA DEVELOPMENT & INVESTMENT LTD SALE OF APARTMENT NO. A1 BLOCK A AT KENTMERE VALLEY, KILELESHWA ON L.R 209/11872 TO ABDALLA HASSAN ABDALLA',
+		},
+		{
+			code: 'MDI2.9',
+			description:
+				'MVITA DEVELOPMENT & INVESTMENT LTD SALE OF APARTMENT NO. A2 BLOCK A AT KENTMERE VALLEY, KILELESHWA ON L.R 209/11872 TO SIMON KAMERE',
+		},
+		{
+			code: 'MDO1.1',
+			description: 'SALE OF PROPERTY TITLE NUMBER  NAIROBI/BLOCK 99/123;RUNDA',
+		},
+		{
+			code: 'MEC1.1',
+			description: 'REGISTRATION OF A DEED POLL.',
+		},
+		{
+			code: 'MEL1.1',
+			description: 'PAUL MELLY',
+		},
+		{
+			code: 'MEL2.1',
+			description:
+				'RENT RESTRICTION TRIBUNAL CASE NO.1086 OF 2023 (NAIROBI): NORAH NYAMORAMBO ZABLON VS. SILVANO MELEA.',
+		},
+		{
+			code: 'MEY1.1',
+			description: 'DANIEL MEYER',
+		},
+		{
+			code: 'MFI1.1',
+			description: 'MISSION FEST INTERNATIONAL: REGISTRATION OF TRADEMARK',
+		},
+		{
+			code: 'MGG2.1',
+			description: 'LEGAL ADVICE ON CAPITAL MARKETS',
+		},
+		{
+			code: 'MGL1.1',
+			description: 'MAORI GROUP LTD',
+		},
+		{
+			code: 'MGL1.2',
+			description: 'MAORI GROUP LTD -VS- CHINA RAILWAY NO. 10 ENGINEERING GROUP',
+		},
+		{
+			code: 'MGL1.3',
+			description: 'TAX PLANNING AND STRUCTURING',
+		},
+		{
+			code: 'MGL2.1',
+			description: 'REVIEW OF EMPLOYMENT CONTRACT.',
+		},
+		{
+			code: 'MGL2.2',
+			description:
+				'REVIEW OF TENANCY AGREEMENT BETWEEN TIMAU COURTS LIMITED AND M-GAS LIMITED',
+		},
+		{
+			code: 'MHA1.1',
+			description: 'PRIORITY PROPERTY  LTD -VS- EMBAKASI PROPERTIES',
+		},
+		{
+			code: 'MHE1.1',
+			description: 'MULTIPLE HAULIERS EAST AFRICA LTD',
+		},
+		{
+			code: 'MHH2.1',
+			description: 'REGISTRATION OF THE TAMBUA TRADEMARK.',
+		},
+		{
+			code: 'MHH2.2',
+			description: 'REGISTRATION OF THE UZIMA GYM & SPA TRADE MARK',
+		},
+		{
+			code: 'MHH2.3',
+			description: 'REGISTRATION OF THE ‘NAIROBI SAFARI CLUB’ TRADEMARK',
+		},
+		{
+			code: 'MHL1.1',
+			description: 'REGISTRATION OF THE ‘RIDGEWAYS MALL’ TRADEMARK  ',
+		},
+		{
+			code: 'MIC1.1',
+			description:
+				'MADISON INSURANCE COMPANY KENYA LTD VS THE COMMISSIONER OF DOMESTIC TAXES AND ANOR PETITION NO 422 OF 2013',
+		},
+		{
+			code: 'MIC1.2',
+			description:
+				'TAX APPEAL TRIBUNAL PETITION NO. 422 OF 2013: MADISON INSURANCE CO -VS- KENYA REVENUE AUTHORITY & ANOTHER',
+		},
+		{
+			code: 'MIC2.1',
+			description: 'MADISON INSURANCE COMPANY',
+		},
+		{
+			code: 'MIC3.1',
+			description: 'MICROMOBILE LIMITED & AFVEST LIMITED',
+		},
+		{
+			code: 'MIC3.1/001',
+			description:
+				'CMCC NO. 1470 OF 2019 AFVEST LIMITED VS. MICRO MOBILE LIMITED & 2 OTHERS.',
+		},
+		{
+			code: 'MIC3.2',
+			description: 'HALIFAX FINANCIAL SERVICES LTD VS MICRO MOBILE LIMITED',
+		},
+		{
+			code: 'MIC3.2/001',
+			description:
+				'HCCC NO. E073 OF 2018 HALIFAX TOURS AND TRAVEL LIMITED VS. MICROMOBILE LIMITED & 2 OTHERS',
+		},
+		{
+			code: 'MIC3.3',
+			description:
+				'CMCC NO. 3305 OF 2018 MAQUEE IMPORTS LIMITED VS. MICRO MOBILE LIMITED & 2 OTHERS.',
+		},
+		{
+			code: 'MIC3.3/001',
+			description:
+				'HIGH COURT CIVIL APPEAL NO. E691 OF 2021 – MICRO MOBILE LIMITED VS. MARQUEE IMPORTS LIMITED.',
+		},
+		{
+			code: 'MIC4.1',
+			description:
+				'KAMAMI CHRISTINE - JAGUAR LAND ROVER MOTOR VEHICLE REGISTRATION NUMBER KCB 812V',
+		},
+		{
+			code: 'MIC5.1',
+			description:
+				'RMCC NO. 8508 OF 2000: JOHN KAMAU MICAH & ANOTHER VS FRED OPIYO ANYONA & ANOTHER',
+		},
+		{
+			code: 'MID1.1',
+			description: 'MATHEW ONYANGO MIDIKA',
+		},
+		{
+			code: 'MIL1.1',
+			description: 'SUCCESSION CAUSE NO. 3122 OF 2006 QUIERIA SANTANA COUTINHO MENEZES',
+		},
+		{
+			code: 'MIL2.1',
+			description: 'PREPARING SHAREHOLDERS AGREEMENT.',
+		},
+		{
+			code: 'MIN1.1',
+			description: 'MUIGAI IRENE NTHEYA',
+		},
+		{
+			code: 'MIN2.1',
+			description:
+				"SALE AND PURCHASE OF PROPERTY LR. NO. 10199/9 (ORIGINAL NO. 10199/5/2) FROM ERICK OCHIENG' TAMBO TO MWENDA DANIEL MINYORI AND IDAH GATWIRI MUCHUNKU.",
+		},
+		{
+			code: 'MIS1.1',
+			description:
+				'ELC MILIMANI CASE NO.368 OF 2019: GEORGE MISEDA AND ROSE MISEDA VS. BIREN A SHAH, GODFREY N. NJOROGE & 2 OTHERS',
+		},
+		{
+			code: 'MJP1.1',
+			description:
+				'GRAIN BULK HANDLERS LTD -VS- MISTRY JADVA PARBAT AND COMPANY LTD: MISC. APP NO 538 OF 2015',
+		},
+		{
+			code: 'MKB1.1',
+			description:
+				'CIVIL APPEAL NO 164 OF 2013 & HIGH COURT PETITION NO 72 OF 2011 MT KENYA BOTTLERS LTD VS THE AG,THE KRA, THE COM GEN OF KRA& THE COM OF CUSTOMS AND EXCISE DUTY',
+		},
+		{
+			code: 'MKB1.3',
+			description: 'TAX APPEAL TO EXCISE APPEALS TRIBUNAL',
+		},
+		{
+			code: 'MKD1.1',
+			description:
+				'SALE & PURCHASE OF 5 BEDROOM VILLA J44, EDENVILLE PHASE 2 - KIAMBU TO MAMADOU KANE AND DORRIS CHEPKOECH',
+		},
+		{
+			code: 'MKL1.10',
+			description: 'GENERAL ADJUSTERS VS MAERSK K LTD',
+		},
+		{
+			code: 'MKL1.11',
+			description: 'BITECH INTERNATIONAL VS MAERSK (K) LTD',
+		},
+		{
+			code: 'MKL1.14',
+			description: 'DAMCO LOGISTICS KENYA LTD -VS-BASH HAULERS LTD',
+		},
+		{
+			code: 'MKL1.15',
+			description:
+				'DAMCO LOGISTICS KENYA LTD -VS- VEGPRO KENYA LTD: CMCC NO. 3398 OF 2015 (NBO)',
+		},
+		{
+			code: 'MKL1.16',
+			description:
+				'SHALLIAN ENTERPRISES LTD VS SAFMARINE LTD (MAERSK (K) LTD: HCCC NO 292 OF 2014',
+		},
+		{
+			code: 'MKL1.18',
+			description: 'INCLUSIVE AGENCIES LTD -VS- MAERSK KENYA LTD: HCCC NO. 506 OF 2015 (NBO)',
+		},
+		{
+			code: 'MKL1.2',
+			description:
+				'MAERSK KENYA LTD/URGENT CARGO HANDLING LTD VS ELIJAH WAMBUGU NGUGI: CMCC NO 1577 OF 2011',
+		},
+		{
+			code: 'MKL1.21',
+			description: 'GENERAL FILE - MAERSK KENYA LTD',
+		},
+		{
+			code: 'MKL1.22',
+			description: 'HCCC NO. 488 OF 2007 TASARA FORWARDERS KENYA LIMITED',
+		},
+		{
+			code: 'MKL1.23',
+			description: 'HCCC NO. 487 OF 2007 MAERSK KENYA LIMITED VS TASARA FORWARDERS KENYA LTD',
+		},
+		{
+			code: 'MKL1.24',
+			description: 'MAERSK KENYA LIMITED - TAX MATTERS',
+		},
+		{
+			code: 'MKL1.25',
+			description: 'CMCC NO. 9775 OF 2006 - MAERSK KENYA LIMITED VS BOX CLEVER (K) LIMITED',
+		},
+		{
+			code: 'MKL1.26',
+			description:
+				"CIVIL SUIT NO. 1827 OF 2011: FORKLIFT 'R' US LTD -VS- ESCARPMENT PRIME MOVERS LTD, MAERSK KENYA LIMITED & BRIDGE UP CONTAINERS SERVICES LTD",
+		},
+		{
+			code: 'MKL1.27',
+			description: 'INQUIRY INTO MAERSK (K) LTD',
+		},
+		{
+			code: 'MKL1.28',
+			description:
+				'CMCC NO.9550 OF 2018-CONTINENTAL FREIGHTERS LIMITED VS. MAERSK KENYA LIMITED & ANOR',
+		},
+		{
+			code: 'MKL1.29',
+			description: 'APM TERMINALS LIMITED VS. MAHADI ENERGY LIMITED',
+		},
+		{
+			code: 'MKL1.3',
+			description: 'KENYA SHIPPING ACT/REGULATIONS (SDV TRANSAMI KENYA LTD)',
+		},
+		{
+			code: 'MKL1.30',
+			description: 'CMCC NO. 1085 OF 2019 TITAN IMPEX KENYA LIMITED VS. MAERSK KENYA LIMITED',
+		},
+		{
+			code: 'MKL1.31',
+			description:
+				'Constitutional Challenge to Amendments to Section 16A of the Merchant Shipping Act',
+		},
+		{
+			code: 'MKL1.32',
+			description:
+				'MOMBASA PETITION NO. 18 OF 2018 MAERSK KENYA LIMITED VS THE ATTORNEY GENERAL',
+		},
+		{
+			code: 'MKL1.33',
+			description: 'MCCC/E5330/2020-DANKA INVESTMENTS LIMITED',
+		},
+		{
+			code: 'MKL1.34',
+			description: 'MCCOMMSU/E847/2020 – NIRAV AGENCIES LIMITED VS. MAERSK KENYA LIMITED',
+		},
+		{
+			code: 'MKL1.35',
+			description:
+				'CMCC CIVIL SUIT NO.438 OF 2019 – ANDEAR MAYKE MWANGI VS. MWANANCHI CREDIT LIMITED',
+		},
+		{
+			code: 'MKL1.36',
+			description: 'ADVISING ON PUBLIC PRIVATE PARTNERSHIPS',
+		},
+		{
+			code: 'MKL1.37',
+			description:
+				'MCCC NO. E8770 OF 2021 – MULTIPLAN PACKAGING LIMITED VS. MAERSK KENYA LIMITED.',
+		},
+		{
+			code: 'MKL1.37/001',
+			description: 'HCCOMMA/E181/2022 - MAERSK KENYA LIMITED VS. MULTIPLAN PACKAGING LIMITED',
+		},
+		{
+			code: 'MKL1.38',
+			description: 'H.C. MCCC/E10201/2021: COOL COLLECTIONS LIMITED VS. MAERSK KENYA LIMITED',
+		},
+		{
+			code: 'MKL1.39',
+			description:
+				'MCCC E3125 OF 2021: RELI FRESH FARM VS. MAERSK KENYA LIMITED AND MADS SKOV-HANSEN',
+		},
+		{
+			code: 'MKL1.39/001',
+			description: 'HCCOMMA/E118 OF 2022 - RELI FARM FRESH VS. MAERSK KENYA LIMITED.  ',
+		},
+		{
+			code: 'MKL1.4',
+			description: 'MAERSK (K) LTD VS MURABU CHAKA TSUMA: INDUSTRIAL CAUSE NO 374 OF 2013',
+		},
+		{
+			code: 'MKL1.40',
+			description:
+				'CMCC CIVIL CASE NO. E1202 – NICHOLAS AKELLO & ANOR VS. CONSOLIDATED BANK & MAERSK KENYA LIMITED',
+		},
+		{
+			code: 'MKL1.41',
+			description:
+				'CMCC CIVIL CASE NO. 11479 OF 2021 – CORPORATE LEGENDS LTD VS. MAERSK KENYA LIMITED & ANOR.',
+		},
+		{
+			code: 'MKL1.41/001',
+			description:
+				'HC COMM APPEAL NO. E024 - MAERSK KENYA LIMITED VS. CORPORATE LEGENDS LTD & ANOR.',
+		},
+		{
+			code: 'MKL1.41/002',
+			description:
+				'CIVIL APPLICATION NO. E108 OF 2022 - CORPORATE LEGENDS LIMITED VS. MAERSK KENYA LIMITED & ANOR',
+		},
+		{
+			code: 'MKL1.42',
+			description:
+				'PROVISION OF LEGAL ADVICE IN RELATION TO THE CHANGE OF NAME OF DAMCO LOGISTICS KENYA LTD AND APM TERMINALS KENYA LTD.',
+		},
+		{
+			code: 'MKL1.43',
+			description:
+				'CMCC CIIL CASE NO. E168 OF 2022- GO FOODS LIMITED VS. MAERSK KENYA LIMITED & DAMCO LOGISTCS (K) LTD.',
+		},
+		{
+			code: 'MKL1.44',
+			description: 'FORGED BILL OF LADING 205002368 IN RESPECT OF CASE NO. 783 OF 2021',
+		},
+		{
+			code: 'MKL1.45',
+			description:
+				'CONSTITUTIONAL PETITION NO. E282 OF 2022 - HAKI IN AFRICA TRUST V. KENYA PORTS AUTHORITY & OTHERS',
+		},
+		{
+			code: 'MKL1.46',
+			description:
+				'MCCC/E2709 OF 2022 - JOHN KINYANJUI TRANSPORTERS LIMITED VS. MAERSK KENYA LIMITED & ANOR',
+		},
+		{
+			code: 'MKL1.47',
+			description:
+				'MSA CIVIL CASE NO. 943 OF 2022 - SENATOR ONE ENTERPRISES LIMITED VS. MAERSK KENYA LTD',
+		},
+		{
+			code: 'MKL1.48',
+			description: 'HCCOMMA/E118 OF 2022 - RELI FARM FRESH VS. MAERSK KENYA LIMITED.',
+		},
+		{
+			code: 'MKL1.49',
+			description: 'Legal Opinion on setting up a Cold Storage Facility at JKIA',
+		},
+		{
+			code: 'MKL1.5',
+			description:
+				'MURABU CHAKA TSUMA VS MAERSK (K) LTD: INDUSTRIAL CAUSE NO. 374 OF 2013 (NBO)',
+		},
+		{
+			code: 'MKL1.50',
+			description: 'LEGAL OPINION ON SETTING UP A COLD STORAGE FACILITY AT JKIA',
+		},
+		{
+			code: 'MKL1.51',
+			description:
+				'PURCHASE OF LAND REFERENCE NUMBER 22405/2, 3, 4, 5, & 6 FROM SIGINON GROUP LTD TO GREAT LAKES PORT LTD',
+		},
+		{
+			code: 'MKL1.52',
+			description: 'GARY ASIGE - TERMINATION DISCUSSION',
+		},
+		{
+			code: 'MKL1.53',
+			description: 'FRANCIS MWEU VS. MAERSK KENYA LIMITED',
+		},
+		{
+			code: 'MKL1.54',
+			description: 'MADAWA PHARMACEUTICALS LIMITED VS. MAERSK KENYA LIMITED',
+		},
+		{
+			code: 'MKL1.6',
+			description:
+				'MAERSK KENYA LTD -VS- PARAGON ELECTRONICS LTD: HCCC NO. 132 OF 2014 (NBO)',
+		},
+		{
+			code: 'MKL1.8',
+			description: 'PARAGON ELECTRONICS LTD VS MAERSK LTD',
+		},
+		{
+			code: 'MKL1.8/001',
+			description:
+				'HCCA NO. E262 OF 2022 - PARAGON ELECTRONICS LIMITED VS. MAERSK (K) LIMITED',
+		},
+		{
+			code: 'MKL1.9',
+			description: 'MAERSK-IN THE MATTER OF TRANSFER OF LAND TO',
+		},
+		{
+			code: 'MKL2.1',
+			description: 'Pipe Manufactuerers Ltd v George Mwaura',
+		},
+		{
+			code: 'MKL3.1',
+			description:
+				'DISPUTE BETWEEN M-KOPA KENYA LIMITED AND KENYA REVENUE AUTHORITY IN RESPECT OF THE NON APPLICABILITY OF IMPORT AND VAT EXEMPTION ON SPECIALISED SOLAR EQUIPMENT',
+		},
+		{
+			code: 'MKL3.10',
+			description:
+				'ADVISORY ON FILING OF CTM COMPLAINTS AND CEASE-AND- DESIST NOTICES AGAINST HCCS',
+		},
+		{
+			code: 'MKL3.11',
+			description: 'ADVISING ON THE LICENSES AND APPROVALS FOR MKOPA BUSINESS.',
+		},
+		{
+			code: 'MKL3.12',
+			description:
+				'PREPARATION OF ALL ASSEST DEBENTURE FOR A FACILITY FROM ROAM ELECTRIC LIMITED TO MKOPA KENYA LIMITED',
+		},
+		{
+			code: 'MKL3.13',
+			description:
+				'ADVISING ON THE LEGAL AND TAX IMPLICATIONS IN RELATION TO THE CUSTOMER APPLICATION AGREEMENTS FOR THE E-MOBILITY PRODUCT.',
+		},
+		{
+			code: 'MKL3.14',
+			description: 'LEGAL OPINION ON M-KOPA PRODUCT CREDIT TERMS AND CONDITIONS',
+		},
+		{
+			code: 'MKL3.15',
+			description:
+				'MKOPA COMPLAINT AGAINST WATU & ITS DEALERS TO THE COMPETITION AUTHORITY OF KENYA',
+		},
+		{
+			code: 'MKL3.2',
+			description: 'EMPLOYMENT LAW ADVICE',
+		},
+		{
+			code: 'MKL3.3',
+			description: 'KENYA REVENUE AUTHORITY VS.M-KOPA KENYA LIMITED',
+		},
+		{
+			code: 'MKL3.4',
+			description: 'PRODUCT LIABILITY -LEGAL OPINION FOR MKOPA KENYA LIMITED.',
+		},
+		{
+			code: 'MKL3.6',
+			description: 'Advising on a trade mark infringement by Takaye Labs',
+		},
+		{
+			code: 'MKL3.7',
+			description:
+				'LEGAL OPINION ON LIABILITY OF M-KOPA IN AN ACCIDENT INVOLVING AN EMPLOYEE',
+		},
+		{
+			code: 'MKL3.8',
+			description: 'ADVISING ON THE E-MOBILITY PRODUCT.',
+		},
+		{
+			code: 'MKL3.9',
+			description: 'HC/CHR PET. NO. E200 OF 2021: STEPHEN JUMA -VS- M-KOPA HOLDING LIMITED',
+		},
+		{
+			code: 'MKL4.1',
+			description: 'TERMINATION ON REDUNDANCY-Henrik Axelsson Lilja & Andrew Opondo',
+		},
+		{
+			code: 'MKL4.10',
+			description:
+				'Review of the Addenda in relation to the Mobisol Sale and Purchase Contract/Financing Agreement',
+		},
+		{
+			code: 'MKL4.11',
+			description: 'Civil Suit No. 8 of 2020 – Ezra Muriiki Kiunga vs. Mobisol Kenya Ltd',
+		},
+		{
+			code: 'MKL4.2',
+			description: 'CAROLINE KOBAI VS.MOBISOL KENYA LIMITED',
+		},
+		{
+			code: 'MKL4.3',
+			description: 'DISTRIBUTION AGREEMENT BETWEEN MOBISOL AND THIRD PARTY DISTRIBUTOR.',
+		},
+		{
+			code: 'MKL4.4',
+			description: 'COURIER CONTRACT BETWEEN MOBISOL KENYA LTD AND G4S',
+		},
+		{
+			code: 'MKL4.5',
+			description:
+				'PARTNERSHIP AGREEMENT BETWEEN MOBISOL KENYA LIMITED AND WANANCHI GROUP (KENYA) LIMITED.',
+		},
+		{
+			code: 'MKL4.6',
+			description: 'ASUMPTA MUNEE MUSYOKA VS. MOBISOL KENYA LIMITED',
+		},
+		{
+			code: 'MKL4.7',
+			description: 'MOURICE OWOKO MYANGA VS. MOBISOL KENYA LIMITED.',
+		},
+		{
+			code: 'MKL4.8',
+			description: 'REVIEW OF MOU WITH JUHUDI KILIMO COMPANY KENYA LIMITED.',
+		},
+		{
+			code: 'MKL4.8/001',
+			description:
+				'Review of the Addenda in relation to the Mobisol Sale and Purchase Contract/Financing Agreement',
+		},
+		{
+			code: 'MKL4.9',
+			description: 'REVIEW OF LEASE AGREEMENT',
+		},
+		{
+			code: 'MMA1.1',
+			description:
+				'KARUTURI OVERSEAS LTD & 5 OTHERS (MMAN) -VS- ICICI BANK LTD & ANOTHER: HCCC NO. 68 OF 2015 (CIVIL APPEAL NO      OF 2015) (NBO)',
+		},
+		{
+			code: 'MMA2.1',
+			description: 'CIVIL SUIT NO. 920 OF 2001 DELPHIS BANK LTD VS MOHAMMED ASHRAF',
+		},
+		{
+			code: 'MMA2.2',
+			description:
+				'CIVIL APPLICATION NO. 69 OF 2016; KENYA PORTS AUTHORITY VS MODERN HOLDINGS (E.A.) LTD',
+		},
+		{
+			code: 'MMA2.3',
+			description:
+				'SUPREME COURT PETITION NO. 2 OF 2015: KAREN NJERI KANDIE VS ALASSANE BA & SHELTER AFRIQUE',
+		},
+		{
+			code: 'MMA2.4',
+			description:
+				'SUPREME COURT PETITION NO. 20 OF 2017: MODERN HOLDINGS (E.A.) LTD VS KENYA PORTS AUTHORITY',
+		},
+		{
+			code: 'MMC1.1',
+			description: 'MUKITE MUSANGI & COMPANY ADVOCATES',
+		},
+		{
+			code: 'MMC2.1',
+			description:
+				'HCCC NO. 284 OF 2016 HYDROPOWER INTERNATIONAL (PVT) VS KENYA TEA DEVELOPMENT AGENCY (HOLDINGS) & 5 OTHERS',
+		},
+		{
+			code: 'MML2.1',
+			description:
+				'LEGAL REPRESENTATIVES OF NAMED PERSONS TO PURSUE DAMAGES ARISING FROM THE EMBASSY BOMBING OF 1998',
+		},
+		{
+			code: 'MMO1.1',
+			description: 'SALE OF PROPERTY TITLE NUMBER NAIROBI/BLOCK 99/123:RUNDA',
+		},
+		{
+			code: 'MMO1.2',
+			description:
+				'PURCHASE OF APT NO. 403 ON LR.NO. 1870/X/78 BY CANAAN DEVELOPERS LTD TO MICHAEL MADARA OGOT & OGOT A. EUNICE',
+		},
+		{
+			code: 'MMU1.1',
+			description:
+				'HCCC NO. 87 OF 2012 - MSA EVANSON JIDRAPH KAMAU WAITIKI -VS- KENYA POWER & LIGHTING COMPANY LIMITED',
+		},
+		{
+			code: 'MMU1.2',
+			description:
+				'HC CONSTITUTIONAL PETITION NO. 12 OF 2020, MALINDI; ISAAC RODROT & 2 OTHERS VS DIRECTOR OF PUBLIC PROSECUTION & 2 OTHERS',
+		},
+		{
+			code: 'MOA1.1',
+			description: '2017 PRESIDENTIAL DEBATE IN THE RUN UP TO THE GENERAL ELECTION',
+		},
+		{
+			code: 'MOC1.1',
+			description:
+				'APPEAL NO. TAT 12 OF 2016 MOCIAN LIMITED VS COMMISSIONER OF DOMESTIC TAXES',
+		},
+		{
+			code: 'MOH1.1',
+			description: 'REPUBLIC VS MUJAHID MOHAMMED',
+		},
+		{
+			code: 'MOH3.1',
+			description: 'PROVISION OF LEGAL SERVICES',
+		},
+		{
+			code: 'MOI1.1',
+			description: '2f   MOI UNIVERSITY -VS- COUNCIL OF LEGAL EDUCATION',
+		},
+		{
+			code: 'MOI1.2',
+			description: 'CIVIL APPLN. NO. 27 OF 2015: MOI UNIVERSITY VS OINDI ZAIPPELIN & ANOR',
+		},
+		{
+			code: 'MOL1.1',
+			description: 'CORPORATE AND TAX ADVICE ON TRANSFER OF SHARES',
+		},
+		{
+			code: 'MOM1.1',
+			description:
+				'SAMUEL G. MOMANYI VS SD TRANSAMI(K) LTD: INDUSTRIAL CAUSE NO. 358 OF 2010',
+		},
+		{
+			code: 'MON1.1',
+			description:
+				'MR & MRS MICHAEL MONYE -VS- KEMRI C.D.C RESEARCH & PUBLIC HEALTH COLLABORATION: HIV & AIDS TRIBUNAL CASE NO. H.A.T 004 OF 2013',
+		},
+		{
+			code: 'MOT1.1',
+			description: 'JOHN MOTION',
+		},
+		{
+			code: 'MOT2.1',
+			description: 'IN THE MATTER OF THE ESTATE OF JOSEPHENE MOTION (DECEASED)',
+		},
+		{
+			code: 'MOT2.2',
+			description: 'TAX COMPLIANCE',
+		},
+		{
+			code: 'MOT3.1',
+			description:
+				'APPEAL IN ELC CASE NO. 456 OF 2018 - ABDUL MAJID SULEIMAN VS. PHILAN HOLDINGS LTD & 4 OTHERS',
+		},
+		{
+			code: 'MPL1.1',
+			description: 'MADISON PAGE LTD',
+		},
+		{
+			code: 'MRI1.1',
+			description: 'STEVE KITHI VS GEORGE KITHI & ANTHONY MRIMA: HCCC NO. 581 OF 2009 (NBO)',
+		},
+		{
+			code: 'MRL1.1',
+			description: 'MAHE RESORT LTD',
+		},
+		{
+			code: 'MRM1.1',
+			description: 'MABATI ROLLING MILLS',
+		},
+		{
+			code: 'MRM1.2',
+			description: 'MAXWELL ODEDE & PETER MULU HCCC NO. 1345 OF 2002',
+		},
+		{
+			code: 'MRM2.1',
+			description: 'MABATI ROLLING MILLS LTD VS MAISHA MABATI LTD',
+		},
+		{
+			code: 'MRM2.2',
+			description:
+				'HCCC NO.113 OF 2003 (O.S):GALSHEET KENYA LTD-VS-GIKUNDA MIRITI T/A GIKUNDA MIRITI & COMPANY ADVOCATES',
+		},
+		{
+			code: 'MRM3.1',
+			description:
+				'REVIEW OF CONTRACT WITH EASTERN & SOUTHERN AFRICAN TRADE AND DEVELOPMENT BANK',
+		},
+		{
+			code: 'MRM3.10',
+			description: 'REVIEW OF SERVICES AGREEMENT WITH ATC KENYA OPERATIONS LIMITED.',
+		},
+		{
+			code: 'MRM3.11',
+			description: 'REVIEW OF SERVICES AGREEMENT WITH THE ATTORNEY GENERAL’S OFFICE.',
+		},
+		{
+			code: 'MRM3.12',
+			description:
+				'Drafting an Addendum between Metrofile Records Management Kenya Limited and Acumen EA Advisory Services Limited',
+		},
+		{
+			code: 'MRM3.13',
+			description:
+				'Drafting an Addendum between Metrofile Records Management Kenya Limited and Acumen EA Advisory Services Limited',
+		},
+		{
+			code: 'MRM3.14',
+			description:
+				'Reviewing a Service Level Agreement between Metrofile Records Management Kenya Limited and CIC Insurance Group Limited',
+		},
+		{
+			code: 'MRM3.15',
+			description:
+				'Reviewing Terms and Conditions for Metrofile Records Management Kenya Limited',
+		},
+		{
+			code: 'MRM3.16',
+			description: 'Deed of Variation in relation to Agreement with KCB Bank Kenya Limited',
+		},
+		{
+			code: 'MRM3.17',
+			description: 'Review of Service Agreement with PwC',
+		},
+		{
+			code: 'MRM3.18',
+			description: 'Review of Service Agreement with Isuzu EA Limited',
+		},
+		{
+			code: 'MRM3.19',
+			description: 'DRAFTING TEMPLATE SERVICE AGREEMENT',
+		},
+		{
+			code: 'MRM3.2',
+			description: 'REVIEW OF SERVICE AGREEMENT WITH UNIVERSAL CORPORATION KENYA.',
+		},
+		{
+			code: 'MRM3.20',
+			description: 'REVIEWING SERVICE LEVEL AGREEMENT WITH COCA COLA',
+		},
+		{
+			code: 'MRM3.21',
+			description: 'REVIEWING CONFIDENTIALITY AND PRIVACY AGREEMENT.',
+		},
+		{
+			code: 'MRM3.22',
+			description: 'REVIEW OF A SERVICE AGREEMENT WITH BUILDERS WAREHOUSE (KENYA) LIMITED.',
+		},
+		{
+			code: 'MRM3.23',
+			description:
+				'REVIEW OF LEASE AGREEMENT IN RESPECT OF PREMISES SITUATE ON PROPERTY L.R. NO. 209/8177 ON BEHALF OF METROFILE RECORDS MANAGEMENT KENYA LIMITED.',
+		},
+		{
+			code: 'MRM3.24',
+			description: 'DRAFTING NDA WITH JUBILEE INSURANCE GROUP LIMITED',
+		},
+		{
+			code: 'MRM3.25',
+			description: 'REVIEW OF SERVICE LEVEL AGREEMENT WITH DELOITTE LIMITED',
+		},
+		{
+			code: 'MRM3.26',
+			description: 'REVIEWING CONSENT MANAGEMENT FRAMEWORK',
+		},
+		{
+			code: 'MRM3.27',
+			description: 'REVIEWING SERVICE LEVEL AGREEMENT WITH UNILEVER KENYA LIMITED.',
+		},
+		{
+			code: 'MRM3.28',
+			description:
+				'METROFILE RECORDS MANAGEMENT KENYA LIMITED VS. MINET KENYA INSURANCE BROKERS LIMITED (FORMERLY ION KENYA)',
+		},
+		{
+			code: 'MRM3.29',
+			description:
+				'REVIEWING SERVICE LEVEL AGREEMENT WITH BHARTI AIRTEL INTERNATIONAL (NETHERLANDS) B.V. KENYA BRANCH',
+		},
+		{
+			code: 'MRM3.3',
+			description: 'REVIEW OF SERVICE AGREEMENTWITH OXFORD UNIVERSITY',
+		},
+		{
+			code: 'MRM3.30',
+			description: 'REVIEW OF THE SERVICE AGREEMENT WITH BRITAM',
+		},
+		{
+			code: 'MRM3.31',
+			description:
+				'PREPARING ADDENDUM OF SERVICE LEVEL AGREEMENT WITH TOTALENERGIES MARKETING KENYA PLC.',
+		},
+		{
+			code: 'MRM3.32',
+			description: 'REVIEWING SERVICE LEVEL AGREEMENT WITH DEUTSCHE POST DHL GROUP',
+		},
+		{
+			code: 'MRM3.33',
+			description: 'REVIEWING SERVICE LEVEL AGREEMENT WITH WPP SCANGROUP PLC',
+		},
+		{
+			code: 'MRM3.34',
+			description: 'REVIEWING SERVICE LEVEL AGREEMENT WITH CFAO KENYA LIMITED',
+		},
+		{
+			code: 'MRM3.5',
+			description: 'REVIEW OF SERVICE LEVEL AGREEMENT WITH KPMG ADVISORY SERVICES LIMITED ',
+		},
+		{
+			code: 'MRM3.6',
+			description: 'REVIEW OF SERVICE LEVEL AGREEMENT WITH GLAXO SMITHKLINE LIMITED.',
+		},
+		{
+			code: 'MRM3.7',
+			description: 'REVIEW OF SERVICE LEVEL AGREEMENT WITH YARA EAST AFRICA LIMITED.',
+		},
+		{
+			code: 'MRM3.8',
+			description: 'PREPARATION OF SERVICES AGREEMENT WITH NOVA PIONEER.',
+		},
+		{
+			code: 'MRM3.9',
+			description: 'GENERAL CORPORATE ADVICE',
+		},
+		{
+			code: 'MRU1.2',
+			description: 'DEMAND FOR THE SUM OF KSHS 250,000/-',
+		},
+		{
+			code: 'MRU2.1',
+			description: 'ISAAC MRUTTU ( OLE MOSOOI MOSHAO)',
+		},
+		{
+			code: 'MRU2.2',
+			description: 'MISC/ISAAC MRUTTU/2012',
+		},
+		{
+			code: 'MRU2.3',
+			description: 'HCCC NO. 233 OF 2004 BENJAMIN MUTUKU KALELI',
+		},
+		{
+			code: 'MRU2.5',
+			description:
+				'SALE OF PROPERTY LR NO 15065/18;KAREN MARISA LIMITED TO ABDISIYAD H. ADAN & DERRICK KOLI',
+		},
+		{
+			code: 'MRU2.6',
+			description: 'KENYA REVENUE AUTHORITY VS. MRUTTU SALMAN & ASSOCIATES.',
+		},
+		{
+			code: 'MRU2.7',
+			description: 'PROPOSED PETROL STATION ON LR NO. 1870/111/71',
+		},
+		{
+			code: 'MRU3.1',
+			description: 'MARISA LTD/OTTO MRUTTU',
+		},
+		{
+			code: 'MRU3.2',
+			description:
+				'ENVIRONMENT & LAND COURT DIVISION, CMELC NO. E005 OF 2023, TAVETA: OTTO S.S. MRUTTU VS. ROSE KATETHE NAZI & OTHERS',
+		},
+		{
+			code: 'MRU4.1',
+			description: 'E&LC CAUSE NO. 1053 OF 2016: BETTY KAVELE VS NICHOLAS MRUTTU',
+		},
+		{
+			code: 'MRU4.2',
+			description:
+				'TRIBUNAL CASE NO.E684 OF 2021: ISAIHA KANDIE T/A KANDIE & COMPANY ADVOCATES -VS- NICHOLAS SAUKA MRUTTU T/A MARISA LIMITED & INTIME AUCTIONEERS',
+		},
+		{
+			code: 'MRU5.1',
+			description: 'REPUBLIC VS RAMES MRUTTU CR CAUSE NO. 59 OF 2016',
+		},
+		{
+			code: 'MRU6.1',
+			description: 'GENERAL CORPORATE ADVICE.',
+		},
+		{
+			code: 'MRY1.1',
+			description: 'MR. ISAAC MRUTTU MWATATE -TAITA RD PROJECT',
+		},
+		{
+			code: 'MSA1.1',
+			description: 'MCELRC E1029 OF 2023',
+		},
+		{
+			code: 'MSC1.2',
+			description: 'MUMIAS DEBT RESTRUCTURING AGREEMENTS',
+		},
+		{
+			code: 'MSE1.1',
+			description: 'NANOVAS LEGAL SERVICES',
+		},
+		{
+			code: 'MSE1.1/001',
+			description:
+				'LCIA ARBITRATION NO. 235782: SOFTPAWA LIMITED V. NANOVAS TANZANIA LIMITED, ALEKA HOLDINGS LIMITED & ALFRED CHRISTOPHER MSEMO',
+		},
+		{
+			code: 'MSH1.1',
+			description:
+				'MISS VERA JOY MSHANA -VS- ALEX KADZITU & ANOTHER: RMCC NO. 3227 OF 2012 (NBO)',
+		},
+		{
+			code: 'MSL1.1',
+			description:
+				'PROPOSED ACQUISITION OF COMPANIES ENTITLED TO GENERATE & SELL 200MW OF ELECTRICITY GENERATED FROM SOLAR ENERGY',
+		},
+		{
+			code: 'MSL1.2',
+			description:
+				"PUBLIC PRIVATE PARTNERSHIP (PPP) WITH EWASO NG'IRO NORTH RIVER BASIN DEVELOPMENT AUTHORITY",
+		},
+		{
+			code: 'MSL1.3',
+			description: 'GENERAL ADVICE',
+		},
+		{
+			code: 'MSL1.4',
+			description: 'ADVICE ON TAKE-OVER OF EADB FACILITIES TO DARI LIMITED',
+		},
+		{
+			code: 'MSL1.5',
+			description: 'FACILITIES TO KIFARU GALVANIZING LIMITED',
+		},
+		{
+			code: 'MSL2.1',
+			description: 'PROVISION OF LEGAL SERVICES TO  MORINGA SCHOOL LIMITED',
+		},
+		{
+			code: 'MSL2.2',
+			description: 'LEGAL OPINION IN RELATION TO PROPOSED FINANCING OF THE COMPANY',
+		},
+		{
+			code: 'MSL2.3',
+			description: 'REVIEW OF A SOFTWARE LICENSING AGREEMENT WITH FLATIRON.',
+		},
+		{
+			code: 'MSS1.1',
+			description:
+				'MATHIAS MWAGONAH VS POLYCAPP ONYANGO/MZIMA SPRINGS SAVINGS & CREDIT SOCIETY LTD: C.T.C NO. 141 OF 2013',
+		},
+		{
+			code: 'MTL1.1',
+			description: 'ELRC NO. 2089 OF 2014 MURIEL OGOUDJOBI',
+		},
+		{
+			code: 'MTL1.2',
+			description: 'MARA-ISON TECHNOLOGIES KENYA LTD -VS- JOSEPH MOUSSA SAMAKE',
+		},
+		{
+			code: 'MTL1.3',
+			description: 'OPENING BALANCE TRUST 2015',
+		},
+		{
+			code: 'MTL2.2',
+			description: 'DEBT COLLECTION',
+		},
+		{
+			code: 'MTL2.3',
+			description: 'MIDCO TEXTILE LIMITED VS KENYA REVENUE AUTHORITY',
+		},
+		{
+			code: 'MTL2.4',
+			description: 'SUMMIT TEXTILES LIMITED VS KENYA REVENUE AUTHORITY',
+		},
+		{
+			code: 'MUC1.1',
+			description:
+				'TERMINATION OF LEASE IN RESPECT OF APPLEWALK PARK, APARTMENT B1 - 330/334',
+		},
+		{
+			code: 'MUC2.1',
+			description:
+				'DIVORCE CAUSE NO. E176 OF 2023: NANCY WAITHIEGENI KARIGE.VS. JOHN NJOROGE MUCHERU',
+		},
+		{
+			code: 'MUG2.1',
+			description: 'JANET MUGENDI -VS- BETTY KAVELE LIMANYE (LABOUR DISPUTES)',
+		},
+		{
+			code: 'MUG4.1',
+			description: 'IN THE MATTTER OF THE ESTATE OF MOHAMED NIAZ JAMIL  ',
+		},
+		{
+			code: 'MUG5.1',
+			description: 'PURCHASE OF UNIT NO. A24 – AWALI ESTATE ON LR. NO. 5025/97',
+		},
+		{
+			code: 'MUG6.1',
+			description:
+				'PURCHASE OF APARTMENT NUMBER 1611 -EXECUTIVE ONE BEDROOM IN "88 NAIROBI" ON LAND REFERENCE NUMBER 209/3006',
+		},
+		{
+			code: 'MUG7.1',
+			description:
+				'PURCHASE OF SECTIONAL TITLE NUMBER 719/097; EMBAKASI BY ISAAC OMONDI MUGA FROM NSSF.',
+		},
+		{
+			code: 'MUI1.1',
+			description:
+				'AGNES MUIA - ECHUKA COUNTRY ESTATES LTD: SALE OF HOUSE NO 18 (BALMORAL) ON L.R NO. 155/20 TIGONI',
+		},
+		{
+			code: 'MUI2.1',
+			description: 'PURCHASE OF APARTMENT NO.C-1805, GTC APARTMENTS, WESTLANDS',
+		},
+		{
+			code: 'MUK1.1',
+			description: 'UNPAID FINAL DUES FOR CLARE MUKABANA',
+		},
+		{
+			code: 'MUL1.1',
+			description:
+				'FIAZ MOHAMED ABDULRAZAK & ANOTHER VS TEDDY MULINYA AND ANOTHER: CHILDRENS MISC CAUSE NO. 138 OF 2015',
+		},
+		{
+			code: 'MUL2.1',
+			description:
+				'SUCCESSION CAUSE NO. 1975 OF 2015 - IN THE MATTER OF THE ESTATE OF BERNHARD MARTENS (DECEASED)',
+		},
+		{
+			code: 'MUL2.2',
+			description:
+				'HCCC NO. E830 OF 2021 - MATHILDA CORNELIA DE LEEUW VS. ROBERT MAX MULIE & 3 OTHERS',
+		},
+		{
+			code: 'MUL2.3',
+			description: 'CMCC NO. E942 OF 2023 - JOHN ANTONIO BLOOD VS. DR. RYETS CONNIE MEULDIJK',
+		},
+		{
+			code: 'MUN2.1',
+			description: 'STEPHEN MUNENE KENGARA',
+		},
+		{
+			code: 'MUN3.1',
+			description: 'DEBT COLLECTION KSHS. 237,970.80 FROM LILIAN WANGARI NJOROGE',
+		},
+		{
+			code: 'MUN4.1',
+			description: 'ELIZABETH KARUNGARI MUNGA -VS- DAVID IRUNGU KAHUMBU',
+		},
+		{
+			code: 'MUN4.2',
+			description: 'ELIZABETH KARUNGARI GITHUNGURI VS VIVO ENERGY KENYA LIMITED',
+		},
+		{
+			code: 'MUN4.3',
+			description: 'GENERAL FILE',
+		},
+		{
+			code: 'MUN4.4',
+			description: 'ADVICE ON PREPARATION OF A WILL',
+		},
+		{
+			code: 'MUN4.5',
+			description:
+				'LEASE ON PLOT NO.209/7979;ALONG VIHIGA ROAD,KILELESHWA ESTATE BY ELIZABETH KARUNGARI MUNGA TO CAFOD EAST AFRICA LIMITED',
+		},
+		{
+			code: 'MUN4.6',
+			description:
+				'LEASE OF HOUSE NO.25A;JAMHURI ESTATE-NAIROBI ELIZABETH KARUNGARI MUNGA TO FRANCIS G.KINYANJUI',
+		},
+		{
+			code: 'MUN4.7',
+			description:
+				'RENT RESTRICTION CASE NO. 2294 OF 2018 DEBBY AKOTH NANGAH VS. ELIZABETH KARUNGARI MUNGA GITHUNGURI & 2 OTHERS.',
+		},
+		{
+			code: 'MUN5.1',
+			description:
+				'ELRC CAUSE NO. 1317 OF 2010 - GRACE M. MUNJURI VS TRUSTEES OF AGRICULTURAL SOCIETY OF KENYA',
+		},
+		{
+			code: 'MUN6.1',
+			description: 'SALE OF PROPERTY NAIROBI/BLOCK 104/395',
+		},
+		{
+			code: 'MUP1.1',
+			description:
+				'SALE/PURCHASE OF APARTMENT NUMBER K7, KENTMERE VALLEY, L.R. NO.209/11872, NAIROBI',
+		},
+		{
+			code: 'MUR1.1',
+			description: 'ALAN MURUNGI',
+		},
+		{
+			code: 'MUR2.1',
+			description: 'BERNARD MURAGE',
+		},
+		{
+			code: 'MUR3.1',
+			description: 'IN THE MATTER OF THE ESTATE OF THE LATE FAITH NDUTA MURAYA (DECEASED)',
+		},
+		{
+			code: 'MUR4.1',
+			description: 'ALAN MURUNGI (CUSTODY AND MAINTENANCE) AGRREEMENT',
+		},
+		{
+			code: 'MUS1.1',
+			description:
+				'SALE & PURCHASE OF APARTMENT NO. 1403 ROSEVILLE APARTMENT LR. NO. 1/609 KILIMANI AREA NAIROBI',
+		},
+		{
+			code: 'MUS2.1',
+			description:
+				'RECOVERY OF PURCHASE PRICE PAID FOR THE PURCHASE OF ONE APARTMENT-SHAZA DEVELOPMENT',
+		},
+		{
+			code: 'MUS2.2',
+			description: 'SALE & PURCHASE OF UNIT 405,9 OAK, LR. NO. 1/523',
+		},
+		{
+			code: 'MUS3.1',
+			description: 'SALE AND PURCHASE OF UNIT NO. 405 BLOCK 9 OAK LR. NO. 1/523',
+		},
+		{
+			code: 'MUS4.1',
+			description: 'AGOYOM AKOMJO MUSELLAM VS. THE REPUBLIC OF SOUTH SUDAN (ROSS).',
+		},
+		{
+			code: 'MUT0077.2',
+			description: 'PROJECT ATHI',
+		},
+		{
+			code: 'MUT0077.4',
+			description:
+				'PROPOSED JOINT VENTURE BETWEEN DAMEI INVESTMENT COMPANY AND THE MUTUA FAMILY',
+		},
+		{
+			code: 'MUT0077.5',
+			description: 'SALE OF LAND REFERENCE NU8MBER 3734/340-NAIROBI TO AHMED KASSIM BHARADIA',
+		},
+		{
+			code: 'MUT1.1',
+			description:
+				'IN THE MATTER OF THE ESTATE OF JAMES NGENGI MUIGAI (DECEASED): C. APPEAL NOS. 13 & 56 OF 2007',
+		},
+		{
+			code: 'MUT10.1',
+			description:
+				'RECTIFICATION OF CERTIFICATES OF CONFIRMATION OF GRANT FOR ANNE & DAVID MUTUA',
+		},
+		{
+			code: 'MUT11.1',
+			description:
+				'PURCHASE OF APARTMENT NO. SPG/09/E4/003, ENCASA THREE, L.R. NO. 20282, ENCASA AT MOMBASA ROAD LIMITED',
+		},
+		{
+			code: 'MUT12.1',
+			description: 'GENERAL FILE',
+		},
+		{
+			code: 'MUT13.1',
+			description: 'PROBATE AND ADMINISTRATION FOR JAMES KASYULA MUTUA',
+		},
+		{
+			code: 'MUT2.1',
+			description: 'DR. WILLY MUTUNGA vs PROF. B LAY',
+		},
+		{
+			code: 'MUT3.1',
+			description: 'IN THE MATTER OF THE MUTUA FAMILY AND FAMILY PROPERTIES',
+		},
+		{
+			code: 'MUT3.2',
+			description:
+				'UATHIMO FARM LIMITED SUBDIVISION AND CHANGE OF USER ON L.R. NO. 9731/1/-EMALI',
+		},
+		{
+			code: 'MUT3.3',
+			description: 'CERTIFICATE OF TITLE NUMBER I.R. 10502 LR. NO. 3734/141; NAIROBI',
+		},
+		{
+			code: 'MUT3.4',
+			description: 'MACHAKOS NURSING HOME LIMITED',
+		},
+		{
+			code: 'MUT3.5',
+			description: 'DEED OF ASSENTS',
+		},
+		{
+			code: 'MUT3.7',
+			description:
+				'ELC SUIT NO. E02 OF 2021 – MOSES WAMBUA MUTUA & ANOR VS. JOHN KIOKO MUTUA',
+		},
+		{
+			code: 'MUT4.1',
+			description: 'IN THE MATTER OF THE ESTATE OF THE LATE RUTH KALEKYE MUTUA (DECEASED)',
+		},
+		{
+			code: 'MUT5.1',
+			description: 'SHEILA NKATHA MUTHEE: INDUSTRIAL CAUSE NO. 133 (N) OF 2008',
+		},
+		{
+			code: 'MUT6.1',
+			description: 'IN MATTER OF ESTATE OF LATE FRANCIS MUTHUI MWANGI (DECEASED)',
+		},
+		{
+			code: 'MUT9.1',
+			description: 'ADVISORY',
+		},
+		{
+			code: 'MWA1.1',
+			description: 'DR. JACOB N. MWANGI -  L.R NO. 3734/978',
+		},
+		{
+			code: 'MWA1.4',
+			description:
+				'DR. JACOB MWANGI VS CHINA COMMUNICATIONS CONSTRUCTION COMPANY LTD (KENYA BRANCH)',
+		},
+		{
+			code: 'MWA1.5',
+			description: 'FAMILY',
+		},
+		{
+			code: 'MWA1.6',
+			description: 'PERSONAL MATTERS',
+		},
+		{
+			code: 'MWA10.1',
+			description: 'SALE OF LR NO. 36/1143/III EASTLEIGH TO BISHAR EDEN DAUDI & ALI FARAH',
+		},
+		{
+			code: 'MWA11.1',
+			description: 'PURCHASE OF TITLE NUMBER  RUIRU  KIU BLOCK 8/403',
+		},
+		{
+			code: 'MWA12.1',
+			description: 'OPINION & EVENTUAL INSTITUTION OF CIVIL SUIT TO RECOVER  KSHS.22 MILLION',
+		},
+		{
+			code: 'MWA13.1',
+			description: 'GENERAL  FILE',
+		},
+		{
+			code: 'MWA14.1',
+			description: 'BETTY MWATHA VS. MULTI CHOICE KENYA LIMITED',
+		},
+		{
+			code: 'MWA15.1',
+			description: 'PERSONAL MATTERS',
+		},
+		{
+			code: 'MWA16.1',
+			description: 'Purchase of MAVOKO TOWN BLOCK 2/14589',
+		},
+		{
+			code: 'MWA17.1',
+			description:
+				'PURCHASE OF PROPERTY LR. NO. 28318/2358 AT UKOMBOZI GREEN ESTATE IN RUIRU MUNICIPALITY TO VICTOR M. MWANGI',
+		},
+		{
+			code: 'MWA2.1',
+			description: 'EDWARD MWAKIO',
+		},
+		{
+			code: 'MWA3.1',
+			description: 'EMMA NJERI MWANGI VS MARK MUHINDI: DIVORCE CAUSE NO.208 OF 2014',
+		},
+		{
+			code: 'MWA4.1',
+			description: 'EMMA NJERI MWANGI VS MARK MUHINDI GITHUI: HC DC NO.        OF 2013 (NBI)',
+		},
+		{
+			code: 'MWA5.1',
+			description: 'MWAGHAZI MWASHIMBA WASAI MWACHOFI',
+		},
+		{
+			code: 'MWA6.1',
+			description: 'MWAGHAZI MWACHOFI (GARDEN CITY VILLAGE)',
+		},
+		{
+			code: 'MWA8.1',
+			description: 'FRANK MONARI DIVORCE PETITION',
+		},
+		{
+			code: 'MWA9.1',
+			description:
+				'DIVORCE CAUSE NO. (TBA) OF 2017: LAWRENCE WAINAINA MWAURA VS MARY WAMBUI WAINAINA',
+		},
+		{
+			code: 'MWE1.1',
+			description: 'Divorce Cause No. … of 2020',
+		},
+		{
+			code: 'MWI1.1',
+			description:
+				'KENNETH NYAGA MWIGE VS AUSTIN KIGUTA & TWO OTHERS CIVIL APPEAL NO. 140 OF 2011',
+		},
+		{
+			code: 'MWI2.1',
+			description: "MARGARET NJERI MWITHIGA VS EZEKIEL MUTHIANI MAWEU: CHILDREN'S CASE NO.",
+		},
+		{
+			code: 'MWI3.1',
+			description:
+				'HENRY GITONGA MWIREBUA -VS- LYDIA KINYA MWITHIMBU & ANOTHER: CMCC NO 2277 OF 1995',
+		},
+		{
+			code: 'MWI4.2',
+			description: 'PETITION TO THE JUDICIAL SERVICE COMMISSION',
+		},
+		{
+			code: 'MWS1.1',
+			description: 'REVIEW OF CONTRACTS',
+		},
+		{
+			code: 'MWW1.1',
+			description: 'MBOYA WANGONCU & WAIYAKI ADVOCATES',
+		},
+		{
+			code: 'MZA1.1',
+			description: 'JOSHUA MWAGONDI MZAME: TERMINATION OF EMPLOYMENT',
+		},
+		{
+			code: 'NAI1.1',
+			description:
+				'GAUTAM NAIR & PINKY NAIR - SALE OF DUPLEX NO. 3B  BL ESSENZA ON LR NO. 1870/11/162, MATHENGE DRIVE',
+		},
+		{
+			code: 'NAI1.2',
+			description:
+				'GAUTAM NAIR & PINKY NAIR - SALE OF DUPLEX NO. 3B  BL ESSENZA ON LR NO. 1870/11/162, MATHENGE DRIVE',
+		},
+		{
+			code: 'NAK1.1',
+			description: 'DT DOBIE & CO (K) LTD VS PATRICK O NAKHOLI: CMCC NO. 4211 OF 2013 NBO',
+		},
+		{
+			code: 'NAL1.1',
+			description: 'MUMIUS SUGAR CO LTD VS NALINKUMAR M.SHAH: CIV APPEAL NO 21 OF 2011 MSA',
+		},
+		{
+			code: 'NAL1.2',
+			description: 'HC PET.NO.17 OF 2011 THE MUNICIPAL COUNCIL OF NAKURU & 2 OTHERS',
+		},
+		{
+			code: 'NAL2.1',
+			description:
+				'PURCHASE OF APARTMENT NO. A2 BELLCREST GARDENS FROM WINCHESTER PARK LIMITED BY MARK CHEMIATI NALYANYA & JOSEPHINE NASAMBU SIKULU',
+		},
+		{
+			code: 'NAN1.1',
+			description: 'AMOS NANDY',
+		},
+		{
+			code: 'NAN2.1',
+			description:
+				'NANDO LIMITED VS MARIA SARONYA NATTA AND 2 OTHERS (MARULA ESTATES LIMITED) HCCC NO. 2264 OF 1985',
+		},
+		{
+			code: 'NAN3.1',
+			description: 'GRANT OF PROBATE',
+		},
+		{
+			code: 'NAN3.2',
+			description: 'WILL FOR FARIDA NANJI',
+		},
+		{
+			code: 'NAN4.1',
+			description: 'ESTATE OF GULBANU AKBERALI NANJI',
+		},
+		{
+			code: 'NAN5.1',
+			description:
+				'Sale transaction for the purchase of  a 5 bedroom Town House with 2 No. domestic servants’ quarters at Ololua Ridge, Karen erected on Land Reference Number 6939/2, Nairobi.',
+		},
+		{
+			code: 'NAS1.1',
+			description: 'NAOMI MRUTTU NASHINYARI- MATRIMONIAL PROCEEDINGS',
+		},
+		{
+			code: 'NAU1.1',
+			description: 'EXTENSIONS OF LEASE ON LR. NO. 1870/55/IX PARKLANDS ROAD. NAIROBI',
+		},
+		{
+			code: 'NBK1.1',
+			description: 'JAMES KINIIYA GACHIRA - CHARGE OVER JIMLIZEN HOTEL',
+		},
+		{
+			code: 'NBK1.100',
+			description:
+				'BANKING FACILITIES TO CYNTHIA NJERI NDUNGU,PLOT NO. CP50 ,LR NO.29059,MIGAA GOLF ESTATE,KIAMBU',
+		},
+		{
+			code: 'NBK1.101',
+			description:
+				'ELRC NO 189 OF 2018:ASANTA SAMANTHA LUKU VS.NATIONAL BANK OF KENYA LIMITED ANOTHER',
+		},
+		{
+			code: 'NBK1.102',
+			description:
+				'UNFAIR TERMINATION & FAILURE TO PAY TERMINAL DUES AND BENEFITS-MUNIR SHEIKH AHMED',
+		},
+		{
+			code: 'NBK1.103',
+			description:
+				'APPEAL NO.1 OF 2018:SOLOMON MUYEKA ALUBALA VS.CAPITAL MARKETS AUTHORITY & NATIONAL BANK OF KENYA LIMITED & ANOTHER',
+		},
+		{
+			code: 'NBK1.104',
+			description:
+				'MISC CIVIL APPLN NO.251 OF 2018:SOLOMON MUYEKA ALUBALA VS.CAPITAL MARKETS AUTHORITY & ANOTHER',
+		},
+		{
+			code: 'NBK1.105',
+			description: 'BANKING FACILITIES TO SOVEREIGN HOTEL LIMITED',
+		},
+		{
+			code: 'NBK1.106',
+			description: 'PROJECT HELIOS',
+		},
+		{
+			code: 'NBK1.107',
+			description:
+				'PETITION NO. 215 OF 2019 EVANS ASETO & ANOR VS. NATIONAL BANK OF KENYA & OTHERS',
+		},
+		{
+			code: 'NBK1.108',
+			description:
+				'TAKE OVER OFFER DOCUMENT IN RESPECT OF THE PROPOSED ACQUISITION BY KCB GROUP PLC OF ALL OF THE ORDINARY SHARES OF NATIONAL BANK OF KENYA LTD.',
+		},
+		{
+			code: 'NBK1.109',
+			description:
+				'NRB ELRC NO. 399 OF 2019: BANKING INSURANCE & FINANCE UNION (K) VS. NATIONAL BANK OF KENYA LTD',
+		},
+		{
+			code: 'NBK1.11',
+			description:
+				'ROSELINE MARY KAHUMBU VS NATIONAL BANK OF KENYA LTD: HCCC NO 1336 OF 2001',
+		},
+		{
+			code: 'NBK1.110',
+			description:
+				"OPINION AND ADVISE ON THE WAY FORWARD ON DEMAND FOR AUDIT OF THE BANK'S (NBK) FINANCIAL STATEMENTS BY THE OFFICE OF THE AUDITOR GENERAL.",
+		},
+		{
+			code: 'NBK1.111',
+			description:
+				'NAIROBI ELRC NO.1555 OF 2019: DAVID KIMANTHI MAITHA VS. NATIONAL BANK OF KENYA LIMITED',
+		},
+		{
+			code: 'NBK1.112',
+			description:
+				'HCCC NO. 25 OF 1998: JAMES MWANGI NJIIRI VS. NATIONAL BANK OF KENYA LTD & ANOTHER.',
+		},
+		{
+			code: 'NBK1.113',
+			description:
+				"E&LRC CAUSE NO.28 OF 2020: DAVID MAINA NDUNG'U VS. NATIONAL BANK OF KENYA LTD",
+		},
+		{
+			code: 'NBK1.115',
+			description: 'BANKING FACILIITES TO MICHELLE AKOTH ORATA',
+		},
+		{
+			code: 'NBK1.116',
+			description:
+				'Nairobi CMCC No. 612 of 2020 Nicole Phylis Okwiri -vs- National Bank of Kenya Limited ',
+		},
+		{
+			code: 'NBK1.117',
+			description:
+				'E&LRC CAUSE NO. 659 OF 2019; MARIA LENA KAVITHE MANDINA -VS- NATIONAL BANK OF KENYA LIMITED.',
+		},
+		{
+			code: 'NBK1.118',
+			description:
+				'E&LRC CAUSE NO.1109 OF 2014. JOSIAH WANJOHI  -VS- NATIONAL BANK OF KENYA LIMITED.',
+		},
+		{
+			code: 'NBK1.119',
+			description: 'BANKING FACILITIES TO MARK MUTHUI MBOGO.',
+		},
+		{
+			code: 'NBK1.12',
+			description:
+				'ALDRIN OJIAMBO T/A OJIAMBO & COMPANY ADVOCATES  -VS- NATIONAL BANK OF KENYA LTD: HC MISC. CAUSE NO. 86 OF 2014',
+		},
+		{
+			code: 'NBK1.120',
+			description:
+				'NAIROBI CIVIL APPEAL NO. 80 OF 2017 – BASIL CRITICOS V. NATIONAL BANK OF KENYA LIMITED',
+		},
+		{
+			code: 'NBK1.121',
+			description: 'BANKING FACILITIES TO SIMON NJUGUNA MBOGO.',
+		},
+		{
+			code: 'NBK1.13',
+			description:
+				'NATIONAL BANK OF KENYA LTD VS JOHN LITONDO & ARTHUR AGWAYO: HCCC NO. 171 OF 2006',
+		},
+		{
+			code: 'NBK1.14',
+			description: 'BENEDICT MUMO VS NATIONAL BANK OF KENYA LTD: CAUSE NO.1576 OF 2014',
+		},
+		{
+			code: 'NBK1.15',
+			description:
+				'JIMMY LABI -VS- NATIONAL BANK OF KENYA LTD: INDUSTRIAL CAUSE NO. 682 B OF 2014 (NBO)',
+		},
+		{
+			code: 'NBK1.16',
+			description:
+				'BANKING INSURANCE & FINANCE UNION (KENYA) VS NATIONAL BANK OF KENYA LTD: INDUSTRIAL CAUSE NO 846 OF 2014 (NBO)',
+		},
+		{
+			code: 'NBK1.17',
+			description:
+				'ALFRED MUTHOMI MUTIRA TERESIA WAIRIMU KARANJA, JOSEPH MWANGI MAINA -VS- NATIONAL BANK OF KENYA LTD: INDUSTRIAL CAUSE NO.1189 OF 2014 (NBO)',
+		},
+		{
+			code: 'NBK1.18',
+			description:
+				'NATIONAL BANK OF KENYA LTD & 4 OTHERS -VS- FRANCIS OYOO AJALA & 2 OTHERS: INDUSTRIAL CAUSE NO 1693 OF 2013',
+		},
+		{
+			code: 'NBK1.19',
+			description:
+				'SYLVESTER MUTULI -VS- NATIONAL BANK OF KENYA LTD: INDUSTRIAL CAUSE NO. 1330 OF 2014',
+		},
+		{
+			code: 'NBK1.2',
+			description: 'JAMES KINIIYA GACHIRI',
+		},
+		{
+			code: 'NBK1.20',
+			description:
+				'JOSEPH MACHARIA KARUMBA -VS- NATIONAL BANK OF KENYA LTD: INDUSTRIAL CAUSE NO 1331 OF 2014',
+		},
+		{
+			code: 'NBK1.24',
+			description:
+				'SAMUEL NGURU MUTONYA -VS- NATIONAL BANK OF KENYA LTD: INDUSTRIAL CAUSE NO.1279 OF 2014 NAIROBI',
+		},
+		{
+			code: 'NBK1.26',
+			description:
+				'NATIONAL BANK OF KENYA LTD - ELIZABETH ASIKO WANYANGA: LEGAL CHARGE OVER APARTMENT NO C1 ON LR.NO12715/402 MACHAKOS',
+		},
+		{
+			code: 'NBK1.27',
+			description:
+				'JOSEPHAT KAMAU KAMAU AND 2 OTHERS VS NATIONAL BANK OF KENYA LIMITED: E&LRC CAUSE NO.2228 OF 2014',
+		},
+		{
+			code: 'NBK1.28',
+			description: 'NATIONAL BANK OF KENYA',
+		},
+		{
+			code: 'NBK1.3',
+			description:
+				'SOPHIE NJIIRI -VS- NATIONAL BANK OF KENYA LTD & ANOTHER: HCCC NO. 465 OF 2013',
+		},
+		{
+			code: 'NBK1.30',
+			description: 'NATIONAL BANK OF KENYA',
+		},
+		{
+			code: 'NBK1.31',
+			description: 'Central Bank and National Bank',
+		},
+		{
+			code: 'NBK1.32',
+			description: 'National Bank of Kenya',
+		},
+		{
+			code: 'NBK1.33',
+			description: 'JOHN GITAU MWAURA VS NATIONAL BANK OF KENYA LTD',
+		},
+		{
+			code: 'NBK1.34',
+			description: 'CIVIL SUIT NO. 2947 OF 1989 NCPB',
+		},
+		{
+			code: 'NBK1.36',
+			description:
+				'NATIONAL BANK OF KENYA LTD -VS- BANKING INSURANCE FINANCE UNION OF KENYA: INDUSTRIAL CAUSE NO. 1084 OF 2015',
+		},
+		{
+			code: 'NBK1.37',
+			description:
+				'RABIN PATRICK OPWAKA & AGNES NDUTA NJENGA VS NATIONAL BANK OF KENYA LTD: INDUSTRIAL CAUSE NO 1602 OF 2015',
+		},
+		{
+			code: 'NBK1.38',
+			description:
+				'BANKING INSURANCE AND FINANCE UNION OF KENYA -VS- NATIONAL BANK OF KENYA LTD & ANOTHER -VS- GEOFFREY WAHOME MUOTIA: C. APPEAL CIV APPL. NO. 283 OF 2015 (UR 241/2015): E&LRC NO. 2028 OF 2015 (NBO)',
+		},
+		{
+			code: 'NBK1.39',
+			description:
+				'ELIZABETH OSICHE APWORA -VS- NATIONAL BANK OF KENYA LTD LTD: INDUSTRIAL CAUSE NO. 2230 OF 2014 (NBO)',
+		},
+		{
+			code: 'NBK1.4',
+			description:
+				'JOHN KABIRU (EX-STAFF) VS NATIONAL BANK OF KENYA LTD: INDUSTRIAL CAUSE NO. 595 OF 2013',
+		},
+		{
+			code: 'NBK1.40',
+			description:
+				'NATIONAL BANK OF KENYA LTD -VS- PETER KAMAU MWAURA / PETER NJANJA NJUGUNA: INDUSTRIAL CAUSE NO 760 OF 2015 (NBO)',
+		},
+		{
+			code: 'NBK1.41',
+			description:
+				'NATIONAL BANK OF KENYA LTD -VS- PETER KAMAU MWAURA/PETER NJANJA NJUGUNA: INDUSTRIAL CAUSE NO 760 OF 2015',
+		},
+		{
+			code: 'NBK1.42',
+			description:
+				'ESTHER MBINYA MUSAU VS NATIONAL BANK OF KENYA LTD: INDUSTRIAL CAUSE NO 989 OF 2014',
+		},
+		{
+			code: 'NBK1.43',
+			description: 'ENOCK JUSTUSEEN OKUNYANYI VS. NBK',
+		},
+		{
+			code: 'NBK1.44',
+			description:
+				'NATIONAL BANK OF KENYA LTD -VS- NATION MEDIA GROUP LTD & 3 OTHERS: HCCC NO. 239 OF 2015 - DEFAMATION SUIT',
+		},
+		{
+			code: 'NBK1.45',
+			description:
+				'NATIONAL BANK OF KENYA LTD -VS- BANKING INSURANCE AND FINANCE UNION OF KENYA: E& LRC CAUSE NO 1128 OF 2015',
+		},
+		{
+			code: 'NBK1.46',
+			description:
+				'NATIONAL BANK OF KENYA INSURANCE AGENCY LTD/NATIONAL BANK TRUSTEE & INVESTMENT SERVICES LTD (ROBERT KIBAARA RESIGNED DIRECTOR)',
+		},
+		{
+			code: 'NBK1.47',
+			description:
+				'BANKING AND FINANCE UNION OF KENYA -VS- NATIONAL BANK OF KENYA LTD: ELC NO 1493 OF 2015 NRB',
+		},
+		{
+			code: 'NBK1.48',
+			description:
+				'PETER MUSEMBI MUTHAMA -VS- NATIONAL BANK OF KENYA LTD: INDUSTRIAL CAUSE NO. 1473 OF 2015',
+		},
+		{
+			code: 'NBK1.49',
+			description:
+				'JEDDA KISIAVUKI LODENYI -VS- NATIONAL BANK OF KENYA LTD: E&LRC NO.1475 OF 2015',
+		},
+		{
+			code: 'NBK1.5',
+			description: 'EZEKIEL YUAYA - CHARGE OVER L.R NO. 209/2679',
+		},
+		{
+			code: 'NBK1.50',
+			description:
+				'FRANCIS M P NYAMU -VS- NATIONAL BANK OF KENYA LTD: E&LRC NO. 1476 OF 2015',
+		},
+		{
+			code: 'NBK1.51',
+			description:
+				'JOSELINE MAREGU NYAGAH -VS- NATIONAL BANK OF KENYA LTD: E&LC. CAUSE NO.1469 OF 2015',
+		},
+		{
+			code: 'NBK1.52',
+			description:
+				'PERIS WAIRAGU KIGUTA -VS- NATIONAL BANK OF KENYA LTD: E&LR CAUSE NO. 1470 OF 2015',
+		},
+		{
+			code: 'NBK1.53',
+			description:
+				'WILSON NYARANGA MIMA -VS- NATIONAL BANK OF KENYA LTD: INDUSTRIAL CAUSE NO 1467 OF 2015',
+		},
+		{
+			code: 'NBK1.54',
+			description:
+				'BRETTA MWIKALI MWOLOLO -VS- NATIONAL BANK OF KENYA LTD: E&LRC NO. 1474 OF 2015',
+		},
+		{
+			code: 'NBK1.55',
+			description:
+				'JACKSON J SOPHAS KHOLE -VS- NATIONAL BANK OF KENYA LTD: E&LRC NO.1472 OF 2015',
+		},
+		{
+			code: 'NBK1.56',
+			description:
+				'JOSEPH KIPROP BARTOCHO -VS- NATIONAL BANK OF KENYA LTD: E&LRC NO. 1471 OF 2015',
+		},
+		{
+			code: 'NBK1.57',
+			description:
+				'JOSIAH MWAURA NJOROGE -VS- NATIONAL BANK OF KENYA LTD: E&LRC NO.1084 OF 2015',
+		},
+		{
+			code: 'NBK1.58',
+			description:
+				'BANKING INSURANCE & FINANCE UNION (KENYA) -VS- NATIONAL BANK OF KENYA LTD: E & LR COURT CASE NO. 1075 OF 2015',
+		},
+		{
+			code: 'NBK1.59',
+			description:
+				'BANKING INSURANCE AND FINANCE UNION OF KENYA -VS- NATIONAL BANK OF KENYA LTD: INDUSTRIAL CAUSE NO 846 OF 2014',
+		},
+		{
+			code: 'NBK1.6',
+			description: 'SOVEREIGN HOTEL LIMITED',
+		},
+		{
+			code: 'NBK1.60',
+			description:
+				'BANKING INSURANCE AND FINANCE UNION OF KENYA -VS- NATIONAL BANK OF KENYA LTD INDUSTRIAL CAUSE NO. 846 OF 2014 (NBO)',
+		},
+		{
+			code: 'NBK1.61',
+			description: 'NATIONAL BANK OF KENYA LTD & JOSEPH OGOLA ODUOR - NAIROBI/BLOCK 82/900',
+		},
+		{
+			code: 'NBK1.62',
+			description:
+				'NICOLE PHYLLIS OKWIRI -VS- NATIONAL BANK OF KENYA LTD:  E&LRC CAUSE NO. 2260 OF 2014 (NBO)',
+		},
+		{
+			code: 'NBK1.63',
+			description:
+				'BANKING INSURANCE AND FINANCE UNION OF KENYA -VS- NATIONAL BANK OF KENYA LTD: E&LRC NO. 2028 OF 2015 (NBO)',
+		},
+		{
+			code: 'NBK1.64',
+			description:
+				'LEGAL OPINION ON THE CLASSIFICATION OF LOANS AS PROVIDED UNDER THE BANKING ACT - SECTION 10 & ANY OTHER APPLICABLE PROVISION (S) OF LAW',
+		},
+		{
+			code: 'NBK1.65',
+			description:
+				'LEONARD GETHOT KAMWETI -VS- MOHAMED ABDIRAHAMAN HASSAN & MUNIR SHEIKH AHMED: PRIVATE PROSECUTION NO. 3 OF 2014',
+		},
+		{
+			code: 'NBK1.67',
+			description: 'BANKING FACILITIES TO TAHIR SHEIKH SAID (T.S.S) GRAIN MILLERS LTD',
+		},
+		{
+			code: 'NBK1.68',
+			description:
+				'JIMNAH MURIITHI MUCHIRI TO CATHERINE A WABWIRE: L.R NO. 209/8524/123 (IR NO. 37292)',
+		},
+		{
+			code: 'NBK1.7',
+			description:
+				'LEGAL OPINION ON THE MATTER FOR THE BANK DOCUMENTS BY THE PRIVATISATION COMMISSION (NATIONAL BANK OF KENYA LTD)',
+		},
+		{
+			code: 'NBK1.70',
+			description:
+				'BANKING FACILITIES TO NERO KIOKO MULEE SECURED BY CHARGEOVER APT NO. D15 ON TITLE NO. NDUMBERI/NDUMBERI/3126',
+		},
+		{
+			code: 'NBK1.71',
+			description:
+				'BANKING FACILITIES TO PETER OMONDI SIWOLO-CHARGE OVER APT. NO. B6, LR NO. 2/244',
+		},
+		{
+			code: 'NBK1.74',
+			description: 'DEFAMATION: NATIONAL BANK OF KENYA LTD VS CYPRIAN NYAKUNDI',
+		},
+		{
+			code: 'NBK1.76',
+			description:
+				'H.C MISC APP. NO. 350 OF 2014 OJIAMBO & CO. ADVOCATES VS NATIONAL BANK OF KENYA',
+		},
+		{
+			code: 'NBK1.77',
+			description:
+				'HCCC NO. 146 OF 1999 : ORBIT CHEMICAL INDUSTRIES LTD VS NATIONAL BANK (K) LTD',
+		},
+		{
+			code: 'NBK1.77/001',
+			description:
+				'E&LC CIVIL CASE NO. 7 OF 2020 "O.S."-ZIPPORAH MUTHONI NDUNGU & OTHERS vs. NATIONAL BANK OF KENYA & OTHERS.',
+		},
+		{
+			code: 'NBK1.77/002',
+			description:
+				'CMCC COVID NO.152 OF 2020: ZIPPORAH MUTHONI NDUNGU & 5 OTHERS VS. NBK & OTHERS',
+		},
+		{
+			code: 'NBK1.78',
+			description:
+				"BANKING FACILITIES TO HON. JUSTICE LUKA KIPROTICH KIMARU (the 'Borrower') CHARGE OVER MAISONETTE NUMBER 5 ERECTED ON L.R. NO. 5/153 (the 'Property')",
+		},
+		{
+			code: 'NBK1.79',
+			description: 'NBK GENERAL',
+		},
+		{
+			code: 'NBK1.8',
+			description:
+				'NAIROBI E&LRC CAUSE NO 1777 OF 2014 PETER MUSEMBI VS NATIONAL BANK OF KENYA',
+		},
+		{
+			code: 'NBK1.81',
+			description:
+				'BANKING FACILITIES TO ABDIRAHMAN ALI HASSAN SECURED BY CHARGE OVER TITTLE NUMBER WAJIR TOWNSHIP BLOCK 6/84',
+		},
+		{
+			code: 'NBK1.82',
+			description:
+				'TAKEOVER OF BANKING FACILITIES TO HASSAN ISSAK ABDI FROM NATIONAL BANK OF KENYA LTD BY GULF AFRICAN BANK LTD BY CHARGE OVER L.R. NO 24884/88',
+		},
+		{
+			code: 'NBK1.83',
+			description: 'BANKING FACILITIES TO MOUNTAIN MALL LIMITED',
+		},
+		{
+			code: 'NBK1.84',
+			description:
+				'BANKING FACLITIES TO SAMWEL KIPKORIR RONO AND CAROLINE CHEPKOECH T/A OASIS GAS STATION SECURED BY CHARGE OVER TITLE NUMBER KERICHO/ITEMBE/1281',
+		},
+		{
+			code: 'NBK1.85',
+			description:
+				'BANKING FACILITIES TO SAMWEL KIPKORIR RONO AND CAROLINE CHEPKOECH T/A OASIS GAS STATION',
+		},
+		{
+			code: 'NBK1.86',
+			description: 'PETITION NO. 157 OF 2017: ROBERT AMOS OKETCH VS ANDREW HAMILTON & OTHERS',
+		},
+		{
+			code: 'NBK1.87',
+			description: 'ADVICE ON NBK RIGHTS ISSUE',
+		},
+		{
+			code: 'NBK1.88',
+			description: 'BANKING FACILITIES TO HON. JUSTICE LUKA KIMARU',
+		},
+		{
+			code: 'NBK1.89',
+			description:
+				'MILIMANI ELRC NO. 800 OF 2017: SAMUEL OGAL ODIYO & 39 OTHERS VS NATIONAL BANK OF KENYA LIMITED',
+		},
+		{
+			code: 'NBK1.9',
+			description:
+				'LADOPHARMA LTD & 2 OTHERS VS NATIONAL BANK OF KENYA LTD: HCCC NO. 1031 OF 2001 & HCCC NO. 1760 OF 1999',
+		},
+		{
+			code: 'NBK1.90',
+			description: 'BANKING FACILITIES TO SILVESTER KOMARI KAPASHA',
+		},
+		{
+			code: 'NBK1.91',
+			description:
+				'BANKING FACILITIES TO ESTHER NJOKI NJUYA, SECURED BY CHARGE OVER FLAT NO. H ERECTED ON L.R. NO. 25980',
+		},
+		{
+			code: 'NBK1.92',
+			description: 'BANKING FACILITIES TO ESTHER NJOKI NJUYA',
+		},
+		{
+			code: 'NBK1.93',
+			description:
+				'ELRC PETITION NO. 40 OF 2017: JAMES MWANGI NJIIRU VS NATIONAL BANK OF KENYA LIMITED & NBK STAFF PENSION FUND REGISTERED TRUSTES',
+		},
+		{
+			code: 'NBK1.94',
+			description:
+				'ELRC NO. 1453 OF 2017: IAN NOBERT MGENYI VS NATIONAL BANK OF KENYA LIMITED',
+		},
+		{
+			code: 'NBK1.95',
+			description:
+				'ELRC NO. 1586 OF 2017: DELILAH KADZO NGALA VS NATIONAL BANK OF KENYA LIMITED',
+		},
+		{
+			code: 'NBK1.96',
+			description: "DISPOSAL OF NATIONAL BANK'S ASSETS",
+		},
+		{
+			code: 'NBK1.97',
+			description: 'NATIONAL BANK OF KENYA & CAPITAL MARKETS AUTHORITY',
+		},
+		{
+			code: 'NBK1.98',
+			description:
+				'ELRC NO. 1813 OF 2017: ROBERT KAMBUNI MEKENYA VS NATIONAL BANK OF KENYA LIMITED',
+		},
+		{
+			code: 'NBK1.99',
+			description: 'ELRC NO.2440 OF 2017:MARY WAHU KAMAU VS.NATIONAL BANK OF KENYA LIMITED',
+		},
+		{
+			code: 'NBL2.1',
+			description:
+				'CIVIL APPEAL NO 164 OF 2013 & HIGH COURT PETITION NO 72 OF 2011 MT KENYA BOTTLERS LTD VS THE AG,THE KRA, THE COM GEN OF KRA& THE COM OF CUSTOMS AND EXCISE DUTY',
+		},
+		{
+			code: 'NBL2.2',
+			description:
+				'CIVIL APPEAL NO.99 OF 2018:NAIROBI BOTTLERS LIMITED VS.NDUMIA & ANOTHER (NBL0088.3)',
+		},
+		{
+			code: 'NCB1.1',
+			description: 'BANKING FACILITIES TO EVERLYN AYIEMBA ATSIAMBO',
+		},
+		{
+			code: 'NCB1.10',
+			description:
+				'DEBT ASSIGNMENT AND TAKE-OUT OF BANK OF AFRICA KENYA LTD AND I & M BANK KENYA LTD BY NCBA BANK KENYA PLC.',
+		},
+		{
+			code: 'NCB1.11',
+			description:
+				'BANKING FACILITIES TO ABIGAEL MULONGO WANYONYI, CHARGE OVER L.R. NO. DAGORETTI/UTHIRU 2316',
+		},
+		{
+			code: 'NCB1.12',
+			description:
+				'creation of a deed of assignment of rental income over l.r. no. 1/322, the church commissioners for kenya limited (the borrower)',
+		},
+		{
+			code: 'NCB1.13',
+			description:
+				'BANKING FACILITIES TO DANIEL JUMA OMONDI AND ELIZABETH MWENDE MUTUKU - CHARGE OVER HOUSE NO.19, L.R. NO.KAJIADO/KAPUTIEI NORTH/3376',
+		},
+		{
+			code: 'NCB1.14',
+			description: 'BANKING FACILITIES TO DANEL JUMA OMONDI & ELIZABETH MWENDE MUTUKU.',
+		},
+		{
+			code: 'NCB1.15',
+			description: 'GENERAL ADVICE FILE',
+		},
+		{
+			code: 'NCB1.16',
+			description:
+				'CREATION OF A LEGAL CHARGE FOR KES.8,050,000 OER HOUSE NUMBER E 24 TYPE E, ERECTED ON L.R. NO.337/5498 (ORIGINAL NUMBER 337/5493/6), CRYSTAL RIVERS, MAVOKO MUNICIPALITY, ATHI RIVER TOWNSHIP, MACHAKOS COUNTY TO BE REGISTERED IN THE NAME OF THE BORROWE',
+		},
+		{
+			code: 'NCB1.17',
+			description:
+				'BANKING FACILITIES TO USAFI SERVICES LIMITED - CHARGE OVER LR NO. 12445/20, KAREN, WINDY ROAD, GRANGE PARK ESTATE, NAIROBI',
+		},
+		{
+			code: 'NCB1.18',
+			description:
+				"TITLE NUMBER 1008/93 (ORIGINAL NUMBER 1008/14/10): ONGOING CONVERSIONS OF PROPERTIES PEGGED TO THE NAIROBI REGISTRATION OF LAND'S ACT REGISTRY: ISAAC ODUNDO AWUONDO",
+		},
+		{
+			code: 'NCB1.19',
+			description:
+				'DEED OF ASSIGNMENT OF RENT RECEIVABLES OVER PROPERTY SUITE NO.4, SITUATED ON 14TH FLOOR, 4TH AVENUE ERECTED ON L.R. NO.209/21876, REGISTERED IN THE NAME OF KO CONSULTING LIMITED (THE "BORROWER")',
+		},
+		{
+			code: 'NCB1.2',
+			description:
+				'CREATION OF A CHARGE FOR KSHS.9,668,000.00 OVER MAISONETTE NO.3 ON L.R. NO.1870/264/111: ANTONY O. OLOO & THERESA N. MUSUNDI (the “borrower”).',
+		},
+		{
+			code: 'NCB1.20',
+			description: 'BANKING FACILIITES TO GALILEO ABUR OMONDI',
+		},
+		{
+			code: 'NCB1.21',
+			description:
+				'MCC E319 OF 2023 - TOM ODHIAMBO ADINDA VS. NCBA BANK KENYA PLC & VINTAGE AUCTIONEERS',
+		},
+		{
+			code: 'NCB1.22',
+			description: 'CMCOMMSU E153 OF 2023 - LAWRENCE GATITU MBUGUA VS. NCBA BANK KENYA PLC',
+		},
+		{
+			code: 'NCB1.23',
+			description:
+				'CREATION OF A FIRST LEGAL CHARGE FOR KES3,200,000.00 OVER APT NO.F010 ON GROUND FLOOR, ERECTED ON PROPERTY TITLE NUMBER NGONG/NGONG/52124 TO BE REGISTERED IN THE NAME OF HUMPHREY WAUDI OKUKU t/a OKUKU AGENCIES AUCTIONEERS (the "Borrower")',
+		},
+		{
+			code: 'NCB1.24',
+			description:
+				'BANKING FACILITIES TO HUMPHREY WAUDI OKUKU T/A OKUKU AGENCIES AUCTIONEERS.',
+		},
+		{
+			code: 'NCB1.25',
+			description:
+				'CMCC NO. E128 OF 2023 - JENIPHER WANJIKU ODEK VS. NCBA BANK KENYA LIMITED',
+		},
+		{
+			code: 'NCB1.26',
+			description:
+				'MAVOKO CIVIL CASE NO. E024 OF 2021 - QARA AGENCIES LIMITED & ANOR VS. NCBA BANK KENYA PLC LIMITED & ANOR.',
+		},
+		{
+			code: 'NCB1.27',
+			description: 'NCBA BANK KENYA PLC',
+		},
+		{
+			code: 'NCB1.3',
+			description:
+				'BANKING FACILITIES TO AMOS OLUOCH OLUNYA,CHARGE OVER UNIT 959, L.R. 7785/959, NAIROBI',
+		},
+		{
+			code: 'NCB1.4',
+			description:
+				'BANKING FACILITIES TO ANTHONY ODHIAMBO OLOO AND THERESA NAROTSO MUSUNDI,CHARGE OVER MAISONETTE NO.3,L.R.1870/264/111, NAIROBI',
+		},
+		{
+			code: 'NCB1.5',
+			description: 'BANKING FACILITIES TO NELSON KIBET LANGAT',
+		},
+		{
+			code: 'NCB1.6',
+			description:
+				'banking facilities to mutswenje chitelesi mark, charge over maisonette number 03, l.r. KJD/kaputiei north/29843',
+		},
+		{
+			code: 'NCB1.7',
+			description:
+				'BANKING FACILITIES TO JAMII MILLING LIMITED AND JAMII TELECOMMUNICATIONS LIMITED',
+		},
+		{
+			code: 'NCB1.8',
+			description: 'BANKING FACILITIES TO DANIEL JUMA OMONDI AND ELIZABETH MWENDE MUTUKU.',
+		},
+		{
+			code: 'NCB1.9',
+			description: 'CHARGE OVER L.R. 14902/42 - SIMON NJUGUNA MBOGO',
+		},
+		{
+			code: 'NCL1.1',
+			description: 'GOONCLGENERAL2015',
+		},
+		{
+			code: 'NCL1.2',
+			description:
+				'DISPUTE BETWEEN OLE METETEK KARUNA SIMEON & EDGE STRAGEGIC CONSULTING LIMITED',
+		},
+		{
+			code: 'NCL1.3',
+			description:
+				'IN THE TAX APPEALS TRIBUNAL- APPEAL NO. 726 OF 2022; CHRISTINE NOELLA LUBANO .VS. THE COMMISSIONER OF TAXES  ',
+		},
+		{
+			code: 'NCL1.4',
+			description:
+				'IN TAX APPEALS TRIBUNAL- APPEAL NO. 524 OF 2022; CHRISTINE NOELLA LUBANO .VS. THE COMMISSIONER OF DOMESTIC TAXES',
+		},
+		{
+			code: 'NCL1.5',
+			description:
+				'ARBITRATION BETWEEN ANHUI CONSTRUCTION ENG. GROUP CO. LTD (ACEG) & CHINA NATONAL AETO-TECHNOLOGY INTERNATIONAL ENG. CORP (CATIC) VS. KENYA AIRPORTS AUTHORITY',
+		},
+		{
+			code: 'NCL2.1',
+			description:
+				'PROVISION OF LEGAL ADVICE IN RELATION TO A CONTRACT FOR ELECTRONIC FACTORING SERVICES',
+		},
+		{
+			code: 'NDA1.1',
+			description:
+				'HARUN OSORO NDAMBUKI/ ESTATE SOCIETY -VS- PETER MUJUNGA GATHURU: C.A C. APPL. NO. 39 OF 2015 (UR 36/2015)/ C.A C. APPEAL NO. 184 OF 20014 (NBO)',
+		},
+		{
+			code: 'NDE1.1',
+			description: 'REVIEW OF CONSULTANCY AGREEMENT WITH OM CAPITAL PARTNERS',
+		},
+		{
+			code: 'NDE1.11',
+			description: 'ACQUISITION  OF SHARES IN NEW AFRICA PHOTO LIMITED',
+		},
+		{
+			code: 'NDE1.2',
+			description: 'REVIEW OF CONFIDENTIALITY AGREEMENT FOR ACACIA CEMENT LIMITED',
+		},
+		{
+			code: 'NDE1.3',
+			description: 'ADVICE ON ACACIA CEMENT LIMITED',
+		},
+		{
+			code: 'NDE1.4',
+			description: 'ADVICE ON RAPID COMMUNICATIONS LIMITED',
+		},
+		{
+			code: 'NDE1.6',
+			description: 'CLAM FOR UNPAID SHARES BY BENSON NDETA',
+		},
+		{
+			code: 'NDE1.8',
+			description: 'COMPANY INCORPORATION',
+		},
+		{
+			code: 'NDE1.9',
+			description:
+				'AQUISITION AND SALE OF FOURWAYS JUNCTION PROPERTY THROUGH TRON ENTERPRISES LIMITED',
+		},
+		{
+			code: 'NDE2.1',
+			description: 'ESTATE OF THE LATE MARGARET NYAWIRA NDERITU',
+		},
+		{
+			code: 'NDN1.1',
+			description: 'PROF NZELE DAVID NZOMO',
+		},
+		{
+			code: 'NDU1.1',
+			description: 'GEORGE MICHAEL NDUNYU - SALE OF NGONG/NGONG/57301',
+		},
+		{
+			code: 'NDU2.1',
+			description: 'ELRC NO. 625/2011 TRUSTEES OF THE AGRICULTURAL SOCIETIES OF KENYA',
+		},
+		{
+			code: 'NEK1.1',
+			description: 'ESTATE OF GACHANJA KIAI (DECEASED',
+		},
+		{
+			code: 'NEP1.1',
+			description: 'CONCERNING PALM EXOTICA LTD.',
+		},
+		{
+			code: 'NEP1.2',
+			description:
+				'ALLEGED BREACH OF TRUST DEED DATED 28TH AUGUST 2017 BETWEEN GIUSEPPE MOSCARINO AND PENINNA NTHENYA PHILIPH AND CATHERINE NZILANI MUTETHYA.',
+		},
+		{
+			code: 'NET1.1',
+			description: 'SETTING UP OF KENYA POOLED WATER FACILITY (KPWF)',
+		},
+		{
+			code: 'NGA1.1',
+			description:
+				'SALE OF APARTMENT NO.B4 IN ROWEN HEIGHTS ON LR. NO.330/604 NRB-GEOFFREY GATIRIMA NGANGA TO CHARLES BAGAKA NYABERI & SUZANNE JEBET TUIYOTT',
+		},
+		{
+			code: 'NGI1.1',
+			description: 'SIMON NGIGI GACHOMO VS JOSEPHINE  NGIGI: HCCC NO. 831 OF 2009',
+		},
+		{
+			code: 'NGI2.1',
+			description:
+				"PURCHASE OF TITLE NUMBER NAIROBI/BLOCK 26/203 BY HADIJAH HERSI OUDEN TO MOSES BWANA NG'IELA",
+		},
+		{
+			code: 'NGI3.1',
+			description: 'DEMAND TO STOP BURIAL OF THE LATE NGINYO KARIUKI.',
+		},
+		{
+			code: 'NGL1.1',
+			description: 'NJIMIA GROUP',
+		},
+		{
+			code: 'NGO1.1',
+			description:
+				'CHARITY DAMARIS WANJIRU NGONORI VS PIETER ADRRIAAN CORNELIS MOL: HC DC NO 136 OF 2013',
+		},
+		{
+			code: 'NGO2.1',
+			description: 'PETER ODIWUOR NGONGE',
+		},
+		{
+			code: 'NGR1.1',
+			description:
+				'HCCC MISC. CIVIL PETITION NO. 95 OF 2011 NEPATAO OLE MANANGOI & OTHERS VS. THE ATTORNEY GENERAL & OTHERS.',
+		},
+		{
+			code: 'NGU1.1',
+			description: 'CHIURI NGUGI & RUGO ADVOCATES -VS- KENYA PIPELINE COMPANY LTD',
+		},
+		{
+			code: 'NGU2.1',
+			description:
+				'HARIT SHETHADVOCATES - ESTATE OF THE LATE ANTHONY NASHON NGUNJIRI (DECEASED): HCSC NO. 2261 OF 2011 (NBO)',
+		},
+		{
+			code: 'NGU3.1',
+			description: 'ESTATE OF GEORGE ODENY NGURE DECEASED',
+		},
+		{
+			code: 'NGW1.1',
+			description: 'NYAMA GI WARE COMPANY LTD',
+		},
+		{
+			code: 'NGW2.1',
+			description:
+				'SALE OF PROPERTY AT 25 KIAMBERE ROAD, L.R. NO. 37/270, TO TOFINA ROM BUILDERS LIMITED',
+		},
+		{
+			code: 'NHL1.1',
+			description: 'NAKUMATT HOLDINGS LIMITED VS COMMISSIONER OF DOMESTIC TAXES',
+		},
+		{
+			code: 'NIC1.5',
+			description:
+				'HCCC NO. 644 OF 2009 NATIONAL INDUSTRIAL CREDIT BANK LIMITED VS. LLOYD MASIKA LIMITED',
+		},
+		{
+			code: 'NIE1.1/001',
+			description:
+				'CIVIL APPEAL NO. 77 OF 2012 NGURUMAN LIMITED VS JAN BONDE NIELSEN, HERMAN PHILIPUS STEYN (Also known as Hermannus Phillipus Steyn) & HEDDA STEYN',
+		},
+		{
+			code: 'NIE1.1/002',
+			description:
+				'CIVIL APPEAL NO 205 OF 2003:NGURUMAN LIMITED VS JAN BONDE NIELSEN & ANOTHER',
+		},
+		{
+			code: 'NIE1.1/003',
+			description:
+				'CIVIL APPEAL NO 266 OF 2015:NGURUMAN LIMITED VS JAN BONDE NIELSEN & ANOTHER',
+		},
+		{
+			code: 'NIJ1.1',
+			description: 'NJEMUMA INVESTMENTS- LR NO. 37/246/12',
+		},
+		{
+			code: 'NIL1.1',
+			description: 'NGUCIE INVESTMENTS LTD (KAMANGA MWANGI)',
+		},
+		{
+			code: 'NIL1.2',
+			description: 'PROVISION OF LEGAL SERVICES',
+		},
+		{
+			code: 'NIL1.3',
+			description:
+				'PROVISION OF LEGAL SERVICES IN RELATION TO THE DISTRIBUTION OF SHARES IN THE FAMILY-OWNED BUSINESS.',
+		},
+		{
+			code: 'NIL3.1',
+			description:
+				'NILESH DEVAN KARA SHAH & 2 OTHERS VS DIASTA INVESTMENTS LTD: HCCC NO. 340 OF 2011',
+		},
+		{
+			code: 'NIL4.1',
+			description:
+				'NOTICE OF TERMINATION OF TENANCY OVER PLOT NO. 22672/4 HOUSE NO. 13/6 RUNDA ESTATE – KARUNA HOLDINGS LIMITED.',
+		},
+		{
+			code: 'NIL4.2',
+			description:
+				'NOTICE OF TERMINATION OF TENANCY OVER PLOT NO. 22672/9 HOUSE NO. 13/2 RUNDA ESTATE – KABUKU REALTY COMPANY LTD',
+		},
+		{
+			code: 'NIL5.1',
+			description: 'LEGAL OPINION FOR A CFDs FOREX BROKER ON REVERSE SOLICITATION',
+		},
+		{
+			code: 'NIL6.1',
+			description:
+				'MSA CIVIL APPEAL NO.23 OF 2018 - JOSEPH SOMBO & 4 OTHERS AND NYARI INVESTMENTS LIMITED & OTHERS.',
+		},
+		{
+			code: 'NIN1.1',
+			description: 'DIVORCE CAUSE',
+		},
+		{
+			code: 'NIS1.1',
+			description: 'NISHIL BIKHUBHAI BAKRANIA',
+		},
+		{
+			code: 'NJE2.1',
+			description:
+				'UNFAIR TERMINATION OF EMPLOYMENT OF JOHN KARIUKI NJERU FROM UNIQUE PACKAGING (KE) LIMITED',
+		},
+		{
+			code: 'NJG1.1',
+			description: 'JAMES G K NJOROGE',
+		},
+		{
+			code: 'NJO1.1',
+			description: 'HCCC NO. 73 OF 2014: TED NJAU NJOGU VS THE PEOPLE MEDIA GROUP LIMITED',
+		},
+		{
+			code: 'NJO1.2',
+			description: 'HCCC NO. 447 OF 2013: ANN WAIRIMU NJOGU VS RADIO AFRICA LIMITED',
+		},
+		{
+			code: 'NJO1.3',
+			description: 'HCCC NO. 74 OF 2014: TED NJAU NJOGU VS THE STANDARD GROUP LIMITED',
+		},
+		{
+			code: 'NJO1.4',
+			description: 'HCCC NO. 72 OF 2014: TED NJAU NJOGU VS THE STAR PUBLICATIONS LTD',
+		},
+		{
+			code: 'NJO1.5',
+			description: 'HCCC NO. 75 OF 2014: TED NJAU NJOGU VS NATION MEDIA GROUP LTD',
+		},
+		{
+			code: 'NJO2.1',
+			description: 'EMPLOYMENT OF LUCY MUTHONI NJORA',
+		},
+		{
+			code: 'NJO3.1',
+			description:
+				'CMCC NO... OF 2022: CAROL WAMBUI NJOROGE MATHU VS. KENNETH MWANGO MBOGO & ANOR',
+		},
+		{
+			code: 'NJU1.1',
+			description: 'SIMON NJUGUNA MBOGO VS. EDWARD KAREGA MUTAHI.',
+		},
+		{
+			code: 'NKI1.1',
+			description: 'EMILY NKIROTE',
+		},
+		{
+			code: 'NKU1.1',
+			description: 'TRANSFER OF KAJIADO/LOODARIAK/20583, KAJIADO/LOODARIAK/14548, AND 22199',
+		},
+		{
+			code: 'NMG1.1',
+			description: 'GENERAL FILE',
+		},
+		{
+			code: 'NML1.1',
+			description:
+				'DISCHARGE OF CHARGE AND RELEASE OF DEBENTURE IN FAVOUR OF NEO MARKETING LIMITED BY STANBIC BANK KENYA LIMITED.',
+		},
+		{
+			code: 'NPL1.1',
+			description: 'NANGOMA PARTNERS LTD',
+		},
+		{
+			code: 'NPL1.2',
+			description:
+				'DIXON OMBATI & 6 OTHERS -VS- DIRECTOR GENERAL NEMA & NANGOMA PROPERTIES LTD: TRIBUNAL APPEAL NO. 1701 OF 2016',
+		},
+		{
+			code: 'NPS1.1',
+			description: '40MW SOLAR POWER PLANT IN KIBWEZI: MAKUENI COUNTY',
+		},
+		{
+			code: 'NRH1.1',
+			description:
+				'NYANZA REPRODUCTIVE HEALTH SOCIETY -VS- GEORGE OCHIENG OWIDI: INDUSTRIAL CAUSE NO. 739 OF 2012',
+		},
+		{
+			code: 'NSC1.1',
+			description: 'DEATH OF THE LATE ROSE TIDEY ON THE PREMISES OF THE NAIROBI SAFARI CLUB',
+		},
+		{
+			code: 'NSC1.2',
+			description:
+				'E&LRC CAUSE NO. 1988 OF 2015 JAMES MWAURA KINYANJUI -VS- NAIROBI SAFARI CLUB.',
+		},
+		{
+			code: 'NSG1.1',
+			description: 'NUCON SWITCH GEARS PVT LTD -VS- KENYA POWER & LIGHTING COMPANY LTD',
+		},
+		{
+			code: 'NSL1.1',
+			description: 'KENYA REVENUE AUTHORITY VS. NIPPO SUPPLIES LIMITED',
+		},
+		{
+			code: 'NSL1.2',
+			description: 'KENYA REVENUE AUTHORITY VS. QINGXIA JIANG.',
+		},
+		{
+			code: 'NSL1.3',
+			description: 'KENYA REVENUE AUTHORITY VS. MIAO YI.',
+		},
+		{
+			code: 'NTE1.1',
+			description: 'NYAGORE TUMAINI ENTERPRISES',
+		},
+		{
+			code: 'NTH1.1',
+			description: 'JOSEPH MUSYOKI NTHALE VS GONZALES ANTHONY & OTHERS',
+		},
+		{
+			code: 'NTI1.1',
+			description:
+				'HON. WILLIAM OLE NTIMAMA/MORAN SAFARIES LTD TO HASS PETROLEUM (K) LTD: LEASE OF A PORTION OF TITLE NUMBER NAROK/TOWNSHIP/362',
+		},
+		{
+			code: 'NTI2.1',
+			description: 'VIVIAN TALASH NTIMAMA',
+		},
+		{
+			code: 'NTI3.1',
+			description: 'SANAIPEI DEBORAH NTIMAMA',
+		},
+		{
+			code: 'NTI4.1',
+			description: 'SANAIPEI DEBORAH NTIMAMA - UNIT C4, BLOC',
+		},
+		{
+			code: 'NTO1.1',
+			description: 'GITONGA HENRY NTOBURI',
+		},
+		{
+			code: 'NTP1.1',
+			description:
+				'NAROK TWIN PALMS RANCH LTD (INO) - TITLE NO. NAROK/TRANSMARA/KIMINTET/"C"/78',
+		},
+		{
+			code: 'NUR1.1',
+			description: 'NUREZ ZEHERALI & KURJI',
+		},
+		{
+			code: 'NYA1.1',
+			description: 'IN THE MATTER OF THE ESTATE OF EDWARD NYANDIMO NGINA',
+		},
+		{
+			code: 'NYA2.1',
+			description:
+				'LYDIA WANGUI MWANGI: ( THROUGH JOSEPH MWANGI) VS. JARED THEURI & 2 OTHERS',
+		},
+		{
+			code: 'NYA3.1',
+			description:
+				'SALE OF APARTMENT NO. H17 ON LR. NO. 209/11872 MVITA DEVELOPMENT AND INVESTMENTS LTD TO JAINUS MOHAMED NYAOGA AND PATIENCE NYAOGA',
+		},
+		{
+			code: 'NYA4.1',
+			description: 'HCCC NO.189 OF 2015: KENNEDY NYAUNDI VS. TREVY JAMES OYOMBA.',
+		},
+		{
+			code: 'NYI1.1',
+			description: 'Purchase of Apt No.A10, Land Reference Number 209/65/38, Nairobi',
+		},
+		{
+			code: 'NYO1.1',
+			description: "THE NYONG'O ESTATE MATTER IN KISUMU.",
+		},
+		{
+			code: 'OAF1.1',
+			description: 'KENYA REVENUE AUTHORITY VS ONE ACRE FUND',
+		},
+		{
+			code: 'OBU1.1',
+			description:
+				'CHARLES OIGARA MOGERE VS HON CHRISTOPHER MOGERE OBURE: HC. ELC PETITION NO. 9 OF 2013',
+		},
+		{
+			code: 'OBU1.2',
+			description:
+				'ANTI CORRUPTION CASE NO. 3/2015 REPUBLIC VS HON. CHRISTOPHER MOGERE OBURE & OTHERS',
+		},
+		{
+			code: 'OBU2.1',
+			description:
+				'NUISANCE AND TRESPASS ELC 411 OF 2016: MELEC ENGINEERING LIMITED VS PAUL OBURU',
+		},
+		{
+			code: 'OBU3.1',
+			description: 'SALE & PURCHASE OF PLOT NUMBER 12763/3-2',
+		},
+		{
+			code: 'OBU4.1',
+			description: 'PURCHASE OF UNIT NO. 1103 "88 NAIROBI" ON LR. NO. 209/3006 NAIROBI',
+		},
+		{
+			code: 'OBU5.1',
+			description: 'Arrow Solomon Oburu vs. Frasam Investment Limited',
+		},
+		{
+			code: 'OBU6.1',
+			description:
+				'DEMAND FOR KES. 322,500.00 BEING OUTSTANDING SPECIALIST FEES FOR DR. EZEKIEL OBURU',
+		},
+		{
+			code: 'OBW1.1',
+			description: 'SALE OF TITLE NO. KAJIADO/KITENGELA/88153',
+		},
+		{
+			code: 'OBW1.2',
+			description:
+				'SALE OF A TITLE NUMBER KAJIADO/KITENGELA/88157 FROM GLADYS KEMUNTO OMBWORI TO MARY AKINYI OTIENO',
+		},
+		{
+			code: 'OBW1.3',
+			description:
+				'PURCHASE OF TITLE NO. MAVOKO TOWN BLOCK 3/35750 FROM ANASTACIA MBULA KILUNGU',
+		},
+		{
+			code: 'OBW1.4',
+			description: 'SALE OF TITLE NO.KAJIADO/KITENGELA/88152 TO JOAN NJARO',
+		},
+		{
+			code: 'OCB1.1',
+			description:
+				'HCCC NO. 2186 OF 2000: SAMEL TEXTILE INDUSTRIES LTD VS ORIENTAL COMMERCIAL BANK LTD',
+		},
+		{
+			code: 'OCH1.1',
+			description: "CHRISTOPHER EDWARD OCHIENG' & BEATRICE AUMA OCHIENG'",
+		},
+		{
+			code: 'OCH2.1',
+			description: 'DR. STEPHEN OCHIEL - SALE OF LR. NO. 9743/7-12',
+		},
+		{
+			code: 'OCH2.2',
+			description: 'DR. STEPHEN OCHIEL- SALE OF LR. NO. 7785/530',
+		},
+		{
+			code: 'OCH3.1',
+			description: 'MOSES OCHIENG -  TITLE DEED ON LR. NGONG/NGONG/11476',
+		},
+		{
+			code: 'OCH4.1',
+			description: 'ESTATE OF MARTIN AWUONDO (DECEASED)',
+		},
+		{
+			code: 'OCH5.1',
+			description: 'DIVORCE PROCEEDINGS- REBECCA AKOTH OCHONG"',
+		},
+		{
+			code: 'OCH6.1',
+			description:
+				'NAIROBI ELRC CAUSE NO.  ...... OF 2019:  ANDREW OCHOLA VS. DELL EMERGING MARKETS (EMEA) LIMITED',
+		},
+		{
+			code: 'OCO1.1',
+			description: 'MISCELLANOUS (CNO) GENERAL',
+		},
+		{
+			code: 'OCO1.10',
+			description: 'PROFESSIONAL INDEMNITY',
+		},
+		{
+			code: 'OCO1.11',
+			description: 'ORARO & COMPANY ADVOCATES - QUOTATIONS',
+		},
+		{
+			code: 'OCO1.13',
+			description: "REVIEWING MR. ORARO'S EMAILS",
+		},
+		{
+			code: 'OCO1.15',
+			description: 'In the matter of incorporation of a comp',
+		},
+		{
+			code: 'OCO1.16',
+			description: 'GRANT OF PROBATE 4 CONFIRMATION OF GRANT',
+		},
+		{
+			code: 'OCO1.17',
+			description: 'ORARO & COMPANY ADVOCATES',
+		},
+		{
+			code: 'OCO1.18',
+			description: 'REGISTRAR OF BUSINESS NAMES/ATTORNEY GENERAL- CHANGE OF PARTICULARS',
+		},
+		{
+			code: 'OCO1.2',
+			description: 'GENERAL LITIGATION- GEORGINA OGALO OMONDI',
+		},
+		{
+			code: 'OCO1.21',
+			description: 'NOMINATED MATTER FOR USD TRUST ACCOUNT',
+		},
+		{
+			code: 'OCO1.22',
+			description: 'CAPTAIN PATRICK WAWERU MWANGI VS CHACHA ODERA',
+		},
+		{
+			code: 'OCO1.23',
+			description: "MILLICENT JUMA'S FUNERAL CONTRIBUTION",
+		},
+		{
+			code: 'OCO1.24',
+			description: 'NOMINATED MATTER FOR GBP TRUST',
+		},
+		{
+			code: 'OCO1.25',
+			description: 'NOMINATED MATTER NBK TRUST',
+		},
+		{
+			code: 'OCO1.26',
+			description: 'NOMINATED MATTER EURO TRUST',
+		},
+		{
+			code: 'OCO1.27',
+			description: 'NOMINATED MATTER FOR KES TRUST ACCOUNT',
+		},
+		{
+			code: 'OCO1.29',
+			description: 'OPEN BALANCE TRUST - FUNDS AWAITING ALLOCATION 2015',
+		},
+		{
+			code: 'OCO1.3',
+			description: 'JEAL ADUKE',
+		},
+		{
+			code: 'OCO1.31',
+			description: 'CLTWD NOMINATED MATTER',
+		},
+		{
+			code: 'OCO1.32',
+			description:
+				'Nominated matter Comercial Bank of Africa unidentified client fixed deposits',
+		},
+		{
+			code: 'OCO1.33',
+			description: 'CLIENT ACCOUNTS BANK CHARGES',
+		},
+		{
+			code: 'OCO1.35',
+			description: 'ORARO & COMPANY ADVOCATES DIB BANK',
+		},
+		{
+			code: 'OCO1.36',
+			description: 'BANK CHARGES',
+		},
+		{
+			code: 'OCO1.37',
+			description: 'TRADEMARK REGISTRATION.',
+		},
+		{
+			code: 'OCO1.38',
+			description: 'OCO RUN',
+		},
+		{
+			code: 'OCO1.39',
+			description: 'NOMINATED MATTER FOR KES SBLCLT',
+		},
+		{
+			code: 'OCO1.4',
+			description: 'LENA GENERAL FILE',
+		},
+		{
+			code: 'OCO1.40',
+			description: 'ORARO & COMPANY ADVOCATES-BANK CHARGES FOR THE YEAR 2022',
+		},
+		{
+			code: 'OCO1.41',
+			description: 'DATA PROTECTION TEAM',
+		},
+		{
+			code: 'OCO1.42',
+			description: 'TAX GENERAL FILE',
+		},
+		{
+			code: 'OCO1.5',
+			description: 'ORARO & COMPANY (CONSOLIDATED CLIENT A/C)',
+		},
+		{
+			code: 'OCO1.6',
+			description: 'ORARO & COMPANY ADVOCATES - SOFTWARE',
+		},
+		{
+			code: 'OCO1.7',
+			description: 'KIPKORIR FUNERAL CONTRIBUTION',
+		},
+		{
+			code: 'OCO1.8',
+			description: 'SERVICE LEVEL AGREEMENTS',
+		},
+		{
+			code: 'OCO1.9',
+			description: 'RECONCILIATION ACCOUNT',
+		},
+		{
+			code: 'OCO2.1',
+			description: 'ORARO & COMPANY ADVOCATES',
+		},
+		{
+			code: 'OCO3.1',
+			description: 'STAFF WELFARE',
+		},
+		{
+			code: 'OCO4.1',
+			description: 'GENERAL FILE FOR TENDERS & BIDS',
+		},
+		{
+			code: 'OCO5.1',
+			description: 'WILL',
+		},
+		{
+			code: 'OCO6.1',
+			description: 'ORARO AND COMPANY ADVOCATES WIBA ACCOUNT',
+		},
+		{
+			code: 'ODE1.1',
+			description: 'SALE OF APARTMENT AT RIVER GARDENS ON L.R 4857/65',
+		},
+		{
+			code: 'ODE10.1',
+			description:
+				'CIVIL CASE NO.84 OF 2016: RICHARD ODENYO VS. ETHICS AND ANTI-CORRUPTION COMMISSION.',
+		},
+		{
+			code: 'ODE2.1',
+			description: 'MR & MRS SOLOMON OCHIENG ODERA - KIBOS PROPERTY DEPOSIT',
+		},
+		{
+			code: 'ODE3.1',
+			description: 'PAMELA ODERA -VS- AMREF',
+		},
+		{
+			code: 'ODE4.1',
+			description: 'TABITHA AKINYI ODERA VS JACK GRADUS ONYANGO HCDC NO... OF 2013 NAIROBI',
+		},
+		{
+			code: 'ODE5.1',
+			description: 'DEBT RECOVERY',
+		},
+		{
+			code: 'ODE7.1',
+			description: 'TERMINATION OF ELIZABETH MUTAVA LOKO',
+		},
+		{
+			code: 'ODE8.1',
+			description:
+				'TRANSFER OF TITLE NO. KISUMU/KONYA/3381 BY JOSEPHINE AWUOR ODERA TO CHACHA HILLARY ODERA & GILDA ATIENO OKEYO',
+		},
+		{
+			code: 'ODE9.1',
+			description:
+				'BPRT CASE NO. 251 OF 2020 – NANCY AWUOR AWILLI T/A KAMIS TIPS AND TOES VS. MARY KANGETHE T/A JAYMAR INVESTMENT.',
+		},
+		{
+			code: 'ODH1.1',
+			description: 'BRUCE ODHIAMBO',
+		},
+		{
+			code: 'ODH3.1',
+			description: 'WILL',
+		},
+		{
+			code: 'ODH5.1',
+			description: 'INCORPORATION OF A COMPANY',
+		},
+		{
+			code: 'ODH6.1',
+			description: 'PROBATE OF THE ESTATE OF VITUS PETER OKECH ABUNGU (DECEASED).',
+		},
+		{
+			code: 'ODH7.1',
+			description:
+				'H.C. J.R. APPLICATION NO.E1146 OF 2020: REPUBLIC VS. NELSON ANDAVI HAVI & OTHERS',
+		},
+		{
+			code: 'ODH8.1',
+			description:
+				'ELC NO. E135 OF 2023 – TERESIAH ADHIAMBO ODHIAMBO VS. ALEX APOKO (RINGTONE) ',
+		},
+		{
+			code: 'ODH8.1/001',
+			description:
+				'ELC CASE NO. E012 OF 2023 (OS) - ALFRED JUMA AYORA VS. TERESIA ADHIAMBO ODHIAMBO & CHIEF LAND REGISTRAR',
+		},
+		{
+			code: 'ODH8.1/002',
+			description:
+				'E&LC PET CASE NO. E029 OF 2023 - ALFRED JUMA AYORA VS. DCI & DPP. INTERESTED PARTY - TERESIAH ADHIAMBO ODHIAMBO',
+		},
+		{
+			code: 'ODI1.1',
+			description: 'FIDEL ODINGA',
+		},
+		{
+			code: 'ODI2.1',
+			description: 'GENERAL RFP',
+		},
+		{
+			code: 'ODI2.2',
+			description:
+				'MISC APPLICATION NO.E033 OF 2021 - KHELEF KHALIFA VS. WAFULA CHEBUKATI & OTHERS',
+		},
+		{
+			code: 'ODI3.1',
+			description: 'RAILA JUNIOR ODINGA & ASTRAL AVIATION LTD',
+		},
+		{
+			code: 'ODI4.1',
+			description: 'PURCHASE OF APARTMENT AT MONTAVE SITUATED ON LR 209/8760,NAIROBI',
+		},
+		{
+			code: 'ODM1.1',
+			description:
+				'ORANGE DEMOCRATIC MOVEMENT -VS- LOISE WANJIRU NYANGI T/A NYAWALO GENERAL SUPPLIERS: CMCC NO. 6459 OF 2012 (NBO)',
+		},
+		{
+			code: 'ODM1.2',
+			description:
+				'HCCC NO. 35 OF 2008: WILTER ENTERPRISES LIMITED VS ORANGE DEMOCRATIC MOVEMENT & OTHERS',
+		},
+		{
+			code: 'ODO1.1',
+			description: 'JACK MESHACK ODONGO',
+		},
+		{
+			code: 'ODR1.1',
+			description: 'FAMILY LAW',
+		},
+		{
+			code: 'ODU1.1',
+			description: 'JACQUELINE AKECH ODULA',
+		},
+		{
+			code: 'ODU2.1',
+			description: 'ACCOUNTING SUPPORT',
+		},
+		{
+			code: 'ODU3.1',
+			description: 'ESTATE OF MAURICE ODHIAMBO ODUNDO (DECEASED)',
+		},
+		{
+			code: 'ODU4.1',
+			description: 'GORDON OTIENO ODUNDO VS.THE NAIROBI HOSPITAL',
+		},
+		{
+			code: 'OEL1.1',
+			description: 'OMAN EXPO LTD',
+		},
+		{
+			code: 'OGA1.1',
+			description: 'KILELESHWA VILLA/RIVERFRONT VILLA CHARLES OGALO',
+		},
+		{
+			code: 'OGA1.2',
+			description: 'CHARLES OGALO (ANCH ENTERPRISES)',
+		},
+		{
+			code: 'OGA2.1',
+			description: 'ANGELA OGANG -VS- COUNSIL OF LEGAL EDUCATION',
+		},
+		{
+			code: 'OGA3.1',
+			description: 'PROF THOMAS OGADA',
+		},
+		{
+			code: 'OGA4.1',
+			description: 'SUCCESSION',
+		},
+		{
+			code: 'OGA5.1',
+			description: 'Divorce – Irene Atieno Ogaja vs. Victor Akidiva Mulusa',
+		},
+		{
+			code: 'OGE1.1',
+			description: 'BENN OGEMBO',
+		},
+		{
+			code: 'OGE2.1',
+			description: 'ROSE OGEMBO',
+		},
+		{
+			code: 'OGE3.1',
+			description: 'PURCHASE OF 4 BEDROOMED TOWNHOUSE NUMBER 7B AT MARIGOLD RESIDENCY',
+		},
+		{
+			code: 'OGO1.1',
+			description: 'CHRISPINE OGONGO, L.R NO. 12715/2571',
+		},
+		{
+			code: 'OGO2.1',
+			description:
+				'PATRICK ONYANGO OGOLA T/A OGOLA & MUJERA ADVOCATES & OTHERS -VS- THE ASSET RECOVERY AGENCY: HC MISC. APPL. NO. 524 OF 2015 (NBO)',
+		},
+		{
+			code: 'OGO2.1/001',
+			description:
+				'HIGH COURT OF KENYA AT NAIROBI COMMERCIAL & TAX DIVISION, CIVIL SUIT NO.640 OF 2015. OGOLA & MUJERA ADVOCATES LLP VS. I&M BANK LIMITED AND ASSETS RECOVERY AGENCY.',
+		},
+		{
+			code: 'OGO2.2',
+			description:
+				'H.C MISC APP. 133/2016. OGOLA & MUJERA ADVOCATES VS BANKING FRAUD INVESTIGATION UNIT & ANOR',
+		},
+		{
+			code: 'OGO2.3',
+			description: 'MISC APP. NO. 102/2016 PATRICK OGOLA ONYANGO VS DPP & ANOR',
+		},
+		{
+			code: 'OGO2.4',
+			description: 'CRIMINAL CASE NO. 301 OF 2016',
+		},
+		{
+			code: 'OGO3.1',
+			description: 'MARTIN ISANDA VS PAUL OGONDI: CMCC NO. 38 OF 2015',
+		},
+		{
+			code: 'OGO4.1',
+			description: 'SALE OF TITLE LAND REFERENCE NUMBER 18040/90, KISUMU',
+		},
+		{
+			code: 'OGO5.1',
+			description: 'DISMISSAL FROM JUDICIAL SERVICE',
+		},
+		{
+			code: 'OGO7.1',
+			description: 'PURCHASE OF HOUSE NUMBER E2, ATHI RIVER, ATHI RIVER BLOCK 12/1/62',
+		},
+		{
+			code: 'OGU1.1',
+			description: 'ALLAN MODI OGUK - CHARGE OVER L.R NO 140/531/70, NYAYO ESTATE',
+		},
+		{
+			code: 'OGU2.1',
+			description: 'DR.OMONDI & DORCAS A.OGUTU - SALE OF TITLE LR. NO. 195/116 KAREN',
+		},
+		{
+			code: 'OGU3.1',
+			description: 'PROF. ELLY OTIENO OGUTU - SALE OF LR. NO. 3734/904',
+		},
+		{
+			code: 'OGU3.2',
+			description:
+				'PROF. ELLY OTIENO OGUTU TOWN HOUSE NO.2, COTTESBROOK PHASE II, OTHAYA VILLAS LIMITED',
+		},
+		{
+			code: 'OGU3.3',
+			description: 'PROF. OTIENO OGUTU',
+		},
+		{
+			code: 'OGU3.4',
+			description:
+				'PURCHASE OF VIILLA NUMBER 20(2) HIGHGROVE VILLAGE,LOWER KABETE ROAD,L.R.NO.29998,HIGHGROVE HOLDINGS LOMITEDTO ELFO INVESTMENTS LIMITED',
+		},
+		{
+			code: 'OGU3.5',
+			description:
+				'SALE/PURCHASE OF GREY PEARL L.R. NO.209/6905, FLAT NO.A - 7.2, GATUNDU CLOSE, KILELESHWA-CUSTOM HOMES, NAIROBI',
+		},
+		{
+			code: 'OGU3.6',
+			description:
+				'SALE/PURCHASE OF RUMAISA APARTMENTS, APT NO.G4, L.R. NO.209/21857, NAIROBI',
+		},
+		{
+			code: 'OGU3.7',
+			description:
+				'PURCHASE OF APT B 8.2 ON L.R. NO.4580/26 RIVERSIDE (PEARL RIVERS) CUSTOM HOMES LIMITED TO ELLY OTIENO OGUTU',
+		},
+		{
+			code: 'OGU3.8',
+			description: 'GENERAL FILE - LEASES',
+		},
+		{
+			code: 'OGU5.1',
+			description: 'ELC NO. 920 OF 2016 JAMES ONYANGO VS OMONDI OGUTU',
+		},
+		{
+			code: 'OGU5.2',
+			description:
+				'HIGH COURT OF KENYA AT NAIROBI, CIVIL SUIT NO. E269 OF 2021, CATHERINE S. MUTTUKU & ANOR VS. THE NAIROBI HOSPITAL AND OMONDI OGUTU.',
+		},
+		{
+			code: 'OGU6.1',
+			description: 'BANKING FACILITIES FROM STANDARD CHARTERED BANK',
+		},
+		{
+			code: 'OGU6.2',
+			description:
+				'PURCHASE OF APARTMENT ON LAND REFERENCE NUMBER 3734/412, OTHAYA ROAD, KILELESHWA, NAIROBI',
+		},
+		{
+			code: 'OGU6.3',
+			description:
+				'SALE AND PURCHASE OF RUMAISA APARTMENT NO. D4 – GLOBE DEVELOPERS LIMITED TO PROF. ELLY OTIENO OGUTU',
+		},
+		{
+			code: 'OGU6.4',
+			description:
+				'SALE AND PURCHASE OF RUMAISA APARTMENT NO. G4 – GLOBE DEVELOPERS LIMITED TO PROF. ELLY OTIENO OGUTU',
+		},
+		{
+			code: 'OGU7.1',
+			description: 'CONSTRUCTION AGREEMENT',
+		},
+		{
+			code: 'OGU8.1',
+			description:
+				'PURCHASE OF FLAT NO.A-7-2, L.R. NO.209/6905, GATUNDU CLOSE KILELESHWA, NAIROBICUSTOM HOMES LIMITED.',
+		},
+		{
+			code: 'OGW1.1',
+			description:
+				'PURCHASE OF APARTMENT I-7, BLOCK I,SUNNINGHILLS ESTATE, L.R. NOS.330/432 &330/433',
+		},
+		{
+			code: 'OGW1.2',
+			description: 'SALE/PURCHASE OF APARTMENT D6, DUCHESS PARK, 209/5990/13, NAIROBI',
+		},
+		{
+			code: 'OJA2.1',
+			description: 'PROFESSOR FRANCIS FREDERICK OJANY',
+		},
+		{
+			code: 'OJI0090.1',
+			description: 'DISCHARGE OF BANKING FACILITIES- BANK OF AFRICA',
+		},
+		{
+			code: 'OKA1.1',
+			description: 'ESTATE OF THE LATE JOSEPH BHOE OTHIENO OKANGA',
+		},
+		{
+			code: 'OKE1.1',
+			description: 'RALLYTEC  MOTORS LTD VS ROMEGECO K LTD',
+		},
+		{
+			code: 'OKE10.1',
+			description: 'GUARDIANSHIP OF NELLIE AKWIRI OKELLO',
+		},
+		{
+			code: 'OKE11.1',
+			description: 'GENERAL FILE',
+		},
+		{
+			code: 'OKE2.1',
+			description: 'MRS. GRACE OKELLO -  SALE OF L.R. NO. NAIROBI/BLOCK 122/463',
+		},
+		{
+			code: 'OKE2.3',
+			description: 'ESTATE OF JANET ONYANGO',
+		},
+		{
+			code: 'OKE2.4',
+			description: 'NAIROBI/BLOCK 122/464',
+		},
+		{
+			code: 'OKE3.1',
+			description: "MR & MRS OCHONG' OKELO: CAVEAT ON L.R NO. 6725/21",
+		},
+		{
+			code: 'OKE4.1',
+			description: 'VIOLET CAROLINE AKOTH OKECH -  SALE OF KEDONG/2085, 2084/KAJIADO',
+		},
+		{
+			code: 'OKE5.1',
+			description:
+				'PETITION NO. 85 OF 2016: JENNIFER SHAMALLA VS LAW SOCIETY OF KENYA & ANOR',
+		},
+		{
+			code: 'OKE6.1',
+			description:
+				'H.C. SUCC. CAUSE NO. 5 OF 2009 KISII ISDOVA ANYANGO OKEYO VS SAMUEL OUMA OKEYO',
+		},
+		{
+			code: 'OKE7.1',
+			description: 'L.R. NO. 3734/1004',
+		},
+		{
+			code: 'OKE8.1',
+			description: 'COLLECTION OF IMPORTED GOODS FROM LAMARINA SHIPPING COMPANY LTD',
+		},
+		{
+			code: 'OKE9.1',
+			description: 'THE ESTATE OF WILLIAM OKELLO (DECEASED)',
+		},
+		{
+			code: 'OKE9.2',
+			description: 'IN THE MATTER OF THE ESTATE OF THE LATE VICTOR OKELLO.',
+		},
+		{
+			code: 'OKO1.1',
+			description: 'BRAMWEL OKOTH LOAN ACCOUNT',
+		},
+		{
+			code: 'OKO2.1',
+			description:
+				'BERNARD OKOLLAH - SALE OF HSE, NO. C10 GABLES PARK ON L.R NO. 12715/617 FROM CAPITAL REALITY LTD',
+		},
+		{
+			code: 'OKO3.1',
+			description:
+				'KEVINS ALANGO OKONYA -VS- EGYPRO EAST AFRICA LTD - UNFAIR DISMISSAL FROM EMPLOYMENT',
+		},
+		{
+			code: 'OKO4.2',
+			description: 'PURCHASE OF APARTMENT NO. B1001 ON L.R NO. 330/1375, ASTORIA',
+		},
+		{
+			code: 'OKO5.1',
+			description: 'TRANSFER OF PROPERTIES',
+		},
+		{
+			code: 'OKU1.1',
+			description: 'EDWARD OKUNDI',
+		},
+		{
+			code: 'OKU2.1',
+			description: 'GODFREY A OKUMU',
+		},
+		{
+			code: 'OKW2.1',
+			description:
+				'JOE W. OKWACH (SC) - INSURANCE CLAIM AAR MEMBERSHIP NO KE1870800 CARD NO C007725',
+		},
+		{
+			code: 'OLA1.1',
+			description:
+				'PURCHASE OF FLAT NO. 23 ON LR. NO. 37/369; NAIROBI FROM MURATAB ALI SHEIKH & MOHAMED SAQIB SHEIKH',
+		},
+		{
+			code: 'OLA1.2',
+			description:
+				'PURCHASE OF HOUSE NUMBER G4-2(UNIT PLAN NUMBER 41) IN MUTHAIGA PIPELINE ESTATE ERECTED ON LAND REFERENCE NUMBER 12422/23 KARURA',
+		},
+		{
+			code: 'OLA2.1',
+			description: 'ELRC CAUSE NO.232 OF 2020: ALVIN MUNDIA VS. OLA ENERGY KENYA LIMITED',
+		},
+		{
+			code: 'OLA2.2',
+			description:
+				'MISC CRI APPLICATION NO.E3075 OF 2022: REPUBLIC VS. OLA ENERGY KENYA LIMITED & 3 OTHERS',
+		},
+		{
+			code: 'OLA2.3',
+			description:
+				'PROVISION OF LEGAL SERVICES IN RESPECT OF OLA’S COMPLIANCE WITH THE DATA PROTECTION ACT.',
+		},
+		{
+			code: 'OLI1.1',
+			description:
+				'Matter Description RICCARDO CONETTI & ANOR .VS. GIUSEPPE BONASERA & ANOR ',
+		},
+		{
+			code: 'OLU1.1',
+			description: 'GONDI HESBON OLUM',
+		},
+		{
+			code: 'OLU3.1',
+			description: 'PELICIA OLUM VS EPZ',
+		},
+		{
+			code: 'OLU4.1',
+			description:
+				'E&LC AT NAIROBI ELC NUMBER E359 2021 - ETHICS & ANTI-CORRUPTION COMMISSION VS. LEADING DEVELOPERS LIMITED & OTHERS',
+		},
+		{
+			code: 'OLW1.1',
+			description: 'NJERI OLWENY (MAINTENANCE & MATRIMONIAL CAUSE)',
+		},
+		{
+			code: 'OLW1.2',
+			description: 'DIVORCE CAUSE NO. 516 OF 2017',
+		},
+		{
+			code: 'OMA1.1',
+			description:
+				'HIGH COURT OF KENYA AT NAIROBI COMMERCIAL & TAX DIVISION, CIVIL SUIT NO.640 OF 2015. OGOLA & MUJERA ADVOCATES LLP VS. I&M BANK LIMITED AND ASSETS RECOVERY AGENCY.',
+		},
+		{
+			code: 'OMB1.1',
+			description: 'JOAN NYAMAO OMBACHO',
+		},
+		{
+			code: 'OMB2.1',
+			description: 'DIVORCE AGAINST DORIS DIANA ADHIAMBO KWENDA',
+		},
+		{
+			code: 'OMO1.1',
+			description: 'SEAN OMONDI -VS- DALLY & FIGGIS',
+		},
+		{
+			code: 'OMO2.1',
+			description: 'HCCC NO. 532 OF 2012 NATION MEDIA GROUP VS JOSEPH ODINDO',
+		},
+		{
+			code: 'OMO3.1',
+			description: 'CRIMINAL CASE NO..... REPUBLIC VS. JOYCE NYAMACHE OSINDE & 8 OTHERS',
+		},
+		{
+			code: 'OMO4.1',
+			description:
+				'PURCHASE OF APT F, 10TH FLOOR, QUIET SIDE, ERECTED ON L.R. NO.209/292 & 293, NAIROBI',
+		},
+		{
+			code: 'OMO5.1',
+			description:
+				'DISCHARGE OF CHARGE OVER TITLE NUMBERS NJORO/NGATA BLOCK 1/1564, 1/2034 AND 1/2042',
+		},
+		{
+			code: 'OMO6.1',
+			description: 'TITLES',
+		},
+		{
+			code: 'OMU1.1',
+			description: 'ESTATE OF THE LATE JAMES AGGREY ODHIAMBO OMUODO',
+		},
+		{
+			code: 'ONC.1',
+			description:
+				'PURCHASE OF APARTMENT NO. B1,EMERALD APTS ERECTED ON LR.NO.209/3317 BY CLIFFORD ONCHWARI MACHOKA & LENA ONYANGO ONCHWARI',
+		},
+		{
+			code: 'ONC1.1',
+			description: 'JUDY NYABOKE ONCHWARI',
+		},
+		{
+			code: 'ONC3.1',
+			description: 'BANKING FACILITIES FROM SIDIAN BANK',
+		},
+		{
+			code: 'OND1.1',
+			description: 'INCORPORATION OF A COMPANY',
+		},
+		{
+			code: 'ONE1.1',
+			description: 'LEGAL SERVICES TO OLDONYO NAIRASHA ESTATE (NAROK) LIMITED',
+		},
+		{
+			code: 'ONG1.1',
+			description: 'NAIROBI GYMKHANA',
+		},
+		{
+			code: 'ONS1.1',
+			description: 'RISPAH KERUBO ONSASE -VS- CHAIRMAN, NATIONAL LAND COMMISSION',
+		},
+		{
+			code: 'ONY1.1',
+			description: 'GRACE NYANGASI OBEGE ELRC NO. 655 OF 2014',
+		},
+		{
+			code: 'ONY2.1',
+			description: 'PURCHASE OF UNIT NO. 1111 "88 NAIROBI ON"  LR. NO. 209/3006 NAIROBI',
+		},
+		{
+			code: 'ONY3.1',
+			description:
+				'PURCHASE OF APARTMENT NO. E1 SITUATE ON GROUND FLOOR OF EARTH TOWER, NINE PLANETS APARTMENTS ERECTED ON LR.NO. 209/20048;NAIROBI TO MAURICE ONYUKA & COLLETA ONYUKA',
+		},
+		{
+			code: 'ONY4.1',
+			description: 'NOTICE TO TERMINATE A TENANCY',
+		},
+		{
+			code: 'ONY5.1',
+			description: 'L.R. NO.KJD/LOODARIAK/61',
+		},
+		{
+			code: 'OOK1.1',
+			description:
+				"DOMINIC OTIENO OOKO - RENTAL LEASE- MASAI COURT APARTMENT, HOUSE NO. 087 NAIROBI - JOAN NJOKI NDUNG'U (LANDLORD)",
+		},
+		{
+			code: 'OPA1.1',
+			description: 'ZEIPH OPATI',
+		},
+		{
+			code: 'OPA2.1',
+			description: 'TRANSFER OF PROPERTIES',
+		},
+		{
+			code: 'OPI1.1',
+			description: 'FITZGARALD OTIENO OPIYO & EVELYNE AGUTU OYOO',
+		},
+		{
+			code: 'OPI2.1',
+			description: 'ANTHONY OPIYO & OTHERS VS. SAFARICOM PLC',
+		},
+		{
+			code: 'OPL1.1',
+			description: 'DISPUT WITH OLLERAI INVESTMENTS LIMITED.',
+		},
+		{
+			code: 'OPO2.1',
+			description:
+				'KRISTINA JAOKO OPONDO -VS- SALMON AGUTU CHAAN/PAUL OOTE ORIMBA: HC (E&LC) NO 453 OF 2013 (KISII)',
+		},
+		{
+			code: 'OPO3.1',
+			description: 'P. OPONDO/PM MATTER',
+		},
+		{
+			code: 'OPO4.1',
+			description:
+				'COMPLAINT CONCERNING DIAGNOSIS AND TREATMENT OFFERED AT NAIROBI HOSPITAL TO RYAN HAWI OPONDO',
+		},
+		{
+			code: 'OPO5.1',
+			description:
+				'PURCHASE OF VILLA NUMBER 3, CONSTRUCTED ON A PORTION OF PROPERTY TITLE NUMBER KISUMU/DAGO/4416',
+		},
+		{
+			code: 'OPS2.1',
+			description:
+				'DISPUTE BETWEEN ONE POINT SIX (LONDON) LIMITED VS. VICTORIA COMMERCIAL BANK',
+		},
+		{
+			code: 'ORA1.1',
+			description: 'GEORGE ORARO VS MU NO KAX',
+		},
+		{
+			code: 'ORA1.2',
+			description: 'DUBE HOLDINGS LIMITED FIXED DEPOSIT',
+		},
+		{
+			code: 'ORA1.3',
+			description:
+				'ELC NO. 36 OF 2016 - STUART RICHARD CUNNINGHAM -VS- LIVIA LE POER TRENCH, GEORGE O. ORARO & DR. D. SILVERSTEIN',
+		},
+		{
+			code: 'ORA1.4',
+			description: 'G. ORARO VS. AIRTEL KENYA LIMITED',
+		},
+		{
+			code: 'ORA1.5',
+			description:
+				'E&LC OS NO. E008 OF 2021 - DABASA HALKAHI MAMO & 8 OTHERS VS. DAVID SILVERSTEIN & 2 OTHERS.',
+		},
+		{
+			code: 'ORA1.6',
+			description: 'TAX DEMAND NOTICE - KSHS. 24,323,419/=',
+		},
+		{
+			code: 'ORA1.7',
+			description: 'SAVANNAH HONEY LIMITED',
+		},
+		{
+			code: 'ORA2.1',
+			description: 'MILTON MUGAMBI -VS- GEORGE ORARO & 5 OTHERS: CIVIL SUIT NO 29 OF 2016',
+		},
+		{
+			code: 'ORA3.1',
+			description:
+				'NICHOLAS MAINA WACHIRA -VS- MR. GEORGE ORARO (SC) & 2 OTHERS: INDUSTRIAL CAUSE NO. 50 OF 2013 (NYERI)',
+		},
+		{
+			code: 'ORA3.1/001',
+			description:
+				'ELC.36 OF 2016 - STUART RICHARD CUNNINGHAM vs GEORGE ORARO, DR. SILVERSTEIN, ANTHONY KIMARU AND THE CHIEF LAND REGISTRAR',
+		},
+		{
+			code: 'ORA3.2',
+			description: 'LEGAL CONSULTATION ON ESAKI LIMITED',
+		},
+		{
+			code: 'ORA3.3',
+			description: 'GENERAL FILE',
+		},
+		{
+			code: 'ORA4.1',
+			description: 'MONIQUE AUMA ORARO AND AAR INSURANCE KENYA LIMITED',
+		},
+		{
+			code: 'ORA5.1',
+			description: 'KISUMU/MUHORONI/524 & 527 ESTATE OF THE LATE JACOB OMBARA.',
+		},
+		{
+			code: 'ORA6.1',
+			description: 'PURCHASE OF APARTMENT NO. B1001 ON L.R NO. 330/1375, ASTORIA',
+		},
+		{
+			code: 'ORE1.1',
+			description: 'PAUL OREM- JOINT VENTURE INVESTMENT',
+		},
+		{
+			code: 'ORE1.2',
+			description: 'PAUL OREM .VS. JENIPHER OWUOR OSODO',
+		},
+		{
+			code: 'ORI1.1',
+			description: 'Provision of Legal Services to Victoria Hospital Limited',
+		},
+		{
+			code: 'ORI2.1',
+			description:
+				'AN INTENDED APPEAL BETWEEN VICTORIA COMMERCIAL BANK AND EDDY NICHOLAS ORINDA.',
+		},
+		{
+			code: 'ORU1.1',
+			description: 'POLESTAR MERCHANDISING CO. LTD',
+		},
+		{
+			code: 'OSA1.1',
+			description: 'GENERAL LEGAL ADVISE.',
+		},
+		{
+			code: 'OSI1.1',
+			description: 'PAUL VINCENT OSIAGO - BL/112/117 NBI',
+		},
+		{
+			code: 'OSI1.2',
+			description: 'PAUL VINCENT OSIAGO - BL/112/117 NRB',
+		},
+		{
+			code: 'OSI1.3',
+			description: 'PAUL VINCENT OSIAGO',
+		},
+		{
+			code: 'OSI1.4',
+			description: 'ESTATE OF THE LATE HILDA ABONYO ODHIAMBO',
+		},
+		{
+			code: 'OSI1.5',
+			description: 'TRANSFER OF HOUSE NO. HG26, HARAMBEE AVENUE',
+		},
+		{
+			code: 'OSI2.1',
+			description: 'PAUL VINCENT OSIAGO',
+		},
+		{
+			code: 'OSL1.1',
+			description: 'PROVISION OF LEGAL SERVICES TO OPEN SOCIETY INSTITUTE COMPANY LIMITED.',
+		},
+		{
+			code: 'OSL2.1',
+			description:
+				'HC MISC. CAUSE NO. E553 OF 2022 - MOHAMED & SAMNAKAY V. ORBIT SPORTS LIMITED',
+		},
+		{
+			code: 'OSM1.1',
+			description: 'MOHAMED NOOR OSMAN VS SEVEN FOUR EIGHT AIR SERVICES (K) LIMITED',
+		},
+		{
+			code: 'OTH1.1',
+			description: 'PURCHASE OF LAND REFERENCE NO. 6046/4',
+		},
+		{
+			code: 'OTH1.2',
+			description: 'APPLICATION FOR REVIEW OF CUSTOMS EXEMPTIONS APPLICATION',
+		},
+		{
+			code: 'OTI1.1',
+			description: 'IN THE MATTER OF THE ESTATE OF THE LATE WALTER EDWIN ADERO (DECEASED)',
+		},
+		{
+			code: 'OTI2.1',
+			description: 'HON. JUSTICE ONYANGO OTIENO',
+		},
+		{
+			code: 'OTI3.1',
+			description: 'MR &MRS OTIENO',
+		},
+		{
+			code: 'OTI4.1',
+			description: 'MS. MADIKIZELA OTIENO-DAMAGES FOR NEGLIGENCE',
+		},
+		{
+			code: 'OTI5.1',
+			description:
+				'SUCCESSION CAUSE NO. 783 OF 1995 IN THE MATTER OF THE ESTATE OF ALFAYO OTIENO BALLA (DECEASED)',
+		},
+		{
+			code: 'OTI7.1',
+			description: 'CHARGE OVER L.R. NO.28800/61, NAIROBI',
+		},
+		{
+			code: 'OTI8.1',
+			description:
+				'DIVORCE PETITION NO.472 FO 2019: JUDITH ADHIAMBO OTIENO VS. DAVID OTIENO ONYANGO',
+		},
+		{
+			code: 'OTT1.1',
+			description: "OTTO MRUTTU & PARTNER'S VS PWANI UNIVERSITY DEBT COLLECTION",
+		},
+		{
+			code: 'OTT1.2',
+			description:
+				'CONTRACT AGREEMENT BETWEEN MOI UNIVERSITY AND OTTO MRUTTU & PARTNERS ARCHITECTS (DEBT RECOVERY)',
+		},
+		{
+			code: 'OUK1.1',
+			description: 'MRS. CHRISTABEL OUKO "WILL"',
+		},
+		{
+			code: 'OUK1.2',
+			description: 'SALE OF FLAT NO. 7 BLOCK A ON L.R. NO. 209/12572-KILIMANI, NAIROBI',
+		},
+		{
+			code: 'OUK1.3',
+			description: 'ESTATE OF CHRISTABEL OUKO (DECEASED) : SUCCESSION NO (TBA) OF 2017',
+		},
+		{
+			code: 'OUM1.1',
+			description: 'BEATRICE OUMA - PURCHASE OF UNIT D28 EDENVILLE PHASE 2',
+		},
+		{
+			code: 'OUM1.2',
+			description:
+				'PURCHASE OF MAISONETTE NUMBER 11, COURT NUMBER B (the "Property") IN THE DEVELOPMENT KNOWN AS \'EDENVILLE TWO\' ON LAND REFERENCE NUMBER 21103/1, KIAMBU COUNTY BY BEATRICE AWUOR OUMA (the "Purchaser") FROM PARAMOUNT CHIEF ESTATE LIMITED (the "Vendor")',
+		},
+		{
+			code: 'OUM2.1',
+			description:
+				'KENYA POWER & LIGHTING COMPANY VS THE COUNTY GOVERNMENT OF NAIROBI: LEADING ROBSON HARRIS IN WAY-LEAVE CHARGES DISPUTE',
+		},
+		{
+			code: 'OUM3.1',
+			description: 'MARGARET JOYCE AKINYI OUMA: L.R NO. KSM/MANYATTA/320',
+		},
+		{
+			code: 'OVP1.1',
+			description:
+				'NAKUMATT HOLDINGS LTD & OTHERS -VS- OCEAN VIEW PLAZA LTD:CIVIL CASE NO. 83 OF 2010',
+		},
+		{
+			code: 'OWI1.1',
+			description: 'BEATRICE ATIENO OWINO -VS- JULIUS AWUOR OWINO',
+		},
+		{
+			code: 'OWI2.1',
+			description: 'BUSIA CAUSE NO. 354 OF 2011: GORETTY ATIENO ODERA VS DOLPHINE OWINO',
+		},
+		{
+			code: 'OWI3.1',
+			description:
+				'GILBERT HERBERT OWINGA-PERSONAL INJURY CLAIM AGAINST EAZY CREDIT LIMITED & 3 OTHERS',
+		},
+		{
+			code: 'OWI4.1',
+			description: 'ALBERT KYALO &  JOB GITEGI VS. DR. MALAKI DUNDU OWILI',
+		},
+		{
+			code: 'OWI5.1',
+			description: 'IN THE MATTER OF OWITI OTIENO & RAGOT ADVOCATES',
+		},
+		{
+			code: 'OWO1.1',
+			description:
+				'SIMON AROKO OWOKO & FREDRICK KURIA NJOROGE SALE AGREEMENT ON TITLE NO. NRBI/BLOCK 74/428',
+		},
+		{
+			code: 'OWU1.1',
+			description: 'UNLAWFUL TERMINATION OF GORDON OTIENO OWUOR',
+		},
+		{
+			code: 'OYI1.1',
+			description:
+				'JESSICA MARGARET ADHIAMBO OYIGO FOR THE ESTATE OF JOSHUA OLUOCH OYIGO (DECEASED): HC SUCCESSION CAUSE NO. 857 OF 2005',
+		},
+		{
+			code: 'OYI2.1',
+			description: 'ESTATE OF THE LATE PROF. JAMES BILL OYIEKE',
+		},
+		{
+			code: 'PAB1.1',
+			description: 'MINE PABARI -  SALE OF APARTMENT ON LR. NO. 330/565, TOTTENHAM COURT',
+		},
+		{
+			code: 'PAC1.1',
+			description:
+				'INTERMEDIATE TECHNOLOGY DEVELOPMENT GROUP/ATTORNEY GENERAL VS YOBESH AMORO: HCCC NO 449 OF 2008',
+		},
+		{
+			code: 'PAC1.2',
+			description:
+				'AVTAR SINGH REHAI VS RAJINDER SINGH REHAI: HCCC (ENV. & LAND) NO. 114 OF 2012 - PRACTICAL ACTION',
+		},
+		{
+			code: 'PAD1.1',
+			description:
+				'TARANJEET SINGH PADHAAL FOR THE ESTATE OF THE LATE GURBEER SINGH PADHAAL: SUCCESSION CAUSE NO. 98 OF 1999 (KISUMU)',
+		},
+		{
+			code: 'PAD2.1',
+			description:
+				'KARSANDAS TRIBHOVAN PADIA, MAHENDRA KARSANDAS PADIA, ASHWING KARSANDAS PADIA & 5 OTHERS .VS. HIGHLANDS MINERAL WATER CO. LIMITED',
+		},
+		{
+			code: 'PAI1.1',
+			description: 'PAN AFRICAN INSURANCE',
+		},
+		{
+			code: 'PAI2.1',
+			description: 'PAN AFRICAN INSURANCE COMPANY VS KIMUYU MASESE',
+		},
+		{
+			code: 'PAL1.1',
+			description: 'POWER AFRICA LTD',
+		},
+		{
+			code: 'PAR1.1',
+			description:
+				'DHARMENDRA PARMA VS. ORBIT PRODUCTS AFRICA LIMITED & STELLAR MANUFACTURING HOLDINGS AFRICA LIMITED',
+		},
+		{
+			code: 'PAT1.1',
+			description:
+				'BARNABA TEMBULIO & 2 OTHERS -VS- NAYANKUMAR PATEL & OTHERS: HC E& LC NO. 837 OF 2013',
+		},
+		{
+			code: 'PAT2.1',
+			description: 'UNITED ENGINEERING SUPPLIES LIMITED STAKEHOLDERS DISPUTE',
+		},
+		{
+			code: 'PAT2.2',
+			description:
+				'MISC APPLICATION NO.E176 OF 2018:SANJAY RAMESHBHAI PATEL VS.DINKAR PTEL & ANOR.',
+		},
+		{
+			code: 'PAT2.3',
+			description: 'CLAIM FOR RENT ARREAS FROM UNITED ENGINEERING SUPPLIES LTD',
+		},
+		{
+			code: 'PAT2.4',
+			description:
+				'NAIROBI CMEL CAUSE NO. E1255 OF 2021: ERNEST ONGAMA OMULAMA -VS- DR. PARESH K. J PATEL',
+		},
+		{
+			code: 'PAT2.5',
+			description:
+				'HCCOMM/E238 OF 2023: UNITED ENGINEERING SUPPLIES LTD VS. DINKAR R. PATEL & PARAG D. PATEL.',
+		},
+		{
+			code: 'PAT3.1',
+			description: 'SHAREHOLDERS DISPUTE',
+		},
+		{
+			code: 'PAT5.1',
+			description:
+				'HCCC NO. 240 OF 2018 AVENUE HEALTHCARE LIMITED VS. DIANA CLAIRE JACOBSON PATEL',
+		},
+		{
+			code: 'PAT6.1',
+			description: 'PURCHASE OF UNIT 7,DEERPARK LR. NO. 1008/57 NAIROBI.',
+		},
+		{
+			code: 'PAT7.1',
+			description: 'WILL FOR U.B. PATEL AND J. SHAH',
+		},
+		{
+			code: 'PAU1.1',
+			description: 'PARDEEP PAUNRANA & ANJARA PAUNRANA',
+		},
+		{
+			code: 'PBL1.10',
+			description: 'EMPLOYMENT ADVISORY',
+		},
+		{
+			code: 'PBL1.11',
+			description: 'BANKING FACILITIES TO HOWARD HUMPHREYS (EAST AFRICA) LIMITED',
+		},
+		{
+			code: 'PBL1.2',
+			description: 'PRIME BANK LTD SHAREHOLDERS DIVESTITURE',
+		},
+		{
+			code: 'PBL1.3',
+			description: 'BANKING FACILITIES GRANTED TO PORT FLORENCE COMMUNITY HOSPITAL',
+		},
+		{
+			code: 'PBL1.4',
+			description: 'RESTRUCTURING',
+		},
+		{
+			code: 'PBL1.5',
+			description: 'HCCC NO. 346 OF 2011-SATISH GAUTAMA VS PRIME BANK LIMITED & 3 OTHERS',
+		},
+		{
+			code: 'PBL1.6',
+			description: 'SATISH GAUTAMA VS PRIME BANK LIMITED CIVIL SUIT NO. 316 OF 2008',
+		},
+		{
+			code: 'PBL1.7',
+			description: 'SHARE ACQUISITION INTAUSI ASURANCE CO. LTD',
+		},
+		{
+			code: 'PBL1.8',
+			description: 'ADVICE ON OBTAINING REGULATORY APPROVALS',
+		},
+		{
+			code: 'PBL1.9',
+			description:
+				'UNDERTAKING FROM KAPLAN & STRATTON IN RESPECT OF THE ACCOUNTOF MULTIPLE HAULIERS EAST AFRICA LIMITED',
+		},
+		{
+			code: 'PCI1.1',
+			description: 'POPULATION COUNCIL',
+		},
+		{
+			code: 'PCI1.2',
+			description:
+				'POPULATION COUNCIL INTERNATIONAL - INFUSION PROPERTIES LTD: AVENUE 5 L.R NO. 1/1327 ROSE AVENUE NAIROBI',
+		},
+		{
+			code: 'PCI1.3',
+			description:
+				'LEASE OF THE PREMISES ON THE THIRD FLOOR OF AVENUE FIVE, L.R NO. 1/1327 ROSE AVENUE (the “Premises”) BY EDUFUND LLP (the “Lessor” TO THE POPULATION COUNCIL (the “Company”)',
+		},
+		{
+			code: 'PCK1.1',
+			description: 'URBANUS MUSEMBI AND 45 OTHERS VS. POLYTANKS AND CONTAINERS KENYA LIMITED',
+		},
+		{
+			code: 'PCK1.2',
+			description:
+				'MISC. CIVIL APPLICATION NO. 226 OF 2019 MATUERANDU KAIMENYI MOSE ADVOCATES VS. POLY TANKS LIMITED AND ANOR.',
+		},
+		{
+			code: 'PCK1.3',
+			description: 'STRATEGIC WEB SUCCESS GROUP (SWS) V POLYTANKS & CONTAINERS KENYA LTD.',
+		},
+		{
+			code: 'PCK1.4',
+			description:
+				'POLYTANKS AND CONTAINERS KENYA LIMITED VS. THE OFFICIAL RECEIVER (SUED AS THE PROVISIONAL LIQUIDATOR OF POLYTANKS LIMITED (IN LIQUIDATION))',
+		},
+		{
+			code: 'PCL1.1',
+			description: 'POSTBANK CREDIT LTD -VS- SOLOLO OUTLETS LTD',
+		},
+		{
+			code: 'PCL1.10',
+			description: 'HCCC NO. 710 OF 2009: WILLIAM & KENNEDY VS POSTBANK CREDIT LTD',
+		},
+		{
+			code: 'PCL1.11',
+			description: 'CMCC NO. 499/1996 VULCAN TYRES MANUFACTURERS',
+		},
+		{
+			code: 'PCL1.12',
+			description:
+				'POST BANK CREDIT LTD VS BENJAMIN K. TANUI CHARGE OVER L.R. NANDI KAMOIYWO/1199/1200/1202/1204',
+		},
+		{
+			code: 'PCL1.13',
+			description:
+				'ELC CAUSE NO. 308 OF 2016 KISUMU: KENYA INDUSTRIAL ESTATE LTD VS POST BANK CREDIT LIMITED',
+		},
+		{
+			code: 'PCL1.14',
+			description:
+				'CIVIL SUIT NO.240 OF 2004:POSTBANK CREDIT LIMITED (IL) VS.FRANCIS NGANGA GICHARU',
+		},
+		{
+			code: 'PCL1.15',
+			description: 'POST BANK CREDIT LIMITED (IL) VS. RAPHAEL NJOROGE',
+		},
+		{
+			code: 'PCL1.16',
+			description: 'POSTBANK CREDIT LIMITED (IL) VS.ERASTO MOSETI AND ANOR',
+		},
+		{
+			code: 'PCL1.17',
+			description:
+				'POSTBANK CREDIT LIMITED (IL) VS.HEMAK TRADING COMPANY & HENRY SIFUNA KWAKU MWAMUSI',
+		},
+		{
+			code: 'PCL1.18',
+			description: 'POSTBANK CREDIT LIMITED (IL) VS.SPECIALISED SUPPLIES LIMITED',
+		},
+		{
+			code: 'PCL1.19',
+			description:
+				'HCCC NO. 3192 OF 1995: POSTBANK CREDIT LIMITED (IL) VS TAMBUL ESTATES LIMITED',
+		},
+		{
+			code: 'PCL1.2',
+			description: 'POSTBANK CREDIT LTD VS KOKA EXIMO LTD',
+		},
+		{
+			code: 'PCL1.20',
+			description:
+				'ELC CIVIL SUIT NO.137 OF 2018:NANCY NJERUTO BOMETT VS.POST BANK CREDIT LIMITED (IL)-L.R.NO.10302/3 (IR NO.17550)',
+		},
+		{
+			code: 'PCL1.21',
+			description: 'GENERAL ADVICE FILE',
+		},
+		{
+			code: 'PCL1.22',
+			description:
+				'KISUMU CMCC NO.MC ELC E040 OF 2021: VICTORIA DISTRIBUTORS LIMITED VS. POST BANK CREDIT LIMITED (IL).',
+		},
+		{
+			code: 'PCL1.3',
+			description: 'rapheal kipsoi korir (POST BANK CREDIT LIMITED)',
+		},
+		{
+			code: 'PCL1.4',
+			description: 'Post Bank Limited',
+		},
+		{
+			code: 'PCL1.5',
+			description: 'OFFSHORE TRADING CO LTD VS KDIC, POSTBANK CREDIT',
+		},
+		{
+			code: 'PCL1.6',
+			description: 'POST BANK CREDIT LTD VS LAB CONSTRUCTION',
+		},
+		{
+			code: 'PCL1.7',
+			description: 'ELD CASE NO. 60 OF 2016 SOLOMON TOO & ANOR VS ZIPPORAH JERICHI KIRUI',
+		},
+		{
+			code: 'PCL1.8',
+			description: 'HCCC NO. 228 OF 1996 NYAMANGU HOLDINGS',
+		},
+		{
+			code: 'PCL1.9',
+			description:
+				'RELEASE OFTITLE DOCUMENT ON L.R. NO. NRB/BLK 110/30 THOMAS ESTATE, INO RACHEL AMBANI',
+		},
+		{
+			code: 'PCL2.1',
+			description:
+				'LEGAL ADVICE ON COMPLIANCE AND REGULATORY REQUIREMENTS FOR NON OPERATING COMPANY IN KENYA- PAC CAPITAL (KENYA) LTD.',
+		},
+		{
+			code: 'PDC1.1',
+			description:
+				'DISPUTE BETWEEN POSCO DAEWOO CORPORATION & MAYFAIR INSURANCE COMPANY LIMITED',
+		},
+		{
+			code: 'PEA1.1',
+			description: 'INCORPORATION OF COMPANY',
+		},
+		{
+			code: 'PEC1.1',
+			description: 'ADVISORY ON COMPLIANCE MATTERS RELATING TO ECOBODAA LIMITED',
+		},
+		{
+			code: 'PET1.1',
+			description: 'PURCHASE OF PENTHOUSE, VASUDEV APARTMENTS',
+		},
+		{
+			code: 'PET2.1',
+			description:
+				'PROVISION OF LEGAL SERVICES TO JOEL PETERS & DIRK WILLEM VANDERLINDEN AGAINST INVESTMENT HOUSE LIMITED AND KELLICO LIMITED.',
+		},
+		{
+			code: 'PFS1.1',
+			description: 'REGISTRATION OF NATIONAL PAYMENT SYSTEM.',
+		},
+		{
+			code: 'PGC1.1',
+			description: 'ADVICE ON DRAFT DATA PROTECTION BILL IN KENYA',
+		},
+		{
+			code: 'PGM1.1',
+			description: 'IBRAHIM SWALEH - OUTSTANDING SERVICE CHARGE',
+		},
+		{
+			code: 'PGT1.1',
+			description:
+				'PARMAR GENERAL TRADING CO (L.L.C.) VS. QUARTERMASTER SUPPLY (K) LTD & HAREN J. PATEL',
+		},
+		{
+			code: 'PHL1.1',
+			description: 'CH - COULSON HARNEY ADVOCATES- PHILIPS HEALCHARE : PASSING OFF CLAIM',
+		},
+		{
+			code: 'PHL2.1',
+			description:
+				'HCCC NO. 18 OF 2009: POWER HYDRAULICS VS JACINTA NDEGWA T/A JARMAT ENTERPRISES',
+		},
+		{
+			code: 'PHL3.1',
+			description:
+				'TAT APPEAL NO. OF 2023 - PERTH HOLDINGS LIMITED VS THE COMMISSIONER OF DOMESTIC TAXES',
+		},
+		{
+			code: 'PHL4.1',
+			description:
+				'development of 8 townhouses on land reference number 209/9739/17, nairobi',
+		},
+		{
+			code: 'PHS1.1',
+			description: 'PEMBROKE HOUSE : LEGAL ADVICE',
+		},
+		{
+			code: 'PIL1.1',
+			description: 'PARO INVESTMENTS',
+		},
+		{
+			code: 'PIL1.2',
+			description: 'PARO INVESTMENTS LIMITED VS. ABSALOM OCHIENG AYANY.',
+		},
+		{
+			code: 'PIL2.1',
+			description: 'general file',
+		},
+		{
+			code: 'PIL2.2',
+			description: 'LEGAL ADVISORY SERVICES TO POPOTE INNOVATIONS LIMITED',
+		},
+		{
+			code: 'PIL3.1',
+			description: 'PURCHASE OF LAND REFERENCE NUMBER 1705/12, KILIFI',
+		},
+		{
+			code: 'PLA1.1',
+			description: 'REGISTRATION OF VARIOUS TRADEMARKS',
+		},
+		{
+			code: 'PMK1.1',
+			description: 'PANGEA MARKETS KENYA LIMITED - GENERAL',
+		},
+		{
+			code: 'POA1.1',
+			description:
+				'REGISTRATION OF DISCHARGE OF CHARGE, VINCENT ODUOR ODHIAMBO, L.R. NO. 209/3298',
+		},
+		{
+			code: 'POA1.2',
+			description: 'POA GENERAL',
+		},
+		{
+			code: 'POL1.1',
+			description: 'LEGAL ADVISORY ON FORCE MAJEURE',
+		},
+		{
+			code: 'POW1.1',
+			description: "APPEAL AGAINST KRA's OBJECTION DECISION DATED 19TH NOVEMBER 2021",
+		},
+		{
+			code: 'PPA1.1',
+			description: 'ELC NO. 192 OF 2010 HOUSING FINANCE & 2 OTHERS',
+		},
+		{
+			code: 'PPL1.1',
+			description:
+				'POLPANE PROPERTIES LIMITED VS COMMISSIONER OF INVESTIGATIONS & ENFORCEMENT',
+		},
+		{
+			code: 'PRA1.1',
+			description:
+				'PRAFULCHAND BHARMAL SHAH/MRS RENUKA D.SHAH VS SHURISHCHANDRA/B.SHAH MRS.NILAH.SURISH SHAH/ BANK OF INDIA (K) LTD: CIV APPEAL NO. 256 OF 2011',
+		},
+		{
+			code: 'PRI1.1',
+			description:
+				'RAVI PRINJA,AHMED NASSER VS ROZANE INVESTMENT ONE LTD: HCCC NO. 2923 OF 1995',
+		},
+		{
+			code: 'PRO1.1',
+			description:
+				"DUE DILIGENCE IN RESPECT TO THE COMPANY'S LEGAL & CORPORATE COMPLIANCE STATUS",
+		},
+		{
+			code: 'PRO3.1',
+			description:
+				'PROPOSED ACQUISITION OF AN INTEREST IN INSTA PRODUCTS (EPZ) LIMITED AND NUTRO MANUFACTURING (EPZ)',
+		},
+		{
+			code: 'PSE1.1',
+			description: 'PROJECT SERENEKI',
+		},
+		{
+			code: 'PSK1.1',
+			description: 'PHARMACEUTCAL SOCIETY OF KENYA',
+		},
+		{
+			code: 'PSK2.1',
+			description:
+				'CIVIL APPEAL (APPLI) NO. 191 OF 2019 WAMBUA MAITHYA -VS- PHARMACY & POISONS BOARD & PHARMACEUTICAL SOCIETY OF KENYA & DR. PIUS WANJALA.',
+		},
+		{
+			code: 'PTA1.1',
+			description:
+				'HCCC NO. 361 OF 1999 AFRICAN AIRLINES INT. LIMITED VS SOUTHERN AFRICAN TRADE & DEVELOPMENT BANK',
+		},
+		{
+			code: 'PTA1.10',
+			description:
+				'EASTERN & SOUTHERN AFRICA TRADE & DEVELOPMENT BANK (PTA BANK)/CORFU INVESTMENTS LTD  -VS-  FRANCIS MUHIA MUTUNGU: HC ELR C NO. 236 OF 2014 (NBO)',
+		},
+		{
+			code: 'PTA1.11',
+			description:
+				'EASTERN AND SOUTHERN AFRICAN TRADE & DEVELOPMENT BANK (PTA BANK) - CONSENT TO RELEASE OF PROPERTIES REGISTERED AS L.R. NO. 5452 & L.R. NO 5453 N.E KISUMU MUNICIPALITY (KIBOS)',
+		},
+		{
+			code: 'PTA1.13',
+			description: 'PROPOSED DEVELOPMENT ON L.R. NO. 1/184, LENANA ROAD, NAIROBI',
+		},
+		{
+			code: 'PTA1.14',
+			description:
+				'MISCELLANEOUS CRIMINAL CASE 403 OF 2015 REPUBLIC VS HEAD OF LEGAL PTA BANK KENYA',
+		},
+		{
+			code: 'PTA1.15',
+			description: 'PTA BANK TAX',
+		},
+		{
+			code: 'PTA1.16',
+			description: 'CLAIM FOR USD 2,400,344.44 AGAINST NAIROBI UROLOGICAL SERVICES',
+		},
+		{
+			code: 'PTA1.18',
+			description: 'HCC NO.770 OF 2017:CAPT.MUSA HASSAN BULHAN & ANOR VS.PTA BANK & 2 OTHERS',
+		},
+		{
+			code: 'PTA1.19',
+			description: 'PTA GENERAL FILE',
+		},
+		{
+			code: 'PTA1.2',
+			description: 'HASHI ENERGY HOLDINGS LTD',
+		},
+		{
+			code: 'PTA1.20',
+			description:
+				'HCCC NO.448 OF 2012:RAMESHCHANDRA SOMCHAND SHAH & ANOR VS.PALMHEALTHCARE INTERNATIONAL & OTHERS',
+		},
+		{
+			code: 'PTA1.21',
+			description:
+				'LEATHERLIFE (EXPORT PROCESSING ZONE) LIMITED VS. EASTERN AND SOUTHERN AFRICAN TRADE AND DEVELOPMENT BANK',
+		},
+		{
+			code: 'PTA1.3',
+			description:
+				'KABIYET AGRO & GENERAL ENTERPRISES LTD -VS- BERNARD ROP & OTHERS: ELC NO. 66 OF 2015',
+		},
+		{
+			code: 'PTA1.4',
+			description:
+				'EASTERN AND SOUTHERN AFRICAN TRADE & DEVELOPMENT BANK: PTA BANK (OUTSTANDING PROVIDENT FUND PAYMENT- MAUREEN KAYAMBA',
+		},
+		{
+			code: 'PTA1.5',
+			description:
+				'AGREEMENT BETWEEN AFRICAN DEVELOPMENT BANK AND EASTERN AND SOUTHERN AFRICAN TRADE & DEVELOPMENT BANK (PTA BANK)',
+		},
+		{
+			code: 'PTA1.6',
+			description:
+				'AFRICAN EXPRESS AIRLINES LTD VS EASTERN & SOUTHERN AFRICAN TRADE & DEVELOPMENT BANK (PTA BANK)',
+		},
+		{
+			code: 'PTA1.7',
+			description: 'UBORA GROUP LTD',
+		},
+		{
+			code: 'PTA1.8',
+			description: 'UAP HOLDINGS LTD',
+		},
+		{
+			code: 'PTA1.9',
+			description:
+				'EASTERN AND SOUTHERN AFRICAN TRADE & DEVELOPMENT BANK (PTA BANK)/CORFU INVESTMENTS LTD VS TROPICAL FOODS INTERNATIONAL LTD & ANOTHER: HCCC NO. 119 OF 2014',
+		},
+		{
+			code: 'PTA2.1',
+			description:
+				'EASTERN AND SOUTHERN AFRICAN TRADE & DEVELOPMENT BANK (PTA BANK)/CORFU INVESTMENTS LTD VS TROPICAL FOODS INTERNATIONAL LTD & ANOTHER: HCCC NO. 119 OF 2014',
+		},
+		{
+			code: 'PTL1.1',
+			description: 'PESA TRANSACT LTD',
+		},
+		{
+			code: 'PTL1.2',
+			description: 'ELRC NO. 1493 OF 2016 GEDION AGUMBA NYANJONG',
+		},
+		{
+			code: 'PVD1.1',
+			description:
+				"DISPUTE REGARDING ADVOCATE'S LEGAL FEES (NDUATI CHARAGU & COMPANY ADVOCATES)",
+		},
+		{
+			code: 'PWS1.1',
+			description:
+				'IN THE MATTER OF AN ARBITRATION BETWEEN HILTON WORLDWIDE HOLDINGS & HERITAGE INSURANCE COMPANY KENYA LIMITED.',
+		},
+		{
+			code: 'QUA1.1',
+			description:
+				'CIVIL CASE NO. 393 OF 2016: MUKABA INVESTMENTS LIMITED VS QUADCO TWO HUNDRED AND FORTY FOUR LIMITED',
+		},
+		{
+			code: 'RAA1.1',
+			description:
+				'ADVICE ON DIRECTORSHIP IN WANANCHI GROUP HOLDINGS LIMITED AND ITS SUBSIDIARIES',
+		},
+		{
+			code: 'RAA1.2',
+			description: 'ADVICE ON AGREEMENTS FOR EAST AFRICA CAPITAL PARTNERS',
+		},
+		{
+			code: 'RAC1.1',
+			description: 'RSM ASHVIR CONSULTING T/A KENYA FLOURSPAR LTD',
+		},
+		{
+			code: 'RAC2.1',
+			description: 'GENERAL FILE',
+		},
+		{
+			code: 'RAF1.1',
+			description:
+				'PURCHASE OF UNIT NO. 24 ACACIA FRONT ESTATE BANDA HOMES LIMITED TO RUBINA MOHAMED RAFIQ & SHAZIA RAFIQ',
+		},
+		{
+			code: 'RAH1.1',
+			description: 'RAHIL INTERNATIONAL LIMITED',
+		},
+		{
+			code: 'RAH1.2',
+			description:
+				'CLAIM FOR RECTIFICATION OF THE RECORDS OF RAHIL INTERNATIONAL & COMPANIES REGISTRY & LANDS REGISTRY',
+		},
+		{
+			code: 'RAH1.3',
+			description: 'CAVEAT ON LAND REFERENCE NUMBER 209/10801',
+		},
+		{
+			code: 'RAH1.4',
+			description: 'COMM E934 OF 2020:RAHIL INTERNATIONAL LIMITED vs I&M BANK LTD',
+		},
+		{
+			code: 'RAI1.1',
+			description:
+				'JASWANT SINGH RAI REPRESENTATIVE FOR THE MATTER OF TARLOCHAN SINGH RAI (DECEASED)',
+		},
+		{
+			code: 'RAI1.2',
+			description:
+				'JASWANT SINGH RAI REPRESENTATIVE FOR THE ESTATE OF TARLOCHAN SINGH RAI (DECEASED)',
+		},
+		{
+			code: 'RAI1.3',
+			description:
+				'JASWANT SINGH RAI REPRESENTATIVE FOR THE ESTATE OF TARLOCHAN SINGH RAI (DECEASED)',
+		},
+		{
+			code: 'RAI2.1',
+			description:
+				'JASBIR SINGH RAI & IQBAL SINGH RAI REPRESENTSNTIVES FOR THE ESTATES OF THE LATE TARLOCHAN SINGH RAI (DECEASED)',
+		},
+		{
+			code: 'RAI3.1',
+			description: 'COMMERCIAL AGREEMENTS',
+		},
+		{
+			code: 'RAI3.2',
+			description: 'DEFAMATORY STATEMENTS OF AND CONCERNING JASWANT SINGH RAI',
+		},
+		{
+			code: 'RAI3.3',
+			description:
+				'PETITION NO. 24 (E027) OF 2022)RAI PLY WOOD (K) LIMITED -VS- ZEHRABANU JANMOHAMMED (S.C)',
+		},
+		{
+			code: 'RAI4.2',
+			description:
+				'ADVICE AND REVIEW OF SHAREHOLDER AGREEMENT FOR ALEXANDER FORBES AND FINANCIAL SERVICES (EA LIMITED)',
+		},
+		{
+			code: 'RAJ1.1',
+			description:
+				'HCCC NO. 568 OF 2008 NRB TERAZZO ENTERPRISES LIMITEDVS PAVEMENT CLUB n CAFE & 2 OTHERS',
+		},
+		{
+			code: 'RAM1.1',
+			description:
+				'TURKANA COUNTY GOVERNMENT & 20 OTHERS -VS- HON. ATTORNEY GENERAL & ANOTHER: CONST. PET. NO. 113 OF 2015',
+		},
+		{
+			code: 'RAM2.1',
+			description:
+				'JUDICIAL REVIEW - PROPOSED RESIDENTIAL HOUSE CONSTRUCTION FOR MADHUR VEDVRAT RAMRAKHA ON LR. NO. 214/371; MUTHAIGA - NAIROBI',
+		},
+		{
+			code: 'RAP1.1',
+			description: 'FAITH NASHEPAE RAPASI VS ARGWINGS KODHEK',
+		},
+		{
+			code: 'RAT1.1',
+			description: 'RAHIMTULLA TOWERS LEASE TO THE JUDICIARY L.R NOS 209/11429 & 209/11458',
+		},
+		{
+			code: 'RAT1.1/001',
+			description:
+				'PROPOSED SALE AND PURCHASE OF AN UNDIVIDED INTEREST IN RAHIMTULLA TOWER SITUATE ON L.R. NO. 209/11429 (IR No. 53254) 209/11458 (IR No. 55868) FROM ISMAIL RAHIMTULLA TRUSTEES REGISTERED TO ARTEMIS HOLDINGS LIMITED OR NOMINEE',
+		},
+		{
+			code: 'RAT1.1/002',
+			description:
+				'MISC. APPLICATION NO. E014 OF 2023 - ISMAIL RAHIMTULLAH REGISTERED TRUSTEES & ANOR VS. THE JUDICIARY',
+		},
+		{
+			code: 'RAW1.1',
+			description:
+				'HON. LADY JUSTICE KALPANA H. RAWAL -VS- THE JUDICIAL SERVICE COMMISSION : C & H RIGHTS PETITION NO. 386 OF 2015',
+		},
+		{
+			code: 'RBC1.1',
+			description: 'RENDOLMAK BUILDING & CONSTRUCTION CO. LTD.',
+		},
+		{
+			code: 'RBC2.1',
+			description: 'CMC HOLDINGS LTD & ANOR VS MARTIN HENRY FORSTER & OTHERS',
+		},
+		{
+			code: 'RBH1.1',
+			description: 'ADVISING ON PERSONAL DATA BREACH.',
+		},
+		{
+			code: 'RBL1.1',
+			description: 'RELIANCE BANK OF KENYA -VS- FULCHAND M. SHAH',
+		},
+		{
+			code: 'RCT1.1',
+			description:
+				'PROVISION OF LEGAL SERVICES TO ROGERS CAPITAL TAX SPECIALIST SERVICES LIMITED (THE “COMPANY”)',
+		},
+		{
+			code: 'RDL1.1',
+			description:
+				'JOINT VENTURE AGREEMENT IN RESPECT OF THE DEVELOPMENT TO BE UNDERTAKEN ON L.R. NO.330/349 (ORIGINAL NO.330/146/1), NAIROBI.',
+		},
+		{
+			code: 'REL1.1',
+			description: 'RENTWORKS EAST AFRICA LTD',
+		},
+		{
+			code: 'REL1.10',
+			description: 'TAX & LEGAL ADVICE ON SHARE BUY-BACK PLAN',
+		},
+		{
+			code: 'REL1.12',
+			description: 'DEBT RECOVERY AGAINST EAST AFRICAN PORTLAND CEMENT',
+		},
+		{
+			code: 'REL1.16',
+			description:
+				'RECOVERY OF RENTAL ARREARS FOR LEASED EQUIPMENT FROM SEVEN SEAS TECHNOLOGIES LIMITED',
+		},
+		{
+			code: 'REL1.17',
+			description: 'RENTWORKS EAST AFRICA LIMITED-CLAIM AGAINST HORIZON CONTACT CENTERS',
+		},
+		{
+			code: 'REL1.20',
+			description: 'DEBT COLLECTION-PARAPET CLEANING SERVICES',
+		},
+		{
+			code: 'REL1.21',
+			description: 'DEBT RECOVERY AGAINST M-CARE LIMITED',
+		},
+		{
+			code: 'REL1.22',
+			description: 'RENTWORKS - DEBT RECOVERY AGAINST THE RIARA GROUP OF SCHOOLS',
+		},
+		{
+			code: 'REL1.23',
+			description: 'RENTWORKS EAST AFRICA LIMITED VS NAIVAS LIMITED',
+		},
+		{
+			code: 'REL1.25',
+			description: 'RENTWORKS DEBT RECOVERY AGAINST REACH LOGISTICS KENYA LIMITED',
+		},
+		{
+			code: 'REL1.26',
+			description: 'RENTWORKS DEBT RECOVERY AGAINST GREAT RIFT DRILLING COMPANY LIMITED',
+		},
+		{
+			code: 'REL1.27',
+			description:
+				'RENTWORKS - RECOVERY OF RENTAL ARREARS FROM ECONOMIC HOUSING GROUP LIMITED',
+		},
+		{
+			code: 'REL1.28',
+			description:
+				'RENTWORKS EAST AFRICA LIMITED - DEBT RECOVERY AGAINST NAKUMATT HOLDINGS LIMITED',
+		},
+		{
+			code: 'REL1.29',
+			description: 'RECOVERY OF RENTAL ARREARS FROM QUICK BUDGET STORES LIMITED',
+		},
+		{
+			code: 'REL1.3',
+			description: 'TRANSACTION STRUCTURE - SALE AND CESSION AGREEMENT',
+		},
+		{
+			code: 'REL1.30',
+			description:
+				'CMCC NO. 158 OF 2017: EZEKIEL MUDAVADI KWEYA VS THE AG AND RENTWORKS EAST AFRICA LIMITED',
+		},
+		{
+			code: 'REL1.31',
+			description:
+				'CMCC NO. 159 OF 2017: JACKLYN SARAH KWENDO VS RENTWORKS EAST AFRICA LIMITED AND ANOTHER',
+		},
+		{
+			code: 'REL1.32',
+			description: 'ALLEGED CONSTRUCTIVE DISMISSAL OF MWAZIGHE MSHILA KUBO',
+		},
+		{
+			code: 'REL1.33',
+			description:
+				'HCCC NO.E447 OF 2019:  ROBERT KANDA NYASIMI VS. RENTWORKS E.A. LTD & ANOR',
+		},
+		{
+			code: 'REL1.4',
+			description: 'RENTWORKS EAST AFRICA LTD',
+		},
+		{
+			code: 'REL1.5',
+			description: 'RENTWORKS MOTOR VEHICLE LEASING AGREEMENT',
+		},
+		{
+			code: 'REL1.6',
+			description: 'DRAFTING DEBENTURE FOR FIXED CHARGE',
+		},
+		{
+			code: 'REL1.8',
+			description: 'DEBT RECOVERY AGAINST LOGITAC GLOBAL LOGISTICS LIMITED',
+		},
+		{
+			code: 'REL1.9',
+			description: 'DEBT RECOVERY AGAINST UNILEVER KENYA LIMITED',
+		},
+		{
+			code: 'RES1.1',
+			description: 'Provision of Legal Services',
+		},
+		{
+			code: 'RES2.1',
+			description:
+				'PROVISION OF LEGAL ADVISORY SERVICES TO RESORT KENYA LIMITED – VICTOR OBURU V RKL',
+		},
+		{
+			code: 'REU1.1',
+			description: 'THOMSON REUTERS',
+		},
+		{
+			code: 'REU2.1',
+			description:
+				'OFFICE PREMISES ON THE 3RD FLOOR, WEST WING OF VIENNA COURT BUILDING TO THOMSON REUTERS',
+		},
+		{
+			code: 'REU2.2',
+			description: 'PREUTERS LIMITED KENYA BRANCH ROVISION OF LEGAL SERVICES',
+		},
+		{
+			code: 'RHC1.1',
+			description:
+				'PETITION NO. 39 OF 2016 IN THE MATTER OF ALLEGED CONTRAVENTION OF FUNDAMENTAL RIGHTS AND FREEDOMS',
+		},
+		{
+			code: 'RHC1.2',
+			description:
+				'HIGH COURT PETITION NO. 421 OF 2016-NAIROBI CITY COUNTY VS KENYA POWER & LIGHTING COMPANY LIMITED',
+		},
+		{
+			code: 'RHC1.3',
+			description: 'NATIONAL HOSPITAL INSURANCE FUND - TENDER',
+		},
+		{
+			code: 'RHC1.4',
+			description:
+				'PETITION NO.59 OF 2018:APOLLO MBOYA & ANOTHER VS.CS,NATIONAL TREASURY & 6 OTHERS',
+		},
+		{
+			code: 'RIA1.1',
+			description: 'DON OGALLO RIARO',
+		},
+		{
+			code: 'RIL1.1',
+			description:
+				'RUSINGA INVESTMENTS LTD VS. DANIEL KINYANJUI MUNGARA,NIC & AUGUSTINO OGANDA OGUCHA',
+		},
+		{
+			code: 'RIL1.2',
+			description: 'HCCC NO. 433 OF 2006: ANNE KAHIRI VS RUSINGA INVESTMENTS COMPANY LIMITED',
+		},
+		{
+			code: 'RIL1.3',
+			description:
+				'HCCC NO. 1987 OF 2014: JANE CHUNGI & ANOR VS RUSINGA INVESTMENTS COMPANY LIMITED',
+		},
+		{
+			code: 'RIL1.4',
+			description: 'TALINDA EAST AFRICA LTD VS. RUSINGA INVESTMENT LIMITED',
+		},
+		{
+			code: 'RIL1.5',
+			description: 'CMCC E266 OF 2023: COPY CAT VS RUSINGA INVESTMENTS LIMITED',
+		},
+		{
+			code: 'RIL2.1',
+			description: 'RESEALING OF A FOREIGN GRANT-IN THE MATTER OF THE ESTATE OF PETER RILEY',
+		},
+		{
+			code: 'RIL2.2',
+			description:
+				'CLAIM OF DIVIDENDS FROM THE UNCLAIMED FINANCIAL ASSETS AUTHORITY - WITH RESPECT TO THE ESTATE OF THE LATE PETER RILEY.',
+		},
+		{
+			code: 'RKL1.1',
+			description: 'REFORM LTD',
+		},
+		{
+			code: 'RKL2.1',
+			description: 'ROLMIL KENYA LTD -CONVEYANCING',
+		},
+		{
+			code: 'RMA1.1',
+			description: 'REV. MOSES ADAGALA',
+		},
+		{
+			code: 'RMA2.1',
+			description:
+				'PROVISION OF LEGAL SERVICES TO RMA MOTORS KENYA LIMITED IN RESPECT OF FINANCING FACILITIES GIVEN BY NIC BANK LTD',
+		},
+		{
+			code: 'RML1.1',
+			description:
+				'RISHIT METALS LTD -VS- MINISTRY OF INDUSTRIALISATION & ENTERPRISE DEVELOPMENT/ KENYA REVENUE AUTHORITY: HC. JR. NO 268 OF 2013',
+		},
+		{
+			code: 'RML1.2',
+			description: 'RISHIT METALS LTD',
+		},
+		{
+			code: 'ROB1.1',
+			description: 'INSURANCE CLAIM',
+		},
+		{
+			code: 'ROG1.1',
+			description: 'INCORPORATION OF ROGO ESTATES LIMITED',
+		},
+		{
+			code: 'ROG2.1',
+			description: 'TRANSFER OF PROPERTY',
+		},
+		{
+			code: 'ROG2.2',
+			description:
+				'TRIBUNAL CASE NO. E781 OF 2021- KENWORLD HOLDINGS LIMITED .VS. PROF. KHAMA ODERA ROGO & DR. LUCIE M.N.ROGO.',
+		},
+		{
+			code: 'ROG3.1',
+			description: 'ELIZABETH ROGO VS WEATHER FORD',
+		},
+		{
+			code: 'ROG4.1',
+			description: 'L.R. NO. 209/8524/130 - DEED PLAN NO. 144791',
+		},
+		{
+			code: 'ROL1.1',
+			description: 'REPUBLIC OF LITHUANIA- CONSULATE OF LITHUANIA IN NAIROBI, KENYA',
+		},
+		{
+			code: 'ROS1.1',
+			description:
+				'PURCHASE OF HOUSE NUMBER 7, ALMOND VARIANT HOMES, TITLE NUMBER NDEIYA/MAKUTANO/4003.',
+		},
+		{
+			code: 'ROY1.1',
+			description:
+				'IN THE MATTER OF THE ESTATE OF JESSICA NATE ROY AND ICRAF: TRAFFIC CASE 3965 OF 2004',
+		},
+		{
+			code: 'ROY2.1',
+			description: 'H.C.J.R. NO. 512/2016 REPUBLIC VS ROYAL NAIROBI GOLF CLUB',
+		},
+		{
+			code: 'ROY2.2',
+			description:
+				'ELC NO. 232 OF 2017 (O.S): JACKSON MAJINGA VILILI & 4 OTHERS -VS- ROYAL NAIROBI GOLF CLUB',
+		},
+		{
+			code: 'ROY2.3',
+			description:
+				'ROYAL NAIROBI GOLF CLUB COMPENSATION FOR LAND UPON CONSTRUCTION OF NGONG ROAD-KIBERA-KUNGU KARUMBA-LANGATA TO BITUMEN STANDARDS.',
+		},
+		{
+			code: 'ROY2.4',
+			description: 'J.R. APPLICATION NO.126 OF 2020: REPUBLIC VS. ROYAL NAIROBI GOLF CLUB',
+		},
+		{
+			code: 'ROY2.5',
+			description:
+				'CONSTITUTIONAL PETITION E341 OF 2020 – RICHARD CYOI WAFULA & ANOTHER V ROYAL NAIROBI GOLF CLUB & OTHERS.',
+		},
+		{
+			code: 'ROY2.6',
+			description: 'CLAIM BY RNGC AS AGAINST NAIROBI WATER SEWERAGE COMPANY.',
+		},
+		{
+			code: 'ROY2.7',
+			description:
+				'JUDICIAL REVIEW APPLICATION NO. E085 OF 2021 – R V. ROYAL NAIROBI GOLF CLUB, EX PARTE CHRISPINE OKEKE & ANOTHER.',
+		},
+		{
+			code: 'ROY2.8',
+			description: 'HCC PET NO. E227 OF 2022 - KEVIN ISIKA -VS- ROYAL NAIROBI GOLF CLUB.',
+		},
+		{
+			code: 'RPL1.1',
+			description: 'RAY PHARMACEUTICALS LTD & 6 OTHERS VS COUNTY GOVERNMENT OF KIAMBU',
+		},
+		{
+			code: 'RPL2.1',
+			description: 'ROBINSON GACHOGU (ROWEN PROPERTIES LTD)',
+		},
+		{
+			code: 'RPL2.2',
+			description: 'LOYCE WANJIRU KAMAU',
+		},
+		{
+			code: 'RPL2.3',
+			description:
+				'VIRGINIA WAITHAKA & PAUL WAITHAKA PURCHASE OF APARTMENT NOS B6,B8 & DSQS ON L.R 330/604 NAIROBI',
+		},
+		{
+			code: 'RPL2.4',
+			description: 'MONICA NDOLO - PURCHASE OF PENTHOUSE NO B9 AT ROWEN PROPERTIES LTD',
+		},
+		{
+			code: 'RPL2.5',
+			description: 'MR.KANYI GACHOKA -SALE OF APARTMENT NO. B10 AT ROWEN HEIGHTS',
+		},
+		{
+			code: 'RPL2.6',
+			description: 'SALE OF APARTMENT NO. B1 IN ROWEN HEIGHTS MAIROBI TO AHMED MUSA MOALIM',
+		},
+		{
+			code: 'RPL2.7',
+			description:
+				'SALE OF APARTMENT NO. 9 ON LR NO. 330/604 NBI ROWEN PROPERTIES LIMITED TO YVONNE MONDA',
+		},
+		{
+			code: 'RPL2.8',
+			description:
+				'SALE OF APARTMENT A6 ON LR NO. 330/604 NBI ROWEN PROPERTIES LIMITED TO RASHEED TUNDE LALJI & TAWAKALTU LALJI',
+		},
+		{
+			code: 'RPL2.9',
+			description:
+				'SALE OF APARTMENT NUMBER B5, BLOCK B, 2ND FLOOR ON L.R. NO. 330/604, NAIROBI - ROWEN PROPERTIES LIMITED TO MAUREEN AKOMO ALUR',
+		},
+		{
+			code: 'RRE1.1',
+			description: 'RESEARCH RESOLUTIONS',
+		},
+		{
+			code: 'RSC1.1',
+			description: 'Provision of tax consulting services',
+		},
+		{
+			code: 'RSL1.1',
+			description: 'BERNARD MUIRURI NDUNGU & ROSSLYN SPRINGS HSE 13 LR NO. 21/1/23',
+		},
+		{
+			code: 'RSL2.1',
+			description:
+				'PET. NO. 450 OF 2014 JACKLYNNE KAMAU VS BOARD OF DIRECTORS OF RUSINGA SCHOOL & RUSINGA SCHOOL LIMITED',
+		},
+		{
+			code: 'RSL2.2',
+			description: 'SHEBA NJOKI VS RUSINGA SCHOOLS NAIROBI',
+		},
+		{
+			code: 'RSL2.3',
+			description: 'E&LRC NO.E522 OF 2021: MATHEWS AKECH VS. RUSINGA SCHOOLS NAIROBI',
+		},
+		{
+			code: 'RSL3.1',
+			description: 'RUSINGA SCHOOLS LTD (MRS W .NJAGE)',
+		},
+		{
+			code: 'RSM1.1',
+			description: 'OBJECTION TO DEMAND NOTICE FOR KSHS 24,675,098',
+		},
+		{
+			code: 'RUS1.1',
+			description: 'RUSINGA ENTERPRISES',
+		},
+		{
+			code: 'RVB0086.1',
+			description:
+				'CIVIL APPEAL NO. 164 OF 2013 AND HIGH COURT PETTION NO.72 OF 2011 RIFT VALLEY BOTTLERS LTD VS THE AG, THE KRA, THE COM. GEN OF THE KRA AND THE COM. OF CUSTOMS AND EXCISE DUTY',
+		},
+		{
+			code: 'SAC1.1',
+			description: 'SACHIN SHAHA -VS- JAGET MAHENDRA K S: CASE NO 1213 OF 2007',
+		},
+		{
+			code: 'SAC2.1',
+			description:
+				'SAHAM  ASSURANCE COMPANY ACCIDENT ON 17/10/2014 INVOLVING VEHICLE KBD 780Q & KAM 262A. JOSEPH MWITA MATIKO',
+		},
+		{
+			code: 'SAC2.2',
+			description: 'SIMON NGURE KIRONGO VS JOHN MUHIA KANOTHA',
+		},
+		{
+			code: 'SAC2.3',
+			description: 'CMCC NO. 2569 OF 2003: PIPE MANUFACTURERS LIMITED VS GEORGE MWAURA',
+		},
+		{
+			code: 'SAC2.4',
+			description: 'HCCC NO. 1522 OF 2005 LUCY WAITHERA KIBIRI VS BENSON M NGUNGU',
+		},
+		{
+			code: 'SAC2.5',
+			description:
+				'NAIROBI CMCC NO. 2643 OF 2004 SADOLIN PAINTS LTD VS GACHANJA ANDARIO & 2 OTHERS',
+		},
+		{
+			code: 'SAC2.6',
+			description: 'ELDORET HCC NO. 149 OF 2000 JACKSON N. KIBOR VS. COLIN DAVIES',
+		},
+		{
+			code: 'SAC2.7',
+			description: 'CMCC NO.10832 OF 2003 - PAUL W. NDUNGU VS. P.G. KANYARA & OTHERS.',
+		},
+		{
+			code: 'SAC3.1',
+			description:
+				'MERCANTILE LIFE & GENERAL ASSURANCE COMPANY LTD -VS- JOSEPH EVANS OLOO: CLM/1997/030/60/00054/02',
+		},
+		{
+			code: 'SAC3.11',
+			description: 'Lucy Waithera Kibiri Vs B. Ndungu ',
+		},
+		{
+			code: 'SAC3.12',
+			description: 'GENERAL MATTERS',
+		},
+		{
+			code: 'SAC3.3',
+			description:
+				'MERCANTILE LIFE & GENERAL ASSURANCE COMPANY LTD -VS- BERNICE G NDUKU MUTIE',
+		},
+		{
+			code: 'SAC3.4',
+			description:
+				'KAMAHUHA LTD VS GEORGE NJOROGE NJERI, MERCY WANJIRU NJERI FOR SAMUEL KURIA IRUNGU (DECEASED): SRMCC NO. 36 OF 2008',
+		},
+		{
+			code: 'SAC3.5',
+			description:
+				'MERCANTILE LIFE & GENERAL ASSURANCE COMPANY LTD -VS- FINE ENGINEERING WORKS LTD',
+		},
+		{
+			code: 'SAC3.6',
+			description: 'MERCANTILE LIFE & GENERAL ASSURANCE COMPANY LTD',
+		},
+		{
+			code: 'SAC3.8',
+			description:
+				'MERCANTILE LIFE & GENERAL ASSURANCE -VS- MWITA MATIKO JOSEPH - MOTOR BEHICLE ACCIDENT CLAIM',
+		},
+		{
+			code: 'SAC3.9',
+			description:
+				'CMCC NO. 6950 OF 2007 TWIGA CHEMICAL INDUSTRIES LTD VS WAITHAKA KIRIKA & ANOR',
+		},
+		{
+			code: 'SAD1.1',
+			description: 'SADOLIN PAINTS',
+		},
+		{
+			code: 'SAD1.2',
+			description: 'REVIEW OF SHAREHOLDERS AGREEMENT AND SHARE PURCHASE AGREEMENT',
+		},
+		{
+			code: 'SAD2.1',
+			description:
+				'CIVIL CASE NO. 428 OF 2015 GULAM MOHAMED AKBAR JIWA & MANSOORALI ABDUL RAHIM NOORANI VS NIZAR HEMRAJ, HASSAN POPAT, NAWAAZ GULAM & SHAFIK SACHEDINA',
+		},
+		{
+			code: 'SAD2.2',
+			description:
+				'HCC NO.148 OF 2018-MANSOORALI ABDUL NOORANI & ANOR VS.NAWAAZ GULAM SADRUDIN & 3 OTHERS.',
+		},
+		{
+			code: 'SAD3.1',
+			description: 'KISUMU MUNICIPALITY/BLOCK/11/126(LEASEHOLD)',
+		},
+		{
+			code: 'SAF1.1',
+			description: 'JOHN MUNUVE VS SAFEWORLD AFRICA: CMCC 13549 OF 2005',
+		},
+		{
+			code: 'SAF2.1',
+			description: 'PROVISION OF PROFESSIONAL SERVICES',
+		},
+		{
+			code: 'SAF2.1/001',
+			description:
+				'OPINION TO SHELTER AFRIQUE ON THE ENFORCEMENT OF THE LEGAL CHARGE DATED 1ST OCTOBER 2019 BY ANDREW PANDEKA CHIMPONDAH',
+		},
+		{
+			code: 'SAF85.1',
+			description: 'Test',
+		},
+		{
+			code: 'SAG1.1',
+			description:
+				'HCC COMMERCIAL CASE NO. E137 OF 2021 JASPAL SINGH SAGOO -VS- TEJWANT SINGH SAGOO ',
+		},
+		{
+			code: 'SAI1.1',
+			description: 'ADVICE ON INDEMNITIES FOR SHAREHOLDERS AND DIRECTORS LIABILITIES',
+		},
+		{
+			code: 'SAK1.1',
+			description: 'ROSEMARY SAKAJA - WILL',
+		},
+		{
+			code: 'SAL1.1',
+			description: 'SASALOG LTD',
+		},
+		{
+			code: 'SAL2.1',
+			description: 'ADVISING ON THE TRANSFER OF CERTAIN ASSETS OF KAZURI 2000 LIMITED.',
+		},
+		{
+			code: 'SAL2.2',
+			description: 'REGISTRATION OF THE OPPORTUNITY FACTORY TRADEMARK.',
+		},
+		{
+			code: 'SAM1.1',
+			description: 'IN THE MATTER OF THE ESTATE OF THE LATE OM PRAKASH BHATTI (DECEASED)',
+		},
+		{
+			code: 'SAN1.1',
+			description:
+				'DISPUTE BETWEEN SANDROSE LIMITED AND MARALAL ENERGY LIMITED (CONTRACT CLAIM)',
+		},
+		{
+			code: 'SAN2.1',
+			description:
+				'SANKARA HOTEL NAIROBI -VS- WYCLIFFE MAGOMERE: INDUSTRIAL CAUSE NO. 986 OF 2014 (NBO)',
+		},
+		{
+			code: 'SAN2.2',
+			description:
+				'MARY NFULA ZADOCK -VS- SANKARA HOTEL: INDUSTRIAL CAUSE NO. 999 OF 2014 (NBO)',
+		},
+		{
+			code: 'SAN2.3',
+			description: 'EMPLOYMENT - DORCAS NDENGERI',
+		},
+		{
+			code: 'SAN2.4',
+			description:
+				'E&LRC NO. 1081 OF 2015 CONSOLIDATED WITH CAUSE NO. 1986 OF 2016 KENYA HOTELS AND ALLIED WORKERS UNION VS. SANKARA HOTELS NAIROBI & OTHERS',
+		},
+		{
+			code: 'SAN2.5',
+			description: 'RESIGNATION OF ROBERT MAZURI.',
+		},
+		{
+			code: 'SAN2.6',
+			description: 'Employment advisory on restructuring',
+		},
+		{
+			code: 'SAN3.1',
+			description: 'ESTATE OF RAMESH GUPTA',
+		},
+		{
+			code: 'SAN4.1',
+			description: 'POWER OF ATTORNEY',
+		},
+		{
+			code: 'SAP1.1',
+			description: 'ADVISORY WORK ON SHAREHOLDERS RIGHTS AND OBLIGATIONS',
+		},
+		{
+			code: 'SAP1.2',
+			description: 'ADVISING ON THE LICENCES REQUIRED FOR OPERATING A TOURIST SHOP.',
+		},
+		{
+			code: 'SAP1.3',
+			description: 'Review of Shareholders Agreement in Bodhi Holdings Limited',
+		},
+		{
+			code: 'SAP1.4',
+			description: 'DRAFTING A CONSIGNMENT AGREEMENT',
+		},
+		{
+			code: 'SAP1.5',
+			description: 'DRAFTING A SUPPLIERS AGREEMENT',
+		},
+		{
+			code: 'SAP1.6',
+			description: 'DRAFTING AN EMPLOYMENT AGREEMENT',
+		},
+		{
+			code: 'SAR1.1',
+			description: 'SPECIALIZED POWER SYSTEMS LTD',
+		},
+		{
+			code: 'SAR2.1',
+			description: 'HASSAN ALI ASARAI VS SARBIJIT SINGRAI & OTHERS: HCCC NO. 604 OF 2006',
+		},
+		{
+			code: 'SAR3.1',
+			description:
+				'MOSES MUINDI WAMBUA VS SPECIALIZED ALUMINIUM RENOVATORS: CMCC NO 5312 OF 2013',
+		},
+		{
+			code: 'SAR3.2',
+			description: 'DEBT COLLECTION: BIA TOSHA LIMITED',
+		},
+		{
+			code: 'SAR3.3',
+			description: 'DEBT COLLECTION: KAWA COMMERCIAL ENTERPRISES LIMITED',
+		},
+		{
+			code: 'SAR3.4',
+			description:
+				'HCCC NO. 416 OF 2009: SPECIALISED ALUMINIUM RENOVATORS LIMITED VS INFORM CREATIVE INTERIORS LIMITED',
+		},
+		{
+			code: 'SAR3.5',
+			description: 'DEBT OWED TO ALUMIL MISR FOR TRADING AND MANUFACTURING',
+		},
+		{
+			code: 'SAR3.6',
+			description:
+				'DEMAND FOR PAYMENT OF SERVICE CHARGE ON GODOWNS NO.29 AND 30 – GILBI BUSINESS PARK, MAVOKO',
+		},
+		{
+			code: 'SAR4.1',
+			description: 'SAMEER ALI VS. MOHAMMED SALEEM',
+		},
+		{
+			code: 'SAV1.1',
+			description:
+				'BHAGWANJI TRIBHOVANBHAI PATEL & OTHERS -VS- JITU TRIBHOVANBHAI SAVANI & ANOTHER: HCCC NO 130 OF 2014 (NBO)',
+		},
+		{
+			code: 'SAV2.1',
+			description:
+				'PARAG BHAGWANJIBHAI SAVANI/P.V.R RAO -VS- JITU TRIBHOVANBHAI SAVANI: HC MISC. CAUSE NO 197 OF 2015',
+		},
+		{
+			code: 'SAV2.2',
+			description: 'CIVIL APPEAL NO. 23 OF 2016 PARAG B SAVANI VS JITU T SAVANI',
+		},
+		{
+			code: 'SAY1.1',
+			description:
+				'ESTATE OF THE LATE ASHAK SAYANI -VS- STEPHEN NGAHU & KENYA ORIENT INSURANCE LIMITED',
+		},
+		{
+			code: 'SAY2.1',
+			description: 'PURCHASE OF TOWN HOUSE NO. 6, HIGHGROVE VILLAGE, L.R. NO. 29998, NAIROBI',
+		},
+		{
+			code: 'SBL1.1',
+			description: 'INDUSTRIAL PLANT EAST AFRICA LTD ( IN RECEIVERSHIP)',
+		},
+		{
+			code: 'SBL1.10',
+			description:
+				'BANKING FACILITY TO HON. ESTHER MURUGI MATHENGE, SECURED BY A CHARGE OVER PROPERTY L.R. NO.14606',
+		},
+		{
+			code: 'SBL1.11',
+			description: 'BANKING FACILITY TO SARAH NJERI MACHUGU',
+		},
+		{
+			code: 'SBL1.12',
+			description: 'ENFORCEMENT OF SECURITIES AGAINST URBAN PROPERTIES CONSULTANTS',
+		},
+		{
+			code: 'SBL1.13',
+			description:
+				'HCCC NO. E008 OF 2023: ANTHONY NGANGA MBURU VS. STANBIC BANK KENYA LIMITED',
+		},
+		{
+			code: 'SBL1.15',
+			description: 'ENFORCEMENT OF SECURITIES AGAINST TERESIA WAMBUI MAINA',
+		},
+		{
+			code: 'SBL1.16',
+			description: 'ENFORCEMENT OF SECURITIES AGAINST BILLY OKWEMBA KABALA',
+		},
+		{
+			code: 'SBL1.17',
+			description:
+				'PURCHASE OF APARTMENT NUMBER A-4-1, ERECTED ON PARCEL NUMBER NAIROBI BLOCK 13/414 (FORMERLY PROPERTY LAND REFERENCE NUMBER 3734/420, PLATINUM OAK, OLOITOKTOK ROAD, NAIROBI',
+		},
+		{
+			code: 'SBL1.18',
+			description: 'ENFORCEMENT OF SECURITIES AGAINST ISAAC ODHIAMBO MIYAWA',
+		},
+		{
+			code: 'SBL1.19',
+			description:
+				'POULINE LUMITI MUSONYE (THE “BORROWER”) CHARGE OVER PROPERTY ERECTED ON TITLE NUMBER KAJIADO/KAPUTIEI NORTH/119584',
+		},
+		{
+			code: 'SBL1.2',
+			description:
+				'CIVIL APPEAL NO. 281 OF 2008 (UR1308) STANBIC BANK VS JIMMY R KAVILU & 19 OTHERS',
+		},
+		{
+			code: 'SBL1.20',
+			description:
+				'THAKARE DEEPAK GYANESHWAR (THE “BORROWER”) CHARGE OVER APARTMENT A7.3, ERECTED ON LAND REFERENCE NUMBER 12715/550',
+		},
+		{
+			code: 'SBL1.21',
+			description: 'BANKING FACILITIES TO AIRWORKS KENYA LIMITED',
+		},
+		{
+			code: 'SBL1.22',
+			description:
+				'BANKING FACILITIES GODFREY OWINO OCHIENG TRADING AS KATITO MEDICAL CENTRE',
+		},
+		{
+			code: 'SBL1.23',
+			description: 'ENFORCEMENT OF SECURITIES AGAINST SYLVIA WAMBUI KAMUNYU',
+		},
+		{
+			code: 'SBL1.24',
+			description: 'ENFORCEMENT OF SECURITIES AGAINST ROBINSON MUIGAI GITHERE',
+		},
+		{
+			code: 'SBL1.25',
+			description: 'BANKING FACILITIES TO MILLICENT AUMA OCHIENG.',
+		},
+		{
+			code: 'SBL1.26',
+			description: 'BANKING FACILITIES TO DAVIES NABWANA AKUDA',
+		},
+		{
+			code: 'SBL1.27',
+			description: 'BANKING FACILITIES TO STEPHEN MUTHOKA KAVONDO & PAUIINE WANJIRU MUTHII.',
+		},
+		{
+			code: 'SBL1.28',
+			description: 'BANKING FACILITIES TO PERES WAMUKHULA WERE',
+		},
+		{
+			code: 'SBL1.3',
+			description:
+				'STANBIC BANK KENYA LIMITED - HCCC NO. 430 OF 2017 - TRAPOS LIMITED VS STANBIC BANK KENYA LIMITED',
+		},
+		{
+			code: 'SBL1.4',
+			description:
+				'HCCC NO.19 OF 2022: PAN AFRICA LOGISTICS LIMITED VS. STANBIC BANK LIMITED',
+		},
+		{
+			code: 'SBL1.5',
+			description:
+				'ENFORCEMENT OF SECURITIES AGAINST JOHN NJENGA NDUNGU & BETH WAMBUI NJENGA.',
+		},
+		{
+			code: 'SBL1.6',
+			description: 'ENFORCEMENT OF SECURITIES AGAINST AYAZ HUSSEIN MUKHI.',
+		},
+		{
+			code: 'SBL1.7',
+			description: 'ENFORCEMENT OF SECURITIES AGAINST ASIEMA ROSE MUSIBULU',
+		},
+		{
+			code: 'SBL1.8',
+			description: 'GENERAL ADVISORY',
+		},
+		{
+			code: 'SBL1.9',
+			description: 'ENFORCEMENT OF SECURITIES AGAINST ANTHONY NGANGA MBURU.',
+		},
+		{
+			code: 'SBM1.1',
+			description:
+				'A CLAIM FOR RECOVERY AGAINST PORTING ACCESS KENYA LIMITED, MUSIMBA INVESTMENTS LIMITED AND PATRICK MUSIMBA.',
+		},
+		{
+			code: 'SBM1.2',
+			description:
+				'MISC. APPLICATION NO. E386 OF 2021 - AFRASIA BANK LIMITED V. SBM BANK (KENYA) LIMITED.',
+		},
+		{
+			code: 'SBM1.2/001',
+			description:
+				'INSOLVENCY CAUSE NO. E138 OF 2022 - IN THE MATTER OF SBM BANK (KENYA) LIMITED',
+		},
+		{
+			code: 'SBM1.3',
+			description:
+				'HIGH COURT PETITION NO. E465 OF 2022 - KASTRAN LIMITED & ANOTHER V. SBM BANK (K) LIMITED & 2 OTHERS.',
+		},
+		{
+			code: 'SBM1.4',
+			description: 'LEGAL OPINION ARISING OUT OF INSOLVENCY CAUSE NO. E064 OF 2021F',
+		},
+		{
+			code: 'SBM1.5',
+			description:
+				'HCCC NO.E....... OF 2022: SHEM ERIC ARIWI ARUNGU VS- SBM BANK (KENYA) LIMITED',
+		},
+		{
+			code: 'SBM1.6',
+			description: 'HCCOMM/E243 OG 2023: CARLO VAN WANGENINGEN VS. SBM BANK LIMITED',
+		},
+		{
+			code: 'SCB1.1',
+			description: 'STANDARD CHARTERED BANK (K) LTD -VS- BENJAMIN OKORING OKIROR (MINOR)',
+		},
+		{
+			code: 'SCB1.10',
+			description:
+				'HEZEKIAH ISAMBO SALWA & OTHERS -VS- RETIREMENT BENEFITS AUTHORITY & OTHERS: R.B.A.T.C.A NO. 9 OF 2010',
+		},
+		{
+			code: 'SCB1.101',
+			description:
+				'BANKING FACILITIES TO JOHN PETER NYANGERI SIMBA, CHARGE OVER NAIROBI/BLOCK 30/304',
+		},
+		{
+			code: 'SCB1.102',
+			description: 'BANKING FACILITIES TO CARL WAMBASI MAKOKHA & BRENDA JENNIFER FERNENDES',
+		},
+		{
+			code: 'SCB1.104',
+			description:
+				'TAKEOVER BY STANBIC BANK OF KENYA OF LIABILITIES SECURED BY NGONG/NGONG/48299, KAJIADO I.N.O. ERIC KARIUKI WANJOHI',
+		},
+		{
+			code: 'SCB1.106',
+			description:
+				'BANKING FACILITIES TO JEMMIMA WANJA GATUMU & JAMES OGOLLA OLAYO,LAND REFERENCE NUMBER 209/7059,NAIROBI',
+		},
+		{
+			code: 'SCB1.107',
+			description: 'GENERAL FILE',
+		},
+		{
+			code: 'SCB1.109',
+			description:
+				'EMPLOYMENT & LABOUR RELATIONS CAUSE NO.489 OF 2018 SEEMA DAHNANI-VS-STANDARD CHARTERED BANK',
+		},
+		{
+			code: 'SCB1.11',
+			description: 'BENBELLA ONYANGO OGOLLA - CHARGE OVER L.R NO. 25169, NBI',
+		},
+		{
+			code: 'SCB1.110',
+			description:
+				'ELRC CAUSE NO.489 OF 2018:SEEMA DHANANI VS.STANDARD CHARTERED BANK (K) LTD',
+		},
+		{
+			code: 'SCB1.112',
+			description:
+				'BANKING FACILITIES TO ERIC KIMANI ITHALII-CHARGE OVER HOUSE NUMBER 41,KAJIADO COUNTY ,NGONG/55997',
+		},
+		{
+			code: 'SCB1.113',
+			description:
+				'ELRC CAUSE NO.1175 OF 2018:CHRISTINE WAIRIMU MUNENE VS.STANDARD CHARTERED BANK KENYA LIMITED',
+		},
+		{
+			code: 'SCB1.114',
+			description:
+				'CIVIL CAUSE NO.6341 OF 2018:CHRISTINE WAIRIMU MUNENE STANDARD CHARTERED BANK KENYA  LIMITED',
+		},
+		{
+			code: 'SCB1.115',
+			description: 'BANKING FACILITIES TO AMANUEL TAMIRU ABAMO',
+		},
+		{
+			code: 'SCB1.117',
+			description:
+				'CMCC NO.3491 OF 2012 MUKULU NGILU VS. STANDARD CHARTERED BANK OF KENYA LIMITED',
+		},
+		{
+			code: 'SCB1.118',
+			description:
+				'BANKING FACILITIES TO BERNARD NZOMO MUNGUTI & MAGDALENE KHATSINI INDULI CHARGE OVER UNIT NO. AB2-5 LORESHO RIDGE LR. NO. 21080/63 NAIROBI',
+		},
+		{
+			code: 'SCB1.119',
+			description:
+				'BANKING FACILITIES TO ROBERT WEKHOMBA MWANGALE NCHARGE OVER APARTMENT NO. E5 LR. NO. 330/433 SUNNINGHILLS APARTMENT MBAAZI AVENUE LAVINGTON.',
+		},
+		{
+			code: 'SCB1.12',
+			description: 'AFRICA BLOOMS',
+		},
+		{
+			code: 'SCB1.120',
+			description:
+				'BANKING FACILITIES TO PATRICIA NDUNGE NGUKA CHARGE OVER LR. NO. 1870/V/205 HOUSE NO. 5 WESTLANDS NAIROBI.',
+		},
+		{
+			code: 'SCB1.121',
+			description: 'SEARCHES GENERAL',
+		},
+		{
+			code: 'SCB1.122',
+			description: 'OPINION ON PLEA BARGAIN UNDER LEGAL NOTICE NO. 48 OF 2018',
+		},
+		{
+			code: 'SCB1.122/001',
+			description:
+				'CONSTITUTIONAL PETITION NO. E293 OF 2020: OKIYA OMTATAH OKOITI VS. STANDARD CHARTERED BANK (K) LTD & OTHERS.',
+		},
+		{
+			code: 'SCB1.123',
+			description:
+				'`NAIROBI ELC CASE NO.122 OF 2018 GALOT LIMITED & ANOR VS. STANDARD CHARTERED FINANCIAL SERVICES LIMITED & OTHERS.',
+		},
+		{
+			code: 'SCB1.124',
+			description: 'BANKING FACILITIES TO NEXUS INDUSTRIES (KENYA) LIMITED.',
+		},
+		{
+			code: 'SCB1.126',
+			description: 'BANKING FACILITIES TO SARAH MORAA & HEZRON MOGAKA',
+		},
+		{
+			code: 'SCB1.127',
+			description:
+				'E&LRC CAUSE NO.383 OF 2019: ANASTACIA NYAMBURA WAMBUI VS. STANDARD CHARTERED BANK OF KENYA LTD',
+		},
+		{
+			code: 'SCB1.128',
+			description: 'BANKING FACILITIES TO RUTH ISABELL WAMBUI MUTURI',
+		},
+		{
+			code: 'SCB1.13',
+			description: 'MARY OWITI -VS- STANDARD CHARTERED BANK',
+		},
+		{
+			code: 'SCB1.130',
+			description: 'MICROSCAN TECHNOLOGIES LIMITED AND RAYOVAC INDUSTRIES LIMITED',
+		},
+		{
+			code: 'SCB1.130/001',
+			description:
+				'SALE OF COTTAGE NUMBER 3 ERECTED ON LAND REFERENCE NUMBER 7533/2, KAREN, NAIROBI BY PRIVATE TREATY',
+		},
+		{
+			code: 'SCB1.131',
+			description:
+				'CMCC NO. 6155 OF 2019: TABITHA WANJIRU NJOROGE VS. STANDARD CHARTERED BANK KENYA LTD & ANOTHER',
+		},
+		{
+			code: 'SCB1.132',
+			description:
+				'BANKING FACILITIES TO SHREENAL BHARAT RUPARELIA, CHARGE OVER APT NO.25, L.R. NO.209/19893, NAIROBI',
+		},
+		{
+			code: 'SCB1.133',
+			description: 'BANKING FACILITIES TO SPENCE M. DRY',
+		},
+		{
+			code: 'SCB1.135',
+			description: 'BANKING FACILITIES TO ZENA ROSES LIMITED',
+		},
+		{
+			code: 'SCB1.136',
+			description:
+				'E&LRC NO.804 OF 2019: ISAAC MWANGI NGARA VS. STANDARD CHARTERED BANK KENYA LIMITED',
+		},
+		{
+			code: 'SCB1.137',
+			description:
+				'E&LRC NO. 805 OF 2019: JOHN BWOYI MENGESA VS. STANDARD CHARTERED BANK KENYA LTD.',
+		},
+		{
+			code: 'SCB1.138',
+			description:
+				'E&LRC CAUSE NO.460 OF 2019: OBADIAH KIIRI MUNDWETUGI VS. KINGLAND TRUST & BENEFITS SERVICES LIMITED.',
+		},
+		{
+			code: 'SCB1.139',
+			description: 'BANKING FACILITIES TO ETHEL K. WASUNNA & AUBREY M. WASUNNA',
+		},
+		{
+			code: 'SCB1.14',
+			description:
+				'SAMUEL OGETO T/A TRADE SIL ENTERPRISES -VS- STANDARD CHARTERED BANK OF KENYA LTD & ANOTHER: CMCC NO 8259 OF 2009',
+		},
+		{
+			code: 'SCB1.140',
+			description: 'BANKING FACILITIES TO NANCY WAITHERA GITAU & JUDE GITAU KIIRU',
+		},
+		{
+			code: 'SCB1.141',
+			description: 'BANKING FACILITIES TO TRUE BLAQ LIMITED',
+		},
+		{
+			code: 'SCB1.142',
+			description:
+				'HCCC NO.507 OF 2005 – KENYA COMMERCIAL BANK LIMITED VS. TITUS KILONZO MUTUA & 15 OTHERS',
+		},
+		{
+			code: 'SCB1.143',
+			description: 'BANKING FACILITIES TO HARRISON OGWENO OKECHE',
+		},
+		{
+			code: 'SCB1.144',
+			description:
+				'CMCC NO,E5333 OF 2020: JOSEPH KAIGA KARAYA & ANOR VS. RAMESH HIRJI HIRANI & OTHERS',
+		},
+		{
+			code: 'SCB1.145',
+			description: 'BANKING FACILITIES TO SARAH CHEROP TEKO MWANJILA.',
+		},
+		{
+			code: 'SCB1.146',
+			description:
+				'CIVIL SUIT NO. 11 OF 2004 NAKURU SAMUEL KARUGA .VS. SANKISH FLORA LIMITED AND STANDARD CHARTERED BANK (KENYA) LTD ',
+		},
+		{
+			code: 'SCB1.147',
+			description:
+				'TAKEOVER OF FACILITIY BY KCB BANK KENYA LIMITED, FRED MUGAMBI MWIRIGI RUKARIA (+254722 521955), CHARGE OVER HOUSE NO.153,ON L.R. NO.20727/296, MEMBLEY ESTATE, RUIRU.',
+		},
+		{
+			code: 'SCB1.148',
+			description:
+				'E&LRC E082 OF 2021 - GRACE MBURU VS STANDARD CHARTERED BANK KENYA LIMITED',
+		},
+		{
+			code: 'SCB1.149',
+			description:
+				'E&LRC CAUSE NO. E6540 OF 2020: SETH LUMIDI MWANGANI VS. STANDARD CHARTERED BANK LIMITED',
+		},
+		{
+			code: 'SCB1.15',
+			description:
+				'EUNICE W MUTURI & ANOTHER VS STANDARD CHARTERED BANK OF KENYA LTD & 4 OTHERS: HC. SC. NO. 949 OF 2011',
+		},
+		{
+			code: 'SCB1.150',
+			description:
+				'RETIREMENT BENEFITS APPEAL TRIBUNAL AT NAIROBI -ABDALLA OSMAN & 628 OTHERS VS. STANDARD CHARTERED BANK KENYA LIMITED & 10 OTHERS',
+		},
+		{
+			code: 'SCB1.150/001',
+			description:
+				'HIGH COURT JR NO.E110 OF 2022: STANDARD CHARTERED BANK (K) LTD & 11 OTHERS VS. RETIREMEMENT BENEFITS APPEALS TRIBUNAL & OTHERS.',
+		},
+		{
+			code: 'SCB1.151',
+			description:
+				'BANKING FACILITIES TO RACHEL & MARK, CHARGE OVER L.R. NO.330/1394, NAIROBI',
+		},
+		{
+			code: 'SCB1.152',
+			description:
+				'BANKING FACILITIES TO EDWIN HAROLD DAYAN DANDE -MORTGAGE LOAN UNIT NO.7 LR. NO. 31933(ORIGINAL NO. 10051) AMARA RIDGE KAREN NAIROBI.',
+		},
+		{
+			code: 'SCB1.153',
+			description:
+				'SALE OF PROPERTY, L.R. NO.209/3016, NAIROBI IN THE NAME OF TELKOM KENYA LIMITED TO CHEERS NEST LIMITED.',
+		},
+		{
+			code: 'SCB1.154',
+			description:
+				'HCCC NO. 1713 OF 2001 - S.K. MACHARIA & 2 OTHERS V. STANDARD CHARTERED BANK KENYA LIMITED',
+		},
+		{
+			code: 'SCB1.155',
+			description: 'DISCHARGE OF CHARGE OVER NAIROBI/BLOCK 77/5',
+		},
+		{
+			code: 'SCB1.156',
+			description:
+				'ELRC E648 OF 2022 : KWAME NKRUMAH VS. STANDARD CHARTERED BANK KENYA LIMITED',
+		},
+		{
+			code: 'SCB1.157',
+			description:
+				'BANKING FACILITIES TO CAR & GENERAL (KENYA) PLC, CAR & GENERAL (TRADING) LIMITED AND CUMMINS C&G LIMITED',
+		},
+		{
+			code: 'SCB1.158',
+			description:
+				'E&LRC E073 OF 2023: MAUREEN OGINA VS STANDARD CHARTERED BANK OF KENYA LTD.',
+		},
+		{
+			code: 'SCB1.159',
+			description: 'BANKING FACILITIES TO BUNSON TRAVEL SERVICE LIMITED',
+		},
+		{
+			code: 'SCB1.16',
+			description:
+				'HCCC NO. 1713 OF 2001 - S.K. MACHARIA & ANOTHER V. STANDARD CHARTERED BANK KENYA LIMITED.',
+		},
+		{
+			code: 'SCB1.160',
+			description:
+				'FACILITIES TO MALICHA GUYO WAQO - CHARGE OVER UNIT NO.B-9 ON LR NO. 209/22207 (ORG.209/3289), SIAYA PARK, KILELSHWA',
+		},
+		{
+			code: 'SCB1.18',
+			description:
+				'STANDARD CHARTERED BANK (K) LTD -VS- JAKI WASIKE SIHANYA: CIVIL CAUSE NO. 4709 OF 2011 (NBO)',
+		},
+		{
+			code: 'SCB1.19',
+			description:
+				'EMMANUEL ARATI ONDARA VS THE STANDARD CHARTERED BANK OF KENYA LTD & WELLS FARGO LTD: CMCC 4935 OF 2011',
+		},
+		{
+			code: 'SCB1.2',
+			description: 'STANDARD CHARTERED BANK VS MADHU PAPER INTERNATIONAL',
+		},
+		{
+			code: 'SCB1.20',
+			description:
+				'GOING PLACES LTD VS MOHAMED HATIMU KFF/FKF/STANDARD CHARTERED BANK OF KENYA LTD: HCCC 415 OF 2005',
+		},
+		{
+			code: 'SCB1.21',
+			description: 'BARAKA EVARIST NAMPANGO VS STANDARD CHARTERED BANK OF KENYA LTD & OTHERS',
+		},
+		{
+			code: 'SCB1.22',
+			description: 'JARED REGINALD ODUYA OBONGO - CHARGE OVER L.R NO. 2259/646',
+		},
+		{
+			code: 'SCB1.23',
+			description:
+				'STANDARD CHARTERED BANK OF KENYA LTD -VS- LUKEN INVESTMENTS LTD: CMCC NO. 3064 OF 2013',
+		},
+		{
+			code: 'SCB1.24',
+			description: 'JOHN PETER NYANGERI SIMBA - CHARGE OVER L.R NO. NRB BL/60/304, NBI',
+		},
+		{
+			code: 'SCB1.25',
+			description: 'BIDCO OIL REFENERIES LTD - ADDITIONAL BANKING FACILITIES',
+		},
+		{
+			code: 'SCB1.26',
+			description:
+				'STANDARD CHARTERED BANK OF KENYA LTD & 3 OTHERS -VS- SELINA BETTY PAMBA SANDE: HC JR MISC. APPL. NO 289 OF 2013',
+		},
+		{
+			code: 'SCB1.27',
+			description:
+				"STANDARD CHARTERED BANK OF KENYA LTD/GEOFFREY OMONDI ONYANGO -VS- NANCY MWONGELI KAVITA: CHILDREN'S COURT NO 323 OF 2010",
+		},
+		{
+			code: 'SCB1.28',
+			description:
+				'LEONARD MUNYA MBUGUA T/A MUNLEO HARDWARE & METAL FABRICATORS I-VS- STANDARD CHARTERED BANK OF KENYA LTD: CMCC NO 5158 OF 2012',
+		},
+		{
+			code: 'SCB1.29',
+			description: 'SAMMY.N.M WAMBUA',
+		},
+		{
+			code: 'SCB1.3',
+			description:
+				'DDDSTANDARD CHARTERED BANK (K) LTD VS ISAAC ADUVAGAH: E&L CASE NO. 23 OF 2014',
+		},
+		{
+			code: 'SCB1.30',
+			description:
+				'STANDARD CHARTERED BANK LTD -VS- TERESIA WANJIKU NJOROGE: HCCC NO. 464 OF 2013',
+		},
+		{
+			code: 'SCB1.31',
+			description: 'PALM MOTORS HD(PAUL MBURU KARIUKI)',
+		},
+		{
+			code: 'SCB1.32',
+			description:
+				'STANDARD CHARTERED BANK (K) LTD/DAVIDSON MWAISAKA -VS- TASSIA COFEE ESTATES: CMCC NO. 1772 OF 2014',
+		},
+		{
+			code: 'SCB1.34',
+			description:
+				'ALFRED GICHUKI MATHU - MORTGAGE LOAN TO TITLE NO. NRBI/BLOCK 90/568 LORESHO ESTATE',
+		},
+		{
+			code: 'SCB1.35',
+			description: 'SAMUEL KANGETHE AND MARY NJOKI',
+		},
+		{
+			code: 'SCB1.36',
+			description: 'SOJANMI LIMITED FURTHER CHARGE',
+		},
+		{
+			code: 'SCB1.37',
+			description: 'GAMAN ALI MOHAMED GAMAN HSE NO 8',
+		},
+		{
+			code: 'SCB1.38',
+			description: 'IRENE WAIRIMU NJUGUNA',
+		},
+		{
+			code: 'SCB1.39',
+			description: 'RICHARD KIPKORIR CHIRCHIR',
+		},
+		{
+			code: 'SCB1.4',
+			description:
+				'STANDARD CHARTERED BANK-ANN NDUNGE VS JOSEPH TITO MATESA: SRMCC NO. 2056 OF 2006 MSA',
+		},
+		{
+			code: 'SCB1.40',
+			description: 'STANDARD CHARTERED BANK (K) LTD -PATRICK MWANGI NDAMBURI',
+		},
+		{
+			code: 'SCB1.41',
+			description: 'STANDARD CHARTERED BANK (K) LTD -PATRICK KIMATHI RIUNGU',
+		},
+		{
+			code: 'SCB1.42',
+			description: 'STANDARD CHARTERED BANK',
+		},
+		{
+			code: 'SCB1.43',
+			description: 'STANDARD CHARTERED BANK (ROSE FLORENCE)',
+		},
+		{
+			code: 'SCB1.44',
+			description: 'STANDARD CHARTERED BANK - STERLING CRAFTS',
+		},
+		{
+			code: 'SCB1.45',
+			description: 'STANDARD CHARTERED BANK VS MUMINA SIMON MULOBA',
+		},
+		{
+			code: 'SCB1.46',
+			description: 'STANDARD CHARTERED BANK-ANN NDUNGE VS HJOSEPH TITO MATESA',
+		},
+		{
+			code: 'SCB1.47',
+			description: 'STANDARD CHARTERED BANK',
+		},
+		{
+			code: 'SCB1.48',
+			description: 'STANDARD CHARTERED BANK (K) LTD -VS- CHRISTOPHER KIPROTICH KIPTOO',
+		},
+		{
+			code: 'SCB1.49',
+			description:
+				'PETITION NO 545 OF 2014 VIVIAN OWINO VS STANDARD CHARTERED BANK (K) LTD NAIROBI MARATHON & OTHERS',
+		},
+		{
+			code: 'SCB1.5',
+			description:
+				'STANDARD CHARTERED BANK VS A.D GREGORY, C.D CAHILL & 2 OTHERS: HCCC NO 340 OF 2006',
+		},
+		{
+			code: 'SCB1.5/001',
+			description:
+				'CIVIL APPLICATION NO. SUP. E001 OF 2023 - STANDARD CHARTERED FINANCIAL SERVICES LIMITED V. MANCHESTER OUTFITTERS SUITING DIVISION & OTHERS',
+		},
+		{
+			code: 'SCB1.5/002',
+			description:
+				'HCCC NO. 340 OF 2006 (FORMERLY NO. 5002 OF 1990) - MANCHESTER OUTFITTERS SUITING DIVISION LIMITED & ANOTHER V. STANDARD CHARTERED FINANCIAL SERVICES & OTHERS',
+		},
+		{
+			code: 'SCB1.5/003',
+			description:
+				'STANDARD CHARTERED BANK KENYA LIMITED & ANOTHER -VS- KING WOOLEN MILLS LIMITED & GALOT INDUSTRIES LIMITED',
+		},
+		{
+			code: 'SCB1.50',
+			description:
+				'STANDARD CHARTERED BANK LTD/OTHER/NAVITA LTD & OTHERS -VS- SUSAN MUMBUA & OTHERS: E&L CAUSE NO. 350 OF 2015',
+		},
+		{
+			code: 'SCB1.51',
+			description:
+				'KRUPA CHOHAN - SALE OF APARTMENT NO B 2-1 BLOCK B BLUEBELL PROPERTIES LTD: L.R NO 209/6875 KILELESHWA',
+		},
+		{
+			code: 'SCB1.52',
+			description:
+				'STANDARD CHARTERED BANK (K) LTD LOAN FACILITIES TO WASIKE MAAKA WITH MORTGAGE - HOUSE NO. 023 ON L.R. 337/3742 MACHAKOS',
+		},
+		{
+			code: 'SCB1.53',
+			description:
+				'PUJA DHRUVESH TANK (BORROWER) & DHRUVESH NARENDRA TANK (CHARGOR) TO CITI BANK NA (LENDER)- APARTMENT NO D3 L.R. NO 209/14990/7',
+		},
+		{
+			code: 'SCB1.54',
+			description:
+				'STANDARD CHARTERED BANK (K) LTD MORTGAGE LOAN TO BENJAMIN MUTUKU KAMANGA OVER HOUSE NO A1 ON LR. 209/8836/29 SIAYA ROAD KILELESHWA, NAIROBI COUNTY',
+		},
+		{
+			code: 'SCB1.55',
+			description:
+				'STANDARD CHARTERED BANK OF KENYA LTD/JAMES NGANDA MWANZIA -VS- REPUBLIC (THROUGH MONICA MUTHIKWA MASYUKO: CM MISC. C APPL NO 17 OF 2015 (NBO)',
+		},
+		{
+			code: 'SCB1.56',
+			description:
+				'STANDARD CHARTERED BANK (K) LTD MORTGAGE LOAN TO JARED REGINALD OBUYA OBONGO OVER  LR. 2259/646 SILANGA ROAD KAREN AREA, NAIROBI COUNTY',
+		},
+		{
+			code: 'SCB1.57',
+			description: 'STANDARD CHARTERED BANK (K) LTD MORTGAGE LOAN FACILITY TO ANUJ RADIA',
+		},
+		{
+			code: 'SCB1.58',
+			description: 'ELRC NO. 949 OF 2011 PATRICIAH WANGUI',
+		},
+		{
+			code: 'SCB1.6',
+			description:
+				'STANDARD CHARTERED BANK (K) LTD -VS- NELSON MUTURI DUMEYIA: HCCC NO. 16 OF 2010 (COMMERCIAL & TAX DIVISION NBO)',
+		},
+		{
+			code: 'SCB1.60',
+			description: 'CIVIL APPEAL NO. 209 OF 2004 HARJINDER KAUR SHEHMI',
+		},
+		{
+			code: 'SCB1.61',
+			description: 'BANKING FACILITIES TO BINSCAPE LIMITED',
+		},
+		{
+			code: 'SCB1.63',
+			description:
+				'BANKING FACILITIES TO DISMAS IRERI MATE AND MERCY KANYUA MATE TRADING AS HIGHWAY EDUCATIONAL COMPLEX',
+		},
+		{
+			code: 'SCB1.66',
+			description:
+				'AGNES BANURA MAKAU VS STANDARD CHARTERED BANK KENYA LIMITED ELC NO. 235 OF 2014',
+		},
+		{
+			code: 'SCB1.66/001',
+			description:
+				'CIVIL APPEAL NO. E140 OF 2021-AGNES BANURA MAKAU VS. STANDARD CHARTERED BANK OF KENYA LTD',
+		},
+		{
+			code: 'SCB1.67',
+			description: 'PMCC NO. 1078 OF 1995 UNITED SCALES LIMITED AND JANE K OKAYO',
+		},
+		{
+			code: 'SCB1.68',
+			description:
+				'HIGH COURT CIVIL APPEAL NO. 251 OF 2012 STANDARD CHARTERED BANK VS ESTHER NJOKI WANGIGE',
+		},
+		{
+			code: 'SCB1.69',
+			description:
+				'HCCC NO. 96 OF 2005 ELVIS MAINA MINJU & ANOR VS STANDARD CHARTERED BANK (K) LTD',
+		},
+		{
+			code: 'SCB1.7',
+			description:
+				'STANDARD CHARTERED BANK (K) LTD -VS- NELSON MUTURI DUMEYIA: HCCC NO. 13 OF 2010 (COMMERCIAL & TAX DIVISION NBO)',
+		},
+		{
+			code: 'SCB1.70',
+			description: 'CIVIL APPEAL NO. 150 OF 2016 S.K. MACHARIA & 2 OTHERS VS THE A.G & SCBK',
+		},
+		{
+			code: 'SCB1.71',
+			description:
+				'ABDALLA OSMAN AND 628 OTHERS VS STANDARD CHARTERED STAFF PENSION SCHEME AND OTHERS HCCC 334 OF 2009 NAIROBI',
+		},
+		{
+			code: 'SCB1.71/001',
+			description:
+				'CIVIL APPLICATION NO. 75 OF 2019 ABDALLA OSMAN & 628 OTHERS VS. STANDARD CHARTERED BANK LTD & OTHERS',
+		},
+		{
+			code: 'SCB1.71/002',
+			description: 'ABDALLA OSMAN & 628 OTHERS -VS- STANDARD CHARTERED BANK KENYA LIMITED',
+		},
+		{
+			code: 'SCB1.72',
+			description: "HCCC NO. 197 OF 2012 PETER NG'ANG'A MAKURA",
+		},
+		{
+			code: 'SCB1.73',
+			description:
+				'BANKING FACILITIES TO ROBERT WEKHOMBA MWANGALE, CHARGE OVER HOUSE NO. B9, ON L.R. NO. 21080/38, NAIROBI',
+		},
+		{
+			code: 'SCB1.75',
+			description:
+				'BEING AN APPEAL FOR THE JUDGEMENT OF THE HIGH COURT IN MISC. CIVIL APPN NO. 381 OF 2014',
+		},
+		{
+			code: 'SCB1.75/001',
+			description:
+				'SUPREME COURT PETITION NO. 011 OF 2022 - SAMUEL KAMAU MACHARIA & ROYAL CREDIT LIMITED V. ODPP & STATE LAW.',
+		},
+		{
+			code: 'SCB1.76',
+			description: 'CIVIL APPEAL NO. 150 OF 2016 S.K. MACHARIA VS ATTORNEY GENERAL',
+		},
+		{
+			code: 'SCB1.8',
+			description: 'STANDARD CHARTERED BANK LTD VS SUSAN OMBATI NYANCHAMA: HCCC 277 OF 2010',
+		},
+		{
+			code: 'SCB1.81',
+			description: 'JANE GICHUKI VS BEN MUCHINA AND STANDARD CHARTERED BANK K LTD',
+		},
+		{
+			code: 'SCB1.83',
+			description:
+				'BANKING FACILITIES TO GEORGE WILLIAM ODUORI OTIENO, CHARGE OVER LAND REFERENCE NUMBER 7785/57, RUNDA MAE RIDGE ESTATE, NAIROBI COUNTY',
+		},
+		{
+			code: 'SCB1.84',
+			description: 'BANKING FACILITIES TO TELKOM KENYA LIMITED',
+		},
+		{
+			code: 'SCB1.87',
+			description:
+				'BANKING FACILITIES TO JOHN KIOKO MUTUA, CHARGE OVER LAND REFERENCE NUMBER 1870/IV/121, UNIT NO. A502, CHELSEA PARK, RAPHTA ROAD, WESTLANDS, NAIROBI COUNTY',
+		},
+		{
+			code: 'SCB1.9',
+			description:
+				'STANDARD CHARTERED BANK OF KENYA LTD/WELLS FARGO LTD -VS- PHILLIP ODERA: CMCCC NO',
+		},
+		{
+			code: 'SCB1.91',
+			description: 'MERCY NYAWADE-INTENDED INVESTIGATION',
+		},
+		{
+			code: 'SCB1.92',
+			description:
+				'HCCC NO. 93 OF 2003 JAMES SAMUEL KINYANJUI & ANOR VS STANDARD CHARTERED BANK KENYA LIMITED',
+		},
+		{
+			code: 'SCB1.93',
+			description: 'BANKING FACILITIES TO MALEBO HELLEN MOEPI',
+		},
+		{
+			code: 'SCB1.94',
+			description: 'STANDARD CHARTERED - DEBT COLLECTION - CAPE SUPPLIERS LIMITED',
+		},
+		{
+			code: 'SCB1.94/001',
+			description:
+				'CIVIL APPEAL NO. E106 OF 2022 STANDARD CHARTERED BANK KENYA LIMITED VS. CAPE SUPPLIERS LIMITED & 3 OTHERS.',
+		},
+		{
+			code: 'SCB1.97',
+			description: 'MILLING CORPORATION OF KENYA (2009) LIMITED',
+		},
+		{
+			code: 'SCB1.99',
+			description:
+				'MERU - HCCC NO. 158 OF 2000: SAMUEL NKONGE KIRERA -VS- STANDARD CHARTERED & 2 OTHERS',
+		},
+		{
+			code: 'SCD1.1',
+			description: 'CRIMINAL CASE AGAINST SWAMI CONTAINER DEPOT LIMITED.',
+		},
+		{
+			code: 'SCD1.2',
+			description: 'CRIMINAL CASE AGAINST SWAMI CONTAINER DEPOT LIMITED',
+		},
+		{
+			code: 'SCI1.1',
+			description:
+				'CIVIL SUIT NO. 10994 OF 2006 - THE LAW SOCIETY OF KENYA SAVINGS & CREDIT CO-OPRATIVE SOCIETY LIMITED VS OWEN N. KOIMBURI & 2 OTHERS',
+		},
+		{
+			code: 'SCI1.2',
+			description: 'CIVIL CASE NO. OF 2020 – OWEN KOIMBURI VS. NATION MEDIA GROUP & ANOTHER',
+		},
+		{
+			code: 'SCK1.1',
+			description: 'STANDARD CHARTERED KENYA PENSION FUND VS SAMWEL NJERU MUTHI',
+		},
+		{
+			code: 'SCL.1',
+			description: 'SOLYANA COMPANY LIMITED VS. THE MANAGEMENT UNIVERSITY OF AFRICA (MUA)',
+		},
+		{
+			code: 'SCL.2',
+			description: 'SOLYANA COMPANY LIMITED VS. THE MANAGEMENT UNIVERSITY OF AFRICA (MUA)',
+		},
+		{
+			code: 'SCL1.1',
+			description:
+				'EMBAKASI PROPERTIES LTD & OTHERS -VS-SAFE CARGO LTD: CIVIL APPEAL NO. 276 OF 2008',
+		},
+		{
+			code: 'SCL1.2',
+			description:
+				'E&LC CASE NO. 297 OF 2019: SAFE CARGO LTD VS. EMBAKASI PROPERTIES LTD & OTHERS.',
+		},
+		{
+			code: 'SCL2.1',
+			description: 'FINANCING OF NEW MILL',
+		},
+		{
+			code: 'SCL2.2',
+			description: 'EPC CONTRACT FOR EXPANSION PROJECT',
+		},
+		{
+			code: 'SCL2.3',
+			description: 'ADVISE TO SAVANNAH CEMENT ON THE THIMITI LIMITED DEMAND',
+		},
+		{
+			code: 'SCL3.1',
+			description: 'SOLYANA COMPANY LIMITED VS THE MANAGEMENT UNIVERSITY OF KENYA',
+		},
+		{
+			code: 'SCL4.1',
+			description: 'COMPLAINT BY MS. RACHEL WANYUTU GAKENIA AGAINST SAJ CERAMICS LIMITED',
+		},
+		{
+			code: 'SCL5.1',
+			description: 'PROVISION OF LEGAL SERVICES TO STAR CLOUD LLC.',
+		},
+		{
+			code: 'SCL6.1',
+			description:
+				'NAIROBI CMEL CAUSE NO. E321 OF 2023: SUPHERIOUS LIGARE SHIPIMIRU -VERSUS- SILVERMON COMPANY LIMITED',
+		},
+		{
+			code: 'SCL6.2',
+			description: 'PROVISION OF LEGAL SERVICES TO SILVERMON COMPANY LIMITED',
+		},
+		{
+			code: 'SCL6.3',
+			description:
+				'KISUMU MC.ELRC CAUSE NOS. 81, 82 & 83 OF 2023: KEVIN OCHIENG, OLIVER ALUOCH & VALENTINE CHEROTICH -VS- SILVERMON COMPANY LIMITED',
+		},
+		{
+			code: 'SDL1.1',
+			description:
+				'PROPOSED JOINT VENTURE FOR THE DEVELOPMENT RESIDENTIAL APARTMENTS ON A PROPERTY ALONG MOMBASA ROAD',
+		},
+		{
+			code: 'SDL1.2',
+			description: 'DEVELOPMENT OF APARTMENTS IN MACHAKOS COUNTY',
+		},
+		{
+			code: 'SDL1.3',
+			description:
+				'LEASE OF OFFICE PREMISES BETWEEN  AMB.FRANCIS K.MUTHAURA AND SINGAPURA DEVELOPERS LIMITED',
+		},
+		{
+			code: 'SDL1.4',
+			description: 'PURCHASE OF HALF ACRE PLOT NO. 7815/18 MACHAKOS',
+		},
+		{
+			code: 'SDL1.4/001',
+			description:
+				'SALE OF UNIT NUMBERS 091802 & 091803 BY SINGAPURA DEVELOPERS LTD TO PATRICK M. KIHUBA & VERINAH N.',
+		},
+		{
+			code: 'SDL1.4/002',
+			description:
+				'SALE OF UNIT NUMBERS 091808 BY SINGAPURA DEVELOPERS LTD TO WILLIAM MAITHIMA MUREBU',
+		},
+		{
+			code: 'SDL1.4/003',
+			description: 'SALE OF UNITS BY SINGAPURA DEVELOPERS LIMITED TO MCLANHAN SIKUKUU',
+		},
+		{
+			code: 'SDL1.4/004',
+			description: 'Sale of Unit by Singapura Developers Limited to Jacob Omolo Ouma',
+		},
+		{
+			code: 'SDL1.5',
+			description:
+				' SALE BY CHARGEE OF TWO (2) BEDROOM APARTMENT NO. 101802 BLOCK 18 FLOOR 10 ON LR. NO. 7815/31; MAVOKO, MACHAKOS COUNTY HABITAT HEIGHTS LIMITED TO DENNIS KIBERENGE KAIGUIRE ',
+		},
+		{
+			code: 'SDL1.6',
+			description:
+				'SALE OF THREE (3) BEDROOM APT. NO. 071707 BLOCK 17, FLOOR 7 ON L.R. NO. 7815/31: HABITAT HEIGHTS LTD TO YOLANDA NEKESA.',
+		},
+		{
+			code: 'SDO1.1',
+			description:
+				'H. C. MISC APPLICATION NO.271 OF 2019: ROYAL OILFIELD LOGISTICS SERVICES & SUPPLIES LIMITED VS. SAKSON DRILLING & OIL SERVICES',
+		},
+		{
+			code: 'SEA1.10',
+			description: 'SYNGENTA EAST AFRICA LIMITED VS. BLUE AGRIC. SUPPLIES SERVICES',
+		},
+		{
+			code: 'SEA1.11',
+			description: 'SYNGENTA EAST AFRICA LIMITED VS. FRANCIS KIPKOECH CHEPTOO',
+		},
+		{
+			code: 'SEA1.2',
+			description: 'SYNGENTA EAST AFRICA LTD VS HYGROTECH E.A LTD',
+		},
+		{
+			code: 'SEA1.3',
+			description: 'SYNGENTA E.A LTD VS AGRICENTRE',
+		},
+		{
+			code: 'SEA1.4',
+			description: 'SYNGENTA E.A LTD VS ENTOMOCIDE ENT',
+		},
+		{
+			code: 'SEA1.5',
+			description: 'SYNGENTA E.A LTD VS FRMLAND SUPPLIERS',
+		},
+		{
+			code: 'SEA1.6',
+			description: 'SYNGENTA E.A LTD VS MATEX HOSPITAL',
+		},
+		{
+			code: 'SEA1.7',
+			description:
+				'SYNGENTA EAST AFRICA LTD -VS- SMART LOGISTICS SOLUTIONS LTD: CMCC NO. 4407 OF 2015',
+		},
+		{
+			code: 'SEF1.1',
+			description:
+				'PURCHASE OF APARTMENT NUMBER A8-1, BLOCK A ON TITLE NUMBER NAIROBI/BLOCK 19/310; CHANIA AVENUE - KILIMANI - NAIROBI',
+		},
+		{
+			code: 'SEF1.2',
+			description:
+				'PURCHASE OF APARTMENT NO.A8-1 (1 BEDROOM), 8TH FLOOR, BLOCK A ON TITLE NUMBER NAIROBI/BLOCK 19/310 (FORMERLY LAND REFERENCE NUMBER 1/701), NAIROBI',
+		},
+		{
+			code: 'SEK1.1',
+			description: 'SEKO LTD -VS- SELINA C. KANDA & 2 OTHERS: HCCC NO 7 OF 2010 (ELDORET)',
+		},
+		{
+			code: 'SEO1.1',
+			description: 'FOUNDATION PILING LIMITED',
+		},
+		{
+			code: 'SER1.1',
+			description: 'SERUFI LTD L.R. NO 1608/5-7',
+		},
+		{
+			code: 'SER1.2',
+			description: 'SERUFI LIMITED',
+		},
+		{
+			code: 'SER1.3',
+			description:
+				'MORTGAGE OVER PROPERTY LR. NO. 1608/7 BY SERUFI LIMITED TO INDUSTRIAL DEVELOPMENT BANK LIMITED',
+		},
+		{
+			code: 'SER3.1',
+			description:
+				'ARBITRATION BETWEEN SAHARA ENERGY RESOURCES AND HASHI ENERGY HOLDINGS LIMITED.',
+		},
+		{
+			code: 'SFL1.1',
+			description: 'ADVISORY',
+		},
+		{
+			code: 'SGI1.1',
+			description: 'GENERAL ADVISORY FILE',
+		},
+		{
+			code: 'SGI1.10',
+			description: 'CLAIM NO.043/070/9/031655/2019/03. INSURED: DOMINIC MBUGUA KARANGA',
+		},
+		{
+			code: 'SGI1.11',
+			description: 'CLAIM NO.020/070/9/035481/2018/10 INSURED: FELIX MWINGIRWA KAMENCHU',
+		},
+		{
+			code: 'SGI1.12',
+			description: 'CLAIM NO.010/070/9/025477/2018/10 INSURED: CLEMENT MUSELA NGUMI.',
+		},
+		{
+			code: 'SGI1.13',
+			description: 'CLAIM NO: 024/080/9/027959/2019/01 INSURED: CHINA ZHONGXING CONSTRUCTION',
+		},
+		{
+			code: 'SGI1.14',
+			description: '020/070/9/035700/2018/12 INSURED: DOMINIC NGURE KARIUKI',
+		},
+		{
+			code: 'SGI1.15',
+			description: 'CLAIM NO.070/080/9/027715/2018/01 INSURED: PAUL WANDERI WAKAHIU',
+		},
+		{
+			code: 'SGI1.16',
+			description: 'CLAIM NO. 030/070/9/035262/2018/09 INSURED: CHARLES ONCHARI OGOTI',
+		},
+		{
+			code: 'SGI1.17',
+			description:
+				'SMALL CLAIMS COURT COMMERCIAL CIVIL SUIT NO E1308 OF 2021 PETER OMONDI TILLEN VS AGNES NDUTA KAMAU & PETER GITAU WAWERU CLAIM NO. 031/070//036177/2019/03 INSURED: PETER OMONDI TILLEN.',
+		},
+		{
+			code: 'SGI1.18',
+			description: 'CLAIM NO: 034/070/9/035470/2018/10 INSURED: AMOS PARSEN MUTERO',
+		},
+		{
+			code: 'SGI1.19',
+			description: 'CLAIM NO:010/070/9/035693/2018/12 INSURED:  VINCENT MUHODOLE LINGA',
+		},
+		{
+			code: 'SGI1.2',
+			description:
+				'CLAIM NO.020/084/9/003677/2017/11 INSURED: ETHEL WANJIKU MWANGI - ACCIDENT INVOLVING KCK 621X AND',
+		},
+		{
+			code: 'SGI1.20',
+			description: 'CLAIM NO:023/087/9/002237/2017/06 INSURED: LIBERTY ENTERPRISES LTD',
+		},
+		{
+			code: 'SGI1.21',
+			description: 'CLAIM NO.033/070/9/002388/2018/06 INSURED: SONIAFRIC SUPPLIERS LTD ',
+		},
+		{
+			code: 'SGI1.22',
+			description: 'HCCC NO.E864 OF 2021 - DIASPORA GLOBAL INVESTMENT LIMITED & 7 OTHERS',
+		},
+		{
+			code: 'SGI1.3',
+			description: 'CLAIM NO.043/070/9/027959/2019/01 INSURED: SEBIE ABDUORAMAN SEBIE.',
+		},
+		{
+			code: 'SGI1.4',
+			description: 'CLAIM NO.033/070/033056/2017/07 INSURED: ANASTACIA KAMANDE',
+		},
+		{
+			code: 'SGI1.5',
+			description: 'CLAIM NO. 030/080/9/027807/2018/05 INSURED: MELVILEE KASADIA',
+		},
+		{
+			code: 'SGI1.6',
+			description: 'CLAIM NO.010/070/9/035768/2019/01',
+		},
+		{
+			code: 'SGI1.7',
+			description: 'CLAIM NO.040/070/9/034063/2018/02: INSURED: JAMES FINLAY MOMBASA',
+		},
+		{
+			code: 'SGI1.8',
+			description: 'CLAIM NO.043/080/9/027442/2018/02 INSURED ANDREW GRIFFINS LIMITED.',
+		},
+		{
+			code: 'SGI1.9',
+			description: 'CLAIM NO.010/084/003497/2017/08 INSURED:  PETER NINA KITONGA',
+		},
+		{
+			code: 'SGL1.1',
+			description: 'STANDARD GROUP LTD vs ONYANGO',
+		},
+		{
+			code: 'SGL1.3',
+			description:
+				'HCCC NO.561 OF 2011:AUGUSTINE KIMANTIRIA NTHIGA VS.BARAZA LIMITED T/A KENYA TELEVISION NETWORK & 2 OTHERS',
+		},
+		{
+			code: 'SGL1.4',
+			description:
+				"HCC NO.562 OF 2011:KING'ORI MWANGI VS.BARAZA T/A KENYA TELEVISION NETWORK & 2 OTHERS",
+		},
+		{
+			code: 'SGL1.5',
+			description:
+				'HCC NO.563 OF 2011:JULIUS SUNKULI VS.BARAZA LIMITED T/A KENYA TELEVISION NETWORK & 2 OTHERS',
+		},
+		{
+			code: 'SGL1.6',
+			description:
+				'HC COMM IC NO.E044 OF 2021 JENNIFER ANNE LUESBY VS OFFICE OF THE OFFICIAL RECEIVER.',
+		},
+		{
+			code: 'SGL2.1',
+			description:
+				'ALEX OMURUNGA VS THE STANDARD GROUP (K) LTD:  INDUSTRIAL CAUSE NO. 1482 OF 2012',
+		},
+		{
+			code: 'SGL2.10',
+			description: 'MS  JENNY LUESBY VS STANDARD GROUP LTD: INDUSTRIAL CAUSE NO. 137 OF 2014',
+		},
+		{
+			code: 'SGL2.11',
+			description:
+				'ELVIS M MURULI -VS- THE STANDARD GROUP LTD: INDUSTRIAL CAUSE NO. 1958 OF 2013 -UNLAWFUL TERMINATION OF EMPLOYMENT',
+		},
+		{
+			code: 'SGL2.12',
+			description: 'GUO DONG VS THE STANDARD GROUP (K) LTD: HCCC NO. 85 OF 2014',
+		},
+		{
+			code: 'SGL2.13',
+			description:
+				'KISUMU HCCC NO. 93 OF 2011: THE STANDARD GROUP LIMITED VS THE MUNICIPAL COUNCIL OF KISUMU & ANOTHER',
+		},
+		{
+			code: 'SGL2.2',
+			description:
+				'ALFRED OBWAR VS THE STANDARD GROUP (K) LTD: INDUSTRIAL CAUSE NO. 1481 OF 2012',
+		},
+		{
+			code: 'SGL2.3',
+			description:
+				'ELPHAS AMBUNDO VS THE STANDARD GROUP (K) LTD:  INDUSTRIAL CAUSE NO. 1483 OF 2012',
+		},
+		{
+			code: 'SGL2.4',
+			description:
+				'JONES OUKO VS THE STANDARD GROUP (K) LTD:  INDUSTRIAL CAUSE NO. 1519 OF 2012',
+		},
+		{
+			code: 'SGL2.5',
+			description:
+				'LAURAINE ACHIENG ONYANGO: THE STANDARD GROUP (K) LTD:  INDUSTRIAL CAUSE NO. 1520 OF 2012',
+		},
+		{
+			code: 'SGL2.6',
+			description:
+				'MARY POLY MUGO VS THE STANDARD GROUP (K) LTD:  INDUSTRIAL CAUSE NO. 1518 OF 2012',
+		},
+		{
+			code: 'SGL2.7',
+			description: 'THE STANDARD GROUP (K) LTD - THE MWUNYOKI FOUNDATION',
+		},
+		{
+			code: 'SGL2.8',
+			description:
+				'THE STANDARD GROUP (K) LTD -VS- WILSON WAMWANGI MAINA: INDUSTRIAL CAUSE NO 1224 OF 2013',
+		},
+		{
+			code: 'SGL2.9',
+			description:
+				'THE STANDARD GROUP LTD & 2 OTHERS -VS- CYRIL BIKO GWENDO: HCCC NO 439 OF 2013 (NBO)',
+		},
+		{
+			code: 'SGL3.1',
+			description:
+				'ELC CONSTITUTIONAL PETITION NO. 04 OF 2021 – METHEWS KIPRUTO MURGOR & 5 OTHERS V. EQUATOR FLOWERS LIMITED.',
+		},
+		{
+			code: 'SHA1.1',
+			description: 'KUNAAL J SHAH - EXPORT TRADING COMPANY LTD',
+		},
+		{
+			code: 'SHA10.1',
+			description: 'HCCC NO. 38 OF 2010: VIPUL PREMCHAND HARIA -VS- VIMAL SHAH & 2 OTHERS',
+		},
+		{
+			code: 'SHA11.1',
+			description: 'SALE OF LR NO. 209./9/12',
+		},
+		{
+			code: 'SHA12.1',
+			description:
+				'PRADIPKUMAR & SHURESHCHANDRA SHAH VS. REGISTERED TRUSTEES & OFFICE BEARERS OF VISA OSHWAL COMMUNITY',
+		},
+		{
+			code: 'SHA13.1',
+			description:
+				'PURCHASE OF 2 B/ROOM APT. IN LENANA GARDENS, TITLE NO. DAGORETTI/MUTUINI/618, BLOCK C, UNIT C4',
+		},
+		{
+			code: 'SHA14.1',
+			description: 'MATRIMONIAL MATTER-MINA SHAH',
+		},
+		{
+			code: 'SHA15.1',
+			description: 'MILIMANI COMMERCIAL COURT; CMCC NO.   OF 2020',
+		},
+		{
+			code: 'SHA16.1',
+			description: 'CRIMINAL CASE NO. 2475 OF 2020 REPUBLIC .VS. CAROLINE KEMUNTO ',
+		},
+		{
+			code: 'SHA17.1',
+			description:
+				'PURCHASE OF A 3 BEDROOM APARTMENT KNOWN AS B7 ON BLOCK 11 ERECTED ON UNITS NOS. L4-01 AND L4 -02 OF PRECINCT 4B-2 FORMING PART OF LR NO. 28867/1 -LIFESTYLE HEIGHTS',
+		},
+		{
+			code: 'SHA18.1',
+			description: 'ACQUISITION OF A FINANCIAL INSTITUTION',
+		},
+		{
+			code: 'SHA2.1',
+			description: 'PRITI SHAH -VS- BEACON PROPERTIES, VARUN, PAMBA',
+		},
+		{
+			code: 'SHA3.1',
+			description: 'NISHIT SHAH (MR GOSAR SHAH)',
+		},
+		{
+			code: 'SHA4.1',
+			description: 'PRITIBALA SHAH',
+		},
+		{
+			code: 'SHA5.1',
+			description:
+				'ROHIT A. SHAH & ANOTHER VS MOHANLAL L. SHAH & 2 OTHERS: CIVIL SUIT NO. 164 OF 1999 NBO',
+		},
+		{
+			code: 'SHA6.1',
+			description: 'JAYANTKUMAR V. SHAH MRS. SHKSHA DEVDA',
+		},
+		{
+			code: 'SHA7.1',
+			description:
+				'SUCCESSION CAUSE NO. 1214 OF 2007 ESTATE OF PREMCHARD KANJI SHAH (DECEASED)',
+		},
+		{
+			code: 'SHA8.1',
+			description:
+				'SALE AND PURCHASE OF OFFICE BLOCK D SUITE 11 ON 3RD FLOOR, L.R. NO. 7158/76, OFF LOWER KABETE ROAD, NAIROBI',
+		},
+		{
+			code: 'SHA9.1',
+			description: 'ELC NO. 436 OF 2010-SOMERSET AFRICA LIMITED VS MOHANLAL DHARAMSHI SHAH',
+		},
+		{
+			code: 'SHE1.1',
+			description: 'SICHUAN HUASHI CORPORATION EAST AFRICA LTD',
+		},
+		{
+			code: 'SHE1.10',
+			description:
+				'PROPOSED DEVELOPMENT FOR MTWAPA HEIGHTS LIMITED, AT MTWAPA SUBDIVISION NO. 3464',
+		},
+		{
+			code: 'SHE1.11',
+			description:
+				'SALE & PURCHASE OF TOWN HOUSE NUMBER C18  ON LR.NO.12715/11742 GABLES PARK TO JACINTA MUTHONI MACHUA',
+		},
+		{
+			code: 'SHE1.12',
+			description:
+				'SICHUAN HUASHI ENTERPRISES CORPORATION (EA) LIMITED (KENYA GOOD LAND INVESTMENT COMPANY LIMITED',
+		},
+		{
+			code: 'SHE1.13',
+			description:
+				'SALE OF TOWN HOUSE NO. CI19 ON LR. NO. 12715/11742 SICHUAN HUASHI ENTERPRISES CORPORATION EAST AFRICA LIMITED TO AGNES WANGECHI.',
+		},
+		{
+			code: 'SHE1.14',
+			description:
+				'SICHUAN HUASHI ENTERPRISES CORPORATION EAST AFRICA LIMITED VS TRANS-KENYA INVESTMENTS LIMITED.',
+		},
+		{
+			code: 'SHE1.15',
+			description:
+				'SETTLEMENT AGREEMENT BETWEEN SICHUAN HUASHI ENTERPRISES CORPORATION EAST AFRICAN LIMITED AND ELSIE RIDGE LIMITED',
+		},
+		{
+			code: 'SHE1.16',
+			description:
+				'SICHUAN HUASHI ENTERPRISES CORPORATION EAST AFRICA LIMITED VS. CORAL SAVANNAH LIMITED',
+		},
+		{
+			code: 'SHE1.17',
+			description: 'Advising on an EPC Contract',
+		},
+		{
+			code: 'SHE1.2',
+			description:
+				'AGREEMENT BETWEEN SCHUAN HUASHI ENTERPRISES CORPORATION (EA) LTD - ALICE KARIUKI & PARAMOUNT UNIVERSAL BANK LTD',
+		},
+		{
+			code: 'SHE1.3',
+			description: 'SICHUAN HUASHI ENTERPRISES CORPORATION EAST AFRICA LTD',
+		},
+		{
+			code: 'SHE1.5',
+			description:
+				'SICHUAN HUASHI ENTERPRISES CORPORATION EAST AFRICA LTD - PILLAR PLACE LTD SECURITY',
+		},
+		{
+			code: 'SHE1.6',
+			description: 'SICHUAN HUASHI ENTERPRISES CORPORATION EAST AFRICA LTD',
+		},
+		{
+			code: 'SHE1.7',
+			description:
+				'SICHUAN HUASHI ENTERPRISES CORPORATION EAST AFRICA LTD -VS- LANDMARK REAL ESTATE INVESTMENT TRUST LTD',
+		},
+		{
+			code: 'SHE1.8',
+			description:
+				'SALE OF TOWN HOUSE NO. C21, L.R. NO. 12715/11742, THE GABLES PARK, TO IRENE NJAHIRA MUKUI',
+		},
+		{
+			code: 'SHE1.9',
+			description: 'INSURANCE DISPUTE',
+		},
+		{
+			code: 'SHE2.1',
+			description: 'SUCCESSION CAUSE NO. 375 OF 2010 ESTATE OF THE LATE SALEH SAID SHERMAN',
+		},
+		{
+			code: 'SHI1.1',
+			description: 'T.N SHINGADIA',
+		},
+		{
+			code: 'SHI2.1',
+			description: 'IN THE MATTER OF THE ESTATE OF BRIAN LESLIE SHIPTON',
+		},
+		{
+			code: 'SHL1.1',
+			description: 'SONY HOLDINGS LIMITED- FACILITIES AND FINANCIAL STATEMENTS',
+		},
+		{
+			code: 'SHL1.10',
+			description:
+				'SONY HOLDINGS LIMITED VAT ASSESSMENTS FOR THE PERIOD 1/1/2012 TO 31/12/14',
+		},
+		{
+			code: 'SHL1.11',
+			description: 'AGREEMENT BETWEEN NAIROBI CITY COUNTY & SONY HOLDINGS LIMITED',
+		},
+		{
+			code: 'SHL1.12',
+			description: 'CLAIM FOR USD 319,813.00 DUE FROM COOLEXTREME LIMITED',
+		},
+		{
+			code: 'SHL1.13',
+			description: 'TERMINATION OF LEASE TO SPENCON (K) LTD',
+		},
+		{
+			code: 'SHL1.14',
+			description:
+				'ISMAIL RAHIMTULLA TRUSTEES REGISTERED & SONY HOLDINGS VS SPENCON KENYA LTD',
+		},
+		{
+			code: 'SHL1.15',
+			description: 'ADVISE ON SURRENDER OF LEASE AND WITHHOLDING TAX ON RENTAL INCOME',
+		},
+		{
+			code: 'SHL1.16',
+			description: 'APPEAL AGAINST REJECTION FOR AMENDMENT OF SELF ASSESSMENT RETURNS',
+		},
+		{
+			code: 'SHL1.16/001',
+			description: 'SONY HOLDINGS LIMITED vs COMMISSIONER OF DOMESTIC TAXES ITA/E053/2020',
+		},
+		{
+			code: 'SHL1.16/002',
+			description: 'ENFORCEMENT OF THE JUDGEMENT OF THE HIGH COURT IN ITA NO. EO53 OF 2020',
+		},
+		{
+			code: 'SHL1.17',
+			description: 'ACCIDENT CLAIM BY SHAHIN AZIM RAJWANI AT WESTGATE MALL',
+		},
+		{
+			code: 'SHL1.18',
+			description: 'LEASE OF OFFICE SPACE TO IMPERIAL BANK LTD AT WESTGATE SHOPPING MALL',
+		},
+		{
+			code: 'SHL1.19',
+			description:
+				'CLAIM FOR COMPENSATION FOR MRS MALTI RAMESH VAYA WHO DIED AT WESTGATE SHOPPING MALL ATTACK',
+		},
+		{
+			code: 'SHL1.20',
+			description:
+				'HCCC NO. 246 OF 2016 MESHACK ULLARI LISIMBA & PHANICE ALIVITSA MASHETI (suing as Personal Representatives and Administrators of the Estate of the late SYLVIA MAKUNGU ULLARI (Deceased) -vs- SONY HOLDINGS LIMITED',
+		},
+		{
+			code: 'SHL1.21',
+			description: 'PETITION AGAINST NATIONAL LANDS COMMISSION',
+		},
+		{
+			code: 'SHL1.22',
+			description: 'APPLICATION FOR WITHHOLDING TAX EXEMPTION',
+		},
+		{
+			code: 'SHL1.22/001',
+			description:
+				'TAT  Appeal No. 506 of 2019 - Sony Holdings Limited Vs. Commissioner of Domestic Taxes',
+		},
+		{
+			code: 'SHL1.22/002',
+			description:
+				'CIVIL APPEAL NO. 11 OF 2020 – SONY HOLDINGS LIMITED VS. THE COMMISSIONER OF DOMESTIC TAXES.',
+		},
+		{
+			code: 'SHL1.22/003',
+			description:
+				'Being an Appeal in the High Court against a decision of the Tax Appeals Tribunal',
+		},
+		{
+			code: 'SHL1.22/004',
+			description: 'SONY HOLDINGS LIMITED vs COMMISSIONER OF DOMESTIC TAXES ITA/E042/2020   ',
+		},
+		{
+			code: 'SHL1.22/005',
+			description: 'APPEAL AT THE COURT OF APPEAL FROM DECISION OF H.C ITA NO. E042 OF 2020',
+		},
+		{
+			code: 'SHL1.23',
+			description: 'INCOME TAX REFUND',
+		},
+		{
+			code: 'SHL1.24',
+			description: 'SONY HOLDINGS LIMITED VS. THE AUDITOR GENERAL (LOST REVENUE)',
+		},
+		{
+			code: 'SHL1.25',
+			description: 'REJECTION OF APPLICATION FOR TAX COMPLIANCE  CERTIFICATE',
+		},
+		{
+			code: 'SHL1.26',
+			description:
+				'JUDICIAL REVIEW AGAINST AN ASSESSMENT RAISED BY KRA IN CONNECTION WITH APPLICATION FOR EXWMPTION FROM WIHHOLDING TAX ON RENTAL INCOME',
+		},
+		{
+			code: 'SHL1.27',
+			description: 'RENT DISTRESS-WESTGATE SHOPPING MALL TO MADO (KENYAN) LIMITED UNIT G.30',
+		},
+		{
+			code: 'SHL1.28',
+			description: 'REJECTION OF APPLICATIONS FOR TAX COMPLIANCE CERTIFICATE',
+		},
+		{
+			code: 'SHL1.29',
+			description: 'ALLEGED TRESSPASS ON LR.NOS. 209/11307,209/11308 & 209/12829',
+		},
+		{
+			code: 'SHL1.3',
+			description: 'WESTGATE 2 SWAHILI BEACH',
+		},
+		{
+			code: 'SHL1.30',
+			description:
+				'LEASE OF UNITS B4,G33 & M1 FROM SONY HOLDINGS LIMITED TO SHOPRITE CHECKERS KENYA LIMITED.',
+		},
+		{
+			code: 'SHL1.31',
+			description:
+				'LEASE OF UNITS B4,G33 & M1 FROM SONY HOLDINGS TO SHOPRITE CHECKERS KENYA LIMITED (OUTSTANDING ISSUES)',
+		},
+		{
+			code: 'SHL1.32',
+			description: 'REHABILITATION AND UPGRADING OF UPPERHILL ROADS-RAHIMTULLA TOWER.',
+		},
+		{
+			code: 'SHL1.33',
+			description:
+				'TAT  Appeal No. 506 of 2019 - Sony Holdings Limited Vs. Commissioner of Domestic Taxes',
+		},
+		{
+			code: 'SHL1.34',
+			description: 'SALE OF PROPERTIES LR NO. 209/11458 LR NO. 209/11429.',
+		},
+		{
+			code: 'SHL1.35',
+			description: 'Value Added Tax Return Filing - October 2019 to January 2020',
+		},
+		{
+			code: 'SHL1.36',
+			description:
+				'KENYA REVENUE AUTHORITY TAX DEMAND (YEARS 2009,2010 & 2012) SONY HOLDINGS VS. COMMISSIONER OF DOMESTIC TAXES.',
+		},
+		{
+			code: 'SHL1.37',
+			description: 'SONY HOLDINGS LIMITED vs COMMISSIONER OF DOMESTIC TAXES ITA/E053/2020',
+		},
+		{
+			code: 'SHL1.38',
+			description: 'SONY HOLDINGS LIMITED VS. KAZURI 2000 LIMITED',
+		},
+		{
+			code: 'SHL1.39',
+			description:
+				'Judicial Review No. E1105/2020 R V. Commissioner of Domestic Taxes exparte Sony Holdings Limited  Being a JR application against KRA’s failure to issue Objection Decision with respect to objection to various Debit Adjustment Vouchers demanding KES.1',
+		},
+		{
+			code: 'SHL1.39/001',
+			description:
+				'APPEAL AGAINST KRA’s OBJECTION DECISION DATED 19th FEBRUARY,2020 FOR KES.14,992,680.24/-.',
+		},
+		{
+			code: 'SHL1.39/002',
+			description:
+				"TAT APPEAL AGAINST KRA's OBJECTION DECISION CONFIRMING ASSESSMENT FOR KES. 33,187,669/=",
+		},
+		{
+			code: 'SHL1.4',
+			description: 'SONY HOLDINGS LTD & OTHERS -VS- KEREN BUARON: HCCC NO 16 OF 2009',
+		},
+		{
+			code: 'SHL1.40',
+			description:
+				'APPLICATION UNDER SECTION 73 OF THE TAX PROCEDURES ACT, 2015 FOR AUTHORISATION FOR SONY HOLDINGS LIMITED TO FILE ITS VAT RETURNS MANUALLY',
+		},
+		{
+			code: 'SHL1.41',
+			description:
+				'OBJECTION NOTICE ARISING FROM 163 LEDGER ENTRIES DATED 27TH AUGUST, 2020.',
+		},
+		{
+			code: 'SHL1.42',
+			description: 'NOTICE OF OBJECTION ON MIGRATION OF LEGAL LEDGER BALANCES TO i-TAX',
+		},
+		{
+			code: 'SHL1.43',
+			description:
+				'MC ELC CASE NO.  OF 2020 - SONY HOLDINGS LIMITED VS KACHE LIMITED & 2 OTHERS',
+		},
+		{
+			code: 'SHL1.44',
+			description: 'SONY HOLDINGS LIMITED .VS. IGNITE FITNESS WESTAGE LIMITED & 4 OTHERS',
+		},
+		{
+			code: 'SHL1.45',
+			description:
+				'PROVISION OF LEGAL ADVICE ON THE SALE OF SONY HOLDINGS LIMITED OR WESTGATE MALL.',
+		},
+		{
+			code: 'SHL1.46',
+			description: 'MBARI YA GICHAMBA ASSOCIATION VS. SONY HOLDINGS LIMITED',
+		},
+		{
+			code: 'SHL1.47',
+			description:
+				'NBI L.R. NO. 1870/1/557 - WESTGATE SHOPPING MALL LEASE OF UNIT 1.13A FROM SONY HOLDINGS LIMITED TO DIAMOND TRUST BANK KENYA LIMITED - DELAY IN FIT-OUT',
+		},
+		{
+			code: 'SHL1.48',
+			description: 'FACILITY COMPLIANCE',
+		},
+		{
+			code: 'SHL1.49',
+			description: 'LEASE RENEWAL FOR RETIREMENT BENEFITS AUTHORITY (RBA)',
+		},
+		{
+			code: 'SHL1.5',
+			description:
+				'TERRORISM INSURANCE COVER FOR WESTGATE SHOPPING MALL (AIG INSURANCE COMPANY LTD)',
+		},
+		{
+			code: 'SHL1.50',
+			description:
+				'MILIMANI ELRC E426 OF 2023: RACHEL MURAYA VS. ASHLEYS LIMITED AND SONY HOLDINGS LIMITED',
+		},
+		{
+			code: 'SHL1.6',
+			description: 'THE REOPENING OF THE WESTGATE SHOPPING MALL',
+		},
+		{
+			code: 'SHL1.7',
+			description: 'SONY HOLDINGS LTD TAX',
+		},
+		{
+			code: 'SHL1.7/001',
+			description: 'SONY HOLDINGS LIMITED vs COMMISSIONER OF DOMESTIC TAXES ITA/E052/2020',
+		},
+		{
+			code: 'SHL1.8',
+			description: 'SONY HOLDINGS. L.R NO. 209/11458 INO ISMAIL RAHIMTULA TRUSTEES',
+		},
+		{
+			code: 'SHL1.9',
+			description: 'AN APPEAL AGAINST VALUE ADDED TAX (VAT) ASSESSMENT',
+		},
+		{
+			code: 'SHL2.1',
+			description: 'LEGAL SUPPORT SERVICES - SUNLAND HOLDINGS LTD & SUNNY PLAZA LTD',
+		},
+		{
+			code: 'SHL3.1',
+			description:
+				'SHALOM HOSPITAL LIMITED & ANOR VS. THE COUNTY GOVT OF MACHAKOS & 3 OTHERS',
+		},
+		{
+			code: 'SIC1.1',
+			description: 'GENERAL FILE',
+		},
+		{
+			code: 'SIC1.2',
+			description: 'REVIEW OF THE CONDITIONS OF PURCHASE  ',
+		},
+		{
+			code: 'SIE1.1',
+			description:
+				'ADVICE ON VALUE ADDED TAX (VAT) ON PROVISION OF SERVICES FOR AN ENERGY PROJECT',
+		},
+		{
+			code: 'SIE2.1',
+			description:
+				'LEGAL OPINION IN RELATION TO THE PROVISION OF ROBO-KYC SERVICES BY MASTERPIECE FUSION LIMITED.',
+		},
+		{
+			code: 'SIE2.2',
+			description:
+				'PROVISION OF LEGAL SERVICES TO SMILE IDENTITY EAST AFRICA LIMITED IN RELATION TO CONFIRMATION OF THE VARIOUS DOCUMENTS REQUIRED TO WORK IN VARIOUS JURISDICTIONS.',
+		},
+		{
+			code: 'SIH1.1',
+			description:
+				'GURCHARN SINGH SIHRA & OTHERS -VS- NAIROBI CITY COUNCIL: HC MISC. C APPL. JR NO 59 OF 2014',
+		},
+		{
+			code: 'SIH2.1',
+			description:
+				'KULWINDER S SIHRA/ KAMALJEET S. SIHRA & 2 OTHERS -VS- WYCLIFF AMWAYI: CASE NO. HAT 002 OF 2015 (HIV/AIDS TRIBUNAL, NAIROBI)',
+		},
+		{
+			code: 'SIH2.2',
+			description: 'ESTATE OF THE LATE JASWANT SINGH SIHRA',
+		},
+		{
+			code: 'SIH2.3',
+			description: 'WILL',
+		},
+		{
+			code: 'SIL1.1',
+			description: 'SPECTRE INTERNATIONAL LTD (GENERAL FILE)',
+		},
+		{
+			code: 'SIL1.2',
+			description: 'Spectra International Limited',
+		},
+		{
+			code: 'SIL1.3',
+			description: 'RESTRUCTURING OF LENNOX DEVELOPMENT LIMITED',
+		},
+		{
+			code: 'SIL1.4',
+			description: 'GENERAL CORPORATE ADVICE',
+		},
+		{
+			code: 'SIL2.1',
+			description:
+				'SPACE INVESTMENTS LIMITED VS COMMISSIONER OF INVESTIGATIONS & ENFORCEMENT',
+		},
+		{
+			code: 'SIN1.1',
+			description: 'RAIPLY LIMITED WINDING UP CAUSE NO 44 OF 1999',
+		},
+		{
+			code: 'SIN2.1',
+			description:
+				'RAVINDER SINGH BIJAI SINGH & ANOTHER VS TEJPAL SIGNG NAUL: HC WLC NO. 1278 OF 2013',
+		},
+		{
+			code: 'SIP1.1',
+			description: 'SINOPEC INTERNATIONAL PETROLEUM SERVICES LTD',
+		},
+		{
+			code: 'SIP1.2',
+			description: 'SINOPEC INTERNATIONAL PETROLEUM SERVICES LTD',
+		},
+		{
+			code: 'SIP1.3',
+			description:
+				'DANKI VENTURES LTD VS SINOPEC INTERNATIONAL PETROLEUM SERVICES LTD: HCCC NO. 158 OF 2014',
+		},
+		{
+			code: 'SIS1.1',
+			description: 'BREACH OF CONTRACT',
+		},
+		{
+			code: 'SIT1.1',
+			description:
+				'CHARLES SITUMA AMOS -VS- RACHEL AYUMA ARUNGA: AGREEMENT FOR SALE OF APARTMENT NO. AD03 LIKONI RIDGE ON L.R. NO. 209/12870',
+		},
+		{
+			code: 'SKA1.1',
+			description: 'DEBT COLLECTION',
+		},
+		{
+			code: 'SKA1.2',
+			description:
+				'THOMAS SKAPER - RENTAL OF MOTOR VEHICLE KBX 745A BY CARNATIONS PLANTS LIMITED',
+		},
+		{
+			code: 'SKL1.1',
+			description: 'COMPANY INCORPORATION',
+		},
+		{
+			code: 'SKL2.1',
+			description: 'SABIC KENYA LIMITED VS COCORICO INVESTMENT LIMITED',
+		},
+		{
+			code: 'SKL3.1',
+			description: 'REVIEW OF DISTRIBUTION AGREEMENT',
+		},
+		{
+			code: 'SKL4.1',
+			description: 'SOMOCHEM KENYA LIMITED VS.MAHESH DODHIA & OMESH DODHIA',
+		},
+		{
+			code: 'SKL4.10',
+			description: 'SOMOCHEM (KENYA) LIMITED VS. UNITY PAINTS LIMITED.',
+		},
+		{
+			code: 'SKL4.11',
+			description: 'SOMOCHEM (KENYA) LIMITED VS. ALANKAR MANUFACTURERS LIMITED',
+		},
+		{
+			code: 'SKL4.12',
+			description: 'SOMOCHEM KENYA LIMITED VS. OXYPLUS INTERNATIONAL COMPANY LIMITED.',
+		},
+		{
+			code: 'SKL4.13',
+			description: 'SOMOCHEM KENYA LIMITED VS. MEGH SINGH CUSHION MAKERS LIMITED',
+		},
+		{
+			code: 'SKL4.14',
+			description: 'SOMOCHEM (KENYA) LIMITED VS. FUSION LIMITED.',
+		},
+		{
+			code: 'SKL4.15',
+			description: 'SOMOCHEM (KENYA) LIMITED VS. MARIO HOLDINGS LIMITED',
+		},
+		{
+			code: 'SKL4.16',
+			description: 'Registration of the Sawa Tanks Trade mark',
+		},
+		{
+			code: 'SKL4.17',
+			description: 'SOMOCHEM (KENYA) LIMITED VS. RITEPACK LIMITED',
+		},
+		{
+			code: 'SKL4.18',
+			description:
+				'REGISTRATION OF GUARANTEE BETWEEN SOMOCHEM (KENYA) LIMITED & MR. YUSUF ESMAILJEE',
+		},
+		{
+			code: 'SKL4.19',
+			description: 'MAKADARA CR 2725 OF 2019 – REPUBLIC VS. JOSEPH MUI KIOKO',
+		},
+		{
+			code: 'SKL4.2',
+			description: 'SOMOCHEM KENYA LIMITED VS.RASHIK SHAH',
+		},
+		{
+			code: 'SKL4.20',
+			description: 'SOMOCHEM (KENYA) LIMITED VS. DETER INVESTMENTS LIMITED',
+		},
+		{
+			code: 'SKL4.21',
+			description: 'SOMOCHEM (KENYA) LIMITED VS. PLASPAK INDUSTRIES LIMITED',
+		},
+		{
+			code: 'SKL4.22',
+			description: 'SOMOCHEM (KENYA) LIMITED VS. NETRON INDUSTRIES LIMITED.',
+		},
+		{
+			code: 'SKL4.23',
+			description: 'SOMOCHEM (KENYA) LIMITED VS. ECOFRE PLASTICS LIMITED',
+		},
+		{
+			code: 'SKL4.24',
+			description: 'GENERAL FILE',
+		},
+		{
+			code: 'SKL4.25',
+			description: 'SOMOCHEM KENYA LIMITED VS. GALAXY PLASTICS LIMITED.',
+		},
+		{
+			code: 'SKL4.26',
+			description: 'SOMOCHEM (KENYA) LIMITED VS. ELITE INNOVATIONS',
+		},
+		{
+			code: 'SKL4.27',
+			description: 'SOMOCHEM KENYA LIMITED VS. ALPHA PLASTIC INDUSTRIES LIMITED.',
+		},
+		{
+			code: 'SKL4.3',
+			description: 'SOMOCHEM KENYA LIMITED VS.AFRICAN TRADE INSURANCE AGENCY',
+		},
+		{
+			code: 'SKL4.4',
+			description: 'SOMOCHEM (KENYA) LIMITED VS. MALPLAST INDUSTRIES LIMITED',
+		},
+		{
+			code: 'SKL4.5',
+			description: 'SOMOCHEM KENYA LIMITED VS. BLUE SKY INDUSTRIES LIMITED',
+		},
+		{
+			code: 'SKL4.6',
+			description:
+				'INSOLVENCY CAUSE NO. IP19 OF 2017 IN THE MATTER OF LIQUIDATION OF HI PLAST LIMITED',
+		},
+		{
+			code: 'SKL4.7',
+			description: 'SOMOCHEM KENYA LIMITED VS. KINPASH ENTERPRISES LIMITED',
+		},
+		{
+			code: 'SKL4.8',
+			description: 'DRAFTING A WAREHOUSE AGREEMENT',
+		},
+		{
+			code: 'SKL4.9',
+			description: 'SOMOCHEM (KENYA) LIMITED VS. MAIKAR QUALITY PRODUCTS.',
+		},
+		{
+			code: 'SKL5.1',
+			description:
+				'SETTLEMENT AGREEMENT BETWEEN: SOMOTEX (KENYA) LIMITED; PORTS CONVEYORS LIMITED AND STEPHEN OTIENO ONYANGO',
+		},
+		{
+			code: 'SKL5.2',
+			description: 'SOMOTEX (K) LIMITED VS. MULTIPLE SOLUTIONS LIMITED',
+		},
+		{
+			code: 'SKL5.3',
+			description: 'ACQUISITION OF CERTAIN ASSETS FROM ARL.',
+		},
+		{
+			code: 'SKL5.4',
+			description: 'TRADE MARK REGISTRATION',
+		},
+		{
+			code: 'SKL5.5',
+			description: 'UNDERTAKING TRADE MARK REGISTRATION OF THE SAWA TANKS BRAND',
+		},
+		{
+			code: 'SKL5.6',
+			description: 'DRAFTING TERMS AND CONDITIONS',
+		},
+		{
+			code: 'SKL5.7',
+			description: 'SOMOTEX (KENYA) LIMITED VS. RITZ TRADING LIMITED',
+		},
+		{
+			code: 'SKL5.8',
+			description: 'SOMOTEX (KENYA) LIMITED VS. DETER INVESTMENTS LIMITED',
+		},
+		{
+			code: 'SKL5.9',
+			description:
+				'CMCC CIVIL SUIT NO. E816 OF 2023 - NEWSPAPERS TRANSPORTERS LIMITED VS. SOMOTEX (K) LIMITED',
+		},
+		{
+			code: 'SLI1.1',
+			description:
+				'POTENTIAL CLAIM BY SANLAM LIFE INSURANCE LIMITED FOR THE RECOVERY OF FAILED INVESTMENTS.',
+		},
+		{
+			code: 'SLI1.2',
+			description:
+				'Matter Description Complaint by Sanlam Investments on alleged professional negligence and potential fraud by its former senior staff ',
+		},
+		{
+			code: 'SLI1.3',
+			description:
+				'MILIMANI CMCC NO.E8212 OF 2021: PORTMAN TRAVEL LIMITED VS. SANLAM GENERAL INSURANCE LTD.',
+		},
+		{
+			code: 'SLL1.1',
+			description: 'HCCC NO. 1638 OF 1999: SAMSON MWATHI NYUTU VS SAVINGS & LOAN (K) LTD',
+		},
+		{
+			code: 'SLL1.2',
+			description: 'ONYANCHA BWOMOTE ',
+		},
+		{
+			code: 'SMA1.1',
+			description:
+				"EMPLOYMENT ADVISORY-MUTUAL SEPARATION, SBS AFRICA LTD AND ROBERT BONIFACE MNG'ANYA ",
+		},
+		{
+			code: 'SMA2.1',
+			description: 'REGISTRATION OF THE MUSLIM WORLD LEAGUE TRADE MARK IN 10 CLASSES.',
+		},
+		{
+			code: 'SMK1.1',
+			description: 'STEPHEN MBUGUA KAMAU',
+		},
+		{
+			code: 'SML1.1',
+			description: 'SALT MANUFACTURERS LTD KENYA: CIVIL SUIT NO 381 OF 2012 (NAKURU)',
+		},
+		{
+			code: 'SML2.1',
+			description: 'SPECMANN LIMITED VS. GLOBE CORPORATION BV.',
+		},
+		{
+			code: 'SMP1.1',
+			description:
+				'KISUMU ELC CASE NO.130 OF 2017-SURJIT SINGH PANDHAL & ANOR VS-AFRICA BANKING CORPORATION',
+		},
+		{
+			code: 'SNM1.1',
+			description: 'HCCC NO. 16/2009 (OS) STELLA NDUKU MULANDI VS JAMES MUTUA MULINGE',
+		},
+		{
+			code: 'SNS1.1',
+			description:
+				'SOUTH NYANZA SUGAR COMPANY LTD VS M/S PORTS CONVEYORS LTD - RECOVERY OF KSHS. 20.6M',
+		},
+		{
+			code: 'SNS1.2',
+			description:
+				'SOUTH NYANZA SUGAR COMPANY LTD VS MEGA WHOLESALERS LTD: CLAIM OF KSHS. 140,070,104',
+		},
+		{
+			code: 'SNS1.3',
+			description:
+				'SOUTH NYANZA SUGAR COMPANY LTD -VS- LAKE VICTORIA SOUTH WATER SERVICES BOARD: TRESPASS ON LAND - L.R. NO. 16399',
+		},
+		{
+			code: 'SNS1.4',
+			description: 'SOUTH NYANZA SUGAR COMPANY LTD - TRADE MARK REGISTRATION',
+		},
+		{
+			code: 'SNS1.5',
+			description:
+				'CMCC NO.815 OF 2004 - ALBERT ORONDO TULI & MOSES ODHIAMBO VS. SOUTH NYANZA SUGAR COMPANY LTD.',
+		},
+		{
+			code: 'SOF1.1',
+			description: 'INCORPORATION OF A COMPANY',
+		},
+		{
+			code: 'SOF2.1',
+			description: 'SOFGEN LTD - SUMMARY DISMISSAL OF WILLIAM KIMARI',
+		},
+		{
+			code: 'SOG1.2',
+			description: 'POA GENERAL( SOMA OIL & GAS EXPLORATION LTD)',
+		},
+		{
+			code: 'SOL1.1',
+			description: 'COMPANY REGISTRATION',
+		},
+		{
+			code: 'SOR2.1',
+			description:
+				'MISC CIVIL CASE NO. 116 OF 2015 - MOHAMMED YUNIS SOROYA VS MOHAMMED YUSUF K SOROYA & ANOTHER',
+		},
+		{
+			code: 'SOS1.1',
+			description: 'WILSON SOSSION',
+		},
+		{
+			code: 'SOS1.2',
+			description:
+				'PSC & 4 OTHERS -VS- TRADE UNION CONGRESS OF KENYA & 2 OTHERS WITH 2 INTERESTED PARTIES: IN THE MATTER OF EMPLOYMENT AND LABOUR RELATIONS. PETITION NO. 62 OF 2015',
+		},
+		{
+			code: 'SOV1.1',
+			description: 'SOVEIGN GROUP LTD - ENGAGEMENT FOR LEGAL SERVICES',
+		},
+		{
+			code: 'SOV2.1',
+			description: 'RESERVATION OF NAME AND REGISTRATION OF NEW COMPANY',
+		},
+		{
+			code: 'SOV2.2',
+			description: 'PROJECT ALPHA',
+		},
+		{
+			code: 'SPI1.1',
+			description:
+				'L.R. NO. 209/565 MOI AVENUE NAIROBI LEASE BETWEEN SHAH & PATEL INDUSTRIES LIMITED & GREAT BODY GYM LTD',
+		},
+		{
+			code: 'SPI1.10',
+			description: 'LEASE BETWEEN SHAH & PATEL (INDUSTRIES) LIMITED AND SOUND PLUS',
+		},
+		{
+			code: 'SPI1.11',
+			description: 'GENERAL FILE.',
+		},
+		{
+			code: 'SPI1.12',
+			description: 'NOTIFY LOGISTICS LIMITED',
+		},
+		{
+			code: 'SPI1.13',
+			description: 'CONVERSION OF VARIOUS TITLES ON ARDHISASA',
+		},
+		{
+			code: 'SPI1.2',
+			description:
+				'SURRENDER OF LEASE OVER LR. NO. 209/565 NAIROBI-OUTSTANDING DEBT WITH RESPECT TO SURRENDER OF LEASE OVER LR. NO. 209/565 NAIROBI',
+		},
+		{
+			code: 'SPI1.3',
+			description: 'SHAH & PATEL INDUSTRIES LIMITED VS NATION SACCO SOCIETY',
+		},
+		{
+			code: 'SPI1.4',
+			description:
+				'LEASE BETWEEN SHAH & PATEL (INDUSTRIES) LTD AND NAIROBI JAVA HOUSE LIMITED',
+		},
+		{
+			code: 'SPI1.5',
+			description: 'LEASE BETWEEN SHAH & PATEL (INDUSTRIES) LIMITED & JAMES ELDER',
+		},
+		{
+			code: 'SPI1.6',
+			description:
+				'SHAH & PATEL (INDUSTRIES) LIMITED VS. MJ INVESTMENTS LIMITED T/A GIGIRI HOMESTEAD',
+		},
+		{
+			code: 'SPI1.7',
+			description:
+				'LEASE BETWEEN ELLIOTS (KENYA) LIMITED & KAMCO STAINLESS STEEL WORKS LIMITED',
+		},
+		{
+			code: 'SPI1.8',
+			description:
+				'SHAH & PATEL (INDUSTRIES) LIMITED VS.ALI SHEIKH HASSAN AND DEKA KHALIF ALI',
+		},
+		{
+			code: 'SPI1.9',
+			description: 'SHAH & PATEL (INDUSTRIES) LIMITED VS.ASPEN LOGISTICS LIMITED',
+		},
+		{
+			code: 'SPL1.1',
+			description:
+				'SCORPION PROPERTIES LTD & NAIROBI CITY COUNTY -VS- BOMAS MOTOR MART: HCCC NO. 539 OF 2015',
+		},
+		{
+			code: 'SPL2.1',
+			description:
+				'DISPUTE BETWEEN SAIF PROPERTIES LIMITED & HUSSEIN, HIBO AND ASSOCIATES LIMITED',
+		},
+		{
+			code: 'SSA1.1',
+			description: 'SIGHT SAVERS',
+		},
+		{
+			code: 'SSA1.2',
+			description: 'RUTH KAMARIA',
+		},
+		{
+			code: 'SSC1.1',
+			description: 'SEA SUBMARINE COMMUNICATION LTD',
+		},
+		{
+			code: 'SSD1.1',
+			description: 'REVIEW OF SSDS CONSTITUTIONAL DOCUMENT',
+		},
+		{
+			code: 'SSL1.1',
+			description: 'SOJANMI SPRINGFIELDS LTD -  BANKING FACILITY',
+		},
+		{
+			code: 'SSL2.1',
+			description:
+				'AGRICULTURAL DEVELOPMENT CORPORATION -VS- SUPPLIES & SERVICES LTD (CLAIM)',
+		},
+		{
+			code: 'SSL3.1',
+			description: 'PMCC NO. 5759 OF 2004 GRAND SPORTS HOUSE',
+		},
+		{
+			code: 'SSL3.2',
+			description: 'HCCC NO. 25 OF 2013 ROYAL CARRIERS LIMITED',
+		},
+		{
+			code: 'SSL3.3',
+			description: 'CMCC NO.8512 OF 2004:ALBERT ORONDO TULI VS.SONY SUGAR COMPANY LIMITED',
+		},
+		{
+			code: 'SSM.1',
+			description: 'POTENTIAL CLAIM AGAINST STUDIO SSAM AND TRIBAL GALLERY.',
+		},
+		{
+			code: 'SSM1.1',
+			description: 'POTENTIAL CLAIM AGAINST STUDIO SSAM AND TRIBAL GALLERY.',
+		},
+		{
+			code: 'SSV1.1',
+			description: 'SEAMETAL SAN VE DIS TIC LTD VS. WELRODS LIMITED KENYA',
+		},
+		{
+			code: 'STA1.1',
+			description: 'STANBIC KENYA LIMITED',
+		},
+		{
+			code: 'STA1.2',
+			description:
+				'HCCC NO.19 OF 2022: PAN AFRICA LOGISTICS LIMITED VS. STANBIC BANK LIMITED',
+		},
+		{
+			code: 'STC1.1',
+			description: 'SAVE THE CHILDREN ADMINISTRATION & HUMAN RESOURCE MANUAL',
+		},
+		{
+			code: 'STG1.1',
+			description: 'GENERAL CORPORATE ADVICE.',
+		},
+		{
+			code: 'STL1.1',
+			description:
+				'SHAYONA TIMBER LTD -VS- ZABLON ESILABA OLUKOYE: SPMCC NO 26 OF 2015 (ELDAMA RAVINE)',
+		},
+		{
+			code: 'STR1.1',
+			description: 'MICHAEL JOHN STRANO',
+		},
+		{
+			code: 'SUE1.1',
+			description: 'LEGAL ADVISE',
+		},
+		{
+			code: 'SUE1.2',
+			description: 'UNDERTAKING LIMITED LEGAL DILIGENCE ON MILLY FRUITS PROCESSORS LIMITED.',
+		},
+		{
+			code: 'SUE1.3',
+			description: 'DUE DILIGENCE EXERCISE ON EQUATOR KENYA LIMITED',
+		},
+		{
+			code: 'SVL1.1',
+			description: 'SPRING VALLEY LTD (RASIK KANTARIA)',
+		},
+		{
+			code: 'SVO1.1',
+			description: 'VINOD SHAH & OTHERS VS NAKURU INDUSTRIES LTD.',
+		},
+		{
+			code: 'SWH1.1',
+			description: 'SAFEWAY HYPERMARKETS LTD -VS- THE NATIONAL LAND COMMISSION',
+		},
+		{
+			code: 'TAC1.1',
+			description: 'TAUSI ASSURANCE COMPANY LIMITED',
+		},
+		{
+			code: 'TAC1.2',
+			description:
+				'HCCC NO. 242 OF 2017 : DILESH SOMCHAND BID VS RASIKLAL KANTARIA & 4 OTHERS',
+		},
+		{
+			code: 'TAL1.1',
+			description: 'YATIN VINUBHAI KOTAK VS TUCHA ADVENTURES LTS & ANOTHER',
+		},
+		{
+			code: 'TAN1.1',
+			description: 'PROVISION OF LEGAL SERVICES TO TANGIERS INTERNATIONAL LIMITED (MALTA)',
+		},
+		{
+			code: 'TAN2.1',
+			description:
+				'SALE AGREEMENT FROM DHRUVESH NARENDRA TANK & PUJA DHRUVESH TANK TO WINNIE MITULLAH',
+		},
+		{
+			code: 'TAO1.1',
+			description: 'YAMKO DAMKO INDUSTRIES VS KALKA FLOWERS',
+		},
+		{
+			code: 'TAQ1.1',
+			description:
+				'REPUBLIC VS TANG QIYU: CR. C NO. 554 OF 2013 (FILE WITHDRAWN ON 28/6/2013 BY SOM)',
+		},
+		{
+			code: 'TAS1.1',
+			description: 'TECHNOLOGY ASSOCIATES GENERAL FILE',
+		},
+		{
+			code: 'TAY1.1',
+			description: 'Regulatory Due Diligence Exercise',
+		},
+		{
+			code: 'TBA1.1',
+			description: 'TAIBJEE & BHALLA ADVOCATES VS HARISH KANABAR & KIRIT KANABAR',
+		},
+		{
+			code: 'TBH1.1',
+			description: 'THE BOMA HOTELS',
+		},
+		{
+			code: 'TBL1.1',
+			description: 'TRUST BANK LTD -VS- SHIMMERS PLAZA',
+		},
+		{
+			code: 'TBL1.2',
+			description:
+				'CIVIL APPN. NO. 106 OF 2013: TRUST BANK LTD VS TENET ENTERPRISES LTD & 3 OTHERS',
+		},
+		{
+			code: 'TBL2.1',
+			description: 'JARED BENSON KANGWANA & 2 OTHERS VS. TRANSNATIONAL BANK LIMITED.',
+		},
+		{
+			code: 'TBL2.2',
+			description: 'SALE OF SHARES IN TRANSNATIONAL BANK LIMITED',
+		},
+		{
+			code: 'TCC1.1',
+			description:
+				'TRANSGLOBAL CARGO CENTRE LTD & MEDIA COUNCIL VS ADDY FORWARDERS SERVICES LTD',
+		},
+		{
+			code: 'TCC1.2',
+			description:
+				'SAFARICOM LTD  VS TRANSGLOBAL CARGO CENTRE LTD/EMIRATES AIRLINE: HCCC NO. 62 OF 2014',
+		},
+		{
+			code: 'TCC1.3',
+			description:
+				'HC COMM NO. 5 OF 2016 LUFTHANSA CARGO AKTIENGESELLSCHAFT VS TRANSGLOBAL CARGO CENTRE LTD',
+		},
+		{
+			code: 'TCC2.1',
+			description: 'SALE AND PURCHASE OF TITLE NO. KJD/KAPUTIEI NORTH/42436',
+		},
+		{
+			code: 'TCI1.1',
+			description: 'TWIGA CHEMICAL IND LTD',
+		},
+		{
+			code: 'TCL1.1',
+			description: 'TATU CITY LTD AND KOFINAF COMPANY LTD',
+		},
+		{
+			code: 'TCM1.1',
+			description:
+				'THIKA COFFEE MILLS LTD -VS- COFFEE BOARD OF KENYA & 2 OTHERS: HCCC NO. 1068 OF 1998',
+		},
+		{
+			code: 'TCM1.2',
+			description:
+				'CIVIL APP.NO.242 OF 2008 (UR 155/2008)-THIKA COFFEE MILLS LTD VS. MIKIKI FARMERS CO-OPERATIVE SOCIETY & ANOR',
+		},
+		{
+			code: 'TCM2.1',
+			description:
+				"LEGAL OPINION ON THE PROS' AND CONS' OF JOINING THE CATASTRE VIS A VIS AND RIGHTS UNDER THE LAND LEASE.",
+		},
+		{
+			code: 'TCM2.10',
+			description:
+				'ADVISING IN RELATION TO THE APPROVALS REQUIRED IN RELATION TO THE COMMISSIONING OF A 10MW SOLAR POWER PLANT IN THE MAGADI CONCESSION LAND.',
+		},
+		{
+			code: 'TCM2.11',
+			description:
+				'EXTENSION OF LEAE OVER GRANT LAND REFERENCE NUMBER 2836, TITLE NO.I.R.3076.',
+		},
+		{
+			code: 'TCM2.12',
+			description:
+				'JUDICIAL REVIEW APPLICATION E004 OF 2023 | TATA CHEMICALS MAGADI LIMITED V. COUNTY GOVERNMENT OF KAJIADO',
+		},
+		{
+			code: 'TCM2.2',
+			description:
+				'ADVISING ON THE MAGADI  SODA FOUNDATION AND THE COMMUNITY DEVELOPMENT AGREEMENT.',
+		},
+		{
+			code: 'TCM2.3',
+			description: 'ADVISING ON CONSULTATION WITH MINISTRY OF MINING.',
+		},
+		{
+			code: 'TCM2.3/001',
+			description:
+				'PETITION NO. 385 OF 2019 PETER REMPEYIAN PARSALOI & 3 OTHERS-VS- TATA CHEMICALS MAGADI LIMITED & 3 OTHERS',
+		},
+		{
+			code: 'TCM2.4',
+			description: 'ADVISING IN RELATION TO THE DISPUTE ON CESS/ROYALTY PAYMENTS',
+		},
+		{
+			code: 'TCM2.5',
+			description:
+				'TATA CHEMICALS MAGADI LIMITED VS. COUNTY GOVERNMENT OF KAJIADO AND 2 OTHERS.',
+		},
+		{
+			code: 'TCM2.6',
+			description: 'REVIEW OF THE KAJIADO COUNTY FINANCE BILL  2019-2020',
+		},
+		{
+			code: 'TCM2.7',
+			description:
+				'PROVISION OF ADVICE ON DEMAND ON OUTSTANDING RATES BY THE COUNTY GOVERNMENT OF KAJIADO.',
+		},
+		{
+			code: 'TCM2.8',
+			description:
+				'PROVISION OF ADVICE ON LICENSING OF ECOTOURISM SERVICES TO A THIRD PARTY.',
+		},
+		{
+			code: 'TCM2.9',
+			description:
+				'KAJIADO ELC. PETITION NO. E003 OF 2021. HON. PETER OLE TIRISHE & 2 OTHERS VS. TATA CHEMICALS MAGADI LIMITED & OTHERS.',
+		},
+		{
+			code: 'TEA1.1',
+			description: 'TEAM TWIGA MATTERS',
+		},
+		{
+			code: 'TEJ1.1',
+			description: 'TEJPAL SINGH & ANOTHER',
+		},
+		{
+			code: 'TEL1.1',
+			description: 'TAFUNA ENTERPRISES LTD',
+		},
+		{
+			code: 'TEL2.1',
+			description: 'REVIEW OF JOINT VENTURE AGREEMENT WITH SOCIAL KENYA LIMITED',
+		},
+		{
+			code: 'TEM1.1',
+			description: 'TEMPLARS LEGAL OPINION ON SYNDICATION OF DATE AND COMPENSATION LAW',
+		},
+		{
+			code: 'TES0075.1',
+			description: 'TEST MATTER FOR WORKSITE',
+		},
+		{
+			code: 'TES0075.3',
+			description: 'WSDSADAAFASFAFASFASFAS',
+		},
+		{
+			code: 'TES0075.4',
+			description: 'IMANAGE TEST',
+		},
+		{
+			code: 'TES1.1',
+			description:
+				'TENDER FOR SUPPLY INSTALLATION AND COMMISSIONING OF MAINLINE METERING SYSTEM',
+		},
+		{
+			code: 'TFC1.1',
+			description: 'Thabiti Finance Company (K) Ltd',
+		},
+		{
+			code: 'TFC2.1',
+			description:
+				'HIGH COURT PETITION NO. 495 OF 2016 GODFREY MUSAINA VS TOURISM FINANCE CORPORATION & 7 OTHERS',
+		},
+		{
+			code: 'TFC2.2',
+			description:
+				'MALINDI CIVIL CASE NO. 31 OF 2016: KIPINI SWAHILI ECO-LODGES LIMITED VS TOURISM FINANCE CORPORATION',
+		},
+		{
+			code: 'TFL1.1',
+			description: 'RMCC NO.EJ.385 OF 1985:THABITI FINANCE CO VS. PETER MWAMBA',
+		},
+		{
+			code: 'TGA1.1',
+			description:
+				'THE GATEWAY LAND REF NO. 209/6875, KILELESHWA. SALE OF APARTMENT NO. B2-1 (SEE NC/CONV/5035).',
+		},
+		{
+			code: 'TGL1.1',
+			description: 'THE GROVE LIMITED CORRESPONDENCE WITH RUNDA ASSOCIATION PRESS',
+		},
+		{
+			code: 'TGL1.2',
+			description:
+				'THE RUNDA RESIDENTS ASSOCIATION VS DIRECTOR GENERAL NEMA AND THE GROVE TRIBUNAL APPEAL NO. 143 OF 2015- APPEAL ON DEVELOPMENT LICENCE ISSUED BY NEMA',
+		},
+		{
+			code: 'TGL1.2/001',
+			description:
+				'CIVIL APPEAL NO. 353 OF 2018 THE GROVE LIMITED VS. THE RUNDA ASSOCIATION AND THHE DIRECTOR GENERAL NEMA',
+		},
+		{
+			code: 'TGL1.2/002',
+			description:
+				'ELC CASE NO. 50 OF 2016 THE RUNDA ASSOCIATION VS THE DIRECTOR GENERAL NEMA AND THE GROVE LIMITED',
+		},
+		{
+			code: 'TGL1.3',
+			description:
+				'CANCELLATION OF APPROVALS ON PLOT NO. LR. NO. 29173,7785/345 AND 7785/325-RUNDA',
+		},
+		{
+			code: 'THA1.1',
+			description:
+				'MOSES NJOROGE THARA & WINFRED MWENDIA PURCHASE OF VILLA NO. 10 LANTANA GALU BEACH ON KWALE /GALU/KINONDO',
+		},
+		{
+			code: 'THA1.2',
+			description:
+				'MOSES NJOROGE THARA LAND PLOTS: L.R NO 12715/581 & L.R. NO. 12715/585 MAVOKO SUB-COUNTY',
+		},
+		{
+			code: 'THA1.3',
+			description:
+				'MOMBASA CIVIL APPLICATION E094 OF 2022: MOSES NJOROGE THARA & ANOR VS. ACTAE DEVELOPMENT LTD & ANOR',
+		},
+		{
+			code: 'THA2.1',
+			description: 'MOSES THARA',
+		},
+		{
+			code: 'THA3.1',
+			description: 'SALIM THARANI- SEALING OF FOREIGN GRANTS',
+		},
+		{
+			code: 'THH1.1',
+			description: 'THE HERON HOTEL VS NATION MEDIA',
+		},
+		{
+			code: 'THK1.1',
+			description:
+				'ADVISING ON THE REGULATORY LICENCES AND TAX ISSUES IN RELATION TO THE PROVISION OF CARDIOLOGY SERVICES.',
+		},
+		{
+			code: 'THK1.2',
+			description:
+				'REVIEWING THE COMPANY’S TERMS OF USE AND PRIVACY POLICY TO ENSURE COMPLIANCE WITH THE DATA PROTECTION ACT AND THE REGULATIONS THERE UNDER',
+		},
+		{
+			code: 'THL1.1',
+			description: 'COMPANY INCORPORATION TRANSRIFT HIGHLANDS ENERGY LIMITED',
+		},
+		{
+			code: 'THL1.2',
+			description:
+				'ADVISING ON THE SETTING UP AND OPERATIONALISATION OF A CRUDE OIL REFINERY IN KENYA.',
+		},
+		{
+			code: 'THO1.1',
+			description: 'AN ARBITRATION BETWEEN ANSTASIOS D.THOMAS & CMC AVIATION',
+		},
+		{
+			code: 'THU1.1',
+			description: 'IN THE MATTER OF ESTATE OF THE LATE FRANCIS MURIUKI THURANIRA (DCD)',
+		},
+		{
+			code: 'THU2.1',
+			description:
+				'SUCCESSION CAUSE NO. 2221 OF 2013 : IN THE MATTER OF THE ESTATE OF TERESIA WANJIRU THUO',
+		},
+		{
+			code: 'TIL2.1',
+			description:
+				'THE GOOD WATER COMPANY LIMITED VS TRYSTAR INVESTMENTS & ANOR CMCC 333/2017',
+		},
+		{
+			code: 'TIL2.2',
+			description:
+				'BRAND IMPORTS (AFRICA) LIMITED VS TRYSTAR INVESTMENTS LIMITED & ANOR CMCC 189/2017',
+		},
+		{
+			code: 'TIT1.1',
+			description: 'KIJIJI MANAGEMENT LIMITED VS KADU TITI CMCC NO 999 OF 2013',
+		},
+		{
+			code: 'TKL1.1',
+			description: 'TELKOM KENYA REVIEW OF CASES',
+		},
+		{
+			code: 'TKL1.10',
+			description: 'TELKOM KENYA LTD & 11 OTHERS -VS- JOHN OCHANDA & 996 OTHERS',
+		},
+		{
+			code: 'TKL1.11',
+			description: 'TELKOM KENYA LTD -VS- ANDREW MUGA: HCCC NO. 811 OF 1992',
+		},
+		{
+			code: 'TKL1.12',
+			description: 'TELKOM KENYA LTD -VS- SUDI ABDALLA: HCCC NO. 412 OF 1992',
+		},
+		{
+			code: 'TKL1.13',
+			description: 'TELKOM KENYA LTD -VS- JOHN OCHANDA & OTHERS: HCCC NO: 545 OF 2011',
+		},
+		{
+			code: 'TKL1.14',
+			description:
+				'TELKOM KENYA LTD -VS- MUGANDA WASULWA T/A KEYSIAN AUCTIONEERS: HC MISC. APPL. NO 1160 OF 2013',
+		},
+		{
+			code: 'TKL1.15',
+			description:
+				'TELKOM KENYA LTD/ ATTORNEY GENERAL -VS- MICHAEL OKEYO & 3 OTHERS: INDUSTRIAL CAUSE NO: 654 OF 2014 (NBO)',
+		},
+		{
+			code: 'TKL1.16',
+			description:
+				'TELKOM KENYA LTD -VS- JOHN OCHANDA & 996 OTHERS: SUPREME COURT NO. 17 OF 2014',
+		},
+		{
+			code: 'TKL1.17',
+			description:
+				'TELKOM KENYA LTD -VS- JOHN OCHANDA & 996 OTHERS: CIVIL APPEAL NO. 207 OF 2012',
+		},
+		{
+			code: 'TKL1.18',
+			description:
+				'TELKOM KENYA LTD -VS- JOHN OCHANDA & 996 OTHERS: SUPREME COURT NO. 24 OF 2013',
+		},
+		{
+			code: 'TKL1.19',
+			description:
+				'TELKOM KENYA LTD -VS- MICHAEL AKEYO & OTHERS: HCCC NO. 216, 219 & 255 OF 2007',
+		},
+		{
+			code: 'TKL1.2',
+			description: 'AN AGREEMENT BETWEEN TELKOM KENYA LTD & EATON TOWERS KENYA LTD',
+		},
+		{
+			code: 'TKL1.20',
+			description:
+				'TELKOM KENYA LTD & ANOTHER -VS- MICHAEL AKEYO & 3 OTHERS: INDUSTRIAL CAUSE NO. 654 OF 2014 (NBO)',
+		},
+		{
+			code: 'TKL1.21',
+			description: 'TELKOM KENYA LTD -VS- BILLY OMONDI: ELR CAUSE NO. 1908 OF 2015',
+		},
+		{
+			code: 'TKL1.22',
+			description: 'TELKOM KENYA LTD -VS- CHARLES GITAU: ELR CAUSE NO. 1907 OF 2015',
+		},
+		{
+			code: 'TKL1.23',
+			description: 'TELKOM KENYA LTD -VS- ROBERT MATANO: ELR CAUSE NO. 1912 OF 2015',
+		},
+		{
+			code: 'TKL1.24',
+			description: 'TELKOM KENYA LTD -VS- SAINA MBAYA: ELR CAUSE NO. 1909 OF 2015',
+		},
+		{
+			code: 'TKL1.25',
+			description:
+				'COMMUNICATION WORKERS UNION -VS- TELKOM KENYA LTD: E & LRC CAUSE NO 151 OF 2008',
+		},
+		{
+			code: 'TKL1.27',
+			description:
+				'STEPHANIE WANJIKU MBURU -VS- TELKOM KENYA LTD: E & LRC CAUSE NO 2174 OF 2015',
+		},
+		{
+			code: 'TKL1.28',
+			description:
+				'E & LRC CAUSE NO 2287 OF 2015: COMMUNICATION WORKERS UNION -VS- TELKOM KENYA LTD',
+		},
+		{
+			code: 'TKL1.29',
+			description: 'ELRC NO. 454 OF 2016-MOSES W KINUTHIA',
+		},
+		{
+			code: 'TKL1.3',
+			description: 'TELKOM KENYA LTD (SOFTWARE DEVELOPMENT AGREEMENT )',
+		},
+		{
+			code: 'TKL1.30',
+			description: 'ELRC NO. 452 OF 2016 ANTHONY MWANGI VS TELKOM KENYA LIMITED',
+		},
+		{
+			code: 'TKL1.31',
+			description: 'ELR CAUSE NO. 464 OF 2016-GIDEON NJOROGE KURIA VS TELKOM (K) LIMITED',
+		},
+		{
+			code: 'TKL1.32',
+			description: 'POTENTIAL CLAIM BY TELKOM (K) LTD RETIREES AND FORMER EMPLOYEES',
+		},
+		{
+			code: 'TKL1.33',
+			description: 'CLAIM FOR VOLUNTARY EARLY RETIREMENT PACKAGE',
+		},
+		{
+			code: 'TKL1.34',
+			description: 'EMPLOYEES CLAIMING NON-JOINDER IN COURT CASES',
+		},
+		{
+			code: 'TKL1.37/001',
+			description:
+				'CIVIL APPLICATION NO. 47 OF 2019 THE BOARD OF TRUSTEES TELEPOSTA PENSION SCHEME VS. THE RETIREMENT BENEFITS APPEAL TRIBUNAL AND OTHERS.',
+		},
+		{
+			code: 'TKL1.38',
+			description: 'JOHN O OCHANDA-CC APPEAL NO 237 OF 2011',
+		},
+		{
+			code: 'TKL1.39',
+			description: 'MANAGEMENT OF NATIONAL OPTIC FIBRE BACKBONE AGREEMENT (NOFBI)',
+		},
+		{
+			code: 'TKL1.4',
+			description:
+				'GEORGE OCHIENG OWITI & 2 OTHERS VS TELKOM KENYA LTD: INDUSTRIAL CAUSE NO. 561 OF 2014',
+		},
+		{
+			code: 'TKL1.40',
+			description: "UNLAWFUL TERMINATION OF LAURA MBURU'S CONTRACT OF EMPLOYMENT",
+		},
+		{
+			code: 'TKL1.41',
+			description:
+				'PETITION NO. 381 OF 2017: JOYCE TANUI &  23 OTHERS VS TELKOM KENYA LTD & 3 OTHERS',
+		},
+		{
+			code: 'TKL1.42',
+			description:
+				'COLLECTIVE BARGAINING AGREEMENT ON TERMS & CONDITIONS OF SERVICE FOR UNIONISABLE EMPLOYEES BETWEEN COMMUNICATION WORKERS UNION OF KENYA AND TELKOM KENYA LIMITED',
+		},
+		{
+			code: 'TKL1.43',
+			description: 'INTENDED REDUNDANCY EXERCISE AT TELKOM KENYA',
+		},
+		{
+			code: 'TKL1.45',
+			description:
+				'DEMAND FOR SETTLEMENT OF THEN (10) FORMER EMPLOYEES OF TELKOM IN HCCC NO.216 OF 2007 AS CONSOLIDATED WITH HCCC NO.219 & 255 OF 2007:JOHN OCHANDA VS.TELKOM KENYA LIMITED.',
+		},
+		{
+			code: 'TKL1.46',
+			description:
+				'E&LRC NAIROBI NO. 507 OF 2019 VIRGINIA WANGUI WARUINGI VS. TELKOM KENYA LIMITED',
+		},
+		{
+			code: 'TKL1.47',
+			description: 'MR. JOSEPH CHENGO VS. TELKOM KENYA LIMITED.',
+		},
+		{
+			code: 'TKL1.48',
+			description: 'ELRC CAUSE NO.614 OF 2019;KENNETH AIKO OJORO-VS-TELKOM KENYA LIMITED',
+		},
+		{
+			code: 'TKL1.49',
+			description:
+				'DISPUTE WITH COAST TERMINAL EAST AFRICA LIMITED OVER MOMBASA TELEPHONE HOUSE',
+		},
+		{
+			code: 'TKL1.5',
+			description: 'COMMUNICATION WORKERS UNION VS TELKOM',
+		},
+		{
+			code: 'TKL1.51',
+			description: 'INVESTIGATION BY EACC OF TELKOM KENYA PRIVATIZATION',
+		},
+		{
+			code: 'TKL1.52',
+			description: 'GENERAL ADVICE FILE',
+		},
+		{
+			code: 'TKL1.54',
+			description: 'LEGAL OPINION - CONFIDENTIAL AND PRIVILEGED.',
+		},
+		{
+			code: 'TKL1.55',
+			description:
+				'HCC ATI-CORRUPTION AND ECONOMIC CRIMES MISCELLANEOUS APPLICATION NO. 07 OF 2020  ETHICS AND ANTI-CORRUPTION COMMISSION -VS- STANDARD CHARTERED BANK OF KENYA LTD, TELKOM KENYA LTD & 3 OTHERS ',
+		},
+		{
+			code: 'TKL1.56',
+			description: 'REVIEW OF SAMPLE MUTUAL SEPARATION AGREEMENT',
+		},
+		{
+			code: 'TKL1.57',
+			description: 'LEGAL OPINION ON MADARAKA LIFE TARIFF',
+		},
+		{
+			code: 'TKL1.58',
+			description:
+				'CIVIL APPEAL NO.E120 OF 2021: SELESTINE MBOSS & OTHERS VS. TELKOM KENYA LIMITED',
+		},
+		{
+			code: 'TKL1.59',
+			description:
+				'CONSTITUTIONAL PETITION NO.E455 OF 2021: PHILIP KAKAI VS. TELKOM KENYA LIMITED',
+		},
+		{
+			code: 'TKL1.6',
+			description: 'KILEMBE COPPER SMELTER VS TELKOM KENYA LTD',
+		},
+		{
+			code: 'TKL1.60',
+			description:
+				'CONSTITUTIONAL PETITION BY TELKOM KENYA LIMITED AGAINST THE MINISTRY OF SPORTS, CULTURE AND HERITAGE & 2 OTHERS',
+		},
+		{
+			code: 'TKL1.61',
+			description:
+				'IN THE COMMUNICATIONS AND MULTI MEDIA APPEALSTRIBUNAL APPEAL NO. 003 OF 2021: SAFARICOM PLC  VS COMMUNICATIONS AUTHORITY & TELKOM KENYA LIMITED.',
+		},
+		{
+			code: 'TKL1.62',
+			description: 'MOMBASA CIVIL SUIT E085 OF 2022: EACC VS. TEKLOM KENYA LIMITED & OTHERS.',
+		},
+		{
+			code: 'TKL1.63',
+			description: 'EACC INVESTIGATIONS INTO THE TRANSFER OF SHARES IN TELKOM IN 2022',
+		},
+		{
+			code: 'TKL1.7',
+			description: 'TELKOM KENYA VS JOHN NGANGA WARUI',
+		},
+		{
+			code: 'TKL1.8',
+			description: 'TELKOM KENYA LTD -VS- FRANCIS W.NGOKONYO: HCCC NO. 357 OF 1992',
+		},
+		{
+			code: 'TKL1.9',
+			description:
+				'TELKOM KENYA LTD- CONFIRMATION LETTER OF RETAINING LEGAL WORK RELATED TO ORANGE MONEY',
+		},
+		{
+			code: 'TKL3.1',
+			description: 'TELKOM KENYA LIMITED',
+		},
+		{
+			code: 'TKL4.1',
+			description: 'PROFESSIONAL UNDERTAKING',
+		},
+		{
+			code: 'TKL5.1',
+			description: 'DODI AUTOTECH (K) LIMITED VS TOYOTA KENYA LIMITED',
+		},
+		{
+			code: 'TKL5.2',
+			description: 'MBUKINYA SUCCESS (K) LIMITED VS TOYOTA KENYA LIMITED',
+		},
+		{
+			code: 'TKL5.2/001',
+			description:
+				'HCCC NO. E211 OF 2019 - MBUKINYA SUCCESS (KENYA) LIMITED & ANOR VS. TOYOTA KENYA LIMITED & OTHERS.',
+		},
+		{
+			code: 'TKL5.3',
+			description: 'BEAUTY WHOLESALE (K) LIMITED VS. TOYOTA KENYA LIMITED',
+		},
+		{
+			code: 'TKL5.4',
+			description:
+				'HCCC NO. 231 OF 2017 – MARTIN MWANGI NJOKI & 10 OTHERS VS. TOYOTA KENYA LIMITED & 3 OTHERS',
+		},
+		{
+			code: 'TKL5.5',
+			description: 'TOYOTA KENYA LIMITED VS.ANTI-COUNTERFEIT AGENCY',
+		},
+		{
+			code: 'TKL5.6',
+			description:
+				'PETITION NO. 455 OF 2018 CONSUMER FEDERATION OF KENYA VS. TOYOTA KENYA LIMITED & 4 OTHERS',
+		},
+		{
+			code: 'TKL5.7',
+			description: 'Toyota Kenya Limited vs. Vehicle & Equipment Leasing Ltd',
+		},
+		{
+			code: 'TKL5.8',
+			description: 'Toyota Kenya Limited vs. Mohamed Hemed',
+		},
+		{
+			code: 'TMI1.1',
+			description: 'REVIEW OF A SUBSCRIPTION AGREEMENT AND A BUSINESS TRANSFER AGREEMENT',
+		},
+		{
+			code: 'TMI1.2',
+			description: 'DUE DILIGENCE ON ECOBODAA BIKES',
+		},
+		{
+			code: 'TMI1.3',
+			description:
+				'PROVISION OF LEGAL SERVICES TO TMI ASSOCIATES WITH RESPECT TO THE RECOVERY OF A DEBT OF APPROXIMATELY USD 765,000 OWED TO TATSUMI SHOKAI BY KENFREIGHT GROUP.',
+		},
+		{
+			code: 'TMI1.4',
+			description:
+				'DISPUTE BETWEEN SUMITOMO MITSUI CONSTRUCTION CO. LTD & MWAJINJE SAIDI LEWA',
+		},
+		{
+			code: 'TML1.1',
+			description: 'DISMISSAL FROM EMPLOYMENT.',
+		},
+		{
+			code: 'TMM1.1',
+			description:
+				'CIVIL SUIT NO. 302 OF 2020 MARKED HOLDINGS LIMITED .VS. ENG. GREGORY KIBUE, TIMOTHY',
+		},
+		{
+			code: 'TMP1',
+			description:
+				'MISC APP NO. ARB 001 OF 2020: CIVICOM LIMITED VS. FUJI ELECTRIC COMPANY LIMITED & ANOTHER.',
+		},
+		{
+			code: 'TMP2',
+			description: 'IN THE MATTER OF THE ESTATE OF DEDI ODHIAMBO MAGANGA',
+		},
+		{
+			code: 'TMP4',
+			description: 'HCCC NO.189 OF 2015: KENNEDY NYAUNDI VS. TREVY JAMES OYOMBA.',
+		},
+		{
+			code: 'TMP5',
+			description:
+				'OBJECTION DECISION TO LEGACY ASSESSMENT ORDER OF KSHS. 24,000 FOR ALLIA HOLDINGS LIMITED',
+		},
+		{
+			code: 'TMT1.1',
+			description:
+				'E&LRC NO. 141 OF 2019 EZEKIEL METEINE KARINO VS. THE MAA TRUST & OLARE OROK CONSERVANCY TRUST',
+		},
+		{
+			code: 'TMT1.2',
+			description: 'UNFAIR/UNLAWFUL TERMINATION OF CONTRACT OF SAMUEL OCHIENG',
+		},
+		{
+			code: 'TMT1.3',
+			description: 'EMPLOYMENT DISPUTE BETWEEN ERIC ADUMA VUHASIO & THE MAA TRUST',
+		},
+		{
+			code: 'TOC1.1',
+			description: 'THE OXBORN COMPANY LIMITED',
+		},
+		{
+			code: 'TOO1.1',
+			description: 'Tony Omolo Onyango vs. Whispering Palms Estate',
+		},
+		{
+			code: 'TPC1.1',
+			description: 'TATU PUBLIC COMMUNICATIONS LTD',
+		},
+		{
+			code: 'TPE1.1',
+			description: 'TAALERITEHDAS PRIVATE EQUITY FUNDS. LEGAL SERVICES IN KENYA',
+		},
+		{
+			code: 'TPF1.1',
+			description: 'BANKING FACILITIES TO THE PRESBYTERIAN FOUNDATION',
+		},
+		{
+			code: 'TPG1.1',
+			description: 'WORLEY LIMITED v THOMAS PIRON GRAND LACS LIMITED (ARBITRATION)',
+		},
+		{
+			code: 'TPG1.2',
+			description:
+				'TERMINATION OF THE CONTRACT BETWEEN COSPIN SRL, THOMAS & PIRON GRAND LACS LIMITED & CORALIE PIRON',
+		},
+		{
+			code: 'TPG1.3',
+			description:
+				'ALLEGED DEFAMATORY PUBLICATON AND MALICIOUS FALSEHOODS AGAINST MR. CHRISTOPHE FIERENS PUBLISHED THROUGH TPGL’S LETTER DATED 27TH OCTOBER 2020',
+		},
+		{
+			code: 'TPG1.4',
+			description: 'DRAFTING OF EXPENSE REIMBURSEMENT AGREEMENT',
+		},
+		{
+			code: 'TPG2.1',
+			description: 'PROVISION OF GENERAL CORPORATE ADVICE',
+		},
+		{
+			code: 'TPL1.1',
+			description:
+				'TULIP PROPERTIES LIMITED VS MOHAMMED KORIOW NUR & 6 OTHERS: HCCC ELC NO. 1403 OF 2007',
+		},
+		{
+			code: 'TPL2.1',
+			description: 'REVIEW OF CONTRACTS',
+		},
+		{
+			code: 'TPL3.1',
+			description: 'GENERAL FILE',
+		},
+		{
+			code: 'TPS1.1',
+			description: 'TOURISM PROMOTION SERVICES -VS- KRA (DOMESTIC TAX)',
+		},
+		{
+			code: 'TPS1.2',
+			description:
+				'HCCC NO. 1221 OF 2005 COUNTY COUNCIL OF TRANSMARA VS TOURISM PROMOTION SERVICES LTD',
+		},
+		{
+			code: 'TPS1.3',
+			description:
+				'PETITION NO.380 OF 2018 JOHN MBUGUA & OTHERS VS. THE HONOURABLE ATTORNEY GENERAL',
+		},
+		{
+			code: 'TPS2.1',
+			description:
+				'PETITION NO. 560 OF 2017: BLASIO ONDIEK VS RETIREMENT BENEFITS APPEALS TRIBUNAL & OTHERS',
+		},
+		{
+			code: 'TPS2.2',
+			description:
+				'CLAIM FOR RETIREMENT DUES BY FORMER EMPLOYEES OF THE POSTAL CORPORATION OF KENYA (PCK)',
+		},
+		{
+			code: 'TPS2.3',
+			description:
+				'CLAIM FOR PENSION BENEFITS/UNDERPAYMENTS BY FORMER MEMBERS OF POSTAL CORPORATION OF KENYA STAFF PENSION SCHEME.',
+		},
+		{
+			code: 'TPS2.4',
+			description:
+				'COMPLAINT UNDER SECTION 46 OF THE RBA ACT: MARTIN M. MWANGANGI & 403 OTHERS VS. THE BOARD OF TRUSTEES, TELPOSTA PENSION SCHEME.',
+		},
+		{
+			code: 'TPS2.5',
+			description:
+				'IN THE MATTER OF RETIREMENT BENEFITS AUTHORITY ACT NO. 3 OF 1997 COMPLAINT UNDER SECTION 46 OF THE RBA ACT – FRANCIS N. GICHUHI & 22 OTHERS -VS- THE BOARD OF TRUSTEES, TELEPOSTA PENSION SCHEME. ',
+		},
+		{
+			code: 'TPS2.6',
+			description: 'CLAIM BY AGGREY AVUKA DIRU & 26 OTHERS FROM TELPOSTA PENSION SCHEME',
+		},
+		{
+			code: 'TPS2.7',
+			description: 'CLAIM BY FREDRICK M. KIBISU & 324 OTHERS FROM TELPOSTA PENSION SCHEME',
+		},
+		{
+			code: 'TPS2.8',
+			description: 'GENERAL ADVISORY',
+		},
+		{
+			code: 'TPS2.9',
+			description:
+				'RBAT TRIBUNAL NO.8 OF 2022: DAVID MATIKA JAMES VS. RETIREMENT BENEFITS AUTHORITY & THE BOARD OF TRUSTEES TELPOSTA PENSION SCHEME & TELPOSTA PROVIDENT FUND',
+		},
+		{
+			code: 'TRE1.1',
+			description: 'LIVIA  TRENCH',
+		},
+		{
+			code: 'TRE1.2',
+			description: "DISTRIBUTION OF THE LATE LIVIA LE POER TRENCH'S ESTATE",
+		},
+		{
+			code: 'TRE1.3',
+			description: 'BETTER CHOICE FOUNDATION',
+		},
+		{
+			code: 'TSA1.1',
+			description: 'PROVISION OF LEGAL SERVICES TO TEN SENSES AFRICA (EPZ) LIMITED. ',
+		},
+		{
+			code: 'TSA1.2',
+			description: 'TAX IMPLICATIONS OF RESTRUCTURING AND ASSETS TRANSFER TRANSACTION',
+		},
+		{
+			code: 'TSA1.3',
+			description: 'ADVICE ON THE PROPOSED INVESTMENT BY PAMOJA FARMS',
+		},
+		{
+			code: 'TSA1.3/001',
+			description:
+				'CLAIM IN RESPECT OF THE ISSUANCE OF A CONVERSION NOTICE BY PAMOJA TO TSA (EPZ) LTD AND TSA LTD',
+		},
+		{
+			code: 'TSA1.3/002',
+			description:
+				'CLAIM IN RESPECT OF THE ISSUANCE OF A CONVERSION NOTICE BY PAMOJA TO TSA (EPZ) LTD AND TSA LTD WITH RESPECT TO THE DOB LOAN.',
+		},
+		{
+			code: 'TSA1.4',
+			description:
+				'LEGAL ADVICE IN RELATION TO THE SALE OF SHARES IN TEN SENSES AFRICA LIMITED AND TEN SENSES AFRICA EPZ LIMITED',
+		},
+		{
+			code: 'TSA1.5',
+			description: 'LEGAL ADVICE IN RELATION TO THE EXIT OF THE CEO',
+		},
+		{
+			code: 'TSH1.1',
+			description:
+				'THE SHALOM HOSPITAL LIMITED & ANOR VS. THE COUNTY GOVERNMENT OF MACAKOS & 3 OTHERS',
+		},
+		{
+			code: 'TSK1.1',
+			description:
+				'NAIROBI MC E&LRC CAUSE NO. E1734 OF 2021: JOSEPH ISIKA MUASYA -VS- TRANSWORLD SAFARIS KENYA LTD',
+		},
+		{
+			code: 'TSL1.1',
+			description: 'TILONE SUBSEA LTD',
+		},
+		{
+			code: 'TSL2.1',
+			description:
+				'MARA NORTH HOLDINGS LTD& MARA NORTH CONSERVANCY -VS- TRANSWORLD SAFARIS LTD: HCCC NO. 6 OF 2012',
+		},
+		{
+			code: 'TSL3.1',
+			description: 'SADOLIN PAINTS ( E A ) LIMITED CMCC NO. 5384 OF 2011',
+		},
+		{
+			code: 'TSL3.2',
+			description: 'OPENING BALANCE TRUST',
+		},
+		{
+			code: 'TSL4.1',
+			description: 'UNILEVER KENYA TEA LIMITED',
+		},
+		{
+			code: 'TSL4.2',
+			description: 'KAKUZI CLAIM',
+		},
+		{
+			code: 'TSS1.1',
+			description:
+				'E&LRC NO. 846 OF 2019: KENYA UNION OF COMMERCIAL FOOD AND ALLIED WORKERS VS. TUMAINI SELF SERVICE LTD & QUICKMART LTD.',
+		},
+		{
+			code: 'TTC1.1',
+			description: 'OLKARIA IAU6 GEOTHERMAL POWER PLANT BID',
+		},
+		{
+			code: 'TTC1.2',
+			description:
+				'PREQUALIFICATION OF CONTRACTORS FOR EXECUTION OF THE INTERGRATED SECURITY MANAGEMENT SYSTEM (ISMS) PROJECT',
+		},
+		{
+			code: 'TUI1.1',
+			description: 'DIVORCE PROCEEDINGS',
+		},
+		{
+			code: 'UBA1.1',
+			description:
+				'CIVIL APPEAL NO. E543 OF 2022: UBA KENYA BANK LTD & ANOR VS. PARKVIEW SHOPPING ARCADE LTD & ANOR',
+		},
+		{
+			code: 'UDL1.1',
+			description:
+				'TRIBUNAL CASE NO. 557 OF 2011 UNIFORM DISTRIBUTORS LIMITED -VS- M. D. SONI & THE ESTATE OF THE LATE R. B. SONI.',
+		},
+		{
+			code: 'UDV1.1',
+			description:
+				'PETITION NO. 10 OF 2017: BIA TOSHA DISTRIBUTORS LTD VS KENYA BREWERIES LTD & 6 OTHERS',
+		},
+		{
+			code: 'UFL1.1',
+			description: 'GOOD BREAD (K) LIMITED VS UZURI FOODS LIMITED & ANOTHER',
+		},
+		{
+			code: 'UFL1.2',
+			description: 'UZURI FOODS LIMITED VS OCCIDENTAL INSURANCE COMPANY LIMITED',
+		},
+		{
+			code: 'UFL1.3',
+			description: 'ACQUISITION OF MACHINERY FROM BAG & ENVELOPE CONVERTERS LIMITED',
+		},
+		{
+			code: 'UFL1.4',
+			description: 'ELRC CAUSE NO. 984 OF 2018 - EMILY MUTINDA NDOO VS. UZURI FOODS LIMITED',
+		},
+		{
+			code: 'UFL1.5',
+			description:
+				'PROVISION OF LEGAL ADVISE ON THE PURCHASE OF MACHINES FROM BAGS AND ENVELOPE CONVERTERS LIMIED (UNDER RECEIVERSHIP)',
+		},
+		{
+			code: 'UFL2.1',
+			description:
+				'ELC CASE NO. E016 OF 2021: SILVERSTONE MUIA & 55 OTHERS VS. UATHIMO FARM LIMITED',
+		},
+		{
+			code: 'UHD1.1',
+			description:
+				'UNIQUE HOUSING DEVELOPMENTS LTD - SALE OF A PORTION OF PROPERTY ON L.R. NO. 7109/6',
+		},
+		{
+			code: 'UHD1.2',
+			description:
+				'JOINT VENTURE FOR DEVELOPMENT OF PROPERTY :LR.NO.7109/6 BY YANG GUANG PROPERTY DESIGN AND MANUFACTURING LIMITED',
+		},
+		{
+			code: 'UHO1.1',
+			description: 'DEBT RECOVERY',
+		},
+		{
+			code: 'UKL1.1',
+			description: 'HCCC NO.356 OF 2016: KAMURI LIMITED & OTHERS VS. UBER KENYA LIMITED',
+		},
+		{
+			code: 'UKL1.2',
+			description: 'TRANSFER PRICING DEMAND NOTICE - KSHS.22,329,739.00',
+		},
+		{
+			code: 'UKL1.3',
+			description:
+				'E&LRC NO. E004 OF 2022: FESTUS M. WAMBUA VS. UBER KENYA LIMITED & 2 OTHERS',
+		},
+		{
+			code: 'UKL1.4',
+			description:
+				'CONSTITUTIONAL PETITION NO.E432 OF 2022 - UBER B.V. VS. NATONAL TRANSPORT AND SAFETY AUTHORITY & OTHERS',
+		},
+		{
+			code: 'UKL1.5',
+			description:
+				'CMCC MP.E952 OF 2023: GLADYS WAIRIMU MWENDA VS. PETER MUUO MUTUKU & OTHERS',
+		},
+		{
+			code: 'UKL1.6',
+			description: 'TLAB APPEAL NO. E008 OF 2023 - DAVID MUTERU V. UBER B.V.',
+		},
+		{
+			code: 'UKL1.7',
+			description:
+				'JUDICIAL REVIEW NO. E063 OF 2023 - UBER B.V. V. TRANSPORT LICENSING APPEALS BOARD & OTHERS',
+		},
+		{
+			code: 'UKL1.8',
+			description: 'DEMAND TO UBER B.V. BY ORGANIZATION OF ONLINE DRIVERS',
+		},
+		{
+			code: 'UKL1.9',
+			description:
+				'TLAB APPEAL NO. E011 OF 2023 - RIDE HAIL TRANSPORT ASSOCIATION V. UBER B.V. & OTHERS.',
+		},
+		{
+			code: 'UKL1.9/001',
+			description:
+				'JUDICIAL REVIEW NO. E071 OF 2023 - UBER B.V. V. TRANSPORT LICENSING APPEALS BOARD & RIDEHAIL TRANSPORT ASSOCIATION',
+		},
+		{
+			code: 'UKU1.1',
+			description:
+				'MISC APPN. NO. 209 OF 2015: UKULIMA CO-OP SAVINGS & CREDIT SOCIETY VS RELIABLE SECURITIES',
+		},
+		{
+			code: 'ULA1.1',
+			description: 'EMPLOYMENT ADVISORY',
+		},
+		{
+			code: 'UMA1.2',
+			description: 'AGREEMENT WITH UCHUMI SUPERMARKETS',
+		},
+		{
+			code: 'UMA1.5',
+			description: 'AGREEMENT WITH UNITED WOMEN SACCO LIMITED (URBAN COFFEE LIMITED)',
+		},
+		{
+			code: 'UMA1.6',
+			description: 'REGISTRATION OF COPYRIGHT FOR SOFTWARE',
+		},
+		{
+			code: 'UMA1.7',
+			description:
+				'LEGAL OPINION ON GRANT TREATMENT AS EQUITY IN UMATI CAPITAL (KENYA) LIMITED',
+		},
+		{
+			code: 'UMA1.8',
+			description:
+				'CONVERTIBLE LOAN AGREEMENT WITH NEDERLANDSE FINANCIERINGS-MAATSCHAPPIJ VOOR ONTWIKKELINGS-LANDEN N.V.',
+		},
+		{
+			code: 'UML1.1',
+			description: 'INTENDED JUDICIAL REVIEW',
+		},
+		{
+			code: 'UML1.1/001',
+			description:
+				'CIVIL APPLICATION ON 153 OF 2019 UNITED MILLERS LIMITED .VS. THE KENYA BUREAU OF STANDARDS & 5 OTHERS ',
+		},
+		{
+			code: 'UNA1.1',
+			description: 'LEGAL OPINION ON THE ESTATE OF RAMESHCANDRA B. UNADKAT',
+		},
+		{
+			code: 'UNW1.1',
+			description:
+				'LEGAL OPINION TO UASO NYAROBE WATERFRONT LIMITED WITH RESPECT TO THE MICHUKI MEMORIAL PARK  DISPUTE  ',
+		},
+		{
+			code: 'UOE1.1',
+			description:
+				'UNIVERSITY OF ELDORET & THE VICE CHANCELLOR VS. HOSEA SITIENEI & 2 OTHERS',
+		},
+		{
+			code: 'UON1.1',
+			description:
+				'BARACK OKWARO MULUKA -VS- THE UNIVERSITY OF NAIROBI & OTHERS: HCC PETITION NO. 551 OF 2015 (NBO)',
+		},
+		{
+			code: 'UON1.2',
+			description: 'COMMUNICATION FROM THE COUNCIL',
+		},
+		{
+			code: 'UON1.3',
+			description:
+				'H.C CONST. PETITION NO. 228 OF 2016: CONSUMERS FEDERATION OF KENYA VS UNIVERSITY OF NAIROBI & OTHERS',
+		},
+		{
+			code: 'UON1.4',
+			description:
+				'H.C PETITION NO. 283 OF 2016 : HEZEKIAH O. ASUDI VS PROF. BERNARD NJOROGE & 3 OTHERS',
+		},
+		{
+			code: 'UON1.5',
+			description: 'H.C.J.R. MISC APP NO. 312 OF 2016 GEORGE BARASA VS UON & ANOR',
+		},
+		{
+			code: 'UON1.6',
+			description: 'H.C.J.R. MISC APPN NO. 310 OF 2016 BARRACK O. MULUKA VS UON & OTHERS',
+		},
+		{
+			code: 'UON1.7',
+			description: 'HCCC NO.4852 OF 1987:GODFREY NJUGI MBOGO VS.UNIVERSITY OF NAIROBI',
+		},
+		{
+			code: 'USA1.1',
+			description:
+				'CIVIL SUIT NO. 7752 OF 2016 -ANNE WANGUI  AINA VS PHILLIP ANDREW YOUNG & UNITED STATES OF AMERICA',
+		},
+		{
+			code: 'USA1.2',
+			description: 'UNITED STATES OF AMERICA',
+		},
+		{
+			code: 'USA1.3',
+			description: 'UNITED STATES DEPARTMENT NAIROBI .VS. PETER MWAURA WANYOIKE',
+		},
+		{
+			code: 'UTL1.1',
+			description: 'REVIEWING AN API USAGE AGREEMENT',
+		},
+		{
+			code: 'UTL1.2',
+			description: 'REGISTRATION OF THE QUICKBUS COURIER TRADE MARK IN 2 CLASSES.',
+		},
+		{
+			code: 'UZU1.1',
+			description: 'ESTABLISHMENT',
+		},
+		{
+			code: 'VAC1.1',
+			description: 'SUNMATT LTD VS COMMISSIONER OF DOMESTIC TAXES',
+		},
+		{
+			code: 'VAK1.1',
+			description: 'CMCC NO. 4644 OF 2017: PRADEEP PAUNRANA & ANOR VS SAGO VAKNIN',
+		},
+		{
+			code: 'VAL1.1',
+			description:
+				'IN THE MATTER OF ASIF SADRUDIN NATHOO VALLI & AALLY SADRUDIN NATHOO VALLI: HC PET. NO',
+		},
+		{
+			code: 'VAL2.1',
+			description: 'VALMO LTD VS NJUWANGU HOLDINGS LTD: ELC 1066 OF 2012',
+		},
+		{
+			code: 'VAL3.1',
+			description: 'VALMO LTD VS NJUWANGU HOLDINGS LTD',
+		},
+		{
+			code: 'VAL4.1',
+			description: 'DRAFTING AGREEMENTS FOR THE COMPANY.',
+		},
+		{
+			code: 'VCA1.1',
+			description: 'REGISTRATION OF TRADEMARK FOR COMPLAST',
+		},
+		{
+			code: 'VCL1.1',
+			description: 'CONDUCTING CORPORATE DUE DILIGENCE.',
+		},
+		{
+			code: 'VEL1.1',
+			description:
+				'PARAGON ELECTRONICS & 2 OTHERS -VS- VELOS ENTERPRISES LTD & ANOTHER: CIVIL SUIT NO. 289 OF 2015',
+		},
+		{
+			code: 'VEL1.2',
+			description: 'VELOS ENTERPRISES LTD',
+		},
+		{
+			code: 'VEL1.3',
+			description: 'DEBT RECOVERY AGAINST KENSVILLE MOTORS LIMITED',
+		},
+		{
+			code: 'VEL1.4',
+			description: 'VELOS ENTERPRISES LIMITED VS. KENYA REVENUE AUTHORITY',
+		},
+		{
+			code: 'VEL1.5',
+			description:
+				'MISC CRIMINAL CASE NO. 112 OF 2019 VALENTINE ATAKA & ANOR VS. VELOS ENTERPRISES LTD & 4 OTHERS.',
+		},
+		{
+			code: 'VEL1.6',
+			description:
+				'E&LC NO. E315 OF 2022 - PARAGON ELECTRONICS LIMITED & BULENT GULBAHAR -VS- I&M BANK LIMITED & OTHERS',
+		},
+		{
+			code: 'VEL2.1',
+			description: 'PARAGON ELECTRONICS VS VELOS ENTERPRISES',
+		},
+		{
+			code: 'VIC1.1',
+			description: 'VICTORIA ESTATES LTD -  COMPANY FORMATION',
+		},
+		{
+			code: 'VIC2.1',
+			description: 'CLAIM FOR RECOVERY OF DEPOSITS PAID TO ECHUKA COUNTRY ESTATES LIMITED ',
+		},
+		{
+			code: 'VIL1.1',
+			description: 'AN ARBITRATION BETWEEN VEEKAYE INVESTMENTS LTD & ASILE COMPANY LTD',
+		},
+		{
+			code: 'VIL1.2',
+			description: 'VEEKAYE INVESTMENT LIMITED VS. A-ONE LOUNGE LIMITED',
+		},
+		{
+			code: 'VIR2.1',
+			description: 'GENERAL CORPORATE ADVICE',
+		},
+		{
+			code: 'VLC1.1',
+			description: 'PRAFULL DWIVEDI -  JOINT VENTURE, INCORPORATION OF COMPANY',
+		},
+		{
+			code: 'VML1.1',
+			description: 'VAJAS MANUFACTURERS LIMITED VS NITIN ARORA.',
+		},
+		{
+			code: 'VML1.2',
+			description:
+				'E&LRC NO.1417 OF 2018 FRANCIS MUTUA MUSAVI VS. VAJAS MANUFACTURERS LIMITED',
+		},
+		{
+			code: 'VOR1.1',
+			description: 'RAJNI C VORA VS BANK OF BARODA',
+		},
+		{
+			code: 'VOS1.1',
+			description: 'VISA OSHWAL PRIMARY SCHOOL- L.R NO. 209/5996 GRANT NO. I.R. 18152',
+		},
+		{
+			code: 'VPK1.1',
+			description: 'PROVISION OF LEGAL SERVICES TO VIRUNGA POWER KENYA LIMITED',
+		},
+		{
+			code: 'VPK1.2',
+			description: 'PROBATE AND ADMINISTRATION',
+		},
+		{
+			code: 'VPL1.1',
+			description: 'ADVICE ON DISSOLUTION OF A COMPANY',
+		},
+		{
+			code: 'VSC1.1',
+			description: 'EXPULSION OF JOHN KAMAU MWAURA FROM VETLAB SPORTS CLUB.',
+		},
+		{
+			code: 'VTS1.1',
+			description: 'PROVISION OF LEGAL SERVICES',
+		},
+		{
+			code: 'WA1.1',
+			description: 'WALTER GENERAL',
+		},
+		{
+			code: 'WAC1.1',
+			description: 'WACEKE WACHIRA - SUSPENSION FROM EMPLOYMENT (USIU)',
+		},
+		{
+			code: 'WAE1.1',
+			description: 'IN THE MATTER OF THE ESTATE OF PETER PAUL MUTHOKA (DECEASED',
+		},
+		{
+			code: 'WAI1.1',
+			description: 'Divorce Cause No. 162 of 2020 – Ambrose Waita Vs. Wangari Kariuki',
+		},
+		{
+			code: 'WAK1.3',
+			description:
+				'SALE OF LR.NO.330/756 (ORIG.NO 330/3/20) MASAI COURT TO GIDEON CHELULE FROM EXECUTORS OF THE ESTATE OF GIDEON MESHACK WANDERA',
+		},
+		{
+			code: 'WAK1.4',
+			description: 'SUCCESSION CAUSE - DANIEL MESHACK WAKO',
+		},
+		{
+			code: 'WAK2.1',
+			description:
+				'JUSTICE HONOURABLE PHILIP WAKI & 2 OTHERS - KEPHA MWEBI: PETITION NO. 88 OF 2015 (HC MISC. CIV. CASE NO. 368 OF 2010)',
+		},
+		{
+			code: 'WAK3.1',
+			description: 'LYNSTE SERVICES LTD SALE OF LR 1/512 TO PHILIP WAKI',
+		},
+		{
+			code: 'WAL1.1',
+			description: 'WALAM ENERGY INC VS KENYA ICSID ARBITRATION',
+		},
+		{
+			code: 'WAL2.1',
+			description: 'WEMAX AGRO LIMITED VS CROPANET PLAASS LIMITED',
+		},
+		{
+			code: 'WAL3.1',
+			description: 'SAFE ENERGY LIMITED VS. HEXAGON RAGASSO AS',
+		},
+		{
+			code: 'WAN1.1',
+			description:
+				'ELIZABETH MARION WANGARI - IN THE ESTATE OF THE LATE JANE NDUTA KINUTHIA (DECEASED)',
+		},
+		{
+			code: 'WAN3.1',
+			description: 'PATRICIAH WANJAMA',
+		},
+		{
+			code: 'WAN3.1/001',
+			description:
+				'CIVIL APPEAL NO. 101 OF 2017 PATRICIA NJERI WANJAMA VS. THE ADVOCATES DISCIPLINERY COMMITTEE & BRITAM',
+		},
+		{
+			code: 'WAN3.2',
+			description: 'TRAFFIC CASE NO. 22789 OF 2016 REPUBLIC VS PATRICIA NJERI WANJAMA',
+		},
+		{
+			code: 'WAN4.1',
+			description: 'ROSE WANJIRU KARIUKI AND MARY NJERI KIAD',
+		},
+		{
+			code: 'WAN5.1',
+			description:
+				'TERESIA MACA WANDA -VS- DANIEL KAIGOYA KIMANI: CMC DIVORCE CAUSE NO. 7 OF 2015 (KIAMBU)',
+		},
+		{
+			code: 'WAN6.1',
+			description: 'MARY VIRGINA WANJIRU & JOHN WAINAINA VS.',
+		},
+		{
+			code: 'WAN7.1',
+			description:
+				'CIVIL APPEAL NO.937 OF 2004 NICHOLAS WAWERU WANYOIKE & ANOR VS NAIROBI CITY COUNCIL & ANOR',
+		},
+		{
+			code: 'WAN8.1',
+			description: 'ANNULMENT OF MARRIAGE',
+		},
+		{
+			code: 'WAN9.1',
+			description: 'ANNULMENT OF MARRIAGE',
+		},
+		{
+			code: 'WAO1.1',
+			description: 'W.A.O VS. S.A.K.',
+		},
+		{
+			code: 'WAR1.1',
+			description: 'Corporate Legal Advice',
+		},
+		{
+			code: 'WAR1.2',
+			description: 'INSOLVENCY OF SUNTAP KENYA LIMITED',
+		},
+		{
+			code: 'WCL1.1',
+			description: 'Tax advisory to Wakanda Credit Limited, proposed company restructuring',
+		},
+		{
+			code: 'WCL2.1',
+			description:
+				'CONSTITUTIONAL PETITION NO. E541 OF 2022 – ABRAHAM MEAREG & 2 OTHERS V. META PLATFORMS, INC. & OTHERS.',
+		},
+		{
+			code: 'WCW1.1',
+			description: 'CAROLINE W. WAUDO',
+		},
+		{
+			code: 'WDL1.1',
+			description: 'DRAFTING OF A SOFTWARE DEVELOPMENT AGREEMENT',
+		},
+		{
+			code: 'WEL1.1',
+			description: 'IN THE MATTER OF THE ESTATE OF ELIZABETH GAKENA MURIUKI',
+		},
+		{
+			code: 'WFL1.1',
+			description: 'WINCHESTER FARM LIMITED',
+		},
+		{
+			code: 'WGC1.1',
+			description: 'WANANCHI GROUP (K) LTD VS CCK',
+		},
+		{
+			code: 'WGC1.2',
+			description:
+				'TAX DISPUTE BETWEEN KENYA REVENUE AUTHORITY AND MAURITIUS BASED COMPANIES, WANANCHI GROUP HOLDINGS LIMITED AND ITS SUBSIDIARIES WANANCHI PROGRAMMING LIMITED AND  WANANCHI SATELLITE LIMITED',
+		},
+		{
+			code: 'WGC1.3',
+			description:
+				'EAST AFRICA CAPITAL PARTNERS & WANANCHI GROUP (HOLDINGS) LTD : POTENTIAL CLAIM AGAINST THE COUNTY GOVERNMENT OF MOMBASA',
+		},
+		{
+			code: 'WGC1.5',
+			description:
+				'E&LRC CAUSE NO. 530 OF 2019 - JANE NDUTA GITHENGI VS. ISAT AFRICA KENYA LIMITED',
+		},
+		{
+			code: 'WGC1.6',
+			description: 'ELRC Cause No. E54 of 2020 – George Kalia vs. Wananchi Group (K) Limited',
+		},
+		{
+			code: 'WGL1.1',
+			description:
+				'WANAINCHI GROUP LTD VS GERALD MURIMI MUGO AND OSCAR MWIRIGI: PETITION NO. 98 OF 2012',
+		},
+		{
+			code: 'WGL1.1/001',
+			description: 'CA NO. 368 OF 2014 MULTICHOICE K LTD VS  WANANCHI GROUP K LTD & 2 OTHERS',
+		},
+		{
+			code: 'WHI1.1',
+			description: 'PETER WHITTON VS KENYA EDUCATION TRUST',
+		},
+		{
+			code: 'WHL1.1',
+			description:
+				'PROPOSED NEW CONSTRUCTION AT SHELL WESTLANDS PETROL STATION ON PLOT LR NO. 209/7131 ',
+		},
+		{
+			code: 'WHL1.2',
+			description:
+				'NEMA TRIBUNAL APPEAL NO. 195 OF 2016 WESTLANDS HOTELS LTD VS DIRECTOR GENERAL & ANOTHER',
+		},
+		{
+			code: 'WHP1.1',
+			description:
+				'WORLD HEALTH PARTNERS INC TRADE MARK REGISTRATION-SKY DEVICE & HEALTH CARE WITHIN WALKABLE DISTANCE',
+		},
+		{
+			code: 'WKA0095.1',
+			description:
+				'CIVIL APPLICATION NO. NAI 88 OF 2018: SURYA HOLDINGS LTD & 2 OTHERS vs CFC STANBIC BANK LTD & ANOTHER',
+		},
+		{
+			code: 'WKA2.1',
+			description:
+				'CIVIL APPLICATION NO. NAI: 88 OF 2018: SURYA HOLDINGS LTD AND 2 OTHERS VS. CFC STANBIC BANK LTD',
+		},
+		{
+			code: 'WKA2.2',
+			description:
+				'SUPREME COURT PETITION NO. 8 OF 2019 SURYA HOLDINGS LTD & OTHERS VS. CFC STANBIC BANK LTD',
+		},
+		{
+			code: 'WKA2.3',
+			description:
+				'CA NO. 8 OF 2018 GOLDEN JUBILEE LIMITED -VS- MISTRY JADVA PARBAT & COMPANY LIMITED',
+		},
+		{
+			code: 'WLL1.1',
+			description:
+				'HCCC 1248 OF 2003 NRB COUNTY COUNCIL OF NAROK/WILDERNESS LODGES LTD- WILDLIFE LODGES LTD',
+		},
+		{
+			code: 'WLL1.2',
+			description: 'SAMBURU NATIONAL RESERVE & LARSEN TENTED CAMP.',
+		},
+		{
+			code: 'WMM1.1',
+			description: 'NOTICE OF OBJECTION TO THE DEMAND FOR THE FILING OF PAYE & VAT RETURNS',
+		},
+		{
+			code: 'WRL1.1',
+			description: 'WASINI RESORTS LTD',
+		},
+		{
+			code: 'WSL1.1',
+			description: 'WANSTOP SOLUTIONS LIMITED VS. PUNCHLINES LIMITED',
+		},
+		{
+			code: 'WSM1.1',
+			description:
+				'TAT APPEAL NO. OF 2022 - WESTGATE SHOPPING MALL LIMITED VS. THE COMMISSIONER OF DOMESTIC TAXES',
+		},
+		{
+			code: 'WSM1.2',
+			description: 'COURT PROCEEDINGS TO COMPEL AMENDMENT OF VAT RETURNS',
+		},
+		{
+			code: 'WTP1.1',
+			description: 'MT. KENYA SUNDRIES LTD -VS- AGIP KENYA LTD',
+		},
+		{
+			code: 'WTP1.2',
+			description: 'WESTLANDS TRIANGLE PROPERTIES LTD: HCCC NO. 112 OF 2008',
+		},
+		{
+			code: 'WTP1.3',
+			description: 'WESTLANDS TRIANGLE PROPERTIES LTD: JR NO. 287 OF 2009',
+		},
+		{
+			code: 'WTP1.5',
+			description: 'HITESH MORJARIA & ANOTHER TO WESTLANDS TR.',
+		},
+		{
+			code: 'WTP1.6',
+			description: 'SANKARA NAIROBI - ROSE OGOTI (SUSPENSION FROM DUTY - EXTENSION)',
+		},
+		{
+			code: 'WWW1.1',
+			description:
+				'HCCC 364 OF 2010 NRB TAUSI ASSURANCE COMPANY LTD VS WWW BID INVESTMENT CO.',
+		},
+		{
+			code: 'YAM1.1',
+			description: 'PROVISION OF LEGAL SERVICES TO YAMAHA MOTOR CORPORATION LIMITED',
+		},
+		{
+			code: 'YES1.1',
+			description:
+				'DISTRIBUTION PARTNERSHIP BETWEEN BOSCH AND YANTRA EQUIPMENT SOLUTIONS LTD',
+		},
+		{
+			code: 'YON1.1',
+			description: 'PURCHASE OF L.R. NO.13706, I.R. NO.47127, KAREN AREA, NAIROBI',
+		},
+		{
+			code: 'YUN1.1',
+			description: 'THE ESTATE OF YUNIA SHIPIRI WILLIAM',
+		},
+		{
+			code: 'ZAG1.1',
+			description: 'IN THE MATTER OF THE ESTATE OF THE LATE BERNARD ZAGORIN (DECEASED)',
+		},
+		{
+			code: 'ZAI1.1',
+			description: 'PROBATE OF THE ESTATE OF THE LATE SADRUDIN HASSAM MOHAMED',
+		},
+		{
+			code: 'ZAN1.1',
+			description: 'ISSUE OF CONVERTIBLE DEBT TO SAVIU VENTURES.',
+		},
+		{
+			code: 'ZEE1.1',
+			description: 'INCORPORATION OF COMPANY',
+		},
+		{
+			code: 'ZEL1.1',
+			description: 'ZEBAK LIMITED',
+		},
+		{
+			code: 'ZEL1.2',
+			description: 'KENYA REVENUE AUTHORITY AUDIT SUPPORT',
+		},
+		{
+			code: 'ZKL1.1',
+			description: 'ZIONCELL KNEYA LTD & 3 OTHERS -VS- CONSUMER FEDERATION OF KENYA (COFEK)',
+		},
+		{
+			code: 'ZM1.1',
+			description: 'ZACHARIA MBORI & ANOR',
+		},
+	];
+}

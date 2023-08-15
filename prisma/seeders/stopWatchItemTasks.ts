@@ -1,0 +1,27 @@
+export function getStopWatchItemTasks() {
+	return [
+		{ name: 'Administrative' },
+		{ name: 'Business Development' },
+		{ name: 'Consultation' },
+		{ name: 'Correspondence' },
+		{ name: 'Court Attendance' },
+		{ name: 'Docketing' },
+		{ name: 'Document Review' },
+		{ name: 'Drafting' },
+		{ name: 'E-Mail' },
+		{ name: 'Fax Received' },
+		{ name: 'Letter In' },
+		{ name: 'Letter Out' },
+		{ name: 'Leave' },
+		{ name: 'Meeting' },
+		{ name: 'Opinion' },
+		{ name: 'Our Fees' },
+		{ name: 'Perusal' },
+		{ name: 'Practice' },
+		{ name: 'Public Holiday' },
+		{ name: 'Research' },
+		{ name: 'Telephone' },
+		{ name: 'Training' },
+		{ name: 'Travel' },
+	];
+}

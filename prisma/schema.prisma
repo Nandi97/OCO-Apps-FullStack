@@ -35,13 +35,14 @@ model Session {
 }
 
 model User {
-  id            String    @id @default(cuid())
-  name          String?
-  email         String?   @unique
-  emailVerified DateTime?
-  image         String?
-  accounts      Account[]
-  sessions      Session[]
+  id             String          @id @default(cuid())
+  name           String?
+  email          String?         @unique
+  emailVerified  DateTime?
+  image          String?
+  accounts       Account[]
+  sessions       Session[]
+  stopWatchItems StopWatchItem[]
 }
 
 model VerificationToken {
@@ -50,44 +51,6 @@ model VerificationToken {
   expires    DateTime
 
   @@unique([identifier, token])
-}
-
-model Book {
-  id              Int       @id @default(autoincrement())
-  author          String
-  title           String
-  coverUrl        String
-  copies          Int
-  edition         String
-  isbnIssn        String
-  mediaType       String
-  publicationYear Int
-  publisher       String
-  subject         String?
-  status          Boolean   @default(true)
-  staffId         Int
-  deletedAt       DateTime?
-  createdAt       DateTime  @default(now())
-  updatedAt       DateTime?
-  staff           Staff     @relation(fields: [staffId], references: [id])
-}
-
-model Designation {
-  id          Int       @id @default(autoincrement())
-  name        String
-  staffTypeId Int
-  createdAt   DateTime  @default(now())
-  updatedAt   DateTime  @default(now())
-  staffType   StaffType @relation(fields: [staffTypeId], references: [id])
-  staff       Staff[]
-}
-
-model Gender {
-  id        Int      @id @default(autoincrement())
-  name      String
-  createdAt DateTime @default(now())
-  updatedAt DateTime @default(now())
-  staff     Staff[]
 }
 
 model Menu {
@@ -99,6 +62,62 @@ model Menu {
   createdAt DateTime  @default(now())
   updatedAt DateTime  @default(now())
   subMenus  SubMenu[]
+}
+
+model SubMenu {
+  id        Int       @id @default(autoincrement())
+  name      String
+  url       String
+  icon      String
+  listOrder Int
+  menuId    Int
+  createdAt DateTime? @db.Timestamp(0)
+  updatedAt DateTime? @db.Timestamp(0)
+  menu      Menu      @relation(fields: [menuId], references: [id])
+}
+
+model Matter {
+  id          Int    @id @default(autoincrement())
+  code        String
+  description String
+
+  deletedAt DateTime?
+  createdAt DateTime? @default(now())
+  updatedAt DateTime? @default(now())
+}
+
+model Team {
+  id         Int       @id @default(autoincrement())
+  name       String
+  created_at DateTime? @db.Timestamp(0)
+  updated_at DateTime? @db.Timestamp(0)
+  staff      Staff[]
+}
+
+model Gender {
+  id        Int      @id @default(autoincrement())
+  name      String
+  createdAt DateTime @default(now())
+  updatedAt DateTime @default(now())
+  staff     Staff[]
+}
+
+model StaffType {
+  id           Int           @id @default(autoincrement())
+  name         String
+  createdAt    DateTime?     @db.Timestamp(0)
+  updatedAt    DateTime?     @db.Timestamp(0)
+  designations Designation[]
+}
+
+model Designation {
+  id          Int       @id @default(autoincrement())
+  name        String
+  staffTypeId Int
+  createdAt   DateTime  @default(now())
+  updatedAt   DateTime  @default(now())
+  staffType   StaffType @relation(fields: [staffTypeId], references: [id])
+  staff       Staff[]
 }
 
 model Staff {
@@ -121,30 +140,45 @@ model Staff {
   team          Team        @relation(fields: [teamId], references: [id])
 }
 
-model StaffType {
-  id           Int           @id @default(autoincrement())
-  name         String
-  createdAt    DateTime?     @db.Timestamp(0)
-  updatedAt    DateTime?     @db.Timestamp(0)
-  designations Designation[]
+model Book {
+  id              Int       @id @default(autoincrement())
+  author          String
+  title           String
+  coverUrl        String
+  copies          Int
+  edition         String
+  isbnIssn        String
+  mediaType       String
+  publicationYear Int
+  publisher       String
+  subject         String?
+  status          Boolean   @default(true)
+  staffId         Int
+  deletedAt       DateTime?
+  createdAt       DateTime  @default(now())
+  updatedAt       DateTime?
+  staff           Staff     @relation(fields: [staffId], references: [id])
 }
 
-model SubMenu {
-  id        Int       @id @default(autoincrement())
-  name      String
-  url       String
-  icon      String
-  listOrder Int
-  menuId    Int
-  createdAt DateTime? @db.Timestamp(0)
-  updatedAt DateTime? @db.Timestamp(0)
-  menu      Menu      @relation(fields: [menuId], references: [id])
+model StopWatchItemTask {
+  id            Int             @id @default(autoincrement())
+  name          String
+  stopWatchItem StopWatchItem[]
 }
 
-model Team {
-  id         Int       @id @default(autoincrement())
-  name       String
-  created_at DateTime? @db.Timestamp(0)
-  updated_at DateTime? @db.Timestamp(0)
-  staff      Staff[]
+model StopWatchItem {
+  id        Int    @id @default(autoincrement())
+  narration String
+
+  createdAt DateTime? @default(now())
+
+  startedAt DateTime?
+  endedAt   DateTime?
+
+  createdById String
+
+  stopWatchItemTaskId Int?
+  stopWatchItemTask   StopWatchItemTask? @relation(fields: [stopWatchItemTaskId], references: [id])
+
+  user User @relation(fields: [createdById], references: [id])
 }

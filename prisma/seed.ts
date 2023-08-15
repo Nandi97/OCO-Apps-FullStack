@@ -1,24 +1,28 @@
 import { PrismaClient } from '@prisma/client';
 import { getMenus } from './seeders/menus';
 import { getSubMenus } from './seeders/subMenus';
-import { getBooks } from './seeders/books';
+import { getMatters } from './seeders/matters';
 import { getGenders } from './seeders/genders';
 import { getStaffTypes } from './seeders/staffTypes';
 import { getDesignations } from './seeders/designations';
 import { getTeams } from './seeders/teams';
 import { getStaff } from './seeders/staff';
+import { getBooks } from './seeders/books';
+import { getStopWatchItemTasks } from './seeders/stopWatchItemTasks';
 
 const prisma = new PrismaClient();
 
 async function main() {
 	const menus = getMenus();
 	const subMenus = getSubMenus();
+	const matters = getMatters();
 	const genders = getGenders();
 	const staffTypes = getStaffTypes();
 	const books = getBooks();
 	const designations = getDesignations();
 	const teams = getTeams();
 	const staffs = getStaff();
+	const stopWatchItemTasks = getStopWatchItemTasks();
 
 	// Menus
 	for (const menu of menus) {
@@ -41,6 +45,16 @@ async function main() {
 				icon: subMenu.icon,
 				listOrder: subMenu.list_order,
 				menuId: subMenu.menu_id,
+			},
+		});
+	}
+
+	// Matters
+	for (const matter of matters) {
+		await prisma.matter.create({
+			data: {
+				code: matter.code,
+				description: matter.description,
 			},
 		});
 	}
@@ -119,6 +133,13 @@ async function main() {
 				coverUrl: book.coverUrl,
 				updatedAt: book.updatedAt,
 			},
+		});
+	}
+
+	// Stop Watch Item Tasks
+	for (const stopWatchItemTask of stopWatchItemTasks) {
+		await prisma.stopWatchItemTask.create({
+			data: { name: stopWatchItemTask.name },
 		});
 	}
 
