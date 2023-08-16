@@ -81,9 +81,10 @@ model Matter {
   code        String
   description String
 
-  deletedAt DateTime?
-  createdAt DateTime? @default(now())
-  updatedAt DateTime? @default(now())
+  deletedAt      DateTime?
+  createdAt      DateTime?       @default(now())
+  updatedAt      DateTime?       @default(now())
+  stopWatchItems StopWatchItem[]
 }
 
 model Team {
@@ -161,24 +162,26 @@ model Book {
 }
 
 model StopWatchItemTask {
-  id            Int             @id @default(autoincrement())
-  name          String
-  stopWatchItem StopWatchItem[]
+  id             Int             @id @default(autoincrement())
+  name           String
+  stopWatchItems StopWatchItem[]
 }
 
 model StopWatchItem {
-  id        Int    @id @default(autoincrement())
-  narration String
+  id                  Int       @id @default(autoincrement())
+  narration           String
+  itemDate            DateTime?
+  startedAt           DateTime?
+  endedAt             DateTime?
+  createdById         String
+  stopWatchItemTaskId Int
+  matterId            Int
 
+  matter            Matter            @relation(fields: [matterId], references: [id])
+  stopWatchItemTask StopWatchItemTask @relation(fields: [stopWatchItemTaskId], references: [id])
+  user              User              @relation(fields: [createdById], references: [id])
+
+  deletedAt DateTime?
   createdAt DateTime? @default(now())
-
-  startedAt DateTime?
-  endedAt   DateTime?
-
-  createdById String
-
-  stopWatchItemTaskId Int?
-  stopWatchItemTask   StopWatchItemTask? @relation(fields: [stopWatchItemTaskId], references: [id])
-
-  user User @relation(fields: [createdById], references: [id])
+  updatedAt DateTime? @default(now())
 }

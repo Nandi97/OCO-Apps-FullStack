@@ -26,7 +26,7 @@ export default function Library() {
 			.then((response) => response.data)
 	);
 
-	// console.log('Book Data', data);
+	console.log('Book Data', data);
 
 	const total = data?.total ?? 0;
 	const links = data?.links ?? [];
