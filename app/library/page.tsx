@@ -1,7 +1,7 @@
 'use client';
-import OptDropdown from '@/components/ui/OptDropdown';
-import Pagination from '@/components/ui/Pagination';
-import SearchInput from '@/components/ui/SearchInput';
+import OptDropdown from '@/components/my-ui/OptDropdown';
+import Pagination from '@/components/my-ui/Pagination';
+import SearchInput from '@/components/my-ui/SearchInput';
 import { Icon } from '@iconify/react';
 import { useQuery } from '@tanstack/react-query';
 import axios from 'axios';

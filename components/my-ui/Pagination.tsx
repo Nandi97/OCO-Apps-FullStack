@@ -8,7 +8,7 @@ import {
 	SelectItem,
 	SelectTrigger,
 	SelectValue,
-} from '@/components/ui/select';
+} from '@/components/my-ui/select';
 
 interface LinkProps {
 	url?: any;

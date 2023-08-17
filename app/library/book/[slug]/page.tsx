@@ -4,7 +4,7 @@ import { useQuery } from '@tanstack/react-query';
 import Book_Mockup from '@/public/assets/images/books/book-illustration.png';
 import axios from 'axios';
 import Image from 'next/image';
-import OptDropdown from '@/components/ui/OptDropdown';
+import OptDropdown from '@/components/my-ui/OptDropdown';
 import { usePathname } from 'next/navigation';
 
 type URL = {

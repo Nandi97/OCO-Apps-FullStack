@@ -16,6 +16,11 @@ GET {{host}}/auth/signin HTTp/1.1
 Content-Type: application/json
 
 ###
+# @name session
+GET {{host}}/matters/getMatters HTTp/1.1
+Content-Type: application/json
+
+###
 # @name stopWatchItems
 GET {{host}}/lawyer-stopwatch/getStopWatchItems HTTp/1.1
 Content-Type: application/json
@@ -32,179 +37,17 @@ Content-Type: application/json
     "startedAt": "2023-04-20T22:14:54Z",
     "endedAt": null,
     "createdById": "cllds5v370000hbzg25sorxzj",
-    "stopWatchItemTaskId": 11,
+    "taskId": 11,
     "matterId": 1196
   },
   {
-    "narration": "Nulla facilisi. Cras non velit nec nisi vulputate nonummy.",
-    "itemDate": "2023-02-02T22:52:10Z",
-    "startedAt": "2023-05-03T03:12:33Z",
+    "narration": "Fusce consequat. Nulla nisl.",
+    "itemDate": "2022-12-02T07:30:37Z",
+    "startedAt": "2023-04-20T22:14:54Z",
     "endedAt": null,
     "createdById": "cllds5v370000hbzg25sorxzj",
-    "stopWatchItemTaskId": 1,
-    "matterId": 2433
-  },
-  {
-    "narration": "Nullam porttitor lacus at turpis.",
-    "itemDate": null,
-    "startedAt": null,
-    "endedAt": "2023-06-20T07:20:12Z",
-    "createdById": "cllds5v370000hbzg25sorxzj",
-    "stopWatchItemTaskId": 21,
-    "matterId": 1722
-  },
-  {
-    "narration": "Aliquam quis turpis eget elit sodales scelerisque. Mauris sit amet eros. Suspendisse accumsan tortor quis turpis.",
-    "itemDate": "2022-12-09T04:48:18Z",
-    "startedAt": "2022-11-21T11:36:52Z",
-    "endedAt": "2022-12-05T23:36:05Z",
-    "createdById": "cllds5v370000hbzg25sorxzj",
-    "stopWatchItemTaskId": 19,
-    "matterId": 1022
-  },
-  {
-    "narration": "Nunc nisl. Duis bibendum, felis sed interdum venenatis, turpis enim blandit mi, in porttitor pede justo eu massa. Donec dapibus.",
-    "itemDate": null,
-    "startedAt": null,
-    "endedAt": "2022-09-02T11:23:24Z",
-    "createdById": "cllds5v370000hbzg25sorxzj",
-    "stopWatchItemTaskId": 4,
-    "matterId": 2017
-  },
-  {
-    "narration": "Nullam varius. Nulla facilisi.",
-    "itemDate": null,
-    "startedAt": null,
-    "endedAt": null,
-    "createdById": "cllds5v370000hbzg25sorxzj",
-    "stopWatchItemTaskId": 16,
-    "matterId": 3566
-  },
-  {
-    "narration": "Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec pharetra, magna vestibulum aliquet ultrices, erat tortor sollicitudin mi, sit amet lobortis sapien sapien non mi. Integer ac neque.",
-    "itemDate": "2023-08-10T15:56:36Z",
-    "startedAt": null,
-    "endedAt": null,
-    "createdById": "cllds5v370000hbzg25sorxzj",
-    "stopWatchItemTaskId": 9,
-    "matterId": 3021
-  },
-  {
-    "narration": "In hac habitasse platea dictumst. Morbi vestibulum, velit id pretium iaculis, diam erat fermentum justo, nec condimentum neque sapien placerat ante. Nulla justo.",
-    "itemDate": "2023-06-09T00:07:50Z",
-    "startedAt": null,
-    "endedAt": null,
-    "createdById": "cllds5v370000hbzg25sorxzj",
-    "stopWatchItemTaskId": 17,
-    "matterId": 5035
-  },
-  {
-    "narration": "Phasellus in felis.",
-    "itemDate": null,
-    "startedAt": "2022-12-11T05:55:33Z",
-    "endedAt": null,
-    "createdById": "cllds5v370000hbzg25sorxzj",
-    "stopWatchItemTaskId": 9,
-    "matterId": 230
-  },
-  {
-    "narration": "Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec pharetra, magna vestibulum aliquet ultrices, erat tortor sollicitudin mi, sit amet lobortis sapien sapien non mi. Integer ac neque.",
-    "itemDate": "2023-04-07T00:08:18Z",
-    "startedAt": null,
-    "endedAt": "2023-04-24T18:48:35Z",
-    "createdById": "cllds5v370000hbzg25sorxzj",
-    "stopWatchItemTaskId": 4,
-    "matterId": 5024
-  },
-  {
-    "narration": "Cras mi pede, malesuada in, imperdiet et, commodo vulputate, justo. In blandit ultrices enim. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.",
-    "itemDate": null,
-    "startedAt": null,
-    "endedAt": "2023-06-05T16:08:00Z",
-    "createdById": "cllds5v370000hbzg25sorxzj",
-    "stopWatchItemTaskId": 23,
-    "matterId": 2256
-  },
-  {
-    "narration": "Etiam vel augue. Vestibulum rutrum rutrum neque.",
-    "itemDate": null,
-    "startedAt": "2023-07-31T09:46:47Z",
-    "endedAt": null,
-    "createdById": "cllds5v370000hbzg25sorxzj",
-    "stopWatchItemTaskId": 2,
-    "matterId": 4561
-  },
-  {
-    "narration": "Donec ut dolor.",
-    "itemDate": null,
-    "startedAt": "2022-12-25T03:12:58Z",
-    "endedAt": "2022-08-28T21:47:39Z",
-    "createdById": "cllds5v370000hbzg25sorxzj",
-    "stopWatchItemTaskId": 7,
-    "matterId": 3050
-  },
-  {
-    "narration": "Vestibulum sed magna at nunc commodo placerat. Praesent blandit.",
-    "itemDate": "2023-06-25T05:25:36Z",
-    "startedAt": null,
-    "endedAt": null,
-    "createdById": "cllds5v370000hbzg25sorxzj",
-    "stopWatchItemTaskId": 10,
-    "matterId": 680
-  },
-  {
-    "narration": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Proin risus. Praesent lectus.",
-    "itemDate": null,
-    "startedAt": null,
-    "endedAt": null,
-    "createdById": "cllds5v370000hbzg25sorxzj",
-    "stopWatchItemTaskId": 6,
-    "matterId": 453
-  },
-  {
-    "narration": "Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Duis faucibus accumsan odio. Curabitur convallis. Duis consequat dui nec nisi volutpat eleifend.",
-    "itemDate": null,
-    "startedAt": null,
-    "endedAt": "2023-03-12T07:54:39Z",
-    "createdById": "cllds5v370000hbzg25sorxzj",
-    "stopWatchItemTaskId": 16,
-    "matterId": 60
-  },
-  {
-    "narration": "Etiam pretium iaculis justo.",
-    "itemDate": "2023-02-21T02:32:38Z",
-    "startedAt": "2022-09-07T02:19:10Z",
-    "endedAt": "2022-09-26T12:09:07Z",
-    "createdById": "cllds5v370000hbzg25sorxzj",
-    "stopWatchItemTaskId": 3,
-    "matterId": 2230
-  },
-  {
-    "narration": "Maecenas rhoncus aliquam lacus. Morbi quis tortor id nulla ultrices aliquet.",
-    "itemDate": null,
-    "startedAt": "2023-05-15T07:36:40Z",
-    "endedAt": "2023-05-10T15:15:02Z",
-    "createdById": "cllds5v370000hbzg25sorxzj",
-    "stopWatchItemTaskId": 4,
-    "matterId": 3548
-  },
-  {
-    "narration": "Donec semper sapien a libero. Nam dui.",
-    "itemDate": "2023-03-22T11:00:56Z",
-    "startedAt": null,
-    "endedAt": null,
-    "createdById": "cllds5v370000hbzg25sorxzj",
-    "stopWatchItemTaskId": 5,
-    "matterId": 347
-  },
-  {
-    "narration": "Pellentesque at nulla. Suspendisse potenti.",
-    "itemDate": null,
-    "startedAt": null,
-    "endedAt": "2022-10-22T19:57:07Z",
-    "createdById": "cllds5v370000hbzg25sorxzj",
-    "stopWatchItemTaskId": 8,
-    "matterId": 431
+    "taskId": 11,
+    "matterId": 1196
   }
 ]
 

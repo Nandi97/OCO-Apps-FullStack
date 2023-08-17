@@ -12,20 +12,20 @@ export const config = {
 
 export default async function handler(req, res) {
 	if (req.method === 'POST') {
-		// const session = await getServerSession(req, res, authOptions);
+		const session = await getServerSession(req, res, authOptions);
 
-		// if (!session) {
-		// 	return res.status(401).json({ message: 'Please sign-in to create a stop watch item.' });
-		// }
-		// //Get User
-		// const prismaUser = await prisma.user.findUnique({
-		// 	where: { email: session.user.email },
-		// });
+		if (!session) {
+			return res.status(401).json({ message: 'Please sign-in to create a stop watch item.' });
+		}
+		//Get User
+		const prismaUser = await prisma.user.findUnique({
+			where: { email: session.user.email },
+		});
 
 		try {
+			// console.log('Body Data:', req.body);
 			const formData = req.body;
 
-			// Check if formData is an array
 			if (!Array.isArray(formData)) {
 				return res
 					.status(400)
@@ -33,15 +33,34 @@ export default async function handler(req, res) {
 			}
 
 			// Create an array of objects to insert
-			const dataToInsert = formData.map((item) => ({
-				narration: item.narration,
-				itemDate: item.itemDate,
-				startedAt: item.startedAt,
-				endedAt: item.endedAt,
-				createdById: item.createdById,
-				stopWatchItemTaskId: item.stopWatchItemTaskId,
-				matterId: item.matterId,
-			}));
+			const dataToInsert = formData.map((item) => {
+				const data = {
+					narration: item.narration,
+					createdById: prismaUser.id,
+					stopWatchItemTaskId: item.taskId,
+					matterId: item.matterId,
+				};
+
+				if (item.itemDate) {
+					data.itemDate = item.itemDate;
+				} else {
+					data.itemDate = new Date();
+				}
+
+				if (item.startedAt) {
+					data.startedAt = item.startedAt;
+				} else {
+					data.startedAt = new Date();
+				}
+
+				if (item.endedAt) {
+					data.endedAt = item.endedAt;
+				} else {
+					data.endedAt = new Date();
+				}
+
+				return data;
+			});
 
 			const result = await prisma.stopWatchItem.createMany({
 				data: dataToInsert,

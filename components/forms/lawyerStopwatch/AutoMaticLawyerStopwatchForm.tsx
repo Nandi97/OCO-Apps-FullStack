@@ -56,7 +56,7 @@ function classNames(...classes: any) {
 	return classes.filter(Boolean).join(' ');
 }
 
-export default function AutomaticLawyerStopwatchForm({
+export default function ManualLawyerStopwatchForm({
 	setToggle,
 	formValues,
 	onChange,
@@ -264,60 +264,6 @@ export default function AutomaticLawyerStopwatchForm({
 								value={formValues?.narration}
 								onChange={onTextAreaChange}
 								className="sm:text-sm w-full md:h-14 bg-ocoblue-50 bg-opacity-70 border-1 focus:shadow-inner shadow-accent-300  focus:border-ocoblue-500 block p-2.5 h-8  px-3 py-1 shadow-ocoblue-300 rounded-md border border-ocoblue-300 text-sm font-medium leading-4 text-ocoblue-700 shadow-sm hover:bg-ocoblue-50 focus:outline-none focus:ring-2 focus:ring-ocobrown-500 focus:ring-offset-1"
-							/>
-						</div>
-					</div>
-					<div className="space-y-1 col-span-4">
-						<label
-							htmlFor="itemDate"
-							className="block text-sm font-medium text-ocoblue-700"
-						>
-							Date
-						</label>
-						<div className="mt-1">
-							<input
-								type="date"
-								name="itemDate"
-								id="itemDate"
-								value={formValues?.itemDate}
-								onChange={onChange}
-								className="sm:text-sm w-full  bg-ocoblue-50 bg-opacity-70 border-1 focus:shadow-inner shadow-accent-300  focus:border-ocoblue-500 block p-2.5 h-8  px-3 py-1 shadow-ocoblue-300 rounded-md border border-ocoblue-300 text-sm font-medium leading-4 text-ocoblue-700 shadow-sm hover:bg-ocoblue-50 focus:outline-none focus:ring-2 focus:ring-ocobrown-500 focus:ring-offset-1"
-							/>
-						</div>
-					</div>
-					<div className="space-y-1 col-span-4">
-						<label
-							htmlFor="startedAt"
-							className="block text-sm font-medium text-ocoblue-700"
-						>
-							Started At
-						</label>
-						<div className="mt-1">
-							<input
-								type="time"
-								name="startedAt"
-								id="startedAt"
-								value={formValues?.startedAt}
-								onChange={onChange}
-								className="sm:text-sm w-full  bg-ocoblue-50 bg-opacity-70 border-1 focus:shadow-inner shadow-accent-300  focus:border-ocoblue-500 block p-2.5 h-8  px-3 py-1 shadow-ocoblue-300 rounded-md border border-ocoblue-300 text-sm font-medium leading-4 text-ocoblue-700 shadow-sm hover:bg-ocoblue-50 focus:outline-none focus:ring-2 focus:ring-ocobrown-500 focus:ring-offset-1"
-							/>
-						</div>
-					</div>
-					<div className="space-y-1 col-span-4">
-						<label
-							htmlFor="endedAt"
-							className="block text-sm font-medium text-ocoblue-700"
-						>
-							Ended At
-						</label>
-						<div className="mt-1">
-							<input
-								type="time"
-								name="endedAt"
-								id="endedAt"
-								value={formValues?.endedAt}
-								onChange={onChange}
-								className="sm:text-sm w-full  bg-ocoblue-50 bg-opacity-70 border-1 focus:shadow-inner shadow-accent-300  focus:border-ocoblue-500 block p-2.5 h-8  px-3 py-1 shadow-ocoblue-300 rounded-md border border-ocoblue-300 text-sm font-medium leading-4 text-ocoblue-700 shadow-sm hover:bg-ocoblue-50 focus:outline-none focus:ring-2 focus:ring-ocobrown-500 focus:ring-offset-1"
 							/>
 						</div>
 					</div>

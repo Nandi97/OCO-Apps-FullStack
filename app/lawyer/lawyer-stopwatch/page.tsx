@@ -4,10 +4,10 @@ import { useQuery } from '@tanstack/react-query';
 import axios from 'axios';
 import Image from 'next/image';
 
-import Pagination from '@/components/ui/Pagination';
+import Pagination from '@/components/my-ui/Pagination';
 import StaffForm from '@/components/forms/StaffForm';
-import SearchInput from '@/components/ui/SearchInput';
-import OptDropdown from '@/components/ui/OptDropdown';
+import SearchInput from '@/components/my-ui/SearchInput';
+import OptDropdown from '@/components/my-ui/OptDropdown';
 import { toast } from 'react-hot-toast';
 import CreateLawyerStopwatch from './components/CreateLawyerStopwatch';
 import { formatDate, formatTime } from '@/utils/formatDate';
@@ -226,13 +226,13 @@ export default function StaffList() {
 											</td>
 											<td className="px-3 py-2 text-sm text-center whitespace-nowrap text-ocoblue-500">
 												{item?.startedAt
-													? formatTime(item?.startedAt, 'HH:mm:ss')
-													: formatTime(item?.createdAt, 'HH:mm:ss')}
+													? formatTime(item?.startedAt, 'hh:mm a')
+													: formatTime(item?.createdAt, 'hh:mm a')}
 											</td>
 											<td className="px-3 py-2 text-sm whitespace-nowrap text-ocoblue-500">
 												{item?.endedAt
-													? formatTime(item?.endedAt, 'HH:mm:ss')
-													: formatTime(item?.createdAt, 'HH:mm:ss')}
+													? formatTime(item?.endedAt, 'hh:mm a')
+													: formatTime(item?.createdAt, 'hh:mm a')}
 											</td>
 
 											<td className="relative py-2 pl-3 pr-4 text-sm font-medium text-right whitespace-nowrap sm:pr-6">
@@ -293,8 +293,8 @@ export default function StaffList() {
 							</div>
 							<div className="col-span-8">
 								{item?.startedAt
-									? formatTime(item?.startedAt, 'HH:mm:ss')
-									: formatTime(item?.createdAt, 'HH:mm:ss')}
+									? formatTime(item?.startedAt, 'hh:mm a')
+									: formatTime(item?.createdAt, 'hh:mm a')}
 							</div>
 							<div className="col-span-4 text-sm font-semibold text-left text-ocoblue-600">
 								End Time :
@@ -302,8 +302,8 @@ export default function StaffList() {
 
 							<div className="col-span-8">
 								{item?.endedAt
-									? formatTime(item?.endedAt, 'HH:mm:ss')
-									: formatTime(item?.createdAt, 'HH:mm:ss')}
+									? formatTime(item?.endedAt, 'hh:mm a')
+									: formatTime(item?.createdAt, 'hh:mm a')}
 							</div>
 						</div>
 					))}

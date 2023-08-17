@@ -4,10 +4,10 @@ import { useQuery } from '@tanstack/react-query';
 import axios from 'axios';
 import Image from 'next/image';
 
-import Pagination from '@/components/ui/Pagination';
+import Pagination from '@/components/my-ui/Pagination';
 import StaffForm from '@/components/forms/StaffForm';
-import SearchInput from '@/components/ui/SearchInput';
-import OptDropdown from '@/components/ui/OptDropdown';
+import SearchInput from '@/components/my-ui/SearchInput';
+import OptDropdown from '@/components/my-ui/OptDropdown';
 import { toast } from 'react-hot-toast';
 import CreateStaff from './components/CreateStaff';
 import EditStaff from './components/EditStaff';

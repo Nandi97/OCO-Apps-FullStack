@@ -40,7 +40,7 @@ export default async function handler(req, res) {
 				},
 
 				orderBy: {
-					id: 'asc',
+					id: 'desc',
 				},
 				skip,
 				take: perPage,
