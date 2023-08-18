@@ -9,6 +9,7 @@ import { getTeams } from './seeders/teams';
 import { getStaff } from './seeders/staff';
 import { getBooks } from './seeders/books';
 import { getStopWatchItemTasks } from './seeders/stopWatchItemTasks';
+import { getCurrencies } from './seeders/currencies';
 
 const prisma = new PrismaClient();
 
@@ -17,6 +18,7 @@ async function main() {
 	const subMenus = getSubMenus();
 	const matters = getMatters();
 	const genders = getGenders();
+	const currencies = getCurrencies();
 	const staffTypes = getStaffTypes();
 	const books = getBooks();
 	const designations = getDesignations();
@@ -64,6 +66,16 @@ async function main() {
 		await prisma.gender.create({
 			data: {
 				name: gender.name,
+			},
+		});
+	}
+
+	//Currencies
+	for (const currency of currencies) {
+		await prisma.currency.create({
+			data: {
+				name: currency.name,
+				initial: currency.initial,
 			},
 		});
 	}
