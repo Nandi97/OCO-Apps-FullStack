@@ -11,12 +11,6 @@ import OptDropdown from '@/components/my-ui/OptDropdown';
 import { toast } from 'react-hot-toast';
 import CreateStaff from './components/CreateStaff';
 import EditStaff from './components/EditStaff';
-import type { Metadata } from 'next';
-
-export const metadata: Metadata = {
-	title: 'OCO Apps - Staff List',
-	description: 'OCO Apps - Staff List',
-};
 
 export default function StaffList() {
 	const [title, setTitle] = useState('Staff List');
