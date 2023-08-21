@@ -3,6 +3,8 @@ import { Icon } from '@iconify/react/dist/iconify.js';
 import { useQuery } from '@tanstack/react-query';
 import axios from 'axios';
 import PurchaseItemForm from './PurchaseItemForm';
+import { Combobox } from '@headlessui/react';
+import { useState } from 'react';
 
 type Currency = {
 	id: number;
@@ -13,22 +15,90 @@ type Currency = {
 interface PurchaseOrderFormProps {
 	formValues: any;
 	onChange: (event: React.ChangeEvent<HTMLInputElement>) => void;
-	setSelectedFile: (file: File | null) => void;
-	setBase64Cover: (base64: string) => void;
+	onSelectChange: (event: React.ChangeEvent<HTMLSelectElement>) => void;
+	setSelectedAuthorizer: (value: any) => void;
+}
+
+function classNames(...classes: any) {
+	return classes.filter(Boolean).join(' ');
 }
 
 export default function PurchaseOrderForm({
 	formValues,
 	onChange,
-	setSelectedFile,
-	setBase64Cover,
+	onSelectChange,
+	setSelectedAuthorizer,
 }: PurchaseOrderFormProps) {
+	const [query, setQuery] = useState('');
+	const [searchParam, setSearchParam] = useState<string | null>(null);
+	const [currentPage, setCurrentPage] = useState(1);
+	const [perPage, setPerPage] = useState(97);
+	const [purchaseItems, setPurchaseItems] = useState([]);
+	const [disclosureStates, setDisclosureStates] = useState(1);
+
 	const { data: currencies } = useQuery<Currency[]>(['currencies'], () =>
 		axios.get('/api/general/getCurrencies').then((res) => res.data)
 	);
+
+	const { data: staff, isLoading } = useQuery(
+		['staffList', currentPage, perPage, searchParam],
+		() =>
+			axios
+				.get(`/api/staff/getStaff`, {
+					params: { page: currentPage, perPage, searchParam },
+				})
+				.then((response) => response.data)
+	);
+
+	const [selected, setSelected] = useState(staff?.data[0]);
+	// console.log('Staff Data:', staff?.total);
+
+	const filteredStaff =
+		query === ''
+			? staff?.data
+			: staff?.data?.filter((item) =>
+					item.name
+						.toLowerCase()
+						.replace(/\s+/g, '')
+						.includes(query.toLowerCase().replace(/\s+/g, ''))
+			  );
+
+	// console.log('Filtered Staff Data:', filteredStaff);
+
+	const handleAddPurchaseItem = () => {
+		const newItem = {
+			description: '',
+			quantity: 0,
+			cost: 0,
+		};
+		setPurchaseItems([...purchaseItems, newItem]);
+	};
+
+	const handleRemovePurchaseItem = (index) => {
+		const updatedItems = [...purchaseItems];
+		updatedItems.splice(index, 1);
+		setPurchaseItems(updatedItems);
+	};
+
+	const handleContinue = () => {
+		console.log('Next Panel');
+	};
+
+	const handlePrevious = () => {
+		console.log('Previous Panel');
+	};
+
+	const handleChangePurchaseItem = (index, updatedValues) => {
+		const updatedPurchaseItems = [...purchaseItems];
+
+		updatedPurchaseItems[index] = updatedValues;
+
+		setPurchaseItems(updatedPurchaseItems);
+	};
+
 	return (
 		<div>
-			<Disclosure>
+			<Disclosure defaultOpen={true}>
 				{({ open }) => (
 					<>
 						<Disclosure.Button className="flex w-full items-center justify-between rounded-lg bg-ocobrown-100 px-4 py-2 text-left text-sm font-medium text-ocobrown-900 hover:bg-ocobrown-200 focus:outline-none focus-visible:ring focus-visible:ring-ocobrown-500 focus-visible:ring-opacity-75">
@@ -65,6 +135,7 @@ export default function PurchaseOrderForm({
 										id="vendorType"
 										name="vendorType"
 										value={formValues?.vendorType}
+										onChange={onSelectChange}
 										className="sm:text-sm w-full bg-ocoblue-50 bg-opacity-70 border-1 focus:shadow-inner shadow-accent-300 focus:border-ocoblue-500 block p-2.5 h-8 px-3 py-1 shadow-ocoblue-300 rounded-md border border-ocoblue-300 text-sm font-medium leading-4 text-ocoblue-700 shadow-sm hover:bg-ocoblue-50 focus:outline-none focus:ring-2 focus:ring-ocobrown-500 focus:ring-offset-1"
 									>
 										<option
@@ -88,6 +159,7 @@ export default function PurchaseOrderForm({
 									<select
 										id="vatable"
 										name="vatable"
+										onChange={onSelectChange}
 										value={formValues?.vatable}
 										className="sm:text-sm w-full bg-ocoblue-50 bg-opacity-70 border-1 focus:shadow-inner shadow-accent-300 focus:border-ocoblue-500 block p-2.5 h-8 px-3 py-1 shadow-ocoblue-300 rounded-md border border-ocoblue-300 text-sm font-medium leading-4 text-ocoblue-700 shadow-sm hover:bg-ocoblue-50 focus:outline-none focus:ring-2 focus:ring-ocobrown-500 focus:ring-offset-1"
 									>
@@ -112,6 +184,7 @@ export default function PurchaseOrderForm({
 									<select
 										id="currencyId"
 										name="currencyId"
+										onChange={onSelectChange}
 										value={formValues?.currencyId}
 										className="sm:text-sm w-full bg-ocoblue-50 bg-opacity-70 border-1 focus:shadow-inner shadow-accent-300 focus:border-ocoblue-500 block p-2.5 h-8 px-3 py-1 shadow-ocoblue-300 rounded-md border border-ocoblue-300 text-sm font-medium leading-4 text-ocoblue-700 shadow-sm hover:bg-ocoblue-50 focus:outline-none focus:ring-2 focus:ring-ocobrown-500 focus:ring-offset-1"
 									>
@@ -209,6 +282,7 @@ export default function PurchaseOrderForm({
 								<div className="col-span-12 w-full flex items-center justify-center">
 									<button
 										type="button"
+										onClick={handleContinue}
 										className="flex items-center gap-2 p-2 text-sm font-medium leading-4 text-white border rounded-md shadow-sm bg-ocobrown-600 hover:opacity-80 border-ocobrown-300 focus:outline-none focus:ring-2 focus:ring-ocobrown-500 focus:ring-offset-1"
 									>
 										Continue
@@ -246,19 +320,164 @@ export default function PurchaseOrderForm({
 						</Disclosure.Button>
 						<Disclosure.Panel className="px-4 pt-4 pb-2 text-sm text-gray-500">
 							<div className="border border-ocoblue-200 rounded p-4">
-								<div className="flex w-full divide-solid divide-x-2">
-									<button className="bg-ocobrown-600 text-white p-2 rounded-l-md">
-										<Icon icon="heroicons:plus" />
-									</button>
-									<button className="bg-ocobrown-600 text-white p-2 rounded-r-md">
-										<Icon icon="heroicons:trash" />
+								<div className="flex w-full divide-solid py-2">
+									<button
+										type="button"
+										onClick={handleAddPurchaseItem}
+										className="bg-ocobrown-600 text-white text-sm flex items-center p-2 rounded-md"
+									>
+										<Icon icon="heroicons:plus" />{' '}
+										<span> Add A Purchase Item</span>
 									</button>
 								</div>
-								<PurchaseItemForm
-									formValues={formValues}
-									onChange={onChange}
-									currency={formValues?.initial}
-								/>
+								<div className="flex flex-col space-y-2">
+									{purchaseItems.map((item, index) => (
+										<PurchaseItemForm
+											key={index}
+											formValues={item}
+											onChange={(updatedValues) =>
+												handleChangePurchaseItem(index, updatedValues)
+											}
+											onClick={() => handleRemovePurchaseItem(index)}
+										/>
+									))}
+								</div>
+								<div className=" w-full flex items-center justify-center">
+									<button
+										type="button"
+										onClick={handleContinue}
+										className="flex items-center gap-2 p-2 text-sm font-medium leading-4 text-white border rounded-md shadow-sm bg-ocobrown-600 hover:opacity-80 border-ocobrown-300 focus:outline-none focus:ring-2 focus:ring-ocobrown-500 focus:ring-offset-1"
+									>
+										Continue
+									</button>
+									<button
+										type="button"
+										onClick={handlePrevious}
+										className="flex items-center gap-2 p-2 text-sm font-medium leading-4 text-white border rounded-md shadow-sm bg-ocoblue-600 hover:opacity-80 border-ocoblue-300 focus:outline-none focus:ring-2 focus:ring-ocoblue-500 focus:ring-offset-1"
+									>
+										Previous
+									</button>
+								</div>
+							</div>
+						</Disclosure.Panel>
+					</>
+				)}
+			</Disclosure>
+			<Disclosure as="div" className="mt-2">
+				{({ open }) => (
+					<>
+						<Disclosure.Button className="flex items-center w-full justify-between rounded-lg bg-ocobrown-100 px-4 py-2 text-left text-sm font-medium text-ocobrown-900 hover:bg-ocobrown-200 focus:outline-none focus-visible:ring focus-visible:ring-ocobrown-500 focus-visible:ring-opacity-75">
+							<div className="w-full flex items-center space-x-2">
+								<div className="h-2 w-2 p-3 rounded-full bg-ocobrown-600 text-ocobrown-50 flex items-center justify-center">
+									<span>3</span>
+								</div>
+								<div className="flex flex-col">
+									<span className="text-base font-semibold text-ocoblue-600">
+										Partner Approval
+									</span>
+									<span className="text-xs font-semibold text-ocoblue-600/70 flex items-center">
+										An email will be sent to the partner for their approval
+									</span>
+								</div>
+							</div>
+							<Icon
+								icon="heroicons:chevron-right"
+								className={`${
+									open ? 'rotate-90 transform' : ''
+								} h-5 w-5 text-ocobrown-500`}
+							/>
+						</Disclosure.Button>
+						<Disclosure.Panel className="px-4 pt-4 pb-2 text-sm text-gray-500">
+							<div className="border border-ocoblue-200 rounded p-4 space-y-2">
+								<Combobox
+									as="div"
+									value={selected}
+									onChange={(newSelected) => {
+										console.log('Selected staff:', newSelected);
+										setSelected(newSelected);
+										setSelectedAuthorizer(newSelected);
+									}}
+									className="space-y-1 col-span-6 "
+								>
+									<Combobox.Label className="block text-sm font-medium text-ocoblue-700">
+										Authorised by
+									</Combobox.Label>
+									<div className="relative mt-2">
+										<Combobox.Input
+											className="sm:text-sm w-full bg-ocoblue-50 bg-opacity-70 border-1 focus:shadow-inner shadow-accent-300  focus:border-ocoblue-500 block p-2.5 h-8  px-3 py-1 shadow-ocoblue-300 rounded-md border border-ocoblue-300 text-sm font-medium leading-4 text-ocoblue-700 shadow-sm hover:bg-ocoblue-50 focus:outline-none focus:ring-2 focus:ring-ocobrown-500 focus:ring-offset-1"
+											onChange={(event) => setQuery(event.target.value)}
+											displayValue={(item) => item?.name}
+										/>
+										<Combobox.Button className="absolute inset-y-0 right-0 flex items-center rounded-r-md px-2 focus:outline-none">
+											<Icon
+												icon="heroicons:chevron-up-down"
+												className="h-5 w-5 text-gray-400"
+												aria-hidden="true"
+											/>
+										</Combobox.Button>
+
+										{filteredStaff?.length > 0 && (
+											<Combobox.Options className="absolute z-10 mt-1 max-h-60 w-full overflow-auto rounded-md bg-white py-1 text-base shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none sm:text-sm">
+												{filteredStaff?.map((item) => (
+													<Combobox.Option
+														key={item.id}
+														value={item}
+														className={({ active }) =>
+															classNames(
+																'relative cursor-default select-none py-2 pl-3 pr-9',
+																active
+																	? 'bg-ocobrown-600 text-white'
+																	: 'text-ocoblue-900'
+															)
+														}
+													>
+														{({ active, selected }) => (
+															<>
+																<div className="flex">
+																	<span
+																		className={classNames(
+																			'truncate',
+																			selected &&
+																				'font-semibold'
+																		)}
+																	>
+																		{item?.name}
+																	</span>
+																</div>
+
+																{selected && (
+																	<span
+																		className={classNames(
+																			'absolute inset-y-0 right-0 flex items-center pr-4',
+																			active
+																				? 'text-white'
+																				: 'text-indigo-600'
+																		)}
+																	>
+																		<Icon
+																			icon="heroicons:check"
+																			className="h-5 w-5"
+																			aria-hidden="true"
+																		/>
+																	</span>
+																)}
+															</>
+														)}
+													</Combobox.Option>
+												))}
+											</Combobox.Options>
+										)}
+									</div>
+								</Combobox>
+								<div className=" w-full flex items-center justify-center">
+									<button
+										type="button"
+										onClick={handlePrevious}
+										className="flex items-center gap-2 p-2 text-sm font-medium leading-4 text-white border rounded-md shadow-sm bg-ocoblue-600 hover:opacity-80 border-ocoblue-300 focus:outline-none focus:ring-2 focus:ring-ocoblue-500 focus:ring-offset-1"
+									>
+										Previous
+									</button>
+								</div>
 							</div>
 						</Disclosure.Panel>
 					</>

@@ -169,7 +169,12 @@ export default function Library() {
 									);
 								} else {
 									return (
-										<tr key={book?.id}>
+										<tr
+											key={book?.id}
+											className={`hover:bg-ocobrown-100/95 ${
+												index % 2 && index !== 0 ? 'bg-ocoblue-100/95' : ''
+											}`}
+										>
 											<td className="p-2 text-sm text-center">
 												<div className="flex items-center w-full">
 													{!book?.coverUrl ? (
@@ -196,16 +201,18 @@ export default function Library() {
 													)}
 												</div>
 											</td>
-											<td className="py-2 pl-4 pr-3 text-sm sm:pl-6">
+											<td className="py-2 text-left  sm:pl-6 text-sm text-ocoblue-900">
 												<Link
 													href={`/library/book/${book?.id}`}
-													className="font-medium text-ocobrown-500"
+													className="font-medium text-ocobrown-500 truncate hover:whitespace-normal hover:overflow-visible w-72"
 												>
 													{book?.title}
 												</Link>
 											</td>
-											<td className="px-3 py-2 text-sm text-ocoblue-900">
-												{book?.author}
+											<td className="py-2 text-left  sm:pl-6 text-sm text-ocoblue-900">
+												<p className="truncate hover:whitespace-normal hover:overflow-visible w-52">
+													{book?.author}
+												</p>
 											</td>
 											<td className="px-3 py-2 text-sm whitespace-nowrap text-ocoblue-500">
 												{book?.publicationYear}

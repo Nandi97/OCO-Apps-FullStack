@@ -6,10 +6,40 @@ import { useState } from 'react';
 
 export default function CreatePurchaseOrder() {
 	const [title, setTitle] = useState<string>('Create New PurchaseOrder');
+	const [selected, setSelected] = useState<any[]>([]);
+	const [purchaseItems, setPurchaseItems] = useState<any[]>([]);
+
+	const [formValues, setFormValues] = useState<any>({
+		vendorType: '',
+		vatable: '',
+		currencyId: '',
+		name: '',
+		email: '',
+		phoneNumber: '',
+		address: '',
+	});
+
+	const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+		const { name, value } = e.target;
+		setFormValues((prevFormValues: any) => ({
+			...prevFormValues,
+			[name]: value,
+		}));
+	};
+	const handleSelectChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
+		const { name, value } = e.target;
+		setFormValues((prevFormValues: any) => ({
+			...prevFormValues,
+			[name]: value,
+		}));
+	};
+	// console.log('FormValues: ', formValues);
+	// console.log('Selected: ', selected);
+	// console.log('Purchased Items: ', purchaseItems);
 
 	const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
 		e.preventDefault();
-		console.log('Submitting Form');
+		// console.log('Submitting Form');
 	};
 	return (
 		<div className="space-y-2 bg-white">
@@ -22,7 +52,12 @@ export default function CreatePurchaseOrder() {
 					className="rounded-md shadow-md shadow-ocoblue-200 col-span-6"
 				>
 					<div>
-						<PurchaseOrderForm />
+						<PurchaseOrderForm
+							setSelectedAuthorizer={setSelected}
+							onSelectChange={handleSelectChange}
+							formValues={formValues}
+							onChange={handleChange}
+						/>
 					</div>
 					<div className="flex items-center justify-center w-full py-8 space-x-2">
 						{/* Submit Form Button  */}
