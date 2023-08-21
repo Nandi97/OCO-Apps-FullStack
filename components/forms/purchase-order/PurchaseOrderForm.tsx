@@ -17,6 +17,7 @@ interface PurchaseOrderFormProps {
 	onChange: (event: React.ChangeEvent<HTMLInputElement>) => void;
 	onSelectChange: (event: React.ChangeEvent<HTMLSelectElement>) => void;
 	setSelectedAuthorizer: (value: any) => void;
+	setPurchaseItemFormValues: ([]: any) => void;
 }
 
 function classNames(...classes: any) {
@@ -28,14 +29,14 @@ export default function PurchaseOrderForm({
 	onChange,
 	onSelectChange,
 	setSelectedAuthorizer,
+	setPurchaseItemFormValues,
 }: PurchaseOrderFormProps) {
 	const [query, setQuery] = useState('');
 	const [searchParam, setSearchParam] = useState<string | null>(null);
 	const [currentPage, setCurrentPage] = useState(1);
 	const [perPage, setPerPage] = useState(97);
-	const [purchaseItems, setPurchaseItems] = useState([]);
 	const [disclosureStates, setDisclosureStates] = useState(1);
-
+	let purchaseItems: any = [];
 	const { data: currencies } = useQuery<Currency[]>(['currencies'], () =>
 		axios.get('/api/general/getCurrencies').then((res) => res.data)
 	);
@@ -71,13 +72,13 @@ export default function PurchaseOrderForm({
 			quantity: 0,
 			cost: 0,
 		};
-		setPurchaseItems([...purchaseItems, newItem]);
+		setPurchaseItemFormValues([...purchaseItems, newItem]);
 	};
 
 	const handleRemovePurchaseItem = (index) => {
 		const updatedItems = [...purchaseItems];
 		updatedItems.splice(index, 1);
-		setPurchaseItems(updatedItems);
+		setPurchaseItemFormValues(updatedItems);
 	};
 
 	const handleContinue = () => {
@@ -93,7 +94,7 @@ export default function PurchaseOrderForm({
 
 		updatedPurchaseItems[index] = updatedValues;
 
-		setPurchaseItems(updatedPurchaseItems);
+		setPurchaseItemFormValues(updatedPurchaseItems);
 	};
 
 	return (
@@ -331,7 +332,7 @@ export default function PurchaseOrderForm({
 									</button>
 								</div>
 								<div className="flex flex-col space-y-2">
-									{purchaseItems.map((item, index) => (
+									{purchaseItems?.map((item, index) => (
 										<PurchaseItemForm
 											key={index}
 											formValues={item}
