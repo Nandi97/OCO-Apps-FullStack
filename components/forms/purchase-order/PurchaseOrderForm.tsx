@@ -4,7 +4,7 @@ import { useQuery } from '@tanstack/react-query';
 import axios from 'axios';
 import PurchaseItemForm from './PurchaseItemForm';
 import { Combobox } from '@headlessui/react';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 
 type Currency = {
 	id: number;
@@ -16,8 +16,9 @@ interface PurchaseOrderFormProps {
 	formValues: any;
 	onChange: (event: React.ChangeEvent<HTMLInputElement>) => void;
 	onSelectChange: (event: React.ChangeEvent<HTMLSelectElement>) => void;
+	onBooleanSelectChange: (event: React.ChangeEvent<HTMLSelectElement>) => void;
 	setSelectedAuthorizer: (value: any) => void;
-	setPurchaseItemFormValues: ([]: any) => void;
+	setPurchaseOrderItems: ([]: any) => void;
 }
 
 function classNames(...classes: any) {
@@ -28,15 +29,17 @@ export default function PurchaseOrderForm({
 	formValues,
 	onChange,
 	onSelectChange,
+	onBooleanSelectChange,
 	setSelectedAuthorizer,
-	setPurchaseItemFormValues,
+	setPurchaseOrderItems,
 }: PurchaseOrderFormProps) {
 	const [query, setQuery] = useState('');
 	const [searchParam, setSearchParam] = useState<string | null>(null);
 	const [currentPage, setCurrentPage] = useState(1);
 	const [perPage, setPerPage] = useState(97);
 	const [disclosureStates, setDisclosureStates] = useState(1);
-	let purchaseItems: any = [];
+	const [purchaseItems, setPurchaseItems] = useState([]);
+
 	const { data: currencies } = useQuery<Currency[]>(['currencies'], () =>
 		axios.get('/api/general/getCurrencies').then((res) => res.data)
 	);
@@ -65,20 +68,19 @@ export default function PurchaseOrderForm({
 			  );
 
 	// console.log('Filtered Staff Data:', filteredStaff);
-
 	const handleAddPurchaseItem = () => {
 		const newItem = {
 			description: '',
 			quantity: 0,
 			cost: 0,
 		};
-		setPurchaseItemFormValues([...purchaseItems, newItem]);
+		setPurchaseItems([...purchaseItems, newItem]);
 	};
 
 	const handleRemovePurchaseItem = (index) => {
 		const updatedItems = [...purchaseItems];
 		updatedItems.splice(index, 1);
-		setPurchaseItemFormValues(updatedItems);
+		setPurchaseItems(updatedItems);
 	};
 
 	const handleContinue = () => {
@@ -89,14 +91,19 @@ export default function PurchaseOrderForm({
 		console.log('Previous Panel');
 	};
 
-	const handleChangePurchaseItem = (index, updatedValues) => {
-		const updatedPurchaseItems = [...purchaseItems];
-
-		updatedPurchaseItems[index] = updatedValues;
-
-		setPurchaseItemFormValues(updatedPurchaseItems);
+	const handleChangePurchaseItem = (index, event) => {
+		const { name, value } = event.target;
+		const updatedItems = [...purchaseItems];
+		updatedItems[index][name] = value;
+		setPurchaseItems(updatedItems);
 	};
 
+	useEffect(() => {
+		setPurchaseOrderItems(purchaseItems);
+
+		setSelectedAuthorizer(selected?.id);
+	}, [setPurchaseOrderItems, purchaseItems, setSelectedAuthorizer, selected]);
+	// console.log(selected);
 	return (
 		<div>
 			<Disclosure defaultOpen={true}>
@@ -160,7 +167,7 @@ export default function PurchaseOrderForm({
 									<select
 										id="vatable"
 										name="vatable"
-										onChange={onSelectChange}
+										onChange={onBooleanSelectChange}
 										value={formValues?.vatable}
 										className="sm:text-sm w-full bg-ocoblue-50 bg-opacity-70 border-1 focus:shadow-inner shadow-accent-300 focus:border-ocoblue-500 block p-2.5 h-8 px-3 py-1 shadow-ocoblue-300 rounded-md border border-ocoblue-300 text-sm font-medium leading-4 text-ocoblue-700 shadow-sm hover:bg-ocoblue-50 focus:outline-none focus:ring-2 focus:ring-ocobrown-500 focus:ring-offset-1"
 									>
@@ -332,13 +339,11 @@ export default function PurchaseOrderForm({
 									</button>
 								</div>
 								<div className="flex flex-col space-y-2">
-									{purchaseItems?.map((item, index) => (
+									{purchaseItems.map((item, index) => (
 										<PurchaseItemForm
 											key={index}
 											formValues={item}
-											onChange={(updatedValues) =>
-												handleChangePurchaseItem(index, updatedValues)
-											}
+											onChange={(e) => handleChangePurchaseItem(index, e)}
 											onClick={() => handleRemovePurchaseItem(index)}
 										/>
 									))}
@@ -396,7 +401,6 @@ export default function PurchaseOrderForm({
 									onChange={(newSelected) => {
 										console.log('Selected staff:', newSelected);
 										setSelected(newSelected);
-										setSelectedAuthorizer(newSelected);
 									}}
 									className="space-y-1 col-span-6 "
 								>

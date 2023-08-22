@@ -7,8 +7,6 @@ import axios, { AxiosError } from 'axios';
 import Link from 'next/link';
 import { useRouter } from 'next/navigation';
 import toast from 'react-hot-toast';
-import Book_Placeholder from '@/public/assets/images/books/book-illustration.png';
-import Image from 'next/image';
 import BookForm from '@/components/forms/BookForm';
 
 export default function CreateBook() {
