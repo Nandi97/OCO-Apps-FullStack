@@ -20,6 +20,8 @@ export default function PurchaseOrderPreview({
 	const currentDate = date.toISOString();
 	// const currentDate = format(new Date(), 'MMMM d, yyyy');
 
+	console.log('FormValues: ', formValues);
+
 	return (
 		<div className="w-full flex flex-col border rounded shadow-sm p-2">
 			<div className="w-full flex items-center">
@@ -236,21 +238,71 @@ export default function PurchaseOrderPreview({
 									</td>
 								</tr>
 							))}
-							<tr>
-								<td
-									colSpan={6}
-									className="px-2 border-r text-right font-medium  text-ocobrown-600 uppercase"
-								>
-									Total
-								</td>
+							{formValues?.vatable === true ? (
+								<>
+									<tr className="border-b">
+										<td
+											colSpan={6}
+											className="px-2 border-r text-right font-medium  text-ocoblue-600 uppercase"
+										>
+											SubTotal
+										</td>
 
-								<td colSpan={3} className="px-2 ">
-									{purchaseOrderItems?.reduce(
-										(total, item) => total + item.cost * item.quantity,
-										0
-									)}
-								</td>
-							</tr>
+										<td colSpan={3} className="px-2 ">
+											{purchaseOrderItems?.reduce(
+												(total, item) => total + item.cost * item.quantity,
+												0
+											)}
+										</td>
+									</tr>
+									<tr className="border-b">
+										<td
+											colSpan={6}
+											className="px-2 border-r text-right font-base  text-ocoblue-600 uppercase"
+										>
+											VAT @ 16%
+										</td>
+
+										<td colSpan={3} className="px-2 ">
+											{purchaseOrderItems?.reduce(
+												(total, item) => total + item.cost * item.quantity,
+												0
+											) * 0.16}
+										</td>
+									</tr>
+									<tr>
+										<td
+											colSpan={6}
+											className="px-2 border-r text-right font-medium  text-ocobrown-600 uppercase"
+										>
+											Total
+										</td>
+
+										<td colSpan={3} className="px-2 ">
+											{purchaseOrderItems?.reduce(
+												(total, item) => total + item.cost * item.quantity,
+												0
+											) * 1.16}
+										</td>
+									</tr>
+								</>
+							) : (
+								<tr>
+									<td
+										colSpan={6}
+										className="px-2 border-r text-right font-medium  text-ocobrown-600 uppercase"
+									>
+										Total
+									</td>
+
+									<td colSpan={3} className="px-2 ">
+										{purchaseOrderItems?.reduce(
+											(total, item) => total + item.cost * item.quantity,
+											0
+										)}
+									</td>
+								</tr>
+							)}
 						</tbody>
 					</table>
 				</div>

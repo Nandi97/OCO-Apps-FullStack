@@ -208,7 +208,7 @@ model StopWatchItem {
 
 model PurchaseOrder {
   id              Int            @id @default(autoincrement())
-  poNumber        Int            @unique
+  poNumber        String         @unique
   type            String
   vatable         Boolean        @default(true)
   currencyId      Int

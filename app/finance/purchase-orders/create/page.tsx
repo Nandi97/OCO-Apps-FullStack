@@ -36,8 +36,10 @@ export default function CreatePurchaseOrder() {
 
 	let purchaseOrderNumber = generateRandomNumber(6, 10);
 
+	const vat = 16;
+
 	const [formValues, setFormValues] = useState<any>({
-		poNumber: purchaseOrderNumber,
+		poNumber: purchaseOrderNumber.toString(),
 		type: '',
 		vatable: false,
 		currencyId: 0,
@@ -73,10 +75,10 @@ export default function CreatePurchaseOrder() {
 				postalCode: formValues.postalCode,
 				city: formValues.city,
 				country: formValues.country,
-				totalAmount: purchaseItems?.reduce(
-					(total, item) => total + item.cost * item.quantity,
-					0
-				),
+				totalAmount: formValues.vatable
+					? purchaseItems?.reduce((total, item) => total + item.cost * item.quantity, 0) *
+					  1.16
+					: purchaseItems?.reduce((total, item) => total + item.cost * item.quantity, 0),
 				approverId: selected?.id,
 				purchaseItems: purchaseItems,
 			};
@@ -144,10 +146,10 @@ export default function CreatePurchaseOrder() {
 			vatable: isVatable,
 		});
 	};
-	console.log('FormValues: ', formValues);
-	console.log('Selected: ', selected);
-	console.log('Selected Town: ', selectedTown);
-	console.log('Purchased Items: ', purchaseItems);
+	// console.log('FormValues: ', formValues);
+	// console.log('Selected: ', selected);
+	// console.log('Selected Town: ', selectedTown);
+	// console.log('Purchased Items: ', purchaseItems);
 
 	const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
 		e.preventDefault();

@@ -22,7 +22,7 @@ export default async function handler(req, res) {
 
 			const result = await prisma.purchaseOrder.create({
 				data: {
-					poNumber: formData.poNumber,
+					poNumber: formData.poNumber.toString(),
 					type: formData.type,
 					vatable: formData.vatable,
 					currencyId: parseInt(formData.currencyId),
