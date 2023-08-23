@@ -3,10 +3,10 @@ import { getServerSession } from 'next-auth';
 import { authOptions } from '../auth/[...nextauth]';
 
 export default async function handler(req, res) {
-	const session = await getServerSession(req, res, authOptions);
-	if (!session) {
-		return res.status(401).json({ message: 'Please sign-in to view side menu' });
-	}
+	// const session = await getServerSession(req, res, authOptions);
+	// if (!session) {
+	// 	return res.status(401).json({ message: 'Please sign-in to view side menu' });
+	// }
 	if (req.method === 'GET') {
 		try {
 			const page = parseInt(req.query.page) || 1;
@@ -15,30 +15,27 @@ export default async function handler(req, res) {
 
 			const skip = (page - 1) * perPage;
 
-			const totalItems = await prisma.staff.count();
+			const totalItems = await prisma.purchaseOrder.count();
+
 			const totalPages = Math.ceil(totalItems / perPage);
 
-			const data = await prisma.staff.findMany({
+			const data = await prisma.purchaseOrder.findMany({
 				where: {
 					OR: [
-						{ name: { contains: searchParam, mode: 'insensitive' } },
-						{ email: { contains: searchParam, mode: 'insensitive' } },
-						// { ext: { contains: parseInt(searchParam) } },
-						{
-							designation: {
-								name: { contains: searchParam, mode: 'insensitive' },
-							},
-						},
-						{
-							team: {
-								name: { contains: searchParam, mode: 'insensitive' },
-							},
-						},
+						{ vendorType: { contains: searchParam, mode: 'insensitive' } },
+						{ vendorName: { contains: searchParam, mode: 'insensitive' } },
+						{ vendorEmail: { contains: searchParam, mode: 'insensitive' } },
 					],
+				},
+				include: {
+					purchaseItems: true,
+					// currency: true,
+					approver: true,
+					creator: true,
 				},
 
 				orderBy: {
-					staffNo: 'asc',
+					id: 'asc',
 				},
 				skip,
 				take: perPage,
@@ -48,7 +45,7 @@ export default async function handler(req, res) {
 
 			if (page > 1) {
 				links.push({
-					url: `/api/staff/getStaff?page=${page - 1}`,
+					url: `/api/purchase-order/getPurchaseOrders?page=${page - 1}`,
 					label: '&laquo; Previous',
 					active: false,
 				});
@@ -57,7 +54,7 @@ export default async function handler(req, res) {
 			// Add links for individual pages
 			for (let i = 1; i <= totalPages; i++) {
 				links.push({
-					url: `/api/staff/getStaff?page=${i}`,
+					url: `/api/purchase-order/getPurchaseOrders?page=${i}`,
 					label: i.toString(),
 					active: i === page,
 				});
@@ -65,7 +62,7 @@ export default async function handler(req, res) {
 
 			if (page < totalPages) {
 				links.push({
-					url: `/api/staff/getStaff?page=${page + 1}`,
+					url: `/api/purchase-order/getPurchaseOrders?page=${page + 1}`,
 					label: 'Next &raquo;',
 					active: false,
 				});
@@ -76,15 +73,15 @@ export default async function handler(req, res) {
 			const responseData = {
 				currentPage: page,
 				data,
-				firstPageUrl: `/api/staff/getStaff?page=1`,
+				firstPageUrl: `/api/purchase-order/getPurchaseOrders?page=1`,
 				lastPage: totalPages,
-				lastPageUrl: `/api/staff/getStaff?page=${totalPages}`,
+				lastPageUrl: `/api/purchase-order/getPurchaseOrders?page=${totalPages}`,
 				links,
-				nextPageUrl: `/api/staff/getStaff?page=${page + 1}`,
-				path: '/api/staff/getStaff',
+				nextPageUrl: `/api/purchase-order/getPurchaseOrders?page=${page + 1}`,
+				path: '/api/purchase-order/getPurchaseOrders',
 				perPage,
 				searchParam,
-				prevPageUrl: `/api/staff/getStaff?page=${page - 1}`,
+				prevPageUrl: `/api/purchase-order/getPurchaseOrders?page=${page - 1}`,
 				total: totalItems,
 				from,
 				to,
@@ -92,7 +89,7 @@ export default async function handler(req, res) {
 
 			return res.status(200).json(responseData);
 		} catch (err) {
-			res.status(403).json({ err: 'Error has occurred while fetching matters' });
+			res.status(403).json({ err: 'Error has occurred while fetching purchase orders' });
 		}
 	}
 }

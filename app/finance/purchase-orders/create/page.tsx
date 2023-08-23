@@ -1,6 +1,7 @@
 'use client';
 
 import PurchaseOrderForm from '@/components/forms/purchase-order/PurchaseOrderForm';
+import PurchaseOrderPreview from '@/components/previews/PurchaseOrder';
 import { useMutation } from '@tanstack/react-query';
 import axios, { AxiosError } from 'axios';
 import Link from 'next/link';
@@ -10,17 +11,46 @@ import toast from 'react-hot-toast';
 
 export default function CreatePurchaseOrder() {
 	const [title, setTitle] = useState<string>('Create New PurchaseOrder');
-	const [selected, setSelected] = useState('');
-	const [purchaseItems, setPurchaseItems] = useState('');
+	const [selected, setSelected] = useState<any>([]);
+	const [selectedTown, setSelectedTown] = useState<any>([]);
+	const [purchaseItems, setPurchaseItems] = useState([
+		{
+			description: '',
+			quantity: 0,
+			cost: 0,
+		},
+	]);
+
+	function generateRandomNumber(minDigits, maxDigits) {
+		minDigits = Math.max(6, minDigits);
+		maxDigits = Math.min(10, maxDigits);
+
+		const randomFraction = Math.random();
+
+		const range = Math.pow(10, maxDigits) - Math.pow(10, minDigits) + 1;
+
+		const randomNumber = Math.floor(randomFraction * range) + Math.pow(10, minDigits);
+
+		return randomNumber;
+	}
+
+	let purchaseOrderNumber = generateRandomNumber(6, 10);
 
 	const [formValues, setFormValues] = useState<any>({
-		vendorType: '',
+		poNumber: purchaseOrderNumber,
+		type: '',
 		vatable: false,
 		currencyId: 0,
 		name: '',
 		email: '',
 		phoneNumber: '',
-		address: '',
+		physicalAddress: '',
+		townId: 0,
+		address: 0,
+		postalCode: 0,
+		city: '',
+		country: '',
+		totalAmount: 0,
 	});
 
 	let toastID: string;
@@ -30,17 +60,27 @@ export default function CreatePurchaseOrder() {
 	const { mutate } = useMutation(
 		async () => {
 			const purchaseOrderData = {
-				vendorType: formValues.vendorType,
+				poNumber: purchaseOrderNumber,
+				type: formValues.vendorType,
 				vatable: formValues.vatable,
 				currencyId: formValues.currencyId,
 				name: formValues.name,
 				email: formValues.email,
 				phoneNumber: formValues.phoneNumber,
+				physicalAddress: formValues.physicalAddress,
+				townId: selectedTown?.id,
 				address: formValues.address,
-				approverId: selected,
+				postalCode: formValues.postalCode,
+				city: formValues.city,
+				country: formValues.country,
+				totalAmount: purchaseItems?.reduce(
+					(total, item) => total + item.cost * item.quantity,
+					0
+				),
+				approverId: selected?.id,
 				purchaseItems: purchaseItems,
 			};
-			console.log('Purchase Order Data', purchaseOrderData);
+			// console.log('Purchase Order Data', purchaseOrderData);
 			await axios.post('/api/purchase-order/addPurchaseOrder', purchaseOrderData);
 		},
 		{
@@ -67,7 +107,13 @@ export default function CreatePurchaseOrder() {
 					address: '',
 				});
 				setSelected('');
-				setPurchaseItems('');
+				setPurchaseItems([
+					{
+						description: '',
+						quantity: 0,
+						cost: 0,
+					},
+				]);
 				router.push('/finance/purchase-orders/');
 			},
 		}
@@ -89,21 +135,19 @@ export default function CreatePurchaseOrder() {
 	};
 
 	const onBooleanSelectChange = (event) => {
-		// Get the selected value from the select input
 		const selectedValue = event.target.value;
 
-		// Convert the selected value to a boolean
 		const isVatable = selectedValue === 'true';
 
-		// Update the formValues state with the boolean value
 		setFormValues({
 			...formValues,
 			vatable: isVatable,
 		});
 	};
-	// console.log('FormValues: ', formValues);
-	// console.log('Selected: ', selected);
-	// console.log('Purchased Items: ', purchaseItems);
+	console.log('FormValues: ', formValues);
+	console.log('Selected: ', selected);
+	console.log('Selected Town: ', selectedTown);
+	console.log('Purchased Items: ', purchaseItems);
 
 	const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
 		e.preventDefault();
@@ -115,7 +159,7 @@ export default function CreatePurchaseOrder() {
 			<div className="sticky z-20 flex items-center justify-between gap-2 bg-white top-2">
 				<h1 className="text-lg font-extralight text-accent-700">{title}</h1>
 			</div>
-			<div className="grid grid-cols-12">
+			<div className="grid grid-cols-12 gap-2">
 				<form
 					onSubmit={handleSubmit}
 					className="rounded-md shadow-md shadow-ocoblue-200 col-span-6"
@@ -128,6 +172,7 @@ export default function CreatePurchaseOrder() {
 							formValues={formValues}
 							onChange={handleChange}
 							setPurchaseOrderItems={setPurchaseItems}
+							setSelectedTownValue={setSelectedTown}
 						/>
 					</div>
 					<div className="flex items-center justify-center w-full py-8 space-x-2">
@@ -146,6 +191,14 @@ export default function CreatePurchaseOrder() {
 						</Link>
 					</div>
 				</form>
+				<div className="md:col-span-6 col-span-12">
+					<PurchaseOrderPreview
+						formValues={formValues}
+						purchaseOrderItems={purchaseItems}
+						selectedAuthorizer={selected}
+						selectedTown={selectedTown}
+					/>
+				</div>
 			</div>
 		</div>
 	);

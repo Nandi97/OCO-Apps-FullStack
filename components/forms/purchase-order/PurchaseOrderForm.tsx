@@ -12,12 +12,18 @@ type Currency = {
 	initial: string;
 };
 
+type Town = {
+	id: number;
+	name: string;
+};
+
 interface PurchaseOrderFormProps {
 	formValues: any;
 	onChange: (event: React.ChangeEvent<HTMLInputElement>) => void;
 	onSelectChange: (event: React.ChangeEvent<HTMLSelectElement>) => void;
 	onBooleanSelectChange: (event: React.ChangeEvent<HTMLSelectElement>) => void;
 	setSelectedAuthorizer: (value: any) => void;
+	setSelectedTownValue: (value: any) => void;
 	setPurchaseOrderItems: ([]: any) => void;
 }
 
@@ -31,6 +37,7 @@ export default function PurchaseOrderForm({
 	onSelectChange,
 	onBooleanSelectChange,
 	setSelectedAuthorizer,
+	setSelectedTownValue,
 	setPurchaseOrderItems,
 }: PurchaseOrderFormProps) {
 	const [query, setQuery] = useState('');
@@ -38,29 +45,47 @@ export default function PurchaseOrderForm({
 	const [currentPage, setCurrentPage] = useState(1);
 	const [perPage, setPerPage] = useState(97);
 	const [disclosureStates, setDisclosureStates] = useState(1);
-	const [purchaseItems, setPurchaseItems] = useState([]);
+	const [purchaseItems, setPurchaseItems] = useState([
+		{
+			description: '',
+			quantity: 0,
+			cost: 0,
+		},
+	]);
 
 	const { data: currencies } = useQuery<Currency[]>(['currencies'], () =>
 		axios.get('/api/general/getCurrencies').then((res) => res.data)
 	);
 
-	const { data: staff, isLoading } = useQuery(
-		['staffList', currentPage, perPage, searchParam],
-		() =>
-			axios
-				.get(`/api/staff/getStaff`, {
-					params: { page: currentPage, perPage, searchParam },
-				})
-				.then((response) => response.data)
+	const { data: towns } = useQuery(['towns'], () =>
+		axios.get('/api/general/getTowns').then((res) => res.data)
+	);
+
+	const { data: staff } = useQuery(['staffList', currentPage, perPage, searchParam], () =>
+		axios
+			.get(`/api/staff/getStaff`, {
+				params: { page: currentPage, perPage, searchParam },
+			})
+			.then((response) => response.data)
 	);
 
 	const [selected, setSelected] = useState(staff?.data[0]);
-	// console.log('Staff Data:', staff?.total);
+	const [selectedTown, setSelectedTown] = useState(towns?.[0]);
 
 	const filteredStaff =
 		query === ''
 			? staff?.data
 			: staff?.data?.filter((item) =>
+					item.name
+						.toLowerCase()
+						.replace(/\s+/g, '')
+						.includes(query.toLowerCase().replace(/\s+/g, ''))
+			  );
+
+	const filteredTown =
+		query === ''
+			? towns
+			: towns?.filter((item) =>
 					item.name
 						.toLowerCase()
 						.replace(/\s+/g, '')
@@ -100,10 +125,17 @@ export default function PurchaseOrderForm({
 
 	useEffect(() => {
 		setPurchaseOrderItems(purchaseItems);
-
-		setSelectedAuthorizer(selected?.id);
-	}, [setPurchaseOrderItems, purchaseItems, setSelectedAuthorizer, selected]);
-	// console.log(selected);
+		setSelectedAuthorizer(selected);
+		setSelectedTownValue(selectedTown); // Set selectedTownValue to the value of selectedTown
+	}, [
+		setPurchaseOrderItems,
+		purchaseItems,
+		setSelectedAuthorizer,
+		selected,
+		setSelectedTownValue, // Add setSelectedTownValue to the dependency array
+		selectedTown, // Add selectedTown to the dependency array if needed
+	]);
+	// console.log('Purchase Items', purchaseItems);
 	return (
 		<div>
 			<Disclosure defaultOpen={true}>
@@ -219,7 +251,7 @@ export default function PurchaseOrderForm({
 									</label>
 									<div className="mt-1">
 										<input
-											type="name"
+											type="text"
 											name="name"
 											id="name"
 											value={formValues?.name}
@@ -238,7 +270,7 @@ export default function PurchaseOrderForm({
 									</label>
 									<div className="mt-1">
 										<input
-											type="email"
+											type="text"
 											name="email"
 											id="email"
 											value={formValues?.email}
@@ -271,7 +303,7 @@ export default function PurchaseOrderForm({
 								</div>
 								<div className="col-span-6 md:col-span-12">
 									<label
-										htmlFor="address"
+										htmlFor="physicalAddress"
 										className="flex items-center space-x-2 text-sm font-medium text-ocoblue-700 f"
 									>
 										Physical Address
@@ -279,14 +311,174 @@ export default function PurchaseOrderForm({
 									<div className="mt-1">
 										<input
 											type="text"
-											name="address"
-											id="address"
-											value={formValues?.address}
+											name="physicalAddress"
+											id="physicalAddress"
+											value={formValues?.physicalAddress}
 											onChange={onChange}
 											className="sm:text-sm w-full bg-ocoblue-50 bg-opacity-70 border-1 focus:shadow-inner shadow-accent-300  focus:border-ocoblue-500 block p-2.5 h-8  px-3 py-1 shadow-ocoblue-300 rounded-md border border-ocoblue-300 text-sm font-medium leading-4 text-ocoblue-700 shadow-sm hover:bg-ocoblue-50 focus:outline-none focus:ring-2 focus:ring-ocobrown-500 focus:ring-offset-1"
 										/>
 									</div>
 								</div>
+								{formValues?.vendorType !== 'Local' ? (
+									<>
+										<div className="col-span-6 md:col-span-6">
+											<label
+												htmlFor="city"
+												className="flex items-center space-x-2 text-sm font-medium text-ocoblue-700 f"
+											>
+												City
+											</label>
+											<div className="mt-1">
+												<input
+													type="text"
+													name="city"
+													id="city"
+													value={formValues?.city}
+													onChange={onChange}
+													className="sm:text-sm w-full bg-ocoblue-50 bg-opacity-70 border-1 focus:shadow-inner shadow-accent-300  focus:border-ocoblue-500 block p-2.5 h-8  px-3 py-1 shadow-ocoblue-300 rounded-md border border-ocoblue-300 text-sm font-medium leading-4 text-ocoblue-700 shadow-sm hover:bg-ocoblue-50 focus:outline-none focus:ring-2 focus:ring-ocobrown-500 focus:ring-offset-1"
+												/>
+											</div>
+										</div>
+										<div className="col-span-6 md:col-span-6">
+											<label
+												htmlFor="country"
+												className="flex items-center space-x-2 text-sm font-medium text-ocoblue-700 f"
+											>
+												country
+											</label>
+											<div className="mt-1">
+												<input
+													type="text"
+													name="country"
+													id="country"
+													value={formValues?.country}
+													onChange={onChange}
+													className="sm:text-sm w-full bg-ocoblue-50 bg-opacity-70 border-1 focus:shadow-inner shadow-accent-300  focus:border-ocoblue-500 block p-2.5 h-8  px-3 py-1 shadow-ocoblue-300 rounded-md border border-ocoblue-300 text-sm font-medium leading-4 text-ocoblue-700 shadow-sm hover:bg-ocoblue-50 focus:outline-none focus:ring-2 focus:ring-ocobrown-500 focus:ring-offset-1"
+												/>
+											</div>
+										</div>
+									</>
+								) : (
+									<>
+										<div className="col-span-6 md:col-span-4">
+											<label
+												htmlFor="address"
+												className="flex items-center space-x-2 text-sm font-medium text-ocoblue-700 f"
+											>
+												Postal Address
+											</label>
+											<div className="mt-1">
+												<input
+													type="text"
+													name="address"
+													id="address"
+													value={formValues?.address}
+													onChange={onChange}
+													className="sm:text-sm w-full bg-ocoblue-50 bg-opacity-70 border-1 focus:shadow-inner shadow-accent-300  focus:border-ocoblue-500 block p-2.5 h-8  px-3 py-1 shadow-ocoblue-300 rounded-md border border-ocoblue-300 text-sm font-medium leading-4 text-ocoblue-700 shadow-sm hover:bg-ocoblue-50 focus:outline-none focus:ring-2 focus:ring-ocobrown-500 focus:ring-offset-1"
+												/>
+											</div>
+										</div>
+										<div className="col-span-6 md:col-span-4">
+											<label
+												htmlFor="postalCode"
+												className="flex items-center space-x-2 text-sm font-medium text-ocoblue-700 f"
+											>
+												Postal Code
+											</label>
+											<div className="mt-1">
+												<input
+													type="text"
+													name="postalCode"
+													id="postalCode"
+													value={formValues?.postalCode}
+													onChange={onChange}
+													className="sm:text-sm w-full bg-ocoblue-50 bg-opacity-70 border-1 focus:shadow-inner shadow-accent-300  focus:border-ocoblue-500 block p-2.5 h-8  px-3 py-1 shadow-ocoblue-300 rounded-md border border-ocoblue-300 text-sm font-medium leading-4 text-ocoblue-700 shadow-sm hover:bg-ocoblue-50 focus:outline-none focus:ring-2 focus:ring-ocobrown-500 focus:ring-offset-1"
+												/>
+											</div>
+										</div>
+										<Combobox
+											as="div"
+											value={selectedTown}
+											onChange={(newSelectedTown) => {
+												console.log('Selected Town:', newSelectedTown);
+												setSelectedTown(newSelectedTown);
+											}}
+											className="space-y-1 col-span-4"
+										>
+											<Combobox.Label className="block text-sm font-medium text-ocoblue-700">
+												Town
+											</Combobox.Label>
+											<div className="relative mt-2">
+												<Combobox.Input
+													className="sm:text-sm w-full bg-ocoblue-50 bg-opacity-70 border-1 focus:shadow-inner shadow-accent-300  focus:border-ocoblue-500 block p-2.5 h-8  px-3 py-1 shadow-ocoblue-300 rounded-md border border-ocoblue-300 text-sm font-medium leading-4 text-ocoblue-700 shadow-sm hover:bg-ocoblue-50 focus:outline-none focus:ring-2 focus:ring-ocobrown-500 focus:ring-offset-1"
+													onChange={(event) =>
+														setQuery(event.target.value)
+													}
+													displayValue={(item) => item?.name}
+												/>
+												<Combobox.Button className="absolute inset-y-0 right-0 flex items-center rounded-r-md px-2 focus:outline-none">
+													<Icon
+														icon="heroicons:chevron-up-down"
+														className="h-5 w-5 text-gray-400"
+														aria-hidden="true"
+													/>
+												</Combobox.Button>
+
+												{filteredTown?.length > 0 && (
+													<Combobox.Options className="absolute z-10 mt-1 max-h-60 w-full overflow-auto rounded-md bg-white py-1 text-base shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none sm:text-sm">
+														{filteredTown?.map((item) => (
+															<Combobox.Option
+																key={item.id}
+																value={item}
+																className={({ active }) =>
+																	classNames(
+																		'relative cursor-default select-none py-2 pl-3 pr-9',
+																		active
+																			? 'bg-ocobrown-600 text-white'
+																			: 'text-ocoblue-900'
+																	)
+																}
+															>
+																{({ active, selected }) => (
+																	<>
+																		<div className="flex">
+																			<span
+																				className={classNames(
+																					'truncate',
+																					selected &&
+																						'font-semibold'
+																				)}
+																			>
+																				{item?.name}
+																			</span>
+																		</div>
+
+																		{selected && (
+																			<span
+																				className={classNames(
+																					'absolute inset-y-0 right-0 flex items-center pr-4',
+																					active
+																						? 'text-white'
+																						: 'text-indigo-600'
+																				)}
+																			>
+																				<Icon
+																					icon="heroicons:check"
+																					className="h-5 w-5"
+																					aria-hidden="true"
+																				/>
+																			</span>
+																		)}
+																	</>
+																)}
+															</Combobox.Option>
+														))}
+													</Combobox.Options>
+												)}
+											</div>
+										</Combobox>
+									</>
+								)}
 								<div className="col-span-12 w-full flex items-center justify-center">
 									<button
 										type="button"

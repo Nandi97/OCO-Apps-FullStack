@@ -43,7 +43,7 @@ model User {
   accounts       Account[]
   sessions       Session[]
   stopWatchItems StopWatchItem[]
-  PurchaseOrder  PurchaseOrder[]
+  purchaseOrders PurchaseOrder[]
 }
 
 model VerificationToken {
@@ -104,12 +104,22 @@ model Gender {
   staff     Staff[]
 }
 
+model Town {
+  id             Int             @id @default(autoincrement())
+  name           String
+  createdAt      DateTime        @default(now())
+  updatedAt      DateTime        @default(now())
+  purchaseOrders PurchaseOrder[]
+}
+
 model Currency {
-  id        Int      @id @default(autoincrement())
-  name      String
-  initial   String
-  createdAt DateTime @default(now())
-  updatedAt DateTime @default(now())
+  id      Int    @id @default(autoincrement())
+  name    String
+  initial String
+
+  purchaseOrders PurchaseOrder[]
+  createdAt      DateTime        @default(now())
+  updatedAt      DateTime        @default(now())
 }
 
 model StaffType {
@@ -131,24 +141,24 @@ model Designation {
 }
 
 model Staff {
-  id            Int             @id @default(autoincrement())
-  name          String
-  email         String
-  mobile        String
-  ext           Int
-  staffNo       Int
-  avatarUrl     String?
-  teamId        Int
-  designationId Int
-  genderId      Int
-  deletedAt     DateTime?       @db.Timestamp(0)
-  createdAt     DateTime        @default(now())
-  updatedAt     DateTime?       @default(now())
-  books         Book[]
-  designation   Designation     @relation(fields: [designationId], references: [id])
-  gender        Gender          @relation(fields: [genderId], references: [id])
-  team          Team            @relation(fields: [teamId], references: [id])
-  PurchaseOrder PurchaseOrder[]
+  id             Int             @id @default(autoincrement())
+  name           String
+  email          String
+  mobile         String
+  ext            Int
+  staffNo        Int
+  avatarUrl      String?
+  teamId         Int
+  designationId  Int
+  genderId       Int
+  deletedAt      DateTime?       @db.Timestamp(0)
+  createdAt      DateTime        @default(now())
+  updatedAt      DateTime?       @default(now())
+  books          Book[]
+  purchaseOrders PurchaseOrder[]
+  designation    Designation     @relation(fields: [designationId], references: [id])
+  gender         Gender          @relation(fields: [genderId], references: [id])
+  team           Team            @relation(fields: [teamId], references: [id])
 }
 
 model Book {
@@ -197,20 +207,29 @@ model StopWatchItem {
 }
 
 model PurchaseOrder {
-  id                Int            @id @default(autoincrement())
-  vendorType        String
-  vatable           Boolean        @default(true)
-  currencyId        Int
-  vendorName        String
-  vendorEmail       String
-  vendorPhoneNumber String
-  vendorAddress     String
-  purchaseItems     PurchaseItem[]
-  approverId        Int
-  createdById       String
+  id              Int            @id @default(autoincrement())
+  poNumber        Int            @unique
+  type            String
+  vatable         Boolean        @default(true)
+  currencyId      Int
+  name            String
+  email           String
+  phoneNumber     String
+  physicalAddress String
+  purchaseItems   PurchaseItem[]
+  approverId      Int
+  createdById     String
+  townId          Int?
+  address         String?
+  postalCode      String?
+  city            String?
+  country         String?
+  totalAmount     Int
 
-  approver Staff @relation(fields: [approverId], references: [id])
-  creator  User  @relation(fields: [createdById], references: [id])
+  approver Staff    @relation(fields: [approverId], references: [id])
+  creator  User     @relation(fields: [createdById], references: [id])
+  currency Currency @relation(fields: [currencyId], references: [id])
+  town     Town?    @relation(fields: [townId], references: [id])
 
   deletedAt DateTime?
   createdAt DateTime? @default(now())

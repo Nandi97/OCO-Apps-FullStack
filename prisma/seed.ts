@@ -10,6 +10,7 @@ import { getStaff } from './seeders/staff';
 import { getBooks } from './seeders/books';
 import { getStopWatchItemTasks } from './seeders/stopWatchItemTasks';
 import { getCurrencies } from './seeders/currencies';
+import { getTowns } from './seeders/towns';
 
 const prisma = new PrismaClient();
 
@@ -18,6 +19,7 @@ async function main() {
 	const subMenus = getSubMenus();
 	const matters = getMatters();
 	const genders = getGenders();
+	const towns = getTowns();
 	const currencies = getCurrencies();
 	const staffTypes = getStaffTypes();
 	const books = getBooks();
@@ -66,6 +68,15 @@ async function main() {
 		await prisma.gender.create({
 			data: {
 				name: gender.name,
+			},
+		});
+	}
+
+	// Towns
+	for (const town of towns) {
+		await prisma.town.create({
+			data: {
+				name: town.name,
 			},
 		});
 	}
