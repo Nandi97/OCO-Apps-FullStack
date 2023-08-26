@@ -22,16 +22,17 @@ export default async function handler(req, res) {
 			const data = await prisma.purchaseOrder.findMany({
 				where: {
 					OR: [
-						{ vendorType: { contains: searchParam, mode: 'insensitive' } },
-						{ vendorName: { contains: searchParam, mode: 'insensitive' } },
-						{ vendorEmail: { contains: searchParam, mode: 'insensitive' } },
+						{ type: { contains: searchParam, mode: 'insensitive' } },
+						{ name: { contains: searchParam, mode: 'insensitive' } },
+						{ email: { contains: searchParam, mode: 'insensitive' } },
 					],
 				},
 				include: {
 					purchaseItems: true,
-					// currency: true,
 					approver: true,
 					creator: true,
+					currency: true,
+					town: true,
 				},
 
 				orderBy: {

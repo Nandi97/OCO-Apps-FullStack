@@ -43,7 +43,7 @@ export default function PurchaseOrder() {
 	}, []);
 
 	const handleDelete = () => {
-		console.log('Deleting Book');
+		console.log('Deleting Purchase Order');
 	};
 
 	// Table Dopdown
@@ -53,7 +53,7 @@ export default function PurchaseOrder() {
 			'flex items-center justify-center w-full h-8 px-4 text-ocoblue-900 rounded-sm hover:shadow-sm z-20',
 	};
 	const tableOptionsList = [
-		{ name: 'Delete Book', icon: 'heroicons:trash', action: handleDelete },
+		{ name: 'Delete Purchase Order', icon: 'heroicons:trash', action: handleDelete },
 	];
 
 	const handlePageChange = (page: number) => {
@@ -92,6 +92,12 @@ export default function PurchaseOrder() {
 									className="sticky top-0 p-2 text-sm font-semibold text-center"
 								>
 									{''}
+								</th>
+								<th
+									scope="col"
+									className="sticky top-0 p-2 pr-3 text-sm font-semibold text-left sm:pl-6"
+								>
+									PO Number
 								</th>
 								<th
 									scope="col"
@@ -168,17 +174,20 @@ export default function PurchaseOrder() {
 											<td className="p-2 text-sm text-center">
 												{(index = 1)}
 											</td>
-											<td className="py-2 text-left  sm:pl-6 text-sm text-ocoblue-900">
-												{item?.vendorName}
+											<td className="p-2 text-sm text-center">
+												{item?.poNumber}
 											</td>
 											<td className="py-2 text-left  sm:pl-6 text-sm text-ocoblue-900">
-												{item?.vendorEmail}
+												{item?.name}
+											</td>
+											<td className="py-2 text-left  sm:pl-6 text-sm text-ocoblue-900">
+												{item?.email}
 											</td>
 											<td className="px-3 py-2 text-sm whitespace-nowrap text-ocoblue-500">
-												{item?.vendorPhoneNumber}
+												{item?.phoneNumber}
 											</td>
 											<td className="px-3 py-2 text-sm text-center whitespace-nowrap text-ocoblue-500">
-												{item?.vendorAddress}
+												{item?.physicalAddress}
 											</td>
 											<td className="px-3 py-2 text-sm whitespace-nowrap text-ocoblue-500">
 												{`${formatDate(
