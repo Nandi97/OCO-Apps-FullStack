@@ -17,6 +17,7 @@ export type PurchaseOrder = {
 	country: string;
 	totalAmount: number;
 	deletedAt: string | null;
+	createdAt: string;
 	purchaseItems: {
 		id: number;
 		description: string;

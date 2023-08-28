@@ -97,7 +97,7 @@ export default function PurchaseOrder() {
 									scope="col"
 									className="sticky top-0 p-2 pr-3 text-sm font-semibold text-left sm:pl-6"
 								>
-									PO Number
+									PO#
 								</th>
 								<th
 									scope="col"
@@ -175,7 +175,12 @@ export default function PurchaseOrder() {
 												{(index = 1)}
 											</td>
 											<td className="p-2 text-sm text-center">
-												{item?.poNumber}
+												<Link
+													className="text-ocobrown-600 hover:text-ocobrown-600/90 font-medium"
+													href={`${pathname}/${item?.id}`}
+												>
+													{item?.poNumber}
+												</Link>
 											</td>
 											<td className="py-2 text-left  sm:pl-6 text-sm text-ocoblue-900">
 												{item?.name}

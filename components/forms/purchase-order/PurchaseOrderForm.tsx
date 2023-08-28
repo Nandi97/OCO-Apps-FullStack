@@ -45,13 +45,7 @@ export default function PurchaseOrderForm({
 	const [currentPage, setCurrentPage] = useState(1);
 	const [perPage, setPerPage] = useState(97);
 	const [disclosureStates, setDisclosureStates] = useState(1);
-	const [purchaseItems, setPurchaseItems] = useState([
-		{
-			description: '',
-			quantity: 0,
-			cost: 0,
-		},
-	]);
+	const [purchaseItems, setPurchaseItems] = useState<any>([]);
 
 	const { data: currencies } = useQuery<Currency[]>(['currencies'], () =>
 		axios.get('/api/general/getCurrencies').then((res) => res.data)
@@ -124,7 +118,7 @@ export default function PurchaseOrderForm({
 	};
 
 	useEffect(() => {
-		setPurchaseOrderItems(purchaseItems);
+		// setPurchaseOrderItems(purchaseItems);
 		setSelectedAuthorizer(selected);
 		setSelectedTownValue(selectedTown); // Set selectedTownValue to the value of selectedTown
 	}, [
@@ -136,6 +130,7 @@ export default function PurchaseOrderForm({
 		selectedTown, // Add selectedTown to the dependency array if needed
 	]);
 	// console.log('Purchase Items', purchaseItems);
+	// console.log('Selected', selected);
 	return (
 		<div>
 			<Disclosure defaultOpen={true}>

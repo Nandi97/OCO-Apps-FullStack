@@ -220,8 +220,8 @@ model PurchaseOrder {
   approverId      Int
   createdById     String
   townId          Int?
-  address         String?
-  postalCode      String?
+  address         Int?
+  postalCode      Int?
   city            String?
   country         String?
   totalAmount     Int

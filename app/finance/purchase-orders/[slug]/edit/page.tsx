@@ -1,68 +1,83 @@
 'use client';
 
 import PurchaseOrderForm from '@/components/forms/purchase-order/PurchaseOrderForm';
-import PurchaseOrderPreview from '@/components/previews/PurchaseOrder';
-import { useMutation } from '@tanstack/react-query';
-import axios, { AxiosError } from 'axios';
+import { PurchaseOrder } from '@/pages/types/PurchaseOrder';
+import { URL } from '@/pages/types/URL';
+import { useMutation, useQuery } from '@tanstack/react-query';
 import Link from 'next/link';
+import axios, { AxiosError } from 'axios';
+import { usePathname } from 'next/navigation';
 import { useRouter } from 'next/navigation';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import toast from 'react-hot-toast';
+import PurchaseOrderPreview from '@/components/previews/PurchaseOrder';
 
-export default function CreatePurchaseOrder() {
-	const [title, setTitle] = useState<string>('Create New PurchaseOrder');
+const fetchDetails = async (slug: string) => {
+	const response = await axios.get(`/api/purchase-order/${slug}`);
+	return response.data;
+};
+export default function EditPurchaseOrder(url: URL) {
 	const [selected, setSelected] = useState<any>([]);
 	const [selectedTown, setSelectedTown] = useState<any>([]);
-	const [purchaseItems, setPurchaseItems] = useState([
-		{
-			description: '',
-			quantity: 0,
-			cost: 0,
-		},
-	]);
+	const [purchaseItems, setPurchaseItems] = useState<any>([]);
+	const pathname = usePathname();
 
-	function generateRandomNumber(minDigits, maxDigits) {
-		minDigits = Math.max(6, minDigits);
-		maxDigits = Math.min(10, maxDigits);
-
-		const randomFraction = Math.random();
-
-		const range = Math.pow(10, maxDigits) - Math.pow(10, minDigits) + 1;
-
-		const randomNumber = Math.floor(randomFraction * range) + Math.pow(10, minDigits);
-
-		return randomNumber;
-	}
-
-	let purchaseOrderNumber = generateRandomNumber(6, 10);
-
-	const vat = 16;
+	const { data: purchaseOrder } = useQuery<PurchaseOrder>({
+		queryKey: ['detailPurchaseOrder'],
+		queryFn: () => fetchDetails(url.params.slug),
+	});
 
 	const [formValues, setFormValues] = useState<any>({
-		poNumber: purchaseOrderNumber.toString(),
+		id: '',
+		poNumber: '',
 		type: '',
-		vatable: false,
-		currencyId: 0,
+		vatable: '',
+		currencyId: '',
 		name: '',
 		email: '',
 		phoneNumber: '',
 		physicalAddress: '',
-		townId: 0,
-		address: null,
-		postalCode: null,
+		townId: '',
+		address: '',
+		postalCode: '',
 		city: '',
 		country: '',
-		totalAmount: 0,
+		totalAmount: '',
+		approverId: '',
 	});
-
 	let toastID: string;
 
 	const router = useRouter();
 
+	useEffect(() => {
+		if (purchaseOrder) {
+			setFormValues({
+				poNumber: purchaseOrder?.poNumber,
+				type: purchaseOrder?.type,
+				vatable: purchaseOrder?.vatable,
+				currencyId: purchaseOrder?.currencyId,
+				name: purchaseOrder?.name,
+				email: purchaseOrder?.email,
+				phoneNumber: purchaseOrder?.phoneNumber,
+				physicalAddress: purchaseOrder?.physicalAddress,
+				address: purchaseOrder?.address,
+				postalCode: purchaseOrder?.postalCode,
+				city: purchaseOrder?.city,
+				country: purchaseOrder?.country,
+				totalAmount: purchaseOrder?.totalAmount,
+			});
+			setPurchaseItems(purchaseOrder.purchaseItems);
+			setSelectedTown(purchaseOrder.town);
+			setSelected(purchaseOrder.approver);
+		}
+	}, [purchaseOrder]);
+
+	// console.log('Purchase Items', purchaseOrder?.purchaseItems);
+
 	const { mutate } = useMutation(
 		async () => {
 			const purchaseOrderData = {
-				poNumber: purchaseOrderNumber,
+				poNumber: purchaseOrder?.poNumber,
 				type: formValues.vendorType,
 				vatable: formValues.vatable,
 				currencyId: formValues.currencyId,
@@ -83,7 +98,7 @@ export default function CreatePurchaseOrder() {
 				purchaseItems: purchaseItems,
 			};
 			// console.log('Purchase Order Data', purchaseOrderData);
-			await axios.post('/api/purchase-order/addPurchaseOrder', purchaseOrderData);
+			// await axios.post('/api/purchase-order/addPurchaseOrder', purchaseOrderData);
 		},
 		{
 			onError: (error) => {
@@ -95,7 +110,7 @@ export default function CreatePurchaseOrder() {
 				}
 			},
 			onSuccess: (data) => {
-				toast.success('Book has been Created', {
+				toast.success('Purchase Order Edited', {
 					id: toastID,
 				});
 				setFormValues({
@@ -109,13 +124,7 @@ export default function CreatePurchaseOrder() {
 					address: '',
 				});
 				setSelected('');
-				setPurchaseItems([
-					{
-						description: '',
-						quantity: 0,
-						cost: 0,
-					},
-				]);
+				setPurchaseItems([]);
 				router.push('/finance/purchase-orders/');
 			},
 		}
@@ -146,20 +155,20 @@ export default function CreatePurchaseOrder() {
 			vatable: isVatable,
 		});
 	};
-	// console.log('FormValues: ', formValues);
-	// console.log('Selected: ', selected);
-	// console.log('Selected Town: ', selectedTown);
-	// console.log('Purchased Items: ', purchaseItems);
 
 	const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
 		e.preventDefault();
 		// console.log('Submitting Form');
 		mutate();
 	};
+
 	return (
 		<div className="space-y-2 bg-white">
 			<div className="sticky z-20 flex items-center justify-between gap-2 bg-white top-2">
-				<h1 className="text-lg font-extralight text-accent-700">{title}</h1>
+				<h1 className="text-lg font-extralight text-accent-700">
+					<span className="font-medium">Edit Purchase Order :</span> #
+					{purchaseOrder?.poNumber}
+				</h1>
 			</div>
 			<div className="grid grid-cols-12 gap-2">
 				<form
@@ -169,12 +178,12 @@ export default function CreatePurchaseOrder() {
 					<div>
 						<PurchaseOrderForm
 							onBooleanSelectChange={onBooleanSelectChange}
-							setSelectedAuthorizer={setSelected}
+							setSelectedAuthorizer={selected || setSelected}
 							onSelectChange={handleSelectChange}
 							formValues={formValues}
 							onChange={handleChange}
-							setPurchaseOrderItems={setPurchaseItems}
-							setSelectedTownValue={setSelectedTown}
+							setPurchaseOrderItems={purchaseItems || setPurchaseItems}
+							setSelectedTownValue={selectedTown || setSelectedTown}
 						/>
 					</div>
 					<div className="flex items-center justify-center w-full py-8 space-x-2">
