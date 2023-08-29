@@ -100,6 +100,7 @@ export default function Pagination({
 								<option value="20">20</option>
 								<option value="25">25</option>
 								<option value="30">40</option>
+								<option value={total}>All</option>
 							</select>
 						</div>
 						<nav
