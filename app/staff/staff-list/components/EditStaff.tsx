@@ -25,17 +25,18 @@ export default function EditStaff({ setToggle, staffDetails }: EditStaffFormProp
 
 	// console.log('Staff Details:', staffDetails.id);
 
-	const { data: staff } = useQuery<Staff[]>({
+	const { data: staff } = useQuery<Staff>({
 		queryKey: ['aStaff'],
 		queryFn: () => fetchDetails(staffDetails.id),
 	});
+
 	const [title, setTitle] = useState<string>(`Edit Staff: ${staffDetails?.name}`);
 
 	const queryClient = useQueryClient();
 
 	const [formValues, setFormValues] = useState<any>({
 		id: '',
-		avatar_url: '',
+		avatarUrl: '',
 		name: '',
 		designationId: '',
 		teamId: '',
@@ -50,15 +51,15 @@ export default function EditStaff({ setToggle, staffDetails }: EditStaffFormProp
 		if (staff) {
 			setFormValues({
 				id: staff?.id,
-				avatar_url: staff?.avatar_url,
+				avatarUrl: staff?.avatarUrl,
 				name: staff?.name,
-				designationId: staff?.designation_id,
-				teamId: staff?.team.id,
+				designationId: staff?.designationId,
+				teamId: staff?.team?.id,
 				email: staff?.email,
 				mobile: staff?.mobile,
-				staffNo: staff?.staff_no,
+				staffNo: staff?.staffNo,
 				ext: staff?.ext,
-				genderId: staff?.gender_id,
+				genderId: staff?.genderId,
 			});
 		}
 	}, [staff]);
@@ -78,24 +79,24 @@ export default function EditStaff({ setToggle, staffDetails }: EditStaffFormProp
 		}));
 	};
 
-	console.log('Form Values:', formValues);
+	// console.log('Form Values:', formValues);
 
 	const { mutate } = useMutation(
 		async () => {
 			const staffData = {
 				id: formValues.id,
 				name: formValues.name,
-				designation_id: formValues.designationId,
-				team_id: formValues.teamId,
+				designationId: parseInt(formValues.designationId),
+				teamId: parseInt(formValues.teamId),
 				email: formValues.email,
 				mobile: formValues.mobile,
-				staff_no: formValues.staffNo,
-				ext: formValues.ext,
-				gender_id: formValues.genderId,
-				avatar_url: base64Cover || selectedFile || formValues.avatar_url,
+				staffNo: parseInt(formValues.staffNo),
+				ext: parseInt(formValues.ext),
+				genderId: parseInt(formValues.genderId),
+				avatarUrl: base64Cover || selectedFile || formValues.avatar_url,
 			};
 			console.log('Staff Data', staffData);
-			await axios.patch(`/api/staff/editStaff`, { staffData });
+			await axios.patch(`/api/staff/editStaff`, staffData);
 		},
 		{
 			onError: (error) => {
@@ -107,13 +108,13 @@ export default function EditStaff({ setToggle, staffDetails }: EditStaffFormProp
 				}
 			},
 			onSuccess: (data) => {
-				toast.success('Book has been Edited', {
+				toast.success('Staff has been Edited', {
 					id: toastID,
 				});
 				setFormValues({
 					...formValues,
 					id: '',
-					avatar_url: '',
+					avatarUrl: '',
 					name: '',
 					designationId: '',
 					teamId: '',

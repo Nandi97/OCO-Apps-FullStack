@@ -53,17 +53,17 @@ export default function CreateStaff({ setToggle }: CreateStaffFormProps) {
 		async () => {
 			const staffData = {
 				name: formValues.name,
-				designation_id: formValues.designationId,
-				team_id: formValues.teamId,
+				designationId: parseInt(formValues.designationId),
+				teamId: parseInt(formValues.teamId),
 				email: formValues.email,
 				mobile: formValues.mobile,
-				staff_no: formValues.staffNo,
-				ext: formValues.ext,
-				gender_id: formValues.genderId,
-				avatar_url: base64Cover,
+				staffNo: parseInt(formValues.staffNo),
+				ext: parseInt(formValues.ext),
+				genderId: parseInt(formValues.genderId),
+				avatarUrl: base64Cover,
 			};
-			console.log('Book Data', staffData);
-			await axios.post('/api/staff/addStaff', { body: staffData });
+			// console.log('Staff Data', staffData);
+			await axios.post('/api/staff/addStaff', staffData);
 		},
 		{
 			onError: (error) => {

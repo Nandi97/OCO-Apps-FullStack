@@ -15,7 +15,7 @@ export default async function handler(req, res) {
 		const session = await getServerSession(req, res, authOptions);
 
 		if (!session) {
-			return res.status(401).json({ message: 'Please sign-in to create a book.' });
+			return res.status(401).json({ message: 'Please sign-in to edit a book.' });
 		}
 
 		console.log('Session', session.user);
@@ -47,7 +47,9 @@ export default async function handler(req, res) {
 			res.status(200).json(result);
 		} catch (err) {
 			console.log('Error when updating book:', err.message);
-			res.status(403).json({ err: 'Error has occurred while creating a book' });
+			res.status(403).json({
+				err: `Error has occurred while editing the book: ${req.body.author}`,
+			});
 		}
 	}
 }

@@ -1,6 +1,6 @@
 'use client';
 import React, { useEffect, useState } from 'react';
-import { useQuery } from '@tanstack/react-query';
+import { useMutation, useQuery, useQueryClient } from '@tanstack/react-query';
 import axios from 'axios';
 import Image from 'next/image';
 
@@ -12,10 +12,13 @@ import { toast } from 'react-hot-toast';
 import CreateStaff from './components/CreateStaff';
 import EditStaff from './components/EditStaff';
 
+import DeleteToggle from '@/components/my-ui/DeleteItem';
+
 export default function StaffList() {
 	const [title, setTitle] = useState('Staff List');
 	const [toggleCreateStaff, setToggleCreateStaff] = useState(false);
 	const [toggleEditStaff, setToggleEditStaff] = useState(false);
+	const [active, setActive] = useState(false);
 	const [currentPage, setCurrentPage] = useState(1);
 	const [perPage, setPerPage] = useState(10);
 
@@ -42,6 +45,9 @@ export default function StaffList() {
 
 	const [editMode, setEditMode] = useState(false);
 	const [staffDetails, setStaffDetails] = useState(null);
+
+	const queryClient = useQueryClient();
+	let deleteToastID: string;
 
 	const newStaffMember = () => {
 		console.log('new Staff Member');
@@ -88,7 +94,9 @@ export default function StaffList() {
 			'flex items-center justify-center w-full h-8 px-4 text-ocoblue-900 rounded-sm hover:shadow-sm z-20',
 	};
 
-	const tableOptionsList = [{ name: 'Delete Staff', icon: 'heroicons:trash' }];
+	const tableOptionsList = [];
+
+	// console.log(tableOptionsList);
 
 	useEffect(() => {
 		setTitle('Staff List');
@@ -102,18 +110,38 @@ export default function StaffList() {
 		setPerPage(newPerPage);
 	};
 
-	const submitForm = () => {
-		const toastID = toast.loading('Submitting Your Form', {
-			id: submitFormID,
-		});
-		setSubmitFormID(toastID);
-		console.log('Form Submitted');
-	};
-
 	const handleSearch = (searchInput: any) => {
 		setSearchParam(searchInput);
 	};
 
+	const { mutate } = useMutation(
+		async (id: string) => {
+			if (active === true) {
+				await axios.patch('/api/staff/deleteStaff', { data: id });
+			} else {
+				await axios.patch('/api/staff/activateStaff', { data: id });
+			}
+		},
+		{
+			onError: (error) => {
+				console.log(error);
+			},
+			onSuccess: (data) => {
+				// console.log(data);
+				queryClient.invalidateQueries(['staffList']);
+
+				toast.success('Staff has been activated.', { id: deleteToastID });
+			},
+		}
+	);
+
+	const deactivateStaff = (staffId: any) => {
+		setActive(true), mutate(staffId);
+	};
+
+	const activateStaff = (staffId: any) => {
+		setActive(false), mutate(staffId);
+	};
 	return (
 		<div className="space-y-2 bg-white">
 			<div className="sticky z-20 flex items-center justify-between gap-2 bg-white top-2">
@@ -282,7 +310,25 @@ export default function StaffList() {
 																name: 'Edit Staff',
 																icon: 'heroicons:pencil-square',
 															},
-															...tableOptionsList,
+															person.deletedAt === null
+																? {
+																		action: () =>
+																			deactivateStaff(
+																				person?.id
+																			),
+																		name: 'Deactivate Staff',
+																		icon: 'heroicons:user-minus',
+																  }
+																: {
+																		action: () =>
+																			activateStaff(
+																				person?.id
+																			),
+																		name: 'Activate Staff',
+																		icon: 'heroicons:user-plus',
+																  },
+
+															// ...tableOptionsList,
 														]}
 													/>
 												</button>

@@ -44,6 +44,7 @@ model User {
   sessions       Session[]
   stopWatchItems StopWatchItem[]
   purchaseOrders PurchaseOrder[]
+  staff          Staff[]
 }
 
 model VerificationToken {
@@ -156,9 +157,12 @@ model Staff {
   updatedAt      DateTime?       @default(now())
   books          Book[]
   purchaseOrders PurchaseOrder[]
-  designation    Designation     @relation(fields: [designationId], references: [id])
-  gender         Gender          @relation(fields: [genderId], references: [id])
-  team           Team            @relation(fields: [teamId], references: [id])
+  createdById    String?
+
+  creator     User?       @relation(fields: [createdById], references: [id])
+  designation Designation @relation(fields: [designationId], references: [id])
+  gender      Gender      @relation(fields: [genderId], references: [id])
+  team        Team        @relation(fields: [teamId], references: [id])
 }
 
 model Book {
