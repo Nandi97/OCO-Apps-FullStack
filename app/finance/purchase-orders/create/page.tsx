@@ -36,8 +36,6 @@ export default function CreatePurchaseOrder() {
 
 	let purchaseOrderNumber = generateRandomNumber(6, 10);
 
-	const vat = 16;
-
 	const [formValues, setFormValues] = useState<any>({
 		poNumber: purchaseOrderNumber.toString(),
 		type: '',
@@ -79,10 +77,10 @@ export default function CreatePurchaseOrder() {
 					? purchaseItems?.reduce((total, item) => total + item.cost * item.quantity, 0) *
 					  1.16
 					: purchaseItems?.reduce((total, item) => total + item.cost * item.quantity, 0),
-				approverId: selected?.id,
+				approver: selected,
 				purchaseItems: purchaseItems,
 			};
-			// console.log('Purchase Order Data', purchaseOrderData);
+			console.log('Purchase Order Data', purchaseOrderData);
 			await axios.post('/api/purchase-order/addPurchaseOrder', purchaseOrderData);
 		},
 		{

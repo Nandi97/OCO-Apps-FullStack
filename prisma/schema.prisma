@@ -229,15 +229,17 @@ model PurchaseOrder {
   city            String?
   country         String?
   totalAmount     Int
+  status          Boolean?       @default(false)
 
   approver Staff    @relation(fields: [approverId], references: [id])
   creator  User     @relation(fields: [createdById], references: [id])
   currency Currency @relation(fields: [currencyId], references: [id])
   town     Town?    @relation(fields: [townId], references: [id])
 
-  deletedAt DateTime?
-  createdAt DateTime? @default(now())
-  updatedAt DateTime? @default(now())
+  deletedAt  DateTime?
+  createdAt  DateTime? @default(now())
+  updatedAt  DateTime? @default(now())
+  approvedOn DateTime?
 }
 
 model PurchaseItem {

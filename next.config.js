@@ -5,6 +5,7 @@ const nextConfig = {
 			'lh3.googleusercontent.com',
 			'avatars.githubusercontent.com',
 			'firebasestorage.googleapis.com',
+			'orarocoke-my.sharepoint.com',
 		],
 	},
 };

@@ -1,13 +1,16 @@
 import prisma from '../../../prisma/client';
 import { getServerSession } from 'next-auth';
 import { authOptions } from '../auth/[...nextauth]';
+import { sendMail } from '@/services/mailService';
+import { renderToStaticMarkup } from 'react-dom/server';
+import POEmailTemplate from '../../../components/email-templates/POEmailTemplate';
 
 export default async function handler(req, res) {
 	if (req.method === 'POST') {
 		const session = await getServerSession(req, res, authOptions);
 
 		if (!session) {
-			return res.status(401).json({ message: 'Please sign-in to create a book.' });
+			return res.status(401).json({ message: 'Please sign-in to create a purchase order.' });
 		}
 
 		//Get User
@@ -36,7 +39,7 @@ export default async function handler(req, res) {
 					city: formData.city,
 					country: formData.country,
 					totalAmount: formData.totalAmount,
-					approverId: formData.approverId,
+					approverId: formData.approver.id,
 					createdById: prismaUser?.id,
 					purchaseItems: {
 						create: formData.purchaseItems.map((item) => ({
@@ -47,6 +50,24 @@ export default async function handler(req, res) {
 					},
 				},
 			});
+
+			const approvalUrl = `https://your-app.com/approve/${formData.poNumber}`;
+
+			const subject = 'Approval Required for Purchase Order';
+			const toEmail = 'alvinkigen997@gmail.com'; // Replace with the actual approver's email
+			const textContent = `Please approve ${prismaUser.name}'s Purchase Order PO Number: ${formData.poNumber}`;
+
+			const emailContent = renderToStaticMarkup(
+				<POEmailTemplate
+					userName={prismaUser.name}
+					poNumber={formData.poNumber}
+					approvalUrl={approvalUrl}
+				/>
+			);
+			const htmlContent = `<!DOCTYPE html>${emailContent}`;
+
+			await sendMail(subject, toEmail, textContent, htmlContent);
+
 			res.status(200).json(result);
 		} catch (err) {
 			console.log('Error when creating Purchase Order:', err.message);
