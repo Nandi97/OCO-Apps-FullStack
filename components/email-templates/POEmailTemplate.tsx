@@ -31,7 +31,7 @@ export default function POEmailTemplate({ userName, poNumber, approvalUrl }: any
 									<Image
 										width={356}
 										height={205}
-										src={`https://orarocoke-my.sharepoint.com/:i:/g/personal/alvin_oraro_co_ke/EUvGI17Gli1Nh6l_ahy89o0Bbsk6gLYrpeBJ6Nkg7ttl2Q?e=Pmn2hu`}
+										src={'/public/assets/images/oco_ab_and_david.png'}
 										alt="oco abda logo"
 									/>
 								</th>
