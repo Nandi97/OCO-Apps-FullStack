@@ -22,17 +22,15 @@ export default function POEmailTemplate({ userName, poNumber, approvalUrl }: any
 							<tr>
 								<th
 									style={{
-										display: 'flex',
-										justifyContent: 'center',
-										alignItems: 'center',
 										width: '100%',
+										textAlign: 'center',
 									}}
 								>
-									<Image
-										width={356}
-										height={205}
-										src={'/public/assets/images/oco_ab_and_david.png'}
+									<img
+										style={{ width: '356px', height: '205px' }}
+										src="cid:logo"
 										alt="oco abda logo"
+										onContextMenu={(e) => e.preventDefault()}
 									/>
 								</th>
 							</tr>
@@ -61,7 +59,8 @@ export default function POEmailTemplate({ userName, poNumber, approvalUrl }: any
 												textAlign: 'center',
 											}}
 										>
-											Please approve {userName}s Purchase Order PO Number:
+											Please approve {userName}&apos;s Purchase Order PO
+											Number:
 											{poNumber}
 										</p>
 										<div style={{ width: '100%', textAlign: 'center' }}>
@@ -74,6 +73,7 @@ export default function POEmailTemplate({ userName, poNumber, approvalUrl }: any
 													backgroundColor: '#ffffff',
 													gridColumn: 'span 6 / span 6',
 													textDecoration: 'none',
+													color: '#A65A2A',
 												}}
 											>
 												Approve Purchase Order

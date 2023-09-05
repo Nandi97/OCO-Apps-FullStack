@@ -62,7 +62,6 @@ export default async function handler(req, res) {
 					userName={prismaUser.name}
 					poNumber={formData.poNumber}
 					approvalUrl={approvalUrl}
-					attachments={attachments}
 				/>
 			);
 			const htmlContent = `<!DOCTYPE html>${emailContent}`;

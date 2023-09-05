@@ -14,6 +14,13 @@ export async function sendMail(subject, toEmail, otpText, htmlContent) {
 		to: toEmail,
 		subject: subject,
 		text: otpText,
+		attachments: [
+			{
+				filename: 'oco_ab_and_david.png',
+				path: './public/assets/images/oco_ab_and_david.png',
+				cid: 'logo',
+			},
+		],
 		html: htmlContent,
 	};
 
