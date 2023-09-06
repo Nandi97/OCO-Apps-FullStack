@@ -1,28 +1,66 @@
 'use client';
-import { PurchaseOrder } from '@/pages/types/PurchaseOrder';
-import { URL } from '@/pages/types/URL';
-import { useQuery } from '@tanstack/react-query';
-import axios from 'axios';
-import Image from 'next/image';
-import OCO_AB_David_Logo from '@/public/assets/images/oco_ab_and_david.png';
-import { usePathname } from 'next/navigation';
 
+import { URL } from '@/pages/types/URL';
+import { useMutation, useQuery } from '@tanstack/react-query';
+import axios, { AxiosError } from 'axios';
 import { formatDate } from '@/utils/formatDate';
+import OCO_AB_David_Logo from '@/public/assets/images/oco_ab_and_david.png';
+import { PurchaseOrder } from '@/pages/types/PurchaseOrder';
+import Image from 'next/image';
+import { usePathname, useRouter } from 'next/navigation';
 import { Icon } from '@iconify/react/dist/iconify.js';
-import Link from 'next/link';
+import toast from 'react-hot-toast';
 
 const fetchDetails = async (slug: string) => {
-	const response = await axios.get(`/api/purchase-order/${slug}`);
+	const response = await axios.get(`/api/purchase-order/approve/${slug}`);
 	return response.data;
 };
 
-export default function PurchaseOrder(url: URL) {
+export default function POApproval(url: URL) {
 	const pathname = usePathname();
 	const { data: purchaseOrder } = useQuery<PurchaseOrder>({
-		queryKey: ['detailPurchaseOrder'],
+		queryKey: ['approvePurchaseOrder'],
 		queryFn: () => fetchDetails(url.params.slug),
 	});
-	// console.log('Purchase order:', purchaseOrder);
+
+	let toastID: string;
+
+	const router = useRouter();
+
+	const { mutate } = useMutation(
+		async () => {
+			const purchaseOrderData = {
+				id: purchaseOrder?.id,
+				poNumber: purchaseOrder?.poNumber,
+				creator: purchaseOrder?.creator,
+			};
+
+			console.log('Purchase Order Approval:', purchaseOrderData);
+			await axios.patch(`/api/purchase-order/approvePurchaseOrder`, purchaseOrderData);
+		},
+		{
+			onError: (error) => {
+				if (error instanceof AxiosError) {
+					toast.error(error?.response?.data.message, {
+						id: toastID,
+					});
+					console.error('Form submission error:', error);
+				}
+			},
+			onSuccess: (data) => {
+				toast.success('Purchase Order Has Been Approved', {
+					id: toastID,
+				});
+
+				router.push('/finance/purchase-orders/');
+			},
+		}
+	);
+
+	const handleClick = async (e: any) => {
+		e.preventDefault();
+		mutate();
+	};
 	return (
 		<div className="space-y-2 bg-white">
 			<div className="sticky z-20 flex items-center gap-2 bg-white top-2">
@@ -40,34 +78,23 @@ export default function PurchaseOrder(url: URL) {
 							height={205}
 							className="h-20 object-contain w-full"
 						/>
-						{purchaseOrder?.approvedOn === null ? (
-							<div className="flex items-center divide-x pr-2">
-								<Link
-									href={`${pathname}/edit`}
-									className="flex text-sm items-center p-0.5 rounded-l text-ocobrown-600 space-x-2 font-medium border border-ocoblue-300 hover:bg-ocobrown-600/90 hover:text-ocobrown-50 hover:border-ocobrown-600 shadow-sm"
-								>
-									<Icon icon="heroicons:pencil-square" />
-									<span>EDIT</span>
-								</Link>
+						<div className="flex items-center divide-x pr-2">
+							{purchaseOrder?.approvedOn === null ? (
 								<button
 									type="button"
-									className="flex text-sm items-center p-0.5 rounded-r text-ocobrown-600  space-x-2 font-medium border border-ocoblue-300 hover:bg-ocobrown-600/90 hover:text-ocobrown-50 hover:border-ocobrown-600 shadow-sm"
+									onClick={handleClick}
+									className="flex text-sm items-center p-0.5 rounded text-ocobrown-600 space-x-2 font-medium border border-ocoblue-300 hover:bg-ocobrown-600/90 hover:text-ocobrown-50 hover:border-ocobrown-600 shadow-sm"
 								>
-									<Icon icon="heroicons:arrow-down-tray" />
-									<span>PDF</span>
+									<Icon icon="heroicons:check" />
+									<span>Approve</span>
 								</button>
-							</div>
-						) : (
-							<div className="flex items-center divide-x pr-2">
-								<button
-									type="button"
-									className="flex text-sm items-center p-0.5 rounded text-ocobrown-600  space-x-2 font-medium border border-ocoblue-300 hover:bg-ocobrown-600/90 hover:text-ocobrown-50 hover:border-ocobrown-600 shadow-sm"
-								>
-									<Icon icon="heroicons:arrow-down-tray" />
-									<span>PDF</span>
-								</button>
-							</div>
-						)}
+							) : (
+								<div className="flex text-sm items-center p-0.5 rounded text-ocobrown-50 space-x-2 font-medium border border-ocoblue-300 bg-ocobrown-600/90 hover:text-ocobrown-50 hover:border-ocobrown-600 shadow-sm">
+									<Icon icon="heroicons:check-badge" />
+									<span>Approved</span>
+								</div>
+							)}
+						</div>
 					</div>
 					<div className="flex w-full flex-col space-y-2 text-xs">
 						{/* Section A */}
@@ -418,20 +445,11 @@ export default function PurchaseOrder(url: URL) {
 										<tr className="bg-white border-ocoblue-300 border-b">
 											<td colSpan={2} className="p-2 flex flex-col text-sm">
 												<span>{purchaseOrder?.approver?.name}</span>
-												<span className="text-ocobrown-600">
-													{' '}
+												<span>
+													<span className="font-semibold">ON:</span>{' '}
 													{purchaseOrder?.approvedOn === null
 														? 'Pending approval'
 														: 'Approved'}
-												</span>
-												<span className="font-semibold">
-													ON:
-													{purchaseOrder
-														? formatDate(
-																purchaseOrder?.approvedOn,
-																'MMMM d, yyyy'
-														  )
-														: ''}
 												</span>
 											</td>
 										</tr>

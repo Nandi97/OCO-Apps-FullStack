@@ -3,7 +3,7 @@ import { getServerSession } from 'next-auth';
 import { authOptions } from '../auth/[...nextauth]';
 import { sendMail } from '@/services/mailService';
 import { renderToStaticMarkup } from 'react-dom/server';
-import POEmailTemplate from '../../../components/email-templates/POEmailTemplate';
+import POEmailTemplate from '../../../components/email-templates/purchase-order/POApprovalEmailTemplate';
 
 export default async function handler(req, res) {
 	if (req.method === 'POST') {
@@ -51,7 +51,7 @@ export default async function handler(req, res) {
 				},
 			});
 
-			const approvalUrl = `https://your-app.com/approve/${formData.poNumber}`;
+			const approvalUrl = `http://localhost:3000/finance/purchase-orders/${formData.poNumber}/approve`;
 
 			const subject = 'Approval Required for Purchase Order';
 			const toEmail = 'alvinkigen997@gmail.com'; // Replace with the actual approver's email

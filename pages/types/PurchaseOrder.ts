@@ -18,6 +18,7 @@ export type PurchaseOrder = {
 	totalAmount: number;
 	deletedAt: string | null;
 	createdAt: string;
+	approvedOn: string | null;
 	purchaseItems: {
 		id: number;
 		description: string;

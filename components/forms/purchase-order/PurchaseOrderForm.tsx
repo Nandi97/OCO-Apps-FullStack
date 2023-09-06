@@ -118,7 +118,7 @@ export default function PurchaseOrderForm({
 	};
 
 	useEffect(() => {
-		// setPurchaseOrderItems(purchaseItems);
+		setPurchaseOrderItems(purchaseItems);
 		setSelectedAuthorizer(selected);
 		setSelectedTownValue(selectedTown); // Set selectedTownValue to the value of selectedTown
 	}, [

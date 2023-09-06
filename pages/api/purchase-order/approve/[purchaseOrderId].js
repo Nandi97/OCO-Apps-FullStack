@@ -1,6 +1,6 @@
-import prisma from '../../../prisma/client';
+import prisma from '../../../../prisma/client';
 import { getServerSession } from 'next-auth';
-import { authOptions } from '../auth/[...nextauth]';
+import { authOptions } from '../../auth/[...nextauth]';
 
 export default async function handler(req, res) {
 	const session = await getServerSession(req, res, authOptions);
@@ -15,7 +15,7 @@ export default async function handler(req, res) {
 			}
 
 			const data = await prisma.purchaseOrder.findUnique({
-				where: { id: purchaseOrderId },
+				where: { poNumber: purchaseOrderId.toString() },
 
 				include: {
 					purchaseItems: true,

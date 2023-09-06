@@ -147,7 +147,7 @@ export default function CreatePurchaseOrder() {
 	// console.log('FormValues: ', formValues);
 	// console.log('Selected: ', selected);
 	// console.log('Selected Town: ', selectedTown);
-	// console.log('Purchased Items: ', purchaseItems);
+	console.log('Purchased Items: ', purchaseItems);
 
 	const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
 		e.preventDefault();
