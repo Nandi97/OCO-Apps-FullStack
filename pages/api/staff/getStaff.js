@@ -36,6 +36,15 @@ export default async function handler(req, res) {
 						},
 					],
 				},
+				include: {
+					designation: {
+						include: {
+							staffType: true,
+						},
+					},
+					gender: true,
+					team: true,
+				},
 
 				orderBy: {
 					staffNo: 'asc',

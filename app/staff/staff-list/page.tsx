@@ -3,7 +3,7 @@ import React, { useEffect, useState } from 'react';
 import { useMutation, useQuery, useQueryClient } from '@tanstack/react-query';
 import axios from 'axios';
 import Image from 'next/image';
-
+import formatISO from 'date-fns/formatISO';
 import Pagination from '@/components/my-ui/Pagination';
 import StaffForm from '@/components/forms/StaffForm';
 import SearchInput from '@/components/my-ui/SearchInput';
@@ -11,7 +11,7 @@ import OptDropdown from '@/components/my-ui/OptDropdown';
 import { toast } from 'react-hot-toast';
 import CreateStaff from './components/CreateStaff';
 import EditStaff from './components/EditStaff';
-
+import exportFromJSON from 'export-from-json';
 import DeleteToggle from '@/components/my-ui/DeleteItem';
 
 export default function StaffList() {
@@ -66,7 +66,49 @@ export default function StaffList() {
 	};
 
 	const exportStaffList = () => {
-		console.log('export staff list');
+		const apiEndpoint = '/api/staff/getAllUnpaginatedStaff'; // Replace with your API endpoint
+
+		// Make a Fetch API call to the API endpoint
+		fetch(apiEndpoint)
+			.then((response) => {
+				if (!response.ok) {
+					throw new Error('Network response was not ok');
+				}
+				return response.json();
+			})
+			.then((staff) => {
+				// console.log(data);
+
+				// The 'data' variable now holds the data retrieved from the API
+				const fileName = `${formatISO(new Date(), { format: 'basic' })}_staffList`;
+				const exportType = exportFromJSON.types.csv;
+
+				const data: {
+					staff_no: number;
+					name: string;
+					email: string;
+					mobile: string;
+					ext: number;
+					designation: string;
+					gender: string;
+					team: string;
+				} = staff.map((item: any) => ({
+					staff_no: item?.staffNo,
+					name: item?.name,
+					email: item?.email,
+					mobile: item?.mobile,
+					ext: item?.ext,
+
+					designation: item.designation?.name,
+					gender: item.gender?.name,
+					team: item.team?.name,
+				}));
+
+				exportFromJSON({ data, fileName, exportType });
+			})
+			.catch((error) => {
+				console.error('Error:', error);
+			});
 	};
 
 	// Header Dropdown

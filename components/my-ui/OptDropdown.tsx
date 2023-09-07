@@ -32,7 +32,7 @@ export default function OptDropdown({ optBtn, optionsList }: SearchInputProps) {
 			if (item.action) {
 				item.action();
 			} else if (item.link) {
-				window.location.href = item.link; // Redirect to the provided link
+				window.location.href = item.link;
 			}
 		}
 	};
