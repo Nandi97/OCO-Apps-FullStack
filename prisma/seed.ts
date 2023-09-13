@@ -11,6 +11,7 @@ import { getBooks } from './seeders/books';
 import { getStopWatchItemTasks } from './seeders/stopWatchItemTasks';
 import { getCurrencies } from './seeders/currencies';
 import { getTowns } from './seeders/towns';
+import { getAttendanceTypes } from './seeders/attendeeTypes';
 
 const prisma = new PrismaClient();
 
@@ -27,6 +28,7 @@ async function main() {
 	const teams = getTeams();
 	const staffs = getStaff();
 	const stopWatchItemTasks = getStopWatchItemTasks();
+	const attendanceTypes = getAttendanceTypes();
 
 	// Menus
 	for (const menu of menus) {
@@ -163,6 +165,16 @@ async function main() {
 	for (const stopWatchItemTask of stopWatchItemTasks) {
 		await prisma.stopWatchItemTask.create({
 			data: { name: stopWatchItemTask.name },
+		});
+	}
+
+	// Attendee Types
+	for (const attendanceType of attendanceTypes) {
+		await prisma.attendanceType.create({
+			data: {
+				name: attendanceType.name,
+				description: attendanceType.description,
+			},
 		});
 	}
 

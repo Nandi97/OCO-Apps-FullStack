@@ -156,7 +156,7 @@ model Staff {
   books          Book[]
   purchaseOrders PurchaseOrder[]
 
-  meetingAttendees MeetingAttendees[]
+  meetingAttendees MeetingAttendee[]
 
   createdById String?
   creator     User?       @relation(fields: [createdById], references: [id])
@@ -250,23 +250,23 @@ model PurchaseItem {
   updatedAt       DateTime?      @updatedAt
 }
 
-model AttendanceTypes {
-  id               Int                @id @default(autoincrement())
+model AttendanceType {
+  id               Int               @id @default(autoincrement())
   name             String
   description      String
-  createdAt        DateTime?          @default(now())
-  updatedAt        DateTime?          @updatedAt
-  MeetingAttendees MeetingAttendees[]
+  createdAt        DateTime?         @default(now())
+  updatedAt        DateTime?         @updatedAt
+  MeetingAttendees MeetingAttendee[]
 }
 
-model MeetingAttendees {
-  id            Int             @id @default(autoincrement())
+model MeetingAttendee {
+  id            Int            @id @default(autoincrement())
   meetingId     Int
   staffId       Int
   atendeeTypeId Int
-  meeting       Meeting         @relation(fields: [meetingId], references: [id])
-  staff         Staff           @relation(fields: [staffId], references: [id])
-  atendeeType   AttendanceTypes @relation(fields: [atendeeTypeId], references: [id])
+  meeting       Meeting        @relation(fields: [meetingId], references: [id])
+  staff         Staff          @relation(fields: [staffId], references: [id])
+  atendeeType   AttendanceType @relation(fields: [atendeeTypeId], references: [id])
 
   deletedAt DateTime?
   createdAt DateTime? @default(now())
@@ -274,7 +274,7 @@ model MeetingAttendees {
 }
 
 model Meeting {
-  id           Int                @id @default(autoincrement())
+  id           Int               @id @default(autoincrement())
   title        String
   date         DateTime
   startedAt    DateTime
@@ -282,10 +282,10 @@ model Meeting {
   venue        String
   meetingItems MeetingItem[]
   aob          AOB[]
-  staff        MeetingAttendees[]
+  staff        MeetingAttendee[]
   deletedAt    DateTime?
-  createdAt    DateTime?          @default(now())
-  updatedAt    DateTime?          @updatedAt
+  createdAt    DateTime?         @default(now())
+  updatedAt    DateTime?         @updatedAt
 }
 
 model MeetingItem {
