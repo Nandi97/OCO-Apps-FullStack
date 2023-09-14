@@ -239,7 +239,7 @@ export default function Sidebar() {
 					</div>
 				</Dialog>
 			</Transition.Root>
-			<div className="hidden lg:fixed lg:inset-y-0 lg:z-30 lg:flex lg:w-72 lg:flex-col">
+			<div className="hidden lg:fixed lg:inset-y-0 lg:z-30 lg:flex lg:w-64 lg:flex-col">
 				<div className="flex flex-col justify-between h-screen px-6 overflow-y-auto border-r border-gray-200 shadow-lg md:flex md:col-span-3 xl:col-span-2 bg-ocoblue-100 grow">
 					<div className="flex items-center flex-shrink-0 p-4">
 						<Image

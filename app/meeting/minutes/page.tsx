@@ -1,19 +1,16 @@
-'use client';
-import { useEffect, useState } from 'react';
+import MeetingTable from './components/MeetingTable';
+import { getServerSession } from 'next-auth';
+import { redirect } from 'next/navigation';
+import { authOptions } from '@/pages/api/auth/[...nextauth]';
 
-export default function Home() {
-	const [title, setTitle] = useState('');
-
-	// Update the title and breadcrumbs
-	useEffect(() => {
-		setTitle('Minutes');
-	}, []);
-
+export default async function Home() {
+	const session = await getServerSession(authOptions);
+	if (!session) {
+		return redirect('/api/auth/signIn');
+	}
 	return (
 		<div className="space-y-2">
-			<div className="bg-white flex flex-col gap-2">
-				<h1 className="font-extralight text-lg text-accent-700">{title}</h1>
-			</div>
+			<MeetingTable />
 		</div>
 	);
 }
