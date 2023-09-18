@@ -1,5 +1,6 @@
 'use client';
 
+import MeetingForm from '@/components/forms/meeting/MeetingForm';
 import Link from 'next/link';
 import { useState } from 'react';
 
@@ -22,15 +23,7 @@ export default function CreateMinutes() {
 					className="rounded-md shadow-md shadow-ocoblue-200 col-span-6"
 				>
 					<div>
-						{/* <PurchaseOrderForm
-							onBooleanSelectChange={onBooleanSelectChange}
-							setSelectedAuthorizer={setSelected}
-							onSelectChange={handleSelectChange}
-							formValues={formValues}
-							onChange={handleChange}
-							setPurchaseOrderItems={setPurchaseItems}
-							setSelectedTownValue={setSelectedTown}
-						/> */}
+						<MeetingForm />
 					</div>
 					<div className="flex items-center justify-center w-full py-8 space-x-2">
 						{/* Submit Form Button  */}

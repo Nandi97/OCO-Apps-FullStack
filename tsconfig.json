@@ -31,6 +31,6 @@
 		"pages/api/menus/getMenus.js",
 		"pages/api/staff/getBooks.js",
 		"pages/api/books/addBook.ts"
-	],
+, "components/forms/meeting/MeetingForm.tsx"	],
 	"exclude": ["node_modules"]
 }

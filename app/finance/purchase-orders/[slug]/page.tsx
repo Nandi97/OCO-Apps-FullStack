@@ -22,6 +22,7 @@ export default function PurchaseOrder(url: URL) {
 		queryKey: ['detailPurchaseOrder'],
 		queryFn: () => fetchDetails(url.params.slug),
 	});
+
 	// console.log('Purchase order:', purchaseOrder);
 	return (
 		<div className="space-y-2 bg-white">
@@ -426,12 +427,12 @@ export default function PurchaseOrder(url: URL) {
 												</span>
 												<span className="font-semibold">
 													ON:
-													{purchaseOrder
-														? formatDate(
-																purchaseOrder?.approvedOn,
+													{!purchaseOrder?.approvedOn
+														? ''
+														: formatDate(
+																purchaseOrder.approvedOn as string,
 																'MMMM d, yyyy'
-														  )
-														: ''}
+														  )}
 												</span>
 											</td>
 										</tr>

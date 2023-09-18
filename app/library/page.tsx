@@ -26,7 +26,7 @@ export default function Library() {
 			.then((response) => response.data)
 	);
 
-	console.log('Book Data', data);
+	// console.log('Book Data', data);
 
 	const total = data?.total ?? 0;
 	const links = data?.links ?? [];
@@ -48,13 +48,50 @@ export default function Library() {
 		iconClassName: '',
 	};
 
-	const headerOptionsList = [{}];
+	const headerOptionsList = [
+		{
+			name: 'OCO Resource Center',
+			link: 'https://oraro-mobility-eu.imanage.work/work/web/r/libraries/ORARODOCS/workspaces/ORARODOCS!2993?p=1',
+		},
+		{
+			name: 'Legislations',
+			link: 'https://oraro-mobility-eu.imanage.work/work/web/r/libraries/ORARODOCS/workspaces/ORARODOCS!2993?p=1',
+		},
+		{
+			name: 'Law Africa',
+			link: 'https://llr.lawafrica.com',
+		},
+		{
+			name: 'Practical Law',
+			link: 'https://uk.practicallaw.thomsonreuters.com/Browse/Home/PracticalLaw?transitionType=Default&contextData=(sc.Default)',
+		},
+		{
+			name: 'Westlaw UK',
+			link: 'https://legalsolutions.thomsonreuters.co.uk/en/products-services/westlaw-uk.html',
+		},
+		{
+			name: 'Kenya Law',
+			link: 'http://kenyalaw.org/kl/',
+		},
+		{
+			name: 'World LII',
+			link: 'http://www.worldlii.org/',
+		},
+		{
+			name: 'CanLII',
+			link: 'https://www.canlii.org/en/',
+		},
+		{
+			name: 'BAILII',
+			link: 'https://www.bailii.org/',
+		},
+	];
 
 	// Table Dopdown
 	const tableOptBtnTxt = {
 		icon: 'heroicons:ellipsis-horizontal',
 		buttonClassName:
-			'flex items-center justify-center w-full h-8 px-4 text-ocoblue-900 rounded-sm hover:shadow-sm z-20',
+			'flex items-center justify-center w-full h-8 px-4 text-ocoblue-900 rounded-sm hover:shadow-sm z-10',
 	};
 	const tableOptionsList = [
 		{ name: 'Delete Book', icon: 'heroicons:trash', action: handleDelete },
