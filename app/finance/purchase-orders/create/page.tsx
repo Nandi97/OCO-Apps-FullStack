@@ -147,7 +147,7 @@ export default function CreatePurchaseOrder() {
 	// console.log('FormValues: ', formValues);
 	// console.log('Selected: ', selected);
 	// console.log('Selected Town: ', selectedTown);
-	console.log('Purchased Items: ', purchaseItems);
+	// console.log('Purchased Items: ', purchaseItems);
 
 	const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
 		e.preventDefault();
@@ -162,7 +162,7 @@ export default function CreatePurchaseOrder() {
 			<div className="grid grid-cols-12 gap-2">
 				<form
 					onSubmit={handleSubmit}
-					className="rounded-md shadow-md shadow-ocoblue-200 col-span-6"
+					className="rounded-md shadow-md shadow-ocoblue-200 md:col-span-6 col-span-12"
 				>
 					<div>
 						<PurchaseOrderForm

@@ -217,8 +217,8 @@ export default function Sidebar({ sidebarProp }: { sidebarProp: React.ReactNode 
 				</Dialog>
 			</Transition.Root>
 			<div className="hidden lg:fixed lg:inset-y-0 lg:z-30 lg:flex lg:w-64 lg:flex-col">
-				<div className="flex flex-col justify-between h-screen px-6 overflow-y-auto border-r border-gray-200 shadow-lg md:flex md:col-span-3 xl:col-span-2 bg-ocoblue-100 grow">
-					<div className="flex items-center flex-shrink-0 p-4">
+				<div className="flex flex-col justify-between h-screen px-6 overflow-y-auto border-r divide-y divide-ocobrown-200 border-gray-200 shadow-lg md:flex md:col-span-3 xl:col-span-2 bg-ocoblue-100 grow">
+					<div className="flex items-center flex-shrink-0 pt-6 pb-4 h-8">
 						<Image
 							height={64}
 							width={64}
@@ -231,7 +231,7 @@ export default function Sidebar({ sidebarProp }: { sidebarProp: React.ReactNode 
 							<span className="text-ocobrown-600">Apps</span>
 						</div>
 					</div>
-					<div className="flex flex-col flex-grow mt-5">
+					<div className="flex flex-col flex-grow mt-5 pt-4">
 						<nav className="flex-1 px-4" aria-label="Sidebar">
 							{data?.map((item: any) =>
 								!item.subMenus.length ? (

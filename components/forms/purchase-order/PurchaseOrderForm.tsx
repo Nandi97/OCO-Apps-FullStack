@@ -55,21 +55,17 @@ export default function PurchaseOrderForm({
 		axios.get('/api/general/getTowns').then((res) => res.data)
 	);
 
-	const { data: staff } = useQuery(['staffList', currentPage, perPage, searchParam], () =>
-		axios
-			.get(`/api/staff/getStaff`, {
-				params: { page: currentPage, perPage, searchParam },
-			})
-			.then((response) => response.data)
+	const { data: staff } = useQuery(['unpaginatedStaff'], () =>
+		axios.get('/api/staff/getAllUnpaginatedStaff').then((response) => response.data)
 	);
-
-	const [selected, setSelected] = useState(staff?.data[0]);
+	// console.log('Staff:', staff);
+	const [selected, setSelected] = useState(staff?.[0]);
 	const [selectedTown, setSelectedTown] = useState(towns?.[0]);
 
 	const filteredStaff =
 		query === ''
-			? staff?.data
-			: staff?.data?.filter((item) =>
+			? staff
+			: staff?.filter((item) =>
 					item.name
 						.toLowerCase()
 						.replace(/\s+/g, '')
