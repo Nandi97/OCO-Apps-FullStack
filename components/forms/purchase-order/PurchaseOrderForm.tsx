@@ -526,6 +526,7 @@ export default function PurchaseOrderForm({
 										<PurchaseItemForm
 											key={index}
 											formValues={item}
+											currencyId={formValues?.currencyId}
 											onChange={(e) => handleChangePurchaseItem(index, e)}
 											onClick={() => handleRemovePurchaseItem(index)}
 										/>
@@ -582,7 +583,7 @@ export default function PurchaseOrderForm({
 									as="div"
 									value={selected}
 									onChange={(newSelected) => {
-										console.log('Selected staff:', newSelected);
+										// console.log('Selected staff:', newSelected);
 										setSelected(newSelected);
 									}}
 									className="space-y-1 col-span-6 "
