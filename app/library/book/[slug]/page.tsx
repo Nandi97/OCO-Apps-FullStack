@@ -6,7 +6,7 @@ import axios from 'axios';
 import Image from 'next/image';
 import OptDropdown from '@/components/my-ui/OptDropdown';
 import { usePathname } from 'next/navigation';
-import { URL } from '@/pages/types/URL';
+import { URL } from '@/components/types/URL';
 
 const fetchDetails = async (slug: string) => {
 	const response = await axios.get(`/api/books/${slug}`);

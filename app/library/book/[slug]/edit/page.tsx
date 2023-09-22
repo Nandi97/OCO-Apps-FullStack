@@ -8,7 +8,7 @@ import { useRouter } from 'next/navigation';
 import toast from 'react-hot-toast';
 import BookForm from '@/components/forms/BookForm';
 
-import { URL } from '@/pages/types/URL';
+import { URL } from '@/components/types/URL';
 
 const fetchDetails = async (slug: string) => {
 	const response = await axios.get(`/api/books/${slug}`);

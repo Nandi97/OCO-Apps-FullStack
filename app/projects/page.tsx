@@ -1,7 +1,7 @@
 'use client';
 import { useEffect, useState } from 'react';
 
-export default function Home() {
+export default function Project() {
 	const [title, setTitle] = useState('');
 
 	// Update the title and breadcrumbs

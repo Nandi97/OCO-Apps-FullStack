@@ -1,6 +1,6 @@
 'use client';
-import { PurchaseOrder } from '@/pages/types/PurchaseOrder';
-import { URL } from '@/pages/types/URL';
+import { PurchaseOrder } from '@/components/types/PurchaseOrder';
+import { URL } from '@/components/types/URL';
 import { useQuery } from '@tanstack/react-query';
 import axios from 'axios';
 import Image from 'next/image';

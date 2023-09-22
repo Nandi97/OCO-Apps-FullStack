@@ -1,5 +1,5 @@
 import StaffForm from '@/components/forms/StaffForm';
-import { Staff } from '@/pages/types/Staff';
+import { Staff } from '@/components/types/Staff';
 import { Icon } from '@iconify/react';
 import { useMutation, useQuery, useQueryClient } from '@tanstack/react-query';
 import axios, { AxiosError } from 'axios';

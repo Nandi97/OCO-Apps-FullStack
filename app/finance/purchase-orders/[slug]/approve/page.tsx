@@ -1,11 +1,11 @@
 'use client';
 
-import { URL } from '@/pages/types/URL';
+import { URL } from '@/components/types/URL';
 import { useMutation, useQuery } from '@tanstack/react-query';
 import axios, { AxiosError } from 'axios';
 import { formatDate } from '@/utils/formatDate';
 import OCO_AB_David_Logo from '@/public/assets/images/oco_ab_and_david.png';
-import { PurchaseOrder } from '@/pages/types/PurchaseOrder';
+import { PurchaseOrder } from '@/components/types/PurchaseOrder';
 import Image from 'next/image';
 import { usePathname, useRouter } from 'next/navigation';
 import { Icon } from '@iconify/react/dist/iconify.js';

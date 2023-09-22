@@ -1,8 +1,8 @@
 'use client';
 
 import PurchaseOrderForm from '@/components/forms/purchase-order/PurchaseOrderForm';
-import { PurchaseOrder } from '@/pages/types/PurchaseOrder';
-import { URL } from '@/pages/types/URL';
+import { PurchaseOrder } from '@/components/types/PurchaseOrder';
+import { URL } from '@/components/types/URL';
 import { useMutation, useQuery } from '@tanstack/react-query';
 import Link from 'next/link';
 import axios, { AxiosError } from 'axios';
