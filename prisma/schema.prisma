@@ -62,19 +62,6 @@ model Menu {
   listOrder Int
   createdAt DateTime? @default(now())
   updatedAt DateTime? @updatedAt
-  subMenus  SubMenu[]
-}
-
-model SubMenu {
-  id        Int       @id @default(autoincrement())
-  name      String
-  url       String
-  icon      String
-  listOrder Int
-  menuId    Int
-  createdAt DateTime? @default(now())
-  updatedAt DateTime? @updatedAt
-  menu      Menu      @relation(fields: [menuId], references: [id])
 }
 
 model Matter {

@@ -6,8 +6,10 @@ import StaffCard from './components/StaffCard';
 import { getServerSession } from 'next-auth';
 import { redirect } from 'next/navigation';
 import { authOptions } from '@/pages/api/auth/[...nextauth]';
+import { metadata } from '@/app/layout';
 
 export default async function StaffList() {
+	console.log('MetaData', metadata);
 	const session = await getServerSession(authOptions);
 	if (!session) {
 		return redirect('/api/auth/signIn');

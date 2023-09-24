@@ -1,6 +1,5 @@
 import { PrismaClient } from '@prisma/client';
 import { getMenus } from './seeders/menus';
-import { getSubMenus } from './seeders/subMenus';
 import { getMatters } from './seeders/matters';
 import { getGenders } from './seeders/genders';
 import { getStaffTypes } from './seeders/staffTypes';
@@ -17,7 +16,6 @@ const prisma = new PrismaClient();
 
 async function main() {
 	const menus = getMenus();
-	const subMenus = getSubMenus();
 	const matters = getMatters();
 	const genders = getGenders();
 	const towns = getTowns();
@@ -37,20 +35,7 @@ async function main() {
 				name: menu.name,
 				url: menu.url,
 				icon: menu.icon,
-				listOrder: menu.list_order,
-			},
-		});
-	}
-
-	// Sub Menus
-	for (const subMenu of subMenus) {
-		await prisma.subMenu.create({
-			data: {
-				name: subMenu.name,
-				url: subMenu.url,
-				icon: subMenu.icon,
-				listOrder: subMenu.list_order,
-				menuId: subMenu.menu_id,
+				listOrder: menu.listOrder,
 			},
 		});
 	}

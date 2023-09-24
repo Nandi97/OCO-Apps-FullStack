@@ -5,7 +5,6 @@ import AuthContext from './QueryWrapper';
 import QueryWrapper from './QueryWrapper';
 import Sidebar from './auth/Sidebar';
 import Nav from './auth/Nav';
-import Navbar from './auth/Navbar';
 
 const roboto = Roboto({
 	subsets: ['latin'],
@@ -32,10 +31,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 				<QueryWrapper>
 					<AuthContext>
 						{/* <Sidebar sidebarProp={<Nav />} /> */}
-						<Navbar />
+						<Nav />
 
 						{/* <main className="overflow-y-auto py-3 flex flex-col h-screen"> */}
-						<main className="overflow-y-auto py-3 lg:pl-64 flex flex-col h-screen">
+						<main className="overflow-y-auto flex flex-col h-screen">
 							<div className="p-4 py-2 bg-white rounded-lg shadow-lg overflow-y-auto flex flex-col">
 								{children}
 							</div>

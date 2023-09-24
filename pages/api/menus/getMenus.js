@@ -13,13 +13,7 @@ export default async function handler(req, res) {
 				// where: {
 				// 	email: session.user.email,
 				// },
-				include: {
-					subMenus: {
-						orderBy: {
-							listOrder: 'asc',
-						},
-					},
-				},
+
 				orderBy: {
 					listOrder: 'asc',
 				},

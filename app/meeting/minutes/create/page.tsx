@@ -22,9 +22,7 @@ export default function CreateMinutes() {
 					onSubmit={handleSubmit}
 					className="rounded-md shadow-md shadow-ocoblue-200 col-span-6"
 				>
-					<div>
-						<MeetingForm />
-					</div>
+					<div>{/* <MeetingForm /> */}</div>
 					<div className="flex items-center justify-center w-full py-8 space-x-2">
 						{/* Submit Form Button  */}
 						<button
