@@ -6,6 +6,8 @@ const nextConfig = {
 			'avatars.githubusercontent.com',
 			'firebasestorage.googleapis.com',
 			'orarocoke-my.sharepoint.com',
+			'www.dropbox.com',
+			'www.oraro.co.ke',
 		],
 	},
 	typescript: {

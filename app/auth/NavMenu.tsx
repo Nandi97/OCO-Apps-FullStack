@@ -39,8 +39,8 @@ export default function NavMenu() {
 					leaveFrom="transform opacity-100 scale-100"
 					leaveTo="transform opacity-0 scale-95"
 				>
-					<Menu.Items className="absolute right-0 w-96 mt-2 z-50 origin-top-right divide-y divide-gray-100 rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none p-4">
-						<div className="px-1 z-50  py-1 grid grid-cols-5 gap-2">
+					<Menu.Items className="absolute right-0 w-96 mt-2 -mr-10 z-50 origin-top-right divide-y divide-gray-100 rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none p-4">
+						<div className="px-1 z-50  py-1 grid md:grid-cols-5 grid-cols-3 gap-2">
 							{data?.map((item: any) => (
 								<Menu.Item
 									as="a"
