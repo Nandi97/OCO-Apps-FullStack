@@ -58,7 +58,7 @@ export default function PurchaseOrderForm({
 	const { data: staff } = useQuery(['unpaginatedStaff'], () =>
 		axios.get('/api/staff/getAllUnpaginatedStaff').then((response) => response.data)
 	);
-	// console.log('Staff:', staff);
+	console.log('Staff:', staff);
 	const [selected, setSelected] = useState(staff?.[0]);
 	const [selectedTown, setSelectedTown] = useState(towns?.[0]);
 

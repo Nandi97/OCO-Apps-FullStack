@@ -6,6 +6,7 @@ import Logged from './Logged';
 import Image from 'next/image';
 import OraroLogo from '@/public/assets/images/Oraro-Logo.png';
 import Menu from './NavMenu';
+import Link from 'next/link';
 
 export async function getSessionData() {
 	const session = await getServerSession(authOptions);
@@ -16,9 +17,9 @@ export default async function Nav({ pageTitle }) {
 	const session = await getSessionData();
 
 	return (
-		<nav className="w-full bg-ocobrown-400/30 h-10 justify-between p-1 flex items-center px-3">
+		<nav className="w-full shadow-md shadow-slate-400 bg-ocobrown-400/30 h-10 justify-between p-1 flex items-center px-3">
 			<div className="flex items-center flex-shrink-0 divide-x divide-ocoblue-300">
-				<div className="flex items-center px-2">
+				<Link href={`/`} className="flex items-center px-2">
 					<Image
 						height={64}
 						width={64}
@@ -30,11 +31,11 @@ export default async function Nav({ pageTitle }) {
 						<span className="text-ocoblue-600">OCO</span>
 						<span className="text-ocobrown-600">Apps</span>
 					</div>
-				</div>
+				</Link>
 				<div className="font-extralight px-2 text-base text-ocoblue-600">{pageTitle}</div>
 			</div>
 
-			<div className="flex space-x-2">
+			<div className="flex space-x-2 items-center justify-center h-full">
 				{!session?.user && <Login />}
 				{session?.user && (
 					<>

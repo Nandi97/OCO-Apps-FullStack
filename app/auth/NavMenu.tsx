@@ -23,10 +23,10 @@ export default function NavMenu() {
 		<div className="text-right z-50 inline-flex items-center  bg-white rounded-lg bg-opacity-0">
 			<Menu as="div" className="relative inline-block text-left">
 				<div>
-					<Menu.Button className="inline-flex w-full justify-center rounded-md text-sm font-medium text-white  focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75">
+					<Menu.Button className="inline-flex w-full items-center justify-center rounded-md text-sm font-medium text-white  focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75">
 						<Icon
 							icon="mdi:dots-grid"
-							className="object-contain w-6 h-6 p-px  border-opacity-30 hover:bg-ocoblue-600 rounded-md"
+							className="object-contain w-7 h-7 p-px  border-opacity-30 hover:bg-ocoblue-600 rounded-md"
 						/>
 					</Menu.Button>
 				</div>

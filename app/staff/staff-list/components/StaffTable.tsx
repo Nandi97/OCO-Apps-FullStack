@@ -31,7 +31,6 @@ export default function StaffTable() {
 			})
 			.then((response) => response.data)
 	);
-
 	// console.log(data);
 
 	const total = data?.total ?? 0;

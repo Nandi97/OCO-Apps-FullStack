@@ -1,22 +1,19 @@
-import Image from 'next/image';
-import type { Metadata } from 'next';
+import UserPanel from '@/components/my-ui/pages/dashboard/UserPane';
+import { useQuery } from '@tanstack/react-query';
+import axios from 'axios';
+import Staff from './staff/page';
+import { useState } from 'react';
 import { getServerSession } from 'next-auth';
 import { authOptions } from '@/pages/api/auth/[...nextauth]';
-import UserPanel from '@/components/my-ui/pages/dashboard/UserPane';
-import avatar from '@/public/assets/images/avatar_placeholder.png';
 
 export async function getSessionData() {
-	const session = await getServerSession(authOptions);
-	// console.log(session)
+	const session: any = await getServerSession(authOptions);
+	// console.log(session);
 	return session;
 }
 
-export default async function Home() {
+export default async function Dashboard() {
 	const session = await getSessionData();
-	// if (session === null || session === undefined) {
-	// 	return redirect('/api/auth/signIn');
-	// }
-	// console.log('Session', session);
 
 	return (
 		<div
@@ -26,11 +23,7 @@ export default async function Home() {
 			}}
 		>
 			<div className="col-span-4 flex justify-center items-center">
-				<UserPanel
-					userImage={session?.user?.image || avatar}
-					userEmail={session?.user?.email}
-					userName={session?.user?.name}
-				/>
+				<UserPanel sessionData={session} />
 			</div>
 			<div className="col-span-8">other</div>
 		</div>

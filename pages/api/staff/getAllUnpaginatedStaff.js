@@ -3,10 +3,10 @@ import { getServerSession } from 'next-auth';
 import { authOptions } from '../auth/[...nextauth]';
 
 export default async function handler(req, res) {
-	const session = await getServerSession(req, res, authOptions);
-	if (!session) {
-		return res.status(401).json({ message: 'Please sign-in to view side menu' });
-	}
+	// const session = await getServerSession(req, res, authOptions);
+	// if (!session) {
+	// 	return res.status(401).json({ message: 'Please sign-in to view side menu' });
+	// }
 	if (req.method === 'GET') {
 		try {
 			const data = await prisma.staff.findMany({

@@ -20,14 +20,25 @@ export default function Logged({ image, name, designation }: User) {
 			<div className="text-right inline-flex items-center  bg-white rounded-lg bg-opacity-0">
 				<Menu as="div" className="relative inline-block text-left">
 					<div>
-						<Menu.Button className="inline-flex w-full justify-center rounded-md text-sm font-medium text-white  focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75">
-							<Image
-								src={image}
-								width={20}
-								height={20}
-								alt="User Avatar"
-								className="object-contain w-6 h-6 p-px border-2 rounded-full border-ocoblue-50 hover:border-ocoblue-400"
-							/>
+						<Menu.Button className="inline-flex w-full justify-center items-center rounded-md text-sm font-medium text-white  focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75">
+							{!image ? (
+								<span className="inline-flex items-center justify-center rounded-full h-6 w-6 bg-ocoblue-50 border-ocoblue-500 border-2 text-ocoblue-500 hover:bg-ocoblue-500 hover:text-ocoblue-50">
+									<span className="font-sm leading-none ">
+										{name
+											.split(' ')
+											.map((n) => n[0])
+											.join('')}
+									</span>
+								</span>
+							) : (
+								<Image
+									src={image}
+									width={20}
+									height={20}
+									alt="User Avatar"
+									className="object-contain w-6 h-6 p-px border-2 rounded-full border-ocoblue-50 hover:border-ocoblue-400"
+								/>
+							)}
 						</Menu.Button>
 					</div>
 					<Transition
@@ -39,7 +50,7 @@ export default function Logged({ image, name, designation }: User) {
 						leaveFrom="transform opacity-100 scale-100"
 						leaveTo="transform opacity-0 scale-95"
 					>
-						<Menu.Items className="absolute right-0 mt-2 w-56 origin-top-right divide-y divide-gray-100 rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
+						<Menu.Items className="absolute w-40 right-0 mt-2 origin-top-right divide-y divide-gray-100 rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
 							<div className="px-1 py-1 flex flex-col text-ocoblue-700 font-semibold text-base divide-y">
 								<Menu.Item>
 									{({ active }) => (
@@ -55,7 +66,7 @@ export default function Logged({ image, name, designation }: User) {
 									{({ active }) => (
 										<button
 											type="button"
-											className="flex items-center p-1 hover:rounded-md  hover:bg-ocobrown-400 hover:text-white"
+											className="flex items-center p-1 hover:rounded-md justify-between hover:bg-ocobrown-400 hover:text-white"
 											onClick={() => signOut()}
 										>
 											<span>Sign Out</span>
