@@ -8,6 +8,7 @@ const nextConfig = {
 			'orarocoke-my.sharepoint.com',
 			'www.dropbox.com',
 			'www.oraro.co.ke',
+			'openweathermap.org',
 		],
 	},
 	typescript: {

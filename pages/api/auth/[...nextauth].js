@@ -24,36 +24,36 @@ export const authOptions = {
 			clientId: process.env.AZURE_AD_CLIENT_ID,
 			clientSecret: process.env.AZURE_AD_CLIENT_SECRET,
 			tenantId: process.env.AZURE_AD_TENANT_ID,
-			authorization: { params: { scope: 'User.Read.All openid offline_access' } },
+			// authorization: { params: { scope: 'User.Read.All openid offline_access' } },
 		}),
 	],
-	async profile(profile, tokens) {
-		const profilePicture = await fetch(
-			`https://graph.microsoft.com/v1.0/me/photos/${profilePhotoSize}x${profilePhotoSize}/$value`,
-			{
-				headers: {
-					Authorization: `Bearer ${tokens.access_token}`,
-				},
-			}
-		);
+	// async profile(profile, tokens) {
+	// 	const profilePicture = await fetch(
+	// 		`https://graph.microsoft.com/v1.0/me/photos/${profilePhotoSize}x${profilePhotoSize}/$value`,
+	// 		{
+	// 			headers: {
+	// 				Authorization: `Bearer ${tokens.access_token}`,
+	// 			},
+	// 		}
+	// 	);
 
-		if (profilePicture.ok) {
-			const pictureBuffer = await profilePicture.arrayBuffer();
-			const pictureBase64 = Buffer.from(pictureBuffer).toString('base64');
-			return {
-				id: profile.sub,
-				name: profile.name,
-				email: profile.email,
-				image: `data:image/jpeg;base64, ${pictureBase64}`,
-			};
-		} else {
-			return {
-				id: profile.sub,
-				name: profile.name,
-				email: profile.email,
-			};
-		}
-	},
+	// 	if (profilePicture.ok) {
+	// 		const pictureBuffer = await profilePicture.arrayBuffer();
+	// 		const pictureBase64 = Buffer.from(pictureBuffer).toString('base64');
+	// 		return {
+	// 			id: profile.sub,
+	// 			name: profile.name,
+	// 			email: profile.email,
+	// 			image: `data:image/jpeg;base64, ${pictureBase64}`,
+	// 		};
+	// 	} else {
+	// 		return {
+	// 			id: profile.sub,
+	// 			name: profile.name,
+	// 			email: profile.email,
+	// 		};
+	// 	}
+	// },
 };
 
 export default NextAuth(authOptions);

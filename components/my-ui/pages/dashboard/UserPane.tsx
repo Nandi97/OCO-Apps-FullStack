@@ -18,7 +18,7 @@ export default function UserPanel({ sessionData }: any) {
 				<Link
 					href={`/profile/${currentUser.id}`}
 					key={currentUser?.id}
-					className="flex w-2/3 justify-center items-center flex-col p-4 space-y-4 hover:shadow-md transition-all duration-300 hover:p-5 cursor-pointer shadow-md border border-ocoblue-100 rounded-md bg-transparent h-full bg-gray-400 bg-clip-padding backdrop-filter backdrop-blur-md bg-opacity-10"
+					className="flex justify-center items-center flex-col p-4 w-full space-y-4 hover:shadow-md transition-all duration-300 hover:p-5 cursor-pointer shadow-md border border-ocoblue-100 rounded-md bg-ocoblue-50 h-full bg-clip-padding backdrop-filter backdrop-blur-md"
 				>
 					`
 					<div
@@ -31,7 +31,7 @@ export default function UserPanel({ sessionData }: any) {
 							width={1000}
 							height={1000}
 							className="h-20 w-20 p-2 rounded-full z-10"
-							src={currentUser?.avatarUrl || avatar}
+							src={currentUser?.avatarUrl || sessionData?.user?.image || avatar}
 							alt="User Image"
 							quality={100}
 							style={{ objectFit: 'contain' }}

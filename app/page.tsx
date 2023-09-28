@@ -14,18 +14,39 @@ export async function getSessionData() {
 
 export default async function Dashboard() {
 	const session = await getSessionData();
-
+	// console.log(session);
+	const divs = [];
+	for (let i = 0; i < 4; i++) {
+		divs.push(
+			<>
+				<div className="col-span-4 flex justify-center items-center">
+					<UserPanel sessionData={session} />
+				</div>
+				<div className="col-span-8 flex justify-center items-center">
+					<UserPanel sessionData={session} />
+				</div>
+				<div className="col-span-8 flex justify-center items-center">
+					<UserPanel sessionData={session} />
+				</div>
+				<div className="col-span-4 flex justify-center items-center">
+					<UserPanel sessionData={session} />
+				</div>
+			</>
+		);
+	}
 	return (
 		<div
-			className="grid grid-cols-12 bg-left-top bg-contain bg-no-repeat w-full mx-auto gap-4"
-			style={{
-				backgroundImage: `url("https://www.oraro.co.ke/wp-content/uploads/2022/11/Oraro-Classic_Logo_Full-Colour-copy-5.png")`,
-			}}
+			className=" bg-left-top bg-contain bg-no-repeat w-full px-40 mx-auto"
+			// style={{
+			// 	backgroundImage: `url("https://www.oraro.co.ke/wp-content/uploads/2022/11/Oraro-Classic_Logo_Full-Colour-copy-5.png")`,
+			// }}
 		>
-			<div className="col-span-4 flex justify-center items-center">
+			<div className="grid grid-cols-12 gap-8">
+				{/* <div className="col-span-4 flex justify-center items-center">
 				<UserPanel sessionData={session} />
+			</div> */}
+				{divs}
 			</div>
-			<div className="col-span-8">other</div>
 		</div>
 	);
 }
