@@ -4,6 +4,18 @@ import Book_Placeholder from '@/public/assets/images/books/book-illustration.png
 import Image from 'next/image';
 import { useRef, useState } from 'react';
 
+interface BookForm {
+	title: string;
+	author: string;
+	publisher: string;
+	mediaType: string;
+	edition: string;
+	subject: string;
+	copies: number;
+	isbnIssn: string;
+	publicationYear: number;
+}
+
 interface BookFormProps {
 	formValues: any;
 	onChange: (event: React.ChangeEvent<HTMLInputElement>) => void;

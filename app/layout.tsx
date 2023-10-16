@@ -24,7 +24,13 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <head /> will contain the components returned by the nearest parent
         head.jsx. Find out more at https://beta.nextjs.org/docs/api-reference/file-conventions/head
       */}
-			<head />
+			<head>
+				<script
+					type="text/javascript"
+					src="../node_modules/tw-elements/dist/js/tw-elements.umd.min.js"
+					defer
+				></script>
+			</head>
 			<body
 				className={` ${roboto.variable} h-screen font-sans bg-gradient-to-br from-accent-100 via-primary-100 to-accent-100 overflow-hidden`}
 			>

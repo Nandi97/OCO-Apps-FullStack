@@ -3,7 +3,7 @@ import GithubProvider from 'next-auth/providers/github';
 import GoogleProvider from 'next-auth/providers/google';
 import AzureADProvider from 'next-auth/providers/azure-ad';
 import { PrismaAdapter } from '@auth/prisma-adapter';
-import prisma from '../../../prisma/client';
+import prisma from '@/lib/prisma';
 
 const adapter = PrismaAdapter(prisma);
 
