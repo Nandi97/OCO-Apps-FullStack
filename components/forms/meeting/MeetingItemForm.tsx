@@ -2,37 +2,50 @@ import { Icon } from '@iconify/react/dist/iconify.js';
 import { Fragment, useState } from 'react';
 import { Combobox, Transition } from '@headlessui/react';
 
-interface PurchaseItemFormProp {
-	formValues: any;
-	onChange: (event: React.ChangeEvent<HTMLInputElement>) => void;
-	onTextAreaChange: (event: React.ChangeEvent<HTMLTextAreaElement>) => void;
-	onSelectChange: (event: React.ChangeEvent<HTMLSelectElement>) => void;
+interface MinuteItemForm {
+	action: string;
+	responsible: any;
+	dueDate: string;
+	activity: string;
+	status: string;
+}
+
+interface MeetingItemFormProp {
+	formValues: MinuteItemForm;
+	onChange: (event: any) => void;
 	onClick: (event: any) => void;
 	personResponsible: [] | null;
+}
+
+function classNames(...classes: any) {
+	return classes.filter(Boolean).join(' ');
 }
 
 export default function MeetingItemForm({
 	formValues,
 	onChange,
 	onClick,
-	onTextAreaChange,
 	personResponsible,
-	onSelectChange,
-}: PurchaseItemFormProp) {
+}: MeetingItemFormProp) {
+	// console.log(personResponsible);
+
 	const [query, setQuery] = useState('');
+	const [selected, setSelected] = useState<any>();
 
-	const [selected, setSelected] = useState(personResponsible?.data[0]);
-
-	const filteredPersonResponsible =
-		query === ''
-			? personResponsible
-			: personResponsible?.filter(
-					(item) =>
-						item?.name
-							.toLowerCase()
-							.replace(/\s+/g, '')
-							.includes(query.toLowerCase().replace(/\s+/g, ''))
-			  );
+	// console.log(selected);
+	const filteredPersons = (data: any) => {
+		const filteredData =
+			query === ''
+				? data
+				: data?.filter(
+						(item) =>
+							item?.name
+								.toLowerCase()
+								.replace(/\s+/g, '')
+								.includes(query.toLowerCase().replace(/\s+/g, ''))
+				  );
+		return filteredData;
+	};
 
 	const activity = [
 		{ id: 1, name: 'Information' },
@@ -54,7 +67,7 @@ export default function MeetingItemForm({
 						name="description"
 						id="description"
 						value={formValues?.action}
-						onChange={onTextAreaChange}
+						onChange={onChange}
 						className="sm:text-sm w-full bg-ocoblue-50 bg-opacity-70 border-1 focus:shadow-inner shadow-accent-300  focus:border-ocoblue-500 block p-2.5 h-8  px-3 py-1 shadow-ocoblue-300 rounded-md border border-ocoblue-300 text-sm font-medium leading-4 text-ocoblue-700 shadow-sm hover:bg-ocoblue-50 focus:outline-none focus:ring-2 focus:ring-ocobrown-500 focus:ring-offset-1"
 					/>
 				</div>
@@ -68,27 +81,48 @@ export default function MeetingItemForm({
 				</label>
 				<div className="mt-1">
 					<Combobox
-						as="div"
 						value={selected}
 						onChange={(newSelected) => {
-							console.log('Selected staff:', newSelected);
+							// console.log('Selected staff:', newSelected);
 							setSelected(newSelected);
+							setQuery('');
 						}}
+						multiple
 					>
 						<div className="relative mt-1">
-							<div className="relative w-full cursor-default overflow-hidden rounded-lg bg-white text-left shadow-md focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75 focus-visible:ring-offset-2 focus-visible:ring-offset-teal-300 sm:text-sm">
+							<div className="flex flex-wrap items-center z-[3]">
+								{selected?.map((item) => (
+									<div
+										key={item?.id}
+										className="flex relative items-center bg-ocoblue-300 text-xs text-white px-2 py-1 rounded-full m-1"
+									>
+										<span className="text-xs overflow-hidden truncate w-14">
+											{item?.name}
+										</span>
+										<button
+											type="button"
+											onClick={() => {
+												setSelected((peopleResponsible) =>
+													peopleResponsible.filter(
+														(person) => person.id !== item.id
+													)
+												);
+											}}
+											className="ml-1 focus:outline-none"
+										>
+											<Icon icon="heroicons:x-mark" className="h-4 w-4" />
+										</button>
+									</div>
+								))}
 								<Combobox.Input
-									className="w-full border-none py-2 pl-3 pr-10 text-sm leading-5 text-gray-900 focus:ring-0"
-									onChange={(event) => setQuery(event.target.value)}
-									displayValue={(item) => item?.name}
+									className="z-[2]  sm:text-sm w-full bg-ocoblue-50 bg-opacity-70 border-1 focus:shadow-inner shadow-accent-300  focus:border-ocoblue-500 block p-2.5 h-8  px-3 py-1 shadow-ocoblue-300 rounded-md border border-ocoblue-300 text-sm font-medium leading-4 text-ocoblue-700 shadow-sm hover:bg-ocoblue-50 focus:outline-none focus:ring-2 focus:ring-ocobrown-500 focus:ring-offset-1"
+									onChange={(event) => setQuery('')}
+									// displayValue={(selected: any) =>
+									// 	selected
+									// 		? selected?.map((item: any) => item?.name).join(', ')
+									// 		: ''
+									// }
 								/>
-								<Combobox.Button className="absolute inset-y-0 right-0 flex items-center pr-2">
-									<Icon
-										icon="heroicons:chevron-up-down"
-										className="h-5 w-5 text-gray-400"
-										aria-hidden="true"
-									/>
-								</Combobox.Button>
 							</div>
 							<Transition
 								as={Fragment}
@@ -97,42 +131,48 @@ export default function MeetingItemForm({
 								leaveTo="opacity-0"
 								afterLeave={() => setQuery('')}
 							>
-								<Combobox.Options className="absolute mt-1 max-h-60 w-full overflow-auto rounded-md bg-white py-1 text-base shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none sm:text-sm">
-									{filteredPersonResponsible?.length === 0 && query !== '' ? (
+								<Combobox.Options className="z-10 mt-1 max-h-60 w-full overflow-auto rounded-md bg-white py-1 text-base shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none sm:text-sm">
+									{filteredPersons(personResponsible)?.length === 0 &&
+									query !== '' ? (
 										<div className="relative cursor-default select-none py-2 px-4 text-gray-700">
 											Nothing found.
 										</div>
 									) : (
-										filteredPersonResponsible?.map((item) => (
+										filteredPersons(personResponsible)?.map((item) => (
 											<Combobox.Option
-												key={item.id}
+												key={item?.id}
 												value={item}
-												className={({ active }) =>
-													`relative cursor-default select-none py-2 pl-10 pr-4 ${
+												className={({ active, selected }) =>
+													classNames(
+														'cursor-default select-none py-2 pl-3 pr-9 flex justify-between',
 														active
-															? 'bg-teal-600 text-white'
-															: 'text-gray-900'
-													}`
+															? 'bg-ocobrown-600 text-white'
+															: 'text-ocoblue-900'
+													)
 												}
 											>
-												{({ selected, active }) => (
+												{({ active, selected }) => (
 													<>
-														<span
-															className={`block truncate ${
-																selected
-																	? 'font-medium'
-																	: 'font-normal'
-															}`}
-														>
-															{item.name}
-														</span>
-														{selected ? (
+														<div className="flex">
 															<span
-																className={`absolute inset-y-0 left-0 flex items-center pl-3 ${
+																className={classNames(
+																	'truncate',
+																	selected &&
+																		'font-semibold text-ocobrown-400'
+																)}
+															>
+																{item?.name}
+															</span>
+														</div>
+
+														{selected && (
+															<span
+																className={classNames(
+																	'inset-y-0 right-0 flex items-center pr-4',
 																	active
 																		? 'text-white'
-																		: 'text-teal-600'
-																}`}
+																		: 'text-ocoblue-600'
+																)}
 															>
 																<Icon
 																	icon="heroicons:check"
@@ -140,7 +180,7 @@ export default function MeetingItemForm({
 																	aria-hidden="true"
 																/>
 															</span>
-														) : null}
+														)}
 													</>
 												)}
 											</Combobox.Option>
@@ -163,7 +203,7 @@ export default function MeetingItemForm({
 					<input
 						type="date"
 						name="dueDate"
-						value={formValues?.date}
+						value={formValues?.dueDate}
 						onChange={onChange}
 						id="dueDate"
 						className="sm:text-sm w-full bg-ocoblue-50 bg-opacity-70 border-1 focus:shadow-inner shadow-accent-300  focus:border-ocoblue-500 block p-2.5 h-8  px-3 py-1 shadow-ocoblue-300 rounded-md border border-ocoblue-300 text-sm font-medium leading-4 text-ocoblue-700 shadow-sm hover:bg-ocoblue-50 focus:outline-none focus:ring-2 focus:ring-ocobrown-500 focus:ring-offset-1"
@@ -181,7 +221,7 @@ export default function MeetingItemForm({
 					<select
 						id="activity"
 						name="activity"
-						onChange={onSelectChange}
+						onChange={onChange}
 						value={formValues?.activity}
 						className="sm:text-sm w-full bg-ocoblue-50 bg-opacity-70 border-1 focus:shadow-inner shadow-accent-300 focus:border-ocoblue-500 block p-2.5 h-8 px-3 py-1 shadow-ocoblue-300 rounded-md border border-ocoblue-300 text-sm font-medium leading-4 text-ocoblue-700 shadow-sm hover:bg-ocoblue-50 focus:outline-none focus:ring-2 focus:ring-ocobrown-500 focus:ring-offset-1"
 					>
@@ -208,7 +248,7 @@ export default function MeetingItemForm({
 						name="status"
 						id="status"
 						value={formValues?.status}
-						onChange={onTextAreaChange}
+						onChange={onChange}
 						className="sm:text-sm w-full bg-ocoblue-50 bg-opacity-70 border-1 focus:shadow-inner shadow-accent-300  focus:border-ocoblue-500 block p-2.5 h-8  px-3 py-1 shadow-ocoblue-300 rounded-md border border-ocoblue-300 text-sm font-medium leading-4 text-ocoblue-700 shadow-sm hover:bg-ocoblue-50 focus:outline-none focus:ring-2 focus:ring-ocobrown-500 focus:ring-offset-1"
 					/>
 				</div>

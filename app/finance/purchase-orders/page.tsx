@@ -20,15 +20,15 @@ export default function PurchaseOrder() {
 	const pathname = usePathname();
 	// Update the title and breadcrumbs
 
-	const { data, isLoading } = useQuery(
-		['purchaseOrderList', currentPage, perPage, searchParam],
-		() =>
+	const { data, isPending } = useQuery({
+		queryKey: ['purchaseOrderList', currentPage, perPage, searchParam],
+		queryFn: () =>
 			axios
 				.get(`/api/purchase-order/getPurchaseOrders`, {
 					params: { page: currentPage, perPage, searchParam },
 				})
-				.then((response) => response.data)
-	);
+				.then((response) => response.data),
+	});
 	// console.log('Book Data', data);
 
 	const total = data?.total ?? 0;
@@ -136,7 +136,7 @@ export default function PurchaseOrder() {
 						</thead>
 						<tbody className="z-0 bg-white divide-y divide-gray-200">
 							{data?.data?.map((item, index) => {
-								if (isLoading) {
+								if (isPending) {
 									return (
 										<tr key={index}>
 											<td

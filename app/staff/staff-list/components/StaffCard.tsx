@@ -24,13 +24,15 @@ export default function StaffCard() {
 
 	const [searchParam, setSearchParam] = useState<string | null>(null);
 
-	const { data, isLoading } = useQuery(['staffList', currentPage, perPage, searchParam], () =>
-		axios
-			.get(`/api/staff/getStaff`, {
-				params: { page: currentPage, perPage, searchParam },
-			})
-			.then((response) => response.data)
-	);
+	const { data } = useQuery({
+		queryKey: ['staffList', currentPage, perPage, searchParam],
+		queryFn: () =>
+			axios
+				.get(`/api/staff/getStaff`, {
+					params: { page: currentPage, perPage, searchParam },
+				})
+				.then((response) => response.data),
+	});
 
 	// console.log(data);
 
@@ -156,26 +158,23 @@ export default function StaffCard() {
 		setSearchParam(searchInput);
 	};
 
-	const { mutate } = useMutation(
-		async (id: string) => {
+	const { mutate } = useMutation({
+		mutationFn: async (id: string) => {
 			if (active === true) {
 				await axios.patch('/api/staff/deleteStaff', { data: id });
 			} else {
 				await axios.patch('/api/staff/activateStaff', { data: id });
 			}
 		},
-		{
-			onError: (error) => {
-				console.log(error);
-			},
-			onSuccess: (data) => {
-				// console.log(data);
-				queryClient.invalidateQueries(['staffList']);
+		onError: (error, variables, context) => {
+			console.log(error);
+		},
+		onSuccess: (data, variables, context) => {
+			queryClient.invalidateQueries({ queryKey: ['staffList'] });
 
-				toast.success('Staff has been activated.', { id: deleteToastID });
-			},
-		}
-	);
+			toast.success('Staff has been activated.', { id: deleteToastID });
+		},
+	});
 
 	const deactivateStaff = (staffId: any) => {
 		setActive(true), mutate(staffId);
@@ -187,7 +186,7 @@ export default function StaffCard() {
 	return (
 		<>
 			<div className="sticky z-20 flex items-center justify-between gap-2 bg-white top-2 md:hidden">
-				<h1 className="text-lg font-extralight text-accent-700">{title}</h1>
+				<h1 className="text-lg font-extralight text-accent-700"></h1>
 				<div className="inline-flex items-center space-x-2">
 					<SearchInput onSearch={handleSearch} />
 					<OptDropdown optBtn={headerOptBtnTxt} optionsList={headerOptionsList} />

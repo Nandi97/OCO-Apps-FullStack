@@ -13,8 +13,8 @@ const roboto = Roboto({
 });
 
 export const metadata: Metadata = {
-	title: 'OCO Apps',
-	description: 'OCO Apps',
+	title: '',
+	description: '',
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
@@ -37,7 +37,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 				<QueryWrapper>
 					<AuthContext>
 						{/* <Sidebar sidebarProp={<Nav />} /> */}
-						<Nav />
+						<Nav pageTitle={metadata.title} />
 
 						{/* <main className="overflow-y-auto py-3 flex flex-col h-screen"> */}
 						<main className="overflow-y-auto flex flex-col h-screen  bg-gradient-to-br from-ocobrown-500/10 to-ocoblue-500/10 p-2">

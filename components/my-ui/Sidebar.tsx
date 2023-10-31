@@ -28,14 +28,14 @@ export default function Sidebar() {
 	const [activeDisclosure, setActiveDisclosure] = useState('');
 	const pathname = usePathname();
 
-	// const { data, isLoading } = useMenus();
-	const { data, isLoading } = useQuery({
+	// const { data, isPending } = useMenus();
+	const { data, isPending } = useQuery({
 		queryFn: allMenus,
 		queryKey: ['menus'],
 	});
 	// if (data) console.log(`Menu Items: ${data}`);
 
-	if (isLoading) return <Loading />;
+	if (isPending) return <Loading />;
 
 	const handleDisclosureClick = (name: string) => {
 		setActiveDisclosure((prevDisclosure) => (prevDisclosure === name ? '' : name));

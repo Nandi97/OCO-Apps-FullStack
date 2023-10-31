@@ -5,6 +5,8 @@ import Staff from './staff/page';
 import { useState } from 'react';
 import { getServerSession } from 'next-auth';
 import { authOptions } from '@/pages/api/auth/[...nextauth]';
+import type { Metadata } from 'next';
+import { metadata } from './layout';
 
 export async function getSessionData() {
 	const session: any = await getServerSession(authOptions);
@@ -13,6 +15,7 @@ export async function getSessionData() {
 }
 
 export default async function Dashboard() {
+	metadata.title = 'Dashboard';
 	const session = await getSessionData();
 	// console.log(session);
 	const divs = [];

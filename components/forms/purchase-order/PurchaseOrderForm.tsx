@@ -51,13 +51,16 @@ export default function PurchaseOrderForm({
 		axios.get('/api/general/getCurrencies').then((res) => res.data)
 	);
 
-	const { data: towns } = useQuery(['towns'], () =>
-		axios.get('/api/general/getTowns').then((res) => res.data)
-	);
+	const { data: towns } = useQuery({
+		queryKey: ['towns'],
+		queryFn: () => axios.get('/api/general/getTowns').then((res) => res.data),
+	});
 
-	const { data: staff } = useQuery(['unpaginatedStaff'], () =>
-		axios.get('/api/staff/getAllUnpaginatedStaff').then((response) => response.data)
-	);
+	const { data: staff } = useQuery({
+		queryKey: ['unpaginatedStaff'],
+		queryFn: () =>
+			axios.get('/api/staff/getAllUnpaginatedStaff').then((response) => response.data),
+	});
 	console.log('Staff:', staff);
 	const [selected, setSelected] = useState(staff?.[0]);
 	const [selectedTown, setSelectedTown] = useState(towns?.[0]);

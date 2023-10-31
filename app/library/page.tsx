@@ -18,13 +18,15 @@ export default function Library() {
 
 	const pathname = usePathname();
 
-	const { data, isLoading } = useQuery(['bookList', currentPage, perPage, searchParam], () =>
-		axios
-			.get(`/api/books/getBooks`, {
-				params: { page: currentPage, perPage, searchParam },
-			})
-			.then((response) => response.data)
-	);
+	const { data, isPending } = useQuery({
+		queryKey: ['bookList', currentPage, perPage, searchParam],
+		queryFn: () =>
+			axios
+				.get(`/api/books/getBooks`, {
+					params: { page: currentPage, perPage, searchParam },
+				})
+				.then((response) => response.data),
+	});
 
 	// console.log('Book Data', data);
 
@@ -177,7 +179,7 @@ export default function Library() {
 						</thead>
 						<tbody className="z-0 bg-white divide-y divide-gray-200">
 							{data?.data?.map((book, index) => {
-								if (isLoading) {
+								if (isPending) {
 									return (
 										<tr key={index}>
 											<td

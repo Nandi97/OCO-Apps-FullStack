@@ -9,7 +9,7 @@ import { authOptions } from '@/pages/api/auth/[...nextauth]';
 import { metadata } from '@/app/layout';
 
 export default async function StaffList() {
-	console.log('MetaData', metadata);
+	metadata.title = 'Staff List';
 	const session = await getServerSession(authOptions);
 	if (!session) {
 		return redirect('/api/auth/signIn');

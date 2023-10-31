@@ -4,9 +4,23 @@ import { Icon } from '@iconify/react/dist/iconify.js';
 import { useQuery } from '@tanstack/react-query';
 import axios from 'axios';
 import MultiCombobox from '@/components/my-ui/MultiComboBox';
+import MeetingItemForm from './MeetingItemForm';
+
+interface MeetingForm {
+	title: string;
+	date: string;
+	startedAt: string;
+	endedAt: string;
+	venue: string;
+	attendees: any[];
+	absenteesWithApologies?: any[];
+	absenteesWithoutApologies?: any[];
+	chairperson: number;
+	scribe: number;
+}
 
 interface MeetingFormProps {
-	formValues: any;
+	formValues: MeetingForm;
 	onChange: (event: React.ChangeEvent<HTMLInputElement>) => void;
 	onSelectChange: (event: React.ChangeEvent<HTMLSelectElement>) => void;
 	onBooleanSelectChange: (event: React.ChangeEvent<HTMLSelectElement>) => void;
@@ -18,69 +32,79 @@ function classNames(...classes: any) {
 	return classes.filter(Boolean).join(' ');
 }
 
+const allUnpaginatedStaff = async () => {
+	const response = await axios.get('/api/staff/getAllUnpaginatedStaff');
+	return response.data;
+};
+
 export default function MeetingForm({
 	formValues,
 	onChange,
 	onSelectChange,
 	setAOBs,
 	onBooleanSelectChange,
-	setMeetingItems,
 }: MeetingFormProps) {
-	const [openDisclosures, setOpenDisclosures] = useState([true, false, false]);
+	const [query, setQuery] = useState('');
+	const [meetingAttendees, setMeetingAttendees] = useState<any>();
+	const [meetingAbsenteesWithApologies, setMeetingAbsenteesWithApologies] = useState<any>();
+	const [meetingAbsenteesWithoutApologies, setMeetingAbsenteesWithoutApologies] = useState<any>();
+	const [meetingItems, setMeetingItems] = useState<any>([]);
 
-	const { data: attendees } = useQuery(['unpaginatedStaff'], () =>
-		axios.get('/api/staff/getAllUnpaginatedStaff').then((response) => response.data)
-	);
+	const { data: allStaff } = useQuery({
+		queryFn: allUnpaginatedStaff,
+		queryKey: ['unpaginatedStaff'],
+	});
 
-	const [selectedAttendees, setSelectedAttendees] = useState([
-		attendees?.[0]?.id,
-		attendees?.[1]?.id,
-	]);
+	const filteredAttendeeItems = (data: any) => {
+		const filteredData = query
+			? data.filter((item) => item?.name.toLowerCase().includes(query.toLowerCase()))
+			: data;
 
-	const absenteesWithApologies = attendees?.filter(
-		(attendee) => !selectedAttendees.includes(attendee.id)
-	);
-
-	const [selectedAbsenteesWA, setSelectedAbsenteesWA] = useState([
-		absenteesWithApologies?.[0]?.id,
-		absenteesWithApologies?.[1]?.id,
-	]);
-
-	const absentees = attendees?.filter(
-		(attendee) =>
-			!selectedAttendees.includes(attendee.id) && !selectedAbsenteesWA.includes(attendee.id)
-	);
-
-	const [selectedAbsentees, setSelectedAbsentees] = useState([
-		absentees?.[0]?.id,
-		absentees?.[1]?.id,
-	]);
-
-	// console.log('Selected Attendees:', selectedAttendees);
-	// console.log('Selected Absentees:', selectedAbsentees);
-	const handleContinue = (currentIndex) => {
-		if (currentIndex < openDisclosures.length - 1) {
-			const updatedOpenDisclosures = openDisclosures.map((open, i) => i === currentIndex + 1);
-			setOpenDisclosures(updatedOpenDisclosures);
-		}
+		return filteredData;
 	};
 
-	const handleDisclosureToggle = (index) => {
-		const updatedOpenDisclosures = openDisclosures.map((open, i) =>
-			i === index ? !open : false
-		);
-		setOpenDisclosures(updatedOpenDisclosures);
+	const absenteesWithApologies = allStaff?.filter(
+		(item) => !meetingAttendees?.some((meetingAttendee) => meetingAttendee.id === item.id)
+	);
+	const absenteesWithoutApologies = allStaff?.filter(
+		(item) =>
+			!meetingAttendees?.some((meetingAttendee) => meetingAttendee?.id === item?.id) &&
+			!meetingAbsenteesWithApologies?.some(
+				(meetingAbsenteeWithApologies) => meetingAbsenteeWithApologies?.id === item?.id
+			)
+	);
+
+	// console.log('Filtered Staff Data:', filteredStaff);
+	const handleAddMeetingItem = () => {
+		const newItem = {
+			action: '',
+			responsible: [],
+			dueDate: '',
+			activity: '',
+			status: '',
+		};
+		setMeetingItems([...meetingItems, newItem]);
 	};
+
+	const handleRemoveMeetingItem = (index) => {
+		const updatedItems = [...meetingItems];
+		updatedItems.splice(index, 1);
+		setMeetingItems(updatedItems);
+	};
+
+	const handleChangeMeetingItem = (index, event) => {
+		const { name, value } = event.target;
+		const updatedItems = [...meetingItems];
+		updatedItems[index][name] = value;
+		setMeetingItems(updatedItems);
+	};
+
 	return (
 		<div>
 			<Disclosure as="div" className="pt-6" defaultOpen={true}>
 				{({ open }) => (
 					<>
-						<Disclosure.Button
-							onClick={() => handleDisclosureToggle(0)}
-							// ref={(el) => (AccordionRefs?.current[0] = el)}
-							className="flex w-full items-center justify-between rounded-lg bg-ocobrown-100 px-4 py-2 text-left text-sm font-medium text-ocobrown-900 hover:bg-ocobrown-200 focus:outline-none focus-visible:ring focus-visible:ring-ocobrown-500 focus-visible:ring-opacity-75"
-						>
+						<Disclosure.Button className="flex w-full items-center justify-between rounded-lg bg-ocobrown-100 px-4 py-2 text-left text-sm font-medium text-ocobrown-900 hover:bg-ocobrown-200 focus:outline-none focus-visible:ring focus-visible:ring-ocobrown-500 focus-visible:ring-opacity-75">
 							<div className="w-full flex items-center space-x-2">
 								<div className="h-2 w-2 p-3 rounded-full bg-ocobrown-600 text-ocobrown-50 flex items-center justify-center">
 									<span>1</span>
@@ -113,8 +137,8 @@ export default function MeetingForm({
 											type="text"
 											name="title"
 											id="title"
-											// value={formValues?.name}
-											// onChange={onChange}
+											value={formValues?.title}
+											onChange={onChange}
 											className="sm:text-sm w-full bg-ocoblue-50 bg-opacity-70 border-1 focus:shadow-inner shadow-accent-300  focus:border-ocoblue-500 block p-2.5 h-8  px-3 py-1 shadow-ocoblue-300 rounded-md border border-ocoblue-300 text-sm font-medium leading-4 text-ocoblue-700 shadow-sm hover:bg-ocoblue-50 focus:outline-none focus:ring-2 focus:ring-ocobrown-500 focus:ring-offset-1"
 										/>
 									</div>
@@ -132,8 +156,8 @@ export default function MeetingForm({
 											type="date"
 											name="date"
 											id="date"
-											// value={formValues?.name}
-											// onChange={onChange}
+											value={formValues?.date}
+											onChange={onChange}
 											className="sm:text-sm w-full bg-ocoblue-50 bg-opacity-70 border-1 focus:shadow-inner shadow-accent-300  focus:border-ocoblue-500 block p-2.5 h-8  px-3 py-1 shadow-ocoblue-300 rounded-md border border-ocoblue-300 text-sm font-medium leading-4 text-ocoblue-700 shadow-sm hover:bg-ocoblue-50 focus:outline-none focus:ring-2 focus:ring-ocobrown-500 focus:ring-offset-1"
 										/>
 									</div>
@@ -150,8 +174,8 @@ export default function MeetingForm({
 											type="time"
 											name="startedAt"
 											id="startedAt"
-											// value={formValues?.name}
-											// onChange={onChange}
+											value={formValues?.startedAt}
+											onChange={onChange}
 											className="sm:text-sm w-full bg-ocoblue-50 bg-opacity-70 border-1 focus:shadow-inner shadow-accent-300  focus:border-ocoblue-500 block p-2.5 h-8  px-3 py-1 shadow-ocoblue-300 rounded-md border border-ocoblue-300 text-sm font-medium leading-4 text-ocoblue-700 shadow-sm hover:bg-ocoblue-50 focus:outline-none focus:ring-2 focus:ring-ocobrown-500 focus:ring-offset-1"
 										/>
 									</div>
@@ -168,8 +192,8 @@ export default function MeetingForm({
 											type="time"
 											name="endedAt"
 											id="endedAt"
-											// value={formValues?.name}
-											// onChange={onChange}
+											value={formValues?.endedAt}
+											onChange={onChange}
 											className="sm:text-sm w-full bg-ocoblue-50 bg-opacity-70 border-1 focus:shadow-inner shadow-accent-300  focus:border-ocoblue-500 block p-2.5 h-8  px-3 py-1 shadow-ocoblue-300 rounded-md border border-ocoblue-300 text-sm font-medium leading-4 text-ocoblue-700 shadow-sm hover:bg-ocoblue-50 focus:outline-none focus:ring-2 focus:ring-ocobrown-500 focus:ring-offset-1"
 										/>
 									</div>
@@ -186,8 +210,8 @@ export default function MeetingForm({
 											type="text"
 											name="venue"
 											id="venue"
-											// value={formValues?.name}
-											// onChange={onChange}
+											value={formValues?.venue}
+											onChange={onChange}
 											className="sm:text-sm w-full bg-ocoblue-50 bg-opacity-70 border-1 focus:shadow-inner shadow-accent-300  focus:border-ocoblue-500 block p-2.5 h-8  px-3 py-1 shadow-ocoblue-300 rounded-md border border-ocoblue-300 text-sm font-medium leading-4 text-ocoblue-700 shadow-sm hover:bg-ocoblue-50 focus:outline-none focus:ring-2 focus:ring-ocobrown-500 focus:ring-offset-1"
 										/>
 									</div>
@@ -197,14 +221,106 @@ export default function MeetingForm({
 										htmlFor="venue"
 										className="block text-sm font-medium text-ocoblue-700"
 									>
-										Attendees
+										Attendees:
 									</label>
-									<MultiCombobox
-										items={attendees}
-										initialSelectedItems={sselectedAttendees.map((id) =>
-											attendees.find((a) => a.id === id)
-										)} // Different initial values for each instance
-									/>
+									<Combobox
+										as="div"
+										value={meetingAttendees}
+										onChange={setMeetingAttendees}
+										multiple
+									>
+										<div className="flex flex-wrap items-center z-[3]">
+											{meetingAttendees?.map((item) => (
+												<div
+													key={item?.id}
+													className="flex relative items-center bg-ocoblue-300 text-xs text-white px-2 py-1 rounded-full m-1"
+												>
+													<span className="text-xs overflow-hidden truncate w-14">
+														{item?.name}
+													</span>
+													<button
+														type="button"
+														onClick={() => {
+															setMeetingAttendees(
+																(currentAttendees) =>
+																	currentAttendees.filter(
+																		(attendee) =>
+																			attendee.id !== item.id
+																	)
+															);
+														}}
+														className="ml-1 focus:outline-none"
+													>
+														<Icon
+															icon="heroicons:x-mark"
+															className="h-4 w-4"
+														/>
+													</button>
+												</div>
+											))}
+											<Combobox.Input
+												className="z-[2]  sm:text-sm w-full bg-ocoblue-50 bg-opacity-70 border-1 focus:shadow-inner shadow-accent-300  focus:border-ocoblue-500 block p-2.5 h-8  px-3 py-1 shadow-ocoblue-300 rounded-md border border-ocoblue-300 text-sm font-medium leading-4 text-ocoblue-700 shadow-sm hover:bg-ocoblue-50 focus:outline-none focus:ring-2 focus:ring-ocobrown-500 focus:ring-offset-1"
+												onChange={(event) => setQuery(event.target.value)}
+											/>
+										</div>
+										<Transition
+											as={Fragment}
+											leave="transition ease-in duration-100"
+											leaveFrom="opacity-100"
+											leaveTo="opacity-0"
+											afterLeave={() => setQuery('')}
+										>
+											<Combobox.Options className="z-10 mt-1 max-h-60 w-full overflow-auto rounded-md bg-white py-1 text-base shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none sm:text-sm">
+												{filteredAttendeeItems(allStaff)?.map((item) => (
+													<Combobox.Option
+														key={item?.id}
+														value={item}
+														className={({ active, selected }) =>
+															classNames(
+																'cursor-default select-none py-2 pl-3 pr-9 flex justify-between',
+																active
+																	? 'bg-ocobrown-600 text-white'
+																	: 'text-ocoblue-900'
+															)
+														}
+													>
+														{({ active, selected }) => (
+															<>
+																<div className="flex">
+																	<span
+																		className={classNames(
+																			'truncate',
+																			selected &&
+																				'font-semibold text-ocobrown-400'
+																		)}
+																	>
+																		{item?.name}
+																	</span>
+																</div>
+
+																{selected && (
+																	<span
+																		className={classNames(
+																			'inset-y-0 right-0 flex items-center pr-4',
+																			active
+																				? 'text-white'
+																				: 'text-ocoblue-600'
+																		)}
+																	>
+																		<Icon
+																			icon="heroicons:check"
+																			className="h-5 w-5"
+																			aria-hidden="true"
+																		/>
+																	</span>
+																)}
+															</>
+														)}
+													</Combobox.Option>
+												))}
+											</Combobox.Options>
+										</Transition>
+									</Combobox>
 								</div>
 								<div className="col-span-6 md:col-span-12">
 									<label
@@ -213,12 +329,107 @@ export default function MeetingForm({
 									>
 										Absentee With Apologies
 									</label>
-									<MultiCombobox
-										items={absenteesWithApologies}
-										initialSelectedItems={selectedAbsenteesWA.map((id) =>
-											absenteesWithApologies.find((a) => a.id === id)
-										)} // Different initial values for each instance
-									/>
+									<Combobox
+										value={meetingAbsenteesWithApologies}
+										onChange={setMeetingAbsenteesWithApologies}
+										multiple
+									>
+										<div className="flex flex-wrap items-center z-[3]">
+											{meetingAbsenteesWithApologies?.map((item) => (
+												<div
+													key={item?.id}
+													className="flex relative items-center bg-ocoblue-300 text-xs text-white px-2 py-1 rounded-full m-1"
+												>
+													<span className="text-xs overflow-hidden truncate w-14">
+														{item?.name}
+													</span>
+													<button
+														type="button"
+														onClick={() => {
+															setMeetingAbsenteesWithApologies(
+																(currentAbsenteesWithApologies) =>
+																	currentAbsenteesWithApologies.filter(
+																		(absenteesWithApologies) =>
+																			absenteesWithApologies.id !==
+																			item.id
+																	)
+															);
+														}}
+														className="ml-1 focus:outline-none"
+													>
+														<Icon
+															icon="heroicons:x-mark"
+															className="h-4 w-4"
+														/>
+													</button>
+												</div>
+											))}
+											<Combobox.Input
+												className="sm:text-sm w-full bg-ocoblue-50 bg-opacity-70 border-1 focus:shadow-inner shadow-accent-300  focus:border-ocoblue-500 block p-2.5 h-8  px-3 py-1 shadow-ocoblue-300 rounded-md border border-ocoblue-300 text-sm font-medium leading-4 text-ocoblue-700 shadow-sm hover:bg-ocoblue-50 focus:outline-none focus:ring-2 focus:ring-ocobrown-500 focus:ring-offset-1"
+												// displayValue={(
+												// 	meetingAbsenteesWithApologies: any
+												// ) =>
+												// 	meetingAbsenteesWithApologies
+												// 		? meetingAbsenteesWithApologies
+												// 				?.map((item: any) => item?.name)
+												// 				.join(', ')
+												// 		: ''
+												// }
+												onChange={(event) => setQuery(event.target.value)}
+											/>
+										</div>
+										<Combobox.Options className="z-10 mt-1 max-h-60 w-full overflow-auto rounded-md bg-white py-1 text-base shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none sm:text-sm">
+											{filteredAttendeeItems(absenteesWithApologies)?.map(
+												(item) => (
+													<Combobox.Option
+														key={item?.id}
+														value={item}
+														className={({ active, selected }) =>
+															classNames(
+																'cursor-default select-none py-2 pl-3 pr-9 flex justify-between',
+																active
+																	? 'bg-ocobrown-600 text-white'
+																	: 'text-ocoblue-900'
+															)
+														}
+													>
+														{({ active, selected }) => (
+															<>
+																<div className="flex">
+																	<span
+																		className={classNames(
+																			'truncate',
+																			selected &&
+																				'font-semibold text-ocobrown-400'
+																		)}
+																	>
+																		{item?.name}
+																	</span>
+																</div>
+
+																{selected && (
+																	<span
+																		className={classNames(
+																			'inset-y-0 right-0 flex items-center pr-4',
+																			active
+																				? 'text-white'
+																				: 'text-ocoblue-600'
+																		)}
+																	>
+																		<Icon
+																			icon="heroicons:check"
+																			className="h-5 w-5"
+																			aria-hidden="true"
+																		/>
+																	</span>
+																)}
+															</>
+														)}
+													</Combobox.Option>
+												)
+											)}
+										</Combobox.Options>
+									</Combobox>
 								</div>
 								<div className="col-span-6 md:col-span-12">
 									<label
@@ -227,17 +438,115 @@ export default function MeetingForm({
 									>
 										Absentee
 									</label>
-									<MultiCombobox
-										items={absentees}
-										initialSelectedItems={selectedAbsentees.map((id) =>
-											absentees.find((a) => a.id === id)
-										)} // Different initial values for each instance
-									/>
+									<Combobox
+										value={meetingAbsenteesWithoutApologies}
+										onChange={setMeetingAbsenteesWithoutApologies}
+										multiple
+									>
+										<div className="flex flex-wrap items-center z-[3]">
+											{meetingAbsenteesWithoutApologies?.map((item) => (
+												<div
+													key={item?.id}
+													className="flex relative items-center bg-ocoblue-300 text-xs text-white px-2 py-1 rounded-full m-1"
+												>
+													<span className="text-xs overflow-hidden truncate w-14">
+														{item?.name}
+													</span>
+													<button
+														type="button"
+														onClick={() => {
+															setMeetingAbsenteesWithoutApologies(
+																(
+																	currentAbsenteesWithoutApologies
+																) =>
+																	currentAbsenteesWithoutApologies.filter(
+																		(
+																			absenteesWithoutApologies
+																		) =>
+																			absenteesWithApologies.id !==
+																			item.id
+																	)
+															);
+														}}
+														className="ml-1 focus:outline-none"
+													>
+														<Icon
+															icon="heroicons:x-mark"
+															className="h-4 w-4"
+														/>
+													</button>
+												</div>
+											))}
+											<Combobox.Input
+												className="sm:text-sm w-full bg-ocoblue-50 bg-opacity-70 border-1 focus:shadow-inner shadow-accent-300  focus:border-ocoblue-500 block p-2.5 h-8  px-3 py-1 shadow-ocoblue-300 rounded-md border border-ocoblue-300 text-sm font-medium leading-4 text-ocoblue-700 shadow-sm hover:bg-ocoblue-50 focus:outline-none focus:ring-2 focus:ring-ocobrown-500 focus:ring-offset-1"
+												// displayValue={(
+												// 	meetingAbsenteesWithoutApologies: any
+												// ) =>
+												// 	meetingAbsenteesWithoutApologies
+												// 		? meetingAbsenteesWithoutApologies
+												// 				?.map((item: any) => item?.name)
+												// 				.join(', ')
+												// 		: ''
+												// }
+												onChange={(event) => setQuery(event.target.value)}
+											/>
+										</div>
+										<Combobox.Options className="z-10 mt-1 max-h-60 w-full overflow-auto rounded-md bg-white py-1 text-base shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none sm:text-sm">
+											{filteredAttendeeItems(absenteesWithoutApologies)?.map(
+												(item) => (
+													<Combobox.Option
+														key={item?.id}
+														value={item}
+														className={({ active, selected }) =>
+															classNames(
+																'cursor-default select-none py-2 pl-3 pr-9 flex justify-between',
+																active
+																	? 'bg-ocobrown-600 text-white'
+																	: 'text-ocoblue-900'
+															)
+														}
+													>
+														{({ active, selected }) => (
+															<>
+																<div className="flex">
+																	<span
+																		className={classNames(
+																			'truncate',
+																			selected &&
+																				'font-semibold text-ocobrown-400'
+																		)}
+																	>
+																		{item?.name}
+																	</span>
+																</div>
+
+																{selected && (
+																	<span
+																		className={classNames(
+																			'inset-y-0 right-0 flex items-center pr-4',
+																			active
+																				? 'text-white'
+																				: 'text-ocoblue-600'
+																		)}
+																	>
+																		<Icon
+																			icon="heroicons:check"
+																			className="h-5 w-5"
+																			aria-hidden="true"
+																		/>
+																	</span>
+																)}
+															</>
+														)}
+													</Combobox.Option>
+												)
+											)}
+										</Combobox.Options>
+									</Combobox>
 								</div>
 								<div className="col-span-6 md:col-span-12 w-full flex items-center justify-center">
 									<button
 										type="button"
-										onClick={() => handleContinue(0)}
 										className="flex items-center gap-2 p-2 text-sm font-medium leading-4 text-white border rounded-md shadow-sm bg-ocoblue-600 hover:opacity-80 border-ocoblue-300 focus:outline-none focus:ring-2 focus:ring-ocoblue-500 focus:ring-offset-1"
 									>
 										Continue
@@ -251,11 +560,7 @@ export default function MeetingForm({
 			<Disclosure as="div" className="pt-6">
 				{({ open }) => (
 					<>
-						<Disclosure.Button
-							onClick={() => handleDisclosureToggle(1)}
-							// ref={(el) => (AccordionRefs.current[1] = el)}
-							className="flex items-center w-full justify-between rounded-lg bg-ocobrown-100 px-4 py-2 text-left text-sm font-medium text-ocobrown-900 hover:bg-ocobrown-200 focus:outline-none focus-visible:ring focus-visible:ring-ocobrown-500 focus-visible:ring-opacity-75"
-						>
+						<Disclosure.Button className="flex items-center w-full justify-between rounded-lg bg-ocobrown-100 px-4 py-2 text-left text-sm font-medium text-ocobrown-900 hover:bg-ocobrown-200 focus:outline-none focus-visible:ring focus-visible:ring-ocobrown-500 focus-visible:ring-opacity-75">
 							<div className="w-full flex items-center space-x-2">
 								<div className="h-2 w-2 p-3 rounded-full bg-ocobrown-600 text-ocobrown-50 flex items-center justify-center">
 									<span>1</span>
@@ -280,11 +585,30 @@ export default function MeetingForm({
 
 						<Disclosure.Panel as="dd" className="px-4 pt-4 pb-2 text-sm text-gray-500">
 							<div className="border border-ocoblue-200 rounded p-4 space-y-2">
-								{/* Panel Content Goes Here */}
+								<div className="flex w-full divide-solid py-2">
+									<button
+										type="button"
+										onClick={handleAddMeetingItem}
+										className="bg-ocobrown-600 text-white text-sm flex items-center p-2 rounded-md"
+									>
+										<Icon icon="heroicons:plus" />{' '}
+										<span> Add A Meeting Item</span>
+									</button>
+								</div>
+								<div className="flex flex-col space-y-2">
+									{meetingItems?.map((item: any, index: any) => (
+										<MeetingItemForm
+											key={index}
+											formValues={item}
+											personResponsible={meetingAttendees}
+											onChange={(e) => handleChangeMeetingItem(index, e)}
+											onClick={() => handleRemoveMeetingItem(index)}
+										/>
+									))}
+								</div>
 								<div className=" w-full flex items-center justify-center">
 									<button
 										type="button"
-										onClick={() => handleContinue(1)}
 										className="flex items-center gap-2 p-2 text-sm font-medium leading-4 text-white border rounded-md shadow-sm bg-ocoblue-600 hover:opacity-80 border-ocoblue-300 focus:outline-none focus:ring-2 focus:ring-ocoblue-500 focus:ring-offset-1"
 									>
 										Continue
@@ -298,11 +622,7 @@ export default function MeetingForm({
 			<Disclosure as="div" className="pt-6">
 				{({ open }) => (
 					<>
-						<Disclosure.Button
-							onClick={() => handleDisclosureToggle(2)}
-							// ref={(el) => (AccordionRefs.current[2] = el)}
-							className="flex items-center w-full justify-between rounded-lg bg-ocobrown-100 px-4 py-2 text-left text-sm font-medium text-ocobrown-900 hover:bg-ocobrown-200 focus:outline-none focus-visible:ring focus-visible:ring-ocobrown-500 focus-visible:ring-opacity-75"
-						>
+						<Disclosure.Button className="flex items-center w-full justify-between rounded-lg bg-ocobrown-100 px-4 py-2 text-left text-sm font-medium text-ocobrown-900 hover:bg-ocobrown-200 focus:outline-none focus-visible:ring focus-visible:ring-ocobrown-500 focus-visible:ring-opacity-75">
 							<div className="w-full flex items-center space-x-2">
 								<div className="h-2 w-2 p-3 rounded-full bg-ocobrown-600 text-ocobrown-50 flex items-center justify-center">
 									<span>3</span>

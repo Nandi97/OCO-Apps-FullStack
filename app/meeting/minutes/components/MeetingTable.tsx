@@ -34,8 +34,8 @@ export default function MeetingTable() {
 
 	return (
 		<>
-			<div className="sticky z-20 md:flex items-center justify-between gap-2 bg-white top-2 hidden">
-				<h1 className="text-lg font-extralight text-accent-700">{title}</h1>
+			<div className="sticky z-20 md:flex items-center justify-between gap-2 bg-transparent top-2 hidden">
+				<h1 className="text-lg font-extralight text-accent-700"></h1>
 				<div className="inline-flex items-center space-x-2">
 					<SearchInput onSearch={handleSearch} />
 					<Link

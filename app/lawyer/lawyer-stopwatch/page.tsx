@@ -22,15 +22,15 @@ export default function StaffList() {
 
 	const [searchParam, setSearchParam] = useState<string | null>(null);
 
-	const { data, isLoading } = useQuery(
-		['stopwatchItems', currentPage, perPage, searchParam],
-		() =>
+	const { data, isPending } = useQuery({
+		queryKey: ['stopwatchItems', currentPage, perPage, searchParam],
+		queryFn: () =>
 			axios
 				.get(`/api/lawyer-stopwatch/getStopWatchItems`, {
 					params: { page: currentPage, perPage, searchParam },
 				})
-				.then((response) => response.data)
-	);
+				.then((response) => response.data),
+	});
 
 	// console.log(data);
 
@@ -170,7 +170,7 @@ export default function StaffList() {
 						</thead>
 						<tbody className="bg-white divide-y divide-gray-200">
 							{data?.data?.map((item, index) => {
-								if (isLoading) {
+								if (isPending) {
 									return (
 										<tr key={index}>
 											<td

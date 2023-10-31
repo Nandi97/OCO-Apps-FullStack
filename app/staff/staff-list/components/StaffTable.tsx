@@ -24,13 +24,15 @@ export default function StaffTable() {
 
 	const [searchParam, setSearchParam] = useState<string | null>(null);
 
-	const { data, isLoading } = useQuery(['staffList', currentPage, perPage, searchParam], () =>
-		axios
-			.get(`/api/staff/getStaff`, {
-				params: { page: currentPage, perPage, searchParam },
-			})
-			.then((response) => response.data)
-	);
+	const { data, isPending } = useQuery({
+		queryKey: ['staffList', currentPage, perPage, searchParam],
+		queryFn: () =>
+			axios
+				.get(`/api/staff/getStaff`, {
+					params: { page: currentPage, perPage, searchParam },
+				})
+				.then((response) => response.data),
+	});
 	// console.log(data);
 
 	const total = data?.total ?? 0;
@@ -155,26 +157,23 @@ export default function StaffTable() {
 		setSearchParam(searchInput);
 	};
 
-	const { mutate } = useMutation(
-		async (id: string) => {
+	const { mutate } = useMutation({
+		mutationFn: async (id: string) => {
 			if (active === true) {
 				await axios.patch('/api/staff/deleteStaff', { data: id });
 			} else {
 				await axios.patch('/api/staff/activateStaff', { data: id });
 			}
 		},
-		{
-			onError: (error) => {
-				console.log(error);
-			},
-			onSuccess: (data) => {
-				// console.log(data);
-				queryClient.invalidateQueries(['staffList']);
+		onError: (error, variables, context) => {
+			console.log(error);
+		},
+		onSuccess: (data, variables, context) => {
+			queryClient.invalidateQueries({ queryKey: ['staffList'] });
 
-				toast.success('Staff has been activated.', { id: deleteToastID });
-			},
-		}
-	);
+			toast.success('Staff has been activated.', { id: deleteToastID });
+		},
+	});
 
 	const deactivateStaff = (staffId: any) => {
 		setActive(true), mutate(staffId);
@@ -186,7 +185,7 @@ export default function StaffTable() {
 	return (
 		<>
 			<div className="sticky z-20 md:flex items-center justify-between gap-2 bg-white top-2 hidden">
-				<h1 className="text-lg font-extralight text-accent-700">{title}</h1>
+				<h1 className="text-lg font-extralight text-accent-700"></h1>
 				<div className="inline-flex items-center space-x-2">
 					<SearchInput onSearch={handleSearch} />
 					<OptDropdown optBtn={headerOptBtnTxt} optionsList={headerOptionsList} />
@@ -246,7 +245,7 @@ export default function StaffTable() {
 						</thead>
 						<tbody className="bg-white divide-y divide-gray-200">
 							{data?.data?.map((person, index) => {
-								if (isLoading) {
+								if (isPending) {
 									return (
 										<tr key={index}>
 											<td

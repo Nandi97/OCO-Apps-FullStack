@@ -7,9 +7,11 @@ import axios from 'axios';
 import Link from 'next/link';
 
 export default function UserPanel({ sessionData }: any) {
-	const { data: staff } = useQuery(['unpaginatedStaff'], () =>
-		axios.get('/api/staff/getAllUnpaginatedStaff').then((response) => response.data)
-	);
+	const { data: staff } = useQuery({
+		queryKey: ['unpaginatedStaff'],
+		queryFn: () =>
+			axios.get('/api/staff/getAllUnpaginatedStaff').then((response) => response.data),
+	});
 	const currentUserStaff = staff?.filter((staff) => staff.email === sessionData?.user?.email);
 
 	return (
