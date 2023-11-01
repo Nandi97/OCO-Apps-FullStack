@@ -206,6 +206,7 @@ export default function StaffCard() {
 											<span className="font-medium leading-none text-white">
 												{person?.name
 													.split(' ')
+													.slice(0, 2)
 													.map((n) => n[0])
 													.join('.')}
 											</span>

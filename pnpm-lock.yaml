@@ -89,6 +89,9 @@ dependencies:
   tw-elements:
     specifier: ^1.0.0
     version: 1.0.0(postcss@8.4.29)(ts-node@10.9.1)
+  vcards-js:
+    specifier: ^2.10.0
+    version: 2.10.0
 
 devDependencies:
   '@iconify/react':
@@ -6339,6 +6342,10 @@ packages:
 
   /v8-compile-cache-lib@3.0.1:
     resolution: {integrity: sha512-wa7YjyUGfNZngI/vtK0UHAN+lgDCxBPCylVXGp0zu59Fz5aiGtNXaq3DhIov063MorB+VfufLh3JlF2KdTK3xg==}
+
+  /vcards-js@2.10.0:
+    resolution: {integrity: sha512-nah+xbVInVJaO6+C5PEUqaougmv8BN8aa7ZCtmVQcX6eWIZGRukckFtseXSI7KD7/nXtwkJe624y42T0r+L+AQ==}
+    dev: false
 
   /vfile-message@3.1.4:
     resolution: {integrity: sha512-fa0Z6P8HUrQN4BZaX05SIVXic+7kE3b05PWAtPuYP9QLHsLKYR7/AlLW3NtOrpXRLeawpDLMsVkmk5DG0NXgWw==}

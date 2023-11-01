@@ -42,6 +42,9 @@ const config: Config = {
 					950: '#1c2735',
 				},
 			},
+			fontFamily: {
+				roboto: ['Roboto', 'sans-serif'],
+			},
 		},
 	},
 	plugins: [require('tw-elements/dist/plugin.cjs')],

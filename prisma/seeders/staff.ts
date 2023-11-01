@@ -406,7 +406,7 @@ export function getStaff() {
 			designationId: 2,
 			genderId: 1,
 			deletedAt: null,
-			avatarUrl: '',
+			avatarUrl: 'https://www.oraro.co.ke/wp-content/uploads/2023/04/B.-Nyahoro.png',
 		},
 		{
 			ext: 713,
@@ -418,7 +418,7 @@ export function getStaff() {
 			designationId: 24,
 			genderId: 1,
 			deletedAt: null,
-			avatarUrl: '',
+			avatarUrl: 'https://www.oraro.co.ke/wp-content/uploads/2022/11/Sheila-Nyakundi.png',
 		},
 		{
 			ext: 714,
@@ -442,7 +442,7 @@ export function getStaff() {
 			designationId: 24,
 			genderId: 2,
 			deletedAt: null,
-			avatarUrl: '',
+			avatarUrl: 'https://www.oraro.co.ke/wp-content/uploads/2023/02/Morris-MM.png',
 		},
 		{
 			ext: 718,
@@ -454,7 +454,7 @@ export function getStaff() {
 			designationId: 20,
 			genderId: 1,
 			deletedAt: null,
-			avatarUrl: '',
+			avatarUrl: 'https://www.oraro.co.ke/wp-content/uploads/2022/11/Cindy-Oraro.png',
 		},
 		{
 			ext: 731,
@@ -466,7 +466,7 @@ export function getStaff() {
 			designationId: 20,
 			genderId: 2,
 			deletedAt: null,
-			avatarUrl: '',
+			avatarUrl: 'https://www.oraro.co.ke/wp-content/uploads/2023/02/Jacob.png',
 		},
 		{
 			ext: 733,
@@ -550,7 +550,7 @@ export function getStaff() {
 			designationId: 19,
 			genderId: 1,
 			deletedAt: null,
-			avatarUrl: '',
+			avatarUrl: 'https://www.oraro.co.ke/wp-content/uploads/2022/11/Pamella-Ager.png',
 		},
 		{
 			ext: 712,
@@ -562,7 +562,7 @@ export function getStaff() {
 			designationId: 20,
 			genderId: 2,
 			deletedAt: null,
-			avatarUrl: '',
+			avatarUrl: 'https://www.oraro.co.ke/wp-content/uploads/2023/02/JKTK.png',
 		},
 		{
 			ext: 722,
@@ -598,7 +598,7 @@ export function getStaff() {
 			designationId: 2,
 			genderId: 1,
 			deletedAt: null,
-			avatarUrl: '',
+			avatarUrl: 'https://www.oraro.co.ke/wp-content/uploads/2023/02/AKND.png',
 		},
 		{
 			ext: 742,
@@ -730,7 +730,7 @@ export function getStaff() {
 			designationId: 10,
 			genderId: 2,
 			deletedAt: null,
-			avatarUrl: '',
+			avatarUrl: 'https://www.oraro.co.ke/wp-content/uploads/2022/11/Mr.-Oraro.png',
 		},
 		{
 			ext: 703,
@@ -754,7 +754,7 @@ export function getStaff() {
 			designationId: 2,
 			genderId: 2,
 			deletedAt: null,
-			avatarUrl: '',
+			avatarUrl: 'https://www.oraro.co.ke/wp-content/uploads/2023/04/William-Ochieng.png',
 		},
 		{
 			ext: 703,
@@ -766,7 +766,7 @@ export function getStaff() {
 			designationId: 24,
 			genderId: 2,
 			deletedAt: null,
-			avatarUrl: '',
+			avatarUrl: 'https://www.oraro.co.ke/wp-content/uploads/2023/04/E.-Obegi.png',
 		},
 		{
 			ext: 706,
@@ -778,7 +778,7 @@ export function getStaff() {
 			designationId: 2,
 			genderId: 2,
 			deletedAt: null,
-			avatarUrl: '',
+			avatarUrl: 'https://www.oraro.co.ke/wp-content/uploads/2022/11/Erastus-Rabut.png',
 		},
 		{
 			ext: 707,
@@ -790,7 +790,7 @@ export function getStaff() {
 			designationId: 2,
 			genderId: 1,
 			deletedAt: null,
-			avatarUrl: '',
+			avatarUrl: 'https://www.oraro.co.ke/wp-content/uploads/2023/02/R-1.png',
 		},
 		{
 			ext: 707,
@@ -826,7 +826,7 @@ export function getStaff() {
 			designationId: 2,
 			genderId: 2,
 			deletedAt: null,
-			avatarUrl: '',
+			avatarUrl: 'https://www.oraro.co.ke/wp-content/uploads/2023/02/PKAM.png',
 		},
 		{
 			ext: 710,
@@ -838,7 +838,7 @@ export function getStaff() {
 			designationId: 2,
 			genderId: 1,
 			deletedAt: null,
-			avatarUrl: '',
+			avatarUrl: 'https://www.oraro.co.ke/wp-content/uploads/2023/04/Kateline-M.png',
 		},
 		{
 			ext: 710,
@@ -862,7 +862,7 @@ export function getStaff() {
 			designationId: 2,
 			genderId: 1,
 			deletedAt: null,
-			avatarUrl: '',
+			avatarUrl: 'https://www.oraro.co.ke/wp-content/uploads/2023/02/EM-1.png',
 		},
 		{
 			ext: 721,
@@ -874,7 +874,7 @@ export function getStaff() {
 			designationId: 2,
 			genderId: 1,
 			deletedAt: null,
-			avatarUrl: '',
+			avatarUrl: 'https://www.oraro.co.ke/wp-content/uploads/2023/04/Zahra-O.png',
 		},
 		{
 			ext: 727,
@@ -886,7 +886,7 @@ export function getStaff() {
 			designationId: 20,
 			genderId: 1,
 			deletedAt: null,
-			avatarUrl: '',
+			avatarUrl: 'https://www.oraro.co.ke/wp-content/uploads/2023/02/NLC.png',
 		},
 		{
 			ext: 739,
@@ -898,7 +898,7 @@ export function getStaff() {
 			designationId: 20,
 			genderId: 1,
 			deletedAt: null,
-			avatarUrl: '',
+			avatarUrl: 'https://www.oraro.co.ke/wp-content/uploads/2022/11/Lilian-Renee-Omondi.png',
 		},
 		{
 			ext: 710,
@@ -922,7 +922,7 @@ export function getStaff() {
 			designationId: 8,
 			genderId: 2,
 			deletedAt: null,
-			avatarUrl: '',
+			avatarUrl: 'https://www.oraro.co.ke/wp-content/uploads/2022/11/John-Mbaluto.png',
 		},
 		{
 			ext: 706,
@@ -946,7 +946,7 @@ export function getStaff() {
 			designationId: 2,
 			genderId: 1,
 			deletedAt: null,
-			avatarUrl: '',
+			avatarUrl: 'https://www.oraro.co.ke/wp-content/uploads/2023/02/JD-1-1.png',
 		},
 		{
 			ext: 708,
@@ -958,7 +958,7 @@ export function getStaff() {
 			designationId: 2,
 			genderId: 2,
 			deletedAt: null,
-			avatarUrl: '',
+			avatarUrl: 'https://www.oraro.co.ke/wp-content/uploads/2023/02/AJK.png',
 		},
 		{
 			ext: 710,
@@ -970,7 +970,7 @@ export function getStaff() {
 			designationId: 2,
 			genderId: 1,
 			deletedAt: null,
-			avatarUrl: '',
+			avatarUrl: 'https://www.oraro.co.ke/wp-content/uploads/2022/11/Natalie-Obago.png',
 		},
 		{
 			ext: 714,
@@ -982,7 +982,7 @@ export function getStaff() {
 			designationId: 24,
 			genderId: 1,
 			deletedAt: null,
-			avatarUrl: '',
+			avatarUrl: 'https://www.oraro.co.ke/wp-content/uploads/2022/11/Claire-Mwangi.png',
 		},
 		{
 			ext: 717,
@@ -1000,13 +1000,13 @@ export function getStaff() {
 			ext: 721,
 			teamId: 11,
 			staffNo: 254,
-			name: 'Hellen Mutua',
+			name: 'Hellen Mwongeli Mutua',
 			email: 'hellen@oraro.co.ke',
 			mobile: '+254 786 340 270',
 			designationId: 2,
 			genderId: 1,
 			deletedAt: null,
-			avatarUrl: '',
+			avatarUrl: 'https://www.oraro.co.ke/wp-content/uploads/2023/02/HMT.png',
 		},
 		{
 			ext: 721,
@@ -1042,7 +1042,7 @@ export function getStaff() {
 			designationId: 2,
 			genderId: 1,
 			deletedAt: null,
-			avatarUrl: '',
+			avatarUrl: 'https://www.oraro.co.ke/wp-content/uploads/2023/04/Madi-A.png',
 		},
 		{
 			ext: 702,
@@ -1054,7 +1054,7 @@ export function getStaff() {
 			designationId: 25,
 			genderId: 2,
 			deletedAt: null,
-			avatarUrl: '',
+			avatarUrl: 'https://www.oraro.co.ke/wp-content/uploads/2022/11/Chacha-Odera.png',
 		},
 		{
 			ext: 706,
@@ -1066,7 +1066,7 @@ export function getStaff() {
 			designationId: 24,
 			genderId: 2,
 			deletedAt: null,
-			avatarUrl: '',
+			avatarUrl: 'https://www.oraro.co.ke/wp-content/uploads/2022/11/Daniel-Kiragu.png',
 		},
 		{
 			ext: 707,
@@ -1078,7 +1078,7 @@ export function getStaff() {
 			designationId: 24,
 			genderId: 1,
 			deletedAt: null,
-			avatarUrl: '',
+			avatarUrl: 'https://www.oraro.co.ke/wp-content/uploads/2023/02/AKDM.png',
 		},
 		{
 			ext: 708,
@@ -1090,7 +1090,7 @@ export function getStaff() {
 			designationId: 2,
 			genderId: 2,
 			deletedAt: null,
-			avatarUrl: '',
+			avatarUrl: 'https://www.oraro.co.ke/wp-content/uploads/2022/11/Meshack-Kwaka.png',
 		},
 		{
 			ext: 714,
@@ -1102,7 +1102,7 @@ export function getStaff() {
 			designationId: 2,
 			genderId: 2,
 			deletedAt: null,
-			avatarUrl: '',
+			avatarUrl: 'https://www.oraro.co.ke/wp-content/uploads/2023/04/Jonathan-K.png',
 		},
 		{
 			ext: 714,
@@ -1138,7 +1138,7 @@ export function getStaff() {
 			designationId: 24,
 			genderId: 1,
 			deletedAt: null,
-			avatarUrl: '',
+			avatarUrl: 'https://www.oraro.co.ke/wp-content/uploads/2023/02/SKAV.png',
 		},
 		{
 			ext: 744,
@@ -1150,7 +1150,7 @@ export function getStaff() {
 			designationId: 2,
 			genderId: 2,
 			deletedAt: null,
-			avatarUrl: '',
+			avatarUrl: 'https://www.oraro.co.ke/wp-content/uploads/2023/04/B-Waguma.png',
 		},
 		{
 			ext: 734,
