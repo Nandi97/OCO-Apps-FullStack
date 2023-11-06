@@ -1,6 +1,10 @@
+const { v4: uuidv4 } = require('uuid');
+const unId = uuidv4();
+
 export function getStaff() {
 	return [
 		{
+			id: unId,
 			ext: 719,
 			teamId: 1,
 			staffNo: 65,
@@ -13,6 +17,7 @@ export function getStaff() {
 			avatarUrl: '',
 		},
 		{
+			id: unId,
 			ext: 719,
 			teamId: 1,
 			staffNo: 148,
@@ -25,6 +30,7 @@ export function getStaff() {
 			avatarUrl: '',
 		},
 		{
+			id: unId,
 			ext: 719,
 			teamId: 1,
 			staffNo: 192,
@@ -37,6 +43,7 @@ export function getStaff() {
 			avatarUrl: '',
 		},
 		{
+			id: unId,
 			ext: 720,
 			teamId: 1,
 			staffNo: 203,
@@ -49,6 +56,7 @@ export function getStaff() {
 			avatarUrl: '',
 		},
 		{
+			id: unId,
 			ext: 700,
 			teamId: 2,
 			staffNo: 163,
@@ -61,11 +69,12 @@ export function getStaff() {
 			avatarUrl: '',
 		},
 		{
+			id: unId,
 			ext: 716,
 			teamId: 2,
 			staffNo: 124,
 			name: 'Hilda Otieno',
-			email: 'hilda@example.com',
+			email: 'hildaakoth@yahoo.com',
 			mobile: '+254 724 571 609',
 			designationId: 5,
 			genderId: 1,
@@ -73,6 +82,7 @@ export function getStaff() {
 			avatarUrl: '',
 		},
 		{
+			id: unId,
 			ext: 723,
 			teamId: 2,
 			staffNo: 182,
@@ -85,6 +95,7 @@ export function getStaff() {
 			avatarUrl: '',
 		},
 		{
+			id: unId,
 			ext: 724,
 			teamId: 2,
 			staffNo: 95,
@@ -97,6 +108,7 @@ export function getStaff() {
 			avatarUrl: '',
 		},
 		{
+			id: unId,
 			ext: 725,
 			teamId: 2,
 			staffNo: 62,
@@ -109,11 +121,12 @@ export function getStaff() {
 			avatarUrl: '',
 		},
 		{
+			id: unId,
 			ext: 726,
 			teamId: 2,
 			staffNo: 137,
 			name: 'Richard Nzioka',
-			email: 'richard@example.com',
+			email: 'muteinzioka90@gmail.com',
 			mobile: '+254 704 183 569',
 			designationId: 5,
 			genderId: 2,
@@ -121,11 +134,12 @@ export function getStaff() {
 			avatarUrl: '',
 		},
 		{
+			id: unId,
 			ext: 726,
 			teamId: 2,
 			staffNo: 249,
 			name: 'Francis Wanyonyi',
-			email: 'francis@example.com',
+			email: 'franciswanyonyi26@gmail.com',
 			mobile: '+254 729 017 616',
 			designationId: 5,
 			genderId: 2,
@@ -133,11 +147,12 @@ export function getStaff() {
 			avatarUrl: '',
 		},
 		{
+			id: unId,
 			ext: 726,
 			teamId: 2,
 			staffNo: 299,
 			name: 'Bonface Mambo',
-			email: 'bonface@example.com',
+			email: 'bonfacemusyoki1@gmail.com',
 			mobile: '+254 712 827 962',
 			designationId: 5,
 			genderId: 2,
@@ -145,6 +160,7 @@ export function getStaff() {
 			avatarUrl: '',
 		},
 		{
+			id: unId,
 			ext: 726,
 			teamId: 2,
 			staffNo: 6,
@@ -157,11 +173,12 @@ export function getStaff() {
 			avatarUrl: '',
 		},
 		{
+			id: unId,
 			ext: 728,
 			teamId: 2,
 			staffNo: 248,
 			name: 'Benardus Odhiambo',
-			email: 'benardus@example.com',
+			email: 'wangobenardus@yahoo.com',
 			mobile: '+254 725 536 957',
 			designationId: 9,
 			genderId: 2,
@@ -169,6 +186,7 @@ export function getStaff() {
 			avatarUrl: '',
 		},
 		{
+			id: unId,
 			ext: 728,
 			teamId: 2,
 			staffNo: 210,
@@ -181,6 +199,7 @@ export function getStaff() {
 			avatarUrl: '',
 		},
 		{
+			id: unId,
 			ext: 728,
 			teamId: 2,
 			staffNo: 229,
@@ -193,6 +212,7 @@ export function getStaff() {
 			avatarUrl: '',
 		},
 		{
+			id: unId,
 			ext: 729,
 			teamId: 2,
 			staffNo: 127,
@@ -205,6 +225,7 @@ export function getStaff() {
 			avatarUrl: '',
 		},
 		{
+			id: unId,
 			ext: 730,
 			teamId: 2,
 			staffNo: 147,
@@ -217,11 +238,12 @@ export function getStaff() {
 			avatarUrl: '',
 		},
 		{
+			id: unId,
 			ext: 734,
 			teamId: 2,
 			staffNo: 220,
 			name: 'Mary Wanza',
-			email: 'mary@example.com',
+			email: 'marywanzamakau@yahoo.com',
 			mobile: '+254 727 655 596',
 			designationId: 5,
 			genderId: 1,
@@ -229,6 +251,7 @@ export function getStaff() {
 			avatarUrl: '',
 		},
 		{
+			id: unId,
 			ext: 734,
 			teamId: 3,
 			staffNo: 285,
@@ -241,6 +264,7 @@ export function getStaff() {
 			avatarUrl: '',
 		},
 		{
+			id: unId,
 			ext: 734,
 			teamId: 3,
 			staffNo: 0,
@@ -249,10 +273,11 @@ export function getStaff() {
 			mobile: '+254 727 707 707',
 			designationId: 3,
 			genderId: 1,
-			deletedAt: new Date('2019-02-26 11:36:57.98'),
+			deletedAt: new Date(),
 			avatarUrl: '',
 		},
 		{
+			id: unId,
 			ext: 735,
 			teamId: 3,
 			staffNo: 198,
@@ -265,6 +290,7 @@ export function getStaff() {
 			avatarUrl: '',
 		},
 		{
+			id: unId,
 			ext: 734,
 			teamId: 3,
 			staffNo: 280,
@@ -273,10 +299,11 @@ export function getStaff() {
 			mobile: '+254 708 906 681',
 			designationId: 19,
 			genderId: 1,
-			deletedAt: new Date('2023-02-26 11:36:57.78'),
+			deletedAt: new Date(),
 			avatarUrl: '',
 		},
 		{
+			id: unId,
 			ext: 735,
 			teamId: 3,
 			staffNo: 300,
@@ -285,10 +312,11 @@ export function getStaff() {
 			mobile: '+254 729 974 460',
 			designationId: 11,
 			genderId: 2,
-			deletedAt: new Date('2023-01-11 12:41:39.25'),
+			deletedAt: new Date(),
 			avatarUrl: '',
 		},
 		{
+			id: unId,
 			ext: 735,
 			teamId: 3,
 			staffNo: 0,
@@ -297,15 +325,16 @@ export function getStaff() {
 			mobile: '+254 724 362 606',
 			designationId: 11,
 			genderId: 2,
-			deletedAt: new Date('2019-02-26 11:36:57.78'),
+			deletedAt: new Date(),
 			avatarUrl: '',
 		},
 		{
+			id: unId,
 			ext: 716,
 			teamId: 4,
 			staffNo: 93,
 			name: 'George Onyango',
-			email: 'litigation_clerks@oraro.co.ke',
+			email: 'gonyango@oraro.co.ke',
 			mobile: '+254 722 621 237',
 			designationId: 6,
 			genderId: 2,
@@ -313,6 +342,7 @@ export function getStaff() {
 			avatarUrl: '',
 		},
 		{
+			id: unId,
 			ext: 716,
 			teamId: 4,
 			staffNo: 130,
@@ -325,11 +355,12 @@ export function getStaff() {
 			avatarUrl: '',
 		},
 		{
+			id: unId,
 			ext: 716,
 			teamId: 4,
 			staffNo: 303,
 			name: "Francis King'oo",
-			email: 'litigation_clerks@oraro.co.ke',
+			email: 'fkingoo@oraro.co.ke',
 			mobile: '+254 726 691 270',
 			designationId: 6,
 			genderId: 2,
@@ -337,6 +368,7 @@ export function getStaff() {
 			avatarUrl: '',
 		},
 		{
+			id: unId,
 			ext: 722,
 			teamId: 4,
 			staffNo: 0,
@@ -345,15 +377,16 @@ export function getStaff() {
 			mobile: '+254 725 487 013',
 			designationId: 23,
 			genderId: 2,
-			deletedAt: new Date('2019-02-26 11:36:57.78'),
+			deletedAt: new Date(),
 			avatarUrl: '',
 		},
 		{
+			id: unId,
 			ext: 723,
 			teamId: 4,
 			staffNo: 107,
 			name: 'Susan Muchii',
-			email: 'commercial_4@oraro.co.ke',
+			email: 'susan@oraro.co.ke',
 			mobile: '+254 721 910 714',
 			designationId: 6,
 			genderId: 1,
@@ -361,11 +394,12 @@ export function getStaff() {
 			avatarUrl: '',
 		},
 		{
+			id: unId,
 			ext: 723,
 			teamId: 4,
 			staffNo: 129,
 			name: 'Victor Kili',
-			email: 'litigation_clerks@oraro.co.ke',
+			email: 'vkili@oraro.co.ke',
 			mobile: '+254 718 656 062',
 			designationId: 6,
 			genderId: 2,
@@ -373,6 +407,7 @@ export function getStaff() {
 			avatarUrl: '',
 		},
 		{
+			id: unId,
 			ext: 723,
 			teamId: 4,
 			staffNo: 267,
@@ -385,11 +420,12 @@ export function getStaff() {
 			avatarUrl: '',
 		},
 		{
+			id: unId,
 			ext: 728,
 			teamId: 4,
 			staffNo: 118,
 			name: 'Alphonce Oloo',
-			email: 'commercial_4@oraro.co.ke',
+			email: 'alphonce@oraro.co.ke',
 			mobile: '+254 722 889 166',
 			designationId: 6,
 			genderId: 2,
@@ -397,6 +433,7 @@ export function getStaff() {
 			avatarUrl: '',
 		},
 		{
+			id: unId,
 			ext: 713,
 			teamId: 5,
 			staffNo: 297,
@@ -409,6 +446,7 @@ export function getStaff() {
 			avatarUrl: 'https://www.oraro.co.ke/wp-content/uploads/2023/04/B.-Nyahoro.png',
 		},
 		{
+			id: unId,
 			ext: 713,
 			teamId: 5,
 			staffNo: 211,
@@ -421,6 +459,7 @@ export function getStaff() {
 			avatarUrl: 'https://www.oraro.co.ke/wp-content/uploads/2022/11/Sheila-Nyakundi.png',
 		},
 		{
+			id: unId,
 			ext: 714,
 			teamId: 5,
 			staffNo: 228,
@@ -429,10 +468,11 @@ export function getStaff() {
 			mobile: '+254 725 131 827',
 			designationId: 24,
 			genderId: 1,
-			deletedAt: new Date('2019-02-26 11:36:57.78'),
+			deletedAt: new Date(),
 			avatarUrl: '',
 		},
 		{
+			id: unId,
 			ext: 714,
 			teamId: 5,
 			staffNo: 306,
@@ -445,6 +485,7 @@ export function getStaff() {
 			avatarUrl: 'https://www.oraro.co.ke/wp-content/uploads/2023/02/Morris-MM.png',
 		},
 		{
+			id: unId,
 			ext: 718,
 			teamId: 5,
 			staffNo: 131,
@@ -457,6 +498,7 @@ export function getStaff() {
 			avatarUrl: 'https://www.oraro.co.ke/wp-content/uploads/2022/11/Cindy-Oraro.png',
 		},
 		{
+			id: unId,
 			ext: 731,
 			teamId: 5,
 			staffNo: 191,
@@ -469,6 +511,7 @@ export function getStaff() {
 			avatarUrl: 'https://www.oraro.co.ke/wp-content/uploads/2023/02/Jacob.png',
 		},
 		{
+			id: unId,
 			ext: 733,
 			teamId: 5,
 			staffNo: 0,
@@ -477,10 +520,11 @@ export function getStaff() {
 			mobile: '+254 731 823 791',
 			designationId: 20,
 			genderId: 2,
-			deletedAt: new Date('2019-02-26 11:36:57.78'),
+			deletedAt: new Date(),
 			avatarUrl: '',
 		},
 		{
+			id: unId,
 			ext: 744,
 			teamId: 5,
 			staffNo: 256,
@@ -489,10 +533,11 @@ export function getStaff() {
 			mobile: '+254 711 757 509',
 			designationId: 2,
 			genderId: 1,
-			deletedAt: new Date('2019-02-26 11:36:57.78'),
+			deletedAt: new Date(),
 			avatarUrl: '',
 		},
 		{
+			id: unId,
 			ext: 709,
 			teamId: 6,
 			staffNo: 279,
@@ -505,6 +550,7 @@ export function getStaff() {
 			avatarUrl: '',
 		},
 		{
+			id: unId,
 			ext: 709,
 			teamId: 6,
 			staffNo: 168,
@@ -517,6 +563,7 @@ export function getStaff() {
 			avatarUrl: '',
 		},
 		{
+			id: unId,
 			ext: 733,
 			teamId: 6,
 			staffNo: 212,
@@ -529,6 +576,7 @@ export function getStaff() {
 			avatarUrl: '',
 		},
 		{
+			id: unId,
 			ext: 711,
 			teamId: 7,
 			staffNo: 264,
@@ -541,6 +589,7 @@ export function getStaff() {
 			avatarUrl: '',
 		},
 		{
+			id: unId,
 			ext: 704,
 			teamId: 8,
 			staffNo: 206,
@@ -553,6 +602,7 @@ export function getStaff() {
 			avatarUrl: 'https://www.oraro.co.ke/wp-content/uploads/2022/11/Pamella-Ager.png',
 		},
 		{
+			id: unId,
 			ext: 712,
 			teamId: 8,
 			staffNo: 132,
@@ -565,6 +615,7 @@ export function getStaff() {
 			avatarUrl: 'https://www.oraro.co.ke/wp-content/uploads/2023/02/JKTK.png',
 		},
 		{
+			id: unId,
 			ext: 722,
 			teamId: 8,
 			staffNo: 302,
@@ -573,10 +624,11 @@ export function getStaff() {
 			mobile: '+254 717 964 277',
 			designationId: 2,
 			genderId: 1,
-			deletedAt: null,
+			deletedAt: new Date(),
 			avatarUrl: '',
 		},
 		{
+			id: unId,
 			ext: 741,
 			teamId: 8,
 			staffNo: 0,
@@ -585,10 +637,11 @@ export function getStaff() {
 			mobile: '+254 723 754 103',
 			designationId: 20,
 			genderId: 1,
-			deletedAt: new Date('2019-02-26 11:36:57.78'),
+			deletedAt: new Date(),
 			avatarUrl: '',
 		},
 		{
+			id: unId,
 			ext: 742,
 			teamId: 8,
 			staffNo: 259,
@@ -601,6 +654,7 @@ export function getStaff() {
 			avatarUrl: 'https://www.oraro.co.ke/wp-content/uploads/2023/02/AKND.png',
 		},
 		{
+			id: unId,
 			ext: 742,
 			teamId: 8,
 			staffNo: 0,
@@ -609,22 +663,11 @@ export function getStaff() {
 			mobile: '+254 711 152 086',
 			designationId: 2,
 			genderId: 1,
-			deletedAt: new Date('2019-02-26 11:36:57.78'),
+			deletedAt: new Date(),
 			avatarUrl: '',
 		},
 		{
-			ext: 732,
-			teamId: 9,
-			staffNo: 290,
-			name: 'Cecilia Nyamu',
-			email: 'student3@oraro.co.ke',
-			mobile: '+254 795 579 469',
-			designationId: 22,
-			genderId: 1,
-			deletedAt: new Date('2023-01-11 12:41:39.25'),
-			avatarUrl: '',
-		},
-		{
+			id: unId,
 			ext: 732,
 			teamId: 9,
 			staffNo: 295,
@@ -633,22 +676,11 @@ export function getStaff() {
 			mobile: '+254 700 921 020',
 			designationId: 22,
 			genderId: 1,
-			deletedAt: new Date('2019-02-26 11:36:57.78'),
+			deletedAt: new Date(),
 			avatarUrl: '',
 		},
 		{
-			ext: 732,
-			teamId: 9,
-			staffNo: 301,
-			name: 'Antony Oduor',
-			email: 'student5@oraro.co.ke',
-			mobile: '+254 790 492 785 ',
-			designationId: 22,
-			genderId: 2,
-			deletedAt: new Date('2023-01-11 12:41:39.25'),
-			avatarUrl: '',
-		},
-		{
+			id: unId,
 			ext: 732,
 			teamId: 9,
 			staffNo: 307,
@@ -661,6 +693,7 @@ export function getStaff() {
 			avatarUrl: '',
 		},
 		{
+			id: unId,
 			ext: 732,
 			teamId: 9,
 			staffNo: 308,
@@ -673,6 +706,7 @@ export function getStaff() {
 			avatarUrl: '',
 		},
 		{
+			id: unId,
 			ext: 732,
 			teamId: 9,
 			staffNo: 309,
@@ -685,6 +719,7 @@ export function getStaff() {
 			avatarUrl: '',
 		},
 		{
+			id: unId,
 			ext: 732,
 			teamId: 9,
 			staffNo: 310,
@@ -697,6 +732,7 @@ export function getStaff() {
 			avatarUrl: '',
 		},
 		{
+			id: unId,
 			ext: 732,
 			teamId: 9,
 			staffNo: 311,
@@ -709,6 +745,7 @@ export function getStaff() {
 			avatarUrl: '',
 		},
 		{
+			id: unId,
 			ext: 732,
 			teamId: 9,
 			staffNo: 312,
@@ -721,6 +758,7 @@ export function getStaff() {
 			avatarUrl: '',
 		},
 		{
+			id: unId,
 			ext: 701,
 			teamId: 10,
 			staffNo: 204,
@@ -733,6 +771,7 @@ export function getStaff() {
 			avatarUrl: 'https://www.oraro.co.ke/wp-content/uploads/2022/11/Mr.-Oraro.png',
 		},
 		{
+			id: unId,
 			ext: 703,
 			teamId: 10,
 			staffNo: 272,
@@ -741,10 +780,11 @@ export function getStaff() {
 			mobile: '+254 714 797 052',
 			designationId: 2,
 			genderId: 2,
-			deletedAt: new Date('2023-01-11 15:56:43.51'),
+			deletedAt: new Date(),
 			avatarUrl: '',
 		},
 		{
+			id: unId,
 			ext: 703,
 			teamId: 10,
 			staffNo: 292,
@@ -757,6 +797,7 @@ export function getStaff() {
 			avatarUrl: 'https://www.oraro.co.ke/wp-content/uploads/2023/04/William-Ochieng.png',
 		},
 		{
+			id: unId,
 			ext: 703,
 			teamId: 10,
 			staffNo: 313,
@@ -769,6 +810,7 @@ export function getStaff() {
 			avatarUrl: 'https://www.oraro.co.ke/wp-content/uploads/2023/04/E.-Obegi.png',
 		},
 		{
+			id: unId,
 			ext: 706,
 			teamId: 10,
 			staffNo: 142,
@@ -781,6 +823,7 @@ export function getStaff() {
 			avatarUrl: 'https://www.oraro.co.ke/wp-content/uploads/2022/11/Erastus-Rabut.png',
 		},
 		{
+			id: unId,
 			ext: 707,
 			teamId: 10,
 			staffNo: 241,
@@ -793,6 +836,7 @@ export function getStaff() {
 			avatarUrl: 'https://www.oraro.co.ke/wp-content/uploads/2023/02/R-1.png',
 		},
 		{
+			id: unId,
 			ext: 707,
 			teamId: 10,
 			staffNo: 0,
@@ -801,10 +845,11 @@ export function getStaff() {
 			mobile: '+254 717 191 626',
 			designationId: 20,
 			genderId: 2,
-			deletedAt: new Date('2019-02-26 11:36:57.78'),
+			deletedAt: new Date(),
 			avatarUrl: '',
 		},
 		{
+			id: unId,
 			ext: 708,
 			teamId: 10,
 			staffNo: 0,
@@ -813,10 +858,11 @@ export function getStaff() {
 			mobile: '+254 712 244 313',
 			designationId: 2,
 			genderId: 2,
-			deletedAt: new Date('2019-02-26 11:36:57.78'),
+			deletedAt: new Date(),
 			avatarUrl: '',
 		},
 		{
+			id: unId,
 			ext: 710,
 			teamId: 10,
 			staffNo: 258,
@@ -829,6 +875,7 @@ export function getStaff() {
 			avatarUrl: 'https://www.oraro.co.ke/wp-content/uploads/2023/02/PKAM.png',
 		},
 		{
+			id: unId,
 			ext: 710,
 			teamId: 10,
 			staffNo: 293,
@@ -841,6 +888,7 @@ export function getStaff() {
 			avatarUrl: 'https://www.oraro.co.ke/wp-content/uploads/2023/04/Kateline-M.png',
 		},
 		{
+			id: unId,
 			ext: 710,
 			teamId: 10,
 			staffNo: 0,
@@ -849,10 +897,11 @@ export function getStaff() {
 			mobile: '+254 703 930 077',
 			designationId: 2,
 			genderId: 2,
-			deletedAt: new Date('2019-02-26 11:36:57.78'),
+			deletedAt: new Date(),
 			avatarUrl: '',
 		},
 		{
+			id: unId,
 			ext: 721,
 			teamId: 10,
 			staffNo: 221,
@@ -865,6 +914,7 @@ export function getStaff() {
 			avatarUrl: 'https://www.oraro.co.ke/wp-content/uploads/2023/02/EM-1.png',
 		},
 		{
+			id: unId,
 			ext: 721,
 			teamId: 10,
 			staffNo: 291,
@@ -877,6 +927,7 @@ export function getStaff() {
 			avatarUrl: 'https://www.oraro.co.ke/wp-content/uploads/2023/04/Zahra-O.png',
 		},
 		{
+			id: unId,
 			ext: 727,
 			teamId: 10,
 			staffNo: 209,
@@ -889,6 +940,7 @@ export function getStaff() {
 			avatarUrl: 'https://www.oraro.co.ke/wp-content/uploads/2023/02/NLC.png',
 		},
 		{
+			id: unId,
 			ext: 739,
 			teamId: 10,
 			staffNo: 266,
@@ -901,6 +953,7 @@ export function getStaff() {
 			avatarUrl: 'https://www.oraro.co.ke/wp-content/uploads/2022/11/Lilian-Renee-Omondi.png',
 		},
 		{
+			id: unId,
 			ext: 710,
 			teamId: 10,
 			staffNo: 0,
@@ -909,10 +962,11 @@ export function getStaff() {
 			mobile: '+254 729 826 372',
 			designationId: 2,
 			genderId: 1,
-			deletedAt: new Date('2019-02-26 11:36:57.78'),
+			deletedAt: new Date(),
 			avatarUrl: '',
 		},
 		{
+			id: unId,
 			ext: 705,
 			teamId: 11,
 			staffNo: 208,
@@ -925,6 +979,7 @@ export function getStaff() {
 			avatarUrl: 'https://www.oraro.co.ke/wp-content/uploads/2022/11/John-Mbaluto.png',
 		},
 		{
+			id: unId,
 			ext: 706,
 			teamId: 11,
 			staffNo: 0,
@@ -933,10 +988,11 @@ export function getStaff() {
 			mobile: '+254 722 773 160',
 			designationId: 24,
 			genderId: 2,
-			deletedAt: new Date('2019-02-26 11:36:57.78'),
+			deletedAt: new Date(),
 			avatarUrl: '',
 		},
 		{
+			id: unId,
 			ext: 708,
 			teamId: 11,
 			staffNo: 305,
@@ -949,6 +1005,7 @@ export function getStaff() {
 			avatarUrl: 'https://www.oraro.co.ke/wp-content/uploads/2023/02/JD-1-1.png',
 		},
 		{
+			id: unId,
 			ext: 708,
 			teamId: 11,
 			staffNo: 281,
@@ -961,6 +1018,7 @@ export function getStaff() {
 			avatarUrl: 'https://www.oraro.co.ke/wp-content/uploads/2023/02/AJK.png',
 		},
 		{
+			id: unId,
 			ext: 710,
 			teamId: 11,
 			staffNo: 271,
@@ -973,6 +1031,7 @@ export function getStaff() {
 			avatarUrl: 'https://www.oraro.co.ke/wp-content/uploads/2022/11/Natalie-Obago.png',
 		},
 		{
+			id: unId,
 			ext: 714,
 			teamId: 11,
 			staffNo: 277,
@@ -985,6 +1044,7 @@ export function getStaff() {
 			avatarUrl: 'https://www.oraro.co.ke/wp-content/uploads/2022/11/Claire-Mwangi.png',
 		},
 		{
+			id: unId,
 			ext: 717,
 			teamId: 11,
 			staffNo: 134,
@@ -993,14 +1053,15 @@ export function getStaff() {
 			mobile: '+254 725 985 011',
 			designationId: 20,
 			genderId: 2,
-			deletedAt: new Date('2023-05-02 09:17:30.78'),
+			deletedAt: new Date(),
 			avatarUrl: '',
 		},
 		{
+			id: unId,
 			ext: 721,
 			teamId: 11,
 			staffNo: 254,
-			name: 'Hellen Mwongeli Mutua',
+			name: 'Hellen Mutua',
 			email: 'hellen@oraro.co.ke',
 			mobile: '+254 786 340 270',
 			designationId: 2,
@@ -1009,6 +1070,7 @@ export function getStaff() {
 			avatarUrl: 'https://www.oraro.co.ke/wp-content/uploads/2023/02/HMT.png',
 		},
 		{
+			id: unId,
 			ext: 721,
 			teamId: 11,
 			staffNo: 0,
@@ -1017,10 +1079,11 @@ export function getStaff() {
 			mobile: '+254 716 581 949',
 			designationId: 2,
 			genderId: 2,
-			deletedAt: new Date('2019-02-26 11:36:57.78'),
+			deletedAt: new Date(),
 			avatarUrl: '',
 		},
 		{
+			id: unId,
 			ext: 722,
 			teamId: 11,
 			staffNo: 298,
@@ -1033,6 +1096,7 @@ export function getStaff() {
 			avatarUrl: '',
 		},
 		{
+			id: unId,
 			ext: 744,
 			teamId: 11,
 			staffNo: 296,
@@ -1045,6 +1109,7 @@ export function getStaff() {
 			avatarUrl: 'https://www.oraro.co.ke/wp-content/uploads/2023/04/Madi-A.png',
 		},
 		{
+			id: unId,
 			ext: 702,
 			teamId: 12,
 			staffNo: 205,
@@ -1057,6 +1122,7 @@ export function getStaff() {
 			avatarUrl: 'https://www.oraro.co.ke/wp-content/uploads/2022/11/Chacha-Odera.png',
 		},
 		{
+			id: unId,
 			ext: 706,
 			teamId: 12,
 			staffNo: 278,
@@ -1069,6 +1135,7 @@ export function getStaff() {
 			avatarUrl: 'https://www.oraro.co.ke/wp-content/uploads/2022/11/Daniel-Kiragu.png',
 		},
 		{
+			id: unId,
 			ext: 707,
 			teamId: 12,
 			staffNo: 174,
@@ -1081,6 +1148,7 @@ export function getStaff() {
 			avatarUrl: 'https://www.oraro.co.ke/wp-content/uploads/2023/02/AKDM.png',
 		},
 		{
+			id: unId,
 			ext: 708,
 			teamId: 12,
 			staffNo: 245,
@@ -1093,6 +1161,7 @@ export function getStaff() {
 			avatarUrl: 'https://www.oraro.co.ke/wp-content/uploads/2022/11/Meshack-Kwaka.png',
 		},
 		{
+			id: unId,
 			ext: 714,
 			teamId: 12,
 			staffNo: 294,
@@ -1105,6 +1174,7 @@ export function getStaff() {
 			avatarUrl: 'https://www.oraro.co.ke/wp-content/uploads/2023/04/Jonathan-K.png',
 		},
 		{
+			id: unId,
 			ext: 714,
 			teamId: 12,
 			staffNo: 0,
@@ -1113,10 +1183,11 @@ export function getStaff() {
 			mobile: '+254 735 229 096',
 			designationId: 20,
 			genderId: 1,
-			deletedAt: new Date('2019-02-26 11:36:57.78'),
+			deletedAt: new Date(),
 			avatarUrl: '',
 		},
 		{
+			id: unId,
 			ext: 721,
 			teamId: 12,
 			staffNo: 0,
@@ -1125,10 +1196,11 @@ export function getStaff() {
 			mobile: '+254 725 490 739',
 			designationId: 2,
 			genderId: 1,
-			deletedAt: new Date('2019-02-26 11:36:57.78'),
+			deletedAt: new Date(),
 			avatarUrl: '',
 		},
 		{
+			id: unId,
 			ext: 742,
 			teamId: 12,
 			staffNo: 195,
@@ -1141,6 +1213,7 @@ export function getStaff() {
 			avatarUrl: 'https://www.oraro.co.ke/wp-content/uploads/2023/02/SKAV.png',
 		},
 		{
+			id: unId,
 			ext: 744,
 			teamId: 12,
 			staffNo: 289,
@@ -1153,6 +1226,7 @@ export function getStaff() {
 			avatarUrl: 'https://www.oraro.co.ke/wp-content/uploads/2023/04/B-Waguma.png',
 		},
 		{
+			id: unId,
 			ext: 734,
 			teamId: 3,
 			staffNo: 289,

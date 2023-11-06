@@ -124,26 +124,37 @@ async function main() {
 		});
 	}
 
-	// Books
-	for (const book of books) {
-		await prisma.book.create({
-			data: {
-				author: book.author,
-				copies: book.copies,
-				createdAt: book.createdAt,
-				edition: book.edition,
-				isbnIssn: book.isbnIssn,
-				staffId: book.staffId,
-				mediaType: book.mediaType,
-				publicationYear: book.publicationYear,
-				publisher: book.publisher,
-				status: book.status,
-				subject: book.subject,
-				title: book.title,
-				coverUrl: book.coverUrl,
-				updatedAt: book.updatedAt,
-			},
-		});
+	const librarianEmail = 'asenath@oraro.co.ke';
+
+	const librarian = await prisma.staff.findUnique({
+		where: { email: 'asenath@oraro.co.ke' },
+	});
+
+	if (librarian) {
+		const staffId = librarian.id;
+
+		for (const book of books) {
+			await prisma.book.create({
+				data: {
+					author: book.author,
+					copies: book.copies,
+					createdAt: book.createdAt,
+					edition: book.edition,
+					isbnIssn: book.isbnIssn,
+					staffId: staffId, // Set the staffId to the found staff member's ID
+					mediaType: book.mediaType,
+					publicationYear: book.publicationYear,
+					publisher: book.publisher,
+					status: book.status,
+					subject: book.subject,
+					title: book.title,
+					coverUrl: book.coverUrl,
+					updatedAt: book.updatedAt,
+				},
+			});
+		}
+	} else {
+		console.error(`No staff found with the email: ${librarianEmail}`);
 	}
 
 	// Stop Watch Item Tasks

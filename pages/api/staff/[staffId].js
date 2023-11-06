@@ -9,10 +9,7 @@ export default async function handler(req, res) {
 	}
 	if (req.method === 'GET') {
 		try {
-			const staffId = parseInt(req.query.staffId);
-			if (isNaN(staffId)) {
-				return res.status(400).json({ error: 'Invalid Staff ID' });
-			}
+			const staffId = req.query.staffId;
 
 			const data = await prisma.staff.findUnique({
 				where: { id: staffId },

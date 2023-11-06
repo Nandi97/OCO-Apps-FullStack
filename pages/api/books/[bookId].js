@@ -9,10 +9,7 @@ export default async function handler(req, res) {
 	}
 	if (req.method === 'GET') {
 		try {
-			const bookId = parseInt(req.query.bookId);
-			if (isNaN(bookId)) {
-				return res.status(400).json({ error: 'Invalid book ID' });
-			}
+			const bookId = req.query.bookId;
 
 			const data = await prisma.book.findUnique({
 				where: { id: bookId },

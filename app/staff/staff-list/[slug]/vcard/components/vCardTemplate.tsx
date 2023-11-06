@@ -1,23 +1,31 @@
 'use client';
-import axios from 'axios';
-import { URL } from '@/components/types/URL';
-import { useQuery } from '@tanstack/react-query';
 import Image from 'next/image';
 import logo from '@/public/assets/images/oco_ab_and_david.png';
 import { Icon } from '@iconify/react/dist/iconify.js';
+import { URL } from '@/components/types/URL';
+import axios from 'axios';
+import { useQuery } from '@tanstack/react-query';
+import { usePathname } from 'next/navigation';
+
+type VCardTemplatePROPS = {
+	download?: (f: any) => void;
+};
 
 const fetchDetails = async (slug: string) => {
 	const response = await axios.get(`/api/staff/${slug}`);
 	return response.data;
 };
 
-export default function VCard(url: URL) {
+export default function VCardTemplate({ download }: VCardTemplatePROPS) {
+	const router = usePathname();
+
+	const [url]: any = router?.match(/\d+/g)?.map(Number);
+
 	const { data: staff } = useQuery({
 		queryKey: ['staffDetails'],
-		queryFn: () => fetchDetails(url.params.slug),
+		queryFn: () => fetchDetails(url as string),
 	});
 
-	// console.log('Staff Details:', staff);
 	return (
 		<div className="fixed top-0 left-0 z-[100] w-full h-full bg-white font-roboto">
 			<div className="flex w-full flex-col items-center">
@@ -126,6 +134,7 @@ export default function VCard(url: URL) {
 				<button
 					type="button"
 					className="p-1 rounded-md bg-ocoblue-700 text-white flex items-center"
+					onClick={download}
 				>
 					<Icon icon="heroicons:plus" />
 					Save Contact

@@ -31,7 +31,8 @@
 		"pages/api/menus/getMenus.js",
 		"pages/api/staff/getBooks.js",
 		"pages/api/books/addBook.ts",
-		"components/forms/meeting/MeetingForm.tsx"
-	],
+		"components/forms/meeting/MeetingForm.tsx",
+		"app/staff/staff-list/[slug]/vcard/page.jsx"
+, "hooks/useStaffDetails.jsx"	],
 	"exclude": ["node_modules"]
 }

@@ -129,9 +129,9 @@ model Designation {
 }
 
 model Staff {
-  id             Int             @id @default(autoincrement())
+  id             String          @id @default(cuid())
   name           String
-  email          String
+  email          String          @unique
   mobile         String
   ext            Int
   staffNo        Int
@@ -155,7 +155,7 @@ model Staff {
 }
 
 model Book {
-  id              Int       @id @default(autoincrement())
+  id              String    @id @default(cuid())
   author          String
   title           String
   coverUrl        String
@@ -167,7 +167,7 @@ model Book {
   publisher       String
   subject         String?
   status          Boolean   @default(true)
-  staffId         Int
+  staffId         String
   deletedAt       DateTime?
   createdAt       DateTime? @default(now())
   updatedAt       DateTime? @updatedAt
@@ -175,7 +175,7 @@ model Book {
 }
 
 model StopWatchItemTask {
-  id             Int             @id @default(autoincrement())
+  id             String          @id @default(cuid())
   name           String
   stopWatchItems StopWatchItem[]
 }
@@ -187,7 +187,7 @@ model StopWatchItem {
   startedAt           DateTime?
   endedAt             DateTime?
   createdById         String
-  stopWatchItemTaskId Int
+  stopWatchItemTaskId String
   matterId            Int
   matter              Matter            @relation(fields: [matterId], references: [id])
   stopWatchItemTask   StopWatchItemTask @relation(fields: [stopWatchItemTaskId], references: [id])
@@ -198,7 +198,7 @@ model StopWatchItem {
 }
 
 model PurchaseOrder {
-  id              Int            @id @default(autoincrement())
+  id              String         @id @default(cuid())
   poNumber        String         @unique
   type            String
   vatable         Boolean        @default(true)
@@ -208,7 +208,7 @@ model PurchaseOrder {
   phoneNumber     String
   physicalAddress String
   purchaseItems   PurchaseItem[]
-  approverId      Int
+  approverId      String
   createdById     String
   townId          Int?
   address         Int?
@@ -228,19 +228,19 @@ model PurchaseOrder {
 }
 
 model PurchaseItem {
-  id              Int            @id @default(autoincrement())
+  id              String         @id @default(cuid())
   description     String
   quantity        Int
   cost            Int
   purchaseOrder   PurchaseOrder? @relation(fields: [purchaseOrderId], references: [id])
-  purchaseOrderId Int?
+  purchaseOrderId String?
   deletedAt       DateTime?
   createdAt       DateTime?      @default(now())
   updatedAt       DateTime?      @updatedAt
 }
 
 model AttendanceType {
-  id               Int               @id @default(autoincrement())
+  id               String            @id @default(cuid())
   name             String
   description      String
   createdAt        DateTime?         @default(now())
@@ -249,10 +249,10 @@ model AttendanceType {
 }
 
 model MeetingAttendee {
-  id            Int            @id @default(autoincrement())
-  meetingId     Int
-  staffId       Int
-  atendeeTypeId Int
+  id            String         @id @default(cuid())
+  meetingId     String
+  staffId       String
+  atendeeTypeId String
   meeting       Meeting        @relation(fields: [meetingId], references: [id])
   staff         Staff          @relation(fields: [staffId], references: [id])
   atendeeType   AttendanceType @relation(fields: [atendeeTypeId], references: [id])
@@ -263,7 +263,7 @@ model MeetingAttendee {
 }
 
 model Meeting {
-  id           Int               @id @default(autoincrement())
+  id           String            @id @default(cuid())
   title        String
   date         DateTime
   startedAt    DateTime
@@ -278,11 +278,11 @@ model Meeting {
 }
 
 model MeetingItem {
-  id            Int       @id @default(autoincrement())
+  id            String    @id @default(cuid())
   action        String
   responsibleId Int       @unique
   dueDate       DateTime?
-  meetingId     Int
+  meetingId     String
   status        String
   meeting       Meeting   @relation(fields: [meetingId], references: [id])
   // responsible   Staff     @relation("person_responsible", fields: [responsibleId], references: [id])
@@ -291,9 +291,9 @@ model MeetingItem {
 }
 
 model AOB {
-  id        Int       @id @default(autoincrement())
+  id        String    @id @default(cuid())
   item      String
-  meetingId Int
+  meetingId String
   meeting   Meeting   @relation(fields: [meetingId], references: [id])
   createdAt DateTime? @default(now())
   updatedAt DateTime? @updatedAt
