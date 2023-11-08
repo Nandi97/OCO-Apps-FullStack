@@ -129,23 +129,26 @@ model Designation {
 }
 
 model Staff {
-  id             String          @id @default(cuid())
-  name           String
-  email          String          @unique
-  mobile         String
-  ext            Int
-  staffNo        Int
-  avatarUrl      String?
-  teamId         Int
-  designationId  Int
-  genderId       Int
-  deletedAt      DateTime?
-  createdAt      DateTime?       @default(now())
-  updatedAt      DateTime?       @updatedAt
-  books          Book[]
-  purchaseOrders PurchaseOrder[]
-
+  id               String             @id @default(cuid())
+  name             String
+  email            String             @unique
+  mobile           String
+  ext              Int
+  staffNo          Int
+  avatarUrl        String?
+  teamId           Int
+  designationId    Int
+  genderId         Int
+  deletedAt        DateTime?
+  createdAt        DateTime?          @default(now())
+  updatedAt        DateTime?          @updatedAt
+  books            Book[]
+  purchaseOrders   PurchaseOrder[]
   meetingAttendees MeetingAttendee[]
+  employers        LeaveApplication[] @relation("employee")
+  supervisors      LeaveApplication[] @relation("supervisor")
+  partners         LeaveApplication[] @relation("partner")
+  hrms             LeaveApplication[] @relation("HR")
 
   createdById String?
   creator     User?       @relation(fields: [createdById], references: [id])
@@ -297,4 +300,40 @@ model AOB {
   meeting   Meeting   @relation(fields: [meetingId], references: [id])
   createdAt DateTime? @default(now())
   updatedAt DateTime? @updatedAt
+}
+
+model LeaveType {
+  id          String @id @default(cuid())
+  name        String
+  description String
+
+  deletedAt        DateTime?
+  createdAt        DateTime?          @default(now())
+  updatedAt        DateTime?          @updatedAt
+  LeaveApplication LeaveApplication[]
+}
+
+model LeaveApplication {
+  id                     String    @id @default(cuid())
+  employeeId             String
+  employee               Staff     @relation("employee", fields: [employeeId], references: [id])
+  supervisorId           String
+  supervisorApprovalDate DateTime?
+  supervisor             Staff     @relation("supervisor", fields: [supervisorId], references: [id])
+  leaveTypeId            String
+  type                   LeaveType @relation(fields: [leaveTypeId], references: [id])
+  duration               Int
+  startDate              DateTime
+  endDate                DateTime
+  reportDate             DateTime
+  approvingPartnerId     String
+  partnerApprovalDate    DateTime?
+  partner                Staff     @relation("partner", fields: [approvingPartnerId], references: [id])
+  approvingHRMId         String
+  HRMApprovalDate        DateTime?
+  humanResource          Staff     @relation("HR", fields: [approvingHRMId], references: [id])
+
+  createdAt DateTime? @default(now())
+  updatedAt DateTime? @updatedAt
+  deletedAt DateTime?
 }

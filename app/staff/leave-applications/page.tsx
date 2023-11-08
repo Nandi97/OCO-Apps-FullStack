@@ -1,19 +1,12 @@
-'use client';
-import { useEffect, useState } from 'react';
+import { metadata } from '@/app/layout';
+import Layout from './components/Layout';
 
 export default function LeaveApplication() {
-	const [title, setTitle] = useState('');
-
-	// Update the title and breadcrumbs
-	useEffect(() => {
-		setTitle('Leave Applications');
-	}, []);
+	metadata.title = 'Staff List';
 
 	return (
 		<div className="space-y-2">
-			<div className="bg-white flex flex-col gap-2">
-				<h1 className="font-extralight text-lg text-accent-700">{title}</h1>
-			</div>
+			<Layout />
 		</div>
 	);
 }

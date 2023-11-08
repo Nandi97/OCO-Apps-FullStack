@@ -3,7 +3,6 @@ import type { Metadata } from 'next';
 import { Roboto } from 'next/font/google';
 import AuthContext from './QueryWrapper';
 import QueryWrapper from './QueryWrapper';
-import Sidebar from './auth/Sidebar';
 import Nav from './auth/Nav';
 
 const roboto = Roboto({

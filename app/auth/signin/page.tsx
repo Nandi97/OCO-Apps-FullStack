@@ -33,7 +33,7 @@ const LoginPage = () => {
 							<span className="text-ocobrown-600">Apps</span>
 						</div>
 					</div>
-					<div className="col-span-6 flex items-center w-full h-full justify-center">
+					<div className="col-span-6 flex items-center w-full h-full justify-center bg-ocoblue-100 rounded-r-md">
 						<button
 							type="button"
 							onClick={onSubmit}

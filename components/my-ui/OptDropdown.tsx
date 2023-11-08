@@ -70,7 +70,6 @@ export default function OptDropdown({ optBtn, optionsList }: SearchInputProps) {
 									) : (
 										<Link
 											href={item?.link}
-											target="_blank"
 											className="flex items-center w-full px-4 py-2 space-x-2 text-xs transition-all duration-300 rounded group text-ocoblue-700 hover:bg-ocoblue-600 hover:bg-opacity-20"
 										>
 											<Icon icon={String(item?.icon)} className="text-lg" />

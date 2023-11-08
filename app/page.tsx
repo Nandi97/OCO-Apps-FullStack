@@ -7,6 +7,7 @@ import { getServerSession } from 'next-auth';
 import { authOptions } from '@/pages/api/auth/[...nextauth]';
 import type { Metadata } from 'next';
 import { metadata } from './layout';
+import { redirect } from 'next/navigation';
 
 export async function getSessionData() {
 	const session: any = await getServerSession(authOptions);
@@ -17,6 +18,10 @@ export async function getSessionData() {
 export default async function Dashboard() {
 	metadata.title = 'Dashboard';
 	const session = await getSessionData();
+
+	if (!session) {
+		redirect('/auth/signin');
+	}
 	// console.log(session);
 	const divs = [];
 	for (let i = 0; i < 4; i++) {
