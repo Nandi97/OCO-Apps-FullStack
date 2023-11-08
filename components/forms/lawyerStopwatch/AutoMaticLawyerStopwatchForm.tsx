@@ -75,23 +75,25 @@ export default function ManualLawyerStopwatchForm({
 		setCurrentPage(1); // Reset page to 1 when search changes
 	}, 300);
 
-	const { data: matters } = useQuery<Matter[]>(
-		['matters', currentPage, perPage, searchParam],
-		() =>
+	const { data: matters } = useQuery<Matter[]>({
+		queryKey: ['matters', currentPage, perPage, searchParam],
+		queryFn: () =>
 			axios
 				.get('/api/matters/getMatters', {
 					params: { page: currentPage, perPage, searchParam },
 				})
-				.then((res) => res.data)
-	);
+				.then((res) => res.data),
+	});
 
 	// console.log('Matters', matters);
 
-	const { data: stopWatchItemTypes } = useQuery<stopWatchItemType[]>(['stopWatchItemTypes'], () =>
-		axios
-			.get('/api/lawyer-stopwatch/stop-watch-item-task/getStopWatchItemTasks')
-			.then((res) => res.data)
-	);
+	const { data: stopWatchItemTypes } = useQuery<stopWatchItemType[]>({
+		queryKey: ['stopWatchItemTypes'],
+		queryFn: () =>
+			axios
+				.get('/api/lawyer-stopwatch/stop-watch-item-task/getStopWatchItemTasks')
+				.then((res) => res.data),
+	});
 
 	const filteredMatters =
 		searchParam === null

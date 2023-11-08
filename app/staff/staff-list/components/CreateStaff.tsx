@@ -49,8 +49,8 @@ export default function CreateStaff({ setToggle }: CreateStaffFormProps) {
 
 	// console.log('Form Values:', formValues);
 
-	const { mutate } = useMutation(
-		async () => {
+	const { mutate } = useMutation({
+		mutationFn: async () => {
 			const staffData = {
 				name: formValues.name,
 				designationId: parseInt(formValues.designationId),
@@ -65,36 +65,35 @@ export default function CreateStaff({ setToggle }: CreateStaffFormProps) {
 			// console.log('Staff Data', staffData);
 			await axios.post('/api/staff/addStaff', staffData);
 		},
-		{
-			onError: (error) => {
-				if (error instanceof AxiosError) {
-					toast.error(error?.response?.data.message, {
-						id: toastID,
-					});
-					console.error('Form submission error:', error);
-				}
-			},
-			onSuccess: (data) => {
-				toast.success('Staff Member has been Created', {
+
+		onError: (error) => {
+			if (error instanceof AxiosError) {
+				toast.error(error?.response?.data.message, {
 					id: toastID,
 				});
-				setFormValues({
-					...formValues,
-					name: '',
-					designationId: '',
-					teamId: '',
-					email: '',
-					mobile: '',
-					staffNo: '',
-					ext: '',
-					genderId: '',
-				});
-				setSelectedFile(null);
-				setToggle(false);
-				queryClient.invalidateQueries(['staffList']);
-			},
-		}
-	);
+				console.error('Form submission error:', error);
+			}
+		},
+		onSuccess: (data) => {
+			toast.success('Staff Member has been Created', {
+				id: toastID,
+			});
+			setFormValues({
+				...formValues,
+				name: '',
+				designationId: '',
+				teamId: '',
+				email: '',
+				mobile: '',
+				staffNo: '',
+				ext: '',
+				genderId: '',
+			});
+			setSelectedFile(null);
+			setToggle(false);
+			queryClient.invalidateQueries({ queryKey: ['staffList'] });
+		},
+	});
 
 	const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
 		e.preventDefault();

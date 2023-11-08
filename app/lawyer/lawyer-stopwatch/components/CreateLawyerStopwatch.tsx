@@ -59,8 +59,8 @@ export default function CreateLawyerStopwatch({ setToggle }: CreateLawyerStopwat
 		}));
 	};
 
-	const { mutate } = useMutation(
-		async () => {
+	const { mutate } = useMutation({
+		mutationFn: async () => {
 			const stopWatchData = {
 				narration: formValues?.narration,
 				matterId: selectedMatterId,
@@ -91,33 +91,32 @@ export default function CreateLawyerStopwatch({ setToggle }: CreateLawyerStopwat
 			// console.log('Book Data', [stopWatchData]);
 			await axios.post('/api/lawyer-stopwatch/addStopwatchItems', [stopWatchData]);
 		},
-		{
-			onError: (error) => {
-				if (error instanceof AxiosError) {
-					toast.error(error?.response?.data.message, {
-						id: toastID,
-					});
-					console.error('Form submission error:', error);
-				}
-			},
-			onSuccess: (data) => {
-				toast.success('Stop Watch has been Created', {
+
+		onError: (error) => {
+			if (error instanceof AxiosError) {
+				toast.error(error?.response?.data.message, {
 					id: toastID,
 				});
-				setFormValues({
-					...formValues,
-					matterId: '',
-					taskId: '',
-					narration: '',
-					itemDate: '',
-					startedAt: '',
-					endedAt: '',
-				});
-				setToggle(false);
-				queryClient.invalidateQueries(['stopwatchItems']);
-			},
-		}
-	);
+				console.error('Form submission error:', error);
+			}
+		},
+		onSuccess: (data) => {
+			toast.success('Stop Watch has been Created', {
+				id: toastID,
+			});
+			setFormValues({
+				...formValues,
+				matterId: '',
+				taskId: '',
+				narration: '',
+				itemDate: '',
+				startedAt: '',
+				endedAt: '',
+			});
+			setToggle(false);
+			queryClient.invalidateQueries({ queryKey: ['stopwatchItems'] });
+		},
+	});
 
 	const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
 		e.preventDefault();

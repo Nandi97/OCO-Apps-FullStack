@@ -41,15 +41,18 @@ export default function StaffForm({
 	const [selectedImage, setSelectedImage] = useState<string>('');
 	const avatarRef = useRef<HTMLInputElement>(null);
 
-	const { data: genders } = useQuery<Gender[]>(['genders'], () =>
-		axios.get('/api/general/getGenders').then((res) => res.data)
-	);
-	const { data: staffTypes } = useQuery<StaffType[]>(['staff-types'], () =>
-		axios.get('/api/staff/getStaffTypes').then((res) => res.data)
-	);
-	const { data: teams } = useQuery<Team[]>(['teams'], () =>
-		axios.get('/api/staff/getStaffTeams').then((res) => res.data)
-	);
+	const { data: genders } = useQuery<Gender[]>({
+		queryKey: ['genders'],
+		queryFn: () => axios.get('/api/general/getGenders').then((res) => res.data),
+	});
+	const { data: staffTypes } = useQuery<StaffType[]>({
+		queryKey: ['staff-types'],
+		queryFn: () => axios.get('/api/staff/getStaffTypes').then((res) => res.data),
+	});
+	const { data: teams } = useQuery<Team[]>({
+		queryKey: ['teams'],
+		queryFn: () => axios.get('/api/staff/getStaffTeams').then((res) => res.data),
+	});
 
 	const [selectedStaffType, setSelectedStaffType] = useState<any>('');
 	const [designations, setDesignations] = useState<any[]>([]);

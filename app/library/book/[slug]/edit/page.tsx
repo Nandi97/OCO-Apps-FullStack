@@ -68,8 +68,8 @@ export default function EditBook(url: URL) {
 
 	const router = useRouter();
 
-	const { mutate } = useMutation(
-		async () => {
+	const { mutate } = useMutation({
+		mutationFn: async () => {
 			const bookData = {
 				id: book?.id,
 				title: formValues.title,
@@ -87,38 +87,36 @@ export default function EditBook(url: URL) {
 
 			await axios.patch(`/api/books/editBook`, bookData);
 		},
-		{
-			onError: (error) => {
-				if (error instanceof AxiosError) {
-					toast.error(error?.response?.data.message, {
-						id: toastBookID,
-					});
-					console.error('Form submission error:', error);
-				}
-			},
-			onSuccess: (data) => {
-				toast.success('Book has been Edited', {
+		onError: (error) => {
+			if (error instanceof AxiosError) {
+				toast.error(error?.response?.data.message, {
 					id: toastBookID,
 				});
-				setFormValues({
-					...formValues,
-					coverUrl: '',
-					title: '',
-					author: '',
-					publisher: '',
-					mediaType: '',
-					edition: '',
-					staffId: '45',
-					subject: '',
-					copies: '',
-					isbnIssn: '',
-					publicationYear: '',
-				});
-				setSelectedFile(null);
-				router.push('/library');
-			},
-		}
-	);
+				console.error('Form submission error:', error);
+			}
+		},
+		onSuccess: (data) => {
+			toast.success('Book has been Edited', {
+				id: toastBookID,
+			});
+			setFormValues({
+				...formValues,
+				coverUrl: '',
+				title: '',
+				author: '',
+				publisher: '',
+				mediaType: '',
+				edition: '',
+				staffId: '45',
+				subject: '',
+				copies: '',
+				isbnIssn: '',
+				publicationYear: '',
+			});
+			setSelectedFile(null);
+			router.push('/library');
+		},
+	});
 
 	const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
 		e.preventDefault();

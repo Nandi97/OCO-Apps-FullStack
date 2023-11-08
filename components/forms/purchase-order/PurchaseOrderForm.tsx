@@ -47,9 +47,10 @@ export default function PurchaseOrderForm({
 	const [disclosureStates, setDisclosureStates] = useState(1);
 	const [purchaseItems, setPurchaseItems] = useState<any>([]);
 
-	const { data: currencies } = useQuery<Currency[]>(['currencies'], () =>
-		axios.get('/api/general/getCurrencies').then((res) => res.data)
-	);
+	const { data: currencies } = useQuery<Currency[]>({
+		queryKey: ['currencies'],
+		queryFn: () => axios.get('/api/general/getCurrencies').then((res) => res.data),
+	});
 
 	const { data: towns } = useQuery({
 		queryKey: ['towns'],

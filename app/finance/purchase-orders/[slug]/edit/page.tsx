@@ -74,8 +74,8 @@ export default function EditPurchaseOrder(url: URL) {
 
 	// console.log('Purchase Items', purchaseOrder?.purchaseItems);
 
-	const { mutate } = useMutation(
-		async () => {
+	const { mutate } = useMutation({
+		mutationFn: async () => {
 			const purchaseOrderData = {
 				poNumber: purchaseOrder?.poNumber,
 				type: formValues.vendorType,
@@ -100,35 +100,33 @@ export default function EditPurchaseOrder(url: URL) {
 			// console.log('Purchase Order Data', purchaseOrderData);
 			// await axios.post('/api/purchase-order/addPurchaseOrder', purchaseOrderData);
 		},
-		{
-			onError: (error) => {
-				if (error instanceof AxiosError) {
-					toast.error(error?.response?.data.message, {
-						id: toastID,
-					});
-					console.error('Form submission error:', error);
-				}
-			},
-			onSuccess: (data) => {
-				toast.success('Purchase Order Edited', {
+		onError: (error) => {
+			if (error instanceof AxiosError) {
+				toast.error(error?.response?.data.message, {
 					id: toastID,
 				});
-				setFormValues({
-					...formValues,
-					vendorType: '',
-					vatable: false,
-					currencyId: 0,
-					name: '',
-					email: '',
-					phoneNumber: '',
-					address: '',
-				});
-				setSelected('');
-				setPurchaseItems([]);
-				router.push('/finance/purchase-orders/');
-			},
-		}
-	);
+				console.error('Form submission error:', error);
+			}
+		},
+		onSuccess: (data) => {
+			toast.success('Purchase Order Edited', {
+				id: toastID,
+			});
+			setFormValues({
+				...formValues,
+				vendorType: '',
+				vatable: false,
+				currencyId: 0,
+				name: '',
+				email: '',
+				phoneNumber: '',
+				address: '',
+			});
+			setSelected('');
+			setPurchaseItems([]);
+			router.push('/finance/purchase-orders/');
+		},
+	});
 
 	const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
 		const { name, value } = e.target;

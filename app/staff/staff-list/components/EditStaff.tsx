@@ -81,8 +81,8 @@ export default function EditStaff({ setToggle, staffDetails }: EditStaffFormProp
 
 	// console.log('Form Values:', formValues);
 
-	const { mutate } = useMutation(
-		async () => {
+	const { mutate } = useMutation({
+		mutationFn: async () => {
 			const staffData = {
 				id: formValues.id,
 				name: formValues.name,
@@ -98,38 +98,37 @@ export default function EditStaff({ setToggle, staffDetails }: EditStaffFormProp
 			console.log('Staff Data', staffData);
 			await axios.patch(`/api/staff/editStaff`, staffData);
 		},
-		{
-			onError: (error) => {
-				if (error instanceof AxiosError) {
-					toast.error(error?.response?.data.message, {
-						id: toastID,
-					});
-					console.error('Form submission error:', error);
-				}
-			},
-			onSuccess: (data) => {
-				toast.success('Staff has been Edited', {
+
+		onError: (error) => {
+			if (error instanceof AxiosError) {
+				toast.error(error?.response?.data.message, {
 					id: toastID,
 				});
-				setFormValues({
-					...formValues,
-					id: '',
-					avatarUrl: '',
-					name: '',
-					designationId: '',
-					teamId: '',
-					email: '',
-					mobile: '',
-					staffNo: '',
-					ext: '',
-					genderId: '',
-				});
-				setSelectedFile(null);
-				setToggle(false);
-				queryClient.invalidateQueries(['staffList']);
-			},
-		}
-	);
+				console.error('Form submission error:', error);
+			}
+		},
+		onSuccess: (data) => {
+			toast.success('Staff has been Edited', {
+				id: toastID,
+			});
+			setFormValues({
+				...formValues,
+				id: '',
+				avatarUrl: '',
+				name: '',
+				designationId: '',
+				teamId: '',
+				email: '',
+				mobile: '',
+				staffNo: '',
+				ext: '',
+				genderId: '',
+			});
+			setSelectedFile(null);
+			setToggle(false);
+			queryClient.invalidateQueries(['staffList']);
+		},
+	});
 
 	const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
 		e.preventDefault();

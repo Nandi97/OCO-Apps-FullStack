@@ -21,9 +21,10 @@ export default function PurchaseItemForm({
 	onClick,
 	currencyId,
 }: PurchaseItemFormProp) {
-	const { data: currencies } = useQuery<Currency[]>(['currencies'], () =>
-		axios.get('/api/general/getCurrencies').then((res) => res.data)
-	);
+	const { data: currencies } = useQuery<Currency[]>({
+		queryKey: ['currencies'],
+		queryFn: () => axios.get('/api/general/getCurrencies').then((res) => res.data),
+	});
 
 	const currId = parseInt(currencyId);
 	const selectedCurrency = currencies?.find((currency) => currency.id === currId)?.initial;

@@ -27,8 +27,8 @@ export default function POApproval(url: URL) {
 
 	const router = useRouter();
 
-	const { mutate } = useMutation(
-		async () => {
+	const { mutate } = useMutation({
+		mutationFn: async () => {
 			const purchaseOrderData = {
 				id: purchaseOrder?.id,
 				poNumber: purchaseOrder?.poNumber,
@@ -38,24 +38,22 @@ export default function POApproval(url: URL) {
 			console.log('Purchase Order Approval:', purchaseOrderData);
 			await axios.patch(`/api/purchase-order/approvePurchaseOrder`, purchaseOrderData);
 		},
-		{
-			onError: (error) => {
-				if (error instanceof AxiosError) {
-					toast.error(error?.response?.data.message, {
-						id: toastID,
-					});
-					console.error('Form submission error:', error);
-				}
-			},
-			onSuccess: (data) => {
-				toast.success('Purchase Order Has Been Approved', {
+		onError: (error) => {
+			if (error instanceof AxiosError) {
+				toast.error(error?.response?.data.message, {
 					id: toastID,
 				});
+				console.error('Form submission error:', error);
+			}
+		},
+		onSuccess: (data) => {
+			toast.success('Purchase Order Has Been Approved', {
+				id: toastID,
+			});
 
-				router.push('/finance/purchase-orders/');
-			},
-		}
-	);
+			router.push('/finance/purchase-orders/');
+		},
+	});
 
 	const handleClick = async (e: any) => {
 		e.preventDefault();

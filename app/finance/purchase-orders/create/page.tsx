@@ -57,8 +57,8 @@ export default function CreatePurchaseOrder() {
 
 	const router = useRouter();
 
-	const { mutate } = useMutation(
-		async () => {
+	const { mutate } = useMutation({
+		mutationFn: async () => {
 			const purchaseOrderData = {
 				poNumber: purchaseOrderNumber,
 				type: formValues.vendorType,
@@ -83,41 +83,39 @@ export default function CreatePurchaseOrder() {
 			console.log('Purchase Order Data', purchaseOrderData);
 			await axios.post('/api/purchase-order/addPurchaseOrder', purchaseOrderData);
 		},
-		{
-			onError: (error) => {
-				if (error instanceof AxiosError) {
-					toast.error(error?.response?.data.message, {
-						id: toastID,
-					});
-					console.error('Form submission error:', error);
-				}
-			},
-			onSuccess: (data) => {
-				toast.success('Book has been Created', {
+		onError: (error) => {
+			if (error instanceof AxiosError) {
+				toast.error(error?.response?.data.message, {
 					id: toastID,
 				});
-				setFormValues({
-					...formValues,
-					vendorType: '',
-					vatable: false,
-					currencyId: 0,
-					name: '',
-					email: '',
-					phoneNumber: '',
-					address: '',
-				});
-				setSelected('');
-				setPurchaseItems([
-					{
-						description: '',
-						quantity: 0,
-						cost: 0,
-					},
-				]);
-				router.push('/finance/purchase-orders/');
-			},
-		}
-	);
+				console.error('Form submission error:', error);
+			}
+		},
+		onSuccess: (data) => {
+			toast.success('Book has been Created', {
+				id: toastID,
+			});
+			setFormValues({
+				...formValues,
+				vendorType: '',
+				vatable: false,
+				currencyId: 0,
+				name: '',
+				email: '',
+				phoneNumber: '',
+				address: '',
+			});
+			setSelected('');
+			setPurchaseItems([
+				{
+					description: '',
+					quantity: 0,
+					cost: 0,
+				},
+			]);
+			router.push('/finance/purchase-orders/');
+		},
+	});
 
 	const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
 		const { name, value } = e.target;
