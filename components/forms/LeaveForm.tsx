@@ -7,6 +7,7 @@ import axios from 'axios';
 import { useQuery } from '@tanstack/react-query';
 import { Combobox } from '@headlessui/react';
 import { Icon } from '@iconify/react/dist/iconify.js';
+import LeaveApplicationPrev from '../previews/LeaveApplication';
 
 interface LeaveForm {
 	employeeId: number;
@@ -46,6 +47,8 @@ export default function LeaveForm({
 	const [accValue, setAccValue] = useState('one');
 	const [dataState, setDataState] = useState('closed');
 	const [currentUser, setCurrentUser] = useState<any>();
+	const [query, setQuery] = useState('');
+	const [selectedPerson, setSelectedPerson] = useState<any>();
 	const {
 		register,
 		handleSubmit,
@@ -54,19 +57,45 @@ export default function LeaveForm({
 	} = useForm<LeaveForm>({
 		defaultValues: initialValues,
 	});
+	const [formValues, setFormValues] = useState({
+		name: '',
+		staffNo: '',
+		title: '',
+		team: '',
+
+		leaveType: '',
+		leaveDays: '',
+		startDate: '',
+		endDate: '',
+		reportingDate: '',
+		appliedOn: '',
+		supervisor: '',
+		partner: '',
+		humanResource: '',
+	});
 
 	const { data: allStaff } = useQuery({
 		queryFn: fetchAllStaff,
 		queryKey: ['allStaff'],
 	});
 
-	// console.log('All Staff', allStaff);
-
 	const selectedUser = allStaff?.find((item) => item?.email === 'alvin@oraro.co.ke');
 
-	console.log('Selected User:', selectedUser);
-	const [query, setQuery] = useState('');
-	const [selectedPerson, setSelectedPerson] = useState();
+	useEffect(() => {
+		if (selectedUser && selectedUser.designation && selectedUser.team && selectedPerson) {
+			setFormValues((prevFormValues) => ({
+				...prevFormValues,
+				name: selectedUser.name || '',
+				staffNo: selectedUser.staffNo || '',
+				title: selectedUser.designation.name || '',
+				team: selectedUser.team.name || '',
+				supervisor: selectedPerson.name,
+			}));
+		}
+	}, [selectedUser, selectedUser.team, selectedUser.designation, selectedPerson]);
+	// console.log('Selected User:', selectedUser);
+	// console.log('Selected Person:', selectedPerson);
+	// console.log('Form Values:', formValues);
 
 	const filteredPeople =
 		query === ''
@@ -89,7 +118,7 @@ export default function LeaveForm({
 	};
 
 	return (
-		<div className="grid md:grid-cols-12 col-span-6 bg-ocobrown-50">
+		<div className="grid md:grid-cols-12 grid-cols-6 gap-2 bg-ocobrown-50">
 			<form className="col-span-6" onSubmit={handleSubmit(handleSubmitForm)}>
 				<Accordion
 					type="single"
@@ -123,7 +152,7 @@ export default function LeaveForm({
 										<select
 											id="typeId"
 											name="typeId"
-											// value={selectedStaffType} // Use selectedStaffType here
+											// value={formValues?.} // Use selectedStaffType here
 											// onChange={updateDesignations}
 											className="sm:text-sm w-full bg-ocoblue-50 bg-opacity-70 border-1 focus:shadow-inner shadow-accent-300  focus:border-ocoblue-500 block p-2.5 h-8  px-3 py-1 shadow-ocoblue-300 rounded-md border border-ocoblue-300 text-sm font-medium leading-4 text-ocoblue-700 shadow-sm hover:bg-ocoblue-50 focus:outline-none focus:ring-2 focus:ring-ocobrown-500 focus:ring-offset-1"
 											disabled
@@ -337,8 +366,13 @@ export default function LeaveForm({
 										<select
 											id="leaveTypeId"
 											name="leaveTypeId"
-											// value={selectedStaffType} // Use selectedStaffType here
-											// onChange={updateDesignations}
+											value={formValues?.leaveType}
+											onChange={(e) =>
+												setFormValues({
+													...formValues,
+													leaveType: e.target.value,
+												})
+											}
 											className="sm:text-sm w-full bg-ocoblue-50 bg-opacity-70 border-1 focus:shadow-inner shadow-accent-300  focus:border-ocoblue-500 block p-2.5 h-8  px-3 py-1 shadow-ocoblue-300 rounded-md border border-ocoblue-300 text-sm font-medium leading-4 text-ocoblue-700 shadow-sm hover:bg-ocoblue-50 focus:outline-none focus:ring-2 focus:ring-ocobrown-500 focus:ring-offset-1"
 										>
 											<option
@@ -367,8 +401,13 @@ export default function LeaveForm({
 											type="number"
 											name="duration"
 											id="duration"
-											// value={formValues?.name}
-											// onChange={onChange}
+											value={formValues?.leaveDays} // Use selectedStaffType here
+											onChange={(e) =>
+												setFormValues({
+													...formValues,
+													leaveDays: e.target.value,
+												})
+											}
 											className="sm:text-sm w-full bg-ocoblue-50 bg-opacity-70 border-1 focus:shadow-inner shadow-accent-300  focus:border-ocoblue-500 block p-2.5 h-8  px-3 py-1 shadow-ocoblue-300 rounded-md border border-ocoblue-300 text-sm font-medium leading-4 text-ocoblue-700 shadow-sm hover:bg-ocoblue-50 focus:outline-none focus:ring-2 focus:ring-ocobrown-500 focus:ring-offset-1"
 										/>
 									</div>
@@ -492,6 +531,9 @@ export default function LeaveForm({
 					</AccordionItem>
 				</Accordion>
 			</form>
+			<div className="col-span-6">
+				<LeaveApplicationPrev prevVal={formValues} />
+			</div>
 		</div>
 	);
 }

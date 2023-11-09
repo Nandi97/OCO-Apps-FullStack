@@ -100,6 +100,16 @@ model Town {
   purchaseOrders PurchaseOrder[]
 }
 
+model Tax {
+  id        String    @id @default(cuid())
+  name      String
+  value     String
+  rate      Float
+  deletedAt DateTime?
+  createdAt DateTime? @default(now())
+  updatedAt DateTime? @updatedAt
+}
+
 model Currency {
   id      Int    @id @default(autoincrement())
   name    String
@@ -259,10 +269,9 @@ model MeetingAttendee {
   meeting       Meeting        @relation(fields: [meetingId], references: [id])
   staff         Staff          @relation(fields: [staffId], references: [id])
   atendeeType   AttendanceType @relation(fields: [atendeeTypeId], references: [id])
-
-  deletedAt DateTime?
-  createdAt DateTime? @default(now())
-  updatedAt DateTime? @updatedAt
+  deletedAt     DateTime?
+  createdAt     DateTime?      @default(now())
+  updatedAt     DateTime?      @updatedAt
 }
 
 model Meeting {
@@ -303,10 +312,9 @@ model AOB {
 }
 
 model LeaveType {
-  id          String @id @default(cuid())
-  name        String
-  description String
-
+  id               String             @id @default(cuid())
+  name             String
+  description      String
   deletedAt        DateTime?
   createdAt        DateTime?          @default(now())
   updatedAt        DateTime?          @updatedAt
@@ -332,8 +340,7 @@ model LeaveApplication {
   approvingHRMId         String
   HRMApprovalDate        DateTime?
   humanResource          Staff     @relation("HR", fields: [approvingHRMId], references: [id])
-
-  createdAt DateTime? @default(now())
-  updatedAt DateTime? @updatedAt
-  deletedAt DateTime?
+  createdAt              DateTime? @default(now())
+  updatedAt              DateTime? @updatedAt
+  deletedAt              DateTime?
 }

@@ -11,6 +11,7 @@ import { getStopWatchItemTasks } from './seeders/stopWatchItemTasks';
 import { getCurrencies } from './seeders/currencies';
 import { getTowns } from './seeders/towns';
 import { getAttendanceTypes } from './seeders/attendeeTypes';
+import { getTax } from './seeders/tax';
 
 const prisma = new PrismaClient();
 
@@ -18,6 +19,7 @@ async function main() {
 	const menus = getMenus();
 	const matters = getMatters();
 	const genders = getGenders();
+	const taxes = getTax();
 	const towns = getTowns();
 	const currencies = getCurrencies();
 	const staffTypes = getStaffTypes();
@@ -46,6 +48,18 @@ async function main() {
 			data: {
 				code: matter.code,
 				description: matter.description,
+			},
+		});
+	}
+
+	//Taxes
+	for (const tax of taxes) {
+		await prisma.tax.create({
+			data: {
+				name: tax.name,
+				value: tax.value,
+				rate: tax.rate,
+				deletedAt: null,
 			},
 		});
 	}
