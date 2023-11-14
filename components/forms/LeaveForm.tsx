@@ -10,15 +10,15 @@ import { Icon } from '@iconify/react/dist/iconify.js';
 import LeaveApplicationPrev from '../previews/LeaveApplication';
 
 interface LeaveForm {
-	employeeId: number;
-	supervisorId: number;
-	leaveTypeId: number;
+	employeeId: string;
+	supervisorId: string;
+	leaveTypeId: string;
 	duration: number;
 	startDate: string;
 	endDate: string;
 	reportDate: string;
-	approvingPartnerId: number;
-	approvingHRMId: number;
+	approvingPartnerId: string;
+	approvingHRMId: string;
 }
 
 interface LeaveFormProps {
@@ -31,6 +31,11 @@ interface LeaveFormProps {
 
 const fetchAllStaff = async () => {
 	const response = await axios.get('/api/staff/getAllUnpaginatedStaff');
+	return response.data;
+};
+
+const fetchLeaveTypes = async () => {
+	const response = await axios.get('/api/leave/leave-type/get');
 	return response.data;
 };
 
@@ -53,6 +58,7 @@ export default function LeaveForm({
 		register,
 		handleSubmit,
 		setValue,
+		watch,
 		formState: { errors },
 	} = useForm<LeaveForm>({
 		defaultValues: initialValues,
@@ -62,7 +68,6 @@ export default function LeaveForm({
 		staffNo: '',
 		title: '',
 		team: '',
-
 		leaveType: '',
 		leaveDays: '',
 		startDate: '',
@@ -78,11 +83,27 @@ export default function LeaveForm({
 		queryFn: fetchAllStaff,
 		queryKey: ['allStaff'],
 	});
+	const { data: leaveTypes } = useQuery({
+		queryFn: fetchLeaveTypes,
+		queryKey: ['leaveTypes'],
+	});
 
-	const selectedUser = allStaff?.find((item) => item?.email === 'alvin@oraro.co.ke');
+	const selectedUser = allStaff?.find((item: any) => item?.email === 'alvin@oraro.co.ke');
+
+	const partners = allStaff?.filter(
+		(item: any) =>
+			item?.designation?.name === 'Deputy Managing Partner' ||
+			item?.designation?.name === 'Managing Partner'
+	);
 
 	useEffect(() => {
-		if (selectedUser && selectedUser.designation && selectedUser.team && selectedPerson) {
+		if (
+			allStaff &&
+			selectedUser &&
+			selectedUser.designation &&
+			selectedUser.team &&
+			selectedPerson
+		) {
 			setFormValues((prevFormValues) => ({
 				...prevFormValues,
 				name: selectedUser.name || '',
@@ -90,17 +111,22 @@ export default function LeaveForm({
 				title: selectedUser.designation.name || '',
 				team: selectedUser.team.name || '',
 				supervisor: selectedPerson.name,
+				humanResource: allStaff?.find(
+					(item: any) => item?.designation?.name === 'Head of Human Resource'
+				)?.id,
 			}));
 		}
-	}, [selectedUser, selectedUser.team, selectedUser.designation, selectedPerson]);
+	}, [allStaff, selectedUser, selectedUser?.team, selectedUser?.designation, selectedPerson]);
 	// console.log('Selected User:', selectedUser);
+	// console.log('Partner', partners);
 	// console.log('Selected Person:', selectedPerson);
 	// console.log('Form Values:', formValues);
+	// console.log('Leave Types:', leaveTypes);
 
 	const filteredPeople =
 		query === ''
 			? allStaff
-			: allStaff.filter((person) => {
+			: allStaff.filter((person: any) => {
 					return person.name.toLowerCase().includes(query.toLowerCase());
 			  });
 
@@ -113,10 +139,21 @@ export default function LeaveForm({
 	};
 
 	const handleSubmitForm: SubmitHandler<LeaveForm> = (data) => {
-		data.employeeId = selectedUser?.id;
+		if (formValues || selectedUser || selectedPerson) {
+			data.employeeId = selectedUser?.id;
+			data.supervisorId = selectedPerson?.id;
+			data.leaveTypeId = formValues?.leaveType;
+			data.duration = parseInt(formValues?.leaveDays);
+			data.startDate = new Date(formValues?.startDate).toISOString();
+			data.endDate = new Date(formValues?.endDate).toISOString();
+			data.reportDate = new Date(formValues?.reportingDate).toISOString();
+			data.approvingHRMId = formValues?.humanResource;
+			data.approvingPartnerId = formValues?.partner;
+		}
 		onSubmit(data);
-	};
 
+		// console.log('Form Data:', data);
+	};
 	return (
 		<div className="grid md:grid-cols-12 grid-cols-6 gap-2 bg-ocobrown-50">
 			<form className="col-span-6" onSubmit={handleSubmit(handleSubmitForm)}>
@@ -365,14 +402,13 @@ export default function LeaveForm({
 										</label>
 										<select
 											id="leaveTypeId"
-											name="leaveTypeId"
 											value={formValues?.leaveType}
-											onChange={(e) =>
+											onChange={(e) => {
 												setFormValues({
 													...formValues,
 													leaveType: e.target.value,
-												})
-											}
+												});
+											}}
 											className="sm:text-sm w-full bg-ocoblue-50 bg-opacity-70 border-1 focus:shadow-inner shadow-accent-300  focus:border-ocoblue-500 block p-2.5 h-8  px-3 py-1 shadow-ocoblue-300 rounded-md border border-ocoblue-300 text-sm font-medium leading-4 text-ocoblue-700 shadow-sm hover:bg-ocoblue-50 focus:outline-none focus:ring-2 focus:ring-ocobrown-500 focus:ring-offset-1"
 										>
 											<option
@@ -383,11 +419,11 @@ export default function LeaveForm({
 											>
 												--Select Leave Type--
 											</option>
-											{/* {staffTypes?.map((item) => (
+											{leaveTypes?.map((item) => (
 												<option key={item?.id} value={item?.id}>
 													{item?.name}
 												</option>
-											))} */}
+											))}
 										</select>
 									</div>
 									<div className="col-span-6 space-y-1">
@@ -422,8 +458,13 @@ export default function LeaveForm({
 											type="date"
 											name="startedAt"
 											id="startedAt"
-											// value={formValues?.name}
-											// onChange={onChange}
+											value={formValues?.startDate} // Use selectedStaffType here
+											onChange={(e) =>
+												setFormValues({
+													...formValues,
+													startDate: e.target.value,
+												})
+											}
 											className="sm:text-sm w-full bg-ocoblue-50 bg-opacity-70 border-1 focus:shadow-inner shadow-accent-300  focus:border-ocoblue-500 block p-2.5 h-8  px-3 py-1 shadow-ocoblue-300 rounded-md border border-ocoblue-300 text-sm font-medium leading-4 text-ocoblue-700 shadow-sm hover:bg-ocoblue-50 focus:outline-none focus:ring-2 focus:ring-ocobrown-500 focus:ring-offset-1"
 										/>
 									</div>
@@ -438,8 +479,13 @@ export default function LeaveForm({
 											type="date"
 											name="endedAt"
 											id="endedAt"
-											// value={formValues?.name}
-											// onChange={onChange}
+											value={formValues?.endDate}
+											onChange={(e) =>
+												setFormValues({
+													...formValues,
+													endDate: e.target.value,
+												})
+											}
 											className="sm:text-sm w-full bg-ocoblue-50 bg-opacity-70 border-1 focus:shadow-inner shadow-accent-300  focus:border-ocoblue-500 block p-2.5 h-8  px-3 py-1 shadow-ocoblue-300 rounded-md border border-ocoblue-300 text-sm font-medium leading-4 text-ocoblue-700 shadow-sm hover:bg-ocoblue-50 focus:outline-none focus:ring-2 focus:ring-ocobrown-500 focus:ring-offset-1"
 										/>
 									</div>
@@ -454,8 +500,13 @@ export default function LeaveForm({
 											type="date"
 											name="reportOn"
 											id="reportOn"
-											// value={formValues?.name}
-											// onChange={onChange}
+											value={formValues?.reportingDate}
+											onChange={(e) =>
+												setFormValues({
+													...formValues,
+													reportingDate: e.target.value,
+												})
+											}
 											className="sm:text-sm w-full bg-ocoblue-50 bg-opacity-70 border-1 focus:shadow-inner shadow-accent-300  focus:border-ocoblue-500 block p-2.5 h-8  px-3 py-1 shadow-ocoblue-300 rounded-md border border-ocoblue-300 text-sm font-medium leading-4 text-ocoblue-700 shadow-sm hover:bg-ocoblue-50 focus:outline-none focus:ring-2 focus:ring-ocobrown-500 focus:ring-offset-1"
 										/>
 									</div>
@@ -497,8 +548,14 @@ export default function LeaveForm({
 										<select
 											id="partner"
 											name="partner"
-											// value={selectedStaffType} // Use selectedStaffType here
-											// onChange={updateDesignations}
+											value={formValues?.partner} // Use selectedStaffType here
+											onChange={(e) => {
+												// console.log(e.target.value),
+												setFormValues({
+													...formValues,
+													partner: e.target.value,
+												});
+											}}
 											className="sm:text-sm w-full bg-ocoblue-50 bg-opacity-70 border-1 focus:shadow-inner shadow-accent-300  focus:border-ocoblue-500 block p-2.5 h-8  px-3 py-1 shadow-ocoblue-300 rounded-md border border-ocoblue-300 text-sm font-medium leading-4 text-ocoblue-700 shadow-sm hover:bg-ocoblue-50 focus:outline-none focus:ring-2 focus:ring-ocobrown-500 focus:ring-offset-1"
 										>
 											<option
@@ -509,19 +566,18 @@ export default function LeaveForm({
 											>
 												--Select Managing Partner / Deputy--
 											</option>
-											{/* {staffTypes?.map((item) => (
+											{partners?.map((item) => (
 												<option key={item?.id} value={item?.id}>
 													{item?.name}
 												</option>
-											))} */}
+											))}
 										</select>
 									</div>
 								</div>
 								<div className="w-full flex items-center py-2 justify-center">
 									<button
-										type="button"
+										type="submit"
 										className="border rounded-md bg-ocoblue-600 text-white hover:bg-ocoblue-600/90 p-1"
-										onClick={() => handlePreviousClick('two')}
 									>
 										Save
 									</button>

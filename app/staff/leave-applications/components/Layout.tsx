@@ -1,4 +1,5 @@
 'use client';
+import LeaveView from '@/components/main/staff/leave-applicaton/LeaveApplicationTable';
 import OptDropdown from '@/components/my-ui/OptDropdown';
 import { redirect, usePathname } from 'next/navigation';
 
@@ -22,12 +23,15 @@ export default function Layout() {
 	];
 	return (
 		<div>
-			<div className="sticky z-20 md:flex items-center justify-between gap-2  top-2 hidden">
+			<div className="sticky z-20 md:flex items-center justify-between gap-2  hidden py-2">
 				<h1 className="text-lg font-extralight text-accent-700"></h1>
 				<div className="inline-flex items-center space-x-2">
 					{/* <SearchInput onSearch={handleSearch} /> */}
 					<OptDropdown optBtn={headerOptBtnTxt} optionsList={headerOptionsList} />
 				</div>
+			</div>
+			<div>
+				<LeaveView />
 			</div>
 		</div>
 	);

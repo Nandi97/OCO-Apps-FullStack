@@ -1,5 +1,8 @@
 import logo from '@/public/assets/images/oco_ab_and_david.png';
+import { useQuery } from '@tanstack/react-query';
+import axios from 'axios';
 import Image from 'next/image';
+import format from 'date-fns/format';
 
 interface LeaveApplicationPrev {
 	name: string;
@@ -22,7 +25,25 @@ interface LeaveApplicationPrevProps {
 	prevVal?: LeaveApplicationPrev;
 }
 
+const fetchAllStaff = async () => {
+	const response = await axios.get('/api/staff/getAllUnpaginatedStaff');
+	return response.data;
+};
+
+const fetchLeaveTypes = async () => {
+	const response = await axios.get('/api/leave/leave-type/get');
+	return response.data;
+};
+
 export default function LeaveApplicationPrev({ prevVal }: LeaveApplicationPrevProps) {
+	const { data: allStaff } = useQuery({
+		queryFn: fetchAllStaff,
+		queryKey: ['allStaff'],
+	});
+	const { data: leaveTypes } = useQuery({
+		queryFn: fetchLeaveTypes,
+		queryKey: ['leaveTypes'],
+	});
 	return (
 		<div className="w-full p-4 flex-col rounded-md shadow-md space-y-3">
 			<div className="w-full flex items-center justify-center">
@@ -93,7 +114,13 @@ export default function LeaveApplicationPrev({ prevVal }: LeaveApplicationPrevPr
 							<td className="px-2 border">
 								<div className="flex flex-col">
 									<span className="text-xs">Leave Type:</span>
-									<span className="text-ocobrown-600">{prevVal?.leaveType}</span>
+									<span className="text-ocobrown-600">
+										{
+											leaveTypes?.find(
+												(item: any) => item?.id === prevVal?.leaveType
+											)?.name
+										}
+									</span>
 								</div>
 							</td>
 							<td className="px-2 border">
@@ -107,13 +134,21 @@ export default function LeaveApplicationPrev({ prevVal }: LeaveApplicationPrevPr
 							<td className="px-2 border">
 								<div className="flex flex-col">
 									<span className="text-xs">Start Leave On:</span>
-									<span className="text-ocobrown-600">{prevVal?.startDate}</span>
+									<span className="text-ocobrown-600">
+										{prevVal?.startDate
+											? format(new Date(prevVal?.startDate), 'MMMM d, yyyy')
+											: ''}
+									</span>
 								</div>
 							</td>
 							<td className="px-2 border">
 								<div className="flex flex-col">
 									<span className="text-xs">End Leave On:</span>
-									<span className="text-ocobrown-600">{prevVal?.endDate}</span>
+									<span className="text-ocobrown-600">
+										{prevVal?.endDate
+											? format(new Date(prevVal?.endDate), 'MMMM d, yyyy')
+											: ''}
+									</span>
 								</div>
 							</td>
 						</tr>
@@ -122,14 +157,21 @@ export default function LeaveApplicationPrev({ prevVal }: LeaveApplicationPrevPr
 								<div className="flex flex-col">
 									<span className="text-xs">Reporting Back On:</span>
 									<span className="text-ocobrown-600">
-										{prevVal?.reportingDate}
+										{prevVal?.reportingDate
+											? format(
+													new Date(prevVal?.reportingDate),
+													'MMMM d, yyyy'
+											  )
+											: ''}
 									</span>
 								</div>
 							</td>
 							<td className="px-2 border">
 								<div className="flex flex-col">
 									<span className="text-xs">Applied on:</span>
-									<span className="text-ocobrown-600">{prevVal?.appliedOn}</span>
+									<span className="text-ocobrown-600">
+										{format(new Date(), 'MMMM d, yyyy')}
+									</span>
 								</div>
 							</td>
 						</tr>
@@ -165,7 +207,11 @@ export default function LeaveApplicationPrev({ prevVal }: LeaveApplicationPrevPr
 								<div className="flex flex-col">
 									<span>HR Manager:</span>
 									<span className="text-ocobrown-600">
-										{prevVal?.humanResource}
+										{
+											allStaff?.find(
+												(item: any) => item?.id === prevVal?.humanResource
+											)?.name
+										}
 									</span>
 								</div>
 							</td>
@@ -180,7 +226,13 @@ export default function LeaveApplicationPrev({ prevVal }: LeaveApplicationPrevPr
 							<td className=" border">
 								<div className="flex flex-col">
 									<span>Deputy/ Managing Partner:</span>
-									<span className="text-ocobrown-600">{prevVal?.partner}</span>
+									<span className="text-ocobrown-600">
+										{
+											allStaff?.find(
+												(item: any) => item?.id === prevVal?.partner
+											)?.name
+										}
+									</span>
 								</div>
 							</td>
 							<td className=" border">

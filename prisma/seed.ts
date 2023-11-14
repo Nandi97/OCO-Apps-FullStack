@@ -12,6 +12,7 @@ import { getCurrencies } from './seeders/currencies';
 import { getTowns } from './seeders/towns';
 import { getAttendanceTypes } from './seeders/attendeeTypes';
 import { getTax } from './seeders/tax';
+import { getLeaveTypes } from './seeders/leaveTypes';
 
 const prisma = new PrismaClient();
 
@@ -29,6 +30,7 @@ async function main() {
 	const staffs = getStaff();
 	const stopWatchItemTasks = getStopWatchItemTasks();
 	const attendanceTypes = getAttendanceTypes();
+	const leaveTypes = getLeaveTypes();
 
 	// Menus
 	for (const menu of menus) {
@@ -188,7 +190,17 @@ async function main() {
 		});
 	}
 
-	console.log('Menus seeded successfully.');
+	//Leave Types
+	for (const leaveType of leaveTypes) {
+		await prisma.leaveType.create({
+			data: {
+				name: leaveType.name,
+				description: leaveType.description,
+			},
+		});
+	}
+
+	console.log('Seeded successfully.');
 }
 
 main()
