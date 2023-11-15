@@ -5,7 +5,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
 	if (req.method === 'POST') {
 		try {
 			const formData = req.body;
-
+			// console.log(formData);
 			const result = await prisma.leaveApplication.create({
 				data: formData,
 			});

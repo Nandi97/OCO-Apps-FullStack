@@ -1,0 +1,436 @@
+//// ------------------------------------------------------
+//// THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
+//// ------------------------------------------------------
+
+Table Account {
+  id String [pk]
+  userId String [not null]
+  type String [not null]
+  provider String [not null]
+  providerAccountId String [not null]
+  refresh_token String
+  access_token String
+  expires_at Int
+  expires_in Int
+  ext_expires_in Int
+  token_type String
+  scope String
+  id_token String
+  session_state String
+  user User [not null]
+
+  indexes {
+    (provider, providerAccountId) [unique]
+  }
+}
+
+Table Session {
+  id String [pk]
+  sessionToken String [unique, not null]
+  userId String [not null]
+  expires DateTime [not null]
+  user User [not null]
+}
+
+Table User {
+  id String [pk]
+  name String
+  email String [unique]
+  emailVerified DateTime
+  image String
+  accounts Account [not null]
+  sessions Session [not null]
+  stopWatchItems StopWatchItem [not null]
+  purchaseOrders PurchaseOrder [not null]
+  staff Staff [not null]
+}
+
+Table VerificationToken {
+  identifier String [not null]
+  token String [unique, not null]
+  expires DateTime [not null]
+
+  indexes {
+    (identifier, token) [unique]
+  }
+}
+
+Table Menu {
+  id Int [pk, increment]
+  name String [not null]
+  url String [not null]
+  icon String [not null]
+  listOrder Int [not null]
+  createdAt DateTime [default: `now()`]
+  updatedAt DateTime
+}
+
+Table Matter {
+  id Int [pk, increment]
+  code String [not null]
+  description String [not null]
+  deletedAt DateTime
+  createdAt DateTime [default: `now()`]
+  updatedAt DateTime
+  stopWatchItems StopWatchItem [not null]
+}
+
+Table Team {
+  id Int [pk, increment]
+  name String [not null]
+  createdAt DateTime [default: `now()`]
+  updatedAt DateTime
+  staff Staff [not null]
+}
+
+Table Gender {
+  id Int [pk, increment]
+  name String [not null]
+  createdAt DateTime [default: `now()`]
+  updatedAt DateTime
+  staff Staff [not null]
+}
+
+Table Town {
+  id Int [pk, increment]
+  name String [not null]
+  createdAt DateTime [default: `now()`]
+  updatedAt DateTime
+  purchaseOrders PurchaseOrder [not null]
+}
+
+Table Tax {
+  id String [pk]
+  name String [not null]
+  value String [not null]
+  rate Float [not null]
+  deletedAt DateTime
+  createdAt DateTime [default: `now()`]
+  updatedAt DateTime
+}
+
+Table Currency {
+  id Int [pk, increment]
+  name String [not null]
+  initial String [not null]
+  purchaseOrders PurchaseOrder [not null]
+  createdAt DateTime [default: `now()`]
+  updatedAt DateTime
+}
+
+Table StaffType {
+  id Int [pk, increment]
+  name String [not null]
+  createdAt DateTime [default: `now()`]
+  updatedAt DateTime
+  designations Designation [not null]
+}
+
+Table Designation {
+  id Int [pk, increment]
+  name String [not null]
+  staffTypeId Int [not null]
+  createdAt DateTime [default: `now()`]
+  updatedAt DateTime
+  staffType StaffType [not null]
+  staff Staff [not null]
+}
+
+Table Staff {
+  id String [pk]
+  name String [not null]
+  email String [unique, not null]
+  mobile String [not null]
+  ext Int [not null]
+  staffNo Int [not null]
+  avatarUrl String
+  teamId Int [not null]
+  designationId Int [not null]
+  genderId Int [not null]
+  deletedAt DateTime
+  createdAt DateTime [default: `now()`]
+  updatedAt DateTime
+  books Book [not null]
+  purchaseOrders PurchaseOrder [not null]
+  meetingAttendees MeetingAttendee [not null]
+  employers LeaveApplication [not null]
+  supervisors LeaveApplication [not null]
+  partners LeaveApplication [not null]
+  hrms LeaveApplication [not null]
+  createdById String
+  creator User
+  designation Designation [not null]
+  gender Gender [not null]
+  team Team [not null]
+}
+
+Table Book {
+  id String [pk]
+  author String [not null]
+  title String [not null]
+  coverUrl String [not null]
+  copies Int [not null]
+  edition String [not null]
+  isbnIssn String [not null]
+  mediaType String [not null]
+  publicationYear Int [not null]
+  publisher String [not null]
+  subject String
+  status Boolean [not null, default: true]
+  staffId String [not null]
+  deletedAt DateTime
+  createdAt DateTime [default: `now()`]
+  updatedAt DateTime
+  staff Staff [not null]
+}
+
+Table StopWatchItemTask {
+  id String [pk]
+  name String [not null]
+  stopWatchItems StopWatchItem [not null]
+}
+
+Table StopWatchItem {
+  id Int [pk, increment]
+  narration String [not null]
+  itemDate DateTime
+  startedAt DateTime
+  endedAt DateTime
+  createdById String [not null]
+  stopWatchItemTaskId String [not null]
+  matterId Int [not null]
+  matter Matter [not null]
+  stopWatchItemTask StopWatchItemTask [not null]
+  user User [not null]
+  deletedAt DateTime
+  createdAt DateTime [default: `now()`]
+  updatedAt DateTime
+}
+
+Table PurchaseOrder {
+  id String [pk]
+  poNumber String [unique, not null]
+  type String [not null]
+  vatable Boolean [not null, default: true]
+  currencyId Int [not null]
+  name String [not null]
+  email String [not null]
+  phoneNumber String [not null]
+  physicalAddress String [not null]
+  purchaseItems PurchaseItem [not null]
+  approverId String [not null]
+  createdById String [not null]
+  townId Int
+  address Int
+  postalCode Int
+  city String
+  country String
+  totalAmount Int [not null]
+  status Boolean [default: false]
+  approver Staff [not null]
+  creator User [not null]
+  currency Currency [not null]
+  town Town
+  deletedAt DateTime
+  createdAt DateTime [default: `now()`]
+  updatedAt DateTime
+  approvedOn DateTime
+}
+
+Table PurchaseItem {
+  id String [pk]
+  description String [not null]
+  quantity Int [not null]
+  cost Int [not null]
+  purchaseOrder PurchaseOrder
+  purchaseOrderId String
+  deletedAt DateTime
+  createdAt DateTime [default: `now()`]
+  updatedAt DateTime
+}
+
+Table AttendanceType {
+  id String [pk]
+  name String [not null]
+  description String [not null]
+  createdAt DateTime [default: `now()`]
+  updatedAt DateTime
+  MeetingAttendees MeetingAttendee [not null]
+}
+
+Table MeetingAttendee {
+  id String [pk]
+  meetingId String [not null]
+  staffId String [not null]
+  atendeeTypeId String [not null]
+  meeting Meeting [not null]
+  staff Staff [not null]
+  atendeeType AttendanceType [not null]
+  deletedAt DateTime
+  createdAt DateTime [default: `now()`]
+  updatedAt DateTime
+}
+
+Table Meeting {
+  id String [pk]
+  title String [not null]
+  date DateTime [not null]
+  startedAt DateTime [not null]
+  endedAt DateTime [not null]
+  venue String [not null]
+  meetingItems MeetingItem [not null]
+  aob AOB [not null]
+  staff MeetingAttendee [not null]
+  deletedAt DateTime
+  createdAt DateTime [default: `now()`]
+  updatedAt DateTime
+}
+
+Table MeetingItem {
+  id String [pk]
+  action String [not null]
+  responsibleId Int [unique, not null]
+  dueDate DateTime
+  meetingId String [not null]
+  status String [not null]
+  meeting Meeting [not null]
+  createdAt DateTime [default: `now()`]
+  updatedAt DateTime
+}
+
+Table AOB {
+  id String [pk]
+  item String [not null]
+  meetingId String [not null]
+  meeting Meeting [not null]
+  createdAt DateTime [default: `now()`]
+  updatedAt DateTime
+}
+
+Table LeaveType {
+  id String [pk]
+  name String [not null]
+  description String [not null]
+  deletedAt DateTime
+  createdAt DateTime [default: `now()`]
+  updatedAt DateTime
+  LeaveApplication LeaveApplication [not null]
+}
+
+Table LeaveApplication {
+  id String [pk]
+  employeeId String [not null]
+  employee Staff [not null]
+  supervisorId String [not null]
+  supervisor Staff [not null]
+  leaveTypeId String [not null]
+  type LeaveType [not null]
+  duration Int [not null]
+  startDate DateTime [not null]
+  endDate DateTime [not null]
+  reportDate DateTime [not null]
+  approvingPartnerId String [not null]
+  partner Staff [not null]
+  approvingHRMId String [not null]
+  humanResource Staff [not null]
+  supervisorApprovalId String
+  supervisorApproval SupervisorApproval
+  partnerApprovalId String
+  partnerApproval PartnerApproval
+  hRMApprovalId String
+  hRMApproval HRMApproval
+  createdAt DateTime [default: `now()`]
+  updatedAt DateTime
+  deletedAt DateTime
+}
+
+Table SupervisorApproval {
+  id String [pk]
+  approval DateTime
+  dispproval DateTime
+  dispprovalComment String
+  createdAt DateTime [default: `now()`]
+  updatedAt DateTime
+  deletedAt DateTime
+  LeaveApplication LeaveApplication [not null]
+}
+
+Table PartnerApproval {
+  id String [pk]
+  approval DateTime
+  dispproval DateTime
+  dispprovalComment String
+  createdAt DateTime [default: `now()`]
+  updatedAt DateTime
+  deletedAt DateTime
+  LeaveApplication LeaveApplication [not null]
+}
+
+Table HRMApproval {
+  id String [pk]
+  approval DateTime
+  dispproval DateTime
+  dispprovalComment String
+  createdAt DateTime [default: `now()`]
+  updatedAt DateTime
+  deletedAt DateTime
+  LeaveApplication LeaveApplication [not null]
+}
+
+Ref: Account.userId > User.id [delete: Cascade]
+
+Ref: Session.userId > User.id [delete: Cascade]
+
+Ref: Designation.staffTypeId > StaffType.id
+
+Ref: Staff.createdById > User.id
+
+Ref: Staff.designationId > Designation.id
+
+Ref: Staff.genderId > Gender.id
+
+Ref: Staff.teamId > Team.id
+
+Ref: Book.staffId > Staff.id
+
+Ref: StopWatchItem.matterId > Matter.id
+
+Ref: StopWatchItem.stopWatchItemTaskId > StopWatchItemTask.id
+
+Ref: StopWatchItem.createdById > User.id
+
+Ref: PurchaseOrder.approverId > Staff.id
+
+Ref: PurchaseOrder.createdById > User.id
+
+Ref: PurchaseOrder.currencyId > Currency.id
+
+Ref: PurchaseOrder.townId > Town.id
+
+Ref: PurchaseItem.purchaseOrderId > PurchaseOrder.id
+
+Ref: MeetingAttendee.meetingId > Meeting.id
+
+Ref: MeetingAttendee.staffId > Staff.id
+
+Ref: MeetingAttendee.atendeeTypeId > AttendanceType.id
+
+Ref: MeetingItem.meetingId > Meeting.id
+
+Ref: AOB.meetingId > Meeting.id
+
+Ref: LeaveApplication.employeeId > Staff.id
+
+Ref: LeaveApplication.supervisorId > Staff.id
+
+Ref: LeaveApplication.leaveTypeId > LeaveType.id
+
+Ref: LeaveApplication.approvingPartnerId > Staff.id
+
+Ref: LeaveApplication.approvingHRMId > Staff.id
+
+Ref: LeaveApplication.supervisorApprovalId > SupervisorApproval.id
+
+Ref: LeaveApplication.partnerApprovalId > PartnerApproval.id
+
+Ref: LeaveApplication.hRMApprovalId > HRMApproval.id

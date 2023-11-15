@@ -4,6 +4,7 @@ import logo from '@/public/assets/images/oco_ab_and_david.png';
 import axios from 'axios';
 import { useQuery } from '@tanstack/react-query';
 import format from 'date-fns/format';
+import { useSession } from 'next-auth/react';
 
 interface LeavePrevProps {
 	url: string;
@@ -14,6 +15,7 @@ const fetchDetails = async (slug: string) => {
 };
 
 export default function LeavePrev({ url }: LeavePrevProps) {
+	const { data: session } = useSession();
 	const { data: prevVal } = useQuery({
 		queryKey: ['detailLeave'],
 		queryFn: () => fetchDetails(url),
@@ -21,10 +23,11 @@ export default function LeavePrev({ url }: LeavePrevProps) {
 
 	// console.log('URL:', url);
 	console.log('Prev Leave Val:', prevVal);
+	console.log('Session:', session);
 	return (
 		<>
-			<div className="grid grid-cols-12">
-				<div className="w-full p-4 flex-col rounded-md shadow-md space-y-3 col-span-9">
+			<div className="grid grid-cols-12 ">
+				<div className="w-full p-4 flex-col rounded-md shadow-md space-y-3 col-span-8 bg-ocobrown-50">
 					<div className="w-full flex items-center justify-center">
 						<Image
 							src={logo}
@@ -71,7 +74,7 @@ export default function LeavePrev({ url }: LeavePrevProps) {
 										<div className="flex flex-col">
 											<span className="text-xs">Title:</span>
 											<span className="text-ocobrown-600">
-												{prevVal?.title}
+												{prevVal?.employee?.designation?.name}
 											</span>
 										</div>
 									</td>
@@ -79,7 +82,7 @@ export default function LeavePrev({ url }: LeavePrevProps) {
 										<div className="flex flex-col">
 											<span className="text-xs">Team:</span>
 											<span className="text-ocobrown-600">
-												{prevVal?.team}
+												{prevVal?.employee?.team?.name}
 											</span>
 										</div>
 									</td>
@@ -102,12 +105,7 @@ export default function LeavePrev({ url }: LeavePrevProps) {
 										<div className="flex flex-col">
 											<span className="text-xs">Leave Type:</span>
 											<span className="text-ocobrown-600">
-												{/* {
-													leaveTypes?.find(
-														(item: any) =>
-															item?.id === prevVal?.leaveType
-													)?.name
-												} */}
+												{prevVal?.type?.name}
 											</span>
 										</div>
 									</td>
@@ -115,7 +113,7 @@ export default function LeavePrev({ url }: LeavePrevProps) {
 										<div className="flex flex-col">
 											<span className="text-xs">Number of Leave Days:</span>
 											<span className="text-ocobrown-600">
-												{prevVal?.leaveDays}
+												{prevVal?.duration}
 											</span>
 										</div>
 									</td>
@@ -153,9 +151,9 @@ export default function LeavePrev({ url }: LeavePrevProps) {
 										<div className="flex flex-col">
 											<span className="text-xs">Reporting Back On:</span>
 											<span className="text-ocobrown-600">
-												{prevVal?.reportingDate
+												{prevVal?.reportDate
 													? format(
-															new Date(prevVal?.reportingDate),
+															new Date(prevVal?.reportDate),
 															'MMMM d, yyyy'
 													  )
 													: ''}
@@ -166,7 +164,12 @@ export default function LeavePrev({ url }: LeavePrevProps) {
 										<div className="flex flex-col">
 											<span className="text-xs">Applied on:</span>
 											<span className="text-ocobrown-600">
-												{format(new Date(), 'MMMM d, yyyy')}
+												{prevVal?.createdAt
+													? format(
+															new Date(prevVal?.createdAt),
+															'MMMM d, yyyy'
+													  )
+													: ''}
 											</span>
 										</div>
 									</td>
@@ -189,7 +192,7 @@ export default function LeavePrev({ url }: LeavePrevProps) {
 										<div className="flex flex-col">
 											<span>Supervisor:</span>
 											<span className="text-ocobrown-600">
-												{prevVal?.supervisor}
+												{prevVal?.supervisor?.name}
 											</span>
 										</div>
 									</td>
@@ -207,12 +210,7 @@ export default function LeavePrev({ url }: LeavePrevProps) {
 										<div className="flex flex-col">
 											<span>HR Manager:</span>
 											<span className="text-ocobrown-600">
-												{/* {
-													allStaff?.find(
-														(item: any) =>
-															item?.id === prevVal?.humanResource
-													)?.name
-												} */}
+												{prevVal?.humanResource?.name}
 											</span>
 										</div>
 									</td>
@@ -230,11 +228,7 @@ export default function LeavePrev({ url }: LeavePrevProps) {
 										<div className="flex flex-col">
 											<span>Deputy/ Managing Partner:</span>
 											<span className="text-ocobrown-600">
-												{/* {
-													allStaff?.find(
-														(item: any) => item?.id === prevVal?.partner
-													)?.name
-												} */}
+												{prevVal?.partner?.name}
 											</span>
 										</div>
 									</td>

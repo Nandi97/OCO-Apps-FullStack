@@ -12,6 +12,8 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
 					employee: {
 						include: {
 							designation: true,
+
+							team: true,
 						},
 					},
 					supervisor: {

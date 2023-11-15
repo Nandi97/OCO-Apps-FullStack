@@ -1,7 +1,7 @@
 import './globals.css';
 import type { Metadata } from 'next';
 import { Roboto } from 'next/font/google';
-import AuthContext from './QueryWrapper';
+import { Providers } from './auth/provider';
 import QueryWrapper from './QueryWrapper';
 import Nav from './auth/Nav';
 
@@ -34,7 +34,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 				className={` ${roboto.variable} h-screen font-sans bg-gradient-to-br from-accent-100 via-primary-100 to-accent-100 overflow-hidden`}
 			>
 				<QueryWrapper>
-					<AuthContext>
+					<Providers>
 						{/* <Sidebar sidebarProp={<Nav />} /> */}
 						<Nav pageTitle={metadata.title} />
 
@@ -44,7 +44,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 								{children}
 							</div>
 						</main>
-					</AuthContext>
+					</Providers>
 				</QueryWrapper>
 			</body>
 		</html>

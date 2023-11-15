@@ -8,6 +8,7 @@ import { useQuery } from '@tanstack/react-query';
 import { Combobox } from '@headlessui/react';
 import { Icon } from '@iconify/react/dist/iconify.js';
 import LeaveApplicationPrev from '../previews/LeaveApplication';
+import { useSession } from 'next-auth/react';
 
 interface LeaveForm {
 	employeeId: string;
@@ -49,6 +50,7 @@ export default function LeaveForm({
 	isLoading,
 	loggedUser,
 }: LeaveFormProps) {
+	const { data: session } = useSession();
 	const [accValue, setAccValue] = useState('one');
 	const [dataState, setDataState] = useState('closed');
 	const [currentUser, setCurrentUser] = useState<any>();
@@ -63,6 +65,7 @@ export default function LeaveForm({
 	} = useForm<LeaveForm>({
 		defaultValues: initialValues,
 	});
+	console.log('Session:', session);
 	const [formValues, setFormValues] = useState({
 		name: '',
 		staffNo: '',
@@ -88,7 +91,7 @@ export default function LeaveForm({
 		queryKey: ['leaveTypes'],
 	});
 
-	const selectedUser = allStaff?.find((item: any) => item?.email === 'alvin@oraro.co.ke');
+	const selectedUser = allStaff?.find((item: any) => item?.email === session?.user?.email);
 
 	const partners = allStaff?.filter(
 		(item: any) =>
@@ -111,12 +114,15 @@ export default function LeaveForm({
 				title: selectedUser.designation.name || '',
 				team: selectedUser.team.name || '',
 				supervisor: selectedPerson.name,
-				humanResource: allStaff?.find(
-					(item: any) => item?.designation?.name === 'Head of Human Resource'
-				)?.id,
+				humanResource:
+					selectedUser?.designation?.staffTypeId === 1
+						? null
+						: allStaff?.find(
+								(item: any) => item?.designation?.name === 'Head of Human Resource'
+						  )?.id,
 			}));
 		}
-	}, [allStaff, selectedUser, selectedUser?.team, selectedUser?.designation, selectedPerson]);
+	}, [allStaff, selectedUser, selectedPerson]);
 	// console.log('Selected User:', selectedUser);
 	// console.log('Partner', partners);
 	// console.log('Selected Person:', selectedPerson);
@@ -139,20 +145,24 @@ export default function LeaveForm({
 	};
 
 	const handleSubmitForm: SubmitHandler<LeaveForm> = (data) => {
-		if (formValues || selectedUser || selectedPerson) {
-			data.employeeId = selectedUser?.id;
-			data.supervisorId = selectedPerson?.id;
-			data.leaveTypeId = formValues?.leaveType;
-			data.duration = parseInt(formValues?.leaveDays);
-			data.startDate = new Date(formValues?.startDate).toISOString();
-			data.endDate = new Date(formValues?.endDate).toISOString();
-			data.reportDate = new Date(formValues?.reportingDate).toISOString();
-			data.approvingHRMId = formValues?.humanResource;
-			data.approvingPartnerId = formValues?.partner;
-		}
-		onSubmit(data);
+		try {
+			if (formValues || selectedUser || selectedPerson) {
+				data.employeeId = selectedUser.id;
+				data.supervisorId = selectedPerson.id;
+				data.leaveTypeId = formValues.leaveType;
+				data.duration = parseInt(formValues.leaveDays);
+				data.startDate = new Date(formValues.startDate).toISOString();
+				data.endDate = new Date(formValues.endDate).toISOString();
+				data.reportDate = new Date(formValues.reportingDate).toISOString();
+				data.approvingHRMId = formValues.humanResource;
+				data.approvingPartnerId = formValues.partner;
+			}
 
-		// console.log('Form Data:', data);
+			// console.log('Form Data:', data);
+			onSubmit(data);
+		} catch (error) {
+			console.error('Error in handleSubmitForm:', error);
+		}
 	};
 	return (
 		<div className="grid md:grid-cols-12 grid-cols-6 gap-2 bg-ocobrown-50">
@@ -166,226 +176,12 @@ export default function LeaveForm({
 				>
 					<AccordionItem value="one">
 						<AccordionTrigger
-							className="[&[data-state=open]>div>div]:bg-ocobrown-600 "
+							className="[&[data-state=open]>div>div]:bg-ocobrown-600"
 							onClick={() => handleContinueClick('one')}
 						>
 							<div className="flex items-center space-x-3">
 								<div className="bg-ocoblue-200 text-white flex items-center justify-center text-xs p-2 h-4 w-4 rounded-full ">
 									1
-								</div>
-								<span>Employee Details</span>
-							</div>
-						</AccordionTrigger>
-						<AccordionContent>
-							<div className="flex flex-col border rounded-b-lg">
-								<div className="grid grid-cols-6 md:grid-cols-12 gap-4 p-2">
-									<div className="col-span-6  space-y-1">
-										<label
-											htmlFor="staff type"
-											className="block text-xs font-medium text-ocoblue-700"
-										>
-											Staff Type
-										</label>
-										<select
-											id="typeId"
-											name="typeId"
-											// value={formValues?.} // Use selectedStaffType here
-											// onChange={updateDesignations}
-											className="sm:text-sm w-full bg-ocoblue-50 bg-opacity-70 border-1 focus:shadow-inner shadow-accent-300  focus:border-ocoblue-500 block p-2.5 h-8  px-3 py-1 shadow-ocoblue-300 rounded-md border border-ocoblue-300 text-sm font-medium leading-4 text-ocoblue-700 shadow-sm hover:bg-ocoblue-50 focus:outline-none focus:ring-2 focus:ring-ocobrown-500 focus:ring-offset-1"
-											disabled
-										>
-											<option
-												selected
-												disabled
-												value=""
-												className="text-opacity-50 text-ocoblue-700"
-											>
-												{selectedUser?.name}
-											</option>
-											{/* {staffTypes?.map((item) => (
-												<option key={item?.id} value={item?.id}>
-													{item?.name}
-												</option>
-											))} */}
-										</select>
-									</div>
-									<div className="col-span-6 space-y-1">
-										<label
-											htmlFor="payrollNo"
-											className="block text-xs font-medium text-ocoblue-700"
-										>
-											Payroll No
-										</label>
-										<input
-											type="text"
-											name="payrollNo"
-											id="payrollNo"
-											value={selectedUser?.staffNo}
-											// onChange={onChange}
-											className="sm:text-sm w-full bg-ocoblue-50 bg-opacity-70 border-1 focus:shadow-inner shadow-accent-300  focus:border-ocoblue-500 block p-2.5 h-8  px-3 py-1 shadow-ocoblue-300 rounded-md border border-ocoblue-300 text-sm font-medium leading-4 text-ocoblue-700 shadow-sm hover:bg-ocoblue-50 focus:outline-none focus:ring-2 focus:ring-ocobrown-500 focus:ring-offset-1"
-											disabled
-										/>
-									</div>
-									<div className="col-span-6 space-y-1">
-										<label
-											htmlFor="title"
-											className="block text-xs font-medium text-ocoblue-700"
-										>
-											Title
-										</label>
-										<input
-											type="text"
-											name="title"
-											id="title"
-											value={selectedUser?.designation?.name}
-											// onChange={onChange}
-											className="sm:text-sm w-full bg-ocoblue-50 bg-opacity-70 border-1 focus:shadow-inner shadow-accent-300  focus:border-ocoblue-500 block p-2.5 h-8  px-3 py-1 shadow-ocoblue-300 rounded-md border border-ocoblue-300 text-sm font-medium leading-4 text-ocoblue-700 shadow-sm hover:bg-ocoblue-50 focus:outline-none focus:ring-2 focus:ring-ocobrown-500 focus:ring-offset-1"
-											disabled
-										/>
-									</div>
-									<div className="col-span-6  space-y-1">
-										<label
-											htmlFor="team"
-											className="block text-xs font-medium text-ocoblue-700"
-										>
-											Team
-										</label>
-										<select
-											id="team"
-											name="team"
-											// value={selectedStaffType} // Use selectedStaffType here
-											// onChange={updateDesignations}
-											className="sm:text-sm w-full bg-ocoblue-50 bg-opacity-70 border-1 focus:shadow-inner shadow-accent-300  focus:border-ocoblue-500 block p-2.5 h-8  px-3 py-1 shadow-ocoblue-300 rounded-md border border-ocoblue-300 text-sm font-medium leading-4 text-ocoblue-700 shadow-sm hover:bg-ocoblue-50 focus:outline-none focus:ring-2 focus:ring-ocobrown-500 focus:ring-offset-1"
-											disabled
-										>
-											<option
-												selected
-												disabled
-												value=""
-												className="text-opacity-50 text-ocoblue-700"
-											>
-												{selectedUser?.team?.name}
-											</option>
-											{/* {staffTypes?.map((item) => (
-												<option key={item?.id} value={item?.id}>
-													{item?.name}
-												</option>
-											))} */}
-										</select>
-									</div>
-									<Combobox
-										as="div"
-										value={selectedPerson}
-										onChange={setSelectedPerson}
-										className="col-span-6  space-y-1"
-									>
-										<Combobox.Label className="block text-xs font-medium text-ocoblue-700">
-											Supervisor
-										</Combobox.Label>
-										<div className="relative mt-1">
-											<Combobox.Input
-												className="sm:text-sm w-full bg-ocoblue-50 bg-opacity-70 border-1 focus:shadow-inner shadow-accent-300  focus:border-ocoblue-500 block p-2.5 h-8  px-3 py-1 shadow-ocoblue-300 rounded-md border border-ocoblue-300 text-sm font-medium leading-4 text-ocoblue-700 shadow-sm hover:bg-ocoblue-50 focus:outline-none focus:ring-2 focus:ring-ocobrown-500 focus:ring-offset-1"
-												onChange={(event) => setQuery(event.target.value)}
-												displayValue={(person) => person?.name}
-											/>
-											<Combobox.Button className="absolute inset-y-0 right-0 flex items-center rounded-r-md px-2 focus:outline-none">
-												<Icon
-													icon="heroicons:chevron-up-down"
-													className="h-5 w-5 text-gray-400"
-													aria-hidden="true"
-												/>
-											</Combobox.Button>
-
-											{filteredPeople?.length > 0 && (
-												<Combobox.Options className="absolute z-10 mt-1 max-h-60 w-full overflow-auto rounded-md bg-white py-1 text-base shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none sm:text-sm">
-													{filteredPeople?.map((person) => (
-														<Combobox.Option
-															key={person?.id}
-															value={person}
-															className={({ active }) =>
-																classNames(
-																	'relative cursor-default select-none py-2 pl-3 pr-9',
-																	active
-																		? 'bg-ocobrown-600 text-white'
-																		: 'text-gray-900'
-																)
-															}
-														>
-															{({ active, selected }) => (
-																<>
-																	<div className="flex items-center">
-																		<span
-																			className={classNames(
-																				'inline-block h-2 w-2 flex-shrink-0 rounded-full',
-																				active
-																					? 'bg-ocoblue-400'
-																					: 'bg-gray-200'
-																			)}
-																			aria-hidden="true"
-																		/>
-																		<span
-																			className={classNames(
-																				'ml-3 truncate',
-																				selected &&
-																					'font-semibold'
-																			)}
-																		>
-																			{person?.name}
-																			<span className="sr-only">
-																				{' '}
-																				is{' '}
-																				{person.online
-																					? 'online'
-																					: 'offline'}
-																			</span>
-																		</span>
-																	</div>
-
-																	{selected && (
-																		<span
-																			className={classNames(
-																				'absolute inset-y-0 right-0 flex items-center pr-4',
-																				active
-																					? 'text-white'
-																					: 'text-ocobrown-600'
-																			)}
-																		>
-																			<Icon
-																				icon="heroicons:check"
-																				className="h-5 w-5"
-																				aria-hidden="true"
-																			/>
-																		</span>
-																	)}
-																</>
-															)}
-														</Combobox.Option>
-													))}
-												</Combobox.Options>
-											)}
-										</div>
-									</Combobox>
-								</div>
-								<div className="w-full flex items-center py-2 justify-center">
-									<button
-										className="border rounded-md bg-ocoblue-600 text-white hover:bg-ocoblue-600/90 p-1"
-										type="button"
-										onClick={() => handleContinueClick('two')}
-									>
-										Continue
-									</button>
-								</div>
-							</div>
-						</AccordionContent>
-					</AccordionItem>
-					<AccordionItem value="two">
-						<AccordionTrigger
-							className="[&[data-state=open]>div>div]:bg-ocobrown-600"
-							onClick={() => handleContinueClick('two')}
-						>
-							<div className="flex items-center space-x-3">
-								<div className="bg-ocoblue-200 text-white flex items-center justify-center text-xs p-2 h-4 w-4 rounded-full ">
-									2
 								</div>
 								<span>Leave Details</span>
 							</div>
@@ -515,7 +311,7 @@ export default function LeaveForm({
 									<button
 										type="button"
 										className="border rounded-md bg-ocoblue-600 text-white hover:bg-ocoblue-600/90 p-1"
-										onClick={() => handleContinueClick('three')}
+										onClick={() => handleContinueClick('two')}
 									>
 										Continue
 									</button>
@@ -523,14 +319,14 @@ export default function LeaveForm({
 							</div>
 						</AccordionContent>
 					</AccordionItem>
-					<AccordionItem value="three">
+					<AccordionItem value="two">
 						<AccordionTrigger
 							className="[&[data-state=open]>div>div]:bg-ocobrown-600"
-							onClick={() => handleContinueClick('three')}
+							onClick={() => handleContinueClick('two')}
 						>
 							<div className="flex items-center space-x-3">
 								<div className="bg-ocoblue-200 text-white flex items-center justify-center text-xs p-2 h-4 w-4 rounded-full ">
-									3
+									2
 								</div>
 								<span>Approval</span>
 							</div>
@@ -538,7 +334,99 @@ export default function LeaveForm({
 						<AccordionContent>
 							<div className="flex flex-col border rounded-b-lg">
 								<div className="grid grid-cols-6 md:grid-cols-12 gap-4 p-2">
-									<div className="col-span-6 md:col-span-8 md:col-start-3 space-y-1">
+									<Combobox
+										as="div"
+										value={selectedPerson}
+										onChange={setSelectedPerson}
+										className="col-span-6  space-y-1"
+									>
+										<Combobox.Label className="block text-xs font-medium text-ocoblue-700">
+											Supervisor
+										</Combobox.Label>
+										<div className="relative mt-1">
+											<Combobox.Input
+												className="sm:text-sm w-full bg-ocoblue-50 bg-opacity-70 border-1 focus:shadow-inner shadow-accent-300  focus:border-ocoblue-500 block p-2.5 h-8  px-3 py-1 shadow-ocoblue-300 rounded-md border border-ocoblue-300 text-sm font-medium leading-4 text-ocoblue-700 shadow-sm hover:bg-ocoblue-50 focus:outline-none focus:ring-2 focus:ring-ocobrown-500 focus:ring-offset-1"
+												onChange={(event) => setQuery(event.target.value)}
+												displayValue={(person) => person?.name}
+											/>
+											<Combobox.Button className="absolute inset-y-0 right-0 flex items-center rounded-r-md px-2 focus:outline-none">
+												<Icon
+													icon="heroicons:chevron-up-down"
+													className="h-5 w-5 text-gray-400"
+													aria-hidden="true"
+												/>
+											</Combobox.Button>
+
+											{filteredPeople?.length > 0 && (
+												<Combobox.Options className="absolute z-10 mt-1 max-h-60 w-full overflow-auto rounded-md bg-white py-1 text-base shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none sm:text-sm">
+													{filteredPeople?.map((person) => (
+														<Combobox.Option
+															key={person?.id}
+															value={person}
+															className={({ active }) =>
+																classNames(
+																	'relative cursor-default select-none py-2 pl-3 pr-9',
+																	active
+																		? 'bg-ocobrown-600 text-white'
+																		: 'text-gray-900'
+																)
+															}
+														>
+															{({ active, selected }) => (
+																<>
+																	<div className="flex items-center">
+																		<span
+																			className={classNames(
+																				'inline-block h-2 w-2 flex-shrink-0 rounded-full',
+																				active
+																					? 'bg-ocoblue-400'
+																					: 'bg-gray-200'
+																			)}
+																			aria-hidden="true"
+																		/>
+																		<span
+																			className={classNames(
+																				'ml-3 truncate',
+																				selected &&
+																					'font-semibold'
+																			)}
+																		>
+																			{person?.name}
+																			<span className="sr-only">
+																				{' '}
+																				is{' '}
+																				{person.online
+																					? 'online'
+																					: 'offline'}
+																			</span>
+																		</span>
+																	</div>
+
+																	{selected && (
+																		<span
+																			className={classNames(
+																				'absolute inset-y-0 right-0 flex items-center pr-4',
+																				active
+																					? 'text-white'
+																					: 'text-ocobrown-600'
+																			)}
+																		>
+																			<Icon
+																				icon="heroicons:check"
+																				className="h-5 w-5"
+																				aria-hidden="true"
+																			/>
+																		</span>
+																	)}
+																</>
+															)}
+														</Combobox.Option>
+													))}
+												</Combobox.Options>
+											)}
+										</div>
+									</Combobox>
+									<div className="col-span-6   space-y-1">
 										<label
 											htmlFor="partner"
 											className="block text-xs font-medium text-ocoblue-700"

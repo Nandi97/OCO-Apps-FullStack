@@ -7,6 +7,10 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 
+generator dbml {
+  provider = "prisma-dbml-generator"
+}
+
 model Account {
   id                String  @id @default(cuid())
   userId            String
@@ -139,26 +143,29 @@ model Designation {
 }
 
 model Staff {
-  id               String             @id @default(cuid())
-  name             String
-  email            String             @unique
-  mobile           String
-  ext              Int
-  staffNo          Int
-  avatarUrl        String?
-  teamId           Int
-  designationId    Int
-  genderId         Int
-  deletedAt        DateTime?
-  createdAt        DateTime?          @default(now())
-  updatedAt        DateTime?          @updatedAt
-  books            Book[]
-  purchaseOrders   PurchaseOrder[]
+  id            String    @id @default(cuid())
+  name          String
+  email         String    @unique
+  mobile        String
+  ext           Int
+  staffNo       Int
+  avatarUrl     String?
+  teamId        Int
+  designationId Int
+  genderId      Int
+  deletedAt     DateTime?
+  createdAt     DateTime? @default(now())
+  updatedAt     DateTime? @updatedAt
+  books         Book[]
+
+  purchaseOrders PurchaseOrder[]
+
   meetingAttendees MeetingAttendee[]
-  employers        LeaveApplication[] @relation("employee")
-  supervisors      LeaveApplication[] @relation("supervisor")
-  partners         LeaveApplication[] @relation("partner")
-  hrms             LeaveApplication[] @relation("HR")
+
+  employers   LeaveApplication[] @relation("employee")
+  supervisors LeaveApplication[] @relation("supervisor")
+  partners    LeaveApplication[] @relation("partner")
+  hrms        LeaveApplication[] @relation("HR")
 
   createdById String?
   creator     User?       @relation(fields: [createdById], references: [id])
@@ -322,25 +329,69 @@ model LeaveType {
 }
 
 model LeaveApplication {
-  id                     String    @id @default(cuid())
-  employeeId             String
-  employee               Staff     @relation("employee", fields: [employeeId], references: [id])
-  supervisorId           String
-  supervisorApprovalDate DateTime?
-  supervisor             Staff     @relation("supervisor", fields: [supervisorId], references: [id])
-  leaveTypeId            String
-  type                   LeaveType @relation(fields: [leaveTypeId], references: [id])
-  duration               Int
-  startDate              DateTime
-  endDate                DateTime
-  reportDate             DateTime
-  approvingPartnerId     String
-  partnerApprovalDate    DateTime?
-  partner                Staff     @relation("partner", fields: [approvingPartnerId], references: [id])
-  approvingHRMId         String
-  HRMApprovalDate        DateTime?
-  humanResource          Staff     @relation("HR", fields: [approvingHRMId], references: [id])
-  createdAt              DateTime? @default(now())
-  updatedAt              DateTime? @updatedAt
-  deletedAt              DateTime?
+  id                 String    @id @default(cuid())
+  employeeId         String
+  employee           Staff     @relation("employee", fields: [employeeId], references: [id])
+  supervisorId       String
+  supervisor         Staff     @relation("supervisor", fields: [supervisorId], references: [id])
+  leaveTypeId        String
+  type               LeaveType @relation(fields: [leaveTypeId], references: [id])
+  duration           Int
+  startDate          DateTime
+  endDate            DateTime
+  reportDate         DateTime
+  approvingPartnerId String
+  partner            Staff     @relation("partner", fields: [approvingPartnerId], references: [id])
+  approvingHRMId     String
+  humanResource      Staff     @relation("HR", fields: [approvingHRMId], references: [id])
+
+  supervisorApprovalId String?
+  supervisorApproval   SupervisorApproval? @relation(fields: [supervisorApprovalId], references: [id])
+  partnerApprovalId    String?
+  partnerApproval      PartnerApproval?    @relation(fields: [partnerApprovalId], references: [id])
+  hRMApprovalId        String?
+  hRMApproval          HRMApproval?        @relation(fields: [hRMApprovalId], references: [id])
+
+  createdAt DateTime? @default(now())
+  updatedAt DateTime? @updatedAt
+  deletedAt DateTime?
+}
+
+model SupervisorApproval {
+  id String @id @default(cuid())
+
+  status            Int     @default(0)
+  dispprovalComment String?
+
+  createdAt DateTime? @default(now())
+  updatedAt DateTime? @updatedAt
+  deletedAt DateTime?
+
+  LeaveApplication LeaveApplication[]
+}
+
+model PartnerApproval {
+  id String @id @default(cuid())
+
+  status            Int     @default(0)
+  dispprovalComment String?
+
+  createdAt DateTime? @default(now())
+  updatedAt DateTime? @updatedAt
+  deletedAt DateTime?
+
+  LeaveApplication LeaveApplication[]
+}
+
+model HRMApproval {
+  id String @id @default(cuid())
+
+  status            Int     @default(0)
+  dispprovalComment String?
+
+  createdAt DateTime? @default(now())
+  updatedAt DateTime? @updatedAt
+  deletedAt DateTime?
+
+  LeaveApplication LeaveApplication[]
 }

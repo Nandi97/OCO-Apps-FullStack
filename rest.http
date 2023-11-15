@@ -52,3 +52,21 @@ Content-Type: application/json
 ]
 
 
+###
+# @name stopWatchItems
+POST {{host}}/leave/post HTTp/1.1
+Content-Type: application/json
+
+{
+    "employeeId": "clozjrltt002dhbj8ksb70bem",
+    "supervisorId": "clozjrlu4002fhbj8vtuaaxlv",
+    "leaveTypeId": "clozjrvtu0294hbj85ge7usxe",
+    "duration": 76,
+    "startDate": "1984-10-15T00:00:00.000Z",
+    "endDate": "2014-08-03T00:00:00.000Z",
+    "reportDate": "1971-06-21T00:00:00.000Z",
+    "approvingHRMId": "clozjrlk6000rhbj8v8qtuki9",
+    "approvingPartnerId": "clozjrm470047hbj8ebwjgedx"
+  }
+
+

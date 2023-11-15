@@ -31,6 +31,7 @@ export default function CreateLeave() {
 	});
 
 	const handleCreateLeave = (data: any) => {
+		// console.log('Data:', data);
 		mutate(data);
 	};
 	return (
