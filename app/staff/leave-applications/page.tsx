@@ -2,7 +2,7 @@ import { metadata } from '@/app/layout';
 import Layout from './components/Layout';
 
 export default function LeaveApplication() {
-	metadata.title = 'Staff List';
+	metadata.title = 'Leave Application';
 
 	return (
 		<div className="space-y-2">

@@ -14,6 +14,8 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
 							designation: true,
 
 							team: true,
+
+							leaveDays: true,
 						},
 					},
 					supervisor: {
@@ -32,6 +34,9 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
 						},
 					},
 					type: true,
+					supervisorApproval: true,
+					partnerApproval: true,
+					hRMApproval: true,
 				},
 			});
 			return res.status(200).json(data);

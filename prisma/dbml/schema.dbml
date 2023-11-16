@@ -147,9 +147,7 @@ Table Staff {
   teamId Int [not null]
   designationId Int [not null]
   genderId Int [not null]
-  deletedAt DateTime
-  createdAt DateTime [default: `now()`]
-  updatedAt DateTime
+  leaveDays LeaveDays
   books Book [not null]
   purchaseOrders PurchaseOrder [not null]
   meetingAttendees MeetingAttendee [not null]
@@ -162,6 +160,9 @@ Table Staff {
   designation Designation [not null]
   gender Gender [not null]
   team Team [not null]
+  deletedAt DateTime
+  createdAt DateTime [default: `now()`]
+  updatedAt DateTime
 }
 
 Table Book {
@@ -344,10 +345,22 @@ Table LeaveApplication {
   deletedAt DateTime
 }
 
+Table LeaveDays {
+  id String [pk]
+  daysEntitled Float [not null]
+  daysAccumulated Float [not null]
+  daysTaken Float [not null]
+  balance Float [not null]
+  staffId String [unique, not null]
+  staff Staff [not null]
+  createdAt DateTime [default: `now()`]
+  updatedAt DateTime
+  deletedAt DateTime
+}
+
 Table SupervisorApproval {
   id String [pk]
-  approval DateTime
-  dispproval DateTime
+  status Int [not null, default: 0]
   dispprovalComment String
   createdAt DateTime [default: `now()`]
   updatedAt DateTime
@@ -357,8 +370,7 @@ Table SupervisorApproval {
 
 Table PartnerApproval {
   id String [pk]
-  approval DateTime
-  dispproval DateTime
+  status Int [not null, default: 0]
   dispprovalComment String
   createdAt DateTime [default: `now()`]
   updatedAt DateTime
@@ -368,8 +380,7 @@ Table PartnerApproval {
 
 Table HRMApproval {
   id String [pk]
-  approval DateTime
-  dispproval DateTime
+  status Int [not null, default: 0]
   dispprovalComment String
   createdAt DateTime [default: `now()`]
   updatedAt DateTime
@@ -434,3 +445,5 @@ Ref: LeaveApplication.supervisorApprovalId > SupervisorApproval.id
 Ref: LeaveApplication.partnerApprovalId > PartnerApproval.id
 
 Ref: LeaveApplication.hRMApprovalId > HRMApproval.id
+
+Ref: LeaveDays.staffId - Staff.id

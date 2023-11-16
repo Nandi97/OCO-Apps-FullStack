@@ -5,6 +5,7 @@ import axios from 'axios';
 import { useQuery } from '@tanstack/react-query';
 import format from 'date-fns/format';
 import { useSession } from 'next-auth/react';
+import { Icon } from '@iconify/react/dist/iconify.js';
 
 interface LeavePrevProps {
 	url: string;
@@ -26,7 +27,7 @@ export default function LeavePrev({ url }: LeavePrevProps) {
 	console.log('Session:', session);
 	return (
 		<>
-			<div className="grid grid-cols-12 ">
+			<div className="grid grid-cols-12 gap-4">
 				<div className="w-full p-4 flex-col rounded-md shadow-md space-y-3 col-span-8 bg-ocobrown-50">
 					<div className="w-full flex items-center justify-center">
 						<Image
@@ -275,6 +276,214 @@ export default function LeavePrev({ url }: LeavePrevProps) {
 							</tbody>
 						</table>
 					</div>
+				</div>
+				<div className="col-span-4">
+					<table className="table-fixed w-full bg-ocobrown-50 rounded-md">
+						<thead className=" bg-ocoblue-600 text-ocoblue-50">
+							<tr>
+								<th
+									scope="col"
+									colSpan={2}
+									className="sticky top-0 p-3 text-center text-sm font-semibold"
+								>
+									Actions
+								</th>
+							</tr>
+						</thead>
+						<tbody className="bg-white divide-y divide-gray-200">
+							{session && session?.user?.email === prevVal?.supervisor?.email ? (
+								<tr>
+									<td className="p-2 w-full text-sm text-center border border-ocoblue-200">
+										<div className="w-full flex items-center justify-center">
+											<button className="p-2 w-24 space-x-2 rounded text-white  flex items-center justify-center bg-ocoblue-700 hover:bg-ocoblue-700/50">
+												<span>Approve</span>
+												<Icon icon="heroicons:hand-thumb-up" />
+											</button>
+										</div>
+									</td>
+									<td className="p-2 w-full text-sm text-center border border-ocoblue-200">
+										<div className="w-full flex items-center justify-center">
+											<button className="p-2 w-24 space-x-2 rounded text-white  flex items-center justify-center bg-ocobrown-600 hover:bg-ocobrown-600/50">
+												<span>Reject</span>
+												<Icon icon="heroicons:hand-thumb-down" />
+											</button>
+										</div>
+									</td>
+								</tr>
+							) : (
+								''
+							)}
+							{session && session?.user?.email === prevVal?.partner?.email ? (
+								<tr>
+									<td className="p-2 w-full text-sm text-center border border-ocoblue-200">
+										<div className="w-full flex items-center justify-center">
+											<button className="p-2 w-24 space-x-2 rounded text-white  flex items-center justify-center bg-ocoblue-700 hover:bg-ocoblue-700/50">
+												<span>Approve</span>
+												<Icon icon="heroicons:hand-thumb-up" />
+											</button>
+										</div>
+									</td>
+									<td className="p-2 w-full text-sm text-center border border-ocoblue-200">
+										<div className="w-full flex items-center justify-center">
+											<button className="p-2 w-24 space-x-2 rounded text-white  flex items-center justify-center bg-ocobrown-600 hover:bg-ocobrown-600/50">
+												<span>Reject</span>
+												<Icon icon="heroicons:hand-thumb-down" />
+											</button>
+										</div>
+									</td>
+								</tr>
+							) : (
+								''
+							)}
+							{session && session?.user?.email === prevVal?.humanResource?.email ? (
+								<tr>
+									<td className="p-2 w-full text-sm text-center border border-ocoblue-200">
+										<div className="w-full flex items-center justify-center">
+											<button className="p-2 w-24 space-x-2 rounded text-white  flex items-center justify-center bg-ocoblue-700 hover:bg-ocoblue-700/50">
+												<span>Approve</span>
+												<Icon icon="heroicons:hand-thumb-up" />
+											</button>
+										</div>
+									</td>
+									<td className="p-2 w-full text-sm text-center border border-ocoblue-200">
+										<div className="w-full flex items-center justify-center">
+											<button className="p-2 w-24 space-x-2 rounded text-white  flex items-center justify-center bg-ocobrown-600 hover:bg-ocobrown-600/50">
+												<span>Reject</span>
+												<Icon icon="heroicons:hand-thumb-down" />
+											</button>
+										</div>
+									</td>
+								</tr>
+							) : (
+								''
+							)}
+							{session && session?.user?.email === prevVal?.employee?.email ? (
+								<tr>
+									<td className="p-2 w-full text-sm text-center border border-ocoblue-200">
+										<div className="w-full flex items-center justify-center">
+											<button
+												className={`p-2 w-24 space-x-2 rounded text-white  flex items-center justify-center  ${
+													!prevVal?.supervisorApproval === null ||
+													!prevVal?.partnerApproval === null ||
+													!prevVal?.hRMApproval === null
+														? 'cursor-not-allowed bg-ocoblue-700/50'
+														: 'bg-ocoblue-700 hover:bg-ocoblue-700/90'
+												}`}
+												disabled={
+													!prevVal?.supervisorApproval === null ||
+													!prevVal?.partnerApproval === null ||
+													!prevVal?.hRMApproval === null
+														? true
+														: false
+												}
+											>
+												<span>Edit</span>
+												<Icon icon="heroicons:pencil-square" />
+											</button>
+										</div>
+									</td>
+									<td className="p-2 w-full text-sm text-center border border-ocoblue-200">
+										<div className="w-full flex items-center justify-center">
+											<button
+												disabled={
+													!prevVal?.supervisorApproval === null &&
+													!prevVal?.partnerApproval === null &&
+													!prevVal?.hRMApproval === null
+														? false
+														: true
+												}
+												className={`p-2 space-x-2 rounded text-white  flex items-center justify-center  ${
+													!prevVal?.supervisorApproval === null &&
+													!prevVal?.partnerApproval === null &&
+													!prevVal?.hRMApproval === null
+														? 'bg-ocobrown-600 hover:bg-ocobrown-600/90'
+														: 'cursor-not-allowed bg-ocobrown-600/50'
+												}`}
+											>
+												<span>Save PDF</span>
+												<Icon icon="material-symbols:download" />
+											</button>
+										</div>
+									</td>
+								</tr>
+							) : (
+								''
+							)}
+							<tr>
+								<td className="p-2 w-full text-sm border border-ocoblue-200">
+									<div className="flex flex-col">
+										<span className="text-xs">Supervisor :</span>
+										<span className="text-ocobrown-600">
+											{prevVal?.supervisor?.name}
+										</span>
+									</div>
+								</td>
+								<td className="p-2 w-full text-sm border border-ocoblue-200">
+									<div className="flex flex-col">
+										<span className="text-xs">Approved On :</span>
+										<span className="text-ocobrown-600">
+											{prevVal?.supervisorApproval?.status === 0 ||
+											prevVal?.supervisorApproval === null
+												? 'Pending Approval'
+												: prevVal?.supervisorApproval?.status === 1
+												? prevVal?.supervisorApproval?.updatedAt
+												: prevVal?.supervisorApproval?.disapprovalComment}
+										</span>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td className="p-2 w-full text-sm border border-ocoblue-200">
+									<div className="flex flex-col">
+										<span className="text-xs">Partner :</span>
+										<span className="text-ocobrown-600">
+											{prevVal?.partner?.name}
+										</span>
+									</div>
+								</td>
+								<td className="p-2 w-full text-sm border border-ocoblue-200">
+									<div className="flex flex-col">
+										<span className="text-xs">Approved On :</span>
+										<span className="text-ocobrown-600">
+											{prevVal?.partnerApproval?.status === 0 ||
+											prevVal?.partnerApproval === null
+												? 'Pending Approval'
+												: prevVal?.partnerApproval?.status === 1
+												? prevVal?.partnerApproval?.updatedAt
+												: prevVal?.partnerApproval?.disapprovalComment}
+										</span>
+									</div>
+								</td>
+							</tr>
+							{prevVal?.humanResource ? (
+								<tr>
+									<td className="p-2 w-full text-sm border border-ocoblue-200">
+										<div className="flex flex-col">
+											<span className="text-xs">Human Resource Manger :</span>
+											<span className="text-ocobrown-600">
+												{prevVal?.humanResource?.name}
+											</span>
+										</div>
+									</td>
+									<td className="p-2 w-full text-sm border border-ocoblue-200">
+										<div className="flex flex-col">
+											<span className="text-xs">Approved On :</span>
+											<span className="text-ocobrown-600">
+												{prevVal?.hRMApproval?.status === 0 ||
+												prevVal?.hRMApproval === null
+													? 'Pending Approval'
+													: prevVal?.hRMApproval?.status === 1
+													? prevVal?.hRMApproval?.updatedAt
+													: prevVal?.hRMApproval?.disapprovalComment}
+											</span>
+										</div>
+									</td>
+								</tr>
+							) : (
+								''
+							)}
+						</tbody>
+					</table>
 				</div>
 			</div>
 		</>

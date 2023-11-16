@@ -143,9 +143,9 @@ model Designation {
 }
 
 model Staff {
-  id            String    @id @default(cuid())
+  id            String  @id @default(cuid())
   name          String
-  email         String    @unique
+  email         String  @unique
   mobile        String
   ext           Int
   staffNo       Int
@@ -153,10 +153,10 @@ model Staff {
   teamId        Int
   designationId Int
   genderId      Int
-  deletedAt     DateTime?
-  createdAt     DateTime? @default(now())
-  updatedAt     DateTime? @updatedAt
-  books         Book[]
+
+  leaveDays LeaveDays?
+
+  books Book[]
 
   purchaseOrders PurchaseOrder[]
 
@@ -172,6 +172,10 @@ model Staff {
   designation Designation @relation(fields: [designationId], references: [id])
   gender      Gender      @relation(fields: [genderId], references: [id])
   team        Team        @relation(fields: [teamId], references: [id])
+
+  deletedAt DateTime?
+  createdAt DateTime? @default(now())
+  updatedAt DateTime? @updatedAt
 }
 
 model Book {
@@ -357,6 +361,21 @@ model LeaveApplication {
   deletedAt DateTime?
 }
 
+model LeaveDays {
+  id              String @id @default(cuid())
+  daysEntitled    Float
+  daysAccumulated Float
+  daysTaken       Float
+  balance         Float
+
+  staffId String @unique
+  staff   Staff  @relation(fields: [staffId], references: [id])
+
+  createdAt DateTime? @default(now())
+  updatedAt DateTime? @updatedAt
+  deletedAt DateTime?
+}
+
 model SupervisorApproval {
   id String @id @default(cuid())
 
@@ -373,8 +392,8 @@ model SupervisorApproval {
 model PartnerApproval {
   id String @id @default(cuid())
 
-  status            Int     @default(0)
-  dispprovalComment String?
+  status             Int     @default(0)
+  disapprovalComment String?
 
   createdAt DateTime? @default(now())
   updatedAt DateTime? @updatedAt
