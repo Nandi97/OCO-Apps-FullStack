@@ -47,6 +47,7 @@
 	},
 	"devDependencies": {
 		"@iconify/react": "^4.1.1",
+		"@mightymeld/runtime": "^0.1.38",
 		"@types/lodash": "^4.14.198",
 		"@types/node": "20.8.9",
 		"prettier": "3.0.3",

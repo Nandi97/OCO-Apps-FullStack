@@ -371,7 +371,7 @@ Table SupervisorApproval {
 Table PartnerApproval {
   id String [pk]
   status Int [not null, default: 0]
-  dispprovalComment String
+  disapprovalComment String
   createdAt DateTime [default: `now()`]
   updatedAt DateTime
   deletedAt DateTime

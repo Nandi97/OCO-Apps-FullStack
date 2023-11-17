@@ -1,0 +1,12 @@
+{
+  "run": "pnpm run dev",
+  "run_prettier": true,
+  "include": [
+    "app",
+    "components",
+    ".prettierrc.json"
+  ],
+  "web_server_url": "http://localhost:3000",
+  "editor": "url:vscode://file/%FILENAME:%LINE:%COLUMN",
+  "tailwind": true
+}

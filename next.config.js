@@ -1,4 +1,5 @@
 /** @type {import('next').NextConfig} */
+const { pluginoptions } = require('@mightymeld/runtime');
 const nextConfig = {
 	images: {
 		domains: [
@@ -18,6 +19,9 @@ const nextConfig = {
 		// !! WARN !!
 		ignoreBuildErrors: true,
 	},
+	experimental: {
+		swcPlugins: [['@mightymeld/runtime/swc-plugin-mightymeld', pluginoptions()]],
+	},
 };
 
-module.exports = nextConfig;
+module.exports = process.env.MIGHTYMELD ? nextConfig : {};
