@@ -147,7 +147,7 @@ export default function EditStaff({ setToggle, staffDetails }: EditStaffFormProp
 					type="button"
 					className="absolute top-3 right-2.5 text-ocoblue-400 bg-transparent hover:bg-ocoblue-200 hover:text-ocoblue-900 rounded-lg text-sm w-8 h-8 ml-auto inline-flex justify-center items-center"
 				>
-					<Icon icon="heroicons:x-mark" className="text-lg text-ocobrown-600" />
+					<Icon icon="heroicons:x-mark" className="text-lg text-primary-600" />
 				</button>
 
 				<h1 className="mb-4 text-xl font-medium text-ocoblue-900">{title}</h1>
@@ -165,7 +165,7 @@ export default function EditStaff({ setToggle, staffDetails }: EditStaffFormProp
 						{/* Submit Form Button  */}
 						<button
 							type="submit"
-							className="flex items-center gap-2 p-2 text-sm font-medium leading-4 text-white border rounded-md shadow-sm bg-ocobrown-600 hover:opacity-80 border-ocobrown-300 focus:outline-none focus:ring-2 focus:ring-ocobrown-500 focus:ring-offset-1"
+							className="flex items-center gap-2 p-2 text-sm font-medium leading-4 text-white border rounded-md shadow-sm bg-primary-600 hover:opacity-80 border-primary-300 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-1"
 						>
 							Submit Form
 						</button>

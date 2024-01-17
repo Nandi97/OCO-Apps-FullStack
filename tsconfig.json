@@ -33,6 +33,6 @@
 		"pages/api/books/addBook.ts",
 		"components/forms/meeting/MeetingForm.tsx",
 		"app/staff/staff-list/[slug]/vcard/page.jsx"
-, "hooks/useStaffDetails.jsx"	],
+, "hooks/useStaffDetails.jsx", "services/mailService.tsx"	],
 	"exclude": ["node_modules"]
 }

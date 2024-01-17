@@ -100,7 +100,7 @@ export default function Book(url: URL) {
 						</div>
 						{/* Copies  */}
 						<div className="flex items-center w-full col-span-8 text-sm font-semibold">
-							<div className="p-2 space-x-4 rounded-md bg-ocobrown-400 text-ocoblue-50 ">
+							<div className="p-2 space-x-4 rounded-md bg-primary-400 text-ocoblue-50 ">
 								<span className="inline-flex h-full rounded-md ">
 									Available Copies
 								</span>

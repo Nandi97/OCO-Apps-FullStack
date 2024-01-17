@@ -1,6 +1,7 @@
-import prisma from '../../../prisma/client';
+import prisma from '@/lib/prisma';
 import { getServerSession } from 'next-auth';
-import { authOptions } from '../auth/[...nextauth]';
+
+import { authOptions } from '@/pages/api/auth/[...nextauth]';
 
 export const config = {
 	api: {

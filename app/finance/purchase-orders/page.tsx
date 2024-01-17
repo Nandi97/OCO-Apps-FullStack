@@ -84,7 +84,7 @@ export default function PurchaseOrder() {
 			</div>
 			<div className="shadow overscroll-none ring-1 ring-black ring-opacity-5 md:rounded-md">
 				<div className="flex-col hidden lg:flex">
-					<table className="min-w-full divide-y divide-ocobrown-100">
+					<table className="min-w-full divide-y divide-primary-100">
 						<thead className="sticky z-10 top-12 bg-ocoblue-600 text-ocoblue-50">
 							<tr>
 								<th
@@ -145,7 +145,7 @@ export default function PurchaseOrder() {
 											>
 												<svg
 													aria-hidden="true"
-													className="w-8 h-8 mr-2 text-ocoblue-200 animate-spin fill-ocobrown-600"
+													className="w-8 h-8 mr-2 text-ocoblue-200 animate-spin fill-primary-600"
 													viewBox="0 0 100 101"
 													fill="none"
 													xmlns="http://www.w3.org/2000/svg"
@@ -167,7 +167,7 @@ export default function PurchaseOrder() {
 									return (
 										<tr
 											key={item?.id}
-											className={`hover:bg-ocobrown-100/95 ${
+											className={`hover:bg-primary-100/95 ${
 												index % 2 && index !== 0 ? 'bg-ocoblue-100/95' : ''
 											}`}
 										>
@@ -176,7 +176,7 @@ export default function PurchaseOrder() {
 											</td>
 											<td className="p-2 text-sm text-center">
 												<Link
-													className="text-ocobrown-600 hover:text-ocobrown-600/90 font-medium"
+													className="text-primary-600 hover:text-primary-600/90 font-medium"
 													href={`${pathname}/${item?.id}`}
 												>
 													{item?.poNumber}
@@ -203,7 +203,7 @@ export default function PurchaseOrder() {
 											<td className="relative py-2 pl-3 pr-4 text-sm font-medium text-right whitespace-nowrap sm:pr-6">
 												<button
 													type="button"
-													className="flex items-center justify-center w-5 h-5 p-1 rounded hover:bg-ocobrown-700 hover:bg-opacity-20"
+													className="flex items-center justify-center w-5 h-5 p-1 rounded hover:bg-primary-700 hover:bg-opacity-20"
 												>
 													<OptDropdown
 														optBtn={tableOptBtnTxt}

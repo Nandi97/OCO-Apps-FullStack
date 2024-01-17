@@ -28,7 +28,7 @@ export default function LeavePrev({ url }: LeavePrevProps) {
 	return (
 		<>
 			<div className="grid grid-cols-12 gap-4">
-				<div className="w-full p-4 flex-col rounded-md shadow-md space-y-3 col-span-8 bg-ocobrown-50">
+				<div className="w-full p-4 flex-col rounded-md shadow-md space-y-3 col-span-8 bg-primary-50">
 					<div className="w-full flex items-center justify-center">
 						<Image
 							src={logo}
@@ -39,7 +39,7 @@ export default function LeavePrev({ url }: LeavePrevProps) {
 							className="w-36"
 						/>
 					</div>
-					<div className="w-full flex items-center justify-center bg-ocobrown-600">
+					<div className="w-full flex items-center justify-center bg-primary-600">
 						<p className="font-bold uppercase text-2xl text-white">Leave Application</p>
 					</div>
 					<div className="w-full flex items-center justify-center">
@@ -56,7 +56,7 @@ export default function LeavePrev({ url }: LeavePrevProps) {
 									<td className="px-2 border">
 										<div className="flex flex-col">
 											<span className="text-xs">Name:</span>
-											<span className="text-ocobrown-600">
+											<span className="text-primary-600">
 												{prevVal?.employee?.name}
 											</span>
 										</div>
@@ -64,7 +64,7 @@ export default function LeavePrev({ url }: LeavePrevProps) {
 									<td className="px-2 border">
 										<div className="flex flex-col">
 											<span className="text-xs">Payroll Number:</span>
-											<span className="text-ocobrown-600">
+											<span className="text-primary-600">
 												{prevVal?.employee?.staffNo}
 											</span>
 										</div>
@@ -74,7 +74,7 @@ export default function LeavePrev({ url }: LeavePrevProps) {
 									<td className="px-2 border">
 										<div className="flex flex-col">
 											<span className="text-xs">Title:</span>
-											<span className="text-ocobrown-600">
+											<span className="text-primary-600">
 												{prevVal?.employee?.designation?.name}
 											</span>
 										</div>
@@ -82,7 +82,7 @@ export default function LeavePrev({ url }: LeavePrevProps) {
 									<td className="px-2 border">
 										<div className="flex flex-col">
 											<span className="text-xs">Team:</span>
-											<span className="text-ocobrown-600">
+											<span className="text-primary-600">
 												{prevVal?.employee?.team?.name}
 											</span>
 										</div>
@@ -105,7 +105,7 @@ export default function LeavePrev({ url }: LeavePrevProps) {
 									<td className="px-2 border">
 										<div className="flex flex-col">
 											<span className="text-xs">Leave Type:</span>
-											<span className="text-ocobrown-600">
+											<span className="text-primary-600">
 												{prevVal?.type?.name}
 											</span>
 										</div>
@@ -113,7 +113,7 @@ export default function LeavePrev({ url }: LeavePrevProps) {
 									<td className="px-2 border">
 										<div className="flex flex-col">
 											<span className="text-xs">Number of Leave Days:</span>
-											<span className="text-ocobrown-600">
+											<span className="text-primary-600">
 												{prevVal?.duration}
 											</span>
 										</div>
@@ -123,7 +123,7 @@ export default function LeavePrev({ url }: LeavePrevProps) {
 									<td className="px-2 border">
 										<div className="flex flex-col">
 											<span className="text-xs">Start Leave On:</span>
-											<span className="text-ocobrown-600">
+											<span className="text-primary-600">
 												{prevVal?.startDate
 													? format(
 															new Date(prevVal?.startDate),
@@ -136,7 +136,7 @@ export default function LeavePrev({ url }: LeavePrevProps) {
 									<td className="px-2 border">
 										<div className="flex flex-col">
 											<span className="text-xs">End Leave On:</span>
-											<span className="text-ocobrown-600">
+											<span className="text-primary-600">
 												{prevVal?.endDate
 													? format(
 															new Date(prevVal?.endDate),
@@ -151,7 +151,7 @@ export default function LeavePrev({ url }: LeavePrevProps) {
 									<td className="px-2 border">
 										<div className="flex flex-col">
 											<span className="text-xs">Reporting Back On:</span>
-											<span className="text-ocobrown-600">
+											<span className="text-primary-600">
 												{prevVal?.reportDate
 													? format(
 															new Date(prevVal?.reportDate),
@@ -164,7 +164,7 @@ export default function LeavePrev({ url }: LeavePrevProps) {
 									<td className="px-2 border">
 										<div className="flex flex-col">
 											<span className="text-xs">Applied on:</span>
-											<span className="text-ocobrown-600">
+											<span className="text-primary-600">
 												{prevVal?.createdAt
 													? format(
 															new Date(prevVal?.createdAt),
@@ -192,7 +192,7 @@ export default function LeavePrev({ url }: LeavePrevProps) {
 									<td className=" border">
 										<div className="flex flex-col">
 											<span>Supervisor:</span>
-											<span className="text-ocobrown-600">
+											<span className="text-primary-600">
 												{prevVal?.supervisor?.name}
 											</span>
 										</div>
@@ -200,7 +200,7 @@ export default function LeavePrev({ url }: LeavePrevProps) {
 									<td className=" border">
 										<div className="flex flex-col">
 											<span>Approved On:</span>
-											<span className="text-ocobrown-600">
+											<span className="text-primary-600">
 												Pending Approval
 											</span>
 										</div>
@@ -210,7 +210,7 @@ export default function LeavePrev({ url }: LeavePrevProps) {
 									<td className=" border">
 										<div className="flex flex-col">
 											<span>HR Manager:</span>
-											<span className="text-ocobrown-600">
+											<span className="text-primary-600">
 												{prevVal?.humanResource?.name}
 											</span>
 										</div>
@@ -218,7 +218,7 @@ export default function LeavePrev({ url }: LeavePrevProps) {
 									<td className=" border">
 										<div className="flex flex-col">
 											<span>Approved On:</span>
-											<span className="text-ocobrown-600">
+											<span className="text-primary-600">
 												Pending Approval
 											</span>
 										</div>
@@ -228,7 +228,7 @@ export default function LeavePrev({ url }: LeavePrevProps) {
 									<td className=" border">
 										<div className="flex flex-col">
 											<span>Deputy/ Managing Partner:</span>
-											<span className="text-ocobrown-600">
+											<span className="text-primary-600">
 												{prevVal?.partner?.name}
 											</span>
 										</div>
@@ -236,7 +236,7 @@ export default function LeavePrev({ url }: LeavePrevProps) {
 									<td className=" border">
 										<div className="flex flex-col">
 											<span>Approved On:</span>
-											<span className="text-ocobrown-600">
+											<span className="text-primary-600">
 												Pending Approval
 											</span>
 										</div>
@@ -246,7 +246,7 @@ export default function LeavePrev({ url }: LeavePrevProps) {
 						</table>
 					</div>
 					<div className="w-full flex items-center justify-center flex-col space-y-2">
-						<h1 className="text-ocobrown-600">For Official Use Only - HR Department</h1>
+						<h1 className="text-primary-600">For Official Use Only - HR Department</h1>
 						<table className="table-auto w-2/3">
 							<tbody>
 								<tr>
@@ -278,7 +278,7 @@ export default function LeavePrev({ url }: LeavePrevProps) {
 					</div>
 				</div>
 				<div className="col-span-4">
-					<table className="table-fixed w-full bg-ocobrown-50 rounded-md">
+					<table className="table-fixed w-full bg-primary-50 rounded-md">
 						<thead className=" bg-ocoblue-600 text-ocoblue-50">
 							<tr>
 								<th
@@ -303,7 +303,7 @@ export default function LeavePrev({ url }: LeavePrevProps) {
 									</td>
 									<td className="p-2 w-full text-sm text-center border border-ocoblue-200">
 										<div className="w-full flex items-center justify-center">
-											<button className="p-2 w-24 space-x-2 rounded text-white  flex items-center justify-center bg-ocobrown-600 hover:bg-ocobrown-600/50">
+											<button className="p-2 w-24 space-x-2 rounded text-white  flex items-center justify-center bg-primary-600 hover:bg-primary-600/50">
 												<span>Reject</span>
 												<Icon icon="heroicons:hand-thumb-down" />
 											</button>
@@ -325,7 +325,7 @@ export default function LeavePrev({ url }: LeavePrevProps) {
 									</td>
 									<td className="p-2 w-full text-sm text-center border border-ocoblue-200">
 										<div className="w-full flex items-center justify-center">
-											<button className="p-2 w-24 space-x-2 rounded text-white  flex items-center justify-center bg-ocobrown-600 hover:bg-ocobrown-600/50">
+											<button className="p-2 w-24 space-x-2 rounded text-white  flex items-center justify-center bg-primary-600 hover:bg-primary-600/50">
 												<span>Reject</span>
 												<Icon icon="heroicons:hand-thumb-down" />
 											</button>
@@ -347,7 +347,7 @@ export default function LeavePrev({ url }: LeavePrevProps) {
 									</td>
 									<td className="p-2 w-full text-sm text-center border border-ocoblue-200">
 										<div className="w-full flex items-center justify-center">
-											<button className="p-2 w-24 space-x-2 rounded text-white  flex items-center justify-center bg-ocobrown-600 hover:bg-ocobrown-600/50">
+											<button className="p-2 w-24 space-x-2 rounded text-white  flex items-center justify-center bg-primary-600 hover:bg-primary-600/50">
 												<span>Reject</span>
 												<Icon icon="heroicons:hand-thumb-down" />
 											</button>
@@ -396,8 +396,8 @@ export default function LeavePrev({ url }: LeavePrevProps) {
 													!prevVal?.supervisorApproval === null &&
 													!prevVal?.partnerApproval === null &&
 													!prevVal?.hRMApproval === null
-														? 'bg-ocobrown-600 hover:bg-ocobrown-600/90'
-														: 'cursor-not-allowed bg-ocobrown-600/50'
+														? 'bg-primary-600 hover:bg-primary-600/90'
+														: 'cursor-not-allowed bg-primary-600/50'
 												}`}
 											>
 												<span>Save PDF</span>
@@ -413,7 +413,7 @@ export default function LeavePrev({ url }: LeavePrevProps) {
 								<td className="p-2 w-full text-sm border border-ocoblue-200">
 									<div className="flex flex-col">
 										<span className="text-xs">Supervisor :</span>
-										<span className="text-ocobrown-600">
+										<span className="text-primary-600">
 											{prevVal?.supervisor?.name}
 										</span>
 									</div>
@@ -421,7 +421,7 @@ export default function LeavePrev({ url }: LeavePrevProps) {
 								<td className="p-2 w-full text-sm border border-ocoblue-200">
 									<div className="flex flex-col">
 										<span className="text-xs">Approved On :</span>
-										<span className="text-ocobrown-600">
+										<span className="text-primary-600">
 											{prevVal?.supervisorApproval?.status === 0 ||
 											prevVal?.supervisorApproval === null
 												? 'Pending Approval'
@@ -436,7 +436,7 @@ export default function LeavePrev({ url }: LeavePrevProps) {
 								<td className="p-2 w-full text-sm border border-ocoblue-200">
 									<div className="flex flex-col">
 										<span className="text-xs">Partner :</span>
-										<span className="text-ocobrown-600">
+										<span className="text-primary-600">
 											{prevVal?.partner?.name}
 										</span>
 									</div>
@@ -444,7 +444,7 @@ export default function LeavePrev({ url }: LeavePrevProps) {
 								<td className="p-2 w-full text-sm border border-ocoblue-200">
 									<div className="flex flex-col">
 										<span className="text-xs">Approved On :</span>
-										<span className="text-ocobrown-600">
+										<span className="text-primary-600">
 											{prevVal?.partnerApproval?.status === 0 ||
 											prevVal?.partnerApproval === null
 												? 'Pending Approval'
@@ -460,7 +460,7 @@ export default function LeavePrev({ url }: LeavePrevProps) {
 									<td className="p-2 w-full text-sm border border-ocoblue-200">
 										<div className="flex flex-col">
 											<span className="text-xs">Human Resource Manger :</span>
-											<span className="text-ocobrown-600">
+											<span className="text-primary-600">
 												{prevVal?.humanResource?.name}
 											</span>
 										</div>
@@ -468,7 +468,7 @@ export default function LeavePrev({ url }: LeavePrevProps) {
 									<td className="p-2 w-full text-sm border border-ocoblue-200">
 										<div className="flex flex-col">
 											<span className="text-xs">Approved On :</span>
-											<span className="text-ocobrown-600">
+											<span className="text-primary-600">
 												{prevVal?.hRMApproval?.status === 0 ||
 												prevVal?.hRMApproval === null
 													? 'Pending Approval'

@@ -24,7 +24,7 @@ export default function UserPanel({ sessionData }: any) {
 				>
 					`
 					<div
-						className="h-20 w-20 rounded-full shadow-md shadow-ocobrown-300"
+						className="h-20 w-20 rounded-full shadow-md shadow-primary-300"
 						style={{
 							backgroundImage: `url("https://via.placeholder.com/500")`,
 						}}
@@ -40,7 +40,7 @@ export default function UserPanel({ sessionData }: any) {
 						/>
 					</div>
 					<h1 className="font-bold text-lg">{currentUser?.name}</h1>
-					<span className="font-normal text-ocobrown-600">{currentUser?.email}</span>{' '}
+					<span className="font-normal text-primary-600">{currentUser?.email}</span>{' '}
 				</Link>
 			))}
 		</>

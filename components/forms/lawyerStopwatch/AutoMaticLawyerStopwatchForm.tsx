@@ -121,7 +121,7 @@ export default function ManualLawyerStopwatchForm({
 						<div className="flex items-center">
 							<button
 								type="button"
-								className="rounded-md text-ocobrown-50 bg-ocobrown-600  p-2"
+								className="rounded-md text-primary-50 bg-primary-600  p-2"
 							>
 								<Icon icon="heroicons:plus" />
 							</button>
@@ -144,7 +144,7 @@ export default function ManualLawyerStopwatchForm({
 						</Combobox.Label>
 						<div className="relative mt-2">
 							<Combobox.Input
-								className="sm:text-sm w-full bg-ocoblue-50 bg-opacity-70 border-1 focus:shadow-inner shadow-accent-300  focus:border-ocoblue-500 block p-2.5 h-8  px-3 py-1 shadow-ocoblue-300 rounded-md border border-ocoblue-300 text-sm font-medium leading-4 text-ocoblue-700 shadow-sm hover:bg-ocoblue-50 focus:outline-none focus:ring-2 focus:ring-ocobrown-500 focus:ring-offset-1"
+								className="sm:text-sm w-full bg-ocoblue-50 bg-opacity-70 border-1 focus:shadow-inner shadow-accent-300  focus:border-ocoblue-500 block p-2.5 h-8  px-3 py-1 shadow-ocoblue-300 rounded-md border border-ocoblue-300 text-sm font-medium leading-4 text-ocoblue-700 shadow-sm hover:bg-ocoblue-50 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-1"
 								onChange={(event) => debouncedSetQuery(event.target.value)}
 								displayValue={(matter) => matter?.code}
 							/>
@@ -166,7 +166,7 @@ export default function ManualLawyerStopwatchForm({
 												classNames(
 													'relative cursor-default select-none py-2 pl-3 pr-9',
 													active
-														? 'bg-ocobrown-600 text-white'
+														? 'bg-primary-600 text-white'
 														: 'text-ocoblue-900'
 												)
 											}
@@ -231,7 +231,7 @@ export default function ManualLawyerStopwatchForm({
 								name="taskId"
 								onChange={onSelectChange}
 								value={formValues?.taskId}
-								className="sm:text-sm w-full bg-ocoblue-50 bg-opacity-70 border-1 focus:shadow-inner shadow-accent-300  focus:border-ocoblue-500 block p-2.5 h-8  px-3 py-1 shadow-ocoblue-300 rounded-md border border-ocoblue-300 text-sm font-medium leading-4 text-ocoblue-700 shadow-sm hover:bg-ocoblue-50 focus:outline-none focus:ring-2 focus:ring-ocobrown-500 focus:ring-offset-1"
+								className="sm:text-sm w-full bg-ocoblue-50 bg-opacity-70 border-1 focus:shadow-inner shadow-accent-300  focus:border-ocoblue-500 block p-2.5 h-8  px-3 py-1 shadow-ocoblue-300 rounded-md border border-ocoblue-300 text-sm font-medium leading-4 text-ocoblue-700 shadow-sm hover:bg-ocoblue-50 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-1"
 							>
 								<option
 									disabled
@@ -242,7 +242,7 @@ export default function ManualLawyerStopwatchForm({
 								</option>
 								{stopWatchItemTypes?.map((item) => (
 									<option
-										className="border-ocoblue-300 p-2.5 h-8  px-3 py-1 text-sm font-medium leading-4 text-ocoblue-700 shadow-sm hover:bg-ocobrown-500"
+										className="border-ocoblue-300 p-2.5 h-8  px-3 py-1 text-sm font-medium leading-4 text-ocoblue-700 shadow-sm hover:bg-primary-500"
 										key={item.id}
 										value={item.id}
 									>
@@ -265,7 +265,7 @@ export default function ManualLawyerStopwatchForm({
 								id="narration"
 								value={formValues?.narration}
 								onChange={onTextAreaChange}
-								className="sm:text-sm w-full md:h-14 bg-ocoblue-50 bg-opacity-70 border-1 focus:shadow-inner shadow-accent-300  focus:border-ocoblue-500 block p-2.5 h-8  px-3 py-1 shadow-ocoblue-300 rounded-md border border-ocoblue-300 text-sm font-medium leading-4 text-ocoblue-700 shadow-sm hover:bg-ocoblue-50 focus:outline-none focus:ring-2 focus:ring-ocobrown-500 focus:ring-offset-1"
+								className="sm:text-sm w-full md:h-14 bg-ocoblue-50 bg-opacity-70 border-1 focus:shadow-inner shadow-accent-300  focus:border-ocoblue-500 block p-2.5 h-8  px-3 py-1 shadow-ocoblue-300 rounded-md border border-ocoblue-300 text-sm font-medium leading-4 text-ocoblue-700 shadow-sm hover:bg-ocoblue-50 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-1"
 							/>
 						</div>
 					</div>

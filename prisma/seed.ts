@@ -56,10 +56,12 @@ async function main() {
 
 	//Taxes
 	for (const tax of taxes) {
-		await prisma.tax.create({
-			data: {
+		await prisma.tax.upsert({
+			where: { name: tax.name },
+			update: {},
+			create: {
 				name: tax.name,
-				value: tax.value,
+				description: tax.description,
 				rate: tax.rate,
 				deletedAt: null,
 			},

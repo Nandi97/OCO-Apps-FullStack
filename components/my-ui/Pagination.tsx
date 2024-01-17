@@ -90,7 +90,7 @@ export default function Pagination({
 							</div>
 							<select
 								onChange={handlePerPageChange}
-								className="sm:text-sm w-16 bg-ocoblue-50 bg-opacity-70 border-1 focus:shadow-inner shadow-accent-300  focus:border-ocoblue-500 block p-2.5 h-8  px-3 py-1 shadow-ocoblue-300 rounded-md border border-ocoblue-300 text-sm font-medium leading-4 text-ocoblue-700 shadow-sm hover:bg-ocoblue-50 focus:outline-none focus:ring-2 focus:ring-ocobrown-500 focus:ring-offset-1"
+								className="sm:text-sm w-16 bg-ocoblue-50 bg-opacity-70 border-1 focus:shadow-inner shadow-accent-300  focus:border-ocoblue-500 block p-2.5 h-8  px-3 py-1 shadow-ocoblue-300 rounded-md border border-ocoblue-300 text-sm font-medium leading-4 text-ocoblue-700 shadow-sm hover:bg-ocoblue-50 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-1"
 							>
 								<option value="" disabled>
 									Select Rows
@@ -117,7 +117,7 @@ export default function Pagination({
 											className={` focus:z-20 relative px-2  inline-flex items-center rounded-l-md py-2 text-sm font-medium border ${
 												currentPage < 2
 													? 'cursor-not-allowed text-slate-400 border-ocoblue-200'
-													: 'border-ocoblue-400 bg-ocoblue-400 text-ocoblue-50   hover:bg-ocobrown-500 hover:text-ocobrown-50'
+													: 'border-ocoblue-400 bg-ocoblue-400 text-ocoblue-50   hover:bg-primary-500 hover:text-primary-50'
 											}`}
 										>
 											<span className="sr-only">Previous</span>
@@ -138,7 +138,7 @@ export default function Pagination({
 												}
 												className={`relative inline-flex items-center border ${
 													currentPage === parseInt(item?.label)
-														? 'border-ocobrown-500 text-ocobrown-50 bg-ocobrown-500'
+														? 'border-primary-500 text-primary-50 bg-primary-500'
 														: 'border-ocoblue-400 bg-white text-ocoblue-500 hover:bg-ocoblue-50'
 												} px-4 py-2 text-sm font-medium  focus:z-20`}
 											>
@@ -154,7 +154,7 @@ export default function Pagination({
 											className={`relative inline-flex items-center rounded-r-md border  focus:z-20 px-2 py-2 ${
 												currentPage === lastPage
 													? 'cursor-not-allowed text-slate-400 border-ocoblue-200'
-													: 'border-ocoblue-400 bg-ocoblue-400 text-ocoblue-50   hover:bg-ocobrown-500 hover:text-ocobrown-50'
+													: 'border-ocoblue-400 bg-ocoblue-400 text-ocoblue-50   hover:bg-primary-500 hover:text-primary-50'
 											}`}
 											onClick={() =>
 												handlePageChange(parseInt(currentPage) + 1)

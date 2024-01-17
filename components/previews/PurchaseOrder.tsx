@@ -40,7 +40,7 @@ export default function PurchaseOrderPreview({
 					<div className="col-span-2"></div>
 					<div className="col-span-5">
 						<table className="table-auto w-full text-sm text-left text-ocoblue-500">
-							<thead className="text-xs uppercase  bg-ocoblue-50 text-ocobrown-600">
+							<thead className="text-xs uppercase  bg-ocoblue-50 text-primary-600">
 								<tr>
 									<th scope="col" colSpan={3} className=" p-1 w-full text-center">
 										PURCHASE ORDER
@@ -78,7 +78,7 @@ export default function PurchaseOrderPreview({
 				<div className="grid grid-cols-12 gap-2">
 					<div className="col-span-5">
 						<table className="table-auto w-full text-sm text-left text-ocoblue-500 border">
-							<thead className="text-xs uppercase  bg-ocoblue-50 text-ocobrown-600 border-b">
+							<thead className="text-xs uppercase  bg-ocoblue-50 text-primary-600 border-b">
 								<tr>
 									<th scope="col" colSpan={3} className="p-1 w-full">
 										Vendor
@@ -131,7 +131,7 @@ export default function PurchaseOrderPreview({
 										className="px-2 font-medium text-ocoblue-900 whitespace-nowrap "
 									>
 										Email:
-										<span className="text-sm text-ocobrown-500 font-normal px-1">
+										<span className="text-sm text-primary-500 font-normal px-1">
 											{formValues?.email}
 										</span>
 									</th>
@@ -142,7 +142,7 @@ export default function PurchaseOrderPreview({
 					<div className="col-span-2"></div>
 					<div className="col-span-5">
 						<table className="table-auto w-full text-sm text-left text-ocoblue-500 border">
-							<thead className="text-xs uppercase  bg-ocoblue-50 text-ocobrown-600 border-b">
+							<thead className="text-xs uppercase  bg-ocoblue-50 text-primary-600 border-b">
 								<tr>
 									<th scope="col" colSpan={3} className="p-1 w-full">
 										Ship To
@@ -193,7 +193,7 @@ export default function PurchaseOrderPreview({
 										className="px-2 font-medium text-ocoblue-900 whitespace-nowrap "
 									>
 										Email:
-										<span className="text-sm text-ocobrown-500 font-normal px-1">
+										<span className="text-sm text-primary-500 font-normal px-1">
 											legal@oraro.co.ke
 										</span>
 									</th>
@@ -205,7 +205,7 @@ export default function PurchaseOrderPreview({
 				{/* SECTION C */}
 				<div className="w-full">
 					<table className="table-auto w-full text-sm text-left text-ocoblue-500 border">
-						<thead className="text-xs uppercase  bg-ocoblue-50 text-ocobrown-600 border-b">
+						<thead className="text-xs uppercase  bg-ocoblue-50 text-primary-600 border-b">
 							<tr className="divide-y">
 								<th scope="col" colSpan={2} className="p-1 w-full border-r">
 									Description
@@ -273,7 +273,7 @@ export default function PurchaseOrderPreview({
 									<tr>
 										<td
 											colSpan={6}
-											className="px-2 border-r text-right font-medium  text-ocobrown-600 uppercase"
+											className="px-2 border-r text-right font-medium  text-primary-600 uppercase"
 										>
 											Total
 										</td>
@@ -290,7 +290,7 @@ export default function PurchaseOrderPreview({
 								<tr>
 									<td
 										colSpan={6}
-										className="px-2 border-r text-right font-medium  text-ocobrown-600 uppercase"
+										className="px-2 border-r text-right font-medium  text-primary-600 uppercase"
 									>
 										Total
 									</td>
@@ -309,7 +309,7 @@ export default function PurchaseOrderPreview({
 				<div className="grid grid-cols-12 gap-6">
 					<div className="col-span-3">
 						<table className="table-auto w-full text-sm text-left text-ocoblue-500 border">
-							<thead className="text-xs uppercase  bg-ocoblue-50 text-ocobrown-600">
+							<thead className="text-xs uppercase  bg-ocoblue-50 text-primary-600">
 								<tr>
 									<th scope="col" colSpan={2} className=" p-1 w-full text-center">
 										Requested By:
@@ -327,7 +327,7 @@ export default function PurchaseOrderPreview({
 					</div>
 					<div className="col-span-3">
 						<table className="table-auto w-full text-sm text-left text-ocoblue-500 border">
-							<thead className="text-xs uppercase  bg-ocoblue-50 text-ocobrown-600">
+							<thead className="text-xs uppercase  bg-ocoblue-50 text-primary-600">
 								<tr>
 									<th scope="col" colSpan={2} className=" p-1 w-full text-center">
 										Authorized By:

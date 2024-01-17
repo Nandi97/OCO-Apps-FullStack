@@ -55,7 +55,7 @@ export default function Logged({ image, name, designation }: User) {
 								<Menu.Item>
 									{({ active }) => (
 										<Link
-											className="flex items-center p-1 hover:rounded-md  hover:bg-ocobrown-400 hover:text-white"
+											className="flex items-center p-1 hover:rounded-md  hover:bg-primary-400 hover:text-white"
 											href={`/${name}`}
 										>
 											My Profile{' '}
@@ -66,7 +66,7 @@ export default function Logged({ image, name, designation }: User) {
 									{({ active }) => (
 										<button
 											type="button"
-											className="flex items-center p-1 hover:rounded-md justify-between hover:bg-ocobrown-400 hover:text-white"
+											className="flex items-center p-1 hover:rounded-md justify-between hover:bg-primary-400 hover:text-white"
 											onClick={() => signOut()}
 										>
 											<span>Sign Out</span>

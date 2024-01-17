@@ -63,7 +63,7 @@ export default function VCardTemplate({ download }: VCardTemplatePROPS) {
 					<table className="table-auto w-full rounded-lg">
 						<tbody>
 							<tr className=" bg-ocoblue-700/20 border-b-4 border-white">
-								<td className="w-1/6 text-xl text-ocobrown-600 p-2">
+								<td className="w-1/6 text-xl text-primary-600 p-2">
 									<Icon icon="heroicons:phone" />
 								</td>
 								<td className="flex flex-col w-5/6 text-sm">
@@ -74,7 +74,7 @@ export default function VCardTemplate({ download }: VCardTemplatePROPS) {
 								</td>
 							</tr>
 							<tr className=" bg-ocoblue-700/20 border-b-4 border-white">
-								<td className="w-1/6 text-xl text-ocobrown-600 p-2">
+								<td className="w-1/6 text-xl text-primary-600 p-2">
 									<Icon icon="heroicons:device-phone-mobile" />
 								</td>
 								<td className="flex flex-col w-5/6 text-sm">
@@ -83,7 +83,7 @@ export default function VCardTemplate({ download }: VCardTemplatePROPS) {
 								</td>
 							</tr>
 							<tr className=" bg-ocoblue-700/20 border-b-4 border-white">
-								<td className="w-1/6 text-xl text-ocobrown-600 p-2">
+								<td className="w-1/6 text-xl text-primary-600 p-2">
 									<Icon icon="heroicons:envelope" />
 								</td>
 								<td className="flex flex-col w-5/6 text-sm">
@@ -92,7 +92,7 @@ export default function VCardTemplate({ download }: VCardTemplatePROPS) {
 								</td>
 							</tr>
 							<tr className=" bg-ocoblue-700/20 border-b-4 border-white">
-								<td className="w-1/6 text-xl text-ocobrown-600 p-2">
+								<td className="w-1/6 text-xl text-primary-600 p-2">
 									<Icon icon="heroicons:globe-europe-africa" />
 								</td>
 								<td className="flex flex-col w-5/6 text-sm">
@@ -101,7 +101,7 @@ export default function VCardTemplate({ download }: VCardTemplatePROPS) {
 								</td>
 							</tr>
 							<tr className=" bg-ocoblue-700/20 border-b-4 border-white">
-								<td className="w-1/6 text-xl text-ocobrown-600 p-2">
+								<td className="w-1/6 text-xl text-primary-600 p-2">
 									<Icon icon="heroicons:map" />
 								</td>
 								<td className="flex flex-col w-5/6 text-sm">
@@ -114,7 +114,7 @@ export default function VCardTemplate({ download }: VCardTemplatePROPS) {
 								</td>
 							</tr>
 							<tr className=" bg-ocoblue-700/20 border-b-4 border-white">
-								<td className="w-1/6 text-xl text-ocobrown-600 p-2">
+								<td className="w-1/6 text-xl text-primary-600 p-2">
 									<Icon icon="solar:mailbox-linear" />
 								</td>
 								<td className="flex flex-col w-5/6 text-sm">

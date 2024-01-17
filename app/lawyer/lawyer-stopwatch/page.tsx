@@ -118,7 +118,7 @@ export default function StaffList() {
 			</div>
 			<div className="shadow overscroll-none ring-1 ring-black ring-opacity-5 md:rounded-md">
 				<div className="flex-col hidden lg:flex">
-					<table className="min-w-full divide-y divide-ocobrown-100">
+					<table className="min-w-full divide-y divide-primary-100">
 						<thead className="sticky z-10 top-12 bg-ocoblue-600 text-ocoblue-50">
 							<tr>
 								<th
@@ -179,7 +179,7 @@ export default function StaffList() {
 											>
 												<svg
 													aria-hidden="true"
-													className="w-8 h-8 mr-2 text-ocoblue-200 animate-spin fill-ocobrown-600"
+													className="w-8 h-8 mr-2 text-ocoblue-200 animate-spin fill-primary-600"
 													viewBox="0 0 100 101"
 													fill="none"
 													xmlns="http://www.w3.org/2000/svg"
@@ -201,14 +201,14 @@ export default function StaffList() {
 									return (
 										<tr
 											key={item?.id}
-											className={`hover:bg-ocobrown-100/95 ${
+											className={`hover:bg-primary-100/95 ${
 												index % 2 && index !== 0 ? 'bg-ocoblue-100/95' : ''
 											}`}
 										>
 											<td className="px-3 py-2 text-sm text-center whitespace-nowrap text-ocoblue-500">
 												{index + 1}
 											</td>
-											<td className="px-3 py-2 text-sm text-left whitespace-nowrap font-semibold  text-ocobrown-500">
+											<td className="px-3 py-2 text-sm text-left whitespace-nowrap font-semibold  text-primary-500">
 												{item?.matter?.code}
 											</td>
 											<td className="py-2 pl-4 pr-3  whitespace-nowrap sm:pl-6 text-sm text-ocoblue-900">
@@ -238,7 +238,7 @@ export default function StaffList() {
 											<td className="relative py-2 pl-3 pr-4 text-sm font-medium text-right whitespace-nowrap sm:pr-6">
 												<button
 													type="button"
-													className="flex items-center justify-center w-5 h-5 p-1 rounded hover:bg-ocobrown-700 hover:bg-opacity-20"
+													className="flex items-center justify-center w-5 h-5 p-1 rounded hover:bg-primary-700 hover:bg-opacity-20"
 												>
 													<OptDropdown
 														optBtn={tableOptBtnTxt}
@@ -279,7 +279,7 @@ export default function StaffList() {
 							<div className="col-span-4 text-sm font-semibold text-left text-ocoblue-600">
 								Narration :
 							</div>
-							<div className="col-span-8 text-ocobrown-500">{item?.narration}</div>
+							<div className="col-span-8 text-primary-500">{item?.narration}</div>
 							<div className="col-span-4 text-sm font-semibold text-left text-ocoblue-600">
 								Created At :
 							</div>

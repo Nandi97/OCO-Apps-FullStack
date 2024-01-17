@@ -29,7 +29,7 @@ const config: Config = {
 					'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
 			},
 			colors: {
-				ocobrown: {
+				primary: {
 					50: '#fbf7ef',
 					100: '#f4e8d1',
 					200: '#e8ce9f',

@@ -100,7 +100,7 @@ export default function Sidebar({ sidebarProp }: { sidebarProp: React.ReactNode 
 										/>
 										<div className="inline-flex items-center text-xl font-medium">
 											<span className="text-ocoblue-600">OCO</span>
-											<span className="text-ocobrown-600">Apps</span>
+											<span className="text-primary-600">Apps</span>
 										</div>
 									</div>
 									<div className="flex flex-col flex-grow mt-5">
@@ -113,13 +113,13 @@ export default function Sidebar({ sidebarProp }: { sidebarProp: React.ReactNode 
 															className={`
 										w-full inline-flex items-center space-x-2 text-xs rounded p-2 transition-all duration-500 ${
 											pathname?.includes(item.url)
-												? 'bg-ocobrown-600 bg-opacity-20 text-ocoblue-600 hover:bg-ocobrown-600 hover:bg-opacity-20'
+												? 'bg-primary-600 bg-opacity-20 text-ocoblue-600 hover:bg-primary-600 hover:bg-opacity-20'
 												: 'hover:bg-ocoblue-600 hover:bg-opacity-20'
 										}`}
 														>
 															<Icon
 																icon={item?.icon}
-																className="text-sm xl:text-base text-ocobrown-600"
+																className="text-sm xl:text-base text-primary-600"
 															/>
 															<span>{item?.name}</span>
 														</Link>
@@ -145,7 +145,7 @@ export default function Sidebar({ sidebarProp }: { sidebarProp: React.ReactNode 
 																		pathname?.includes(
 																			item?.url
 																		)
-																			? 'bg-ocobrown-600 bg-opacity-20 text-ocoblue-600 hover:bg-ocobrown-600 hover:bg-opacity-20'
+																			? 'bg-primary-600 bg-opacity-20 text-ocoblue-600 hover:bg-primary-600 hover:bg-opacity-20'
 																			: 'hover:bg-ocoblue-600 hover:bg-opacity-20',
 																		'w-full inline-flex items-center justify-between text-xs rounded py-2 pl-2 pr-1 transition-all duration-500'
 																	)}
@@ -158,7 +158,7 @@ export default function Sidebar({ sidebarProp }: { sidebarProp: React.ReactNode 
 																	<div className="inline-flex items-center space-x-2 ">
 																		<Icon
 																			icon={item?.icon}
-																			className="text-sm xl:text-base text-ocobrown-600"
+																			className="text-sm xl:text-base text-primary-600"
 																		/>
 																		<span>{item?.name}</span>
 																	</div>
@@ -184,7 +184,7 @@ export default function Sidebar({ sidebarProp }: { sidebarProp: React.ReactNode 
 																				className={`${
 																					pathname ===
 																					sub_menu?.url
-																						? 'bg-ocobrown-600 bg-opacity-20 text-ocoblue-600 hover:bg-ocobrown-600 hover:bg-opacity-20'
+																						? 'bg-primary-600 bg-opacity-20 text-ocoblue-600 hover:bg-primary-600 hover:bg-opacity-20'
 																						: 'hover:bg-ocoblue-600 hover:bg-opacity-20'
 																				}
 														w-full inline-flex items-center space-x-2 text-xs rounded p-2 transition-all duration-500`}
@@ -193,7 +193,7 @@ export default function Sidebar({ sidebarProp }: { sidebarProp: React.ReactNode 
 																					icon={
 																						sub_menu?.icon
 																					}
-																					className="text-sm xl:text-base text-ocobrown-600"
+																					className="text-sm xl:text-base text-primary-600"
 																				/>
 																				<span>
 																					{sub_menu?.name}
@@ -217,7 +217,7 @@ export default function Sidebar({ sidebarProp }: { sidebarProp: React.ReactNode 
 				</Dialog>
 			</Transition.Root>
 			<div className="hidden lg:fixed lg:inset-y-0 lg:z-30 lg:flex lg:w-64 lg:flex-col">
-				<div className="flex flex-col justify-between h-screen px-6 overflow-y-auto border-r divide-y divide-ocobrown-200 border-gray-200 shadow-lg md:flex md:col-span-3 xl:col-span-2 bg-ocoblue-100 grow">
+				<div className="flex flex-col justify-between h-screen px-6 overflow-y-auto border-r divide-y divide-primary-200 border-gray-200 shadow-lg md:flex md:col-span-3 xl:col-span-2 bg-ocoblue-100 grow">
 					<div className="flex items-center flex-shrink-0 pt-6 pb-4 h-8">
 						<Image
 							height={64}
@@ -228,7 +228,7 @@ export default function Sidebar({ sidebarProp }: { sidebarProp: React.ReactNode 
 						/>
 						<div className="inline-flex items-center text-xl font-medium">
 							<span className="text-ocoblue-600">OCO</span>
-							<span className="text-ocobrown-600">Apps</span>
+							<span className="text-primary-600">Apps</span>
 						</div>
 					</div>
 					<div className="flex flex-col flex-grow mt-5 pt-4">
@@ -241,13 +241,13 @@ export default function Sidebar({ sidebarProp }: { sidebarProp: React.ReactNode 
 											className={`
 										w-full inline-flex items-center space-x-2 text-xs rounded p-2 transition-all duration-500 ${
 											pathname?.includes(item.url)
-												? 'bg-ocobrown-600 bg-opacity-20 text-ocoblue-600 hover:bg-ocobrown-600 hover:bg-opacity-20'
+												? 'bg-primary-600 bg-opacity-20 text-ocoblue-600 hover:bg-primary-600 hover:bg-opacity-20'
 												: 'hover:bg-ocoblue-600 hover:bg-opacity-20'
 										}`}
 										>
 											<Icon
 												icon={item?.icon}
-												className="text-sm xl:text-base text-ocobrown-600"
+												className="text-sm xl:text-base text-primary-600"
 											/>
 											<span>{item?.name}</span>
 										</Link>
@@ -271,7 +271,7 @@ export default function Sidebar({ sidebarProp }: { sidebarProp: React.ReactNode 
 												<Disclosure.Button
 													className={classNames(
 														pathname?.includes(item?.url)
-															? 'bg-ocobrown-600 bg-opacity-20 text-ocoblue-600 hover:bg-ocobrown-600 hover:bg-opacity-20'
+															? 'bg-primary-600 bg-opacity-20 text-ocoblue-600 hover:bg-primary-600 hover:bg-opacity-20'
 															: 'hover:bg-ocoblue-600 hover:bg-opacity-20',
 														'w-full inline-flex items-center justify-between text-xs rounded py-2 pl-2 pr-1 transition-all duration-500'
 													)}
@@ -280,7 +280,7 @@ export default function Sidebar({ sidebarProp }: { sidebarProp: React.ReactNode 
 													<div className="inline-flex items-center space-x-2 ">
 														<Icon
 															icon={item?.icon}
-															className="text-sm xl:text-base text-ocobrown-600"
+															className="text-sm xl:text-base text-primary-600"
 														/>
 														<span>{item?.name}</span>
 													</div>
@@ -301,14 +301,14 @@ export default function Sidebar({ sidebarProp }: { sidebarProp: React.ReactNode 
 															href={sub_menu?.url}
 															className={`${
 																pathname === sub_menu?.url
-																	? 'bg-ocobrown-600 bg-opacity-20 text-ocoblue-600 hover:bg-ocobrown-600 hover:bg-opacity-20'
+																	? 'bg-primary-600 bg-opacity-20 text-ocoblue-600 hover:bg-primary-600 hover:bg-opacity-20'
 																	: 'hover:bg-ocoblue-600 hover:bg-opacity-20'
 															}
 														w-full inline-flex items-center space-x-2 text-xs rounded p-2 transition-all duration-500`}
 														>
 															<Icon
 																icon={sub_menu?.icon}
-																className="text-sm xl:text-base text-ocobrown-600"
+																className="text-sm xl:text-base text-primary-600"
 															/>
 															<span>{sub_menu?.name}</span>
 														</Link>

@@ -39,8 +39,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 						<Nav pageTitle={metadata.title} />
 
 						{/* <main className="overflow-y-auto py-3 flex flex-col h-screen"> */}
-						<main className="overflow-y-auto flex flex-col h-screen  bg-gradient-to-br from-ocobrown-500/10 to-ocoblue-500/10 p-2">
-							<div className="p-4 my-2  rounded-lg shadow-lg bg-ocobrown-100 overflow-y-auto flex flex-col h-full ">
+						<main className="overflow-y-auto flex flex-col h-screen  bg-gradient-to-br from-primary-500/10 to-ocoblue-500/10 p-2">
+							<div className="p-4 my-2  rounded-lg shadow-lg bg-primary-100 overflow-y-auto flex flex-col h-full ">
 								{children}
 							</div>
 						</main>

@@ -101,12 +101,13 @@ Table Town {
 
 Table Tax {
   id String [pk]
-  name String [not null]
-  value String [not null]
-  rate Float [not null]
+  name String [unique, not null]
+  description String [unique, not null]
+  rate Float [unique, not null]
   deletedAt DateTime
   createdAt DateTime [default: `now()`]
   updatedAt DateTime
+  PurchaseOrder PurchaseOrder [not null]
 }
 
 Table Currency {
@@ -212,7 +213,8 @@ Table PurchaseOrder {
   id String [pk]
   poNumber String [unique, not null]
   type String [not null]
-  vatable Boolean [not null, default: true]
+  taxId String [not null]
+  tax Tax [not null]
   currencyId Int [not null]
   name String [not null]
   email String [not null]
@@ -409,6 +411,8 @@ Ref: StopWatchItem.matterId > Matter.id
 Ref: StopWatchItem.stopWatchItemTaskId > StopWatchItemTask.id
 
 Ref: StopWatchItem.createdById > User.id
+
+Ref: PurchaseOrder.taxId > Tax.id
 
 Ref: PurchaseOrder.approverId > Staff.id
 

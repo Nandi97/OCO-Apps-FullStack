@@ -234,7 +234,7 @@ export default function StaffCard() {
 							<div className="col-span-4 text-sm font-semibold text-left text-ocoblue-600">
 								E-mail Address :
 							</div>
-							<div className="col-span-8 text-ocobrown-500">{person?.email}</div>
+							<div className="col-span-8 text-primary-500">{person?.email}</div>
 							<div className="col-span-4 text-sm font-semibold text-left text-ocoblue-600">
 								Extension :
 							</div>

@@ -36,7 +36,7 @@ export default function Profile(url: URL) {
 			<div className="sticky z-20 flex items-center justify-between p-4 bg-transparent top-2">
 				<Link
 					href={`/`}
-					className="text-lg bg-ocobrown-600 rounded-md flex items-center text-ocobrown-50 p-1 hover:shadow-md shadow hover:bg-ocobrown-500/70"
+					className="text-lg bg-primary-600 rounded-md flex items-center text-primary-50 p-1 hover:shadow-md shadow hover:bg-primary-500/70"
 				>
 					<Icon icon="heroicons:chevron-left" />
 					<span>Dashboard</span>
@@ -44,9 +44,9 @@ export default function Profile(url: URL) {
 			</div>
 			<div className="grid grid-cols-12 gap-4">
 				<div className="col-span-4 p-4">
-					<div className="bg-ocobrown-200 rounded-md flex flex-col w-full space-y-4">
+					<div className="bg-primary-200 rounded-md flex flex-col w-full space-y-4">
 						<div className="relative w-full flex flex-col ">
-							<div className="w-full flex justify-center bg-ocobrown-50 p-2 rounded-t-md">
+							<div className="w-full flex justify-center bg-primary-50 p-2 rounded-t-md">
 								<Image
 									width={100}
 									height={100}
@@ -60,7 +60,7 @@ export default function Profile(url: URL) {
 								width={100}
 								height={100}
 								quality={100}
-								className="h-20 w-20 rounded-xl border-4 border-ocobrown-400 z-10 -mt-5 ml-4"
+								className="h-20 w-20 rounded-xl border-4 border-primary-400 z-10 -mt-5 ml-4"
 								alt="user profile image "
 								src={user?.avatarUrl || avatar}
 							/>
@@ -82,7 +82,7 @@ export default function Profile(url: URL) {
 								<Icon icon="heroicons:at-symbol" />
 								<Link
 									href={`mailto:${user?.email}`}
-									className="text-ocobrown-600 hover:text-ocobrown-600/70"
+									className="text-primary-600 hover:text-primary-600/70"
 								>
 									: {user?.email}
 								</Link>
@@ -95,7 +95,7 @@ export default function Profile(url: URL) {
 								<Icon icon="heroicons:device-phone-mobile" />
 								<Link
 									href={`tel:${user?.mobile}`}
-									className="text-ocobrown-600 hover:text-ocobrown-600/70"
+									className="text-primary-600 hover:text-primary-600/70"
 								>
 									: {user?.mobile}
 								</Link>
@@ -104,7 +104,7 @@ export default function Profile(url: URL) {
 					</div>
 				</div>
 				<div className="col-span-8 p-4">
-					<div className="bg-ocobrown-200 rounded-md flex flex-col w-full space-y-4 p-4">
+					<div className="bg-primary-200 rounded-md flex flex-col w-full space-y-4 p-4">
 						<div className="flex items-center text-sm">
 							<span>
 								{weather?.name}, {weather?.sys?.country}

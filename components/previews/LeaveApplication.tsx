@@ -56,7 +56,7 @@ export default function LeaveApplicationPrev({ prevVal }: LeaveApplicationPrevPr
 					className="w-36"
 				/>
 			</div>
-			<div className="w-full flex items-center justify-center bg-ocobrown-600">
+			<div className="w-full flex items-center justify-center bg-primary-600">
 				<p className="font-bold uppercase text-2xl text-white">Leave Application</p>
 			</div>
 			<div className="w-full flex items-center justify-center">
@@ -73,13 +73,13 @@ export default function LeaveApplicationPrev({ prevVal }: LeaveApplicationPrevPr
 							<td className="px-2 border">
 								<div className="flex flex-col">
 									<span className="text-xs">Name:</span>
-									<span className="text-ocobrown-600">{prevVal?.name}</span>
+									<span className="text-primary-600">{prevVal?.name}</span>
 								</div>
 							</td>
 							<td className="px-2 border">
 								<div className="flex flex-col">
 									<span className="text-xs">Payroll Number:</span>
-									<span className="text-ocobrown-600">{prevVal?.staffNo}</span>
+									<span className="text-primary-600">{prevVal?.staffNo}</span>
 								</div>
 							</td>
 						</tr>
@@ -87,13 +87,13 @@ export default function LeaveApplicationPrev({ prevVal }: LeaveApplicationPrevPr
 							<td className="px-2 border">
 								<div className="flex flex-col">
 									<span className="text-xs">Title:</span>
-									<span className="text-ocobrown-600">{prevVal?.title}</span>
+									<span className="text-primary-600">{prevVal?.title}</span>
 								</div>
 							</td>
 							<td className="px-2 border">
 								<div className="flex flex-col">
 									<span className="text-xs">Team:</span>
-									<span className="text-ocobrown-600">{prevVal?.team}</span>
+									<span className="text-primary-600">{prevVal?.team}</span>
 								</div>
 							</td>
 						</tr>
@@ -114,7 +114,7 @@ export default function LeaveApplicationPrev({ prevVal }: LeaveApplicationPrevPr
 							<td className="px-2 border">
 								<div className="flex flex-col">
 									<span className="text-xs">Leave Type:</span>
-									<span className="text-ocobrown-600">
+									<span className="text-primary-600">
 										{
 											leaveTypes?.find(
 												(item: any) => item?.id === prevVal?.leaveType
@@ -126,7 +126,7 @@ export default function LeaveApplicationPrev({ prevVal }: LeaveApplicationPrevPr
 							<td className="px-2 border">
 								<div className="flex flex-col">
 									<span className="text-xs">Number of Leave Days:</span>
-									<span className="text-ocobrown-600">{prevVal?.leaveDays}</span>
+									<span className="text-primary-600">{prevVal?.leaveDays}</span>
 								</div>
 							</td>
 						</tr>
@@ -134,7 +134,7 @@ export default function LeaveApplicationPrev({ prevVal }: LeaveApplicationPrevPr
 							<td className="px-2 border">
 								<div className="flex flex-col">
 									<span className="text-xs">Start Leave On:</span>
-									<span className="text-ocobrown-600">
+									<span className="text-primary-600">
 										{prevVal?.startDate
 											? format(new Date(prevVal?.startDate), 'MMMM d, yyyy')
 											: ''}
@@ -144,7 +144,7 @@ export default function LeaveApplicationPrev({ prevVal }: LeaveApplicationPrevPr
 							<td className="px-2 border">
 								<div className="flex flex-col">
 									<span className="text-xs">End Leave On:</span>
-									<span className="text-ocobrown-600">
+									<span className="text-primary-600">
 										{prevVal?.endDate
 											? format(new Date(prevVal?.endDate), 'MMMM d, yyyy')
 											: ''}
@@ -156,7 +156,7 @@ export default function LeaveApplicationPrev({ prevVal }: LeaveApplicationPrevPr
 							<td className="px-2 border">
 								<div className="flex flex-col">
 									<span className="text-xs">Reporting Back On:</span>
-									<span className="text-ocobrown-600">
+									<span className="text-primary-600">
 										{prevVal?.reportingDate
 											? format(
 													new Date(prevVal?.reportingDate),
@@ -169,7 +169,7 @@ export default function LeaveApplicationPrev({ prevVal }: LeaveApplicationPrevPr
 							<td className="px-2 border">
 								<div className="flex flex-col">
 									<span className="text-xs">Applied on:</span>
-									<span className="text-ocobrown-600">
+									<span className="text-primary-600">
 										{format(new Date(), 'MMMM d, yyyy')}
 									</span>
 								</div>
@@ -192,13 +192,13 @@ export default function LeaveApplicationPrev({ prevVal }: LeaveApplicationPrevPr
 							<td className=" border">
 								<div className="flex flex-col">
 									<span>Supervisor:</span>
-									<span className="text-ocobrown-600">{prevVal?.supervisor}</span>
+									<span className="text-primary-600">{prevVal?.supervisor}</span>
 								</div>
 							</td>
 							<td className=" border">
 								<div className="flex flex-col">
 									<span>Approved On:</span>
-									<span className="text-ocobrown-600">Pending Approval</span>
+									<span className="text-primary-600">Pending Approval</span>
 								</div>
 							</td>
 						</tr>
@@ -206,7 +206,7 @@ export default function LeaveApplicationPrev({ prevVal }: LeaveApplicationPrevPr
 							<td className=" border">
 								<div className="flex flex-col">
 									<span>HR Manager:</span>
-									<span className="text-ocobrown-600">
+									<span className="text-primary-600">
 										{
 											allStaff?.find(
 												(item: any) => item?.id === prevVal?.humanResource
@@ -218,7 +218,7 @@ export default function LeaveApplicationPrev({ prevVal }: LeaveApplicationPrevPr
 							<td className=" border">
 								<div className="flex flex-col">
 									<span>Approved On:</span>
-									<span className="text-ocobrown-600">Pending Approval</span>
+									<span className="text-primary-600">Pending Approval</span>
 								</div>
 							</td>
 						</tr>
@@ -226,7 +226,7 @@ export default function LeaveApplicationPrev({ prevVal }: LeaveApplicationPrevPr
 							<td className=" border">
 								<div className="flex flex-col">
 									<span>Deputy/ Managing Partner:</span>
-									<span className="text-ocobrown-600">
+									<span className="text-primary-600">
 										{
 											allStaff?.find(
 												(item: any) => item?.id === prevVal?.partner
@@ -238,7 +238,7 @@ export default function LeaveApplicationPrev({ prevVal }: LeaveApplicationPrevPr
 							<td className=" border">
 								<div className="flex flex-col">
 									<span>Approved On:</span>
-									<span className="text-ocobrown-600">Pending Approval</span>
+									<span className="text-primary-600">Pending Approval</span>
 								</div>
 							</td>
 						</tr>
@@ -246,7 +246,7 @@ export default function LeaveApplicationPrev({ prevVal }: LeaveApplicationPrevPr
 				</table>
 			</div>
 			<div className="w-full flex items-center justify-center flex-col space-y-2">
-				<h1 className="text-ocobrown-600">For Official Use Only - HR Department</h1>
+				<h1 className="text-primary-600">For Official Use Only - HR Department</h1>
 				<table className="table-auto w-2/3">
 					<tbody>
 						<tr>

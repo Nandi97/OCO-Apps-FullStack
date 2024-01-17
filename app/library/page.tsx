@@ -133,7 +133,7 @@ export default function Library() {
 			</div>
 			<div className="shadow overscroll-none ring-1 ring-black ring-opacity-5 md:rounded-md">
 				<div className="flex-col hidden lg:flex">
-					<table className="min-w-full divide-y divide-ocobrown-100">
+					<table className="min-w-full divide-y divide-primary-100">
 						<thead className="sticky z-10 top-12 bg-ocoblue-600 text-ocoblue-50">
 							<tr>
 								<th
@@ -188,7 +188,7 @@ export default function Library() {
 											>
 												<svg
 													aria-hidden="true"
-													className="w-8 h-8 mr-2 text-ocoblue-200 animate-spin fill-ocobrown-600"
+													className="w-8 h-8 mr-2 text-ocoblue-200 animate-spin fill-primary-600"
 													viewBox="0 0 100 101"
 													fill="none"
 													xmlns="http://www.w3.org/2000/svg"
@@ -210,7 +210,7 @@ export default function Library() {
 									return (
 										<tr
 											key={book?.id}
-											className={`hover:bg-ocobrown-100/95 ${
+											className={`hover:bg-primary-100/95 ${
 												index % 2 && index !== 0 ? 'bg-ocoblue-100/95' : ''
 											}`}
 										>
@@ -243,7 +243,7 @@ export default function Library() {
 											<td className="py-2 text-left  sm:pl-6 text-sm text-ocoblue-900">
 												<Link
 													href={`/library/book/${book?.id}`}
-													className="font-medium text-ocobrown-500 truncate hover:whitespace-normal hover:overflow-visible w-72"
+													className="font-medium text-primary-500 truncate hover:whitespace-normal hover:overflow-visible w-72"
 												>
 													{book?.title}
 												</Link>
@@ -273,7 +273,7 @@ export default function Library() {
 											<td className="relative py-2 pl-3 pr-4 text-sm font-medium text-right whitespace-nowrap sm:pr-6">
 												<button
 													type="button"
-													className="flex items-center justify-center w-5 h-5 p-1 rounded hover:bg-ocobrown-700 hover:bg-opacity-20"
+													className="flex items-center justify-center w-5 h-5 p-1 rounded hover:bg-primary-700 hover:bg-opacity-20"
 												>
 													<OptDropdown
 														optBtn={tableOptBtnTxt}
@@ -337,7 +337,7 @@ export default function Library() {
 							<div className="col-span-4 text-sm font-semibold text-left text-ocoblue-600">
 								Publication Year :
 							</div>
-							<div className="col-span-8 text-ocobrown-500">
+							<div className="col-span-8 text-primary-500">
 								{book?.publicationYear}
 							</div>
 							<div className="col-span-4 text-sm font-semibold text-left text-ocoblue-600">

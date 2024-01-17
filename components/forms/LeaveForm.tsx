@@ -165,7 +165,7 @@ export default function LeaveForm({
 		}
 	};
 	return (
-		<div className="grid md:grid-cols-12 grid-cols-6 gap-2 bg-ocobrown-50">
+		<div className="grid md:grid-cols-12 grid-cols-6 gap-2 bg-primary-50">
 			<form className="col-span-6" onSubmit={handleSubmit(handleSubmitForm)}>
 				<Accordion
 					type="single"
@@ -176,7 +176,7 @@ export default function LeaveForm({
 				>
 					<AccordionItem value="one">
 						<AccordionTrigger
-							className="[&[data-state=open]>div>div]:bg-ocobrown-600"
+							className="[&[data-state=open]>div>div]:bg-primary-600"
 							onClick={() => handleContinueClick('one')}
 						>
 							<div className="flex items-center space-x-3">
@@ -205,7 +205,7 @@ export default function LeaveForm({
 													leaveType: e.target.value,
 												});
 											}}
-											className="sm:text-sm w-full bg-ocoblue-50 bg-opacity-70 border-1 focus:shadow-inner shadow-accent-300  focus:border-ocoblue-500 block p-2.5 h-8  px-3 py-1 shadow-ocoblue-300 rounded-md border border-ocoblue-300 text-sm font-medium leading-4 text-ocoblue-700 shadow-sm hover:bg-ocoblue-50 focus:outline-none focus:ring-2 focus:ring-ocobrown-500 focus:ring-offset-1"
+											className="sm:text-sm w-full bg-ocoblue-50 bg-opacity-70 border-1 focus:shadow-inner shadow-accent-300  focus:border-ocoblue-500 block p-2.5 h-8  px-3 py-1 shadow-ocoblue-300 rounded-md border border-ocoblue-300 text-sm font-medium leading-4 text-ocoblue-700 shadow-sm hover:bg-ocoblue-50 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-1"
 										>
 											<option
 												selected
@@ -240,7 +240,7 @@ export default function LeaveForm({
 													leaveDays: e.target.value,
 												})
 											}
-											className="sm:text-sm w-full bg-ocoblue-50 bg-opacity-70 border-1 focus:shadow-inner shadow-accent-300  focus:border-ocoblue-500 block p-2.5 h-8  px-3 py-1 shadow-ocoblue-300 rounded-md border border-ocoblue-300 text-sm font-medium leading-4 text-ocoblue-700 shadow-sm hover:bg-ocoblue-50 focus:outline-none focus:ring-2 focus:ring-ocobrown-500 focus:ring-offset-1"
+											className="sm:text-sm w-full bg-ocoblue-50 bg-opacity-70 border-1 focus:shadow-inner shadow-accent-300  focus:border-ocoblue-500 block p-2.5 h-8  px-3 py-1 shadow-ocoblue-300 rounded-md border border-ocoblue-300 text-sm font-medium leading-4 text-ocoblue-700 shadow-sm hover:bg-ocoblue-50 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-1"
 										/>
 									</div>
 									<div className="col-span-6 space-y-1">
@@ -261,7 +261,7 @@ export default function LeaveForm({
 													startDate: e.target.value,
 												})
 											}
-											className="sm:text-sm w-full bg-ocoblue-50 bg-opacity-70 border-1 focus:shadow-inner shadow-accent-300  focus:border-ocoblue-500 block p-2.5 h-8  px-3 py-1 shadow-ocoblue-300 rounded-md border border-ocoblue-300 text-sm font-medium leading-4 text-ocoblue-700 shadow-sm hover:bg-ocoblue-50 focus:outline-none focus:ring-2 focus:ring-ocobrown-500 focus:ring-offset-1"
+											className="sm:text-sm w-full bg-ocoblue-50 bg-opacity-70 border-1 focus:shadow-inner shadow-accent-300  focus:border-ocoblue-500 block p-2.5 h-8  px-3 py-1 shadow-ocoblue-300 rounded-md border border-ocoblue-300 text-sm font-medium leading-4 text-ocoblue-700 shadow-sm hover:bg-ocoblue-50 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-1"
 										/>
 									</div>
 									<div className="col-span-6 space-y-1">
@@ -282,7 +282,7 @@ export default function LeaveForm({
 													endDate: e.target.value,
 												})
 											}
-											className="sm:text-sm w-full bg-ocoblue-50 bg-opacity-70 border-1 focus:shadow-inner shadow-accent-300  focus:border-ocoblue-500 block p-2.5 h-8  px-3 py-1 shadow-ocoblue-300 rounded-md border border-ocoblue-300 text-sm font-medium leading-4 text-ocoblue-700 shadow-sm hover:bg-ocoblue-50 focus:outline-none focus:ring-2 focus:ring-ocobrown-500 focus:ring-offset-1"
+											className="sm:text-sm w-full bg-ocoblue-50 bg-opacity-70 border-1 focus:shadow-inner shadow-accent-300  focus:border-ocoblue-500 block p-2.5 h-8  px-3 py-1 shadow-ocoblue-300 rounded-md border border-ocoblue-300 text-sm font-medium leading-4 text-ocoblue-700 shadow-sm hover:bg-ocoblue-50 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-1"
 										/>
 									</div>
 									<div className="col-span-6 space-y-1">
@@ -303,7 +303,7 @@ export default function LeaveForm({
 													reportingDate: e.target.value,
 												})
 											}
-											className="sm:text-sm w-full bg-ocoblue-50 bg-opacity-70 border-1 focus:shadow-inner shadow-accent-300  focus:border-ocoblue-500 block p-2.5 h-8  px-3 py-1 shadow-ocoblue-300 rounded-md border border-ocoblue-300 text-sm font-medium leading-4 text-ocoblue-700 shadow-sm hover:bg-ocoblue-50 focus:outline-none focus:ring-2 focus:ring-ocobrown-500 focus:ring-offset-1"
+											className="sm:text-sm w-full bg-ocoblue-50 bg-opacity-70 border-1 focus:shadow-inner shadow-accent-300  focus:border-ocoblue-500 block p-2.5 h-8  px-3 py-1 shadow-ocoblue-300 rounded-md border border-ocoblue-300 text-sm font-medium leading-4 text-ocoblue-700 shadow-sm hover:bg-ocoblue-50 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-1"
 										/>
 									</div>
 								</div>
@@ -321,7 +321,7 @@ export default function LeaveForm({
 					</AccordionItem>
 					<AccordionItem value="two">
 						<AccordionTrigger
-							className="[&[data-state=open]>div>div]:bg-ocobrown-600"
+							className="[&[data-state=open]>div>div]:bg-primary-600"
 							onClick={() => handleContinueClick('two')}
 						>
 							<div className="flex items-center space-x-3">
@@ -345,7 +345,7 @@ export default function LeaveForm({
 										</Combobox.Label>
 										<div className="relative mt-1">
 											<Combobox.Input
-												className="sm:text-sm w-full bg-ocoblue-50 bg-opacity-70 border-1 focus:shadow-inner shadow-accent-300  focus:border-ocoblue-500 block p-2.5 h-8  px-3 py-1 shadow-ocoblue-300 rounded-md border border-ocoblue-300 text-sm font-medium leading-4 text-ocoblue-700 shadow-sm hover:bg-ocoblue-50 focus:outline-none focus:ring-2 focus:ring-ocobrown-500 focus:ring-offset-1"
+												className="sm:text-sm w-full bg-ocoblue-50 bg-opacity-70 border-1 focus:shadow-inner shadow-accent-300  focus:border-ocoblue-500 block p-2.5 h-8  px-3 py-1 shadow-ocoblue-300 rounded-md border border-ocoblue-300 text-sm font-medium leading-4 text-ocoblue-700 shadow-sm hover:bg-ocoblue-50 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-1"
 												onChange={(event) => setQuery(event.target.value)}
 												displayValue={(person) => person?.name}
 											/>
@@ -367,7 +367,7 @@ export default function LeaveForm({
 																classNames(
 																	'relative cursor-default select-none py-2 pl-3 pr-9',
 																	active
-																		? 'bg-ocobrown-600 text-white'
+																		? 'bg-primary-600 text-white'
 																		: 'text-gray-900'
 																)
 															}
@@ -408,7 +408,7 @@ export default function LeaveForm({
 																				'absolute inset-y-0 right-0 flex items-center pr-4',
 																				active
 																					? 'text-white'
-																					: 'text-ocobrown-600'
+																					: 'text-primary-600'
 																			)}
 																		>
 																			<Icon
@@ -444,7 +444,7 @@ export default function LeaveForm({
 													partner: e.target.value,
 												});
 											}}
-											className="sm:text-sm w-full bg-ocoblue-50 bg-opacity-70 border-1 focus:shadow-inner shadow-accent-300  focus:border-ocoblue-500 block p-2.5 h-8  px-3 py-1 shadow-ocoblue-300 rounded-md border border-ocoblue-300 text-sm font-medium leading-4 text-ocoblue-700 shadow-sm hover:bg-ocoblue-50 focus:outline-none focus:ring-2 focus:ring-ocobrown-500 focus:ring-offset-1"
+											className="sm:text-sm w-full bg-ocoblue-50 bg-opacity-70 border-1 focus:shadow-inner shadow-accent-300  focus:border-ocoblue-500 block p-2.5 h-8  px-3 py-1 shadow-ocoblue-300 rounded-md border border-ocoblue-300 text-sm font-medium leading-4 text-ocoblue-700 shadow-sm hover:bg-ocoblue-50 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-1"
 										>
 											<option
 												selected

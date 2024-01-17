@@ -105,13 +105,16 @@ model Town {
 }
 
 model Tax {
-  id        String    @id @default(cuid())
-  name      String
-  value     String
-  rate      Float
+  id          String @id @default(cuid())
+  name        String @unique
+  description String @unique
+  rate        Float  @unique
+
   deletedAt DateTime?
   createdAt DateTime? @default(now())
   updatedAt DateTime? @updatedAt
+
+  PurchaseOrder PurchaseOrder[]
 }
 
 model Currency {
@@ -225,7 +228,8 @@ model PurchaseOrder {
   id              String         @id @default(cuid())
   poNumber        String         @unique
   type            String
-  vatable         Boolean        @default(true)
+  taxId           String
+  tax             Tax            @relation(fields: [taxId], references: [id])
   currencyId      Int
   name            String
   email           String

@@ -6,10 +6,10 @@ export default function Loading() {
 		<div className="hidden lg:fixed lg:inset-y-0 lg:z-50 lg:flex lg:w-72 lg:flex-col">
 			<div className="flex-col justify-between flex h-screen shadow-lg md:flex md:col-span-3 xl:col-span-2 bg-ocoblue-100 grow gap-y-5 overflow-y-auto border-r border-gray-200 px-6">
 				<div>
-					<Skeleton className="h-8 w-8 object-contain bg-ocobrown-600 rounded full bg-opacity-20" />
+					<Skeleton className="h-8 w-8 object-contain bg-primary-600 rounded full bg-opacity-20" />
 				</div>
 				<div>
-					<Skeleton className="h-4 w-full bg-ocobrown-600 bg-opacity-20" />
+					<Skeleton className="h-4 w-full bg-primary-600 bg-opacity-20" />
 				</div>
 			</div>
 			<div className="flex flex-col flex-grow mt-5">

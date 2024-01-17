@@ -18,7 +18,7 @@ export default function LeaveView() {
 	console.log('Leave Applications:', applications);
 	return (
 		<>
-			<table className="table-auto divide-y divide-ocobrown-100 w-full">
+			<table className="table-auto divide-y divide-primary-100 w-full">
 				<thead className="sticky z-10 bg-ocoblue-600 text-ocoblue-50">
 					<tr>
 						<th
@@ -70,14 +70,14 @@ export default function LeaveView() {
 					{applications?.map((item: any, index: any) => (
 						<tr
 							key={item?.id}
-							className={`hover:bg-ocobrown-100/95 ${
+							className={`hover:bg-primary-100/95 ${
 								index % 2 && index !== 0 ? 'bg-ocoblue-100/95' : ''
 							}`}
 						>
 							<td className="p-2 text-sm text-center whitespace-nowrap text-ocoblue-500">
 								{index + 1}
 							</td>
-							<td className="py-2 text-sm text-ocobrown-600 hover:underline">
+							<td className="py-2 text-sm text-primary-600 hover:underline">
 								<Link href={`/staff/leave-applications/${item?.id}`}>
 									{item?.id}
 								</Link>

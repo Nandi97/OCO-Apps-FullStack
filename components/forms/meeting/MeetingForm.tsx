@@ -104,9 +104,9 @@ export default function MeetingForm({
 			<Disclosure as="div" className="pt-6" defaultOpen={true}>
 				{({ open }) => (
 					<>
-						<Disclosure.Button className="flex w-full items-center justify-between rounded-lg bg-ocobrown-100 px-4 py-2 text-left text-sm font-medium text-ocobrown-900 hover:bg-ocobrown-200 focus:outline-none focus-visible:ring focus-visible:ring-ocobrown-500 focus-visible:ring-opacity-75">
+						<Disclosure.Button className="flex w-full items-center justify-between rounded-lg bg-primary-100 px-4 py-2 text-left text-sm font-medium text-primary-900 hover:bg-primary-200 focus:outline-none focus-visible:ring focus-visible:ring-primary-500 focus-visible:ring-opacity-75">
 							<div className="w-full flex items-center space-x-2">
-								<div className="h-2 w-2 p-3 rounded-full bg-ocobrown-600 text-ocobrown-50 flex items-center justify-center">
+								<div className="h-2 w-2 p-3 rounded-full bg-primary-600 text-primary-50 flex items-center justify-center">
 									<span>1</span>
 								</div>
 								<div className="flex flex-col">
@@ -119,7 +119,7 @@ export default function MeetingForm({
 								icon="heroicons:chevron-right"
 								className={`${
 									open ? 'rotate-90 transform' : ''
-								} h-5 w-5 text-ocobrown-500`}
+								} h-5 w-5 text-primary-500`}
 							/>
 						</Disclosure.Button>
 
@@ -139,7 +139,7 @@ export default function MeetingForm({
 											id="title"
 											value={formValues?.title}
 											onChange={onChange}
-											className="sm:text-sm w-full bg-ocoblue-50 bg-opacity-70 border-1 focus:shadow-inner shadow-accent-300  focus:border-ocoblue-500 block p-2.5 h-8  px-3 py-1 shadow-ocoblue-300 rounded-md border border-ocoblue-300 text-sm font-medium leading-4 text-ocoblue-700 shadow-sm hover:bg-ocoblue-50 focus:outline-none focus:ring-2 focus:ring-ocobrown-500 focus:ring-offset-1"
+											className="sm:text-sm w-full bg-ocoblue-50 bg-opacity-70 border-1 focus:shadow-inner shadow-accent-300  focus:border-ocoblue-500 block p-2.5 h-8  px-3 py-1 shadow-ocoblue-300 rounded-md border border-ocoblue-300 text-sm font-medium leading-4 text-ocoblue-700 shadow-sm hover:bg-ocoblue-50 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-1"
 										/>
 									</div>
 								</div>
@@ -158,7 +158,7 @@ export default function MeetingForm({
 											id="date"
 											value={formValues?.date}
 											onChange={onChange}
-											className="sm:text-sm w-full bg-ocoblue-50 bg-opacity-70 border-1 focus:shadow-inner shadow-accent-300  focus:border-ocoblue-500 block p-2.5 h-8  px-3 py-1 shadow-ocoblue-300 rounded-md border border-ocoblue-300 text-sm font-medium leading-4 text-ocoblue-700 shadow-sm hover:bg-ocoblue-50 focus:outline-none focus:ring-2 focus:ring-ocobrown-500 focus:ring-offset-1"
+											className="sm:text-sm w-full bg-ocoblue-50 bg-opacity-70 border-1 focus:shadow-inner shadow-accent-300  focus:border-ocoblue-500 block p-2.5 h-8  px-3 py-1 shadow-ocoblue-300 rounded-md border border-ocoblue-300 text-sm font-medium leading-4 text-ocoblue-700 shadow-sm hover:bg-ocoblue-50 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-1"
 										/>
 									</div>
 								</div>
@@ -176,7 +176,7 @@ export default function MeetingForm({
 											id="startedAt"
 											value={formValues?.startedAt}
 											onChange={onChange}
-											className="sm:text-sm w-full bg-ocoblue-50 bg-opacity-70 border-1 focus:shadow-inner shadow-accent-300  focus:border-ocoblue-500 block p-2.5 h-8  px-3 py-1 shadow-ocoblue-300 rounded-md border border-ocoblue-300 text-sm font-medium leading-4 text-ocoblue-700 shadow-sm hover:bg-ocoblue-50 focus:outline-none focus:ring-2 focus:ring-ocobrown-500 focus:ring-offset-1"
+											className="sm:text-sm w-full bg-ocoblue-50 bg-opacity-70 border-1 focus:shadow-inner shadow-accent-300  focus:border-ocoblue-500 block p-2.5 h-8  px-3 py-1 shadow-ocoblue-300 rounded-md border border-ocoblue-300 text-sm font-medium leading-4 text-ocoblue-700 shadow-sm hover:bg-ocoblue-50 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-1"
 										/>
 									</div>
 								</div>
@@ -194,7 +194,7 @@ export default function MeetingForm({
 											id="endedAt"
 											value={formValues?.endedAt}
 											onChange={onChange}
-											className="sm:text-sm w-full bg-ocoblue-50 bg-opacity-70 border-1 focus:shadow-inner shadow-accent-300  focus:border-ocoblue-500 block p-2.5 h-8  px-3 py-1 shadow-ocoblue-300 rounded-md border border-ocoblue-300 text-sm font-medium leading-4 text-ocoblue-700 shadow-sm hover:bg-ocoblue-50 focus:outline-none focus:ring-2 focus:ring-ocobrown-500 focus:ring-offset-1"
+											className="sm:text-sm w-full bg-ocoblue-50 bg-opacity-70 border-1 focus:shadow-inner shadow-accent-300  focus:border-ocoblue-500 block p-2.5 h-8  px-3 py-1 shadow-ocoblue-300 rounded-md border border-ocoblue-300 text-sm font-medium leading-4 text-ocoblue-700 shadow-sm hover:bg-ocoblue-50 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-1"
 										/>
 									</div>
 								</div>
@@ -212,7 +212,7 @@ export default function MeetingForm({
 											id="venue"
 											value={formValues?.venue}
 											onChange={onChange}
-											className="sm:text-sm w-full bg-ocoblue-50 bg-opacity-70 border-1 focus:shadow-inner shadow-accent-300  focus:border-ocoblue-500 block p-2.5 h-8  px-3 py-1 shadow-ocoblue-300 rounded-md border border-ocoblue-300 text-sm font-medium leading-4 text-ocoblue-700 shadow-sm hover:bg-ocoblue-50 focus:outline-none focus:ring-2 focus:ring-ocobrown-500 focus:ring-offset-1"
+											className="sm:text-sm w-full bg-ocoblue-50 bg-opacity-70 border-1 focus:shadow-inner shadow-accent-300  focus:border-ocoblue-500 block p-2.5 h-8  px-3 py-1 shadow-ocoblue-300 rounded-md border border-ocoblue-300 text-sm font-medium leading-4 text-ocoblue-700 shadow-sm hover:bg-ocoblue-50 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-1"
 										/>
 									</div>
 								</div>
@@ -259,7 +259,7 @@ export default function MeetingForm({
 												</div>
 											))}
 											<Combobox.Input
-												className="z-[2]  sm:text-sm w-full bg-ocoblue-50 bg-opacity-70 border-1 focus:shadow-inner shadow-accent-300  focus:border-ocoblue-500 block p-2.5 h-8  px-3 py-1 shadow-ocoblue-300 rounded-md border border-ocoblue-300 text-sm font-medium leading-4 text-ocoblue-700 shadow-sm hover:bg-ocoblue-50 focus:outline-none focus:ring-2 focus:ring-ocobrown-500 focus:ring-offset-1"
+												className="z-[2]  sm:text-sm w-full bg-ocoblue-50 bg-opacity-70 border-1 focus:shadow-inner shadow-accent-300  focus:border-ocoblue-500 block p-2.5 h-8  px-3 py-1 shadow-ocoblue-300 rounded-md border border-ocoblue-300 text-sm font-medium leading-4 text-ocoblue-700 shadow-sm hover:bg-ocoblue-50 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-1"
 												onChange={(event) => setQuery(event.target.value)}
 											/>
 										</div>
@@ -279,7 +279,7 @@ export default function MeetingForm({
 															classNames(
 																'cursor-default select-none py-2 pl-3 pr-9 flex justify-between',
 																active
-																	? 'bg-ocobrown-600 text-white'
+																	? 'bg-primary-600 text-white'
 																	: 'text-ocoblue-900'
 															)
 														}
@@ -291,7 +291,7 @@ export default function MeetingForm({
 																		className={classNames(
 																			'truncate',
 																			selected &&
-																				'font-semibold text-ocobrown-400'
+																				'font-semibold text-primary-400'
 																		)}
 																	>
 																		{item?.name}
@@ -365,7 +365,7 @@ export default function MeetingForm({
 												</div>
 											))}
 											<Combobox.Input
-												className="sm:text-sm w-full bg-ocoblue-50 bg-opacity-70 border-1 focus:shadow-inner shadow-accent-300  focus:border-ocoblue-500 block p-2.5 h-8  px-3 py-1 shadow-ocoblue-300 rounded-md border border-ocoblue-300 text-sm font-medium leading-4 text-ocoblue-700 shadow-sm hover:bg-ocoblue-50 focus:outline-none focus:ring-2 focus:ring-ocobrown-500 focus:ring-offset-1"
+												className="sm:text-sm w-full bg-ocoblue-50 bg-opacity-70 border-1 focus:shadow-inner shadow-accent-300  focus:border-ocoblue-500 block p-2.5 h-8  px-3 py-1 shadow-ocoblue-300 rounded-md border border-ocoblue-300 text-sm font-medium leading-4 text-ocoblue-700 shadow-sm hover:bg-ocoblue-50 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-1"
 												// displayValue={(
 												// 	meetingAbsenteesWithApologies: any
 												// ) =>
@@ -388,7 +388,7 @@ export default function MeetingForm({
 															classNames(
 																'cursor-default select-none py-2 pl-3 pr-9 flex justify-between',
 																active
-																	? 'bg-ocobrown-600 text-white'
+																	? 'bg-primary-600 text-white'
 																	: 'text-ocoblue-900'
 															)
 														}
@@ -400,7 +400,7 @@ export default function MeetingForm({
 																		className={classNames(
 																			'truncate',
 																			selected &&
-																				'font-semibold text-ocobrown-400'
+																				'font-semibold text-primary-400'
 																		)}
 																	>
 																		{item?.name}
@@ -478,7 +478,7 @@ export default function MeetingForm({
 												</div>
 											))}
 											<Combobox.Input
-												className="sm:text-sm w-full bg-ocoblue-50 bg-opacity-70 border-1 focus:shadow-inner shadow-accent-300  focus:border-ocoblue-500 block p-2.5 h-8  px-3 py-1 shadow-ocoblue-300 rounded-md border border-ocoblue-300 text-sm font-medium leading-4 text-ocoblue-700 shadow-sm hover:bg-ocoblue-50 focus:outline-none focus:ring-2 focus:ring-ocobrown-500 focus:ring-offset-1"
+												className="sm:text-sm w-full bg-ocoblue-50 bg-opacity-70 border-1 focus:shadow-inner shadow-accent-300  focus:border-ocoblue-500 block p-2.5 h-8  px-3 py-1 shadow-ocoblue-300 rounded-md border border-ocoblue-300 text-sm font-medium leading-4 text-ocoblue-700 shadow-sm hover:bg-ocoblue-50 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-1"
 												// displayValue={(
 												// 	meetingAbsenteesWithoutApologies: any
 												// ) =>
@@ -501,7 +501,7 @@ export default function MeetingForm({
 															classNames(
 																'cursor-default select-none py-2 pl-3 pr-9 flex justify-between',
 																active
-																	? 'bg-ocobrown-600 text-white'
+																	? 'bg-primary-600 text-white'
 																	: 'text-ocoblue-900'
 															)
 														}
@@ -513,7 +513,7 @@ export default function MeetingForm({
 																		className={classNames(
 																			'truncate',
 																			selected &&
-																				'font-semibold text-ocobrown-400'
+																				'font-semibold text-primary-400'
 																		)}
 																	>
 																		{item?.name}
@@ -560,9 +560,9 @@ export default function MeetingForm({
 			<Disclosure as="div" className="pt-6">
 				{({ open }) => (
 					<>
-						<Disclosure.Button className="flex items-center w-full justify-between rounded-lg bg-ocobrown-100 px-4 py-2 text-left text-sm font-medium text-ocobrown-900 hover:bg-ocobrown-200 focus:outline-none focus-visible:ring focus-visible:ring-ocobrown-500 focus-visible:ring-opacity-75">
+						<Disclosure.Button className="flex items-center w-full justify-between rounded-lg bg-primary-100 px-4 py-2 text-left text-sm font-medium text-primary-900 hover:bg-primary-200 focus:outline-none focus-visible:ring focus-visible:ring-primary-500 focus-visible:ring-opacity-75">
 							<div className="w-full flex items-center space-x-2">
-								<div className="h-2 w-2 p-3 rounded-full bg-ocobrown-600 text-ocobrown-50 flex items-center justify-center">
+								<div className="h-2 w-2 p-3 rounded-full bg-primary-600 text-primary-50 flex items-center justify-center">
 									<span>1</span>
 								</div>
 								<div className="flex flex-col">
@@ -579,7 +579,7 @@ export default function MeetingForm({
 								icon="heroicons:chevron-right"
 								className={`${
 									open ? 'rotate-90 transform' : ''
-								} h-5 w-5 text-ocobrown-500`}
+								} h-5 w-5 text-primary-500`}
 							/>
 						</Disclosure.Button>
 
@@ -589,7 +589,7 @@ export default function MeetingForm({
 									<button
 										type="button"
 										onClick={handleAddMeetingItem}
-										className="bg-ocobrown-600 text-white text-sm flex items-center p-2 rounded-md"
+										className="bg-primary-600 text-white text-sm flex items-center p-2 rounded-md"
 									>
 										<Icon icon="heroicons:plus" />{' '}
 										<span> Add A Meeting Item</span>
@@ -622,9 +622,9 @@ export default function MeetingForm({
 			<Disclosure as="div" className="pt-6">
 				{({ open }) => (
 					<>
-						<Disclosure.Button className="flex items-center w-full justify-between rounded-lg bg-ocobrown-100 px-4 py-2 text-left text-sm font-medium text-ocobrown-900 hover:bg-ocobrown-200 focus:outline-none focus-visible:ring focus-visible:ring-ocobrown-500 focus-visible:ring-opacity-75">
+						<Disclosure.Button className="flex items-center w-full justify-between rounded-lg bg-primary-100 px-4 py-2 text-left text-sm font-medium text-primary-900 hover:bg-primary-200 focus:outline-none focus-visible:ring focus-visible:ring-primary-500 focus-visible:ring-opacity-75">
 							<div className="w-full flex items-center space-x-2">
-								<div className="h-2 w-2 p-3 rounded-full bg-ocobrown-600 text-ocobrown-50 flex items-center justify-center">
+								<div className="h-2 w-2 p-3 rounded-full bg-primary-600 text-primary-50 flex items-center justify-center">
 									<span>3</span>
 								</div>
 								<div className="flex flex-col">
@@ -641,7 +641,7 @@ export default function MeetingForm({
 								icon="heroicons:chevron-right"
 								className={`${
 									open ? 'rotate-90 transform' : ''
-								} h-5 w-5 text-ocobrown-500`}
+								} h-5 w-5 text-primary-500`}
 							/>
 						</Disclosure.Button>
 

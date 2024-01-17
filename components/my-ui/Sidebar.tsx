@@ -20,7 +20,7 @@ function classNames(...classes: string[]) {
 
 //Fetch All Menus
 const allMenus = async () => {
-	const response = await axios.get('/api/menus/getMenus');
+	const response = await axios.get('/api/menus/get');
 	return response.data;
 };
 export default function Sidebar() {
@@ -105,7 +105,7 @@ export default function Sidebar() {
 										/>
 										<div className="inline-flex items-center text-xl font-medium">
 											<span className="text-ocoblue-600">OCO</span>
-											<span className="text-ocobrown-600">Apps</span>
+											<span className="text-primary-600">Apps</span>
 										</div>
 									</div>
 									<div className="flex flex-col flex-grow mt-5">
@@ -118,13 +118,13 @@ export default function Sidebar() {
 															className={`
 										w-full inline-flex items-center space-x-2 text-sm rounded p-2 transition-all duration-500 ${
 											pathname?.includes(item.url)
-												? 'bg-ocobrown-600 bg-opacity-20 text-ocoblue-600 hover:bg-ocobrown-600 hover:bg-opacity-20'
+												? 'bg-primary-600 bg-opacity-20 text-ocoblue-600 hover:bg-primary-600 hover:bg-opacity-20'
 												: 'hover:bg-ocoblue-600 hover:bg-opacity-20'
 										}`}
 														>
 															<Icon
 																icon={item?.icon}
-																className="text-base xl:text-xl text-ocobrown-600"
+																className="text-base xl:text-xl text-primary-600"
 															/>
 															<span>{item?.name}</span>
 														</Link>
@@ -150,7 +150,7 @@ export default function Sidebar() {
 																		pathname?.includes(
 																			item?.url
 																		)
-																			? 'bg-ocobrown-600 bg-opacity-20 text-ocoblue-600 hover:bg-ocobrown-600 hover:bg-opacity-20'
+																			? 'bg-primary-600 bg-opacity-20 text-ocoblue-600 hover:bg-primary-600 hover:bg-opacity-20'
 																			: 'hover:bg-ocoblue-600 hover:bg-opacity-20',
 																		'w-full inline-flex items-center justify-between text-sm rounded py-2 pl-2 pr-1 transition-all duration-500'
 																	)}
@@ -163,7 +163,7 @@ export default function Sidebar() {
 																	<div className="inline-flex items-center space-x-2 ">
 																		<Icon
 																			icon={item?.icon}
-																			className="text-base xl:text-xl text-ocobrown-600"
+																			className="text-base xl:text-xl text-primary-600"
 																		/>
 																		<span>{item?.name}</span>
 																	</div>
@@ -188,7 +188,7 @@ export default function Sidebar() {
 																				className={`${
 																					pathname ===
 																					sub_menu?.url
-																						? 'bg-ocobrown-600 bg-opacity-20 text-ocoblue-600 hover:bg-ocobrown-600 hover:bg-opacity-20'
+																						? 'bg-primary-600 bg-opacity-20 text-ocoblue-600 hover:bg-primary-600 hover:bg-opacity-20'
 																						: 'hover:bg-ocoblue-600 hover:bg-opacity-20'
 																				}
 														w-full inline-flex items-center space-x-2 text-xs rounded p-2 transition-all duration-500`}
@@ -197,7 +197,7 @@ export default function Sidebar() {
 																					icon={
 																						sub_menu?.icon
 																					}
-																					className="text-base xl:text-xl text-ocobrown-600"
+																					className="text-base xl:text-xl text-primary-600"
 																				/>
 																				<span>
 																					{sub_menu?.name}
@@ -219,11 +219,11 @@ export default function Sidebar() {
 													width={20}
 													height={20}
 													alt="User Avatar"
-													className="object-contain w-12 h-12 p-px border-2 rounded-full border-ocobrown-400 border-opacity-30"
+													className="object-contain w-12 h-12 p-px border-2 rounded-full border-primary-400 border-opacity-30"
 												/>
 
 												<div className="inline-flex flex-col space-y-0">
-													<div className="text-xs font-normal text-ocobrown-700">
+													<div className="text-xs font-normal text-primary-700">
 														John Doe
 													</div>
 													<div className="font-extralight text-[10px] text-ocoblue-600">
@@ -251,7 +251,7 @@ export default function Sidebar() {
 						/>
 						<div className="inline-flex items-center text-xl font-medium">
 							<span className="text-ocoblue-600">OCO</span>
-							<span className="text-ocobrown-600">Apps</span>
+							<span className="text-primary-600">Apps</span>
 						</div>
 					</div>
 					<div className="flex flex-col flex-grow mt-5">
@@ -264,13 +264,13 @@ export default function Sidebar() {
 											className={`
 										w-full inline-flex items-center space-x-2 text-sm rounded p-2 transition-all duration-500 ${
 											pathname?.includes(item.url)
-												? 'bg-ocobrown-600 bg-opacity-20 text-ocoblue-600 hover:bg-ocobrown-600 hover:bg-opacity-20'
+												? 'bg-primary-600 bg-opacity-20 text-ocoblue-600 hover:bg-primary-600 hover:bg-opacity-20'
 												: 'hover:bg-ocoblue-600 hover:bg-opacity-20'
 										}`}
 										>
 											<Icon
 												icon={item?.icon}
-												className="text-base xl:text-xl text-ocobrown-600"
+												className="text-base xl:text-xl text-primary-600"
 											/>
 											<span>{item?.name}</span>
 										</Link>
@@ -294,7 +294,7 @@ export default function Sidebar() {
 												<Disclosure.Button
 													className={classNames(
 														pathname?.includes(item?.url)
-															? 'bg-ocobrown-600 bg-opacity-20 text-ocoblue-600 hover:bg-ocobrown-600 hover:bg-opacity-20'
+															? 'bg-primary-600 bg-opacity-20 text-ocoblue-600 hover:bg-primary-600 hover:bg-opacity-20'
 															: 'hover:bg-ocoblue-600 hover:bg-opacity-20',
 														'w-full inline-flex items-center justify-between text-sm rounded py-2 pl-2 pr-1 transition-all duration-500'
 													)}
@@ -303,7 +303,7 @@ export default function Sidebar() {
 													<div className="inline-flex items-center space-x-2 ">
 														<Icon
 															icon={item?.icon}
-															className="text-base xl:text-xl text-ocobrown-600"
+															className="text-base xl:text-xl text-primary-600"
 														/>
 														<span>{item?.name}</span>
 													</div>
@@ -324,14 +324,14 @@ export default function Sidebar() {
 															href={sub_menu?.url}
 															className={`${
 																pathname === sub_menu?.url
-																	? 'bg-ocobrown-600 bg-opacity-20 text-ocoblue-600 hover:bg-ocobrown-600 hover:bg-opacity-20'
+																	? 'bg-primary-600 bg-opacity-20 text-ocoblue-600 hover:bg-primary-600 hover:bg-opacity-20'
 																	: 'hover:bg-ocoblue-600 hover:bg-opacity-20'
 															}
 														w-full inline-flex items-center space-x-2 text-xs rounded p-2 transition-all duration-500`}
 														>
 															<Icon
 																icon={sub_menu?.icon}
-																className="text-base xl:text-xl text-ocobrown-600"
+																className="text-base xl:text-xl text-primary-600"
 															/>
 															<span>{sub_menu?.name}</span>
 														</Link>
@@ -350,11 +350,11 @@ export default function Sidebar() {
 									width={20}
 									height={20}
 									alt="User Avatar"
-									className="object-contain w-12 h-12 p-px border-2 rounded-full border-ocobrown-400 border-opacity-30"
+									className="object-contain w-12 h-12 p-px border-2 rounded-full border-primary-400 border-opacity-30"
 								/>
 
 								<div className="inline-flex flex-col space-y-0">
-									<div className="text-xs font-normal text-ocobrown-700">
+									<div className="text-xs font-normal text-primary-700">
 										John Doe
 									</div>
 									<div className="font-extralight text-[10px] text-ocoblue-600">
@@ -385,7 +385,7 @@ export default function Sidebar() {
 						width={5}
 						height={5}
 						alt="User Avatar"
-						className="object-contain w-8 h-8 p-px border-2 rounded-full bg-gray-50 border-ocobrown-400 border-opacity-30"
+						className="object-contain w-8 h-8 p-px border-2 rounded-full bg-gray-50 border-primary-400 border-opacity-30"
 					/>
 				</Link>
 			</div>

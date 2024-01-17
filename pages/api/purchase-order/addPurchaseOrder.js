@@ -1,8 +1,9 @@
-import prisma from '../../../prisma/client';
+import prisma from '@/lib/prisma';
 import { getServerSession } from 'next-auth';
-import { authOptions } from '../auth/[...nextauth]';
+
+import { authOptions } from '@/pages/api/auth/[...nextauth]';
 import { sendMail } from '@/services/mailService';
-import { renderToStaticMarkup } from 'react-dom/server';
+import { render } from '@react-email/render';
 import POEmailTemplate from '../../../components/email-templates/purchase-order/POApprovalEmailTemplate';
 
 export default async function handler(req, res) {
@@ -55,18 +56,18 @@ export default async function handler(req, res) {
 
 			const subject = 'Approval Required for Purchase Order';
 			const toEmail = 'alvinkigen997@gmail.com'; // Replace with the actual approver's email
-			const textContent = `Please approve ${prismaUser.name}'s Purchase Order PO Number: ${formData.poNumber}`;
+			const optText = `Please approve ${prismaUser.name}'s Purchase Order PO Number: ${formData.poNumber}`;
 
-			const emailContent = renderToStaticMarkup(
+			const htmlContent = render(
 				<POEmailTemplate
 					userName={prismaUser.name}
 					poNumber={formData.poNumber}
 					approvalUrl={approvalUrl}
 				/>
 			);
-			const htmlContent = `<!DOCTYPE html>${emailContent}`;
+			
 
-			await sendMail(subject, toEmail, textContent, htmlContent);
+			await sendMail({ toEmail, subject, htmlContent, optText });
 
 			res.status(200).json(result);
 		} catch (err) {

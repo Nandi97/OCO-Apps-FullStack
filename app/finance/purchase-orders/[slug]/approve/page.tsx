@@ -81,13 +81,13 @@ export default function POApproval(url: URL) {
 								<button
 									type="button"
 									onClick={handleClick}
-									className="flex text-sm items-center p-0.5 rounded text-ocobrown-600 space-x-2 font-medium border border-ocoblue-300 hover:bg-ocobrown-600/90 hover:text-ocobrown-50 hover:border-ocobrown-600 shadow-sm"
+									className="flex text-sm items-center p-0.5 rounded text-primary-600 space-x-2 font-medium border border-ocoblue-300 hover:bg-primary-600/90 hover:text-primary-50 hover:border-primary-600 shadow-sm"
 								>
 									<Icon icon="heroicons:check" />
 									<span>Approve</span>
 								</button>
 							) : (
-								<div className="flex text-sm items-center p-0.5 rounded text-ocobrown-50 space-x-2 font-medium border border-ocoblue-300 bg-ocobrown-600/90 hover:text-ocobrown-50 hover:border-ocobrown-600 shadow-sm">
+								<div className="flex text-sm items-center p-0.5 rounded text-primary-50 space-x-2 font-medium border border-ocoblue-300 bg-primary-600/90 hover:text-primary-50 hover:border-primary-600 shadow-sm">
 									<Icon icon="heroicons:check-badge" />
 									<span>Approved</span>
 								</div>
@@ -101,7 +101,7 @@ export default function POApproval(url: URL) {
 							<div className="col-span-2"></div>
 							<div className="col-span-5">
 								<table className="table-auto w-full text-sm text-left text-ocoblue-500">
-									<thead className="text-xs uppercase  bg-ocoblue-50 text-ocobrown-600">
+									<thead className="text-xs uppercase  bg-ocoblue-50 text-primary-600">
 										<tr>
 											<th
 												scope="col"
@@ -148,7 +148,7 @@ export default function POApproval(url: URL) {
 						<div className="grid grid-cols-12 gap-2">
 							<div className="col-span-5">
 								<table className="table-auto w-full text-sm text-left text-ocoblue-500 border-ocoblue-300 border">
-									<thead className="text-xs uppercase  bg-ocoblue-50 text-ocobrown-600 border-ocoblue-300 border-b">
+									<thead className="text-xs uppercase  bg-ocoblue-50 text-primary-600 border-ocoblue-300 border-b">
 										<tr>
 											<th scope="col" colSpan={3} className="p-1 w-full">
 												Vendor
@@ -200,7 +200,7 @@ export default function POApproval(url: URL) {
 												className="px-2 font-medium text-ocoblue-900 whitespace-nowrap "
 											>
 												Email:
-												<span className="text-sm text-ocobrown-500 font-normal px-1">
+												<span className="text-sm text-primary-500 font-normal px-1">
 													{purchaseOrder?.email}
 												</span>
 											</th>
@@ -211,7 +211,7 @@ export default function POApproval(url: URL) {
 							<div className="col-span-2"></div>
 							<div className="col-span-5">
 								<table className="w-full table-auto text-sm text-left text-ocoblue-500 border-ocoblue-300 border">
-									<thead className="text-xs uppercase  bg-ocoblue-50 text-ocobrown-600 border-ocoblue-300 border-b">
+									<thead className="text-xs uppercase  bg-ocoblue-50 text-primary-600 border-ocoblue-300 border-b">
 										<tr>
 											<th scope="col" colSpan={3} className="p-1 w-full">
 												Ship To
@@ -262,7 +262,7 @@ export default function POApproval(url: URL) {
 												className="px-2 font-medium text-ocoblue-900 whitespace-nowrap "
 											>
 												Email:
-												<span className="text-sm text-ocobrown-500 font-normal px-1">
+												<span className="text-sm text-primary-500 font-normal px-1">
 													legal@oraro.co.ke
 												</span>
 											</th>
@@ -274,7 +274,7 @@ export default function POApproval(url: URL) {
 						{/* SECTION C */}
 						<div className="w-full">
 							<table className="w-full table-auto text-sm text-left text-ocoblue-500 border-ocoblue-300 border">
-								<thead className="text-xs uppercase  bg-ocoblue-50 text-ocobrown-600 border-ocoblue-300 border-b border-t">
+								<thead className="text-xs uppercase  bg-ocoblue-50 text-primary-600 border-ocoblue-300 border-b border-t">
 									<tr className="divide-y">
 										<th
 											scope="col"
@@ -359,7 +359,7 @@ export default function POApproval(url: URL) {
 											<tr>
 												<td
 													colSpan={3}
-													className="px-2 border-ocoblue-300 border-r text-right font-medium  text-ocobrown-600 uppercase"
+													className="px-2 border-ocoblue-300 border-r text-right font-medium  text-primary-600 uppercase"
 												>
 													Total
 												</td>
@@ -377,7 +377,7 @@ export default function POApproval(url: URL) {
 										<tr>
 											<td
 												colSpan={3}
-												className="px-2 border-ocoblue-300 border-r text-right font-medium  text-ocobrown-600 uppercase"
+												className="px-2 border-ocoblue-300 border-r text-right font-medium  text-primary-600 uppercase"
 											>
 												Total
 											</td>
@@ -397,7 +397,7 @@ export default function POApproval(url: URL) {
 						<div className="grid grid-cols-12 gap-6">
 							<div className="col-span-3">
 								<table className="table-auto w-full text-sm text-left text-ocoblue-500 border-ocoblue-300 border">
-									<thead className="text-xs uppercase  bg-ocoblue-50 text-ocobrown-600">
+									<thead className="text-xs uppercase  bg-ocoblue-50 text-primary-600">
 										<tr>
 											<th
 												scope="col"
@@ -428,7 +428,7 @@ export default function POApproval(url: URL) {
 							</div>
 							<div className="col-span-3">
 								<table className="table-auto w-full text-sm text-left text-ocoblue-500 border-ocoblue-300 border">
-									<thead className="text-xs uppercase  bg-ocoblue-50 text-ocobrown-600">
+									<thead className="text-xs uppercase  bg-ocoblue-50 text-primary-600">
 										<tr>
 											<th
 												scope="col"

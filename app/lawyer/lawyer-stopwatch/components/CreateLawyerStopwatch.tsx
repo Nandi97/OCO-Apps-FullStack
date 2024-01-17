@@ -134,7 +134,7 @@ export default function CreateLawyerStopwatch({ setToggle }: CreateLawyerStopwat
 					type="button"
 					className="absolute top-3 right-2.5 text-ocoblue-400 bg-transparent hover:bg-ocoblue-200 hover:text-ocoblue-900 rounded-lg text-sm w-8 h-8 ml-auto inline-flex justify-center items-center"
 				>
-					<Icon icon="heroicons:x-mark" className="text-lg text-ocobrown-600" />
+					<Icon icon="heroicons:x-mark" className="text-lg text-primary-600" />
 				</button>
 				<div className="flex w-full justify-between">
 					<h1 className="mb-4 text-xl font-medium text-ocoblue-900">
@@ -151,7 +151,7 @@ export default function CreateLawyerStopwatch({ setToggle }: CreateLawyerStopwat
 							className={`text-xs p-1 shadow-sm ${
 								toggleAutomaticLawyerStopwatch
 									? 'bg-slate-300 cursor-not-allowed text-slate-400'
-									: 'bg-ocobrown-500 hover:bg-ocobrown-500/50 text-white'
+									: 'bg-primary-500 hover:bg-primary-500/50 text-white'
 							}  rounded-l-md`}
 						>
 							Automatic
@@ -166,7 +166,7 @@ export default function CreateLawyerStopwatch({ setToggle }: CreateLawyerStopwat
 							className={`text-xs p-1 shadow-sm ${
 								toggleManualLawyerStopwatch
 									? 'bg-slate-300 cursor-not-allowed text-slate-400'
-									: 'bg-ocobrown-500 hover:bg-ocobrown-500/50 text-white'
+									: 'bg-primary-500 hover:bg-primary-500/50 text-white'
 							}  rounded-r-md`}
 						>
 							Manual
@@ -200,7 +200,7 @@ export default function CreateLawyerStopwatch({ setToggle }: CreateLawyerStopwat
 					<div className="flex items-center justify-center w-full py-8 space-x-2">
 						<button
 							type="submit"
-							className="flex items-center gap-2 p-2 text-sm font-medium leading-4 text-white border rounded-md shadow-sm bg-ocobrown-600 hover:opacity-80 border-ocobrown-300 focus:outline-none focus:ring-2 focus:ring-ocobrown-500 focus:ring-offset-1"
+							className="flex items-center gap-2 p-2 text-sm font-medium leading-4 text-white border rounded-md shadow-sm bg-primary-600 hover:opacity-80 border-primary-300 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-1"
 						>
 							Submit Form
 						</button>

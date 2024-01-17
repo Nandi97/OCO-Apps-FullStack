@@ -1,6 +1,7 @@
-import prisma from '../../../prisma/client';
+import prisma from '@/lib/prisma';
 import { getServerSession } from 'next-auth';
-import { authOptions } from '../auth/[...nextauth]';
+
+import { authOptions } from '@/pages/api/auth/[...nextauth]';
 import { sendMail } from '@/services/mailService';
 import { renderToStaticMarkup } from 'react-dom/server';
 import POApprovedEmailTemplate from '../../../components/email-templates/purchase-order/POApprovedEmailTemplate';

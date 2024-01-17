@@ -52,7 +52,7 @@ export default function NavMenu() {
 								>
 									<Icon
 										icon={item?.icon}
-										className="text-xl h-12 w-12 p-2 rounded-md bg-ocobrown-600 text-white"
+										className="text-xl h-12 w-12 p-2 rounded-md bg-primary-600 text-white"
 									/>
 									<span className="text-xs text-center">{item?.name}</span>
 								</Menu.Item>
