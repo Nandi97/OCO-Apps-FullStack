@@ -26,7 +26,7 @@ export default function NavMenu() {
 					<Menu.Button className="inline-flex w-full items-center justify-center rounded-md text-sm font-medium text-white  focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75">
 						<Icon
 							icon="mdi:dots-grid"
-							className="object-contain w-7 h-7 p-px  border-opacity-30 hover:bg-ocoblue-600 rounded-md"
+							className="object-contain w-7 h-7 p-px  border-opacity-30 hover:bg-secondary-600 rounded-md"
 						/>
 					</Menu.Button>
 				</div>
@@ -48,7 +48,7 @@ export default function NavMenu() {
 									href={item?.url}
 									className={`${
 										pathname === item?.url ? 'bg-slate-200 ' : 'text-gray-900'
-									} flex flex-col items-center col-span-1 p-2 text-ocoblue-600 hover:bg-slate-200 rounded-md`}
+									} flex flex-col items-center col-span-1 p-2 text-secondary-600 hover:bg-slate-200 rounded-md`}
 								>
 									<Icon
 										icon={item?.icon}

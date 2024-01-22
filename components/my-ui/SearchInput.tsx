@@ -20,7 +20,7 @@ export default function SearchInput({ onSearch }: any) {
 					name="search"
 					id="search"
 					placeholder="Search..."
-					className="h-full w-full bg-ocoblue-50 bg-opacity-70 border-1 border-ocoblue-300 shadow-inner shadow-accent-300 text-xs pl-8 focus:ring-ocoblue-500 border text-ocoblue-900 rounded-lg  focus:border-blue-500 block p-2.5"
+					className="h-full w-full bg-secondary-50 bg-opacity-70 border-1 border-secondary-300 shadow-inner shadow-accent-300 text-xs pl-8 focus:ring-secondary-500 border text-secondary-900 rounded-lg  focus:border-blue-500 block p-2.5"
 					value={searchInput}
 					onChange={(e) => setSearchInput(e.target.value)}
 				/>

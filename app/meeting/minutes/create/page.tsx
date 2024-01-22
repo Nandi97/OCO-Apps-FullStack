@@ -15,7 +15,7 @@ export default function CreateMinutes() {
 	return (
 		<div className="space-y-2 bg-white">
 			<div className="grid grid-cols-12 gap-2">
-				<div className="rounded-md shadow-md shadow-ocoblue-300 col-span-6 p-2">
+				<div className="rounded-md shadow-md shadow-secondary-300 col-span-6 p-2">
 					<h1 className="text-lg font-extralight text-accent-700">{title}</h1>
 					<MeetingForm />
 				</div>

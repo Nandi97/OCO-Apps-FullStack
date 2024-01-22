@@ -110,7 +110,7 @@ export default function MeetingForm({
 									<span>1</span>
 								</div>
 								<div className="flex flex-col">
-									<span className="text-base font-semibold text-ocoblue-600">
+									<span className="text-base font-semibold text-secondary-600">
 										Meeting Details
 									</span>
 								</div>
@@ -124,11 +124,11 @@ export default function MeetingForm({
 						</Disclosure.Button>
 
 						<Disclosure.Panel as="dd" className="px-4 pt-4 pb-2 text-sm text-gray-500">
-							<div className="grid md:grid-cols-12 grid-cols-6 gap-4 border border-ocoblue-200 rounded p-2">
+							<div className="grid md:grid-cols-12 grid-cols-6 gap-4 border border-secondary-200 rounded p-2">
 								<div className="col-span-6 md:col-span-12">
 									<label
 										htmlFor="title"
-										className="block text-sm font-medium text-ocoblue-700"
+										className="block text-sm font-medium text-secondary-700"
 									>
 										Meeting Title
 									</label>
@@ -139,7 +139,7 @@ export default function MeetingForm({
 											id="title"
 											value={formValues?.title}
 											onChange={onChange}
-											className="sm:text-sm w-full bg-ocoblue-50 bg-opacity-70 border-1 focus:shadow-inner shadow-accent-300  focus:border-ocoblue-500 block p-2.5 h-8  px-3 py-1 shadow-ocoblue-300 rounded-md border border-ocoblue-300 text-sm font-medium leading-4 text-ocoblue-700 shadow-sm hover:bg-ocoblue-50 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-1"
+											className="sm:text-sm w-full bg-secondary-50 bg-opacity-70 border-1 focus:shadow-inner shadow-accent-300  focus:border-secondary-500 block p-2.5 h-8  px-3 py-1 shadow-secondary-300 rounded-md border border-secondary-300 text-sm font-medium leading-4 text-secondary-700 shadow-sm hover:bg-secondary-50 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-1"
 										/>
 									</div>
 								</div>
@@ -147,7 +147,7 @@ export default function MeetingForm({
 								<div className="col-span-6">
 									<label
 										htmlFor="date"
-										className="block text-sm font-medium text-ocoblue-700"
+										className="block text-sm font-medium text-secondary-700"
 									>
 										Date
 									</label>
@@ -158,14 +158,14 @@ export default function MeetingForm({
 											id="date"
 											value={formValues?.date}
 											onChange={onChange}
-											className="sm:text-sm w-full bg-ocoblue-50 bg-opacity-70 border-1 focus:shadow-inner shadow-accent-300  focus:border-ocoblue-500 block p-2.5 h-8  px-3 py-1 shadow-ocoblue-300 rounded-md border border-ocoblue-300 text-sm font-medium leading-4 text-ocoblue-700 shadow-sm hover:bg-ocoblue-50 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-1"
+											className="sm:text-sm w-full bg-secondary-50 bg-opacity-70 border-1 focus:shadow-inner shadow-accent-300  focus:border-secondary-500 block p-2.5 h-8  px-3 py-1 shadow-secondary-300 rounded-md border border-secondary-300 text-sm font-medium leading-4 text-secondary-700 shadow-sm hover:bg-secondary-50 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-1"
 										/>
 									</div>
 								</div>
 								<div className="col-span-6">
 									<label
 										htmlFor="startedAt"
-										className="block text-sm font-medium text-ocoblue-700"
+										className="block text-sm font-medium text-secondary-700"
 									>
 										Started At
 									</label>
@@ -176,14 +176,14 @@ export default function MeetingForm({
 											id="startedAt"
 											value={formValues?.startedAt}
 											onChange={onChange}
-											className="sm:text-sm w-full bg-ocoblue-50 bg-opacity-70 border-1 focus:shadow-inner shadow-accent-300  focus:border-ocoblue-500 block p-2.5 h-8  px-3 py-1 shadow-ocoblue-300 rounded-md border border-ocoblue-300 text-sm font-medium leading-4 text-ocoblue-700 shadow-sm hover:bg-ocoblue-50 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-1"
+											className="sm:text-sm w-full bg-secondary-50 bg-opacity-70 border-1 focus:shadow-inner shadow-accent-300  focus:border-secondary-500 block p-2.5 h-8  px-3 py-1 shadow-secondary-300 rounded-md border border-secondary-300 text-sm font-medium leading-4 text-secondary-700 shadow-sm hover:bg-secondary-50 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-1"
 										/>
 									</div>
 								</div>
 								<div className="col-span-6">
 									<label
 										htmlFor="endedAt"
-										className="block text-sm font-medium text-ocoblue-700"
+										className="block text-sm font-medium text-secondary-700"
 									>
 										Ended At
 									</label>
@@ -194,14 +194,14 @@ export default function MeetingForm({
 											id="endedAt"
 											value={formValues?.endedAt}
 											onChange={onChange}
-											className="sm:text-sm w-full bg-ocoblue-50 bg-opacity-70 border-1 focus:shadow-inner shadow-accent-300  focus:border-ocoblue-500 block p-2.5 h-8  px-3 py-1 shadow-ocoblue-300 rounded-md border border-ocoblue-300 text-sm font-medium leading-4 text-ocoblue-700 shadow-sm hover:bg-ocoblue-50 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-1"
+											className="sm:text-sm w-full bg-secondary-50 bg-opacity-70 border-1 focus:shadow-inner shadow-accent-300  focus:border-secondary-500 block p-2.5 h-8  px-3 py-1 shadow-secondary-300 rounded-md border border-secondary-300 text-sm font-medium leading-4 text-secondary-700 shadow-sm hover:bg-secondary-50 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-1"
 										/>
 									</div>
 								</div>
 								<div className="col-span-6">
 									<label
 										htmlFor="venue"
-										className="block text-sm font-medium text-ocoblue-700"
+										className="block text-sm font-medium text-secondary-700"
 									>
 										venue
 									</label>
@@ -212,14 +212,14 @@ export default function MeetingForm({
 											id="venue"
 											value={formValues?.venue}
 											onChange={onChange}
-											className="sm:text-sm w-full bg-ocoblue-50 bg-opacity-70 border-1 focus:shadow-inner shadow-accent-300  focus:border-ocoblue-500 block p-2.5 h-8  px-3 py-1 shadow-ocoblue-300 rounded-md border border-ocoblue-300 text-sm font-medium leading-4 text-ocoblue-700 shadow-sm hover:bg-ocoblue-50 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-1"
+											className="sm:text-sm w-full bg-secondary-50 bg-opacity-70 border-1 focus:shadow-inner shadow-accent-300  focus:border-secondary-500 block p-2.5 h-8  px-3 py-1 shadow-secondary-300 rounded-md border border-secondary-300 text-sm font-medium leading-4 text-secondary-700 shadow-sm hover:bg-secondary-50 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-1"
 										/>
 									</div>
 								</div>
 								<div className="col-span-6 md:col-span-12">
 									<label
 										htmlFor="venue"
-										className="block text-sm font-medium text-ocoblue-700"
+										className="block text-sm font-medium text-secondary-700"
 									>
 										Attendees:
 									</label>
@@ -233,7 +233,7 @@ export default function MeetingForm({
 											{meetingAttendees?.map((item) => (
 												<div
 													key={item?.id}
-													className="flex relative items-center bg-ocoblue-300 text-xs text-white px-2 py-1 rounded-full m-1"
+													className="flex relative items-center bg-secondary-300 text-xs text-white px-2 py-1 rounded-full m-1"
 												>
 													<span className="text-xs overflow-hidden truncate w-14">
 														{item?.name}
@@ -259,7 +259,7 @@ export default function MeetingForm({
 												</div>
 											))}
 											<Combobox.Input
-												className="z-[2]  sm:text-sm w-full bg-ocoblue-50 bg-opacity-70 border-1 focus:shadow-inner shadow-accent-300  focus:border-ocoblue-500 block p-2.5 h-8  px-3 py-1 shadow-ocoblue-300 rounded-md border border-ocoblue-300 text-sm font-medium leading-4 text-ocoblue-700 shadow-sm hover:bg-ocoblue-50 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-1"
+												className="z-[2]  sm:text-sm w-full bg-secondary-50 bg-opacity-70 border-1 focus:shadow-inner shadow-accent-300  focus:border-secondary-500 block p-2.5 h-8  px-3 py-1 shadow-secondary-300 rounded-md border border-secondary-300 text-sm font-medium leading-4 text-secondary-700 shadow-sm hover:bg-secondary-50 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-1"
 												onChange={(event) => setQuery(event.target.value)}
 											/>
 										</div>
@@ -280,7 +280,7 @@ export default function MeetingForm({
 																'cursor-default select-none py-2 pl-3 pr-9 flex justify-between',
 																active
 																	? 'bg-primary-600 text-white'
-																	: 'text-ocoblue-900'
+																	: 'text-secondary-900'
 															)
 														}
 													>
@@ -304,7 +304,7 @@ export default function MeetingForm({
 																			'inset-y-0 right-0 flex items-center pr-4',
 																			active
 																				? 'text-white'
-																				: 'text-ocoblue-600'
+																				: 'text-secondary-600'
 																		)}
 																	>
 																		<Icon
@@ -325,7 +325,7 @@ export default function MeetingForm({
 								<div className="col-span-6 md:col-span-12">
 									<label
 										htmlFor="AWA"
-										className="block text-sm font-medium text-ocoblue-700"
+										className="block text-sm font-medium text-secondary-700"
 									>
 										Absentee With Apologies
 									</label>
@@ -338,7 +338,7 @@ export default function MeetingForm({
 											{meetingAbsenteesWithApologies?.map((item) => (
 												<div
 													key={item?.id}
-													className="flex relative items-center bg-ocoblue-300 text-xs text-white px-2 py-1 rounded-full m-1"
+													className="flex relative items-center bg-secondary-300 text-xs text-white px-2 py-1 rounded-full m-1"
 												>
 													<span className="text-xs overflow-hidden truncate w-14">
 														{item?.name}
@@ -365,7 +365,7 @@ export default function MeetingForm({
 												</div>
 											))}
 											<Combobox.Input
-												className="sm:text-sm w-full bg-ocoblue-50 bg-opacity-70 border-1 focus:shadow-inner shadow-accent-300  focus:border-ocoblue-500 block p-2.5 h-8  px-3 py-1 shadow-ocoblue-300 rounded-md border border-ocoblue-300 text-sm font-medium leading-4 text-ocoblue-700 shadow-sm hover:bg-ocoblue-50 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-1"
+												className="sm:text-sm w-full bg-secondary-50 bg-opacity-70 border-1 focus:shadow-inner shadow-accent-300  focus:border-secondary-500 block p-2.5 h-8  px-3 py-1 shadow-secondary-300 rounded-md border border-secondary-300 text-sm font-medium leading-4 text-secondary-700 shadow-sm hover:bg-secondary-50 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-1"
 												// displayValue={(
 												// 	meetingAbsenteesWithApologies: any
 												// ) =>
@@ -389,7 +389,7 @@ export default function MeetingForm({
 																'cursor-default select-none py-2 pl-3 pr-9 flex justify-between',
 																active
 																	? 'bg-primary-600 text-white'
-																	: 'text-ocoblue-900'
+																	: 'text-secondary-900'
 															)
 														}
 													>
@@ -413,7 +413,7 @@ export default function MeetingForm({
 																			'inset-y-0 right-0 flex items-center pr-4',
 																			active
 																				? 'text-white'
-																				: 'text-ocoblue-600'
+																				: 'text-secondary-600'
 																		)}
 																	>
 																		<Icon
@@ -434,7 +434,7 @@ export default function MeetingForm({
 								<div className="col-span-6 md:col-span-12">
 									<label
 										htmlFor="venue"
-										className="block text-sm font-medium text-ocoblue-700"
+										className="block text-sm font-medium text-secondary-700"
 									>
 										Absentee
 									</label>
@@ -447,7 +447,7 @@ export default function MeetingForm({
 											{meetingAbsenteesWithoutApologies?.map((item) => (
 												<div
 													key={item?.id}
-													className="flex relative items-center bg-ocoblue-300 text-xs text-white px-2 py-1 rounded-full m-1"
+													className="flex relative items-center bg-secondary-300 text-xs text-white px-2 py-1 rounded-full m-1"
 												>
 													<span className="text-xs overflow-hidden truncate w-14">
 														{item?.name}
@@ -478,7 +478,7 @@ export default function MeetingForm({
 												</div>
 											))}
 											<Combobox.Input
-												className="sm:text-sm w-full bg-ocoblue-50 bg-opacity-70 border-1 focus:shadow-inner shadow-accent-300  focus:border-ocoblue-500 block p-2.5 h-8  px-3 py-1 shadow-ocoblue-300 rounded-md border border-ocoblue-300 text-sm font-medium leading-4 text-ocoblue-700 shadow-sm hover:bg-ocoblue-50 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-1"
+												className="sm:text-sm w-full bg-secondary-50 bg-opacity-70 border-1 focus:shadow-inner shadow-accent-300  focus:border-secondary-500 block p-2.5 h-8  px-3 py-1 shadow-secondary-300 rounded-md border border-secondary-300 text-sm font-medium leading-4 text-secondary-700 shadow-sm hover:bg-secondary-50 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-1"
 												// displayValue={(
 												// 	meetingAbsenteesWithoutApologies: any
 												// ) =>
@@ -502,7 +502,7 @@ export default function MeetingForm({
 																'cursor-default select-none py-2 pl-3 pr-9 flex justify-between',
 																active
 																	? 'bg-primary-600 text-white'
-																	: 'text-ocoblue-900'
+																	: 'text-secondary-900'
 															)
 														}
 													>
@@ -526,7 +526,7 @@ export default function MeetingForm({
 																			'inset-y-0 right-0 flex items-center pr-4',
 																			active
 																				? 'text-white'
-																				: 'text-ocoblue-600'
+																				: 'text-secondary-600'
 																		)}
 																	>
 																		<Icon
@@ -547,7 +547,7 @@ export default function MeetingForm({
 								<div className="col-span-6 md:col-span-12 w-full flex items-center justify-center">
 									<button
 										type="button"
-										className="flex items-center gap-2 p-2 text-sm font-medium leading-4 text-white border rounded-md shadow-sm bg-ocoblue-600 hover:opacity-80 border-ocoblue-300 focus:outline-none focus:ring-2 focus:ring-ocoblue-500 focus:ring-offset-1"
+										className="flex items-center gap-2 p-2 text-sm font-medium leading-4 text-white border rounded-md shadow-sm bg-secondary-600 hover:opacity-80 border-secondary-300 focus:outline-none focus:ring-2 focus:ring-secondary-500 focus:ring-offset-1"
 									>
 										Continue
 									</button>
@@ -566,10 +566,10 @@ export default function MeetingForm({
 									<span>1</span>
 								</div>
 								<div className="flex flex-col">
-									<span className="text-base font-semibold text-ocoblue-600">
+									<span className="text-base font-semibold text-secondary-600">
 										Minutes
 									</span>
-									<span className="text-xs font-semibold text-ocoblue-600/70 flex items-center">
+									<span className="text-xs font-semibold text-secondary-600/70 flex items-center">
 										Click the + icon to add a new item and the
 										<Icon icon="heroicons:trash-solid" /> icon to delete an item
 									</span>
@@ -584,7 +584,7 @@ export default function MeetingForm({
 						</Disclosure.Button>
 
 						<Disclosure.Panel as="dd" className="px-4 pt-4 pb-2 text-sm text-gray-500">
-							<div className="border border-ocoblue-200 rounded p-4 space-y-2">
+							<div className="border border-secondary-200 rounded p-4 space-y-2">
 								<div className="flex w-full divide-solid py-2">
 									<button
 										type="button"
@@ -609,7 +609,7 @@ export default function MeetingForm({
 								<div className=" w-full flex items-center justify-center">
 									<button
 										type="button"
-										className="flex items-center gap-2 p-2 text-sm font-medium leading-4 text-white border rounded-md shadow-sm bg-ocoblue-600 hover:opacity-80 border-ocoblue-300 focus:outline-none focus:ring-2 focus:ring-ocoblue-500 focus:ring-offset-1"
+										className="flex items-center gap-2 p-2 text-sm font-medium leading-4 text-white border rounded-md shadow-sm bg-secondary-600 hover:opacity-80 border-secondary-300 focus:outline-none focus:ring-2 focus:ring-secondary-500 focus:ring-offset-1"
 									>
 										Continue
 									</button>
@@ -628,10 +628,10 @@ export default function MeetingForm({
 									<span>3</span>
 								</div>
 								<div className="flex flex-col">
-									<span className="text-base font-semibold text-ocoblue-600">
+									<span className="text-base font-semibold text-secondary-600">
 										AOB {`(Any Other Business)`}
 									</span>
-									<span className="text-xs font-semibold text-ocoblue-600/70 flex items-center">
+									<span className="text-xs font-semibold text-secondary-600/70 flex items-center">
 										Click the + icon to add a AOB and the
 										<Icon icon="heroicons:trash-solid" /> icon to delete a AOB
 									</span>
@@ -646,7 +646,7 @@ export default function MeetingForm({
 						</Disclosure.Button>
 
 						<Disclosure.Panel as="dd" className="px-4 pt-4 pb-2 text-sm text-gray-500">
-							<div className="border border-ocoblue-200 rounded p-4 space-y-2">
+							<div className="border border-secondary-200 rounded p-4 space-y-2">
 								{/* Panel Content Goes Here */}
 							</div>
 						</Disclosure.Panel>

@@ -131,7 +131,7 @@ export default function EditBook(url: URL) {
 					Edit Book: {book?.title}
 				</h1>
 			</div>
-			<form onSubmit={handleSubmit} className="rounded-md shadow-md shadow-ocoblue-200">
+			<form onSubmit={handleSubmit} className="rounded-md shadow-md shadow-secondary-200">
 				<div>
 					<BookForm
 						formValues={formValues}
@@ -150,7 +150,7 @@ export default function EditBook(url: URL) {
 					</button>
 					<Link
 						href={'/library'}
-						className="flex items-center gap-2 p-2 text-sm font-medium leading-4 text-white border rounded-md shadow-sm bg-ocoblue-600 hover:opacity-80 border-ocoblue-300 focus:outline-none focus:ring-2 focus:ring-ocoblue-500 focus:ring-offset-1"
+						className="flex items-center gap-2 p-2 text-sm font-medium leading-4 text-white border rounded-md shadow-sm bg-secondary-600 hover:opacity-80 border-secondary-300 focus:outline-none focus:ring-2 focus:ring-secondary-500 focus:ring-offset-1"
 					>
 						Cancel
 					</Link>

@@ -46,7 +46,7 @@ export default function Library() {
 		icon: 'heroicons:chevron-down',
 		name: 'Other Resources',
 		buttonClassName:
-			'inline-flex items-center justify-center w-full h-8 px-4 text-xs text-white whitespace-nowrap rounded-sm shadow-sm bg-ocoblue-600 focus:outline-none focus:ring-2 focus:ring-ocoblue-600 focus:ring-offset-0 focus:ring-offset-ocoblue-100',
+			'inline-flex items-center justify-center w-full h-8 px-4 text-xs text-white whitespace-nowrap rounded-sm shadow-sm bg-secondary-600 focus:outline-none focus:ring-2 focus:ring-secondary-600 focus:ring-offset-0 focus:ring-offset-secondary-100',
 		iconClassName: '',
 	};
 
@@ -93,7 +93,7 @@ export default function Library() {
 	const tableOptBtnTxt = {
 		icon: 'heroicons:ellipsis-horizontal',
 		buttonClassName:
-			'flex items-center justify-center w-full h-8 px-4 text-ocoblue-900 rounded-sm hover:shadow-sm z-10',
+			'flex items-center justify-center w-full h-8 px-4 text-secondary-900 rounded-sm hover:shadow-sm z-10',
 	};
 	const tableOptionsList = [
 		{ name: 'Delete Book', icon: 'heroicons:trash', action: handleDelete },
@@ -124,7 +124,7 @@ export default function Library() {
 					<SearchInput onSearch={handleSearch} />
 					<Link
 						href={`${pathname}/book/create`}
-						className="inline-flex items-center justify-center w-8 h-8 p-2 text-xs rounded-sm shadow-sm text-ocoblue-600 bg-ocoblue-100 focus:ring-offset-ocoblue-100"
+						className="inline-flex items-center justify-center w-8 h-8 p-2 text-xs rounded-sm shadow-sm text-secondary-600 bg-secondary-100 focus:ring-offset-secondary-100"
 					>
 						<Icon icon={'heroicons:document-plus'} />
 					</Link>
@@ -134,7 +134,7 @@ export default function Library() {
 			<div className="shadow overscroll-none ring-1 ring-black ring-opacity-5 md:rounded-md">
 				<div className="flex-col hidden lg:flex">
 					<table className="min-w-full divide-y divide-primary-100">
-						<thead className="sticky z-10 top-12 bg-ocoblue-600 text-ocoblue-50">
+						<thead className="sticky z-10 top-12 bg-secondary-600 text-secondary-50">
 							<tr>
 								<th
 									scope="col"
@@ -184,11 +184,11 @@ export default function Library() {
 										<tr key={index}>
 											<td
 												colSpan={7}
-												className="flex items-center justify-center w-full px-3 py-2 text-sm text-center whitespace-nowrap text-ocoblue-500"
+												className="flex items-center justify-center w-full px-3 py-2 text-sm text-center whitespace-nowrap text-secondary-500"
 											>
 												<svg
 													aria-hidden="true"
-													className="w-8 h-8 mr-2 text-ocoblue-200 animate-spin fill-primary-600"
+													className="w-8 h-8 mr-2 text-secondary-200 animate-spin fill-primary-600"
 													viewBox="0 0 100 101"
 													fill="none"
 													xmlns="http://www.w3.org/2000/svg"
@@ -211,14 +211,16 @@ export default function Library() {
 										<tr
 											key={book?.id}
 											className={`hover:bg-primary-100/95 ${
-												index % 2 && index !== 0 ? 'bg-ocoblue-100/95' : ''
+												index % 2 && index !== 0
+													? 'bg-secondary-100/95'
+													: ''
 											}`}
 										>
 											<td className="p-2 text-sm text-center">
 												<div className="flex items-center w-full">
 													{!book?.coverUrl ? (
 														<div className="w-full">
-															<span className="inline-flex items-center justify-center rounded w-7 h-7 bg-ocoblue-500">
+															<span className="inline-flex items-center justify-center rounded w-7 h-7 bg-secondary-500">
 																<span className="font-medium leading-none text-white">
 																	{book?.title
 																		.split(' ')
@@ -240,7 +242,7 @@ export default function Library() {
 													)}
 												</div>
 											</td>
-											<td className="py-2 text-left  sm:pl-6 text-sm text-ocoblue-900">
+											<td className="py-2 text-left  sm:pl-6 text-sm text-secondary-900">
 												<Link
 													href={`/library/book/${book?.id}`}
 													className="font-medium text-primary-500 truncate hover:whitespace-normal hover:overflow-visible w-72"
@@ -248,18 +250,18 @@ export default function Library() {
 													{book?.title}
 												</Link>
 											</td>
-											<td className="py-2 text-left  sm:pl-6 text-sm text-ocoblue-900">
+											<td className="py-2 text-left  sm:pl-6 text-sm text-secondary-900">
 												<p className="truncate hover:whitespace-normal hover:overflow-visible w-52">
 													{book?.author}
 												</p>
 											</td>
-											<td className="px-3 py-2 text-sm whitespace-nowrap text-ocoblue-500">
+											<td className="px-3 py-2 text-sm whitespace-nowrap text-secondary-500">
 												{book?.publicationYear}
 											</td>
-											<td className="px-3 py-2 text-sm text-center whitespace-nowrap text-ocoblue-500">
+											<td className="px-3 py-2 text-sm text-center whitespace-nowrap text-secondary-500">
 												{book?.edition}
 											</td>
-											<td className="px-3 py-2 text-sm whitespace-nowrap text-ocoblue-500">
+											<td className="px-3 py-2 text-sm whitespace-nowrap text-secondary-500">
 												<span
 													className={`inline-flex rounded-full  px-2 text-xs font-semibold leading-5 ${
 														book?.status === true
@@ -299,12 +301,12 @@ export default function Library() {
 					{data?.data?.map((book, i) => (
 						<div
 							key={book?.id}
-							className="grid min-w-full grid-cols-12 p-3 bg-white border-t border-gray-200 rounded-md shadow-sm sm:px-6 shadow-ocoblue-400"
+							className="grid min-w-full grid-cols-12 p-3 bg-white border-t border-gray-200 rounded-md shadow-sm sm:px-6 shadow-secondary-400"
 						>
 							<div className="col-span-4">
 								<div className="flex items-center gap-2">
 									{!book?.coverUrl ? (
-										<span className="inline-flex items-center justify-center rounded-full h-7 w-7 bg-ocoblue-500">
+										<span className="inline-flex items-center justify-center rounded-full h-7 w-7 bg-secondary-500">
 											<span className="font-medium leading-none text-white">
 												{book?.title
 													.split(' ')
@@ -326,25 +328,25 @@ export default function Library() {
 							<div className="col-span-8">
 								{book?.copies} Cop{book?.copies > 1 ? 'ies' : 'y'}
 							</div>
-							<div className="col-span-4 text-sm font-semibold text-left text-ocoblue-600">
+							<div className="col-span-4 text-sm font-semibold text-left text-secondary-600">
 								Title :
 							</div>
 							<div className="col-span-8">{book?.title}</div>
-							<div className="col-span-4 text-sm font-semibold text-left text-ocoblue-600">
+							<div className="col-span-4 text-sm font-semibold text-left text-secondary-600">
 								Author :
 							</div>
 							<div className="col-span-8">{book?.author}</div>
-							<div className="col-span-4 text-sm font-semibold text-left text-ocoblue-600">
+							<div className="col-span-4 text-sm font-semibold text-left text-secondary-600">
 								Publication Year :
 							</div>
 							<div className="col-span-8 text-primary-500">
 								{book?.publicationYear}
 							</div>
-							<div className="col-span-4 text-sm font-semibold text-left text-ocoblue-600">
+							<div className="col-span-4 text-sm font-semibold text-left text-secondary-600">
 								Extension :
 							</div>
 							<div className="col-span-8">{book?.edition}</div>
-							<div className="col-span-4 text-sm font-semibold text-left text-ocoblue-600">
+							<div className="col-span-4 text-sm font-semibold text-left text-secondary-600">
 								Status :
 							</div>
 							<div className="col-span-8">

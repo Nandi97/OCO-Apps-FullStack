@@ -132,12 +132,12 @@ export default function CreateLawyerStopwatch({ setToggle }: CreateLawyerStopwat
 						setToggle(false);
 					}}
 					type="button"
-					className="absolute top-3 right-2.5 text-ocoblue-400 bg-transparent hover:bg-ocoblue-200 hover:text-ocoblue-900 rounded-lg text-sm w-8 h-8 ml-auto inline-flex justify-center items-center"
+					className="absolute top-3 right-2.5 text-secondary-400 bg-transparent hover:bg-secondary-200 hover:text-secondary-900 rounded-lg text-sm w-8 h-8 ml-auto inline-flex justify-center items-center"
 				>
 					<Icon icon="heroicons:x-mark" className="text-lg text-primary-600" />
 				</button>
 				<div className="flex w-full justify-between">
-					<h1 className="mb-4 text-xl font-medium text-ocoblue-900">
+					<h1 className="mb-4 text-xl font-medium text-secondary-900">
 						Lawyer Stop watch{' '}
 					</h1>
 					<div className="">
@@ -219,7 +219,7 @@ export default function CreateLawyerStopwatch({ setToggle }: CreateLawyerStopwat
 									endedAt: '',
 								});
 							}}
-							className="flex items-center gap-2 p-2 text-sm font-medium leading-4 text-white border rounded-md shadow-sm bg-ocoblue-600 hover:opacity-80 border-ocoblue-300 focus:outline-none focus:ring-2 focus:ring-ocoblue-500 focus:ring-offset-1"
+							className="flex items-center gap-2 p-2 text-sm font-medium leading-4 text-white border rounded-md shadow-sm bg-secondary-600 hover:opacity-80 border-secondary-300 focus:outline-none focus:ring-2 focus:ring-secondary-500 focus:ring-offset-1"
 						>
 							Cancel
 						</button>

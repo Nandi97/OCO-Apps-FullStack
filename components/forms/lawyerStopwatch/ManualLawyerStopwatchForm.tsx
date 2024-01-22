@@ -103,7 +103,7 @@ export default function AutomaticLawyerStopwatchForm({
 						item?.code.toLowerCase().includes(searchParam.toLowerCase()) ||
 						item?.description.toLowerCase().includes(searchParam.toLowerCase())
 					);
-			  });
+				});
 
 	// console.log('Filtered Matters:', filteredMatters);
 	const handleSelectedMatterChange = (selectedMatter) => {
@@ -132,19 +132,19 @@ export default function AutomaticLawyerStopwatchForm({
 				</div>
 				{/* Stop Watch Item  */}
 
-				<div className="relative col-span-12 gap-4 grid md:grid-cols-12 grid-cols-6 border rounded-md shadow-sm border-ocoblue-500/30 p-2">
+				<div className="relative col-span-12 gap-4 grid md:grid-cols-12 grid-cols-6 border rounded-md shadow-sm border-secondary-500/30 p-2">
 					<Combobox
 						as="div"
 						value={selectedMatter}
 						onChange={handleSelectedMatterChange}
 						className="space-y-1 col-span-6 "
 					>
-						<Combobox.Label className="block text-sm font-medium text-ocoblue-700">
+						<Combobox.Label className="block text-sm font-medium text-secondary-700">
 							Matter Code/Name
 						</Combobox.Label>
 						<div className="relative mt-2">
 							<Combobox.Input
-								className="sm:text-sm w-full bg-ocoblue-50 bg-opacity-70 border-1 focus:shadow-inner shadow-accent-300  focus:border-ocoblue-500 block p-2.5 h-8  px-3 py-1 shadow-ocoblue-300 rounded-md border border-ocoblue-300 text-sm font-medium leading-4 text-ocoblue-700 shadow-sm hover:bg-ocoblue-50 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-1"
+								className="sm:text-sm w-full bg-secondary-50 bg-opacity-70 border-1 focus:shadow-inner shadow-accent-300  focus:border-secondary-500 block p-2.5 h-8  px-3 py-1 shadow-secondary-300 rounded-md border border-secondary-300 text-sm font-medium leading-4 text-secondary-700 shadow-sm hover:bg-secondary-50 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-1"
 								onChange={(event) => debouncedSetQuery(event.target.value)}
 								displayValue={(matter) => matter?.code}
 							/>
@@ -167,7 +167,7 @@ export default function AutomaticLawyerStopwatchForm({
 													'relative cursor-default select-none py-2 pl-3 pr-9',
 													active
 														? 'bg-primary-600 text-white'
-														: 'text-ocoblue-900'
+														: 'text-secondary-900'
 												)
 											}
 										>
@@ -221,7 +221,7 @@ export default function AutomaticLawyerStopwatchForm({
 					<div className="space-y-1 col-span-6 ">
 						<label
 							htmlFor="taskId"
-							className="block text-sm font-medium text-ocoblue-700"
+							className="block text-sm font-medium text-secondary-700"
 						>
 							Task
 						</label>
@@ -231,18 +231,18 @@ export default function AutomaticLawyerStopwatchForm({
 								name="taskId"
 								onChange={onSelectChange}
 								value={formValues?.taskId}
-								className="sm:text-sm w-full bg-ocoblue-50 bg-opacity-70 border-1 focus:shadow-inner shadow-accent-300  focus:border-ocoblue-500 block p-2.5 h-8  px-3 py-1 shadow-ocoblue-300 rounded-md border border-ocoblue-300 text-sm font-medium leading-4 text-ocoblue-700 shadow-sm hover:bg-ocoblue-50 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-1"
+								className="sm:text-sm w-full bg-secondary-50 bg-opacity-70 border-1 focus:shadow-inner shadow-accent-300  focus:border-secondary-500 block p-2.5 h-8  px-3 py-1 shadow-secondary-300 rounded-md border border-secondary-300 text-sm font-medium leading-4 text-secondary-700 shadow-sm hover:bg-secondary-50 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-1"
 							>
 								<option
 									disabled
 									value=""
-									className="text-opacity-50 text-ocoblue-700"
+									className="text-opacity-50 text-secondary-700"
 								>
 									--Select Task--
 								</option>
 								{stopWatchItemTypes?.map((item) => (
 									<option
-										className="border-ocoblue-300 p-2.5 h-8  px-3 py-1 text-sm font-medium leading-4 text-ocoblue-700 shadow-sm hover:bg-primary-500"
+										className="border-secondary-300 p-2.5 h-8  px-3 py-1 text-sm font-medium leading-4 text-secondary-700 shadow-sm hover:bg-primary-500"
 										key={item.id}
 										value={item.id}
 									>
@@ -255,7 +255,7 @@ export default function AutomaticLawyerStopwatchForm({
 					<div className="space-y-1 col-span-12">
 						<label
 							htmlFor="narration"
-							className="block text-sm font-medium text-ocoblue-700"
+							className="block text-sm font-medium text-secondary-700"
 						>
 							Narration
 						</label>
@@ -265,14 +265,14 @@ export default function AutomaticLawyerStopwatchForm({
 								id="narration"
 								value={formValues?.narration}
 								onChange={onTextAreaChange}
-								className="sm:text-sm w-full md:h-14 bg-ocoblue-50 bg-opacity-70 border-1 focus:shadow-inner shadow-accent-300  focus:border-ocoblue-500 block p-2.5 h-8  px-3 py-1 shadow-ocoblue-300 rounded-md border border-ocoblue-300 text-sm font-medium leading-4 text-ocoblue-700 shadow-sm hover:bg-ocoblue-50 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-1"
+								className="sm:text-sm w-full md:h-14 bg-secondary-50 bg-opacity-70 border-1 focus:shadow-inner shadow-accent-300  focus:border-secondary-500 block p-2.5 h-8  px-3 py-1 shadow-secondary-300 rounded-md border border-secondary-300 text-sm font-medium leading-4 text-secondary-700 shadow-sm hover:bg-secondary-50 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-1"
 							/>
 						</div>
 					</div>
 					<div className="space-y-1 col-span-4">
 						<label
 							htmlFor="itemDate"
-							className="block text-sm font-medium text-ocoblue-700"
+							className="block text-sm font-medium text-secondary-700"
 						>
 							Date
 						</label>
@@ -283,14 +283,14 @@ export default function AutomaticLawyerStopwatchForm({
 								id="itemDate"
 								value={formValues?.itemDate}
 								onChange={onChange}
-								className="sm:text-sm w-full  bg-ocoblue-50 bg-opacity-70 border-1 focus:shadow-inner shadow-accent-300  focus:border-ocoblue-500 block p-2.5 h-8  px-3 py-1 shadow-ocoblue-300 rounded-md border border-ocoblue-300 text-sm font-medium leading-4 text-ocoblue-700 shadow-sm hover:bg-ocoblue-50 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-1"
+								className="sm:text-sm w-full  bg-secondary-50 bg-opacity-70 border-1 focus:shadow-inner shadow-accent-300  focus:border-secondary-500 block p-2.5 h-8  px-3 py-1 shadow-secondary-300 rounded-md border border-secondary-300 text-sm font-medium leading-4 text-secondary-700 shadow-sm hover:bg-secondary-50 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-1"
 							/>
 						</div>
 					</div>
 					<div className="space-y-1 col-span-4">
 						<label
 							htmlFor="startedAt"
-							className="block text-sm font-medium text-ocoblue-700"
+							className="block text-sm font-medium text-secondary-700"
 						>
 							Started At
 						</label>
@@ -301,14 +301,14 @@ export default function AutomaticLawyerStopwatchForm({
 								id="startedAt"
 								value={formValues?.startedAt}
 								onChange={onChange}
-								className="sm:text-sm w-full  bg-ocoblue-50 bg-opacity-70 border-1 focus:shadow-inner shadow-accent-300  focus:border-ocoblue-500 block p-2.5 h-8  px-3 py-1 shadow-ocoblue-300 rounded-md border border-ocoblue-300 text-sm font-medium leading-4 text-ocoblue-700 shadow-sm hover:bg-ocoblue-50 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-1"
+								className="sm:text-sm w-full  bg-secondary-50 bg-opacity-70 border-1 focus:shadow-inner shadow-accent-300  focus:border-secondary-500 block p-2.5 h-8  px-3 py-1 shadow-secondary-300 rounded-md border border-secondary-300 text-sm font-medium leading-4 text-secondary-700 shadow-sm hover:bg-secondary-50 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-1"
 							/>
 						</div>
 					</div>
 					<div className="space-y-1 col-span-4">
 						<label
 							htmlFor="endedAt"
-							className="block text-sm font-medium text-ocoblue-700"
+							className="block text-sm font-medium text-secondary-700"
 						>
 							Ended At
 						</label>
@@ -319,7 +319,7 @@ export default function AutomaticLawyerStopwatchForm({
 								id="endedAt"
 								value={formValues?.endedAt}
 								onChange={onChange}
-								className="sm:text-sm w-full  bg-ocoblue-50 bg-opacity-70 border-1 focus:shadow-inner shadow-accent-300  focus:border-ocoblue-500 block p-2.5 h-8  px-3 py-1 shadow-ocoblue-300 rounded-md border border-ocoblue-300 text-sm font-medium leading-4 text-ocoblue-700 shadow-sm hover:bg-ocoblue-50 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-1"
+								className="sm:text-sm w-full  bg-secondary-50 bg-opacity-70 border-1 focus:shadow-inner shadow-accent-300  focus:border-secondary-500 block p-2.5 h-8  px-3 py-1 shadow-secondary-300 rounded-md border border-secondary-300 text-sm font-medium leading-4 text-secondary-700 shadow-sm hover:bg-secondary-50 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-1"
 							/>
 						</div>
 					</div>

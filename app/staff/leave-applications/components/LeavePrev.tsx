@@ -44,7 +44,7 @@ export default function LeavePrev({ url }: LeavePrevProps) {
 					</div>
 					<div className="w-full flex items-center justify-center">
 						<table className="table-fixed w-full">
-							<thead className="text-xs text-ocoblue-700 uppercase bg-ocoblue-200">
+							<thead className="text-xs text-secondary-700 uppercase bg-secondary-200">
 								<tr>
 									<th scope="col" colSpan={2} className="px-6 py-3">
 										Section 1: Employee Details
@@ -93,7 +93,7 @@ export default function LeavePrev({ url }: LeavePrevProps) {
 					</div>
 					<div className="w-full flex items-center justify-center">
 						<table className="table-fixed w-full">
-							<thead className="text-xs text-ocoblue-700 uppercase bg-ocoblue-200">
+							<thead className="text-xs text-secondary-700 uppercase bg-secondary-200">
 								<tr>
 									<th scope="col" colSpan={2} className="px-6 py-3">
 										Section 2: Leave Details
@@ -128,7 +128,7 @@ export default function LeavePrev({ url }: LeavePrevProps) {
 													? format(
 															new Date(prevVal?.startDate),
 															'MMMM d, yyyy'
-													  )
+														)
 													: ''}
 											</span>
 										</div>
@@ -141,7 +141,7 @@ export default function LeavePrev({ url }: LeavePrevProps) {
 													? format(
 															new Date(prevVal?.endDate),
 															'MMMM d, yyyy'
-													  )
+														)
 													: ''}
 											</span>
 										</div>
@@ -156,7 +156,7 @@ export default function LeavePrev({ url }: LeavePrevProps) {
 													? format(
 															new Date(prevVal?.reportDate),
 															'MMMM d, yyyy'
-													  )
+														)
 													: ''}
 											</span>
 										</div>
@@ -169,7 +169,7 @@ export default function LeavePrev({ url }: LeavePrevProps) {
 													? format(
 															new Date(prevVal?.createdAt),
 															'MMMM d, yyyy'
-													  )
+														)
 													: ''}
 											</span>
 										</div>
@@ -180,7 +180,7 @@ export default function LeavePrev({ url }: LeavePrevProps) {
 					</div>
 					<div className="w-full flex items-center justify-center">
 						<table className="table-fixed w-full">
-							<thead className="text-xs text-ocoblue-700 uppercase bg-ocoblue-200">
+							<thead className="text-xs text-secondary-700 uppercase bg-secondary-200">
 								<tr>
 									<th scope="col" colSpan={2} className="px-6 py-3">
 										Section 3: Approvals
@@ -279,7 +279,7 @@ export default function LeavePrev({ url }: LeavePrevProps) {
 				</div>
 				<div className="col-span-4">
 					<table className="table-fixed w-full bg-primary-50 rounded-md">
-						<thead className=" bg-ocoblue-600 text-ocoblue-50">
+						<thead className=" bg-secondary-600 text-secondary-50">
 							<tr>
 								<th
 									scope="col"
@@ -293,15 +293,15 @@ export default function LeavePrev({ url }: LeavePrevProps) {
 						<tbody className="bg-white divide-y divide-gray-200">
 							{session && session?.user?.email === prevVal?.supervisor?.email ? (
 								<tr>
-									<td className="p-2 w-full text-sm text-center border border-ocoblue-200">
+									<td className="p-2 w-full text-sm text-center border border-secondary-200">
 										<div className="w-full flex items-center justify-center">
-											<button className="p-2 w-24 space-x-2 rounded text-white  flex items-center justify-center bg-ocoblue-700 hover:bg-ocoblue-700/50">
+											<button className="p-2 w-24 space-x-2 rounded text-white  flex items-center justify-center bg-secondary-700 hover:bg-secondary-700/50">
 												<span>Approve</span>
 												<Icon icon="heroicons:hand-thumb-up" />
 											</button>
 										</div>
 									</td>
-									<td className="p-2 w-full text-sm text-center border border-ocoblue-200">
+									<td className="p-2 w-full text-sm text-center border border-secondary-200">
 										<div className="w-full flex items-center justify-center">
 											<button className="p-2 w-24 space-x-2 rounded text-white  flex items-center justify-center bg-primary-600 hover:bg-primary-600/50">
 												<span>Reject</span>
@@ -315,15 +315,15 @@ export default function LeavePrev({ url }: LeavePrevProps) {
 							)}
 							{session && session?.user?.email === prevVal?.partner?.email ? (
 								<tr>
-									<td className="p-2 w-full text-sm text-center border border-ocoblue-200">
+									<td className="p-2 w-full text-sm text-center border border-secondary-200">
 										<div className="w-full flex items-center justify-center">
-											<button className="p-2 w-24 space-x-2 rounded text-white  flex items-center justify-center bg-ocoblue-700 hover:bg-ocoblue-700/50">
+											<button className="p-2 w-24 space-x-2 rounded text-white  flex items-center justify-center bg-secondary-700 hover:bg-secondary-700/50">
 												<span>Approve</span>
 												<Icon icon="heroicons:hand-thumb-up" />
 											</button>
 										</div>
 									</td>
-									<td className="p-2 w-full text-sm text-center border border-ocoblue-200">
+									<td className="p-2 w-full text-sm text-center border border-secondary-200">
 										<div className="w-full flex items-center justify-center">
 											<button className="p-2 w-24 space-x-2 rounded text-white  flex items-center justify-center bg-primary-600 hover:bg-primary-600/50">
 												<span>Reject</span>
@@ -337,15 +337,15 @@ export default function LeavePrev({ url }: LeavePrevProps) {
 							)}
 							{session && session?.user?.email === prevVal?.humanResource?.email ? (
 								<tr>
-									<td className="p-2 w-full text-sm text-center border border-ocoblue-200">
+									<td className="p-2 w-full text-sm text-center border border-secondary-200">
 										<div className="w-full flex items-center justify-center">
-											<button className="p-2 w-24 space-x-2 rounded text-white  flex items-center justify-center bg-ocoblue-700 hover:bg-ocoblue-700/50">
+											<button className="p-2 w-24 space-x-2 rounded text-white  flex items-center justify-center bg-secondary-700 hover:bg-secondary-700/50">
 												<span>Approve</span>
 												<Icon icon="heroicons:hand-thumb-up" />
 											</button>
 										</div>
 									</td>
-									<td className="p-2 w-full text-sm text-center border border-ocoblue-200">
+									<td className="p-2 w-full text-sm text-center border border-secondary-200">
 										<div className="w-full flex items-center justify-center">
 											<button className="p-2 w-24 space-x-2 rounded text-white  flex items-center justify-center bg-primary-600 hover:bg-primary-600/50">
 												<span>Reject</span>
@@ -359,15 +359,15 @@ export default function LeavePrev({ url }: LeavePrevProps) {
 							)}
 							{session && session?.user?.email === prevVal?.employee?.email ? (
 								<tr>
-									<td className="p-2 w-full text-sm text-center border border-ocoblue-200">
+									<td className="p-2 w-full text-sm text-center border border-secondary-200">
 										<div className="w-full flex items-center justify-center">
 											<button
 												className={`p-2 w-24 space-x-2 rounded text-white  flex items-center justify-center  ${
 													!prevVal?.supervisorApproval === null ||
 													!prevVal?.partnerApproval === null ||
 													!prevVal?.hRMApproval === null
-														? 'cursor-not-allowed bg-ocoblue-700/50'
-														: 'bg-ocoblue-700 hover:bg-ocoblue-700/90'
+														? 'cursor-not-allowed bg-secondary-700/50'
+														: 'bg-secondary-700 hover:bg-secondary-700/90'
 												}`}
 												disabled={
 													!prevVal?.supervisorApproval === null ||
@@ -382,7 +382,7 @@ export default function LeavePrev({ url }: LeavePrevProps) {
 											</button>
 										</div>
 									</td>
-									<td className="p-2 w-full text-sm text-center border border-ocoblue-200">
+									<td className="p-2 w-full text-sm text-center border border-secondary-200">
 										<div className="w-full flex items-center justify-center">
 											<button
 												disabled={
@@ -410,7 +410,7 @@ export default function LeavePrev({ url }: LeavePrevProps) {
 								''
 							)}
 							<tr>
-								<td className="p-2 w-full text-sm border border-ocoblue-200">
+								<td className="p-2 w-full text-sm border border-secondary-200">
 									<div className="flex flex-col">
 										<span className="text-xs">Supervisor :</span>
 										<span className="text-primary-600">
@@ -418,7 +418,7 @@ export default function LeavePrev({ url }: LeavePrevProps) {
 										</span>
 									</div>
 								</td>
-								<td className="p-2 w-full text-sm border border-ocoblue-200">
+								<td className="p-2 w-full text-sm border border-secondary-200">
 									<div className="flex flex-col">
 										<span className="text-xs">Approved On :</span>
 										<span className="text-primary-600">
@@ -426,14 +426,15 @@ export default function LeavePrev({ url }: LeavePrevProps) {
 											prevVal?.supervisorApproval === null
 												? 'Pending Approval'
 												: prevVal?.supervisorApproval?.status === 1
-												? prevVal?.supervisorApproval?.updatedAt
-												: prevVal?.supervisorApproval?.disapprovalComment}
+													? prevVal?.supervisorApproval?.updatedAt
+													: prevVal?.supervisorApproval
+															?.disapprovalComment}
 										</span>
 									</div>
 								</td>
 							</tr>
 							<tr>
-								<td className="p-2 w-full text-sm border border-ocoblue-200">
+								<td className="p-2 w-full text-sm border border-secondary-200">
 									<div className="flex flex-col">
 										<span className="text-xs">Partner :</span>
 										<span className="text-primary-600">
@@ -441,7 +442,7 @@ export default function LeavePrev({ url }: LeavePrevProps) {
 										</span>
 									</div>
 								</td>
-								<td className="p-2 w-full text-sm border border-ocoblue-200">
+								<td className="p-2 w-full text-sm border border-secondary-200">
 									<div className="flex flex-col">
 										<span className="text-xs">Approved On :</span>
 										<span className="text-primary-600">
@@ -449,15 +450,15 @@ export default function LeavePrev({ url }: LeavePrevProps) {
 											prevVal?.partnerApproval === null
 												? 'Pending Approval'
 												: prevVal?.partnerApproval?.status === 1
-												? prevVal?.partnerApproval?.updatedAt
-												: prevVal?.partnerApproval?.disapprovalComment}
+													? prevVal?.partnerApproval?.updatedAt
+													: prevVal?.partnerApproval?.disapprovalComment}
 										</span>
 									</div>
 								</td>
 							</tr>
 							{prevVal?.humanResource ? (
 								<tr>
-									<td className="p-2 w-full text-sm border border-ocoblue-200">
+									<td className="p-2 w-full text-sm border border-secondary-200">
 										<div className="flex flex-col">
 											<span className="text-xs">Human Resource Manger :</span>
 											<span className="text-primary-600">
@@ -465,7 +466,7 @@ export default function LeavePrev({ url }: LeavePrevProps) {
 											</span>
 										</div>
 									</td>
-									<td className="p-2 w-full text-sm border border-ocoblue-200">
+									<td className="p-2 w-full text-sm border border-secondary-200">
 										<div className="flex flex-col">
 											<span className="text-xs">Approved On :</span>
 											<span className="text-primary-600">
@@ -473,8 +474,8 @@ export default function LeavePrev({ url }: LeavePrevProps) {
 												prevVal?.hRMApproval === null
 													? 'Pending Approval'
 													: prevVal?.hRMApproval?.status === 1
-													? prevVal?.hRMApproval?.updatedAt
-													: prevVal?.hRMApproval?.disapprovalComment}
+														? prevVal?.hRMApproval?.updatedAt
+														: prevVal?.hRMApproval?.disapprovalComment}
 											</span>
 										</div>
 									</td>

@@ -18,7 +18,7 @@ export default async function Nav({ pageTitle }) {
 
 	return (
 		<nav className="w-full shadow-sm shadow-slate-400 bg-primary-400/30 h-10 justify-between p-1 flex items-center px-3">
-			<div className="flex items-center flex-shrink-0 divide-x divide-ocoblue-300">
+			<div className="flex items-center flex-shrink-0 divide-x divide-secondary-300">
 				<Link href={`/`} className="flex items-center px-2">
 					<Image
 						height={64}
@@ -28,11 +28,11 @@ export default async function Nav({ pageTitle }) {
 						alt="OCO Logo"
 					/>
 					<div className="inline-flex items-center text-sm font-medium">
-						<span className="text-ocoblue-600">OCO</span>
+						<span className="text-secondary-600">OCO</span>
 						<span className="text-primary-600">Apps</span>
 					</div>
 				</Link>
-				<div className="font-extralight px-2 text-base text-ocoblue-600">{pageTitle}</div>
+				<div className="font-extralight px-2 text-base text-secondary-600">{pageTitle}</div>
 			</div>
 
 			<div className="flex space-x-2 items-center justify-center h-full">

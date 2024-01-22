@@ -118,7 +118,7 @@ export default function StaffCard() {
 		icon: 'heroicons:chevron-down',
 		name: 'Options',
 		buttonClassName:
-			'inline-flex items-center justify-center w-full h-8 px-4 text-xs text-white rounded-sm shadow-sm bg-ocoblue-600 focus:outline-none focus:ring-2 focus:ring-ocoblue-600 focus:ring-offset-0 focus:ring-offset-ocoblue-100',
+			'inline-flex items-center justify-center w-full h-8 px-4 text-xs text-white rounded-sm shadow-sm bg-secondary-600 focus:outline-none focus:ring-2 focus:ring-secondary-600 focus:ring-offset-0 focus:ring-offset-secondary-100',
 		iconClassName: '',
 	};
 
@@ -135,7 +135,7 @@ export default function StaffCard() {
 	const tableOptBtnTxt = {
 		icon: 'heroicons:ellipsis-horizontal',
 		buttonClassName:
-			'flex items-center justify-center w-full h-8 px-4 text-ocoblue-900 rounded-sm hover:shadow-sm z-20',
+			'flex items-center justify-center w-full h-8 px-4 text-secondary-900 rounded-sm hover:shadow-sm z-20',
 	};
 
 	const tableOptionsList = [];
@@ -197,12 +197,12 @@ export default function StaffCard() {
 					{data?.data?.map((person, index) => (
 						<div
 							key={person?.id}
-							className="grid min-w-full grid-cols-12 p-3 bg-white border-t border-gray-200 rounded-md shadow-sm sm:px-6 sm:flex lg:hidden shadow-ocoblue-400"
+							className="grid min-w-full grid-cols-12 p-3 bg-white border-t border-gray-200 rounded-md shadow-sm sm:px-6 sm:flex lg:hidden shadow-secondary-400"
 						>
 							<div className="col-span-4">
 								<div className="flex items-center gap-2">
 									{!person?.avatarUrl ? (
-										<span className="inline-flex items-center justify-center rounded-full h-7 w-7 bg-ocoblue-500">
+										<span className="inline-flex items-center justify-center rounded-full h-7 w-7 bg-secondary-500">
 											<span className="font-medium leading-none text-white">
 												{person?.name
 													.split(' ')
@@ -223,27 +223,27 @@ export default function StaffCard() {
 								</div>
 							</div>
 							<div className="col-span-8">{person?.staffNo}</div>
-							<div className="col-span-4 text-sm font-semibold text-left text-ocoblue-600">
+							<div className="col-span-4 text-sm font-semibold text-left text-secondary-600">
 								Name :
 							</div>
 							<div className="col-span-8">{person?.name}</div>
-							<div className="col-span-4 text-sm font-semibold text-left text-ocoblue-600">
+							<div className="col-span-4 text-sm font-semibold text-left text-secondary-600">
 								Designation :
 							</div>
 							<div className="col-span-8">{person?.designation?.name}</div>
-							<div className="col-span-4 text-sm font-semibold text-left text-ocoblue-600">
+							<div className="col-span-4 text-sm font-semibold text-left text-secondary-600">
 								E-mail Address :
 							</div>
 							<div className="col-span-8 text-primary-500">{person?.email}</div>
-							<div className="col-span-4 text-sm font-semibold text-left text-ocoblue-600">
+							<div className="col-span-4 text-sm font-semibold text-left text-secondary-600">
 								Extension :
 							</div>
 							<div className="col-span-8">{person?.ext}</div>
-							<div className="col-span-4 text-sm font-semibold text-left text-ocoblue-600">
+							<div className="col-span-4 text-sm font-semibold text-left text-secondary-600">
 								Team :
 							</div>
 							<div className="col-span-8">{person?.team?.name}</div>
-							<div className="col-span-4 text-sm font-semibold text-left text-ocoblue-600">
+							<div className="col-span-4 text-sm font-semibold text-left text-secondary-600">
 								Status :
 							</div>
 							<div className="col-span-8">

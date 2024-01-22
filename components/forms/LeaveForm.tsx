@@ -119,7 +119,7 @@ export default function LeaveForm({
 						? null
 						: allStaff?.find(
 								(item: any) => item?.designation?.name === 'Head of Human Resource'
-						  )?.id,
+							)?.id,
 			}));
 		}
 	}, [allStaff, selectedUser, selectedPerson]);
@@ -134,7 +134,7 @@ export default function LeaveForm({
 			? allStaff
 			: allStaff.filter((person: any) => {
 					return person.name.toLowerCase().includes(query.toLowerCase());
-			  });
+				});
 
 	const handleContinueClick = (newValue: string) => {
 		setAccValue(newValue);
@@ -180,7 +180,7 @@ export default function LeaveForm({
 							onClick={() => handleContinueClick('one')}
 						>
 							<div className="flex items-center space-x-3">
-								<div className="bg-ocoblue-200 text-white flex items-center justify-center text-xs p-2 h-4 w-4 rounded-full ">
+								<div className="bg-secondary-200 text-white flex items-center justify-center text-xs p-2 h-4 w-4 rounded-full ">
 									1
 								</div>
 								<span>Leave Details</span>
@@ -192,7 +192,7 @@ export default function LeaveForm({
 									<div className="col-span-6 md:col-span-12 space-y-1">
 										<label
 											htmlFor="leaveTypeId"
-											className="block text-xs font-medium text-ocoblue-700"
+											className="block text-xs font-medium text-secondary-700"
 										>
 											Type of Leave
 										</label>
@@ -205,13 +205,13 @@ export default function LeaveForm({
 													leaveType: e.target.value,
 												});
 											}}
-											className="sm:text-sm w-full bg-ocoblue-50 bg-opacity-70 border-1 focus:shadow-inner shadow-accent-300  focus:border-ocoblue-500 block p-2.5 h-8  px-3 py-1 shadow-ocoblue-300 rounded-md border border-ocoblue-300 text-sm font-medium leading-4 text-ocoblue-700 shadow-sm hover:bg-ocoblue-50 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-1"
+											className="sm:text-sm w-full bg-secondary-50 bg-opacity-70 border-1 focus:shadow-inner shadow-accent-300  focus:border-secondary-500 block p-2.5 h-8  px-3 py-1 shadow-secondary-300 rounded-md border border-secondary-300 text-sm font-medium leading-4 text-secondary-700 shadow-sm hover:bg-secondary-50 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-1"
 										>
 											<option
 												selected
 												disabled
 												value=""
-												className="text-opacity-50 text-ocoblue-700"
+												className="text-opacity-50 text-secondary-700"
 											>
 												--Select Leave Type--
 											</option>
@@ -225,7 +225,7 @@ export default function LeaveForm({
 									<div className="col-span-6 space-y-1">
 										<label
 											htmlFor="duration"
-											className="block text-xs font-medium text-ocoblue-700"
+											className="block text-xs font-medium text-secondary-700"
 										>
 											Duration
 										</label>
@@ -240,13 +240,13 @@ export default function LeaveForm({
 													leaveDays: e.target.value,
 												})
 											}
-											className="sm:text-sm w-full bg-ocoblue-50 bg-opacity-70 border-1 focus:shadow-inner shadow-accent-300  focus:border-ocoblue-500 block p-2.5 h-8  px-3 py-1 shadow-ocoblue-300 rounded-md border border-ocoblue-300 text-sm font-medium leading-4 text-ocoblue-700 shadow-sm hover:bg-ocoblue-50 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-1"
+											className="sm:text-sm w-full bg-secondary-50 bg-opacity-70 border-1 focus:shadow-inner shadow-accent-300  focus:border-secondary-500 block p-2.5 h-8  px-3 py-1 shadow-secondary-300 rounded-md border border-secondary-300 text-sm font-medium leading-4 text-secondary-700 shadow-sm hover:bg-secondary-50 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-1"
 										/>
 									</div>
 									<div className="col-span-6 space-y-1">
 										<label
 											htmlFor="startedAt"
-											className="block text-xs font-medium text-ocoblue-700"
+											className="block text-xs font-medium text-secondary-700"
 										>
 											Start Date
 										</label>
@@ -261,13 +261,13 @@ export default function LeaveForm({
 													startDate: e.target.value,
 												})
 											}
-											className="sm:text-sm w-full bg-ocoblue-50 bg-opacity-70 border-1 focus:shadow-inner shadow-accent-300  focus:border-ocoblue-500 block p-2.5 h-8  px-3 py-1 shadow-ocoblue-300 rounded-md border border-ocoblue-300 text-sm font-medium leading-4 text-ocoblue-700 shadow-sm hover:bg-ocoblue-50 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-1"
+											className="sm:text-sm w-full bg-secondary-50 bg-opacity-70 border-1 focus:shadow-inner shadow-accent-300  focus:border-secondary-500 block p-2.5 h-8  px-3 py-1 shadow-secondary-300 rounded-md border border-secondary-300 text-sm font-medium leading-4 text-secondary-700 shadow-sm hover:bg-secondary-50 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-1"
 										/>
 									</div>
 									<div className="col-span-6 space-y-1">
 										<label
 											htmlFor="endedAt"
-											className="block text-xs font-medium text-ocoblue-700"
+											className="block text-xs font-medium text-secondary-700"
 										>
 											End Date
 										</label>
@@ -282,13 +282,13 @@ export default function LeaveForm({
 													endDate: e.target.value,
 												})
 											}
-											className="sm:text-sm w-full bg-ocoblue-50 bg-opacity-70 border-1 focus:shadow-inner shadow-accent-300  focus:border-ocoblue-500 block p-2.5 h-8  px-3 py-1 shadow-ocoblue-300 rounded-md border border-ocoblue-300 text-sm font-medium leading-4 text-ocoblue-700 shadow-sm hover:bg-ocoblue-50 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-1"
+											className="sm:text-sm w-full bg-secondary-50 bg-opacity-70 border-1 focus:shadow-inner shadow-accent-300  focus:border-secondary-500 block p-2.5 h-8  px-3 py-1 shadow-secondary-300 rounded-md border border-secondary-300 text-sm font-medium leading-4 text-secondary-700 shadow-sm hover:bg-secondary-50 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-1"
 										/>
 									</div>
 									<div className="col-span-6 space-y-1">
 										<label
 											htmlFor="reportOn"
-											className="block text-xs font-medium text-ocoblue-700"
+											className="block text-xs font-medium text-secondary-700"
 										>
 											Report Back On
 										</label>
@@ -303,14 +303,14 @@ export default function LeaveForm({
 													reportingDate: e.target.value,
 												})
 											}
-											className="sm:text-sm w-full bg-ocoblue-50 bg-opacity-70 border-1 focus:shadow-inner shadow-accent-300  focus:border-ocoblue-500 block p-2.5 h-8  px-3 py-1 shadow-ocoblue-300 rounded-md border border-ocoblue-300 text-sm font-medium leading-4 text-ocoblue-700 shadow-sm hover:bg-ocoblue-50 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-1"
+											className="sm:text-sm w-full bg-secondary-50 bg-opacity-70 border-1 focus:shadow-inner shadow-accent-300  focus:border-secondary-500 block p-2.5 h-8  px-3 py-1 shadow-secondary-300 rounded-md border border-secondary-300 text-sm font-medium leading-4 text-secondary-700 shadow-sm hover:bg-secondary-50 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-1"
 										/>
 									</div>
 								</div>
 								<div className="w-full flex items-center py-2 justify-center">
 									<button
 										type="button"
-										className="border rounded-md bg-ocoblue-600 text-white hover:bg-ocoblue-600/90 p-1"
+										className="border rounded-md bg-secondary-600 text-white hover:bg-secondary-600/90 p-1"
 										onClick={() => handleContinueClick('two')}
 									>
 										Continue
@@ -325,7 +325,7 @@ export default function LeaveForm({
 							onClick={() => handleContinueClick('two')}
 						>
 							<div className="flex items-center space-x-3">
-								<div className="bg-ocoblue-200 text-white flex items-center justify-center text-xs p-2 h-4 w-4 rounded-full ">
+								<div className="bg-secondary-200 text-white flex items-center justify-center text-xs p-2 h-4 w-4 rounded-full ">
 									2
 								</div>
 								<span>Approval</span>
@@ -340,12 +340,12 @@ export default function LeaveForm({
 										onChange={setSelectedPerson}
 										className="col-span-6  space-y-1"
 									>
-										<Combobox.Label className="block text-xs font-medium text-ocoblue-700">
+										<Combobox.Label className="block text-xs font-medium text-secondary-700">
 											Supervisor
 										</Combobox.Label>
 										<div className="relative mt-1">
 											<Combobox.Input
-												className="sm:text-sm w-full bg-ocoblue-50 bg-opacity-70 border-1 focus:shadow-inner shadow-accent-300  focus:border-ocoblue-500 block p-2.5 h-8  px-3 py-1 shadow-ocoblue-300 rounded-md border border-ocoblue-300 text-sm font-medium leading-4 text-ocoblue-700 shadow-sm hover:bg-ocoblue-50 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-1"
+												className="sm:text-sm w-full bg-secondary-50 bg-opacity-70 border-1 focus:shadow-inner shadow-accent-300  focus:border-secondary-500 block p-2.5 h-8  px-3 py-1 shadow-secondary-300 rounded-md border border-secondary-300 text-sm font-medium leading-4 text-secondary-700 shadow-sm hover:bg-secondary-50 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-1"
 												onChange={(event) => setQuery(event.target.value)}
 												displayValue={(person) => person?.name}
 											/>
@@ -379,7 +379,7 @@ export default function LeaveForm({
 																			className={classNames(
 																				'inline-block h-2 w-2 flex-shrink-0 rounded-full',
 																				active
-																					? 'bg-ocoblue-400'
+																					? 'bg-secondary-400'
 																					: 'bg-gray-200'
 																			)}
 																			aria-hidden="true"
@@ -429,7 +429,7 @@ export default function LeaveForm({
 									<div className="col-span-6   space-y-1">
 										<label
 											htmlFor="partner"
-											className="block text-xs font-medium text-ocoblue-700"
+											className="block text-xs font-medium text-secondary-700"
 										>
 											Managing Partner / Deputy
 										</label>
@@ -444,13 +444,13 @@ export default function LeaveForm({
 													partner: e.target.value,
 												});
 											}}
-											className="sm:text-sm w-full bg-ocoblue-50 bg-opacity-70 border-1 focus:shadow-inner shadow-accent-300  focus:border-ocoblue-500 block p-2.5 h-8  px-3 py-1 shadow-ocoblue-300 rounded-md border border-ocoblue-300 text-sm font-medium leading-4 text-ocoblue-700 shadow-sm hover:bg-ocoblue-50 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-1"
+											className="sm:text-sm w-full bg-secondary-50 bg-opacity-70 border-1 focus:shadow-inner shadow-accent-300  focus:border-secondary-500 block p-2.5 h-8  px-3 py-1 shadow-secondary-300 rounded-md border border-secondary-300 text-sm font-medium leading-4 text-secondary-700 shadow-sm hover:bg-secondary-50 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-1"
 										>
 											<option
 												selected
 												disabled
 												value=""
-												className="text-opacity-50 text-ocoblue-700"
+												className="text-opacity-50 text-secondary-700"
 											>
 												--Select Managing Partner / Deputy--
 											</option>
@@ -465,7 +465,7 @@ export default function LeaveForm({
 								<div className="w-full flex items-center py-2 justify-center">
 									<button
 										type="submit"
-										className="border rounded-md bg-ocoblue-600 text-white hover:bg-ocoblue-600/90 p-1"
+										className="border rounded-md bg-secondary-600 text-white hover:bg-secondary-600/90 p-1"
 									>
 										Save
 									</button>

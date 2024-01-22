@@ -37,13 +37,12 @@ export default function MeetingItemForm({
 		const filteredData =
 			query === ''
 				? data
-				: data?.filter(
-						(item) =>
-							item?.name
-								.toLowerCase()
-								.replace(/\s+/g, '')
-								.includes(query.toLowerCase().replace(/\s+/g, ''))
-				  );
+				: data?.filter((item) =>
+						item?.name
+							.toLowerCase()
+							.replace(/\s+/g, '')
+							.includes(query.toLowerCase().replace(/\s+/g, ''))
+					);
 		return filteredData;
 	};
 
@@ -54,11 +53,11 @@ export default function MeetingItemForm({
 		{ id: 4, name: 'Decision' },
 	];
 	return (
-		<div className="grid grid-cols-12 gap-2 border rounded-md border-ocoblue-400 p-2">
+		<div className="grid grid-cols-12 gap-2 border rounded-md border-secondary-400 p-2">
 			<div className="col-span-12">
 				<label
 					htmlFor="description"
-					className="flex items-center space-x-2 text-sm font-medium text-ocoblue-700 f"
+					className="flex items-center space-x-2 text-sm font-medium text-secondary-700 f"
 				>
 					<span> Action</span>
 				</label>
@@ -68,14 +67,14 @@ export default function MeetingItemForm({
 						id="description"
 						value={formValues?.action}
 						onChange={onChange}
-						className="sm:text-sm w-full bg-ocoblue-50 bg-opacity-70 border-1 focus:shadow-inner shadow-accent-300  focus:border-ocoblue-500 block p-2.5 h-8  px-3 py-1 shadow-ocoblue-300 rounded-md border border-ocoblue-300 text-sm font-medium leading-4 text-ocoblue-700 shadow-sm hover:bg-ocoblue-50 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-1"
+						className="sm:text-sm w-full bg-secondary-50 bg-opacity-70 border-1 focus:shadow-inner shadow-accent-300  focus:border-secondary-500 block p-2.5 h-8  px-3 py-1 shadow-secondary-300 rounded-md border border-secondary-300 text-sm font-medium leading-4 text-secondary-700 shadow-sm hover:bg-secondary-50 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-1"
 					/>
 				</div>
 			</div>
 			<div className="col-span-12">
 				<label
 					htmlFor="responsible"
-					className="flex items-center space-x-2 text-sm font-medium text-ocoblue-700 f"
+					className="flex items-center space-x-2 text-sm font-medium text-secondary-700 f"
 				>
 					<span>Responsible</span>
 				</label>
@@ -94,7 +93,7 @@ export default function MeetingItemForm({
 								{selected?.map((item) => (
 									<div
 										key={item?.id}
-										className="flex relative items-center bg-ocoblue-300 text-xs text-white px-2 py-1 rounded-full m-1"
+										className="flex relative items-center bg-secondary-300 text-xs text-white px-2 py-1 rounded-full m-1"
 									>
 										<span className="text-xs overflow-hidden truncate w-14">
 											{item?.name}
@@ -115,7 +114,7 @@ export default function MeetingItemForm({
 									</div>
 								))}
 								<Combobox.Input
-									className="z-[2]  sm:text-sm w-full bg-ocoblue-50 bg-opacity-70 border-1 focus:shadow-inner shadow-accent-300  focus:border-ocoblue-500 block p-2.5 h-8  px-3 py-1 shadow-ocoblue-300 rounded-md border border-ocoblue-300 text-sm font-medium leading-4 text-ocoblue-700 shadow-sm hover:bg-ocoblue-50 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-1"
+									className="z-[2]  sm:text-sm w-full bg-secondary-50 bg-opacity-70 border-1 focus:shadow-inner shadow-accent-300  focus:border-secondary-500 block p-2.5 h-8  px-3 py-1 shadow-secondary-300 rounded-md border border-secondary-300 text-sm font-medium leading-4 text-secondary-700 shadow-sm hover:bg-secondary-50 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-1"
 									onChange={(event) => setQuery('')}
 									// displayValue={(selected: any) =>
 									// 	selected
@@ -147,7 +146,7 @@ export default function MeetingItemForm({
 														'cursor-default select-none py-2 pl-3 pr-9 flex justify-between',
 														active
 															? 'bg-primary-600 text-white'
-															: 'text-ocoblue-900'
+															: 'text-secondary-900'
 													)
 												}
 											>
@@ -171,7 +170,7 @@ export default function MeetingItemForm({
 																	'inset-y-0 right-0 flex items-center pr-4',
 																	active
 																		? 'text-white'
-																		: 'text-ocoblue-600'
+																		: 'text-secondary-600'
 																)}
 															>
 																<Icon
@@ -195,7 +194,7 @@ export default function MeetingItemForm({
 			<div className="col-span-12 md:col-span-6">
 				<label
 					htmlFor="dueDate"
-					className="flex items-center space-x-2 text-sm font-medium text-ocoblue-700"
+					className="flex items-center space-x-2 text-sm font-medium text-secondary-700"
 				>
 					<span>Due Date</span>
 				</label>
@@ -206,14 +205,14 @@ export default function MeetingItemForm({
 						value={formValues?.dueDate}
 						onChange={onChange}
 						id="dueDate"
-						className="sm:text-sm w-full bg-ocoblue-50 bg-opacity-70 border-1 focus:shadow-inner shadow-accent-300  focus:border-ocoblue-500 block p-2.5 h-8  px-3 py-1 shadow-ocoblue-300 rounded-md border border-ocoblue-300 text-sm font-medium leading-4 text-ocoblue-700 shadow-sm hover:bg-ocoblue-50 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-1"
+						className="sm:text-sm w-full bg-secondary-50 bg-opacity-70 border-1 focus:shadow-inner shadow-accent-300  focus:border-secondary-500 block p-2.5 h-8  px-3 py-1 shadow-secondary-300 rounded-md border border-secondary-300 text-sm font-medium leading-4 text-secondary-700 shadow-sm hover:bg-secondary-50 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-1"
 					/>
 				</div>
 			</div>
 			<div className="col-span-12 md:col-span-6">
 				<label
 					htmlFor="activity"
-					className="flex items-center space-x-2 text-sm font-medium text-ocoblue-700"
+					className="flex items-center space-x-2 text-sm font-medium text-secondary-700"
 				>
 					<span>Activity</span>
 				</label>
@@ -223,9 +222,9 @@ export default function MeetingItemForm({
 						name="activity"
 						onChange={onChange}
 						value={formValues?.activity}
-						className="sm:text-sm w-full bg-ocoblue-50 bg-opacity-70 border-1 focus:shadow-inner shadow-accent-300 focus:border-ocoblue-500 block p-2.5 h-8 px-3 py-1 shadow-ocoblue-300 rounded-md border border-ocoblue-300 text-sm font-medium leading-4 text-ocoblue-700 shadow-sm hover:bg-ocoblue-50 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-1"
+						className="sm:text-sm w-full bg-secondary-50 bg-opacity-70 border-1 focus:shadow-inner shadow-accent-300 focus:border-secondary-500 block p-2.5 h-8 px-3 py-1 shadow-secondary-300 rounded-md border border-secondary-300 text-sm font-medium leading-4 text-secondary-700 shadow-sm hover:bg-secondary-50 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-1"
 					>
-						<option disabled value="" className="text-opacity-50 text-ocoblue-700">
+						<option disabled value="" className="text-opacity-50 text-secondary-700">
 							--Activity--
 						</option>
 						{activity?.map((item: any) => (
@@ -239,7 +238,7 @@ export default function MeetingItemForm({
 			<div className="col-span-12">
 				<label
 					htmlFor="status"
-					className="flex items-center space-x-2 text-sm font-medium text-ocoblue-700 f"
+					className="flex items-center space-x-2 text-sm font-medium text-secondary-700 f"
 				>
 					<span> Status</span>
 				</label>
@@ -249,7 +248,7 @@ export default function MeetingItemForm({
 						id="status"
 						value={formValues?.status}
 						onChange={onChange}
-						className="sm:text-sm w-full bg-ocoblue-50 bg-opacity-70 border-1 focus:shadow-inner shadow-accent-300  focus:border-ocoblue-500 block p-2.5 h-8  px-3 py-1 shadow-ocoblue-300 rounded-md border border-ocoblue-300 text-sm font-medium leading-4 text-ocoblue-700 shadow-sm hover:bg-ocoblue-50 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-1"
+						className="sm:text-sm w-full bg-secondary-50 bg-opacity-70 border-1 focus:shadow-inner shadow-accent-300  focus:border-secondary-500 block p-2.5 h-8  px-3 py-1 shadow-secondary-300 rounded-md border border-secondary-300 text-sm font-medium leading-4 text-secondary-700 shadow-sm hover:bg-secondary-50 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-1"
 					/>
 				</div>
 			</div>

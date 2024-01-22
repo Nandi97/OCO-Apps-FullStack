@@ -29,11 +29,11 @@ const LoginPage = () => {
 						/>
 						<p className="text-primary-600">Welcome</p>
 						<div className="inline-flex items-center text-base font-semibold">
-							<span className="text-ocoblue-600">OCO</span>
+							<span className="text-secondary-600">OCO</span>
 							<span className="text-primary-600">Apps</span>
 						</div>
 					</div>
-					<div className="col-span-6 flex items-center w-full h-full justify-center bg-ocoblue-100 rounded-r-md">
+					<div className="col-span-6 flex items-center w-full h-full justify-center bg-secondary-100 rounded-r-md">
 						<button
 							type="button"
 							onClick={onSubmit}

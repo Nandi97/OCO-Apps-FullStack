@@ -16,7 +16,7 @@ export default function MeetingTable() {
 		icon: 'heroicons:chevron-down',
 		name: 'Options',
 		buttonClassName:
-			'inline-flex items-center justify-center w-full h-8 px-4 text-xs text-white rounded-sm shadow-sm bg-ocoblue-600 focus:outline-none focus:ring-2 focus:ring-ocoblue-600 focus:ring-offset-0 focus:ring-offset-ocoblue-100',
+			'inline-flex items-center justify-center w-full h-8 px-4 text-xs text-white rounded-sm shadow-sm bg-secondary-600 focus:outline-none focus:ring-2 focus:ring-secondary-600 focus:ring-offset-0 focus:ring-offset-secondary-100',
 		iconClassName: '',
 	};
 
@@ -40,7 +40,7 @@ export default function MeetingTable() {
 					<SearchInput onSearch={handleSearch} />
 					<Link
 						href={`${pathname}/create`}
-						className="inline-flex items-center justify-center w-8 h-8 p-2 text-xs rounded-sm shadow-sm text-ocoblue-600 bg-ocoblue-100 focus:ring-offset-ocoblue-100"
+						className="inline-flex items-center justify-center w-8 h-8 p-2 text-xs rounded-sm shadow-sm text-secondary-600 bg-secondary-100 focus:ring-offset-secondary-100"
 					>
 						<Icon icon={'heroicons:document-plus'} />
 					</Link>

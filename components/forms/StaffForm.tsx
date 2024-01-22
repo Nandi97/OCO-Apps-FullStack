@@ -88,9 +88,9 @@ export default function StaffForm({
 	return (
 		<div className="grid grid-cols-6 md:gap-4 md:grid-cols-12">
 			{/* Photo Upload Component */}
-			<div className="col-span-6 p-1 md:col-span-3 md:border-r-2 border-ocoblue-100">
+			<div className="col-span-6 p-1 md:col-span-3 md:border-r-2 border-secondary-100">
 				<div className="flex flex-col items-center justify-center w-full space-y-2">
-					<label htmlFor="photo" className="text-sm font-medium text-ocoblue-700">
+					<label htmlFor="photo" className="text-sm font-medium text-secondary-700">
 						Staff Photo
 					</label>
 
@@ -99,7 +99,7 @@ export default function StaffForm({
 						width={20}
 						src={formValues?.avatar_url || selectedImage || AvatarPlaceholder}
 						alt="Staff Avatar Image"
-						className="inline-flex items-center justify-center overflow-hidden rounded-full md:w-24 sm:h-10 md:h-24 sm:w-10 ring-2 ring-offset-1 ring-primary-600 bg-ocoblue-300"
+						className="inline-flex items-center justify-center overflow-hidden rounded-full md:w-24 sm:h-10 md:h-24 sm:w-10 ring-2 ring-offset-1 ring-primary-600 bg-secondary-300"
 					/>
 
 					<input
@@ -114,7 +114,7 @@ export default function StaffForm({
 					<button
 						onClick={() => avatarRef.current?.click()}
 						type="button"
-						className="p-1 text-sm font-medium leading-4 bg-white border rounded-md shadow-sm border-ocoblue-300 text-ocoblue-700 hover:bg-ocoblue-50 focus:outline-none focus:ring-2 focus:ring-ocoblue-500 focus:ring-offset-1"
+						className="p-1 text-sm font-medium leading-4 bg-white border rounded-md shadow-sm border-secondary-300 text-secondary-700 hover:bg-secondary-50 focus:outline-none focus:ring-2 focus:ring-secondary-500 focus:ring-offset-1"
 					>
 						Change
 					</button>
@@ -123,7 +123,7 @@ export default function StaffForm({
 			<div className="grid grid-cols-6 col-span-6 gap-4 p-2 md:col-span-9">
 				{/* Name */}
 				<div className="col-span-6 space-y-1 md:col-span-3">
-					<label htmlFor="name" className="block text-sm font-medium text-ocoblue-700">
+					<label htmlFor="name" className="block text-sm font-medium text-secondary-700">
 						Name
 					</label>
 					<input
@@ -132,7 +132,7 @@ export default function StaffForm({
 						id="name"
 						value={formValues?.name}
 						onChange={onChange}
-						className="sm:text-sm w-full bg-ocoblue-50 bg-opacity-70 border-1 focus:shadow-inner shadow-accent-300  focus:border-ocoblue-500 block p-2.5 h-8  px-3 py-1 shadow-ocoblue-300 rounded-md border border-ocoblue-300 text-sm font-medium leading-4 text-ocoblue-700 shadow-sm hover:bg-ocoblue-50 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-1"
+						className="sm:text-sm w-full bg-secondary-50 bg-opacity-70 border-1 focus:shadow-inner shadow-accent-300  focus:border-secondary-500 block p-2.5 h-8  px-3 py-1 shadow-secondary-300 rounded-md border border-secondary-300 text-sm font-medium leading-4 text-secondary-700 shadow-sm hover:bg-secondary-50 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-1"
 						required
 					/>
 				</div>
@@ -141,7 +141,7 @@ export default function StaffForm({
 				<div className="col-span-3 space-y-1 md:col-span-3">
 					<label
 						htmlFor="staff type"
-						className="block text-sm font-medium text-ocoblue-700"
+						className="block text-sm font-medium text-secondary-700"
 					>
 						Staff Type
 					</label>
@@ -150,9 +150,9 @@ export default function StaffForm({
 						name="typeId"
 						value={selectedStaffType} // Use selectedStaffType here
 						onChange={updateDesignations}
-						className="sm:text-sm w-full bg-ocoblue-50 bg-opacity-70 border-1 focus:shadow-inner shadow-accent-300  focus:border-ocoblue-500 block p-2.5 h-8  px-3 py-1 shadow-ocoblue-300 rounded-md border border-ocoblue-300 text-sm font-medium leading-4 text-ocoblue-700 shadow-sm hover:bg-ocoblue-50 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-1"
+						className="sm:text-sm w-full bg-secondary-50 bg-opacity-70 border-1 focus:shadow-inner shadow-accent-300  focus:border-secondary-500 block p-2.5 h-8  px-3 py-1 shadow-secondary-300 rounded-md border border-secondary-300 text-sm font-medium leading-4 text-secondary-700 shadow-sm hover:bg-secondary-50 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-1"
 					>
-						<option disabled value="" className="text-opacity-50 text-ocoblue-700">
+						<option disabled value="" className="text-opacity-50 text-secondary-700">
 							--Select Staff Type--
 						</option>
 						{staffTypes?.map((item) => (
@@ -167,7 +167,7 @@ export default function StaffForm({
 				<div className="col-span-3 space-y-1 md:col-span-3">
 					<label
 						htmlFor="designation"
-						className="block text-sm font-medium text-ocoblue-700"
+						className="block text-sm font-medium text-secondary-700"
 					>
 						Designation
 					</label>
@@ -176,9 +176,9 @@ export default function StaffForm({
 						name="designationId"
 						onChange={onSelectChange}
 						value={formValues?.designationId}
-						className="sm:text-sm w-full bg-ocoblue-50 bg-opacity-70 border-1 focus:shadow-inner shadow-accent-300 focus:border-ocoblue-500 block p-2.5 h-8 px-3 py-1 shadow-ocoblue-300 rounded-md border border-ocoblue-300 text-sm font-medium leading-4 text-ocoblue-700 shadow-sm hover:bg-ocoblue-50 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-1"
+						className="sm:text-sm w-full bg-secondary-50 bg-opacity-70 border-1 focus:shadow-inner shadow-accent-300 focus:border-secondary-500 block p-2.5 h-8 px-3 py-1 shadow-secondary-300 rounded-md border border-secondary-300 text-sm font-medium leading-4 text-secondary-700 shadow-sm hover:bg-secondary-50 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-1"
 					>
-						<option disabled value="" className="text-opacity-50 text-ocoblue-700">
+						<option disabled value="" className="text-opacity-50 text-secondary-700">
 							--Select Designation--
 						</option>
 						{designations?.map((item: any) => (
@@ -191,7 +191,7 @@ export default function StaffForm({
 
 				{/* Staff Team Field  */}
 				<div className="col-span-3">
-					<label htmlFor="team" className="block text-sm font-medium text-ocoblue-700">
+					<label htmlFor="team" className="block text-sm font-medium text-secondary-700">
 						Team
 					</label>
 					<div className="mt-1">
@@ -200,9 +200,13 @@ export default function StaffForm({
 							name="teamId"
 							value={formValues?.teamId}
 							onChange={onSelectChange}
-							className="sm:text-sm w-full bg-ocoblue-50 bg-opacity-70 border-1 focus:shadow-inner shadow-accent-300  focus:border-ocoblue-500 block p-2.5 h-8  px-3 py-1 shadow-ocoblue-300 rounded-md border border-ocoblue-300 text-sm font-medium leading-4 text-ocoblue-700 shadow-sm hover:bg-ocoblue-50 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-1"
+							className="sm:text-sm w-full bg-secondary-50 bg-opacity-70 border-1 focus:shadow-inner shadow-accent-300  focus:border-secondary-500 block p-2.5 h-8  px-3 py-1 shadow-secondary-300 rounded-md border border-secondary-300 text-sm font-medium leading-4 text-secondary-700 shadow-sm hover:bg-secondary-50 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-1"
 						>
-							<option disabled value="" className="text-opacity-50 text-ocoblue-700">
+							<option
+								disabled
+								value=""
+								className="text-opacity-50 text-secondary-700"
+							>
 								--Select Team--
 							</option>
 							{teams?.map((team) => (
@@ -216,7 +220,7 @@ export default function StaffForm({
 
 				{/* Staff Email Field  */}
 				<div className="col-span-6 md:col-span-4">
-					<label htmlFor="email" className="block text-sm font-medium text-ocoblue-700">
+					<label htmlFor="email" className="block text-sm font-medium text-secondary-700">
 						Email
 					</label>
 					<div className="mt-1">
@@ -226,14 +230,17 @@ export default function StaffForm({
 							id="email"
 							value={formValues?.email}
 							onChange={onChange}
-							className="sm:text-sm w-full bg-ocoblue-50 bg-opacity-70 border-1 focus:shadow-inner shadow-accent-300  focus:border-ocoblue-500 block p-2.5 h-8  px-3 py-1 shadow-ocoblue-300 rounded-md border border-ocoblue-300 text-sm font-medium leading-4 text-ocoblue-700 shadow-sm hover:bg-ocoblue-50 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-1"
+							className="sm:text-sm w-full bg-secondary-50 bg-opacity-70 border-1 focus:shadow-inner shadow-accent-300  focus:border-secondary-500 block p-2.5 h-8  px-3 py-1 shadow-secondary-300 rounded-md border border-secondary-300 text-sm font-medium leading-4 text-secondary-700 shadow-sm hover:bg-secondary-50 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-1"
 						/>
 					</div>
 				</div>
 
 				{/* Staff Mobile Field  */}
 				<div className="col-span-6 md:col-span-2">
-					<label htmlFor="mobile" className="block text-sm font-medium text-ocoblue-700">
+					<label
+						htmlFor="mobile"
+						className="block text-sm font-medium text-secondary-700"
+					>
 						Mobile
 					</label>
 					<div className="mt-1">
@@ -243,7 +250,7 @@ export default function StaffForm({
 							id="mobile"
 							onChange={onChange}
 							value={formValues?.mobile}
-							className="sm:text-sm w-full bg-ocoblue-50 bg-opacity-70 border-1 focus:shadow-inner shadow-accent-300  focus:border-ocoblue-500 block p-2.5 h-8  px-3 py-1 shadow-ocoblue-300 rounded-md border border-ocoblue-300 text-sm font-medium leading-4 text-ocoblue-700 shadow-sm hover:bg-ocoblue-50 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-1"
+							className="sm:text-sm w-full bg-secondary-50 bg-opacity-70 border-1 focus:shadow-inner shadow-accent-300  focus:border-secondary-500 block p-2.5 h-8  px-3 py-1 shadow-secondary-300 rounded-md border border-secondary-300 text-sm font-medium leading-4 text-secondary-700 shadow-sm hover:bg-secondary-50 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-1"
 						/>
 					</div>
 				</div>
@@ -252,7 +259,7 @@ export default function StaffForm({
 				<div className="col-span-2">
 					<label
 						htmlFor="staff-no"
-						className="block text-sm font-medium text-ocoblue-700"
+						className="block text-sm font-medium text-secondary-700"
 					>
 						Staff Number
 					</label>
@@ -263,14 +270,14 @@ export default function StaffForm({
 							id="staffNo"
 							onChange={onChange}
 							value={formValues?.staffNo}
-							className="sm:text-sm w-full bg-ocoblue-50 bg-opacity-70 border-1 focus:shadow-inner shadow-accent-300  focus:border-ocoblue-500 block p-2.5 h-8  px-3 py-1 shadow-ocoblue-300 rounded-md border border-ocoblue-300 text-sm font-medium leading-4 text-ocoblue-700 shadow-sm hover:bg-ocoblue-50 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-1"
+							className="sm:text-sm w-full bg-secondary-50 bg-opacity-70 border-1 focus:shadow-inner shadow-accent-300  focus:border-secondary-500 block p-2.5 h-8  px-3 py-1 shadow-secondary-300 rounded-md border border-secondary-300 text-sm font-medium leading-4 text-secondary-700 shadow-sm hover:bg-secondary-50 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-1"
 						/>
 					</div>
 				</div>
 
 				{/* Staff Extension Field  */}
 				<div className="col-span-2">
-					<label htmlFor="ext" className="block text-sm font-medium text-ocoblue-700">
+					<label htmlFor="ext" className="block text-sm font-medium text-secondary-700">
 						Staff Extension
 					</label>
 					<div className="mt-1">
@@ -280,14 +287,17 @@ export default function StaffForm({
 							id="ext"
 							onChange={onChange}
 							value={formValues?.ext}
-							className="sm:text-sm w-full bg-ocoblue-50 bg-opacity-70 border-1 focus:shadow-inner shadow-accent-300  focus:border-ocoblue-500 block p-2.5 h-8  px-3 py-1 shadow-ocoblue-300 rounded-md border border-ocoblue-300 text-sm font-medium leading-4 text-ocoblue-700 shadow-sm hover:bg-ocoblue-50 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-1"
+							className="sm:text-sm w-full bg-secondary-50 bg-opacity-70 border-1 focus:shadow-inner shadow-accent-300  focus:border-secondary-500 block p-2.5 h-8  px-3 py-1 shadow-secondary-300 rounded-md border border-secondary-300 text-sm font-medium leading-4 text-secondary-700 shadow-sm hover:bg-secondary-50 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-1"
 						/>
 					</div>
 				</div>
 
 				{/* Staff Gender Field  */}
 				<div className="col-span-2">
-					<label htmlFor="gender" className="block text-sm font-medium text-ocoblue-700">
+					<label
+						htmlFor="gender"
+						className="block text-sm font-medium text-secondary-700"
+					>
 						Gender
 					</label>
 					<div className="mt-1">
@@ -296,14 +306,18 @@ export default function StaffForm({
 							name="genderId"
 							onChange={onSelectChange}
 							value={formValues?.genderId}
-							className="sm:text-sm w-full bg-ocoblue-50 bg-opacity-70 border-1 focus:shadow-inner shadow-accent-300  focus:border-ocoblue-500 block p-2.5 h-8  px-3 py-1 shadow-ocoblue-300 rounded-md border border-ocoblue-300 text-sm font-medium leading-4 text-ocoblue-700 shadow-sm hover:bg-ocoblue-50 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-1"
+							className="sm:text-sm w-full bg-secondary-50 bg-opacity-70 border-1 focus:shadow-inner shadow-accent-300  focus:border-secondary-500 block p-2.5 h-8  px-3 py-1 shadow-secondary-300 rounded-md border border-secondary-300 text-sm font-medium leading-4 text-secondary-700 shadow-sm hover:bg-secondary-50 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-1"
 						>
-							<option disabled value="" className="text-opacity-50 text-ocoblue-700">
+							<option
+								disabled
+								value=""
+								className="text-opacity-50 text-secondary-700"
+							>
 								--Gender--
 							</option>
 							{genders?.map((gender) => (
 								<option
-									className="border-ocoblue-300 p-2.5 h-8  px-3 py-1 text-sm font-medium leading-4 text-ocoblue-700 shadow-sm hover:bg-primary-500"
+									className="border-secondary-300 p-2.5 h-8  px-3 py-1 text-sm font-medium leading-4 text-secondary-700 shadow-sm hover:bg-primary-500"
 									key={gender.id}
 									value={gender.id}
 								>

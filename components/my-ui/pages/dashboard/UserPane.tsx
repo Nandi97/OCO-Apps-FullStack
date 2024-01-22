@@ -20,7 +20,7 @@ export default function UserPanel({ sessionData }: any) {
 				<Link
 					href={`/profile/${currentUser.id}`}
 					key={currentUser?.id}
-					className="flex justify-center items-center flex-col p-4 w-full space-y-4 hover:shadow-md transition-all duration-300 hover:p-5 cursor-pointer shadow-md border border-ocoblue-100 rounded-md bg-ocoblue-50 h-full bg-clip-padding backdrop-filter backdrop-blur-md"
+					className="flex justify-center items-center flex-col p-4 w-full space-y-4 hover:shadow-md transition-all duration-300 hover:p-5 cursor-pointer shadow-md border border-secondary-100 rounded-md bg-secondary-50 h-full bg-clip-padding backdrop-filter backdrop-blur-md"
 				>
 					`
 					<div

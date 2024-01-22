@@ -28,7 +28,7 @@ export default function Book(url: URL) {
 	const tableOptBtnTxt = {
 		icon: 'heroicons:ellipsis-horizontal',
 		buttonClassName:
-			'flex items-center justify-center w-full h-8 px-4 text-ocoblue-900 rounded-sm hover:shadow-sm z-20',
+			'flex items-center justify-center w-full h-8 px-4 text-secondary-900 rounded-sm hover:shadow-sm z-20',
 	};
 	const tableOptionsList = [
 		{ name: 'Delete Book', icon: 'heroicons:trash', action: handleDelete },
@@ -51,7 +51,7 @@ export default function Book(url: URL) {
 					</div>
 					<div className="grid grid-cols-8 col-span-6 gap-2 md:col-span-8">
 						{/* Author  */}
-						<div className="flex justify-between w-full text-sm font-semibold text-ocoblue-700 md:col-span-2 sm:col-span-8">
+						<div className="flex justify-between w-full text-sm font-semibold text-secondary-700 md:col-span-2 sm:col-span-8">
 							<span>Author</span>
 							<span>:</span>
 						</div>
@@ -59,7 +59,7 @@ export default function Book(url: URL) {
 							<span>{book?.author}</span>
 						</div>
 						{/* Publisher  */}
-						<div className="flex justify-between w-full text-sm font-semibold text-ocoblue-700 md:col-span-2 sm:col-span-8">
+						<div className="flex justify-between w-full text-sm font-semibold text-secondary-700 md:col-span-2 sm:col-span-8">
 							<span>Publisher</span>
 							<span>:</span>
 						</div>
@@ -67,7 +67,7 @@ export default function Book(url: URL) {
 							<span>{book?.publisher}</span>
 						</div>
 						{/* Publication Year  */}
-						<div className="flex justify-between w-full text-sm font-semibold text-ocoblue-700 md:col-span-2 sm:col-span-8">
+						<div className="flex justify-between w-full text-sm font-semibold text-secondary-700 md:col-span-2 sm:col-span-8">
 							<span>Publication Year</span>
 							<span>:</span>
 						</div>
@@ -75,7 +75,7 @@ export default function Book(url: URL) {
 							<span>{book?.publicationYear}</span>
 						</div>
 						{/* Subject  */}
-						<div className="flex justify-between w-full text-sm font-semibold text-ocoblue-700 md:col-span-2 sm:col-span-8">
+						<div className="flex justify-between w-full text-sm font-semibold text-secondary-700 md:col-span-2 sm:col-span-8">
 							<span>Subject</span>
 							<span>:</span>
 						</div>
@@ -83,7 +83,7 @@ export default function Book(url: URL) {
 							<span>{book?.subject}</span>
 						</div>
 						{/* Edition  */}
-						<div className="flex justify-between w-full text-sm font-semibold text-ocoblue-700 md:col-span-2 sm:col-span-8">
+						<div className="flex justify-between w-full text-sm font-semibold text-secondary-700 md:col-span-2 sm:col-span-8">
 							<span>Edition</span>
 							<span>:</span>
 						</div>
@@ -91,7 +91,7 @@ export default function Book(url: URL) {
 							<span>{book?.edition}</span>
 						</div>
 						{/* Edition  */}
-						<div className="flex justify-between w-full text-sm font-semibold text-ocoblue-700 md:col-span-2 sm:col-span-8">
+						<div className="flex justify-between w-full text-sm font-semibold text-secondary-700 md:col-span-2 sm:col-span-8">
 							<span>ISBN_ISSN</span>
 							<span>:</span>
 						</div>
@@ -100,7 +100,7 @@ export default function Book(url: URL) {
 						</div>
 						{/* Copies  */}
 						<div className="flex items-center w-full col-span-8 text-sm font-semibold">
-							<div className="p-2 space-x-4 rounded-md bg-primary-400 text-ocoblue-50 ">
+							<div className="p-2 space-x-4 rounded-md bg-primary-400 text-secondary-50 ">
 								<span className="inline-flex h-full rounded-md ">
 									Available Copies
 								</span>
@@ -111,7 +111,7 @@ export default function Book(url: URL) {
 						</div>
 					</div>
 				</div>
-				<div className="absolute z-30 top-2 right-2 text-ocoblue-400 bg-transparent hover:bg-ocoblue-200 hover:text-ocoblue-900 rounded-lg text-sm w-8 h-8 ml-auto inline-flex justify-center items-center">
+				<div className="absolute z-30 top-2 right-2 text-secondary-400 bg-transparent hover:bg-secondary-200 hover:text-secondary-900 rounded-lg text-sm w-8 h-8 ml-auto inline-flex justify-center items-center">
 					<OptDropdown
 						optBtn={tableOptBtnTxt}
 						optionsList={[

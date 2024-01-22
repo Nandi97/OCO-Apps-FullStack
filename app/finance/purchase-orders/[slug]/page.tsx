@@ -45,14 +45,14 @@ export default function PurchaseOrder(url: URL) {
 							<div className="flex items-center divide-x pr-2">
 								<Link
 									href={`${pathname}/edit`}
-									className="flex text-sm items-center p-0.5 rounded-l text-primary-600 space-x-2 font-medium border border-ocoblue-300 hover:bg-primary-600/90 hover:text-primary-50 hover:border-primary-600 shadow-sm"
+									className="flex text-sm items-center p-0.5 rounded-l text-primary-600 space-x-2 font-medium border border-secondary-300 hover:bg-primary-600/90 hover:text-primary-50 hover:border-primary-600 shadow-sm"
 								>
 									<Icon icon="heroicons:pencil-square" />
 									<span>EDIT</span>
 								</Link>
 								<button
 									type="button"
-									className="flex text-sm items-center p-0.5 rounded-r text-primary-600  space-x-2 font-medium border border-ocoblue-300 hover:bg-primary-600/90 hover:text-primary-50 hover:border-primary-600 shadow-sm"
+									className="flex text-sm items-center p-0.5 rounded-r text-primary-600  space-x-2 font-medium border border-secondary-300 hover:bg-primary-600/90 hover:text-primary-50 hover:border-primary-600 shadow-sm"
 								>
 									<Icon icon="heroicons:arrow-down-tray" />
 									<span>PDF</span>
@@ -62,7 +62,7 @@ export default function PurchaseOrder(url: URL) {
 							<div className="flex items-center divide-x pr-2">
 								<button
 									type="button"
-									className="flex text-sm items-center p-0.5 rounded text-primary-600  space-x-2 font-medium border border-ocoblue-300 hover:bg-primary-600/90 hover:text-primary-50 hover:border-primary-600 shadow-sm"
+									className="flex text-sm items-center p-0.5 rounded text-primary-600  space-x-2 font-medium border border-secondary-300 hover:bg-primary-600/90 hover:text-primary-50 hover:border-primary-600 shadow-sm"
 								>
 									<Icon icon="heroicons:arrow-down-tray" />
 									<span>PDF</span>
@@ -76,8 +76,8 @@ export default function PurchaseOrder(url: URL) {
 							<div className="col-span-5"></div>
 							<div className="col-span-2"></div>
 							<div className="col-span-5">
-								<table className="table-auto w-full text-sm text-left text-ocoblue-500">
-									<thead className="text-xs uppercase  bg-ocoblue-50 text-primary-600">
+								<table className="table-auto w-full text-sm text-left text-secondary-500">
+									<thead className="text-xs uppercase  bg-secondary-50 text-primary-600">
 										<tr>
 											<th
 												scope="col"
@@ -88,11 +88,11 @@ export default function PurchaseOrder(url: URL) {
 											</th>
 										</tr>
 									</thead>
-									<tbody className="z-0 bg-white border-ocoblue-300 border divide-y divide-ocoblue-200">
-										<tr className="bg-white border-ocoblue-300 border-b">
+									<tbody className="z-0 bg-white border-secondary-300 border divide-y divide-secondary-200">
+										<tr className="bg-white border-secondary-300 border-b">
 											<th
 												scope="row"
-												className="p-2 border-ocoblue-300 border-r font-medium text-ocoblue-900 whitespace-nowrap "
+												className="p-2 border-secondary-300 border-r font-medium text-secondary-900 whitespace-nowrap "
 											>
 												Date
 											</th>
@@ -101,14 +101,14 @@ export default function PurchaseOrder(url: URL) {
 													? formatDate(
 															purchaseOrder?.createdAt,
 															'MMMM d, yyyy'
-													  )
+														)
 													: ''}
 											</td>
 										</tr>
-										<tr className="bg-white border-ocoblue-300 border-b">
+										<tr className="bg-white border-secondary-300 border-b">
 											<th
 												scope="row"
-												className="p-2 border-ocoblue-300 border-r font-medium text-ocoblue-900 whitespace-nowrap "
+												className="p-2 border-secondary-300 border-r font-medium text-secondary-900 whitespace-nowrap "
 											>
 												PO #
 											</th>
@@ -123,15 +123,15 @@ export default function PurchaseOrder(url: URL) {
 						{/* SECTION B */}
 						<div className="grid grid-cols-12 gap-2">
 							<div className="col-span-5">
-								<table className="table-auto w-full text-sm text-left text-ocoblue-500 border-ocoblue-300 border">
-									<thead className="text-xs uppercase  bg-ocoblue-50 text-primary-600 border-ocoblue-300 border-b">
+								<table className="table-auto w-full text-sm text-left text-secondary-500 border-secondary-300 border">
+									<thead className="text-xs uppercase  bg-secondary-50 text-primary-600 border-secondary-300 border-b">
 										<tr>
 											<th scope="col" colSpan={3} className="p-1 w-full">
 												Vendor
 											</th>
 										</tr>
 									</thead>
-									<tbody className="z-0 bg-white divide-ocoblue-200">
+									<tbody className="z-0 bg-white divide-secondary-200">
 										<tr className="bg-white ">
 											<td colSpan={3} className="px-2 ">
 												{purchaseOrder?.name}
@@ -145,10 +145,10 @@ export default function PurchaseOrder(url: URL) {
 										<tr className="bg-white ">
 											<th
 												scope="row"
-												className="px-2 font-medium text-ocoblue-900 whitespace-nowrap "
+												className="px-2 font-medium text-secondary-900 whitespace-nowrap "
 											>
 												P.O. Box{' '}
-												<span className="text-sm text-ocoblue-500 font-normal">
+												<span className="text-sm text-secondary-500 font-normal">
 													{purchaseOrder?.address}-
 													{purchaseOrder?.postalCode}
 												</span>
@@ -162,10 +162,10 @@ export default function PurchaseOrder(url: URL) {
 										<tr className="bg-white ">
 											<th
 												scope="row"
-												className="px-2 font-medium text-ocoblue-900 whitespace-nowrap "
+												className="px-2 font-medium text-secondary-900 whitespace-nowrap "
 											>
 												Phone:{' '}
-												<span className="text-sm text-ocoblue-500 font-normal px-1">
+												<span className="text-sm text-secondary-500 font-normal px-1">
 													{purchaseOrder?.phoneNumber}
 												</span>
 											</th>
@@ -173,7 +173,7 @@ export default function PurchaseOrder(url: URL) {
 										<tr className="bg-white ">
 											<th
 												scope="row"
-												className="px-2 font-medium text-ocoblue-900 whitespace-nowrap "
+												className="px-2 font-medium text-secondary-900 whitespace-nowrap "
 											>
 												Email:
 												<span className="text-sm text-primary-500 font-normal px-1">
@@ -186,15 +186,15 @@ export default function PurchaseOrder(url: URL) {
 							</div>
 							<div className="col-span-2"></div>
 							<div className="col-span-5">
-								<table className="w-full table-auto text-sm text-left text-ocoblue-500 border-ocoblue-300 border">
-									<thead className="text-xs uppercase  bg-ocoblue-50 text-primary-600 border-ocoblue-300 border-b">
+								<table className="w-full table-auto text-sm text-left text-secondary-500 border-secondary-300 border">
+									<thead className="text-xs uppercase  bg-secondary-50 text-primary-600 border-secondary-300 border-b">
 										<tr>
 											<th scope="col" colSpan={3} className="p-1 w-full">
 												Ship To
 											</th>
 										</tr>
 									</thead>
-									<tbody className="z-0 bg-white divide-ocoblue-200">
+									<tbody className="z-0 bg-white divide-secondary-200">
 										<tr className="bg-white ">
 											<td colSpan={3} className="px-2 ">
 												Oraro & Company Advocates
@@ -208,10 +208,10 @@ export default function PurchaseOrder(url: URL) {
 										<tr className="bg-white ">
 											<th
 												scope="row"
-												className="px-2 font-medium text-ocoblue-900 whitespace-nowrap "
+												className="px-2 font-medium text-secondary-900 whitespace-nowrap "
 											>
 												P.O. Box{' '}
-												<span className="text-sm text-ocoblue-500 font-normal">
+												<span className="text-sm text-secondary-500 font-normal">
 													51236-00200
 												</span>
 											</th>
@@ -224,10 +224,10 @@ export default function PurchaseOrder(url: URL) {
 										<tr className="bg-white ">
 											<th
 												scope="row"
-												className="px-2 font-medium text-ocoblue-900 whitespace-nowrap "
+												className="px-2 font-medium text-secondary-900 whitespace-nowrap "
 											>
 												Phone:{' '}
-												<span className="text-sm text-ocoblue-500 font-normal px-1">
+												<span className="text-sm text-secondary-500 font-normal px-1">
 													+254 709 250 000
 												</span>
 											</th>
@@ -235,7 +235,7 @@ export default function PurchaseOrder(url: URL) {
 										<tr className="bg-white ">
 											<th
 												scope="row"
-												className="px-2 font-medium text-ocoblue-900 whitespace-nowrap "
+												className="px-2 font-medium text-secondary-900 whitespace-nowrap "
 											>
 												Email:
 												<span className="text-sm text-primary-500 font-normal px-1">
@@ -249,48 +249,48 @@ export default function PurchaseOrder(url: URL) {
 						</div>
 						{/* SECTION C */}
 						<div className="w-full">
-							<table className="w-full table-auto text-sm text-left text-ocoblue-500 border-ocoblue-300 border">
-								<thead className="text-xs uppercase  bg-ocoblue-50 text-primary-600 border-ocoblue-300 border-b border-t">
+							<table className="w-full table-auto text-sm text-left text-secondary-500 border-secondary-300 border">
+								<thead className="text-xs uppercase  bg-secondary-50 text-primary-600 border-secondary-300 border-b border-t">
 									<tr className="divide-y">
 										<th
 											scope="col"
-											className="p-1 whitespace-normal border-ocoblue-300 border-r text-left"
+											className="p-1 whitespace-normal border-secondary-300 border-r text-left"
 										>
 											Description
 										</th>
 										<th
 											scope="col"
-											className="p-1 border-ocoblue-300 border-r text-right"
+											className="p-1 border-secondary-300 border-r text-right"
 										>
 											Price
 										</th>
 										<th
 											scope="col"
-											className="p-1 w-12 border-ocoblue-300 border-r text-center"
+											className="p-1 w-12 border-secondary-300 border-r text-center"
 										>
 											Qty
 										</th>
 										<th
 											scope="col"
-											className="p-1 border-ocoblue-300 border text-right"
+											className="p-1 border-secondary-300 border text-right"
 										>
 											Amount
 										</th>
 									</tr>
 								</thead>
-								<tbody className="z-0 bg-white divide-ocoblue-200">
+								<tbody className="z-0 bg-white divide-secondary-200">
 									{purchaseOrder?.purchaseItems?.map((item, index) => (
 										<tr
 											key={index}
-											className="bg-white border-ocoblue-300 border-b text-left"
+											className="bg-white border-secondary-300 border-b text-left"
 										>
-											<td className="px-2 border-ocoblue-300 border-r">
+											<td className="px-2 border-secondary-300 border-r">
 												{item?.description}
 											</td>
-											<td className="px-2 border-ocoblue-300 border-r text-right">
+											<td className="px-2 border-secondary-300 border-r text-right">
 												{item?.cost}
 											</td>
-											<td className="px-2 border-ocoblue-300 border-r text-center">
+											<td className="px-2 border-secondary-300 border-r text-center">
 												{item?.quantity}
 											</td>
 											<td className="px-2 text-right">
@@ -300,10 +300,10 @@ export default function PurchaseOrder(url: URL) {
 									))}
 									{purchaseOrder?.vatable === true ? (
 										<>
-											<tr className="border-ocoblue-300 border-b">
+											<tr className="border-secondary-300 border-b">
 												<td
 													colSpan={3}
-													className="px-2 border-ocoblue-300 border-r text-right font-medium  text-ocoblue-600 uppercase"
+													className="px-2 border-secondary-300 border-r text-right font-medium  text-secondary-600 uppercase"
 												>
 													SubTotal
 												</td>
@@ -316,10 +316,10 @@ export default function PurchaseOrder(url: URL) {
 													)}
 												</td>
 											</tr>
-											<tr className="border-ocoblue-300 border-b">
+											<tr className="border-secondary-300 border-b">
 												<td
 													colSpan={3}
-													className="px-2 border-ocoblue-300 border-r text-right font-base  text-ocoblue-600 uppercase"
+													className="px-2 border-secondary-300 border-r text-right font-base  text-secondary-600 uppercase"
 												>
 													VAT @ 16%
 												</td>
@@ -335,7 +335,7 @@ export default function PurchaseOrder(url: URL) {
 											<tr>
 												<td
 													colSpan={3}
-													className="px-2 border-ocoblue-300 border-r text-right font-medium  text-primary-600 uppercase"
+													className="px-2 border-secondary-300 border-r text-right font-medium  text-primary-600 uppercase"
 												>
 													Total
 												</td>
@@ -353,7 +353,7 @@ export default function PurchaseOrder(url: URL) {
 										<tr>
 											<td
 												colSpan={3}
-												className="px-2 border-ocoblue-300 border-r text-right font-medium  text-primary-600 uppercase"
+												className="px-2 border-secondary-300 border-r text-right font-medium  text-primary-600 uppercase"
 											>
 												Total
 											</td>
@@ -372,8 +372,8 @@ export default function PurchaseOrder(url: URL) {
 						</div>
 						<div className="grid grid-cols-12 gap-6">
 							<div className="col-span-3">
-								<table className="table-auto w-full text-sm text-left text-ocoblue-500 border-ocoblue-300 border">
-									<thead className="text-xs uppercase  bg-ocoblue-50 text-primary-600">
+								<table className="table-auto w-full text-sm text-left text-secondary-500 border-secondary-300 border">
+									<thead className="text-xs uppercase  bg-secondary-50 text-primary-600">
 										<tr>
 											<th
 												scope="col"
@@ -384,8 +384,8 @@ export default function PurchaseOrder(url: URL) {
 											</th>
 										</tr>
 									</thead>
-									<tbody className="z-0 bg-white border-ocoblue-300 border divide-y divide-ocoblue-200">
-										<tr className="bg-white border-ocoblue-300 border-b">
+									<tbody className="z-0 bg-white border-secondary-300 border divide-y divide-secondary-200">
+										<tr className="bg-white border-secondary-300 border-b">
 											<td colSpan={2} className="p-2 flex flex-col text-sm">
 												<span>{purchaseOrder?.creator?.name}</span>
 												<span>
@@ -394,7 +394,7 @@ export default function PurchaseOrder(url: URL) {
 														? formatDate(
 																purchaseOrder?.createdAt,
 																'MMMM d, yyyy'
-														  )
+															)
 														: ''}
 												</span>
 											</td>
@@ -403,8 +403,8 @@ export default function PurchaseOrder(url: URL) {
 								</table>
 							</div>
 							<div className="col-span-3">
-								<table className="table-auto w-full text-sm text-left text-ocoblue-500 border-ocoblue-300 border">
-									<thead className="text-xs uppercase  bg-ocoblue-50 text-primary-600">
+								<table className="table-auto w-full text-sm text-left text-secondary-500 border-secondary-300 border">
+									<thead className="text-xs uppercase  bg-secondary-50 text-primary-600">
 										<tr>
 											<th
 												scope="col"
@@ -415,8 +415,8 @@ export default function PurchaseOrder(url: URL) {
 											</th>
 										</tr>
 									</thead>
-									<tbody className="z-0 bg-white border-ocoblue-300 border divide-y divide-ocoblue-200">
-										<tr className="bg-white border-ocoblue-300 border-b">
+									<tbody className="z-0 bg-white border-secondary-300 border divide-y divide-secondary-200">
+										<tr className="bg-white border-secondary-300 border-b">
 											<td colSpan={2} className="p-2 flex flex-col text-sm">
 												<span>{purchaseOrder?.approver?.name}</span>
 												<span className="text-primary-600">
@@ -432,7 +432,7 @@ export default function PurchaseOrder(url: URL) {
 														: formatDate(
 																purchaseOrder.approvedOn as string,
 																'MMMM d, yyyy'
-														  )}
+															)}
 												</span>
 											</td>
 										</tr>

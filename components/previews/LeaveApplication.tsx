@@ -61,7 +61,7 @@ export default function LeaveApplicationPrev({ prevVal }: LeaveApplicationPrevPr
 			</div>
 			<div className="w-full flex items-center justify-center">
 				<table className="table-fixed w-full">
-					<thead className="text-xs text-ocoblue-700 uppercase bg-ocoblue-200">
+					<thead className="text-xs text-secondary-700 uppercase bg-secondary-200">
 						<tr>
 							<th scope="col" colSpan={2} className="px-6 py-3">
 								Section 1: Employee Details
@@ -102,7 +102,7 @@ export default function LeaveApplicationPrev({ prevVal }: LeaveApplicationPrevPr
 			</div>
 			<div className="w-full flex items-center justify-center">
 				<table className="table-fixed w-full">
-					<thead className="text-xs text-ocoblue-700 uppercase bg-ocoblue-200">
+					<thead className="text-xs text-secondary-700 uppercase bg-secondary-200">
 						<tr>
 							<th scope="col" colSpan={2} className="px-6 py-3">
 								Section 2: Leave Details
@@ -161,7 +161,7 @@ export default function LeaveApplicationPrev({ prevVal }: LeaveApplicationPrevPr
 											? format(
 													new Date(prevVal?.reportingDate),
 													'MMMM d, yyyy'
-											  )
+												)
 											: ''}
 									</span>
 								</div>
@@ -180,7 +180,7 @@ export default function LeaveApplicationPrev({ prevVal }: LeaveApplicationPrevPr
 			</div>
 			<div className="w-full flex items-center justify-center">
 				<table className="table-fixed w-full">
-					<thead className="text-xs text-ocoblue-700 uppercase bg-ocoblue-200">
+					<thead className="text-xs text-secondary-700 uppercase bg-secondary-200">
 						<tr>
 							<th scope="col" colSpan={2} className="px-6 py-3">
 								Section 3: Approvals

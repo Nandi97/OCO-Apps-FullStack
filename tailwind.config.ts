@@ -42,7 +42,7 @@ const config: Config = {
 					900: '#653022',
 					950: '#39180f',
 				},
-				ocoblue: {
+				secondary: {
 					50: '#f5f7fa',
 					100: '#e9eef5',
 					200: '#cfdbe8',

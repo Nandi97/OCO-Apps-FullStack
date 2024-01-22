@@ -39,19 +39,19 @@ export default function PurchaseOrderPreview({
 					<div className="col-span-5"></div>
 					<div className="col-span-2"></div>
 					<div className="col-span-5">
-						<table className="table-auto w-full text-sm text-left text-ocoblue-500">
-							<thead className="text-xs uppercase  bg-ocoblue-50 text-primary-600">
+						<table className="table-auto w-full text-sm text-left text-secondary-500">
+							<thead className="text-xs uppercase  bg-secondary-50 text-primary-600">
 								<tr>
 									<th scope="col" colSpan={3} className=" p-1 w-full text-center">
 										PURCHASE ORDER
 									</th>
 								</tr>
 							</thead>
-							<tbody className="z-0 bg-white border divide-y divide-ocoblue-200">
+							<tbody className="z-0 bg-white border divide-y divide-secondary-200">
 								<tr className="bg-white border-b">
 									<th
 										scope="row"
-										className="p-2 border-r font-medium text-ocoblue-900 whitespace-nowrap "
+										className="p-2 border-r font-medium text-secondary-900 whitespace-nowrap "
 									>
 										Date
 									</th>
@@ -62,7 +62,7 @@ export default function PurchaseOrderPreview({
 								<tr className="bg-white border-b">
 									<th
 										scope="row"
-										className="p-2 border-r font-medium text-ocoblue-900 whitespace-nowrap "
+										className="p-2 border-r font-medium text-secondary-900 whitespace-nowrap "
 									>
 										PO #
 									</th>
@@ -77,15 +77,15 @@ export default function PurchaseOrderPreview({
 				{/* SECTION B */}
 				<div className="grid grid-cols-12 gap-2">
 					<div className="col-span-5">
-						<table className="table-auto w-full text-sm text-left text-ocoblue-500 border">
-							<thead className="text-xs uppercase  bg-ocoblue-50 text-primary-600 border-b">
+						<table className="table-auto w-full text-sm text-left text-secondary-500 border">
+							<thead className="text-xs uppercase  bg-secondary-50 text-primary-600 border-b">
 								<tr>
 									<th scope="col" colSpan={3} className="p-1 w-full">
 										Vendor
 									</th>
 								</tr>
 							</thead>
-							<tbody className="z-0 bg-white divide-ocoblue-200">
+							<tbody className="z-0 bg-white divide-secondary-200">
 								<tr className="bg-white ">
 									<td colSpan={3} className="p-2 ">
 										{formValues?.name}
@@ -99,10 +99,10 @@ export default function PurchaseOrderPreview({
 								<tr className="bg-white ">
 									<th
 										scope="row"
-										className="p-2 font-medium text-ocoblue-900 whitespace-nowrap "
+										className="p-2 font-medium text-secondary-900 whitespace-nowrap "
 									>
 										P.O. Box{' '}
-										<span className="text-sm text-ocoblue-500 font-normal">
+										<span className="text-sm text-secondary-500 font-normal">
 											{formValues?.address}-{formValues?.postalCode}
 											<br />
 											{selectedTown?.name}
@@ -117,10 +117,10 @@ export default function PurchaseOrderPreview({
 								<tr className="bg-white ">
 									<th
 										scope="row"
-										className="px-2 font-medium text-ocoblue-900 whitespace-nowrap "
+										className="px-2 font-medium text-secondary-900 whitespace-nowrap "
 									>
 										Phone:{' '}
-										<span className="text-sm text-ocoblue-500 font-normal px-1">
+										<span className="text-sm text-secondary-500 font-normal px-1">
 											{formValues?.phoneNumber}
 										</span>
 									</th>
@@ -128,7 +128,7 @@ export default function PurchaseOrderPreview({
 								<tr className="bg-white ">
 									<th
 										scope="row"
-										className="px-2 font-medium text-ocoblue-900 whitespace-nowrap "
+										className="px-2 font-medium text-secondary-900 whitespace-nowrap "
 									>
 										Email:
 										<span className="text-sm text-primary-500 font-normal px-1">
@@ -141,15 +141,15 @@ export default function PurchaseOrderPreview({
 					</div>
 					<div className="col-span-2"></div>
 					<div className="col-span-5">
-						<table className="table-auto w-full text-sm text-left text-ocoblue-500 border">
-							<thead className="text-xs uppercase  bg-ocoblue-50 text-primary-600 border-b">
+						<table className="table-auto w-full text-sm text-left text-secondary-500 border">
+							<thead className="text-xs uppercase  bg-secondary-50 text-primary-600 border-b">
 								<tr>
 									<th scope="col" colSpan={3} className="p-1 w-full">
 										Ship To
 									</th>
 								</tr>
 							</thead>
-							<tbody className="z-0 bg-white divide-ocoblue-200">
+							<tbody className="z-0 bg-white divide-secondary-200">
 								<tr className="bg-white ">
 									<td colSpan={3} className="px-2 ">
 										Oraro & Company Advocates
@@ -163,10 +163,10 @@ export default function PurchaseOrderPreview({
 								<tr className="bg-white ">
 									<th
 										scope="row"
-										className="px-2 font-medium text-ocoblue-900 whitespace-nowrap "
+										className="px-2 font-medium text-secondary-900 whitespace-nowrap "
 									>
 										P.O. Box{' '}
-										<span className="text-sm text-ocoblue-500 font-normal">
+										<span className="text-sm text-secondary-500 font-normal">
 											51236-00200
 										</span>
 									</th>
@@ -179,10 +179,10 @@ export default function PurchaseOrderPreview({
 								<tr className="bg-white ">
 									<th
 										scope="row"
-										className="px-2 font-medium text-ocoblue-900 whitespace-nowrap "
+										className="px-2 font-medium text-secondary-900 whitespace-nowrap "
 									>
 										Phone:{' '}
-										<span className="text-sm text-ocoblue-500 font-normal px-1">
+										<span className="text-sm text-secondary-500 font-normal px-1">
 											+254 709 250 000
 										</span>
 									</th>
@@ -190,7 +190,7 @@ export default function PurchaseOrderPreview({
 								<tr className="bg-white ">
 									<th
 										scope="row"
-										className="px-2 font-medium text-ocoblue-900 whitespace-nowrap "
+										className="px-2 font-medium text-secondary-900 whitespace-nowrap "
 									>
 										Email:
 										<span className="text-sm text-primary-500 font-normal px-1">
@@ -204,8 +204,8 @@ export default function PurchaseOrderPreview({
 				</div>
 				{/* SECTION C */}
 				<div className="w-full">
-					<table className="table-auto w-full text-sm text-left text-ocoblue-500 border">
-						<thead className="text-xs uppercase  bg-ocoblue-50 text-primary-600 border-b">
+					<table className="table-auto w-full text-sm text-left text-secondary-500 border">
+						<thead className="text-xs uppercase  bg-secondary-50 text-primary-600 border-b">
 							<tr className="divide-y">
 								<th scope="col" colSpan={2} className="p-1 w-full border-r">
 									Description
@@ -221,7 +221,7 @@ export default function PurchaseOrderPreview({
 								</th>
 							</tr>
 						</thead>
-						<tbody className="z-0 bg-white divide-ocoblue-200">
+						<tbody className="z-0 bg-white divide-secondary-200">
 							{purchaseOrderItems?.map((item, index) => (
 								<tr key={index} className="bg-white border-b">
 									<td colSpan={2} className="px-2 border-r">
@@ -243,7 +243,7 @@ export default function PurchaseOrderPreview({
 									<tr className="border-b">
 										<td
 											colSpan={6}
-											className="px-2 border-r text-right font-medium  text-ocoblue-600 uppercase"
+											className="px-2 border-r text-right font-medium  text-secondary-600 uppercase"
 										>
 											SubTotal
 										</td>
@@ -258,7 +258,7 @@ export default function PurchaseOrderPreview({
 									<tr className="border-b">
 										<td
 											colSpan={6}
-											className="px-2 border-r text-right font-base  text-ocoblue-600 uppercase"
+											className="px-2 border-r text-right font-base  text-secondary-600 uppercase"
 										>
 											VAT @ 16%
 										</td>
@@ -308,15 +308,15 @@ export default function PurchaseOrderPreview({
 				</div>
 				<div className="grid grid-cols-12 gap-6">
 					<div className="col-span-3">
-						<table className="table-auto w-full text-sm text-left text-ocoblue-500 border">
-							<thead className="text-xs uppercase  bg-ocoblue-50 text-primary-600">
+						<table className="table-auto w-full text-sm text-left text-secondary-500 border">
+							<thead className="text-xs uppercase  bg-secondary-50 text-primary-600">
 								<tr>
 									<th scope="col" colSpan={2} className=" p-1 w-full text-center">
 										Requested By:
 									</th>
 								</tr>
 							</thead>
-							<tbody className="z-0 bg-white border divide-y divide-ocoblue-200">
+							<tbody className="z-0 bg-white border divide-y divide-secondary-200">
 								<tr className="bg-white border-b">
 									<td colSpan={2} className="p-2">
 										{formatDate(currentDate, 'MMMM d, yyyy')}
@@ -326,15 +326,15 @@ export default function PurchaseOrderPreview({
 						</table>
 					</div>
 					<div className="col-span-3">
-						<table className="table-auto w-full text-sm text-left text-ocoblue-500 border">
-							<thead className="text-xs uppercase  bg-ocoblue-50 text-primary-600">
+						<table className="table-auto w-full text-sm text-left text-secondary-500 border">
+							<thead className="text-xs uppercase  bg-secondary-50 text-primary-600">
 								<tr>
 									<th scope="col" colSpan={2} className=" p-1 w-full text-center">
 										Authorized By:
 									</th>
 								</tr>
 							</thead>
-							<tbody className="z-0 bg-white border divide-y divide-ocoblue-200">
+							<tbody className="z-0 bg-white border divide-y divide-secondary-200">
 								<tr className="bg-white border-b">
 									<td colSpan={2} className="p-2">
 										{selectedAuthorizer?.name}

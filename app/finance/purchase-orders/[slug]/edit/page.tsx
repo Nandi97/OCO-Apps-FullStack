@@ -92,7 +92,7 @@ export default function EditPurchaseOrder(url: URL) {
 				country: formValues.country,
 				totalAmount: formValues.vatable
 					? purchaseItems?.reduce((total, item) => total + item.cost * item.quantity, 0) *
-					  1.16
+						1.16
 					: purchaseItems?.reduce((total, item) => total + item.cost * item.quantity, 0),
 				approverId: selected?.id,
 				purchaseItems: purchaseItems,
@@ -171,7 +171,7 @@ export default function EditPurchaseOrder(url: URL) {
 			<div className="grid grid-cols-12 gap-2">
 				<form
 					onSubmit={handleSubmit}
-					className="rounded-md shadow-md shadow-ocoblue-200 col-span-6"
+					className="rounded-md shadow-md shadow-secondary-200 col-span-6"
 				>
 					<div>
 						<PurchaseOrderForm
@@ -194,7 +194,7 @@ export default function EditPurchaseOrder(url: URL) {
 						</button>
 						<Link
 							href={'/finance/purchase-orders'}
-							className="flex items-center gap-2 p-2 text-sm font-medium leading-4 text-white border rounded-md shadow-sm bg-ocoblue-600 hover:opacity-80 border-ocoblue-300 focus:outline-none focus:ring-2 focus:ring-ocoblue-500 focus:ring-offset-1"
+							className="flex items-center gap-2 p-2 text-sm font-medium leading-4 text-white border rounded-md shadow-sm bg-secondary-600 hover:opacity-80 border-secondary-300 focus:outline-none focus:ring-2 focus:ring-secondary-500 focus:ring-offset-1"
 						>
 							Cancel
 						</Link>

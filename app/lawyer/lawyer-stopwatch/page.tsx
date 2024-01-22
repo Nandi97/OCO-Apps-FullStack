@@ -61,7 +61,7 @@ export default function StaffList() {
 		icon: 'heroicons:chevron-down',
 		name: 'Options',
 		buttonClassName:
-			'inline-flex items-center justify-center w-full h-8 px-4 text-xs text-white rounded-sm shadow-sm bg-ocoblue-600 focus:outline-none focus:ring-2 focus:ring-ocoblue-600 focus:ring-offset-0 focus:ring-offset-ocoblue-100',
+			'inline-flex items-center justify-center w-full h-8 px-4 text-xs text-white rounded-sm shadow-sm bg-secondary-600 focus:outline-none focus:ring-2 focus:ring-secondary-600 focus:ring-offset-0 focus:ring-offset-secondary-100',
 		iconClassName: '',
 	};
 
@@ -78,7 +78,7 @@ export default function StaffList() {
 	const tableOptBtnTxt = {
 		icon: 'heroicons:ellipsis-horizontal',
 		buttonClassName:
-			'flex items-center justify-center w-full h-8 px-4 text-ocoblue-900 rounded-sm hover:shadow-sm z-20',
+			'flex items-center justify-center w-full h-8 px-4 text-secondary-900 rounded-sm hover:shadow-sm z-20',
 	};
 
 	const tableOptionsList = [{ name: 'Delete Stopwatch Item', icon: 'heroicons:trash' }];
@@ -119,7 +119,7 @@ export default function StaffList() {
 			<div className="shadow overscroll-none ring-1 ring-black ring-opacity-5 md:rounded-md">
 				<div className="flex-col hidden lg:flex">
 					<table className="min-w-full divide-y divide-primary-100">
-						<thead className="sticky z-10 top-12 bg-ocoblue-600 text-ocoblue-50">
+						<thead className="sticky z-10 top-12 bg-secondary-600 text-secondary-50">
 							<tr>
 								<th
 									scope="col"
@@ -175,11 +175,11 @@ export default function StaffList() {
 										<tr key={index}>
 											<td
 												colSpan={9}
-												className="flex items-center justify-center w-full px-3 py-2 text-sm text-center whitespace-nowrap text-ocoblue-500"
+												className="flex items-center justify-center w-full px-3 py-2 text-sm text-center whitespace-nowrap text-secondary-500"
 											>
 												<svg
 													aria-hidden="true"
-													className="w-8 h-8 mr-2 text-ocoblue-200 animate-spin fill-primary-600"
+													className="w-8 h-8 mr-2 text-secondary-200 animate-spin fill-primary-600"
 													viewBox="0 0 100 101"
 													fill="none"
 													xmlns="http://www.w3.org/2000/svg"
@@ -202,34 +202,36 @@ export default function StaffList() {
 										<tr
 											key={item?.id}
 											className={`hover:bg-primary-100/95 ${
-												index % 2 && index !== 0 ? 'bg-ocoblue-100/95' : ''
+												index % 2 && index !== 0
+													? 'bg-secondary-100/95'
+													: ''
 											}`}
 										>
-											<td className="px-3 py-2 text-sm text-center whitespace-nowrap text-ocoblue-500">
+											<td className="px-3 py-2 text-sm text-center whitespace-nowrap text-secondary-500">
 												{index + 1}
 											</td>
 											<td className="px-3 py-2 text-sm text-left whitespace-nowrap font-semibold  text-primary-500">
 												{item?.matter?.code}
 											</td>
-											<td className="py-2 pl-4 pr-3  whitespace-nowrap sm:pl-6 text-sm text-ocoblue-900">
+											<td className="py-2 pl-4 pr-3  whitespace-nowrap sm:pl-6 text-sm text-secondary-900">
 												{item?.stopWatchItemTask?.name}
 											</td>
-											<td className="py-2 text-left  sm:pl-6 text-sm text-ocoblue-900">
+											<td className="py-2 text-left  sm:pl-6 text-sm text-secondary-900">
 												<p className="truncate hover:whitespace-normal hover:overflow-visible w-72">
 													{item?.narration}
 												</p>
 											</td>
-											<td className="px-3 py-2 text-sm whitespace-nowrap text-ocoblue-500">
+											<td className="px-3 py-2 text-sm whitespace-nowrap text-secondary-500">
 												{item?.itemDate
 													? formatDate(item.itemDate, 'dd MMM yyyy')
 													: formatDate(item.createdAt, 'dd MMM yyyy')}
 											</td>
-											<td className="px-3 py-2 text-sm text-center whitespace-nowrap text-ocoblue-500">
+											<td className="px-3 py-2 text-sm text-center whitespace-nowrap text-secondary-500">
 												{item?.startedAt
 													? formatTime(item?.startedAt, 'hh:mm a')
 													: formatTime(item?.createdAt, 'hh:mm a')}
 											</td>
-											<td className="px-3 py-2 text-sm whitespace-nowrap text-ocoblue-500">
+											<td className="px-3 py-2 text-sm whitespace-nowrap text-secondary-500">
 												{item?.endedAt
 													? formatTime(item?.endedAt, 'hh:mm a')
 													: formatTime(item?.createdAt, 'hh:mm a')}
@@ -265,22 +267,22 @@ export default function StaffList() {
 					{data?.data?.map((item, index) => (
 						<div
 							key={item?.id}
-							className="grid min-w-full grid-cols-12 p-3 bg-white border-t border-gray-200 rounded-md shadow-sm sm:px-6 sm:flex lg:hidden shadow-ocoblue-400"
+							className="grid min-w-full grid-cols-12 p-3 bg-white border-t border-gray-200 rounded-md shadow-sm sm:px-6 sm:flex lg:hidden shadow-secondary-400"
 						>
 							<div className="col-span-12">{index + 1}</div>
-							<div className="col-span-4 text-sm font-semibold text-left text-ocoblue-600">
+							<div className="col-span-4 text-sm font-semibold text-left text-secondary-600">
 								Matter :
 							</div>
 							<div className="col-span-8">{item?.matter?.code}</div>
-							<div className="col-span-4 text-sm font-semibold text-left text-ocoblue-600">
+							<div className="col-span-4 text-sm font-semibold text-left text-secondary-600">
 								Task :
 							</div>
 							<div className="col-span-8">{item?.stopWatchItemTask?.name}</div>
-							<div className="col-span-4 text-sm font-semibold text-left text-ocoblue-600">
+							<div className="col-span-4 text-sm font-semibold text-left text-secondary-600">
 								Narration :
 							</div>
 							<div className="col-span-8 text-primary-500">{item?.narration}</div>
-							<div className="col-span-4 text-sm font-semibold text-left text-ocoblue-600">
+							<div className="col-span-4 text-sm font-semibold text-left text-secondary-600">
 								Created At :
 							</div>
 							<div className="col-span-8">
@@ -288,7 +290,7 @@ export default function StaffList() {
 									? formatDate(item.itemDate, 'dd MMM yyyy')
 									: formatDate(item.createdAt, 'dd MMM yyyy')}
 							</div>
-							<div className="col-span-4 text-sm font-semibold text-left text-ocoblue-600">
+							<div className="col-span-4 text-sm font-semibold text-left text-secondary-600">
 								Start Time :
 							</div>
 							<div className="col-span-8">
@@ -296,7 +298,7 @@ export default function StaffList() {
 									? formatTime(item?.startedAt, 'hh:mm a')
 									: formatTime(item?.createdAt, 'hh:mm a')}
 							</div>
-							<div className="col-span-4 text-sm font-semibold text-left text-ocoblue-600">
+							<div className="col-span-4 text-sm font-semibold text-left text-secondary-600">
 								End Time :
 							</div>
 

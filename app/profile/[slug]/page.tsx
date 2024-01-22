@@ -66,15 +66,15 @@ export default function Profile(url: URL) {
 							/>
 						</div>
 						<div className="p-4">
-							<h1 className="font-bold text-xl text-ocoblue-700">{user?.name}</h1>
+							<h1 className="font-bold text-xl text-secondary-700">{user?.name}</h1>
 
 							<div className="flex items-center space-x-2">
 								<Icon icon="heroicons:identification" />
-								<span className="text-ocoblue-700">: {user?.staffNo}</span>
+								<span className="text-secondary-700">: {user?.staffNo}</span>
 							</div>
 							<div className="flex items-center space-x-2">
 								<Icon icon="heroicons:briefcase" />
-								<span className="text-ocoblue-700">
+								<span className="text-secondary-700">
 									: {user?.designation?.name}
 								</span>
 							</div>
@@ -89,7 +89,7 @@ export default function Profile(url: URL) {
 							</div>
 							<div className="flex items-center space-x-2">
 								<Icon icon="heroicons:phone" />
-								<span className="text-ocoblue-700">: {user?.ext}</span>
+								<span className="text-secondary-700">: {user?.ext}</span>
 							</div>
 							<div className="flex items-center space-x-2">
 								<Icon icon="heroicons:device-phone-mobile" />

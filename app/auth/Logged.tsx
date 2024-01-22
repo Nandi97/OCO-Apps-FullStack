@@ -22,7 +22,7 @@ export default function Logged({ image, name, designation }: User) {
 					<div>
 						<Menu.Button className="inline-flex w-full justify-center items-center rounded-md text-sm font-medium text-white  focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75">
 							{!image ? (
-								<span className="inline-flex items-center justify-center rounded-full h-6 w-6 bg-ocoblue-50 border-ocoblue-500 border-2 text-ocoblue-500 hover:bg-ocoblue-500 hover:text-ocoblue-50">
+								<span className="inline-flex items-center justify-center rounded-full h-6 w-6 bg-secondary-50 border-secondary-500 border-2 text-secondary-500 hover:bg-secondary-500 hover:text-secondary-50">
 									<span className="font-sm leading-none ">
 										{name
 											.split(' ')
@@ -36,7 +36,7 @@ export default function Logged({ image, name, designation }: User) {
 									width={20}
 									height={20}
 									alt="User Avatar"
-									className="object-contain w-6 h-6 p-px border-2 rounded-full border-ocoblue-50 hover:border-ocoblue-400"
+									className="object-contain w-6 h-6 p-px border-2 rounded-full border-secondary-50 hover:border-secondary-400"
 								/>
 							)}
 						</Menu.Button>
@@ -51,7 +51,7 @@ export default function Logged({ image, name, designation }: User) {
 						leaveTo="transform opacity-0 scale-95"
 					>
 						<Menu.Items className="absolute w-40 right-0 mt-2 origin-top-right divide-y divide-gray-100 rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
-							<div className="px-1 py-1 flex flex-col text-ocoblue-700 font-semibold text-base divide-y">
+							<div className="px-1 py-1 flex flex-col text-secondary-700 font-semibold text-base divide-y">
 								<Menu.Item>
 									{({ active }) => (
 										<Link
