@@ -92,8 +92,8 @@ Table Gender {
 }
 
 Table Town {
-  id Int [pk, increment]
-  name String [not null]
+  id String [pk]
+  name String [unique, not null]
   createdAt DateTime [default: `now()`]
   updatedAt DateTime
   purchaseOrders PurchaseOrder [not null]
@@ -223,7 +223,7 @@ Table PurchaseOrder {
   purchaseItems PurchaseItem [not null]
   approverId String [not null]
   createdById String [not null]
-  townId Int
+  townId String
   address Int
   postalCode Int
   city String

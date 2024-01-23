@@ -4,18 +4,10 @@ import OCO_AB_David_Logo from '@/public/assets/images/oco_ab_and_david.png';
 import { formatDate } from '@/utils/formatDate';
 
 interface PurchaseOrderPreviewProps {
-	formValues: any;
-	purchaseOrderItems?: any;
-	selectedAuthorizer: (value: any) => void;
-	selectedTown: (value: any) => void;
+	formValues?: any;
 }
 
-export default function PurchaseOrderPreview({
-	formValues,
-	purchaseOrderItems,
-	selectedAuthorizer,
-	selectedTown,
-}: PurchaseOrderPreviewProps) {
+export default function PurchaseOrderPreview({ formValues }: PurchaseOrderPreviewProps) {
 	const date = new Date();
 	const currentDate = date.toISOString();
 	// const currentDate = format(new Date(), 'MMMM d, yyyy');
@@ -105,7 +97,7 @@ export default function PurchaseOrderPreview({
 										<span className="text-sm text-secondary-500 font-normal">
 											{formValues?.address}-{formValues?.postalCode}
 											<br />
-											{selectedTown?.name}
+											{formValues?.town}
 										</span>
 									</th>
 								</tr>
@@ -222,7 +214,7 @@ export default function PurchaseOrderPreview({
 							</tr>
 						</thead>
 						<tbody className="z-0 bg-white divide-secondary-200">
-							{purchaseOrderItems?.map((item, index) => (
+							{formValues.purchaseOrderItems?.map((item, index) => (
 								<tr key={index} className="bg-white border-b">
 									<td colSpan={2} className="px-2 border-r">
 										{item?.description}

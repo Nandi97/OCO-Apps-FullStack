@@ -79,8 +79,10 @@ async function main() {
 
 	// Towns
 	for (const town of towns) {
-		await prisma.town.create({
-			data: {
+		await prisma.town.upsert({
+			where: { name: town.name },
+			update: {},
+			create: {
 				name: town.name,
 			},
 		});

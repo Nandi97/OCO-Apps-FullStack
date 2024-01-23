@@ -10,13 +10,14 @@ import {
 import axios from 'axios';
 import { Town } from '@/lib/types/town';
 import { useQuery } from '@tanstack/react-query';
-import { useState, Fragment } from 'react';
+import { useState, Fragment, useEffect } from 'react';
 import { Icon } from '@iconify/react/dist/iconify.js';
 import { Currency } from '@/lib/types/currency';
 import { Combobox, Transition } from '@headlessui/react';
 import PurchaseItemForm from './PurchaseItemForm';
 import { Staff } from '@/lib/types/staff';
 import { Tax } from '@/lib/types/tax';
+import PurchaseOrderPreview from '@/components/previews/PurchaseOrder';
 
 interface POItem {
 	description: string;
@@ -34,7 +35,7 @@ interface POForm {
 	physicalAddress: string;
 	postalAddress: string;
 	postalCode: string;
-	townId: number;
+	townId: string;
 	city: string;
 	country: string;
 	approverId: string;
@@ -135,13 +136,45 @@ export default function PurchaseOrderForm({ onSubmit, initialValues, isPending }
 		const updatedServices = purchaseOrderItems.filter((item) => item.key !== key);
 		setPurchaseOrderItems(updatedServices);
 	};
+
 	const watchAllFields: POForm = watch();
+
 	const selectedCurrency = currencies?.find(
 		(currency) => currency.id === parseInt(watchAllFields?.currencyId)
 	)?.initial;
+	useEffect(() => {
+		if (watchAllFields || selectedTown) {
+			const POPreview = {
+				name: watchAllFields.name,
+				poNumber: '',
+				physicalAddress: watchAllFields.physicalAddress,
+				address: watchAllFields.postalAddress || '',
+				postalCode: watchAllFields?.postalCode || '',
+				town: selectedTown?.name || '',
+				phoneNumber: watchAllFields.phoneNumber,
+				email: watchAllFields.email,
+				purchaseOrderItems: watchAllFields.purchaseItems,
+			};
 
+			console.log(POPreview);
+		}
+	}, [watchAllFields, selectedTown]);
+
+	// console.log('filteredTown', selectedTown);
 	const handleSubmitForm: SubmitHandler<POForm> = (data) => {
 		try {
+			if (vendorType && vendorType === '1') {
+				// local vendor
+				data.type = parseInt(vendorType);
+				data.city = '';
+				data.country = '';
+			} else if (vendorType && vendorType === '2') {
+				// international vendor
+				data.type = parseInt(vendorType);
+				data.postalAddress = '';
+				data.postalCode = '';
+				data.townId = '';
+			}
 			console.log(data);
 			// onSubmit(data);
 		} catch (error) {
@@ -704,6 +737,9 @@ export default function PurchaseOrderForm({ onSubmit, initialValues, isPending }
 					</AccordionItem>
 				</Accordion>
 			</form>
+			<div className="md:col-span-3 col-span-1">
+				<PurchaseOrderPreview />
+			</div>
 		</div>
 	);
 }
