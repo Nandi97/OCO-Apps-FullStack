@@ -1,19 +1,20 @@
-'use client';
-import { useEffect, useState } from 'react';
+import Dashboard from '@/components/main/newsfeed/Dashboard';
+import { metadata } from '../layout';
+import { getServerSession } from 'next-auth';
+import { authOptions } from '@/pages/api/auth/[...nextauth]';
+
+export async function getSessionData() {
+	const session: any = await getServerSession(authOptions);
+
+	// console.log('USER:', session);
+	return session;
+}
 
 export default function NewsFeed() {
-	const [title, setTitle] = useState('');
-
-	// Update the title and breadcrumbs
-	useEffect(() => {
-		setTitle('News Feed');
-	}, []);
-
+	metadata.title = 'NewsFeed';
 	return (
-		<div className="space-y-2">
-			<div className="bg-white flex flex-col gap-2">
-				<h1 className="font-extralight text-lg text-accent-700">{title}</h1>
-			</div>
+		<div>
+			<Dashboard />
 		</div>
 	);
 }

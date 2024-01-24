@@ -164,6 +164,7 @@ Table Staff {
   deletedAt DateTime
   createdAt DateTime [default: `now()`]
   updatedAt DateTime
+  NewsFeed NewsFeed [not null]
 }
 
 Table Book {
@@ -390,6 +391,30 @@ Table HRMApproval {
   LeaveApplication LeaveApplication [not null]
 }
 
+Table NewsFeed {
+  id String [pk]
+  date DateTime [not null]
+  createdAt DateTime [default: `now()`]
+  updatedAt DateTime
+  deletedAt DateTime
+  articles Article [not null]
+  user Staff
+  userId String
+}
+
+Table Article {
+  id String [pk]
+  title String [not null]
+  content String [not null]
+  url String [not null]
+  tags String [not null]
+  NewsFeed NewsFeed
+  newsFeedId String
+  createdAt DateTime [default: `now()`]
+  updatedAt DateTime
+  deletedAt DateTime
+}
+
 Ref: Account.userId > User.id [delete: Cascade]
 
 Ref: Session.userId > User.id [delete: Cascade]
@@ -451,3 +476,7 @@ Ref: LeaveApplication.partnerApprovalId > PartnerApproval.id
 Ref: LeaveApplication.hRMApprovalId > HRMApproval.id
 
 Ref: LeaveDays.staffId - Staff.id
+
+Ref: NewsFeed.userId > Staff.id
+
+Ref: Article.newsFeedId > NewsFeed.id

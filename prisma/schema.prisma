@@ -177,8 +177,9 @@ model Staff {
   team        Team        @relation(fields: [teamId], references: [id])
 
   deletedAt DateTime?
-  createdAt DateTime? @default(now())
-  updatedAt DateTime? @updatedAt
+  createdAt DateTime?  @default(now())
+  updatedAt DateTime?  @updatedAt
+  NewsFeed  NewsFeed[]
 }
 
 model Book {
@@ -417,4 +418,32 @@ model HRMApproval {
   deletedAt DateTime?
 
   LeaveApplication LeaveApplication[]
+}
+
+model NewsFeed {
+  id   String   @id @default(cuid())
+  date DateTime
+
+  createdAt DateTime? @default(now())
+  updatedAt DateTime? @updatedAt
+  deletedAt DateTime?
+
+  articles Article[]
+  user     Staff?    @relation(fields: [userId], references: [id])
+  userId   String?
+}
+
+model Article {
+  id      String @id @default(cuid())
+  title   String
+  content String
+  url     String
+  tags    String
+
+  newsFeed   NewsFeed? @relation(fields: [newsFeedId], references: [id])
+  newsFeedId String?
+
+  createdAt DateTime? @default(now())
+  updatedAt DateTime? @updatedAt
+  deletedAt DateTime?
 }
