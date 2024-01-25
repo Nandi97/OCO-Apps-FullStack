@@ -4,7 +4,9 @@ import prisma from '@/lib/prisma';
 export default async function handler(req: NextApiRequest, res: NextApiResponse) {
 	if (req.method === 'GET') {
 		try {
-			const data = await prisma.newsFeed.findMany({
+			const id = req.query.slug?.toString();
+			const data = await prisma.newsFeed.findUnique({
+				where: { id: id },
 				include: {
 					articles: true,
 					user: true,

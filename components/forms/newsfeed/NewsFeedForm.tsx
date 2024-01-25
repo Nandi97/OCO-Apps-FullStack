@@ -1,8 +1,9 @@
 'use client';
 import { useForm, SubmitHandler } from 'react-hook-form';
 import SubForm from './NewsArticleForm';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { Icon } from '@iconify/react/dist/iconify.js';
+import NewsFeedPrev from '@/components/previews/NewsFeed';
 
 interface Article {
 	title: string;
@@ -49,19 +50,30 @@ export default function Form({ onSubmit, initialValues, isPending }: NewsFeedFor
 		console.log(articleToEdit);
 		setEditableArticle(articleToEdit);
 	};
+
+	const watchAllFields: NewsFeedForm = watch();
+
+	const NewsFeedPreview = {
+		date: watchAllFields?.date,
+		articles: articleItems,
+	};
+
+	// console.log('News feed Preview', NewsFeedPreview);
+
 	const handleSubmitForm: SubmitHandler<NewsFeedForm> = (data) => {
 		try {
 			if (articleItems) {
 				data.articles = articleItems;
 			}
 
-			console.log(data);
+			// console.log(data);
+			onSubmit(data);
 		} catch (error) {
 			console.error('Error in handleSubmitForm:', error);
 		}
 	};
 	return (
-		<div className="grid grid-cols-6">
+		<div className="grid grid-cols-6 gap-2">
 			<div className="md:col-span-3 col-span-6">
 				<form
 					className="shadow-inner bg-primary-50 p-2 w-full flex space-y-4 flex-col"
@@ -98,7 +110,7 @@ export default function Form({ onSubmit, initialValues, isPending }: NewsFeedFor
 										<h2 className="block text-sm font-medium text-secondary-700">
 											Title:
 										</h2>
-										<p className="sm:text-sm w-full bg-secondary-50 bg-opacity-70 border-1 focus:shadow-inner shadow-accent-300  focus:border-secondary-500 block p-2.5 h-8  px-3 py-1 shadow-secondary-300 rounded-md border border-secondary-300 text-sm font-medium leading-4 text-secondary-400 shadow-sm cursor-default">
+										<p className="sm:text-sm w-full overflow-hidden truncate bg-secondary-50 bg-opacity-70 border-1 focus:shadow-inner shadow-accent-300  focus:border-secondary-500 block p-2.5 h-8  px-3 py-1 shadow-secondary-300 rounded-md border border-secondary-300 text-sm font-medium leading-4 text-secondary-400 shadow-sm cursor-default">
 											{item?.title}
 										</p>
 									</div>
@@ -106,7 +118,7 @@ export default function Form({ onSubmit, initialValues, isPending }: NewsFeedFor
 										<h2 className="block text-sm font-medium text-secondary-700">
 											Body:
 										</h2>
-										<p className="sm:text-sm w-full bg-secondary-50 bg-opacity-70 border-1 focus:shadow-inner shadow-accent-300  focus:border-secondary-500 block p-2.5 h-8  px-3 py-1 shadow-secondary-300 rounded-md border border-secondary-300 text-sm font-medium leading-4 text-secondary-400 shadow-sm cursor-default">
+										<p className="sm:text-sm overflow-hidden truncate w-full bg-secondary-50 bg-opacity-70 border-1 focus:shadow-inner shadow-accent-300  focus:border-secondary-500 block p-2.5 h-8  px-3 py-1 shadow-secondary-300 rounded-md border border-secondary-300 text-sm font-medium leading-4 text-secondary-400 shadow-sm cursor-default">
 											{item?.content}
 										</p>
 									</div>
@@ -114,7 +126,7 @@ export default function Form({ onSubmit, initialValues, isPending }: NewsFeedFor
 										<h2 className="block text-sm font-medium text-secondary-700">
 											Url:
 										</h2>
-										<p className="sm:text-sm w-full bg-secondary-50 bg-opacity-70 border-1 focus:shadow-inner shadow-accent-300  focus:border-secondary-500 block p-2.5 h-8  px-3 py-1 shadow-secondary-300 rounded-md border border-secondary-300 text-sm font-medium leading-4 text-secondary-400 shadow-sm cursor-default">
+										<p className="sm:text-sm w-full overflow-hidden truncate bg-secondary-50 bg-opacity-70 border-1 focus:shadow-inner shadow-accent-300  focus:border-secondary-500 block p-2.5 h-8  px-3 py-1 shadow-secondary-300 rounded-md border border-secondary-300 text-sm font-medium leading-4 text-secondary-400 shadow-sm cursor-default">
 											{item?.url}
 										</p>
 									</div>
@@ -162,6 +174,9 @@ export default function Form({ onSubmit, initialValues, isPending }: NewsFeedFor
 						</button>
 					</div>
 				</form>
+			</div>
+			<div className="md:col-span-3 col-span-6">
+				<NewsFeedPrev prevData={NewsFeedPreview} />
 			</div>
 		</div>
 	);

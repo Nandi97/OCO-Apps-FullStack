@@ -65,7 +65,6 @@ export default async function handler(req, res) {
 					approvalUrl={approvalUrl}
 				/>
 			);
-			
 
 			await sendMail({ toEmail, subject, htmlContent, optText });
 

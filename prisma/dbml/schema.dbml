@@ -408,7 +408,7 @@ Table Article {
   content String [not null]
   url String [not null]
   tags String [not null]
-  NewsFeed NewsFeed
+  newsFeed NewsFeed
   newsFeedId String
   createdAt DateTime [default: `now()`]
   updatedAt DateTime

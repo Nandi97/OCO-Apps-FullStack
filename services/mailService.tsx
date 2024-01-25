@@ -39,4 +39,3 @@ export const sendMail = async ({ toEmail, subject, htmlContent, optText }: Maile
 		throw new Error(error.message || 'Failed to send email');
 	}
 };
-

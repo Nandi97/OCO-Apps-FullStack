@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import Tiptap from '@/components/my-ui/Tiptap';
 
 interface ArticleFormProp {
 	addArticle: (article: any) => void;
@@ -68,6 +69,7 @@ export default function SubForm({ addArticle }: ArticleFormProp) {
 						}
 						className="sm:text-sm w-full bg-secondary-50 bg-opacity-70 border-1 focus:shadow-inner shadow-accent-300  focus:border-secondary-500 block p-2.5 h-20  px-3 py-1 shadow-secondary-300 rounded-md border border-secondary-300 text-sm font-medium leading-4 text-secondary-700 shadow-sm hover:bg-secondary-50 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-1"
 					/>
+					{/* <Tiptap /> */}
 				</div>
 			</div>
 			<div>

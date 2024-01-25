@@ -70,3 +70,57 @@ Content-Type: application/json
   }
 
 
+###
+# @name stopWatchItems
+POST {{host}}/newsfeed/mail HTTp/1.1
+Content-Type: application/json
+
+{
+    "id": "clrt2878c000bojlz9urbrzul",
+    "date": "2024-01-07T00:00:00.000Z",
+    "createdAt": "2024-01-25T10:17:10.036Z",
+    "updatedAt": "2024-01-25T10:17:10.036Z",
+    "deletedAt": null,
+    "userId": "clrrj7hwj0056m5v563j7z2p4",
+    "articles": [
+        {
+            "id": "clrt2878e000cojlzujthxcc6",
+            "title": "Officiis earum error",
+            "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum molestie aliquet neque. Cras ullamcorper vitae lacus nec rutrum. Aliquam in purus dolor. Fusce vulputate elit sagittis arcu dignissim efficitur. Proin porta viverra tortor, tempor rhoncus orci vehicula nec. Nam posuere rhoncus gravida. Morbi convallis porta lacus ut tempor. Vivamus metus lorem, ultricies at egestas quis, laoreet vel lacus.",
+            "url": "https://guardian.co.uk/erat/nulla/tempus/vivamus/in.jsp?ut=euismod&nunc=scelerisque&vestibulum=quam&ante=turpis&ipsum=adipiscing&primis=lorem&in=vitae&faucibus=mattis&orci=nibh&luctus=ligula&et=nec&ultrices=sem&posuere=duis&cubilia=aliquam&curae=convallis&mauris=nunc&viverra=proin&diam=at&vitae=turpis&quam=a&suspendisse=pede&potenti=posuere",
+            "tags": "Voluptatem id rati",
+            "newsFeedId": "clrt2878c000bojlz9urbrzul",
+            "createdAt": "2024-01-25T10:17:10.036Z",
+            "updatedAt": "2024-01-25T10:17:10.036Z",
+            "deletedAt": null
+        },
+        {
+            "id": "clrt2878f000dojlzt193lsev",
+            "title": "Eum minim voluptas f",
+            "content": "Suspendisse convallis eros vitae risus malesuada, in sodales massa tristique. Duis luctus turpis at placerat lobortis. Proin id orci a ligula ultricies gravida quis vel nibh. Sed sed faucibus massa. Fusce nec risus luctus, porta est vitae, convallis massa. Duis vestibulum sed enim nec tincidunt. Sed sed lacus nisi. In tempor mi neque, a vulputate mi sollicitudin eget. Sed at ornare quam, vel porta velit. Nam ac libero sit amet turpis sollicitudin tempor vel id lacus. Nulla posuere pretium euismod. Cras risus libero, egestas eget purus ac, maximus venenatis lacus. Proin elementum tempor pellentesque. Etiam imperdiet dignissim dictum. Donec sollicitudin mauris volutpat arcu ullamcorper accumsan.",
+            "url": "http://behance.net/nonummy.json?at=vel&turpis=ipsum&donec=praesent&posuere=blandit&metus=lacinia&vitae=erat&ipsum=vestibulum&aliquam=sed&non=magna&mauris=at&morbi=nunc&non=commodo&lectus=placerat&aliquam=praesent&sit=blandit&amet=nam&diam=nulla&in=integer&magna=pede&bibendum=justo&imperdiet=lacinia&nullam=eget&orci=tincidunt&pede=eget&venenatis=tempus&non=vel&sodales=pede&sed=morbi&tincidunt=porttitor&eu=lorem&felis=id&fusce=ligula&posuere=suspendisse&felis=ornare&sed=consequat&lacus=lectus&morbi=in&sem=est&mauris=risus&laoreet=auctor&ut=sed&rhoncus=tristique&aliquet=in&pulvinar=tempus&sed=sit&nisl=amet&nunc=sem&rhoncus=fusce&dui=consequat&vel=nulla&sem=nisl&sed=nunc&sagittis=nisl&nam=duis&congue=bibendum&risus=felis&semper=sed&porta=interdum&volutpat=venenatis&quam=turpis&pede=enim&lobortis=blandit&ligula=mi&sit=in&amet=porttitor&eleifend=pede&pede=justo&libero=eu&quis=massa&orci=donec&nullam=dapibus&molestie=duis,\"Duis bibendum, felis sed interdum venenatis, turpis enim blandit mi, in porttitor pede justo eu massa. Donec dapibus. Duis at velit eu est congue elementum.\"",
+            "tags": "Fuga Minus quis rem",
+            "newsFeedId": "clrt2878c000bojlz9urbrzul",
+            "createdAt": "2024-01-25T10:17:10.036Z",
+            "updatedAt": "2024-01-25T10:17:10.036Z",
+            "deletedAt": null
+        }
+    ],
+    "user": {
+        "id": "clrrj7hwj0056m5v563j7z2p4",
+        "name": "Alvin Kigen",
+        "email": "alvin@oraro.co.ke",
+        "mobile": "+254 712 012 246",
+        "ext": 709,
+        "staffNo": 279,
+        "avatarUrl": "",
+        "teamId": 6,
+        "designationId": 15,
+        "genderId": 2,
+        "createdById": null,
+        "deletedAt": null,
+        "createdAt": "2024-01-24T08:36:58.339Z",
+        "updatedAt": "2024-01-24T08:36:58.339Z"
+    }
+}
+

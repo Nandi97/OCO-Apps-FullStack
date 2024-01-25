@@ -16,12 +16,12 @@
 		"incremental": true,
 		"plugins": [
 			{
-				"name": "next"
-			}
+				"name": "next",
+			},
 		],
 		"paths": {
-			"@/*": ["./*"]
-		}
+			"@/*": ["./*"],
+		},
 	},
 	"include": [
 		"next-env.d.ts",
@@ -32,7 +32,9 @@
 		"pages/api/staff/getBooks.js",
 		"pages/api/books/addBook.ts",
 		"components/forms/meeting/MeetingForm.tsx",
-		"app/staff/staff-list/[slug]/vcard/page.jsx"
-, "hooks/useStaffDetails.jsx", "services/mailService.tsx"	],
-	"exclude": ["node_modules"]
+		"app/staff/staff-list/[slug]/vcard/page.jsx",
+		"hooks/useStaffDetails.jsx",
+		"services/mailService.tsx",
+	],
+	"exclude": ["node_modules"],
 }

@@ -10,6 +10,61 @@ const nextConfig = {
 			'www.dropbox.com',
 			'www.oraro.co.ke',
 			'openweathermap.org',
+			'firebasestorage.googleapis.com',
+		],
+		remotePatterns: [
+			{
+				protocol: 'https',
+				hostname: 'lh3.googleusercontent.com',
+			},
+			{
+				protocol: 'https',
+				hostname: 'avatars.githubusercontent.com',
+			},
+			{
+				protocol: 'https',
+				hostname: 'firebasestorage.googleapis.com',
+			},
+			{
+				protocol: 'https',
+				hostname: 'firebasestorage.googleapis.com',
+			},
+			{
+				protocol: 'https',
+				hostname: 'orarocoke-my.sharepoint.com',
+			},
+			{
+				protocol: 'https',
+				hostname: 'www.dropbox.com',
+			},
+			{
+				protocol: 'https',
+				hostname: 'www.oraro.co.ke',
+			},
+			{
+				protocol: 'https',
+				hostname: 'tailwindui.com',
+			},
+			{
+				protocol: 'https',
+				hostname: 'images.unsplash.com',
+			},
+			{
+				protocol: 'https',
+				hostname: 'utfs.io',
+			},
+			{
+				protocol: 'https',
+				hostname: 'picsum.photos',
+			},
+			{
+				protocol: 'https',
+				hostname: 'lh5.googleusercontent.com',
+			},
+			{
+				protocol: 'https',
+				hostname: 'uploadthing.com',
+			},
 		],
 	},
 	typescript: {
