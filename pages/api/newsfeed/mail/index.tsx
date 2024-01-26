@@ -23,7 +23,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
 
 			await sendMail({ toEmail, subject, htmlContent, optText });
 
-			res.status(200);
+			res.status(200).json(mailData);
 		} catch (err: any) {
 			console.log('Error when Sending News Feed', err.message);
 			res.status(403).json({ err: 'Error has occurred while sending news feed' });
