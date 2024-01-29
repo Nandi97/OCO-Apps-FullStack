@@ -27,7 +27,8 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
 					gender: true,
 					team: true,
 				},
-
+				// skip: 1,
+				// take: 1,
 				orderBy: {
 					staffNo: 'asc',
 				},

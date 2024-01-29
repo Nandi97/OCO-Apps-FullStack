@@ -1,12 +1,11 @@
 // 'use client';
 import React from 'react';
 
-import StaffTable from './components/StaffTable';
-import StaffCard from './components/StaffCard';
 import { getServerSession } from 'next-auth';
 import { redirect } from 'next/navigation';
 import { authOptions } from '@/pages/api/auth/[...nextauth]';
 import { metadata } from '@/app/layout';
+import Dashboard from '@/components/main/staff/staff-list/Dashboard';
 
 export default async function StaffList() {
 	metadata.title = 'Staff List';
@@ -16,8 +15,7 @@ export default async function StaffList() {
 	}
 	return (
 		<div className="space-y-2 bg-white">
-			<StaffTable />
-			<StaffCard />
+			<Dashboard />
 		</div>
 	);
 }

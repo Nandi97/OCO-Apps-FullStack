@@ -2,16 +2,16 @@
 const { pluginoptions } = require('@mightymeld/runtime');
 const nextConfig = {
 	images: {
-		domains: [
-			'lh3.googleusercontent.com',
-			'avatars.githubusercontent.com',
-			'firebasestorage.googleapis.com',
-			'orarocoke-my.sharepoint.com',
-			'www.dropbox.com',
-			'www.oraro.co.ke',
-			'openweathermap.org',
-			'firebasestorage.googleapis.com',
-		],
+		// domains: [
+		// 	'lh3.googleusercontent.com',
+		// 	'avatars.githubusercontent.com',
+		// 	'firebasestorage.googleapis.com',
+		// 	'orarocoke-my.sharepoint.com',
+		// 	'www.dropbox.com',
+		// 	'www.oraro.co.ke',
+		// 	'openweathermap.org',
+		// 	'firebasestorage.googleapis.com',
+		// ],
 		remotePatterns: [
 			{
 				protocol: 'https',
