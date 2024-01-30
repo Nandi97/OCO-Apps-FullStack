@@ -91,9 +91,14 @@ export default function EditPurchaseOrder(url: URL) {
 				city: formValues.city,
 				country: formValues.country,
 				totalAmount: formValues.vatable
-					? purchaseItems?.reduce((total, item) => total + item.cost * item.quantity, 0) *
-						1.16
-					: purchaseItems?.reduce((total, item) => total + item.cost * item.quantity, 0),
+					? purchaseItems?.reduce(
+							({ total, item }: any) => total + item.cost * item.quantity,
+							0
+						) * 1.16
+					: purchaseItems?.reduce(
+							({ total, item }: any) => total + item.cost * item.quantity,
+							0
+						),
 				approverId: selected?.id,
 				purchaseItems: purchaseItems,
 			};
@@ -143,7 +148,7 @@ export default function EditPurchaseOrder(url: URL) {
 		}));
 	};
 
-	const onBooleanSelectChange = (event) => {
+	const onBooleanSelectChange = (event: any) => {
 		const selectedValue = event.target.value;
 
 		const isVatable = selectedValue === 'true';
@@ -174,15 +179,15 @@ export default function EditPurchaseOrder(url: URL) {
 					className="rounded-md shadow-md shadow-secondary-200 col-span-6"
 				>
 					<div>
-						<PurchaseOrderForm
-							onBooleanSelectChange={onBooleanSelectChange}
+						{/* <PurchaseOrderForm
+							onBooleanSelectChange={onBooleanSelectChange as any}
 							setSelectedAuthorizer={selected || setSelected}
 							onSelectChange={handleSelectChange}
 							formValues={formValues}
 							onChange={handleChange}
 							setPurchaseOrderItems={purchaseItems || setPurchaseItems}
 							setSelectedTownValue={selectedTown || setSelectedTown}
-						/>
+						/> */}
 					</div>
 					<div className="flex items-center justify-center w-full py-8 space-x-2">
 						{/* Submit Form Button  */}
@@ -201,12 +206,12 @@ export default function EditPurchaseOrder(url: URL) {
 					</div>
 				</form>
 				<div className="md:col-span-6 col-span-12">
-					<PurchaseOrderPreview
+					{/* <PurchaseOrderPreview
 						formValues={formValues}
-						purchaseOrderItems={purchaseItems}
+						// purchaseOrderItems={purchaseItems}
 						selectedAuthorizer={selected}
 						selectedTown={selectedTown}
-					/>
+					/> */}
 				</div>
 			</div>
 		</div>

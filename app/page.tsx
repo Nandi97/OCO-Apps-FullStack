@@ -9,19 +9,19 @@ import type { Metadata } from 'next';
 import { metadata } from './layout';
 import { redirect } from 'next/navigation';
 
-export async function getSessionData() {
-	const session: any = await getServerSession(authOptions);
-	// console.log(session);
-	return session;
-}
+// export async function getSessionData() {
+// 	const session: any = await getServerSession(authOptions);
+// 	// console.log(session);
+// 	return session;
+// }
 
 export default async function Dashboard() {
 	metadata.title = 'Dashboard';
-	const session = await getSessionData();
+	// const session = await getSessionData();
 
-	if (!session) {
-		redirect('/auth/signin');
-	}
+	// if (!session) {
+	// 	redirect('/auth/signin');
+	// }
 	// console.log(session);
 	const divs = [];
 	for (let i = 0; i < 4; i++) {

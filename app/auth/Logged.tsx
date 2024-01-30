@@ -5,7 +5,6 @@ import { signOut } from 'next-auth/react';
 import { Icon } from '@iconify/react/dist/iconify.js';
 import { Menu, Transition } from '@headlessui/react';
 import { Fragment, useEffect, useRef, useState } from 'react';
-import { ChevronDownIcon } from '@heroicons/react/20/solid';
 import Link from 'next/link';
 
 type User = {
@@ -25,7 +24,7 @@ export default function Logged({ image, name, designation }: User) {
 								<span className="inline-flex items-center justify-center rounded-full h-6 w-6 bg-secondary-50 border-secondary-500 border-2 text-secondary-500 hover:bg-secondary-500 hover:text-secondary-50">
 									<span className="font-sm leading-none ">
 										{name
-											.split(' ')
+											?.split(' ')
 											.map((n) => n[0])
 											.join('')}
 									</span>
