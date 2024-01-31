@@ -6,7 +6,7 @@ import axios from 'axios';
 import Image from 'next/image';
 import formatISO from 'date-fns/formatISO';
 import Pagination from '@/components/my-ui/Pagination';
-import StaffForm from '@/components/forms/StaffForm';
+import StaffForm from '@/components/forms/staff/StaffForm';
 import SearchInput from '@/components/my-ui/SearchInput';
 import OptDropdown from '@/components/my-ui/OptDropdown';
 import { toast } from 'react-hot-toast';

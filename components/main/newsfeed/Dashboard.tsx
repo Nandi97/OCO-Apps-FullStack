@@ -76,7 +76,9 @@ export default function Dashboard() {
 										{format(feed.createdAt, 'MMM do, yyyy')}
 									</td>
 									<td className="px-3 py-2 text-base text-start whitespace-nowrap text-primary-500">
-										Newsfeed for {format(feed?.date, 'MMM do, yyyy')}
+										<Link href={`${pathname}/${feed?.id}`}>
+											Newsfeed for {format(feed?.date, 'MMM do, yyyy')}
+										</Link>
 									</td>
 									<td className="px-3 py-2 text-sm text-start whitespace-nowrap text-secondary-500">
 										{feed?.user?.name}

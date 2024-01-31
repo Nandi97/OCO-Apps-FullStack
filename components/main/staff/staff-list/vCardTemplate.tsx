@@ -5,7 +5,7 @@ import { Icon } from '@iconify/react/dist/iconify.js';
 import { URL } from '@/components/types/URL';
 import axios from 'axios';
 import { useQuery } from '@tanstack/react-query';
-import { usePathname } from 'next/navigation';
+import { useParams } from 'next/navigation';
 
 type VCardTemplatePROPS = {
 	download?: (f: any) => void;
@@ -17,9 +17,9 @@ const fetchDetails = async (slug: string) => {
 };
 
 export default function VCardTemplate({ download }: VCardTemplatePROPS) {
-	const router = usePathname();
+	const params = useParams();
 
-	const [url]: any = router?.match(/\d+/g)?.map(Number);
+	const url = params?.slug;
 
 	const { data: staff } = useQuery({
 		queryKey: ['staffDetails'],

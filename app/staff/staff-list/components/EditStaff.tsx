@@ -1,4 +1,4 @@
-import StaffForm from '@/components/forms/StaffForm';
+import StaffForm from '@/components/forms/staff/StaffForm';
 import { Staff } from '@/components/types/Staff';
 import { Icon } from '@iconify/react';
 import { useMutation, useQuery, useQueryClient } from '@tanstack/react-query';

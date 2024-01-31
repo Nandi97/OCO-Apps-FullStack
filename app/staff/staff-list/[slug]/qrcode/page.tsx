@@ -1,5 +1,5 @@
-import QrCode from './components/QrCode';
+import QrCode from '@/components/main/staff/staff-list/QrCode';
 
-export default function QrCodePage() {
+export default function page() {
 	return <QrCode />;
 }

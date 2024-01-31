@@ -2,7 +2,7 @@
 import { useQuery } from '@tanstack/react-query';
 import axios from 'axios';
 import Image from 'next/image';
-import { usePathname } from 'next/navigation';
+import { useParams } from 'next/navigation';
 import QRCode from 'react-qr-code';
 
 const fetchDetails = async (slug: string) => {
@@ -11,16 +11,14 @@ const fetchDetails = async (slug: string) => {
 };
 
 export default function QrCode() {
-	const pathname = usePathname();
+	const params = useParams();
 
-	const [url]: any = pathname?.match(/\d+/g)?.map(Number);
+	const url = params?.slug;
 
 	const { data: staff } = useQuery({
 		queryKey: ['staffDetails'],
 		queryFn: () => fetchDetails(url as string),
 	});
-
-	// console.log(url);
 
 	return (
 		<div className="fixed top-0 left-0 z-[100] w-full h-full bg-white font-roboto">
@@ -35,7 +33,7 @@ export default function QrCode() {
 					/>
 					<h1 className="text-white text-2xl font-semibold">{staff?.name}</h1>
 				</div>
-				<div className="w-full max-w-lg p-4">
+				<div className="w-full max-w-lg px-4 py-10 md:max-h-80">
 					<QRCode
 						size={256}
 						style={{ height: 'auto', maxWidth: '100%', width: '100%' }}
