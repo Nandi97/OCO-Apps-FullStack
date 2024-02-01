@@ -7,7 +7,7 @@ import axios, { AxiosError } from 'axios';
 import Link from 'next/link';
 import { useRouter } from 'next/navigation';
 import toast from 'react-hot-toast';
-import BookForm from '@/components/forms/BookForm';
+import BookForm from '@/components/forms/book/BookForm';
 
 export default function CreateBook() {
 	const [selectedFile, setSelectedFile] = useState<File | null>(null);

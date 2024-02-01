@@ -7,6 +7,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { useRef, useState } from 'react';
 import { useForm, SubmitHandler } from 'react-hook-form';
+import TextInput from '@/components/my-ui/form-inputs/Input';
 
 interface StaffForm {
 	name: string;
@@ -156,7 +157,7 @@ export default function StaffForm({ onSubmit, initialValues, isPending }: StaffF
 				</div>
 				<div className="grid grid-cols-6 col-span-6 gap-4 p-2 md:col-span-9">
 					{/* Name */}
-					<div className="col-span-6 space-y-1 md:col-span-3">
+					{/* <div className="col-span-6 space-y-1 md:col-span-3">
 						<label
 							htmlFor="name"
 							className="block text-sm font-medium text-secondary-700"
@@ -173,7 +174,14 @@ export default function StaffForm({ onSubmit, initialValues, isPending }: StaffF
 						{errors.name && (
 							<p className="text-xs text-red-500">Please enter a valid name</p>
 						)}
-					</div>
+					</div> */}
+					<TextInput
+						type="text"
+						label="Name"
+						className="col-span-6 space-y-1 md:col-span-3"
+						error={errors.name}
+						registration={register('name', { required: true })}
+					/>
 
 					{/* Staff Type Field  */}
 					<div className="col-span-3 space-y-1 md:col-span-3">

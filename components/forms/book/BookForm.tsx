@@ -1,4 +1,5 @@
 'use client';
+import TextInput from '@/components/my-ui/form-inputs/Input';
 import Book_Placeholder from '@/public/assets/images/books/book-illustration.png';
 
 import Image from 'next/image';
@@ -88,7 +89,7 @@ export default function BookForm({
 				</div>
 				<div className="grid grid-cols-6 col-span-6 gap-4 p-2 md:col-span-9">
 					{/* Title */}
-					<div className="col-span-6 space-y-1 md:col-span-3">
+					{/* <div className="col-span-6 space-y-1 md:col-span-3">
 						<label
 							htmlFor="title"
 							className="block text-sm font-medium text-secondary-700"
@@ -104,7 +105,7 @@ export default function BookForm({
 							className="sm:text-sm w-full bg-secondary-50 bg-opacity-70 border-1 focus:shadow-inner shadow-accent-300  focus:border-secondary-500 block p-2.5 h-8  px-3 py-1 shadow-secondary-300 rounded-md border border-secondary-300 text-sm font-medium leading-4 text-secondary-700 shadow-sm hover:bg-secondary-50 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-1"
 							required
 						/>
-					</div>
+					</div> */}
 
 					{/* Author */}
 					<div className="col-span-6 space-y-1 md:col-span-3">
