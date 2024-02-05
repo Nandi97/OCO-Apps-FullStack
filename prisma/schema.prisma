@@ -159,8 +159,6 @@ model Staff {
 
   leaveDays LeaveDays?
 
-  books Book[]
-
   purchaseOrders PurchaseOrder[]
 
   meetingAttendees MeetingAttendee[]
@@ -179,11 +177,12 @@ model Staff {
   deletedAt DateTime?
   createdAt DateTime?  @default(now())
   updatedAt DateTime?  @updatedAt
-  NewsFeed  NewsFeed[]
+  newsFeed  NewsFeed[]
+  books     Book[]
 }
 
 model Book {
-  id              String    @id @default(cuid())
+  id              String  @id @default(cuid())
   author          String
   title           String
   coverUrl        String
@@ -194,12 +193,13 @@ model Book {
   publicationYear Int
   publisher       String
   subject         String?
-  status          Boolean   @default(true)
-  staffId         String
-  deletedAt       DateTime?
-  createdAt       DateTime? @default(now())
-  updatedAt       DateTime? @updatedAt
-  staff           Staff     @relation(fields: [staffId], references: [id])
+  status          Boolean @default(true)
+  userId          String?
+  user            Staff?  @relation(fields: [userId], references: [id])
+
+  deletedAt DateTime?
+  createdAt DateTime? @default(now())
+  updatedAt DateTime? @updatedAt
 }
 
 model StopWatchItemTask {

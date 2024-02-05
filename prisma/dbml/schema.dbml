@@ -149,7 +149,6 @@ Table Staff {
   designationId Int [not null]
   genderId Int [not null]
   leaveDays LeaveDays
-  books Book [not null]
   purchaseOrders PurchaseOrder [not null]
   meetingAttendees MeetingAttendee [not null]
   employers LeaveApplication [not null]
@@ -164,7 +163,8 @@ Table Staff {
   deletedAt DateTime
   createdAt DateTime [default: `now()`]
   updatedAt DateTime
-  NewsFeed NewsFeed [not null]
+  newsFeed NewsFeed [not null]
+  books Book [not null]
 }
 
 Table Book {
@@ -180,11 +180,11 @@ Table Book {
   publisher String [not null]
   subject String
   status Boolean [not null, default: true]
-  staffId String [not null]
+  userId String
+  user Staff
   deletedAt DateTime
   createdAt DateTime [default: `now()`]
   updatedAt DateTime
-  staff Staff [not null]
 }
 
 Table StopWatchItemTask {
@@ -429,7 +429,7 @@ Ref: Staff.genderId > Gender.id
 
 Ref: Staff.teamId > Team.id
 
-Ref: Book.staffId > Staff.id
+Ref: Book.userId > Staff.id
 
 Ref: StopWatchItem.matterId > Matter.id
 

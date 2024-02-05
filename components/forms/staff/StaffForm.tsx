@@ -7,7 +7,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { useRef, useState } from 'react';
 import { useForm, SubmitHandler } from 'react-hook-form';
-import TextInput from '@/components/my-ui/form-inputs/Input';
+import TextInput from '@/components/my-ui/form-inputs/InputField';
 
 interface StaffForm {
 	name: string;
@@ -142,6 +142,7 @@ export default function StaffForm({ onSubmit, initialValues, isPending }: StaffF
 							name="avatarUrl"
 							id="avatarUrl"
 							ref={avatarRef}
+							accept="image/*"
 							placeholder="Staff Avatar"
 							className="hidden"
 							onChange={onStaffAvatarSelected}

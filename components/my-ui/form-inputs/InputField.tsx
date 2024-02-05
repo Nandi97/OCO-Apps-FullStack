@@ -7,9 +7,10 @@ interface InputProps {
 	label?: string;
 	className?: string;
 	placeholder?: string;
-	type?: 'text' | 'email' | 'password';
+	type?: 'text' | 'email' | 'password' | 'number' | 'date';
 	error?: FieldError | undefined;
 	registration: Partial<UseFormRegisterReturn>;
+	disabled?: boolean;
 }
 
 export default function TextInput({
@@ -19,6 +20,7 @@ export default function TextInput({
 	placeholder,
 	error,
 	registration,
+	disabled,
 }: InputProps) {
 	return (
 		<div className={cn(className)}>
@@ -31,6 +33,7 @@ export default function TextInput({
 					placeholder={placeholder}
 					{...registration}
 					className="sm:text-sm w-full bg-secondary-50 bg-opacity-70 border-1 focus:shadow-inner shadow-accent-300  focus:border-secondary-500 block p-2.5 h-8  px-3 py-1 shadow-secondary-300 rounded-md border border-secondary-300 text-sm font-medium leading-4 text-secondary-700 shadow-sm hover:bg-secondary-50 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-1"
+					disabled={disabled}
 				/>
 				{error?.message && (
 					<div role="alert" aria-label={error.message} className="text-red-500 text-xs">

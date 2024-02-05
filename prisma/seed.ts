@@ -151,7 +151,7 @@ async function main() {
 	});
 
 	if (librarian) {
-		const staffId = librarian.id;
+		const userId = librarian.id;
 
 		for (const book of books) {
 			await prisma.book.create({
@@ -161,7 +161,7 @@ async function main() {
 					createdAt: book.createdAt,
 					edition: book.edition,
 					isbnIssn: book.isbnIssn,
-					staffId: staffId, // Set the staffId to the found staff member's ID
+					userId: userId, // Set the staffId to the found staff member's ID
 					mediaType: book.mediaType,
 					publicationYear: book.publicationYear,
 					publisher: book.publisher,
