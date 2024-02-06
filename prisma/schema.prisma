@@ -81,11 +81,12 @@ model Matter {
 }
 
 model Team {
-  id        Int       @id @default(autoincrement())
+  id        Int         @id @default(autoincrement())
   name      String
-  createdAt DateTime? @default(now())
-  updatedAt DateTime? @updatedAt
+  createdAt DateTime?   @default(now())
+  updatedAt DateTime?   @updatedAt
   staff     Staff[]
+  CauseList CauseList[]
 }
 
 model Gender {
@@ -174,11 +175,13 @@ model Staff {
   gender      Gender      @relation(fields: [genderId], references: [id])
   team        Team        @relation(fields: [teamId], references: [id])
 
-  deletedAt DateTime?
-  createdAt DateTime?  @default(now())
-  updatedAt DateTime?  @updatedAt
-  newsFeed  NewsFeed[]
-  books     Book[]
+  deletedAt       DateTime?
+  createdAt       DateTime?      @default(now())
+  updatedAt       DateTime?      @updatedAt
+  newsFeed        NewsFeed[]
+  books           Book[]
+  causeListCase   CauseListCase? @relation(fields: [causeListCaseId], references: [id])
+  causeListCaseId String?
 }
 
 model Book {
@@ -442,6 +445,33 @@ model Article {
 
   newsFeed   NewsFeed? @relation(fields: [newsFeedId], references: [id])
   newsFeedId String?
+
+  createdAt DateTime? @default(now())
+  updatedAt DateTime? @updatedAt
+  deletedAt DateTime?
+}
+
+model CauseList {
+  id     String          @id @default(cuid())
+  teamId Int
+  team   Team            @relation(fields: [teamId], references: [id])
+  date   DateTime
+  cause  CauseListCase[]
+
+  createdAt DateTime? @default(now())
+  updatedAt DateTime? @updatedAt
+  deletedAt DateTime?
+}
+
+model CauseListCase {
+  id      String  @id @default(cuid())
+  coram   String
+  virtual Boolean @default(false)
+  case    String
+
+  advocates   Staff[]
+  causeList   CauseList? @relation(fields: [causeListId], references: [id])
+  causeListId String?
 
   createdAt DateTime? @default(now())
   updatedAt DateTime? @updatedAt

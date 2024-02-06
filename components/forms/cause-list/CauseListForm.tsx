@@ -5,9 +5,12 @@ import SelectInput from '@/components/my-ui/form-inputs/SelectField';
 import CauseListPreview from '@/components/previews/CauseList';
 import { Icon } from '@iconify/react/dist/iconify.js';
 import Link from 'next/link';
-import React from 'react';
+import React, { useState } from 'react';
 import { useForm, SubmitHandler } from 'react-hook-form';
 import CauseListItemForm from './CauseListItemForm';
+import axios from 'axios';
+import { Staff } from '@/lib/types/staff';
+import { useQuery } from '@tanstack/react-query';
 
 interface CauseListForm {
 	team: string;
@@ -23,6 +26,11 @@ interface CauseListForm {
 	];
 }
 
+const fetchAllStaff = async () => {
+	const response = await axios.get('/api/staff/get');
+	return response.data as Array<Staff>;
+};
+
 interface CauseListFormProps {
 	onSubmit: SubmitHandler<CauseListForm>;
 	initialValues?: CauseListForm;
@@ -30,6 +38,9 @@ interface CauseListFormProps {
 }
 
 const CauseListForm = ({ onSubmit, initialValues, isPending }: CauseListFormProps) => {
+	const [causeListItems, setCauseListItems] = useState<any>([]);
+	const [teamHandling, setTeamHandling] = useState('');
+	const [query, setQuery] = useState('');
 	const {
 		register,
 		watch,
@@ -40,11 +51,32 @@ const CauseListForm = ({ onSubmit, initialValues, isPending }: CauseListFormProp
 		defaultValues: initialValues,
 	});
 
+	const { data: staff } = useQuery({
+		queryFn: fetchAllStaff,
+		queryKey: ['allStaff'],
+	});
+
 	const teams = [
-		{ id: 1, value: 'SIMABA' },
+		{ id: 1, value: 'SIMBA' },
 		{ id: 2, value: 'TWIGA' },
 		{ id: 3, value: 'TAI' },
 	];
+	console.log('Team Handling:', teamHandling);
+
+	const filteredStaffTeam =
+		query === ''
+			? ''
+			: staff?.find((person: Staff) => {
+					person?.team?.name.toLowerCase() === teamHandling.toLowerCase();
+				});
+
+	const handleAddCauseListItem = (newCauseListItem: CauseListForm['causeListItem']) => {
+		const newItem = {
+			key: causeListItems.length + 1,
+			...newCauseListItem,
+		};
+		setCauseListItems([...causeListItems, newItem]);
+	};
 
 	const handleSubmitForm: SubmitHandler<any> = (data) => {
 		try {
@@ -77,7 +109,10 @@ const CauseListForm = ({ onSubmit, initialValues, isPending }: CauseListFormProp
 									<span className="label-text">Team Handling</span>
 								</div>
 								<select
-									{...register('team')}
+									name="virtual"
+									id="virtual"
+									value={teamHandling}
+									onChange={(e) => setTeamHandling(e.target.value)}
 									className="sm:text-sm w-full bg-secondary-50 bg-opacity-70 border-1 focus:shadow-inner shadow-accent-300 focus:border-secondary-500 block p-2.5 h-8 px-3 py-1 shadow-secondary-300 rounded-md border border-secondary-300 text-sm font-medium leading-4 text-secondary-700 shadow-sm hover:bg-secondary-50 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-1"
 								>
 									<option
@@ -121,15 +156,13 @@ const CauseListForm = ({ onSubmit, initialValues, isPending }: CauseListFormProp
 						</div>
 					</div>
 					<div className="rounded-sm space-y-2 flex flex-col shadow-2 shadow-secondary-700/20 p-3">
-						<button
-							type="button"
-							className="items-center rounded-md w-1/6 flex p-1 bg-primary-600 hover:bg-secondary-600 text-primary-50"
-						>
-							<Icon icon="heroicons:plus-solid" />
-							<span>Add Case</span>
-						</button>
 						<div className="grid grid-cols-6 gap-2 rounded-sm border border-secondary-700/10 p-1">
-							<CauseListItemForm />
+							<CauseListItemForm
+								register={register}
+								index={0}
+								remove={() => {}}
+								addCauseListItem={() => {}}
+							/>
 						</div>
 					</div>
 				</form>
