@@ -81,6 +81,7 @@ Table Team {
   createdAt DateTime [default: `now()`]
   updatedAt DateTime
   staff Staff [not null]
+  CauseList CauseList [not null]
 }
 
 Table Gender {
@@ -148,6 +149,7 @@ Table Staff {
   teamId Int [not null]
   designationId Int [not null]
   genderId Int [not null]
+  causeListCaseId String
   leaveDays LeaveDays
   purchaseOrders PurchaseOrder [not null]
   meetingAttendees MeetingAttendee [not null]
@@ -160,6 +162,7 @@ Table Staff {
   designation Designation [not null]
   gender Gender [not null]
   team Team [not null]
+  causeListCase CauseListCase
   deletedAt DateTime
   createdAt DateTime [default: `now()`]
   updatedAt DateTime
@@ -415,6 +418,30 @@ Table Article {
   deletedAt DateTime
 }
 
+Table CauseList {
+  id String [pk]
+  teamId Int [not null]
+  team Team [not null]
+  date DateTime [not null]
+  cause CauseListCase [not null]
+  createdAt DateTime [default: `now()`]
+  updatedAt DateTime
+  deletedAt DateTime
+}
+
+Table CauseListCase {
+  id String [pk]
+  coram String [not null]
+  virtual Boolean [not null, default: false]
+  case String [not null]
+  advocates Staff [not null]
+  causeList CauseList
+  causeListId String
+  createdAt DateTime [default: `now()`]
+  updatedAt DateTime
+  deletedAt DateTime
+}
+
 Ref: Account.userId > User.id [delete: Cascade]
 
 Ref: Session.userId > User.id [delete: Cascade]
@@ -428,6 +455,8 @@ Ref: Staff.designationId > Designation.id
 Ref: Staff.genderId > Gender.id
 
 Ref: Staff.teamId > Team.id
+
+Ref: Staff.causeListCaseId > CauseListCase.id
 
 Ref: Book.userId > Staff.id
 
@@ -480,3 +509,7 @@ Ref: LeaveDays.staffId - Staff.id
 Ref: NewsFeed.userId > Staff.id
 
 Ref: Article.newsFeedId > NewsFeed.id
+
+Ref: CauseList.teamId > Team.id
+
+Ref: CauseListCase.causeListId > CauseList.id

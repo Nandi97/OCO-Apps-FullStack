@@ -1,8 +1,8 @@
 import { Staff } from '@/lib/types/staff';
 import { Combobox, Transition } from '@headlessui/react';
 import { Icon } from '@iconify/react/dist/iconify.js';
-import React, { Fragment, useState } from 'react';
-import { UseFormRegister } from 'react-hook-form';
+import React, { Fragment, useState, useEffect } from 'react';
+import { UseFormRegister, useForm } from 'react-hook-form';
 
 function classNames(...classes: any) {
 	return classes.filter(Boolean).join(' ');
@@ -10,149 +10,208 @@ function classNames(...classes: any) {
 
 interface CauseListItemFormProp {
 	addCauseListItem: (article: any) => void;
-	advocates?: Staff[];
+	teamAdvocates?: Staff[];
 	index: number;
-	register: UseFormRegister<any>; // Adjust the type if necessary
+	register: UseFormRegister<any>;
 	remove: (index: number) => void;
 }
 
 const CauseListItemForm = ({
 	addCauseListItem,
-	advocates,
+	teamAdvocates,
 	index,
 	register,
 	remove,
 }: CauseListItemFormProp) => {
+	const [isShowing, setIsShowing] = useState(false);
 	const [selectedPeople, setSelectedPeople] = useState<Staff[]>([]);
 	const [query, setQuery] = useState('');
-	const [formValues, setFormData] = useState<any>({
-		key: null,
-		coram: '',
-		virtual: null,
-		parties: '',
-		tags: '',
-		advocates: [],
-	});
 
-	const filteredPersons = (data: Staff[]) => {
-		const filteredData = query
-			? data.filter((item) => item?.name.toLowerCase().includes(query.toLowerCase()))
-			: data;
-
-		return filteredData;
-	};
-
-	const [isDisabled, setIsDisabled] = useState<boolean>(true);
+	const filteredPeople =
+		query === ''
+			? teamAdvocates
+			: teamAdvocates?.filter((person) => {
+					return person.name.toLowerCase().includes(query.toLowerCase());
+				});
 
 	const isVirtual = [
 		{ id: 1, name: 'YES' },
 		{ id: 2, name: 'NO' },
 	];
-
+	console.log('Transition Showing', isShowing);
+	console.log('Team Advocates', teamAdvocates);
 	return (
-		<>
-			<div className="md:col-span-4 col-span-6">
-				<label className="form-control w-full max-w-xs ">
-					<div className="block text-sm font-medium text-secondary-700">
-						<span className="label-text">Coram</span>
-					</div>
-					<input
-						type="text"
-						placeholder="Coram"
-						{...register(`cause.${index}.coram`)}
-						className={`sm:text-sm w-full bg-secondary-50 bg-opacity-70 border-1 focus:shadow-inner shadow-accent-300  focus:border-secondary-500 block p-2.5 h-8  px-3 py-1 shadow-secondary-300 rounded-md border border-secondary-300 text-sm font-medium leading-4 text-secondary-700 shadow-sm hover:bg-secondary-50 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-1`}
-						disabled={isDisabled}
-					/>
-				</label>
-			</div>
-			<div className="md:col-span-2 col-span-6">
-				<label className="form-control w-full max-w-xs ">
-					<div className="block text-sm font-medium text-secondary-700">
-						<span className="label-text">Virtual</span>
-					</div>
-					<select
-						id="virtual"
-						{...register(`cause.${index}.virtual`)}
-						className="sm:text-sm w-full bg-secondary-50 bg-opacity-70 border-1 focus:shadow-inner shadow-accent-300 focus:border-secondary-500 block p-2.5 h-8 px-3 py-1 shadow-secondary-300 rounded-md border border-secondary-300 text-sm font-medium leading-4 text-secondary-700 shadow-sm hover:bg-secondary-50 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-1"
-					>
-						<option
-							selected
-							disabled
-							value=""
-							className="text-opacity-50 text-secondary-700"
-						>
-							--Is Virtual?--
-						</option>
-
-						{isVirtual?.map((item) => (
-							<option key={item.id} value={item.id}>
-								{item.name}
-							</option>
-						))}
-					</select>
-				</label>
-			</div>
-			<div className="col-span-6">
-				<label className="form-control w-full max-w-xs ">
-					<div className="block text-sm font-medium text-secondary-700">
-						<span className="label-text">Case No. & Parties</span>
-					</div>
-					<textarea
-						placeholder="Case No. & Parties"
-						id="parties"
-						{...register(`cause.${index}.case` as const)}
-						className="sm:text-sm w-full bg-secondary-50 bg-opacity-70 border-1 focus:shadow-inner shadow-accent-300  focus:border-secondary-500 block p-2.5 h-20  px-3 py-1 shadow-secondary-300 rounded-md border border-secondary-300 text-sm font-medium leading-4 text-secondary-700 shadow-sm hover:bg-secondary-50 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-1"
-					/>
-				</label>
-			</div>
-			<div className="col-span-6">
-				<label htmlFor="advocates" className="block text-sm font-medium text-secondary-700">
-					Advocate(s) handling
-				</label>
-				<div className="mt-1 relative">
-					<input
-						id="advocates"
-						className="sm:text-sm w-full bg-secondary-50 bg-opacity-70 border-1 focus:shadow-inner shadow-accent-300 focus:border-secondary-500 block p-2.5 h-8 px-3 py-1 shadow-secondary-300 rounded-md border border-secondary-300 text-sm font-medium leading-4 text-secondary-700 shadow-sm hover:bg-secondary-50 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-1"
-						placeholder="Select advocate(s)"
-						value={selectedPeople.map((person) => person.name).join(', ')}
-						readOnly
-					/>
-					<Transition
-						as={Fragment}
-						show={query !== ''}
-						leave="transition ease-in duration-100"
-						leaveFrom="opacity-100"
-						leaveTo="opacity-0"
-						afterLeave={() => setQuery('')}
-					>
-						<div className="mt-1 w-full absolute z-10 bg-white rounded-md shadow-lg">
-							{filteredPersons(advocates)?.map((person) => (
-								<div
-									key={person.id}
-									className="cursor-pointer text-sm text-secondary-900 hover:bg-primary-100 px-4 py-2"
-									onClick={() => {
-										setSelectedPeople((prev) => [...prev, person]);
-										setQuery('');
-									}}
-								>
-									{person.name}
-								</div>
-							))}
+		<div className="flex w-full">
+			<div className="grid w-11/12 grid-cols-6  gap-2 rounded-sm border border-secondary-700/10 p-4">
+				<div className="md:col-span-4 col-span-6">
+					<label className="form-control w-full max-w-xs ">
+						<div className="block text-sm font-medium text-secondary-700">
+							<span className="label-text">Coram</span>
 						</div>
-					</Transition>
+						<input
+							type="text"
+							placeholder="Coram"
+							{...register(`cause.${index}.coram`)}
+							className={`sm:text-sm w-full bg-secondary-50 bg-opacity-70 border-1 focus:shadow-inner shadow-accent-300  focus:border-secondary-500 block p-2.5 h-8  px-3 py-1 shadow-secondary-300 rounded-md border border-secondary-300 text-sm font-medium leading-4 text-secondary-700 shadow-sm hover:bg-secondary-50 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-1`}
+						/>
+					</label>
+				</div>
+				<div className="md:col-span-2 col-span-6">
+					<label className="form-control w-full max-w-xs ">
+						<div className="block text-sm font-medium text-secondary-700">
+							<span className="label-text">Virtual</span>
+						</div>
+						<select
+							id="virtual"
+							{...register(`cause.${index}.virtual`)}
+							className="sm:text-sm w-full bg-secondary-50 bg-opacity-70 border-1 focus:shadow-inner shadow-accent-300 focus:border-secondary-500 block p-2.5 h-8 px-3 py-1 shadow-secondary-300 rounded-md border border-secondary-300 text-sm font-medium leading-4 text-secondary-700 shadow-sm hover:bg-secondary-50 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-1"
+						>
+							<option
+								selected
+								disabled
+								value=""
+								className="text-opacity-50 text-secondary-700"
+							>
+								--Is Virtual?--
+							</option>
+
+							{isVirtual?.map((item) => (
+								<option key={item.id} value={item.id}>
+									{item.name}
+								</option>
+							))}
+						</select>
+					</label>
+				</div>
+				<div className="col-span-6">
+					<label className="form-control w-full max-w-xs ">
+						<div className="block text-sm font-medium text-secondary-700">
+							<span className="label-text">Case No. & Parties</span>
+						</div>
+						<textarea
+							placeholder="Case No. & Parties"
+							id={`parties-${index}`}
+							{...register(`cause.${index}.case` as const)}
+							className="sm:text-sm w-full bg-secondary-50 bg-opacity-70 border-1 focus:shadow-inner shadow-accent-300  focus:border-secondary-500 block p-2.5 h-20  px-3 py-1 shadow-secondary-300 rounded-md border border-secondary-300 text-sm font-medium leading-4 text-secondary-700 shadow-sm hover:bg-secondary-50 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-1"
+						/>
+					</label>
+				</div>
+				<div className="col-span-6">
+					<label
+						htmlFor="advocates"
+						className="block text-sm font-medium text-secondary-700"
+					>
+						Advocate(s) handling
+					</label>
+
+					<Combobox as="div" value={selectedPeople} onChange={setSelectedPeople} multiple>
+						<div className="relative w-full cursor-default overflow-hidden rounded-lg bg-white text-left shadow-md focus:outline-none focus-visible:ring-2 focus-visible:ring-white/75 focus-visible:ring-offset-2 focus-visible:ring-offset-teal-300 sm:text-sm">
+							<Combobox.Input
+								onClick={() => setIsShowing(true)}
+								className="z-[2]  sm:text-sm w-full bg-secondary-50 bg-opacity-70 border-1 focus:shadow-inner shadow-accent-300  focus:border-secondary-500 block p-2.5 h-8  px-3 py-1 shadow-secondary-300 rounded-md border border-secondary-300 text-sm font-medium leading-4 text-secondary-700 shadow-sm hover:bg-secondary-50 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-1"
+								displayValue={(selectedPeople) =>
+									selectedPeople?.map((person) => person.name).join(', ')
+								}
+								id={`advocates-${index}`}
+								{...register(`cause.${index}.advocates`)}
+								onChange={(event) => {
+									// Find the selected people based on the option value
+									const selectedPeopleObjects = event.target.selectedOptions;
+									const selectedPeopleArray = Array?.from(
+										selectedPeopleObjects
+									).map((option) => {
+										const personId = parseInt(option.value);
+										return teamAdvocates.find(
+											(person) => person.id === personId
+										);
+									});
+									// Update the selectedPeople state with the array of selected people objects
+									setSelectedPeople(selectedPeopleArray);
+								}}
+							/>
+							<Combobox.Button
+								onClick={() => setIsShowing((isShowing) => !isShowing)}
+								className="absolute inset-y-0 right-0 flex items-center pr-2"
+							>
+								<Icon
+									icon="heroicons:chevron-up-down"
+									className="h-5 w-5 text-secondary-700"
+								/>
+							</Combobox.Button>
+						</div>
+						<Transition
+							show={isShowing}
+							as={Fragment}
+							leave="transition ease-in duration-100"
+							leaveFrom="opacity-100"
+							leaveTo="opacity-0"
+							afterLeave={() => setQuery('')}
+						>
+							<Combobox.Options className="z-10 mt-1 max-h-60 w-full overflow-auto rounded-md bg-white py-1 text-base shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none sm:text-sm">
+								{filteredPeople?.map((item) => (
+									<Combobox.Option
+										key={item?.id}
+										value={item}
+										onClick={() => setIsShowing(false)}
+										className={({ active, selected }) =>
+											classNames(
+												'cursor-default select-none py-2 pl-3 pr-9 flex justify-between',
+												active
+													? 'bg-primary-600 text-white'
+													: 'text-secondary-900'
+											)
+										}
+									>
+										{({ active, selected }) => (
+											<>
+												<div className="flex">
+													<span
+														className={classNames(
+															'truncate',
+															selected &&
+																'font-semibold text-primary-400'
+														)}
+													>
+														{item?.name}
+													</span>
+												</div>
+
+												{selected && (
+													<span
+														className={classNames(
+															'inset-y-0 right-0 flex items-center pr-4',
+															active
+																? 'text-white'
+																: 'text-secondary-600'
+														)}
+													>
+														<Icon
+															icon="heroicons:check"
+															className="h-5 w-5"
+															aria-hidden="true"
+														/>
+													</span>
+												)}
+											</>
+										)}
+									</Combobox.Option>
+								))}
+							</Combobox.Options>
+						</Transition>
+					</Combobox>
 				</div>
 			</div>
-			<div className="col-span-1 flex w-full items-center justify-center md:col-span-full">
+			<div className="w-1/12 flex items-center justify-center">
 				<button
 					onClick={() => remove(index)}
-					className="bg-primary-600 text-white p-2 rounded-md mt-5"
+					className="bg-primary-50 border border-primary-600 text-primary-600 p-1 hover:text-primary-50 hover:bg-primary-600 rounded-md"
 					type="button"
 				>
 					<span className="sr-only">Delete</span>
 					<Icon icon="heroicons:trash" />
 				</button>
 			</div>
-		</>
+		</div>
 	);
 };
 

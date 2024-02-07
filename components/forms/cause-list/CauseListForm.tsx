@@ -5,8 +5,8 @@ import SelectInput from '@/components/my-ui/form-inputs/SelectField';
 import CauseListPreview from '@/components/previews/CauseList';
 import { Icon } from '@iconify/react/dist/iconify.js';
 import Link from 'next/link';
-import React, { useState } from 'react';
-import { useForm, SubmitHandler } from 'react-hook-form';
+import React, { useEffect, useState } from 'react';
+import { useForm, SubmitHandler, useFieldArray } from 'react-hook-form';
 import CauseListItemForm from './CauseListItemForm';
 import axios from 'axios';
 import { Staff } from '@/lib/types/staff';
@@ -19,9 +19,9 @@ interface CauseListForm {
 	causeListItem: [
 		{
 			coram: string;
-			virtual: boolean;
-			parties: string;
-			advocates: [{ id: string }];
+			virtual: number;
+			case: string;
+			advocates: [];
 		},
 	];
 }
@@ -40,16 +40,25 @@ interface CauseListFormProps {
 const CauseListForm = ({ onSubmit, initialValues, isPending }: CauseListFormProps) => {
 	const [causeListItems, setCauseListItems] = useState<any>([]);
 	const [teamHandling, setTeamHandling] = useState('');
-	const [query, setQuery] = useState('');
 	const {
 		register,
-		watch,
-		setError,
+		control,
+		setValue,
 		handleSubmit,
+		watch,
 		formState: { errors },
 	} = useForm({
 		defaultValues: initialValues,
 	});
+	const { fields, append, remove } = useFieldArray({
+		control,
+		name: 'cause',
+	});
+
+	useEffect(() => {
+		setValue('team', teamHandling);
+		append({ coram: '', virtual: 0, case: '', advocates: [] });
+	}, [teamHandling, setValue]);
 
 	const { data: staff } = useQuery({
 		queryFn: fetchAllStaff,
@@ -61,22 +70,14 @@ const CauseListForm = ({ onSubmit, initialValues, isPending }: CauseListFormProp
 		{ id: 2, value: 'TWIGA' },
 		{ id: 3, value: 'TAI' },
 	];
-	console.log('Team Handling:', teamHandling);
 
-	const filteredStaffTeam =
-		query === ''
-			? ''
-			: staff?.find((person: Staff) => {
-					person?.team?.name.toLowerCase() === teamHandling.toLowerCase();
-				});
+	// console.log('Team Handling:', teamHandling);
 
-	const handleAddCauseListItem = (newCauseListItem: CauseListForm['causeListItem']) => {
-		const newItem = {
-			key: causeListItems.length + 1,
-			...newCauseListItem,
-		};
-		setCauseListItems([...causeListItems, newItem]);
-	};
+	const watchAllFields: CauseListForm = watch();
+
+	console.log('CauseList Form:', watchAllFields);
+
+	const filteredStaffTeam = staff?.filter((staff) => staff.team?.name === teamHandling);
 
 	const handleSubmitForm: SubmitHandler<any> = (data) => {
 		try {
@@ -85,6 +86,7 @@ const CauseListForm = ({ onSubmit, initialValues, isPending }: CauseListFormProp
 			console.error('Error in handleSubmitForm:', error);
 		}
 	};
+
 	return (
 		<div className="grid grid-cols-6 gap-2">
 			<div className="col-span-6">
@@ -156,14 +158,33 @@ const CauseListForm = ({ onSubmit, initialValues, isPending }: CauseListFormProp
 						</div>
 					</div>
 					<div className="rounded-sm space-y-2 flex flex-col shadow-2 shadow-secondary-700/20 p-3">
-						<div className="grid grid-cols-6 gap-2 rounded-sm border border-secondary-700/10 p-1">
-							<CauseListItemForm
-								register={register}
-								index={0}
-								remove={() => {}}
-								addCauseListItem={() => {}}
-							/>
+						<div className="w-full">
+							<button
+								type="button"
+								className="bg-primary-600 text-primary-50 hover:bg-primary-600/70 flex items-center space-x-2 rounded-md text-sm p-1"
+								onClick={() => append({ coram: '', virtual: false, case: '' })}
+							>
+								<Icon icon="heroicons:plus" />
+								<span>Add Case</span>
+							</button>
 						</div>
+						<div className="flex w-full flex-col space-y-4">
+							{fields.map((item, index) => (
+								<CauseListItemForm
+									key={item.id}
+									teamAdvocates={filteredStaffTeam && filteredStaffTeam}
+									register={register}
+									index={index}
+									remove={() => remove(index)}
+									addCauseListItem={() => {}}
+								/>
+							))}
+						</div>
+					</div>
+					<div className="">
+						<button type="submit" className="">
+							<span>Submit</span>
+						</button>
 					</div>
 				</form>
 			</div>

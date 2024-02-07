@@ -4,10 +4,10 @@ import { getServerSession } from 'next-auth';
 import { authOptions } from '@/pages/api/auth/[...nextauth]';
 
 export default async function handler(req: NextApiRequest, res: NextApiResponse) {
-	const session = await getServerSession(req, res, authOptions);
-	if (!session) {
-		return res.status(401).json({ message: 'Please sign-in to view staff' });
-	}
+	// const session = await getServerSession(req, res, authOptions);
+	// if (!session) {
+	// 	return res.status(401).json({ message: 'Please sign-in to view staff' });
+	// }
 	if (req.method === 'GET') {
 		try {
 			const queryParameters: any = req.query.slug || '';
