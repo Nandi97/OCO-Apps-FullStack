@@ -38,8 +38,9 @@ const CauseListItemForm = ({
 		{ id: 1, name: 'YES' },
 		{ id: 2, name: 'NO' },
 	];
-	console.log('Transition Showing', isShowing);
-	console.log('Team Advocates', teamAdvocates);
+	// console.log('Transition Showing', isShowing);
+	// console.log('Selected Team Advocates', selectedPeople);
+	// console.log('Selected Team Advocates', filteredPeople);
 	return (
 		<div className="flex w-full">
 			<div className="grid w-11/12 grid-cols-6  gap-2 rounded-sm border border-secondary-700/10 p-4">
@@ -113,21 +114,21 @@ const CauseListItemForm = ({
 									selectedPeople?.map((person) => person.name).join(', ')
 								}
 								id={`advocates-${index}`}
-								{...register(`cause.${index}.advocates`)}
-								onChange={(event) => {
-									// Find the selected people based on the option value
-									const selectedPeopleObjects = event.target.selectedOptions;
-									const selectedPeopleArray = Array?.from(
-										selectedPeopleObjects
-									).map((option) => {
-										const personId = parseInt(option.value);
-										return teamAdvocates.find(
-											(person) => person.id === personId
-										);
-									});
-									// Update the selectedPeople state with the array of selected people objects
-									setSelectedPeople(selectedPeopleArray);
-								}}
+								{...register(`cause.${index}.advocates`, {
+									onChange: (event) => {
+										const selectedPeopleObjects = event.target.selectedOptions;
+										const selectedPeopleArray = Array?.from(
+											selectedPeopleObjects
+										).map((option) => {
+											const personId = parseInt(option.value);
+											return teamAdvocates.find(
+												(person) => person.id === personId
+											);
+										});
+										setSelectedPeople(selectedPeopleArray);
+										setQuery(selectedPeopleArray);
+									},
+								})}
 							/>
 							<Combobox.Button
 								onClick={() => setIsShowing((isShowing) => !isShowing)}
