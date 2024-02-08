@@ -2,26 +2,29 @@ import { Staff } from '@/lib/types/staff';
 import { Combobox, Transition } from '@headlessui/react';
 import { Icon } from '@iconify/react/dist/iconify.js';
 import React, { Fragment, useState, useEffect } from 'react';
-import { UseFormRegister, useForm } from 'react-hook-form';
 
 function classNames(...classes: any) {
 	return classes.filter(Boolean).join(' ');
 }
 
 interface CauseListItemFormProp {
-	addCauseListItem: (article: any) => void;
+	formValues: {
+		virtual: 0;
+		url: '';
+		coram: '';
+		case: '';
+		advocates: [];
+	};
+	setFormValues: (updatedItem: any) => void;
 	teamAdvocates?: Staff[];
 	index: number;
-	register: UseFormRegister<any>;
-	remove: (index: number) => void;
 }
 
 const CauseListItemForm = ({
-	addCauseListItem,
-	teamAdvocates,
+	formValues,
+	setFormValues,
 	index,
-	register,
-	remove,
+	teamAdvocates,
 }: CauseListItemFormProp) => {
 	const [isShowing, setIsShowing] = useState(false);
 	const [selectedPeople, setSelectedPeople] = useState<Staff[]>([]);
@@ -34,13 +37,14 @@ const CauseListItemForm = ({
 					return person.name.toLowerCase().includes(query.toLowerCase());
 				});
 
+	useEffect(() => {
+		setFormValues({ ...formValues, advocates: selectedPeople });
+	}, [selectedPeople]);
+
 	const isVirtual = [
 		{ id: 1, name: 'YES' },
 		{ id: 2, name: 'NO' },
 	];
-	// console.log('Transition Showing', isShowing);
-	// console.log('Selected Team Advocates', selectedPeople);
-	// console.log('Selected Team Advocates', filteredPeople);
 	return (
 		<div className="flex w-full">
 			<div className="grid w-11/12 grid-cols-6  gap-2 rounded-sm border border-secondary-700/10 p-4">
@@ -52,7 +56,13 @@ const CauseListItemForm = ({
 						<input
 							type="text"
 							placeholder="Coram"
-							{...register(`cause.${index}.coram`)}
+							value={formValues?.coram}
+							onChange={(e) =>
+								setFormValues({
+									...formValues,
+									coram: e.target.value,
+								})
+							}
 							className={`sm:text-sm w-full bg-secondary-50 bg-opacity-70 border-1 focus:shadow-inner shadow-accent-300  focus:border-secondary-500 block p-2.5 h-8  px-3 py-1 shadow-secondary-300 rounded-md border border-secondary-300 text-sm font-medium leading-4 text-secondary-700 shadow-sm hover:bg-secondary-50 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-1`}
 						/>
 					</label>
@@ -64,7 +74,13 @@ const CauseListItemForm = ({
 						</div>
 						<select
 							id="virtual"
-							{...register(`cause.${index}.virtual`)}
+							value={formValues?.virtual}
+							onChange={(e) =>
+								setFormValues({
+									...formValues,
+									virtual: parseInt(e.target.value),
+								})
+							}
 							className="sm:text-sm w-full bg-secondary-50 bg-opacity-70 border-1 focus:shadow-inner shadow-accent-300 focus:border-secondary-500 block p-2.5 h-8 px-3 py-1 shadow-secondary-300 rounded-md border border-secondary-300 text-sm font-medium leading-4 text-secondary-700 shadow-sm hover:bg-secondary-50 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-1"
 						>
 							<option
@@ -84,6 +100,26 @@ const CauseListItemForm = ({
 						</select>
 					</label>
 				</div>
+
+				<div className={`col-span-6 ${formValues?.virtual !== 1 ? 'hidden' : ''}`}>
+					<label className="form-control w-full max-w-xs ">
+						<div className="block text-sm font-medium text-secondary-700">
+							<span className="label-text">Virtual Url</span>
+						</div>
+						<input
+							name="url"
+							placeholder="url"
+							value={formValues?.url}
+							onChange={(e) =>
+								setFormValues({
+									...formValues,
+									url: e.target.value,
+								})
+							}
+							className="sm:text-sm w-full bg-secondary-50 bg-opacity-70 border-1 focus:shadow-inner shadow-accent-300  focus:border-secondary-500 block p-2.5 h-8  px-3 py-1 shadow-secondary-300 rounded-md border border-secondary-300 text-sm font-medium leading-4 text-secondary-700 shadow-sm hover:bg-secondary-50 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-1"
+						/>
+					</label>
+				</div>
 				<div className="col-span-6">
 					<label className="form-control w-full max-w-xs ">
 						<div className="block text-sm font-medium text-secondary-700">
@@ -91,8 +127,13 @@ const CauseListItemForm = ({
 						</div>
 						<textarea
 							placeholder="Case No. & Parties"
-							id={`parties-${index}`}
-							{...register(`cause.${index}.case` as const)}
+							value={formValues?.case}
+							onChange={(e) =>
+								setFormValues({
+									...formValues,
+									case: e.target.value,
+								})
+							}
 							className="sm:text-sm w-full bg-secondary-50 bg-opacity-70 border-1 focus:shadow-inner shadow-accent-300  focus:border-secondary-500 block p-2.5 h-20  px-3 py-1 shadow-secondary-300 rounded-md border border-secondary-300 text-sm font-medium leading-4 text-secondary-700 shadow-sm hover:bg-secondary-50 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-1"
 						/>
 					</label>
@@ -113,22 +154,7 @@ const CauseListItemForm = ({
 								displayValue={(selectedPeople) =>
 									selectedPeople?.map((person) => person.name).join(', ')
 								}
-								id={`advocates-${index}`}
-								{...register(`cause.${index}.advocates`, {
-									onChange: (event) => {
-										const selectedPeopleObjects = event.target.selectedOptions;
-										const selectedPeopleArray = Array?.from(
-											selectedPeopleObjects
-										).map((option) => {
-											const personId = parseInt(option.value);
-											return teamAdvocates.find(
-												(person) => person.id === personId
-											);
-										});
-										setSelectedPeople(selectedPeopleArray);
-										setQuery(selectedPeopleArray);
-									},
-								})}
+								onChange={(event) => setQuery(event.target.value)}
 							/>
 							<Combobox.Button
 								onClick={() => setIsShowing((isShowing) => !isShowing)}
@@ -204,7 +230,6 @@ const CauseListItemForm = ({
 			</div>
 			<div className="w-1/12 flex items-center justify-center">
 				<button
-					onClick={() => remove(index)}
 					className="bg-primary-50 border border-primary-600 text-primary-600 p-1 hover:text-primary-50 hover:bg-primary-600 rounded-md"
 					type="button"
 				>

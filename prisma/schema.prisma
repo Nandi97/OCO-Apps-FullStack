@@ -466,7 +466,8 @@ model CauseList {
 model CauseListCase {
   id      String  @id @default(cuid())
   coram   String
-  virtual Boolean @default(false)
+  virtual Int
+  url     String?
   case    String
 
   advocates   Staff[]

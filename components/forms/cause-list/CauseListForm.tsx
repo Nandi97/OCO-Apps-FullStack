@@ -13,13 +13,13 @@ import { Staff } from '@/lib/types/staff';
 import { useQuery } from '@tanstack/react-query';
 
 interface CauseListForm {
-	team: string;
-	teamId: string;
+	team: { id: number; name: string };
 	date: string;
 	causeListItem: [
 		{
 			coram: string;
 			virtual: number;
+			url: string | null;
 			case: string;
 			advocates: [];
 		},
@@ -31,6 +31,11 @@ const fetchAllStaff = async () => {
 	return response.data as Array<Staff>;
 };
 
+const fetchAllTeams = async () => {
+	const response = await axios.get('/api/staff/team/get');
+	return response.data as Array<any>;
+};
+
 interface CauseListFormProps {
 	onSubmit: SubmitHandler<CauseListForm>;
 	initialValues?: CauseListForm;
@@ -38,7 +43,16 @@ interface CauseListFormProps {
 }
 
 const CauseListForm = ({ onSubmit, initialValues, isPending }: CauseListFormProps) => {
-	const [causeListItems, setCauseListItems] = useState<any>([]);
+	const [causeListItems, setCauseListItems] = useState<any>([
+		{
+			key: 0,
+			coram: '',
+			virtual: 0,
+			url: '',
+			case: '',
+			advocates: [],
+		},
+	]);
 	const [teamHandling, setTeamHandling] = useState('');
 	const {
 		register,
@@ -50,37 +64,49 @@ const CauseListForm = ({ onSubmit, initialValues, isPending }: CauseListFormProp
 	} = useForm({
 		defaultValues: initialValues,
 	});
-	const { fields, append, remove } = useFieldArray({
-		control,
-		name: 'cause',
-	});
+
+	const watchAllFields: CauseListForm = watch();
 
 	useEffect(() => {
-		setValue('team', teamHandling);
-		append({ coram: '', virtual: 0, case: '', advocates: [] });
-	}, [teamHandling, setValue]);
+		setValue('team', findTeam);
+	}, []);
 
 	const { data: staff } = useQuery({
 		queryFn: fetchAllStaff,
 		queryKey: ['allStaff'],
 	});
 
+	const { data: staffTeams } = useQuery({
+		queryFn: fetchAllTeams,
+		queryKey: ['teams'],
+	});
+
+	const findTeam = staffTeams?.find((t: any) => t?.name === teamHandling);
+
 	const teams = [
 		{ id: 1, value: 'SIMBA' },
 		{ id: 2, value: 'TWIGA' },
 		{ id: 3, value: 'TAI' },
 	];
-
-	// console.log('Team Handling:', teamHandling);
-
-	const watchAllFields: CauseListForm = watch();
-
-	console.log('CauseList Form:', watchAllFields);
+	const handleAddCauseListItem = (newCauseListItem: any) => {
+		const newItem = {
+			key: causeListItems.length + 1,
+			...newCauseListItem,
+		};
+		setCauseListItems([...causeListItems, newItem]);
+	};
+	const formData = {
+		...watchAllFields,
+		causeListItem: causeListItems,
+	};
 
 	const filteredStaffTeam = staff?.filter((staff) => staff.team?.name === teamHandling);
 
 	const handleSubmitForm: SubmitHandler<any> = (data) => {
 		try {
+			if (data) {
+				(data.team = findTeam), (data.causeListItem = causeListItems);
+			}
 			console.log(data);
 		} catch (error) {
 			console.error('Error in handleSubmitForm:', error);
@@ -111,8 +137,8 @@ const CauseListForm = ({ onSubmit, initialValues, isPending }: CauseListFormProp
 									<span className="label-text">Team Handling</span>
 								</div>
 								<select
-									name="virtual"
-									id="virtual"
+									name="team"
+									id="team"
 									value={teamHandling}
 									onChange={(e) => setTeamHandling(e.target.value)}
 									className="sm:text-sm w-full bg-secondary-50 bg-opacity-70 border-1 focus:shadow-inner shadow-accent-300 focus:border-secondary-500 block p-2.5 h-8 px-3 py-1 shadow-secondary-300 rounded-md border border-secondary-300 text-sm font-medium leading-4 text-secondary-700 shadow-sm hover:bg-secondary-50 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-1"
@@ -160,36 +186,42 @@ const CauseListForm = ({ onSubmit, initialValues, isPending }: CauseListFormProp
 					<div className="rounded-sm space-y-2 flex flex-col shadow-2 shadow-secondary-700/20 p-3">
 						<div className="w-full">
 							<button
+								onClick={handleAddCauseListItem}
 								type="button"
 								className="bg-primary-600 text-primary-50 hover:bg-primary-600/70 flex items-center space-x-2 rounded-md text-sm p-1"
-								onClick={() => append({ coram: '', virtual: false, case: '' })}
 							>
 								<Icon icon="heroicons:plus" />
 								<span>Add Case</span>
 							</button>
 						</div>
 						<div className="flex w-full flex-col space-y-4">
-							{fields.map((item, index) => (
+							{causeListItems.map((item, index) => (
 								<CauseListItemForm
-									key={item.id}
-									teamAdvocates={filteredStaffTeam && filteredStaffTeam}
-									register={register}
+									key={index}
+									formValues={item}
+									setFormValues={(updatedItem: any) => {
+										const updatedItems = [...causeListItems];
+										updatedItems[index] = updatedItem;
+										setCauseListItems(updatedItems);
+									}}
+									teamAdvocates={filteredStaffTeam}
 									index={index}
-									remove={() => remove(index)}
-									addCauseListItem={() => {}}
 								/>
 							))}
 						</div>
 					</div>
-					<div className="">
-						<button type="submit" className="">
+					<div className="w-full flex items-center justify-center">
+						<button
+							type="submit"
+							className="bg-primary-600 text-primary-50 hover:bg-primary-600/70 flex items-center space-x-2 rounded-md text-sm p-1"
+						>
 							<span>Submit</span>
 						</button>
 					</div>
 				</form>
 			</div>
 			<div className="md:col-span-3 col-span-6">
-				<CauseListPreview />
+				<CauseListPreview formData={formData} />
 			</div>
 		</div>
 	);
