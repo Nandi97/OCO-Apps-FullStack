@@ -3,19 +3,7 @@ import prisma from '@/lib/prisma';
 import { getServerSession } from 'next-auth';
 import { authOptions } from '../../auth/[...nextauth]';
 import { formatISO } from 'date-fns';
-import { Staff } from '@/lib/types/staff';
-
-interface CauseListCase {
-	coram: string;
-	virtual: boolean;
-	case: string;
-	advocates: Staff[];
-}
-interface CauseList {
-	date: string;
-	articles: CauseListCase[];
-	teamId: number;
-}
+import { CauseList } from '@/lib/types/master';
 
 export default async function handler(req: NextApiRequest, res: NextApiResponse) {
 	const session = await getServerSession(req, res, authOptions);
@@ -28,18 +16,22 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
 			where: { email: session?.user?.email as string },
 		});
 		try {
-			const formData: NewsFeed = req.body;
+			const formData: CauseList = req.body;
+			console.log(formData);
 
-			const result = await prisma.newsFeed.create({
+			const result = await prisma.causeList.create({
 				data: {
 					date: formatISO(formData.date),
-					userId: prismaUser?.id,
-					articles: {
-						create: formData.articles.map((article) => ({
-							title: article.title,
-							content: article.content,
-							url: article.url,
-							tags: article.tags,
+					teamId: formData.team.id,
+					cases: {
+						create: formData.cases.map((item) => ({
+							coram: item.coram,
+							virtual: item.virtual,
+							url: item.url,
+							case: item.case,
+							advocates: {
+								connect: item.advocates.map((a: any) => ({ id: a.id })),
+							},
 						})),
 					},
 				},
@@ -47,8 +39,8 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
 
 			res.status(200).json(result);
 		} catch (err: any) {
-			console.log('Error when creating News Feed', err.message);
-			res.status(403).json({ err: 'Error has occurred while creating News Feed' });
+			console.log('Error when creating Cause List', err.message);
+			res.status(403).json({ err: 'Error has occurred while creating Cause List' });
 		}
 	}
 }

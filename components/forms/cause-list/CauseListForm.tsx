@@ -15,7 +15,7 @@ import { useQuery } from '@tanstack/react-query';
 interface CauseListForm {
 	team: { id: number; name: string };
 	date: string;
-	causeListItem: [
+	cases: [
 		{
 			coram: string;
 			virtual: number;
@@ -88,7 +88,7 @@ const CauseListForm = ({ onSubmit, initialValues, isPending }: CauseListFormProp
 		{ id: 2, value: 'TWIGA' },
 		{ id: 3, value: 'TAI' },
 	];
-	const handleAddCauseListItem = (newCauseListItem: any) => {
+	const handleAddCases = (newCauseListItem: any) => {
 		const newItem = {
 			key: causeListItems.length + 1,
 			...newCauseListItem,
@@ -97,7 +97,7 @@ const CauseListForm = ({ onSubmit, initialValues, isPending }: CauseListFormProp
 	};
 	const formData = {
 		...watchAllFields,
-		causeListItem: causeListItems,
+		cases: causeListItems,
 	};
 
 	const filteredStaffTeam = staff?.filter((staff) => staff.team?.name === teamHandling);
@@ -105,9 +105,9 @@ const CauseListForm = ({ onSubmit, initialValues, isPending }: CauseListFormProp
 	const handleSubmitForm: SubmitHandler<any> = (data) => {
 		try {
 			if (data) {
-				(data.team = findTeam), (data.causeListItem = causeListItems);
+				(data.team = findTeam), (data.cases = causeListItems);
 			}
-			console.log(data);
+			onSubmit(data);
 		} catch (error) {
 			console.error('Error in handleSubmitForm:', error);
 		}
@@ -186,7 +186,7 @@ const CauseListForm = ({ onSubmit, initialValues, isPending }: CauseListFormProp
 					<div className="rounded-sm space-y-2 flex flex-col shadow-2 shadow-secondary-700/20 p-3">
 						<div className="w-full">
 							<button
-								onClick={handleAddCauseListItem}
+								onClick={handleAddCases}
 								type="button"
 								className="bg-primary-600 text-primary-50 hover:bg-primary-600/70 flex items-center space-x-2 rounded-md text-sm p-1"
 							>

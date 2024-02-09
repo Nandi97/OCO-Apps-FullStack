@@ -1,23 +1,12 @@
 'use client';
 import CauseListForm from '@/components/forms/cause-list/CauseListForm';
+import { CauseList } from '@/lib/types/master';
 import { useMutation } from '@tanstack/react-query';
 import axios, { AxiosError } from 'axios';
 import { useRouter } from 'next/navigation';
 import React from 'react';
 import toast from 'react-hot-toast';
 
-interface CauseList {
-	team: { id: number; name: string };
-	date: string;
-	causeListItem: [
-		{
-			coram: string;
-			virtual: boolean;
-			case: string;
-			advocates: [];
-		},
-	];
-}
 const Create = () => {
 	const router = useRouter();
 	let toastId: string;
@@ -25,10 +14,12 @@ const Create = () => {
 	const { mutate, isPending } = useMutation({
 		mutationFn: async (data: CauseList) => {
 			const formData = {
-				teamId: data.team.id,
+				team: data.team,
 				date: data.date,
-				cause: data.causeListItem,
+				cases: data.cases,
 			};
+			// console.log(formData);
+
 			const response = await axios.post('/api/cause-list/post', formData);
 			return response.data;
 		},
@@ -41,14 +32,14 @@ const Create = () => {
 			}
 		},
 		onSuccess: (data: any) => {
-			toast.success('Newsfeed Created Successfully', { id: toastId });
+			toast.success('Cause List Created Successfully', { id: toastId });
 			// router.push(`/newsfeed/${data?.id}`);
 		},
 	});
 
 	const handleCreate = (data: any) => {
-		// mutate(data);
-		console.log(data);
+		mutate(data);
+		// console.log('Data at Mutate', data);
 	};
 	return (
 		<div>

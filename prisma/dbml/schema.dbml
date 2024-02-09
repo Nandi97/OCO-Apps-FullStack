@@ -423,7 +423,7 @@ Table CauseList {
   teamId Int [not null]
   team Team [not null]
   date DateTime [not null]
-  cause CauseListCase [not null]
+  cases CauseListCase [not null]
   createdAt DateTime [default: `now()`]
   updatedAt DateTime
   deletedAt DateTime
@@ -432,7 +432,8 @@ Table CauseList {
 Table CauseListCase {
   id String [pk]
   coram String [not null]
-  virtual Boolean [not null, default: false]
+  virtual Int [not null]
+  url String
   case String [not null]
   advocates Staff [not null]
   causeList CauseList

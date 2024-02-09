@@ -9,11 +9,11 @@ function classNames(...classes: any) {
 
 interface CauseListItemFormProp {
 	formValues: {
-		virtual: 0;
-		url: '';
-		coram: '';
-		case: '';
-		advocates: [];
+		virtual: number;
+		url: string;
+		coram: string;
+		case: string;
+		advocates: Staff[];
 	};
 	setFormValues: (updatedItem: any) => void;
 	teamAdvocates?: Staff[];
@@ -54,6 +54,7 @@ const CauseListItemForm = ({
 							<span className="label-text">Coram</span>
 						</div>
 						<input
+							id="coram"
 							type="text"
 							placeholder="Coram"
 							value={formValues?.coram}
@@ -91,7 +92,6 @@ const CauseListItemForm = ({
 							>
 								--Is Virtual?--
 							</option>
-
 							{isVirtual?.map((item) => (
 								<option key={item.id} value={item.id}>
 									{item.name}
@@ -100,32 +100,38 @@ const CauseListItemForm = ({
 						</select>
 					</label>
 				</div>
-
-				<div className={`col-span-6 ${formValues?.virtual !== 1 ? 'hidden' : ''}`}>
-					<label className="form-control w-full max-w-xs ">
-						<div className="block text-sm font-medium text-secondary-700">
-							<span className="label-text">Virtual Url</span>
-						</div>
-						<input
-							name="url"
-							placeholder="url"
-							value={formValues?.url}
-							onChange={(e) =>
-								setFormValues({
-									...formValues,
-									url: e.target.value,
-								})
-							}
-							className="sm:text-sm w-full bg-secondary-50 bg-opacity-70 border-1 focus:shadow-inner shadow-accent-300  focus:border-secondary-500 block p-2.5 h-8  px-3 py-1 shadow-secondary-300 rounded-md border border-secondary-300 text-sm font-medium leading-4 text-secondary-700 shadow-sm hover:bg-secondary-50 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-1"
-						/>
-					</label>
-				</div>
+				{formValues?.virtual !== 1 ? (
+					''
+				) : (
+					<div className={`col-span-6 ${formValues?.virtual !== 1 ? 'hidden' : ''}`}>
+						<label className="form-control w-full max-w-xs ">
+							<div className="block text-sm font-medium text-secondary-700">
+								<span className="label-text">Virtual Url</span>
+							</div>
+							<input
+								id="url"
+								name="url"
+								placeholder="url"
+								value={formValues?.url}
+								onChange={(e) =>
+									setFormValues({
+										...formValues,
+										url: e.target.value,
+									})
+								}
+								className="sm:text-sm w-full bg-secondary-50 bg-opacity-70 border-1 focus:shadow-inner shadow-accent-300  focus:border-secondary-500 block p-2.5 h-8  px-3 py-1 shadow-secondary-300 rounded-md border border-secondary-300 text-sm font-medium leading-4 text-secondary-700 shadow-sm hover:bg-secondary-50 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-1"
+							/>
+						</label>
+					</div>
+				)}
 				<div className="col-span-6">
 					<label className="form-control w-full max-w-xs ">
 						<div className="block text-sm font-medium text-secondary-700">
 							<span className="label-text">Case No. & Parties</span>
 						</div>
 						<textarea
+							id="case"
+							name="case"
 							placeholder="Case No. & Parties"
 							value={formValues?.case}
 							onChange={(e) =>
@@ -151,8 +157,8 @@ const CauseListItemForm = ({
 							<Combobox.Input
 								onClick={() => setIsShowing(true)}
 								className="z-[2]  sm:text-sm w-full bg-secondary-50 bg-opacity-70 border-1 focus:shadow-inner shadow-accent-300  focus:border-secondary-500 block p-2.5 h-8  px-3 py-1 shadow-secondary-300 rounded-md border border-secondary-300 text-sm font-medium leading-4 text-secondary-700 shadow-sm hover:bg-secondary-50 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-1"
-								displayValue={(selectedPeople) =>
-									selectedPeople?.map((person) => person.name).join(', ')
+								displayValue={(selectedPeople: Staff[]) =>
+									selectedPeople?.map((person: Staff) => person.name).join(', ')
 								}
 								onChange={(event) => setQuery(event.target.value)}
 							/>

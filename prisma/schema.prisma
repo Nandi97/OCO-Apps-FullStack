@@ -456,7 +456,7 @@ model CauseList {
   teamId Int
   team   Team            @relation(fields: [teamId], references: [id])
   date   DateTime
-  cause  CauseListCase[]
+  cases  CauseListCase[]
 
   createdAt DateTime? @default(now())
   updatedAt DateTime? @updatedAt
