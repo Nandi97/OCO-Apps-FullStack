@@ -3,6 +3,7 @@ import logo from '@/public/assets/images/oco_ab_and_david.png';
 import Image from 'next/image';
 import { format } from 'date-fns';
 import Link from 'next/link';
+import { Staff } from '@/lib/types/master';
 
 interface formData {
 	formData?: {
@@ -14,13 +15,25 @@ interface formData {
 				virtual: number;
 				url: string | null;
 				case: string;
-				advocates: [];
+				advocates: Staff[];
 			},
 		];
 	};
 }
 const CauseListPreview = ({ formData }: formData) => {
-	const caseDate = formData?.date ? new Date(formData.date) : new Date();
+	let caseDate: Date;
+	if (formData?.date) {
+		caseDate = new Date(formData.date);
+		if (isNaN(caseDate.getTime())) {
+			console.error('Invalid date format:', formData.date);
+			caseDate = new Date();
+		}
+	} else {
+		console.warn('No date provided.');
+		caseDate = new Date();
+	}
+
+	console.log('Date:', formData?.date);
 	return (
 		<div className="w-full p-4 flex-col rounded-md shadow-md space-y-3 bg-white">
 			<div className="w-full flex items-center justify-center">
@@ -47,14 +60,13 @@ const CauseListPreview = ({ formData }: formData) => {
 					>
 						<thead className="border-double border-2 border-primary-600">
 							<tr className="border-double border-2 border-primary-600">
-								<th scope="col" colSpan={3} className="p-2">
-									{`${item?.coram} ${
-										item?.url && (
-											<Link href={item.url} className="text-primary-600">
-												Virtual
-											</Link>
-										)
-									}`}
+								<th scope="col" colSpan={3} className="p-2 uppercase">
+									{item?.coram}{' '}
+									{item?.url && (
+										<Link href={item.url} className="text-primary-600">
+											(Virtual)
+										</Link>
+									)}
 								</th>
 							</tr>
 							<tr className="border-double border-2 border-primary-600">

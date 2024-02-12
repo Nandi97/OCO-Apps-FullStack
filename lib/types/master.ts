@@ -110,6 +110,7 @@ export type Tax = {
 };
 
 export type CauseListCase = {
+	id: string;
 	coram: string;
 	virtual: number;
 	url: string;
@@ -117,7 +118,10 @@ export type CauseListCase = {
 	advocates: Staff[];
 };
 export type CauseList = {
+	id: string;
+	createdBy: Staff;
 	team: Team;
 	date: string;
 	cases: CauseListCase[];
+	createdAt: string;
 };

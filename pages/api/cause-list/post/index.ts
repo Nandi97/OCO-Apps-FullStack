@@ -17,12 +17,12 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
 		});
 		try {
 			const formData: CauseList = req.body;
-			console.log(formData);
 
 			const result = await prisma.causeList.create({
 				data: {
 					date: formatISO(formData.date),
 					teamId: formData.team.id,
+					creatorId: prismaUser?.id,
 					cases: {
 						create: formData.cases.map((item) => ({
 							coram: item.coram,

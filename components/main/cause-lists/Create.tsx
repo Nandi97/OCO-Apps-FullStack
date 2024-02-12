@@ -33,7 +33,7 @@ const Create = () => {
 		},
 		onSuccess: (data: any) => {
 			toast.success('Cause List Created Successfully', { id: toastId });
-			// router.push(`/newsfeed/${data?.id}`);
+			router.push(`/court/cause-lists/${data?.id}`);
 		},
 	});
 

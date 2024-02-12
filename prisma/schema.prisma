@@ -178,10 +178,11 @@ model Staff {
   causeListCase CauseListCase? @relation(fields: [causeListCaseId], references: [id])
 
   deletedAt DateTime?
-  createdAt DateTime?  @default(now())
-  updatedAt DateTime?  @updatedAt
+  createdAt DateTime?   @default(now())
+  updatedAt DateTime?   @updatedAt
   newsFeed  NewsFeed[]
   books     Book[]
+  CauseList CauseList[]
 }
 
 model Book {
@@ -457,6 +458,9 @@ model CauseList {
   team   Team            @relation(fields: [teamId], references: [id])
   date   DateTime
   cases  CauseListCase[]
+
+  creatorId String?
+  createdBy Staff?  @relation(fields: [creatorId], references: [id])
 
   createdAt DateTime? @default(now())
   updatedAt DateTime? @updatedAt

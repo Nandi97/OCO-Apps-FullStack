@@ -168,6 +168,7 @@ Table Staff {
   updatedAt DateTime
   newsFeed NewsFeed [not null]
   books Book [not null]
+  CauseList CauseList [not null]
 }
 
 Table Book {
@@ -424,6 +425,8 @@ Table CauseList {
   team Team [not null]
   date DateTime [not null]
   cases CauseListCase [not null]
+  creatorId String
+  createdBy Staff
   createdAt DateTime [default: `now()`]
   updatedAt DateTime
   deletedAt DateTime
@@ -512,5 +515,7 @@ Ref: NewsFeed.userId > Staff.id
 Ref: Article.newsFeedId > NewsFeed.id
 
 Ref: CauseList.teamId > Team.id
+
+Ref: CauseList.creatorId > Staff.id
 
 Ref: CauseListCase.causeListId > CauseList.id

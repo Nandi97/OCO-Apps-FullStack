@@ -28,7 +28,6 @@ export default async function handler(req, res) {
 						{ mediaType: { contains: searchParam, mode: 'insensitive' } },
 						{ publisher: { contains: searchParam, mode: 'insensitive' } },
 						{ subject: { contains: searchParam, mode: 'insensitive' } },
-						// { ext: { contains: parseInt(searchParam) } },
 					],
 				},
 				include: {
