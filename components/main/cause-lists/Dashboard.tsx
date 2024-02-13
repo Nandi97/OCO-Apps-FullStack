@@ -32,7 +32,7 @@ const Dashboard = () => {
 		{ label: 'Prepared By', align: 'start', textClass: 'text-secondary-500' },
 	];
 
-	const causeData: CauseList[] = data.data;
+	const causeData: CauseList[] = data?.data;
 	console.log('Cause List Data', data);
 
 	const handleSearch = (searchInput: any) => {

@@ -1,3 +1,5 @@
+import { Prisma } from '@prisma/client';
+
 export function getAttendanceTypes() {
 	return [
 		{ name: 'present', description: 'these are present participants in the meeting' },

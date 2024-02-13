@@ -57,8 +57,8 @@ Table VerificationToken {
 
 Table Menu {
   id Int [pk, increment]
-  name String [not null]
-  url String [not null]
+  name String [unique, not null]
+  url String [unique, not null]
   icon String [not null]
   listOrder Int [not null]
   createdAt DateTime [default: `now()`]
@@ -67,7 +67,7 @@ Table Menu {
 
 Table Matter {
   id Int [pk, increment]
-  code String [not null]
+  code String [unique, not null]
   description String [not null]
   deletedAt DateTime
   createdAt DateTime [default: `now()`]
@@ -77,7 +77,7 @@ Table Matter {
 
 Table Team {
   id Int [pk, increment]
-  name String [not null]
+  name String [unique, not null]
   createdAt DateTime [default: `now()`]
   updatedAt DateTime
   staff Staff [not null]
@@ -86,7 +86,7 @@ Table Team {
 
 Table Gender {
   id Int [pk, increment]
-  name String [not null]
+  name String [unique, not null]
   createdAt DateTime [default: `now()`]
   updatedAt DateTime
   staff Staff [not null]
@@ -113,8 +113,8 @@ Table Tax {
 
 Table Currency {
   id Int [pk, increment]
-  name String [not null]
-  initial String [not null]
+  name String [unique, not null]
+  initial String [unique, not null]
   purchaseOrders PurchaseOrder [not null]
   createdAt DateTime [default: `now()`]
   updatedAt DateTime
@@ -122,7 +122,7 @@ Table Currency {
 
 Table StaffType {
   id Int [pk, increment]
-  name String [not null]
+  name String [unique, not null]
   createdAt DateTime [default: `now()`]
   updatedAt DateTime
   designations Designation [not null]
@@ -130,7 +130,7 @@ Table StaffType {
 
 Table Designation {
   id Int [pk, increment]
-  name String [not null]
+  name String [unique, not null]
   staffTypeId Int [not null]
   createdAt DateTime [default: `now()`]
   updatedAt DateTime
@@ -168,13 +168,16 @@ Table Staff {
   updatedAt DateTime
   newsFeed NewsFeed [not null]
   books Book [not null]
-  CauseList CauseList [not null]
+  causeList CauseList [not null]
+  fromUser AssetTransaction [not null]
+  toUser AssetTransaction [not null]
+  Asset Asset [not null]
 }
 
 Table Book {
   id String [pk]
   author String [not null]
-  title String [not null]
+  title String [unique, not null]
   coverUrl String [not null]
   copies Int [not null]
   edition String [not null]
@@ -193,7 +196,7 @@ Table Book {
 
 Table StopWatchItemTask {
   id String [pk]
-  name String [not null]
+  name String [unique, not null]
   stopWatchItems StopWatchItem [not null]
 }
 
@@ -259,7 +262,7 @@ Table PurchaseItem {
 
 Table AttendanceType {
   id String [pk]
-  name String [not null]
+  name String [unique, not null]
   description String [not null]
   createdAt DateTime [default: `now()`]
   updatedAt DateTime
@@ -317,7 +320,7 @@ Table AOB {
 
 Table LeaveType {
   id String [pk]
-  name String [not null]
+  name String [unique, not null]
   description String [not null]
   deletedAt DateTime
   createdAt DateTime [default: `now()`]
@@ -446,6 +449,97 @@ Table CauseListCase {
   deletedAt DateTime
 }
 
+Table AssetCategory {
+  id Int [pk, increment]
+  name String [unique, not null]
+  description String
+  createdAt DateTime [default: `now()`]
+  updatedAt DateTime
+  deletedAt DateTime
+  assets Asset [not null]
+}
+
+Table AssetType {
+  id String [pk]
+  name String [unique, not null]
+  description String [not null]
+  createdAt DateTime [default: `now()`]
+  updatedAt DateTime
+  deletedAt DateTime
+  asset Asset [not null]
+}
+
+Table AssetCondition {
+  id String [pk]
+  name String [unique, not null]
+  description String [not null]
+  createdAt DateTime [default: `now()`]
+  updatedAt DateTime
+  deletedAt DateTime
+  asset Asset [not null]
+}
+
+Table AssetTransactionType {
+  id String [pk]
+  name String [unique, not null]
+  description String [not null]
+  createdAt DateTime [default: `now()`]
+  updatedAt DateTime
+  deletedAt DateTime
+  assetTransaction AssetTransaction [not null]
+}
+
+Table Asset {
+  id String [pk]
+  name String [not null]
+  description String [not null]
+  serialNumber String [unique]
+  ocoTagNumber String [unique]
+  location String [not null]
+  purchaseDate String
+  typeId String [not null]
+  conditionId String [not null]
+  assetCategoryId Int
+  currentlyWithId String
+  createdAt DateTime [default: `now()`]
+  updatedAt DateTime
+  deletedAt DateTime
+  type AssetType [not null]
+  condition AssetCondition [not null]
+  assetCategory AssetCategory
+  currentlyWith Staff
+  assetTransaction AssetTransaction [not null]
+  maintenanceLog AssetMaintenanceLog [not null]
+}
+
+Table AssetTransaction {
+  id String [pk]
+  assetId String [not null]
+  assetTransactionTypeId String [not null]
+  transactionDate DateTime [not null]
+  fromUserId String
+  toUserId String [not null]
+  createdAt DateTime [default: `now()`]
+  updatedAt DateTime
+  deletedAt DateTime
+  asset Asset [not null]
+  transactionType AssetTransactionType [not null]
+  fromUser Staff
+  toUser Staff [not null]
+}
+
+Table AssetMaintenanceLog {
+  id Int [pk, increment]
+  assetId String [not null]
+  maintenanceDate DateTime [not null]
+  description String
+  cost Float
+  createdAt DateTime [default: `now()`]
+  updatedAt DateTime
+  deletedAt DateTime
+  asset Asset [not null]
+}
+
 Ref: Account.userId > User.id [delete: Cascade]
 
 Ref: Session.userId > User.id [delete: Cascade]
@@ -519,3 +613,21 @@ Ref: CauseList.teamId > Team.id
 Ref: CauseList.creatorId > Staff.id
 
 Ref: CauseListCase.causeListId > CauseList.id
+
+Ref: Asset.typeId > AssetType.id
+
+Ref: Asset.conditionId > AssetCondition.id
+
+Ref: Asset.assetCategoryId > AssetCategory.id
+
+Ref: Asset.currentlyWithId > Staff.id
+
+Ref: AssetTransaction.assetId > Asset.id
+
+Ref: AssetTransaction.assetTransactionTypeId > AssetTransactionType.id
+
+Ref: AssetTransaction.fromUserId > Staff.id
+
+Ref: AssetTransaction.toUserId > Staff.id
+
+Ref: AssetMaintenanceLog.assetId > Asset.id

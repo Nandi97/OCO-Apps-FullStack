@@ -144,5 +144,11 @@ export function getMenus() {
 			icon: 'heroicons:calendar-days-solid',
 			listOrder: 24,
 		},
+		{
+			name: 'Asset Management',
+			url: '/asset-management/',
+			icon: 'material-symbols:inventory-2-outline',
+			listOrder: 25,
+		},
 	];
 }

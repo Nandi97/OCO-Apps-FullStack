@@ -62,8 +62,8 @@ model VerificationToken {
 
 model Menu {
   id        Int       @id @default(autoincrement())
-  name      String
-  url       String
+  name      String    @unique
+  url       String    @unique
   icon      String
   listOrder Int
   createdAt DateTime? @default(now())
@@ -71,18 +71,19 @@ model Menu {
 }
 
 model Matter {
-  id             Int             @id @default(autoincrement())
-  code           String
-  description    String
-  deletedAt      DateTime?
-  createdAt      DateTime?       @default(now())
-  updatedAt      DateTime?       @updatedAt
+  id          Int       @id @default(autoincrement())
+  code        String    @unique
+  description String
+  deletedAt   DateTime?
+  createdAt   DateTime? @default(now())
+  updatedAt   DateTime? @updatedAt
+
   stopWatchItems StopWatchItem[]
 }
 
 model Team {
   id        Int         @id @default(autoincrement())
-  name      String
+  name      String      @unique
   createdAt DateTime?   @default(now())
   updatedAt DateTime?   @updatedAt
   staff     Staff[]
@@ -91,7 +92,7 @@ model Team {
 
 model Gender {
   id        Int       @id @default(autoincrement())
-  name      String
+  name      String    @unique
   createdAt DateTime? @default(now())
   updatedAt DateTime? @updatedAt
   staff     Staff[]
@@ -120,8 +121,8 @@ model Tax {
 
 model Currency {
   id      Int    @id @default(autoincrement())
-  name    String
-  initial String
+  name    String @unique
+  initial String @unique
 
   purchaseOrders PurchaseOrder[]
   createdAt      DateTime?       @default(now())
@@ -130,7 +131,7 @@ model Currency {
 
 model StaffType {
   id           Int           @id @default(autoincrement())
-  name         String
+  name         String        @unique
   createdAt    DateTime?     @default(now())
   updatedAt    DateTime?     @updatedAt
   designations Designation[]
@@ -138,7 +139,7 @@ model StaffType {
 
 model Designation {
   id          Int       @id @default(autoincrement())
-  name        String
+  name        String    @unique
   staffTypeId Int
   createdAt   DateTime? @default(now())
   updatedAt   DateTime? @updatedAt
@@ -178,17 +179,20 @@ model Staff {
   causeListCase CauseListCase? @relation(fields: [causeListCaseId], references: [id])
 
   deletedAt DateTime?
-  createdAt DateTime?   @default(now())
-  updatedAt DateTime?   @updatedAt
+  createdAt DateTime?          @default(now())
+  updatedAt DateTime?          @updatedAt
   newsFeed  NewsFeed[]
   books     Book[]
-  CauseList CauseList[]
+  causeList CauseList[]
+  fromUser  AssetTransaction[] @relation("fromUser")
+  toUser    AssetTransaction[] @relation("toUser")
+  Asset     Asset[]
 }
 
 model Book {
   id              String  @id @default(cuid())
   author          String
-  title           String
+  title           String  @unique
   coverUrl        String
   copies          Int
   edition         String
@@ -208,7 +212,7 @@ model Book {
 
 model StopWatchItemTask {
   id             String          @id @default(cuid())
-  name           String
+  name           String          @unique
   stopWatchItems StopWatchItem[]
 }
 
@@ -274,7 +278,7 @@ model PurchaseItem {
 
 model AttendanceType {
   id               String            @id @default(cuid())
-  name             String
+  name             String            @unique
   description      String
   createdAt        DateTime?         @default(now())
   updatedAt        DateTime?         @updatedAt
@@ -333,7 +337,7 @@ model AOB {
 
 model LeaveType {
   id               String             @id @default(cuid())
-  name             String
+  name             String             @unique
   description      String
   deletedAt        DateTime?
   createdAt        DateTime?          @default(now())
@@ -481,4 +485,111 @@ model CauseListCase {
   createdAt DateTime? @default(now())
   updatedAt DateTime? @updatedAt
   deletedAt DateTime?
+}
+
+model AssetCategory {
+  id          Int     @id @default(autoincrement())
+  name        String  @unique
+  description String?
+
+  createdAt DateTime? @default(now())
+  updatedAt DateTime? @updatedAt
+  deletedAt DateTime?
+
+  assets Asset[]
+}
+
+model AssetType {
+  id          String @id @default(cuid())
+  name        String @unique
+  description String
+
+  createdAt DateTime? @default(now())
+  updatedAt DateTime? @updatedAt
+  deletedAt DateTime?
+
+  asset Asset[]
+}
+
+model AssetCondition {
+  id          String @id @default(cuid())
+  name        String @unique
+  description String
+
+  createdAt DateTime? @default(now())
+  updatedAt DateTime? @updatedAt
+  deletedAt DateTime?
+
+  asset Asset[]
+}
+
+model AssetTransactionType {
+  id          String @id @default(cuid())
+  name        String @unique
+  description String
+
+  createdAt        DateTime?          @default(now())
+  updatedAt        DateTime?          @updatedAt
+  deletedAt        DateTime?
+  assetTransaction AssetTransaction[]
+}
+
+model Asset {
+  id              String  @id @default(cuid())
+  name            String
+  description     String
+  serialNumber    String? @unique
+  ocoTagNumber    String? @unique
+  location        String
+  purchaseDate    String?
+  typeId          String
+  conditionId     String
+  assetCategoryId Int?
+  currentlyWithId String?
+
+  createdAt DateTime? @default(now())
+  updatedAt DateTime? @updatedAt
+  deletedAt DateTime?
+
+  type          AssetType      @relation(fields: [typeId], references: [id])
+  condition     AssetCondition @relation(fields: [conditionId], references: [id])
+  assetCategory AssetCategory? @relation(fields: [assetCategoryId], references: [id])
+  currentlyWith Staff?         @relation(fields: [currentlyWithId], references: [id])
+
+  assetTransaction AssetTransaction[]
+  maintenanceLog   AssetMaintenanceLog[]
+}
+
+model AssetTransaction {
+  id                     String   @id @default(cuid())
+  assetId                String
+  assetTransactionTypeId String
+  transactionDate        DateTime
+  fromUserId             String?
+  toUserId               String
+
+  createdAt DateTime? @default(now())
+  updatedAt DateTime? @updatedAt
+  deletedAt DateTime?
+
+  asset           Asset                @relation(fields: [assetId], references: [id])
+  transactionType AssetTransactionType @relation(fields: [assetTransactionTypeId], references: [id])
+  fromUser        Staff?               @relation("fromUser", fields: [fromUserId], references: [id])
+  toUser          Staff                @relation("toUser", fields: [toUserId], references: [id])
+}
+
+// Maintenance Log model
+model AssetMaintenanceLog {
+  id              Int      @id @default(autoincrement())
+  assetId         String
+  maintenanceDate DateTime
+  description     String?
+  cost            Float?
+  // Relationships
+
+  createdAt DateTime? @default(now())
+  updatedAt DateTime? @updatedAt
+  deletedAt DateTime?
+
+  asset Asset @relation(fields: [assetId], references: [id])
 }
