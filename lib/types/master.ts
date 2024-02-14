@@ -4,7 +4,7 @@ export type Team = {
 };
 
 export type Staff = {
-	id: number;
+	id: string;
 	name: string;
 	email: string;
 	mobile: string;
@@ -124,4 +124,35 @@ export type CauseList = {
 	date: string;
 	cases: CauseListCase[];
 	createdAt: string;
+};
+
+export type AssetType = {
+	id: string;
+	name: string;
+	description: string;
+	assetCategoryId: string;
+	createdAt: string;
+	updatedAt: string;
+	deletedAt: string;
+	// asset: Asset[];
+};
+
+export type AssetCategory = {
+	id: string;
+	name: string;
+	description: string;
+	createdAt: string;
+	updatedAt: string;
+	deletedAt: string;
+	assetTypes: AssetType[];
+};
+
+export type AssetCondition = {
+	id: string;
+	name: string;
+	description: string;
+	createdAt: string;
+	updatedAt: string;
+	deletedAt: string;
+	// asset: Asset[];
 };

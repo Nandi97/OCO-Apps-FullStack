@@ -5,6 +5,7 @@ import { useForm, SubmitHandler } from 'react-hook-form';
 import Image from 'next/image';
 import { useRef, useState } from 'react';
 import Link from 'next/link';
+import { convertToBase64 } from '@/lib/imageConverter';
 
 interface BookForm {
 	author: string;
@@ -37,14 +38,6 @@ export default function BookForm({ onSubmit, initialValues, isPending }: BookFor
 		defaultValues: initialValues,
 	});
 
-	const convertToBase64 = (file: File): Promise<string> => {
-		return new Promise((resolve, reject) => {
-			const reader = new FileReader();
-			reader.readAsDataURL(file);
-			reader.onload = () => resolve(reader.result as string);
-			reader.onerror = (error) => reject(error);
-		});
-	};
 	const onBookCoverSelected = async (event: React.ChangeEvent<HTMLInputElement>) => {
 		const files = event?.target?.files;
 		if (files && files.length > 0) {
@@ -58,7 +51,7 @@ export default function BookForm({ onSubmit, initialValues, isPending }: BookFor
 		if (selectedImage) {
 			data.coverUrl = selectedImage;
 		} else {
-			data.coverUrl = '/assets/images/books/book-illustration.png';
+			data.coverUrl = '';
 		}
 		try {
 			onSubmit(data);
@@ -85,7 +78,7 @@ export default function BookForm({ onSubmit, initialValues, isPending }: BookFor
 							width={20}
 							src={initialValues?.coverUrl || selectedImage || BookPlaceholder}
 							alt="Book Cover Image"
-							className="inline-flex items-center justify-center overflow-hidden rounded-md aspect-[9/16] md:w-24 object-contain sm:w-10 ring-2 ring-offset-1 ring-primary-600 bg-secondary-300"
+							className="inline-flex  items-center justify-center overflow-hidden rounded-md aspect-[9/16] md:w-24 object-contain sm:w-10 ring-2 ring-offset-1 ring-primary-600 bg-secondary-300"
 						/>
 						<input
 							type="file"

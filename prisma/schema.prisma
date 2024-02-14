@@ -178,15 +178,16 @@ model Staff {
   team          Team           @relation(fields: [teamId], references: [id])
   causeListCase CauseListCase? @relation(fields: [causeListCaseId], references: [id])
 
-  deletedAt DateTime?
-  createdAt DateTime?          @default(now())
-  updatedAt DateTime?          @updatedAt
-  newsFeed  NewsFeed[]
-  books     Book[]
-  causeList CauseList[]
-  fromUser  AssetTransaction[] @relation("fromUser")
-  toUser    AssetTransaction[] @relation("toUser")
-  Asset     Asset[]
+  deletedAt  DateTime?
+  createdAt  DateTime?          @default(now())
+  updatedAt  DateTime?          @updatedAt
+  newsFeed   NewsFeed[]
+  books      Book[]
+  causeList  CauseList[]
+  fromUser   AssetTransaction[] @relation("fromUser")
+  toUser     AssetTransaction[] @relation("toUser")
+  asset      Asset[]            @relation("asset-creator")
+  assetOwner Asset[]            @relation("owner")
 }
 
 model Book {
@@ -488,7 +489,7 @@ model CauseListCase {
 }
 
 model AssetCategory {
-  id          Int     @id @default(autoincrement())
+  id          String  @id @default(cuid())
   name        String  @unique
   description String?
 
@@ -496,17 +497,20 @@ model AssetCategory {
   updatedAt DateTime? @updatedAt
   deletedAt DateTime?
 
-  assets Asset[]
+  assetTypes AssetType[]
 }
 
 model AssetType {
-  id          String @id @default(cuid())
-  name        String @unique
-  description String
+  id              String  @id @default(cuid())
+  name            String  @unique
+  description     String
+  assetCategoryId String?
 
   createdAt DateTime? @default(now())
   updatedAt DateTime? @updatedAt
   deletedAt DateTime?
+
+  assetCategory AssetCategory? @relation(fields: [assetCategoryId], references: [id])
 
   asset Asset[]
 }
@@ -537,6 +541,7 @@ model AssetTransactionType {
 model Asset {
   id              String  @id @default(cuid())
   name            String
+  imageUrl        String?
   description     String
   serialNumber    String? @unique
   ocoTagNumber    String? @unique
@@ -544,8 +549,8 @@ model Asset {
   purchaseDate    String?
   typeId          String
   conditionId     String
-  assetCategoryId Int?
   currentlyWithId String?
+  createdById     String?
 
   createdAt DateTime? @default(now())
   updatedAt DateTime? @updatedAt
@@ -553,8 +558,8 @@ model Asset {
 
   type          AssetType      @relation(fields: [typeId], references: [id])
   condition     AssetCondition @relation(fields: [conditionId], references: [id])
-  assetCategory AssetCategory? @relation(fields: [assetCategoryId], references: [id])
-  currentlyWith Staff?         @relation(fields: [currentlyWithId], references: [id])
+  currentlyWith Staff?         @relation("owner", fields: [currentlyWithId], references: [id])
+  createdBy     Staff?         @relation("asset-creator", fields: [createdById], references: [id])
 
   assetTransaction AssetTransaction[]
   maintenanceLog   AssetMaintenanceLog[]

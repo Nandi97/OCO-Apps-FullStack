@@ -171,7 +171,8 @@ Table Staff {
   causeList CauseList [not null]
   fromUser AssetTransaction [not null]
   toUser AssetTransaction [not null]
-  Asset Asset [not null]
+  asset Asset [not null]
+  assetOwner Asset [not null]
 }
 
 Table Book {
@@ -450,22 +451,24 @@ Table CauseListCase {
 }
 
 Table AssetCategory {
-  id Int [pk, increment]
+  id String [pk]
   name String [unique, not null]
   description String
   createdAt DateTime [default: `now()`]
   updatedAt DateTime
   deletedAt DateTime
-  assets Asset [not null]
+  assetTypes AssetType [not null]
 }
 
 Table AssetType {
   id String [pk]
   name String [unique, not null]
   description String [not null]
+  assetCategoryId String
   createdAt DateTime [default: `now()`]
   updatedAt DateTime
   deletedAt DateTime
+  assetCategory AssetCategory
   asset Asset [not null]
 }
 
@@ -492,6 +495,7 @@ Table AssetTransactionType {
 Table Asset {
   id String [pk]
   name String [not null]
+  imageUrl String
   description String [not null]
   serialNumber String [unique]
   ocoTagNumber String [unique]
@@ -499,15 +503,15 @@ Table Asset {
   purchaseDate String
   typeId String [not null]
   conditionId String [not null]
-  assetCategoryId Int
   currentlyWithId String
+  createdById String
   createdAt DateTime [default: `now()`]
   updatedAt DateTime
   deletedAt DateTime
   type AssetType [not null]
   condition AssetCondition [not null]
-  assetCategory AssetCategory
   currentlyWith Staff
+  createdBy Staff
   assetTransaction AssetTransaction [not null]
   maintenanceLog AssetMaintenanceLog [not null]
 }
@@ -614,13 +618,15 @@ Ref: CauseList.creatorId > Staff.id
 
 Ref: CauseListCase.causeListId > CauseList.id
 
+Ref: AssetType.assetCategoryId > AssetCategory.id
+
 Ref: Asset.typeId > AssetType.id
 
 Ref: Asset.conditionId > AssetCondition.id
 
-Ref: Asset.assetCategoryId > AssetCategory.id
-
 Ref: Asset.currentlyWithId > Staff.id
+
+Ref: Asset.createdById > Staff.id
 
 Ref: AssetTransaction.assetId > Asset.id
 

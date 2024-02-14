@@ -13,12 +13,7 @@ import { getTowns } from './seeders/towns';
 import { getAttendanceTypes } from './seeders/attendeeTypes';
 import { getTax } from './seeders/tax';
 import { getLeaveTypes } from './seeders/leaveTypes';
-import {
-	getAssetCategories,
-	getAssetConditions,
-	getAssetTransactionTypes,
-	getAssetTypes,
-} from './seeders/assets';
+import { getAssetCategories, getAssetConditions, getAssetTransactionTypes } from './seeders/assets';
 
 const prisma = new PrismaClient();
 
@@ -37,7 +32,6 @@ async function main() {
 	const stopWatchItemTasks = getStopWatchItemTasks();
 	const attendanceTypes = getAttendanceTypes();
 	const leaveTypes = getLeaveTypes();
-	const assetTypes = getAssetTypes();
 	const assetCategories = getAssetCategories();
 	const assetConditions = getAssetConditions();
 	const assetTransactionTypes = getAssetTransactionTypes();
@@ -46,9 +40,14 @@ async function main() {
 		for (const menu of menus) {
 			const existingMenu = await prisma.menu.findUnique({ where: { name: menu.name } });
 			if (!existingMenu) {
-				await prisma.menu.create({ data: { ...menu } });
+				const newData = await prisma.menu.create({ data: { ...menu } });
+				console.log(`Created menu item: ${newData.name}`);
 			} else {
-				await prisma.menu.update({ where: { id: existingMenu.id }, data: { ...menu } });
+				const updatedData = await prisma.menu.update({
+					where: { id: existingMenu.id },
+					data: { ...menu },
+				});
+				console.log(`Updated menu Item: ${updatedData.name}`);
 			}
 		}
 
@@ -56,16 +55,18 @@ async function main() {
 		for (const matter of matters) {
 			const existingMatter = await prisma.matter.findUnique({ where: { code: matter.code } });
 			if (!existingMatter) {
-				await prisma.matter.create({
+				const newData = await prisma.matter.create({
 					data: {
 						...matter,
 					},
 				});
+				console.log(`Created matter: ${newData.code}`);
 			} else {
-				await prisma.matter.update({
+				const updatedData = await prisma.matter.update({
 					where: { id: existingMatter.id },
 					data: { ...matter },
 				});
+				console.log(`Updated matter: ${updatedData.code}`);
 			}
 		}
 
@@ -73,16 +74,18 @@ async function main() {
 		for (const tax of taxes) {
 			const existingTax = await prisma.tax.findUnique({ where: { name: tax.name } });
 			if (!existingTax) {
-				await prisma.tax.create({
+				const newData = await prisma.tax.create({
 					data: {
 						...tax,
 					},
 				});
+				console.log(`Created tax type: ${newData.name}`);
 			} else {
-				await prisma.tax.update({
+				const updatedData = await prisma.tax.update({
 					where: { id: existingTax.id },
 					data: { ...tax },
 				});
+				console.log(`Updated tax type: ${updatedData.name}`);
 			}
 		}
 
@@ -90,16 +93,18 @@ async function main() {
 		for (const gender of genders) {
 			const existing = await prisma.gender.findUnique({ where: { name: gender.name } });
 			if (!existing) {
-				await prisma.gender.create({
+				const newData = await prisma.gender.create({
 					data: {
 						...gender,
 					},
 				});
+				console.log(`Created gender: ${newData.name}`);
 			} else {
-				await prisma.gender.update({
+				const updatedData = await prisma.gender.update({
 					where: { id: existing.id },
 					data: { ...gender },
 				});
+				console.log(`Updated gender: ${updatedData.name}`);
 			}
 		}
 
@@ -107,16 +112,18 @@ async function main() {
 		for (const town of towns) {
 			const existingTown = await prisma.town.findUnique({ where: { name: town.name } });
 			if (!existingTown) {
-				await prisma.town.create({
+				const newData = await prisma.town.create({
 					data: {
 						...town,
 					},
 				});
+				console.log(`Created town: ${newData.name}`);
 			} else {
-				await prisma.town.update({
+				const updatedData = await prisma.town.update({
 					where: { id: existingTown.id },
 					data: { ...town },
 				});
+				console.log(`Updated town: ${updatedData.name}`);
 			}
 		}
 
@@ -124,16 +131,18 @@ async function main() {
 		for (const currency of currencies) {
 			const existing = await prisma.currency.findUnique({ where: { name: currency.name } });
 			if (!existing) {
-				await prisma.currency.create({
+				const newData = await prisma.currency.create({
 					data: {
 						...currency,
 					},
 				});
+				console.log(`Created currency: ${newData.name}`);
 			} else {
-				await prisma.currency.update({
+				const updatedData = await prisma.currency.update({
 					where: { id: existing.id },
 					data: { ...currency },
 				});
+				console.log(`Updated currency: ${updatedData.name}`);
 			}
 		}
 
@@ -141,16 +150,18 @@ async function main() {
 		for (const staffType of staffTypes) {
 			const existing = await prisma.staffType.findUnique({ where: { name: staffType.name } });
 			if (!existing) {
-				await prisma.staffType.create({
+				const newData = await prisma.staffType.create({
 					data: {
 						...staffType,
 					},
 				});
+				console.log(`Created Staff Type: ${newData.name}`);
 			} else {
-				await prisma.staffType.update({
+				const updatedData = await prisma.staffType.update({
 					where: { id: existing.id },
 					data: { ...staffType },
 				});
+				console.log(`Updated Staff Type: ${updatedData.name}`);
 			}
 		}
 
@@ -160,16 +171,18 @@ async function main() {
 				where: { name: designation.name },
 			});
 			if (!existing) {
-				await prisma.designation.create({
+				const newData = await prisma.designation.create({
 					data: {
 						...designation,
 					},
 				});
+				console.log(`Created Staff Designation: ${newData.name}`);
 			} else {
-				await prisma.designation.update({
+				const updatedData = await prisma.designation.update({
 					where: { id: existing.id },
 					data: { ...designation },
 				});
+				console.log(`Updated Staff Designation: ${updatedData.name}`);
 			}
 		}
 
@@ -179,16 +192,18 @@ async function main() {
 				where: { name: team.name },
 			});
 			if (!existing) {
-				await prisma.team.create({
+				const newData = await prisma.team.create({
 					data: {
 						...team,
 					},
 				});
+				console.log(`Created Staff Teams: ${newData.name}`);
 			} else {
-				await prisma.team.update({
+				const updatedData = await prisma.team.update({
 					where: { id: existing.id },
 					data: { ...team },
 				});
+				console.log(`Updated Staff Teams: ${updatedData.name}`);
 			}
 		}
 
@@ -199,21 +214,23 @@ async function main() {
 				where: { email: staff.email },
 			});
 			if (!existing) {
-				await prisma.staff.create({
+				const newData = await prisma.staff.create({
 					data: {
 						...staff,
 					},
 				});
+				console.log(`Created Staff: ${newData.name}`);
 			} else {
-				await prisma.staff.update({
+				const updatedData = await prisma.staff.update({
 					where: { id: existing.id },
 					data: { ...staff },
 				});
+				console.log(`Updated Staff: ${updatedData.name}`);
 			}
 		}
 
 		const librarian = await prisma.staff.findUnique({
-			where: { email: 'asenath@oraro.co.ke' },
+			where: { email: librarianEmail },
 		});
 
 		if (librarian) {
@@ -224,17 +241,19 @@ async function main() {
 					where: { title: book.title },
 				});
 				if (!existing) {
-					await prisma.book.create({
+					const newData = await prisma.book.create({
 						data: {
 							...book,
 							userId: userId,
 						},
 					});
+					console.log(`Created Book: ${newData.title}`);
 				} else {
-					await prisma.book.update({
+					const updatedData = await prisma.book.update({
 						where: { id: existing.id },
 						data: { ...book, userId: userId },
 					});
+					console.log(`Created Book: ${updatedData.title}`);
 				}
 			}
 		} else {
@@ -247,16 +266,18 @@ async function main() {
 				where: { name: stopWatchItemTask.name },
 			});
 			if (!existing) {
-				await prisma.stopWatchItemTask.create({
+				const newData = await prisma.stopWatchItemTask.create({
 					data: {
 						...stopWatchItemTask,
 					},
 				});
+				console.log(`Created Stop Watch Task: ${newData.name}`);
 			} else {
-				await prisma.stopWatchItemTask.update({
+				const updatedData = await prisma.stopWatchItemTask.update({
 					where: { id: existing.id },
 					data: { ...stopWatchItemTask },
 				});
+				console.log(`Updated Stop Watch Task: ${updatedData.name}`);
 			}
 		}
 
@@ -266,16 +287,18 @@ async function main() {
 				where: { name: attendanceType.name },
 			});
 			if (!existing) {
-				await prisma.attendanceType.create({
+				const newData = await prisma.attendanceType.create({
 					data: {
 						...attendanceType,
 					},
 				});
+				console.log(`Created Meeting Attendee Type: ${newData.name}`);
 			} else {
-				await prisma.attendanceType.update({
+				const updatedData = await prisma.attendanceType.update({
 					where: { id: existing.id },
 					data: { ...attendanceType },
 				});
+				console.log(`Updated Meeting Attendee Type: ${updatedData.name}`);
 			}
 		}
 
@@ -285,35 +308,18 @@ async function main() {
 				where: { name: leaveType.name },
 			});
 			if (!existing) {
-				await prisma.leaveType.create({
+				const newData = await prisma.leaveType.create({
 					data: {
 						...leaveType,
 					},
 				});
+				console.log(`Created Leave Type: ${newData.name}`);
 			} else {
-				await prisma.leaveType.update({
+				const updatedData = await prisma.leaveType.update({
 					where: { id: existing.id },
 					data: { ...leaveType },
 				});
-			}
-		}
-
-		//Asset Types
-		for (const assetType of assetTypes) {
-			const existing = await prisma.assetType.findUnique({
-				where: { name: assetType.name },
-			});
-			if (!existing) {
-				await prisma.assetType.create({
-					data: {
-						...assetType,
-					},
-				});
-			} else {
-				await prisma.assetType.update({
-					where: { id: existing.id },
-					data: { ...assetType },
-				});
+				console.log(`Updated Leave Type: ${updatedData.name}`);
 			}
 		}
 
@@ -323,16 +329,38 @@ async function main() {
 				where: { name: assetCategory.name },
 			});
 			if (!existing) {
-				await prisma.assetCategory.create({
+				const newData = await prisma.assetCategory.create({
 					data: {
-						...assetCategory,
+						name: assetCategory.name,
+						description: assetCategory.description,
+						assetTypes: {
+							createMany: {
+								data: assetCategory.assetTypes.map((type: any) => ({
+									name: type.name,
+									description: type.description,
+								})),
+							},
+						},
 					},
 				});
+				console.log(`Created asset category: ${newData.name}`);
 			} else {
-				await prisma.assetCategory.update({
+				const updatedData = await prisma.assetCategory.update({
 					where: { id: existing.id },
-					data: { ...assetCategory },
+					data: {
+						description: assetCategory.description,
+						assetTypes: {
+							deleteMany: {},
+							createMany: {
+								data: assetCategory.assetTypes.map((type: any) => ({
+									name: type.name,
+									description: type.description,
+								})),
+							},
+						},
+					},
 				});
+				console.log(`Updated asset category: ${updatedData.name}`);
 			}
 		}
 
@@ -342,16 +370,18 @@ async function main() {
 				where: { name: assetCondition.name },
 			});
 			if (!existing) {
-				await prisma.assetCondition.create({
+				const newData = await prisma.assetCondition.create({
 					data: {
 						...assetCondition,
 					},
 				});
+				console.log(`Created asset condition: ${newData.name}`);
 			} else {
-				await prisma.assetCondition.update({
+				const updatedData = await prisma.assetCondition.update({
 					where: { id: existing.id },
 					data: { ...assetCondition },
 				});
+				console.log(`Updated asset condition: ${updatedData.name}`);
 			}
 		}
 
@@ -361,16 +391,18 @@ async function main() {
 				where: { name: assetTransactionType.name },
 			});
 			if (!existing) {
-				await prisma.assetTransactionType.create({
+				const newData = await prisma.assetTransactionType.create({
 					data: {
 						...assetTransactionType,
 					},
 				});
+				console.log(`Created asset transaction types: ${newData.name}`);
 			} else {
-				await prisma.assetTransactionType.update({
+				const updatedData = await prisma.assetTransactionType.update({
 					where: { id: existing.id },
 					data: { ...assetTransactionType },
 				});
+				console.log(`Updated asset transaction types: ${updatedData.name}`);
 			}
 		}
 

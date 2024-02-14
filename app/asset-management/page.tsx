@@ -1,7 +1,12 @@
+import Dashboard from '@/components/main/asset-management/Dashboard';
 import React from 'react';
 
 const page = () => {
-	return <div>Asset Management</div>;
+	return (
+		<div>
+			<Dashboard />
+		</div>
+	);
 };
 
 export default page;
