@@ -127,6 +127,7 @@ model Currency {
   purchaseOrders PurchaseOrder[]
   createdAt      DateTime?       @default(now())
   updatedAt      DateTime?       @updatedAt
+  asset          Asset[]
 }
 
 model StaffType {
@@ -547,6 +548,8 @@ model Asset {
   ocoTagNumber    String? @unique
   location        String
   purchaseDate    String?
+  purchasePrice   Float?
+  currencyId      Int?
   typeId          String
   conditionId     String
   currentlyWithId String?
@@ -560,6 +563,7 @@ model Asset {
   condition     AssetCondition @relation(fields: [conditionId], references: [id])
   currentlyWith Staff?         @relation("owner", fields: [currentlyWithId], references: [id])
   createdBy     Staff?         @relation("asset-creator", fields: [createdById], references: [id])
+  currency      Currency?      @relation(fields: [currencyId], references: [id])
 
   assetTransaction AssetTransaction[]
   maintenanceLog   AssetMaintenanceLog[]

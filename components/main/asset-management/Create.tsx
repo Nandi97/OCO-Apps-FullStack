@@ -1,6 +1,6 @@
 'use client';
 import AssetForm from '@/components/forms/asset/AssetForm';
-import { Asset } from '@prisma/client';
+import { Asset } from '@/lib/types/master';
 import { useMutation } from '@tanstack/react-query';
 import axios, { AxiosError } from 'axios';
 import { useRouter } from 'next/navigation';
@@ -21,7 +21,9 @@ const Create = () => {
 				serialNumber: data?.serialNumber,
 				ocoTagNumber: data?.ocoTagNumber,
 				location: data?.location,
-				purchaseDate: data?.name,
+				purchaseDate: data?.purchaseDate,
+				purchasePrice: data?.purchasePrice,
+				currencyId: data?.currencyId,
 				typeId: data?.typeId,
 				conditionId: data?.conditionId,
 				currentlyWithId: data?.currentlyWithId,

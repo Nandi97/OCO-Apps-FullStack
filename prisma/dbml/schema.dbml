@@ -118,6 +118,7 @@ Table Currency {
   purchaseOrders PurchaseOrder [not null]
   createdAt DateTime [default: `now()`]
   updatedAt DateTime
+  asset Asset [not null]
 }
 
 Table StaffType {
@@ -501,6 +502,8 @@ Table Asset {
   ocoTagNumber String [unique]
   location String [not null]
   purchaseDate String
+  purchasePrice Float
+  currencyId Int
   typeId String [not null]
   conditionId String [not null]
   currentlyWithId String
@@ -512,6 +515,7 @@ Table Asset {
   condition AssetCondition [not null]
   currentlyWith Staff
   createdBy Staff
+  currency Currency
   assetTransaction AssetTransaction [not null]
   maintenanceLog AssetMaintenanceLog [not null]
 }
@@ -627,6 +631,8 @@ Ref: Asset.conditionId > AssetCondition.id
 Ref: Asset.currentlyWithId > Staff.id
 
 Ref: Asset.createdById > Staff.id
+
+Ref: Asset.currencyId > Currency.id
 
 Ref: AssetTransaction.assetId > Asset.id
 

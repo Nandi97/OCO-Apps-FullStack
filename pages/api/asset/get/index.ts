@@ -4,7 +4,16 @@ import prisma from '@/lib/prisma';
 export default async function handler(req: NextApiRequest, res: NextApiResponse) {
 	if (req.method === 'GET') {
 		try {
+			const searchParam = req.query.searchParam || '';
+
 			const data = await prisma.asset.findMany({
+				where: {
+					OR: [
+						{
+							location: { contains: searchParam as string, mode: 'insensitive' },
+						},
+					],
+				},
 				orderBy: { id: 'desc' },
 				include: {
 					condition: true,

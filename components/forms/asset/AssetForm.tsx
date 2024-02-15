@@ -9,6 +9,7 @@ import { useQuery } from '@tanstack/react-query';
 // import { AssetCategory, AssetCondition, AssetType, Staff } from '@prisma/client';
 import { Combobox, Transition } from '@headlessui/react';
 import { Icon } from '@iconify/react/dist/iconify.js';
+import { Currency } from '@/lib/types/currency';
 
 interface AssetForm {
 	name: string;
@@ -18,6 +19,8 @@ interface AssetForm {
 	ocoTagNumber: string;
 	location: string;
 	purchaseDate: string;
+	purchasePrice: number;
+	currencyId: number;
 	typeId: string;
 	conditionId: string;
 	assetCategoryId: string;
@@ -42,6 +45,11 @@ const getCategories = async () => {
 const getConditions = async () => {
 	const response = await axios.get('/api/asset/condition/get');
 	return response.data as Array<AssetCondition>;
+};
+
+const getCurrencies = async () => {
+	const response = await axios.get('/api/currency/get');
+	return response.data as Array<Currency>;
 };
 
 interface AssetFormProps {
@@ -85,6 +93,11 @@ const AssetForm = ({ onSubmit, initialValues, isPending }: AssetFormProps) => {
 	const { data: staff } = useQuery({
 		queryFn: getStaff,
 		queryKey: ['all-staff'],
+	});
+
+	const { data: currencies } = useQuery({
+		queryFn: getCurrencies,
+		queryKey: ['all-currencies'],
 	});
 
 	const filterCategory = (data: string) => {
@@ -287,6 +300,48 @@ const AssetForm = ({ onSubmit, initialValues, isPending }: AssetFormProps) => {
 								/>
 							</div>
 						</label>
+					</div>
+					<div className="space-y-1.5 col-span-full">
+						<div className="w-3/5">
+							<label
+								htmlFor="price"
+								className="block leading-6  text-sm font-medium text-secondary-700"
+							>
+								Price
+							</label>
+							<div className="relative mt-1 rounded-md shadow-sm">
+								<input
+									type="number"
+									id="price"
+									{...register('purchasePrice', {
+										valueAsNumber: true,
+										validate: (value) => value > 0,
+									})}
+									step="any"
+									className="pl-2 pr-20  ring-1 ring-inset ring-gray-300 placeholder:text-gray-400  focus:ring-inset  sm:leading-6 sm:text-sm w-full bg-secondary-50 bg-opacity-70 border-1 focus:shadow-inner shadow-accent-300  focus:border-secondary-500 block p-2.5 h-8  px-3 py-1 shadow-secondary-300 rounded-md border border-secondary-300 text-sm font-medium leading-4 text-secondary-700 shadow-sm hover:bg-secondary-50 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-1"
+									placeholder="0.00"
+								/>
+								<div className="absolute inset-y-0 right-0 flex items-center border-l">
+									<label htmlFor="currencyId" className="sr-only">
+										Currency
+									</label>
+									<select
+										id="currencyId"
+										{...register('currencyId', {
+											valueAsNumber: true,
+											validate: (value) => value > 0,
+										})}
+										className="h-full rounded-r-md border-0 bg-transparent py-0 pl-2 pr-7 text-gray-500 focus:ring-0 focus:ring-inset focus:ring-primary-600 sm:text-sm"
+									>
+										{currencies?.map((item) => (
+											<option key={item?.id} value={item?.id}>
+												{item?.initial}
+											</option>
+										))}
+									</select>
+								</div>
+							</div>
+						</div>
 					</div>
 					<div className="space-y-1.5  md:col-span-2 col-span-full">
 						<label className="flex items-center space-x-2 text-sm font-medium text-secondary-700">

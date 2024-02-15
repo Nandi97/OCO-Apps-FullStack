@@ -3,6 +3,17 @@ export type Team = {
 	name: string;
 };
 
+export type Currency = {
+	id: number;
+	name: string;
+	initial: string;
+
+	//   purchaseOrders PurchaseOrder[]
+	createdAt: string;
+	updatedAt: string;
+	asset: Asset[];
+};
+
 export type Staff = {
 	id: string;
 	name: string;
@@ -97,11 +108,6 @@ export type Town = {
 	name: string;
 };
 
-export type Currency = {
-	id: number;
-	name: string;
-	initial: string;
-};
 export type Tax = {
 	id: string;
 	name: string;
@@ -134,7 +140,7 @@ export type AssetType = {
 	createdAt: string;
 	updatedAt: string;
 	deletedAt: string;
-	// asset: Asset[];
+	asset: Asset[];
 };
 
 export type AssetCategory = {
@@ -154,5 +160,32 @@ export type AssetCondition = {
 	createdAt: string;
 	updatedAt: string;
 	deletedAt: string;
-	// asset: Asset[];
+	asset: Asset[];
+};
+
+export type Asset = {
+	id: string;
+	name: string;
+	imageUrl: string;
+	description: string;
+	serialNumber: string;
+	ocoTagNumber: string;
+	location: string;
+	purchaseDate: string;
+	purchasePrice: number;
+	currencyId: number;
+	typeId: string;
+	conditionId: string;
+	currentlyWithId: string;
+	createdById: string;
+
+	createdAt: string;
+	updatedAt: string;
+	deletedAt: string;
+
+	type: AssetType;
+	condition: AssetCondition;
+	currentlyWith: Staff;
+	createdBy: Staff;
+	currency: Currency;
 };
