@@ -132,6 +132,17 @@ export type CauseList = {
 	createdAt: string;
 };
 
+export type AssetTransactionType = {
+	id: string;
+	name: string;
+	description: string;
+
+	createdAt: string;
+	updatedAt: string;
+	deletedAt: string;
+	// assetTransaction: AssetTransaction[];
+};
+
 export type AssetType = {
 	id: string;
 	name: string;

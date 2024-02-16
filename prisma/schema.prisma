@@ -179,16 +179,17 @@ model Staff {
   team          Team           @relation(fields: [teamId], references: [id])
   causeListCase CauseListCase? @relation(fields: [causeListCaseId], references: [id])
 
-  deletedAt  DateTime?
-  createdAt  DateTime?          @default(now())
-  updatedAt  DateTime?          @updatedAt
-  newsFeed   NewsFeed[]
-  books      Book[]
-  causeList  CauseList[]
-  fromUser   AssetTransaction[] @relation("fromUser")
-  toUser     AssetTransaction[] @relation("toUser")
-  asset      Asset[]            @relation("asset-creator")
-  assetOwner Asset[]            @relation("owner")
+  deletedAt        DateTime?
+  createdAt        DateTime?          @default(now())
+  updatedAt        DateTime?          @updatedAt
+  newsFeed         NewsFeed[]
+  books            Book[]
+  causeList        CauseList[]
+  fromUser         AssetTransaction[] @relation("fromUser")
+  toUser           AssetTransaction[] @relation("toUser")
+  asset            Asset[]            @relation("asset-creator")
+  assetOwner       Asset[]            @relation("owner")
+  assetTransaction AssetTransaction[] @relation("asset-transaction-creator")
 }
 
 model Book {
@@ -576,6 +577,7 @@ model AssetTransaction {
   transactionDate        DateTime
   fromUserId             String?
   toUserId               String
+  createdById            String?
 
   createdAt DateTime? @default(now())
   updatedAt DateTime? @updatedAt
@@ -585,6 +587,7 @@ model AssetTransaction {
   transactionType AssetTransactionType @relation(fields: [assetTransactionTypeId], references: [id])
   fromUser        Staff?               @relation("fromUser", fields: [fromUserId], references: [id])
   toUser          Staff                @relation("toUser", fields: [toUserId], references: [id])
+  createdBy       Staff?               @relation("asset-transaction-creator", fields: [createdById], references: [id])
 }
 
 // Maintenance Log model

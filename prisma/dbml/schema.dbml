@@ -174,6 +174,7 @@ Table Staff {
   toUser AssetTransaction [not null]
   asset Asset [not null]
   assetOwner Asset [not null]
+  assetTransaction AssetTransaction [not null]
 }
 
 Table Book {
@@ -527,6 +528,7 @@ Table AssetTransaction {
   transactionDate DateTime [not null]
   fromUserId String
   toUserId String [not null]
+  createdById String
   createdAt DateTime [default: `now()`]
   updatedAt DateTime
   deletedAt DateTime
@@ -534,6 +536,7 @@ Table AssetTransaction {
   transactionType AssetTransactionType [not null]
   fromUser Staff
   toUser Staff [not null]
+  createdBy Staff
 }
 
 Table AssetMaintenanceLog {
@@ -641,5 +644,7 @@ Ref: AssetTransaction.assetTransactionTypeId > AssetTransactionType.id
 Ref: AssetTransaction.fromUserId > Staff.id
 
 Ref: AssetTransaction.toUserId > Staff.id
+
+Ref: AssetTransaction.createdById > Staff.id
 
 Ref: AssetMaintenanceLog.assetId > Asset.id

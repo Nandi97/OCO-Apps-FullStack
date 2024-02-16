@@ -8,6 +8,7 @@ import axios from 'axios';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import React, { useState } from 'react';
+import Create from './transaction/Create';
 
 const getAssets = async () => {
 	const response = await axios.get('/api/asset/get');
@@ -16,6 +17,8 @@ const getAssets = async () => {
 const Dashboard = () => {
 	const pathname = usePathname();
 	const [searchParam, setSearchParam] = useState<string | null>(null);
+	const [toggle, setToggle] = useState(false);
+	const [assetId, setAssetId] = useState<string>('');
 
 	const { data } = useQuery<Asset[]>({
 		queryFn: getAssets,
@@ -35,6 +38,14 @@ const Dashboard = () => {
 	];
 	const handleDelete = (id: string) => {
 		console.log('Deleting Asset Order');
+	};
+
+	const handleTransaction = (id: string) => {
+		if (id) {
+			console.log('Transaction Asset Model', id);
+			setAssetId(id);
+			setToggle(true);
+		}
 	};
 
 	const tableOptBtnTxt = {
@@ -133,6 +144,12 @@ const Dashboard = () => {
 														icon: 'heroicons:pencil-square',
 														link: `${pathname}/${item?.id}/edit`,
 													},
+
+													{
+														name: 'Transfer Asset',
+														icon: 'heroicons:arrow-path',
+														action: () => handleTransaction(item?.id),
+													},
 												]}
 											/>
 										</td>
@@ -143,6 +160,7 @@ const Dashboard = () => {
 					</table>
 				</div>
 			</div>
+			{toggle && <Create setToggle={setToggle} assetId={assetId} />}
 		</div>
 	);
 };

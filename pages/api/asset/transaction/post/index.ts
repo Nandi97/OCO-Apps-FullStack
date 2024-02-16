@@ -1,12 +1,12 @@
 import { NextApiRequest, NextApiResponse } from 'next';
 import prisma from '@/lib/prisma';
 import { getServerSession } from 'next-auth';
-import { authOptions } from '../../auth/[...nextauth]';
+import { authOptions } from '../../../auth/[...nextauth]';
 
 export default async function handler(req: NextApiRequest, res: NextApiResponse) {
 	const session = await getServerSession(req, res, authOptions);
 	if (!session) {
-		return res.status(401).json({ message: 'Please signIn to create Asset' });
+		return res.status(401).json({ message: 'Please signIn to Transact Asset' });
 	}
 	if (req.method === 'POST') {
 		const prismaUser = await prisma.staff.findUnique({
@@ -15,10 +15,24 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
 		try {
 			const formData = req.body;
 
-			const result = await prisma.asset.create({
+			const result = await prisma.assetTransaction.create({
 				data: {
-					...formData,
+					assetId: formData.assetId,
+					assetTransactionTypeId: formData.assetTransactionTypeId,
+					transactionDate: formData.transactionDate,
+					fromUserId: formData.fromUserId,
+					toUserId: formData.toUserId,
+
 					createdById: prismaUser?.id,
+				},
+			});
+			await prisma.asset.update({
+				where: {
+					id: formData.assetId,
+				},
+				data: {
+					conditionId: formData.conditionId,
+					currentlyWithId: formData.asset.currentlyWithId,
 				},
 			});
 			res.status(200).json(result);
