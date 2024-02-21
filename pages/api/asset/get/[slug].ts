@@ -15,6 +15,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
 				where: { id: assetId as string },
 				include: {
 					condition: true,
+					currency: true,
 					createdBy: true,
 					currentlyWith: true,
 					type: {

@@ -16,12 +16,12 @@
 		"incremental": true,
 		"plugins": [
 			{
-				"name": "next",
-			},
+				"name": "next"
+			}
 		],
 		"paths": {
-			"@/*": ["./*"],
-		},
+			"@/*": ["./*"]
+		}
 	},
 	"include": [
 		"next-env.d.ts",
@@ -34,7 +34,7 @@
 		"components/forms/meeting/MeetingForm.tsx",
 		"app/staff/staff-list/[slug]/vcard/page.tsx",
 		"hooks/useStaffDetails.jsx",
-		"services/mailService.tsx",
+		"services/mailService.tsx"
 	],
-	"exclude": ["node_modules"],
+	"exclude": ["node_modules"]
 }

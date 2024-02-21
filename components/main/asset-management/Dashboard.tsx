@@ -9,6 +9,7 @@ import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import React, { useState } from 'react';
 import Create from './transaction/Create';
+import CreateMaintenance from './maintenance/Create';
 
 const getAssets = async () => {
 	const response = await axios.get('/api/asset/get');
@@ -18,6 +19,7 @@ const Dashboard = () => {
 	const pathname = usePathname();
 	const [searchParam, setSearchParam] = useState<string | null>(null);
 	const [toggle, setToggle] = useState(false);
+	const [maintenanceToggle, setMaintenanceToggle] = useState(false);
 	const [assetId, setAssetId] = useState<string>('');
 
 	const { data } = useQuery<Asset[]>({
@@ -45,6 +47,14 @@ const Dashboard = () => {
 			console.log('Transaction Asset Model', id);
 			setAssetId(id);
 			setToggle(true);
+		}
+	};
+
+	const handleMaintenance = (id: string) => {
+		if (id) {
+			console.log('Maintain Asset Model', id);
+			setAssetId(id);
+			setMaintenanceToggle(true);
 		}
 	};
 
@@ -150,6 +160,11 @@ const Dashboard = () => {
 														icon: 'heroicons:arrow-path',
 														action: () => handleTransaction(item?.id),
 													},
+													{
+														name: 'Maintain Asset',
+														icon: 'heroicons:adjustments-vertical',
+														action: () => handleMaintenance(item?.id),
+													},
 												]}
 											/>
 										</td>
@@ -161,6 +176,9 @@ const Dashboard = () => {
 				</div>
 			</div>
 			{toggle && <Create setToggle={setToggle} assetId={assetId} />}
+			{maintenanceToggle && (
+				<CreateMaintenance setToggle={setMaintenanceToggle} assetId={assetId} />
+			)}
 		</div>
 	);
 };
