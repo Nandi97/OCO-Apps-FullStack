@@ -161,8 +161,6 @@ model Staff {
   genderId        Int
   causeListCaseId String?
 
-  leaveDays LeaveDays?
-
   purchaseOrders PurchaseOrder[]
 
   meetingAttendees MeetingAttendee[]
@@ -190,6 +188,7 @@ model Staff {
   asset            Asset[]            @relation("asset-creator")
   assetOwner       Asset[]            @relation("owner")
   assetTransaction AssetTransaction[] @relation("asset-transaction-creator")
+  LeaveBalance     LeaveBalance[]
 }
 
 model Book {
@@ -339,96 +338,103 @@ model AOB {
 }
 
 model LeaveType {
-  id               String             @id @default(cuid())
-  name             String             @unique
-  description      String
-  deletedAt        DateTime?
-  createdAt        DateTime?          @default(now())
-  updatedAt        DateTime?          @updatedAt
-  LeaveApplication LeaveApplication[]
+  id          String @id @default(cuid())
+  name        String @unique
+  description String
+
+  deletedAt DateTime?
+  createdAt DateTime? @default(now())
+  updatedAt DateTime? @updatedAt
+
+  leaveApplication LeaveApplication[]
 }
 
 model LeaveApplication {
-  id                 String    @id @default(cuid())
+  id                 String   @id @default(cuid())
   employeeId         String
-  employee           Staff     @relation("employee", fields: [employeeId], references: [id])
   supervisorId       String
-  supervisor         Staff     @relation("supervisor", fields: [supervisorId], references: [id])
   leaveTypeId        String
-  type               LeaveType @relation(fields: [leaveTypeId], references: [id])
   duration           Int
   startDate          DateTime
   endDate            DateTime
   reportDate         DateTime
   approvingPartnerId String
-  partner            Staff     @relation("partner", fields: [approvingPartnerId], references: [id])
   approvingHRMId     String
-  humanResource      Staff     @relation("HR", fields: [approvingHRMId], references: [id])
 
-  supervisorApprovalId String?
-  supervisorApproval   SupervisorApproval? @relation(fields: [supervisorApprovalId], references: [id])
-  partnerApprovalId    String?
-  partnerApproval      PartnerApproval?    @relation(fields: [partnerApprovalId], references: [id])
-  hRMApprovalId        String?
-  hRMApproval          HRMApproval?        @relation(fields: [hRMApprovalId], references: [id])
+  employee      Staff     @relation("employee", fields: [employeeId], references: [id])
+  supervisor    Staff     @relation("supervisor", fields: [supervisorId], references: [id])
+  type          LeaveType @relation(fields: [leaveTypeId], references: [id])
+  partner       Staff     @relation("partner", fields: [approvingPartnerId], references: [id])
+  humanResource Staff     @relation("HR", fields: [approvingHRMId], references: [id])
+
+  createdAt DateTime? @default(now())
+  updatedAt DateTime? @updatedAt
+  deletedAt DateTime?
+
+  leaveSupervisorApproval LeaveSupervisorApproval[]
+  leavePartnerApproval    LeavePartnerApproval[]
+  leaveHRMApproval        LeaveHRMApproval[]
+}
+
+model LeaveSupervisorApproval {
+  id                 String @id @default(cuid())
+  leaveApplicationId String
+
+  comments String
+  status   Int    @default(0)
+
+  leaveApplication LeaveApplication @relation(fields: [leaveApplicationId], references: [id])
 
   createdAt DateTime? @default(now())
   updatedAt DateTime? @updatedAt
   deletedAt DateTime?
 }
 
-model LeaveDays {
-  id              String @id @default(cuid())
-  daysEntitled    Float
-  daysAccumulated Float
-  daysTaken       Float
-  balance         Float
+model LeavePartnerApproval {
+  id                 String @id @default(cuid())
+  leaveApplicationId String
 
-  staffId String @unique
-  staff   Staff  @relation(fields: [staffId], references: [id])
+  comments String
+  status   Int    @default(0)
+
+  leaveApplication LeaveApplication @relation(fields: [leaveApplicationId], references: [id])
 
   createdAt DateTime? @default(now())
   updatedAt DateTime? @updatedAt
   deletedAt DateTime?
 }
 
-model SupervisorApproval {
-  id String @id @default(cuid())
+model LeaveHRMApproval {
+  id                 String @id @default(cuid())
+  leaveApplicationId String
 
-  status            Int     @default(0)
-  dispprovalComment String?
+  comments String
+  status   Int    @default(0)
+
+  leaveApplication LeaveApplication @relation(fields: [leaveApplicationId], references: [id])
 
   createdAt DateTime? @default(now())
   updatedAt DateTime? @updatedAt
   deletedAt DateTime?
-
-  LeaveApplication LeaveApplication[]
 }
 
-model PartnerApproval {
-  id String @id @default(cuid())
+model LeaveBalance {
+  id                    String @id @default(cuid())
+  employeeId            String
+  employee              Staff  @relation(fields: [employeeId], references: [id])
+  annualEntitlement     Float
+  balanceBroughtForward Float
+  earned                Float
+  taken                 Float
+  sold                  Float
+  forfeited             Float
+  balanceCarryForward   Float
 
-  status             Int     @default(0)
-  disapprovalComment String?
-
+  deletedAt DateTime?
   createdAt DateTime? @default(now())
   updatedAt DateTime? @updatedAt
-  deletedAt DateTime?
 
-  LeaveApplication LeaveApplication[]
-}
-
-model HRMApproval {
-  id String @id @default(cuid())
-
-  status            Int     @default(0)
-  dispprovalComment String?
-
-  createdAt DateTime? @default(now())
-  updatedAt DateTime? @updatedAt
-  deletedAt DateTime?
-
-  LeaveApplication LeaveApplication[]
+  @@unique([employeeId])
 }
 
 model NewsFeed {

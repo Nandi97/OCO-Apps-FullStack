@@ -6,27 +6,46 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
 		try {
 			const searchParam = req.query.searchParam || '';
 
-			const data = await prisma.asset.findMany({
-				where: {
-					OR: [
-						{
-							location: { contains: searchParam as string, mode: 'insensitive' },
-						},
-					],
-				},
-				orderBy: { id: 'desc' },
-				include: {
-					condition: true,
-					createdBy: true,
-					currentlyWith: true,
-					type: {
-						include: {
-							assetCategory: true,
+			console.log(searchParam);
+
+			if (searchParam) {
+				const data = await prisma.asset.findMany({
+					where: {
+						OR: [
+							{
+								name: { contains: searchParam as string, mode: 'insensitive' },
+							},
+						],
+					},
+					orderBy: { id: 'desc' },
+					include: {
+						condition: true,
+						createdBy: true,
+						currentlyWith: true,
+						type: {
+							include: {
+								assetCategory: true,
+							},
 						},
 					},
-				},
-			});
-			return res.status(200).json(data);
+				});
+				return res.status(200).json(data);
+			} else {
+				const data = await prisma.asset.findMany({
+					orderBy: { id: 'desc' },
+					include: {
+						condition: true,
+						createdBy: true,
+						currentlyWith: true,
+						type: {
+							include: {
+								assetCategory: true,
+							},
+						},
+					},
+				});
+				return res.status(200).json(data);
+			}
 		} catch (err) {
 			res.status(403).json({ err: 'Error has occurred while fetching Assets' });
 		}

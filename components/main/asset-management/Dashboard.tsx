@@ -11,8 +11,12 @@ import React, { useState } from 'react';
 import Create from './transaction/Create';
 import CreateMaintenance from './maintenance/Create';
 
-const getAssets = async () => {
-	const response = await axios.get('/api/asset/get');
+interface FetchAssetProps {
+	searchParam: string | null;
+}
+
+const getAssets = async ({ searchParam }: FetchAssetProps) => {
+	const response = await axios.get('/api/asset/get', { params: { searchParam } });
 	return response.data;
 };
 const Dashboard = () => {
@@ -22,9 +26,9 @@ const Dashboard = () => {
 	const [maintenanceToggle, setMaintenanceToggle] = useState(false);
 	const [assetId, setAssetId] = useState<string>('');
 
-	const { data } = useQuery<Asset[]>({
-		queryFn: getAssets,
-		queryKey: ['assets'],
+	const { data, isError, isPending } = useQuery<Asset[]>({
+		queryKey: ['assets', searchParam],
+		queryFn: () => getAssets({ searchParam }),
 	});
 
 	const columns = [
@@ -99,7 +103,7 @@ const Dashboard = () => {
 							</tr>
 						</thead>
 						<tbody className="bg-white divide-y divide-gray-200">
-							{!data ? (
+							{!data || isError || isPending ? (
 								<tr>
 									<td
 										colSpan={4}

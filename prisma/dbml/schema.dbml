@@ -151,7 +151,6 @@ Table Staff {
   designationId Int [not null]
   genderId Int [not null]
   causeListCaseId String
-  leaveDays LeaveDays
   purchaseOrders PurchaseOrder [not null]
   meetingAttendees MeetingAttendee [not null]
   employers LeaveApplication [not null]
@@ -175,6 +174,7 @@ Table Staff {
   asset Asset [not null]
   assetOwner Asset [not null]
   assetTransaction AssetTransaction [not null]
+  LeaveBalance LeaveBalance [not null]
 }
 
 Table Book {
@@ -328,77 +328,80 @@ Table LeaveType {
   deletedAt DateTime
   createdAt DateTime [default: `now()`]
   updatedAt DateTime
-  LeaveApplication LeaveApplication [not null]
+  leaveApplication LeaveApplication [not null]
 }
 
 Table LeaveApplication {
   id String [pk]
   employeeId String [not null]
-  employee Staff [not null]
   supervisorId String [not null]
-  supervisor Staff [not null]
   leaveTypeId String [not null]
-  type LeaveType [not null]
   duration Int [not null]
   startDate DateTime [not null]
   endDate DateTime [not null]
   reportDate DateTime [not null]
   approvingPartnerId String [not null]
-  partner Staff [not null]
   approvingHRMId String [not null]
+  employee Staff [not null]
+  supervisor Staff [not null]
+  type LeaveType [not null]
+  partner Staff [not null]
   humanResource Staff [not null]
-  supervisorApprovalId String
-  supervisorApproval SupervisorApproval
-  partnerApprovalId String
-  partnerApproval PartnerApproval
-  hRMApprovalId String
-  hRMApproval HRMApproval
   createdAt DateTime [default: `now()`]
   updatedAt DateTime
   deletedAt DateTime
+  leaveSupervisorApproval LeaveSupervisorApproval [not null]
+  leavePartnerApproval LeavePartnerApproval [not null]
+  leaveHRMApproval LeaveHRMApproval [not null]
 }
 
-Table LeaveDays {
+Table LeaveSupervisorApproval {
   id String [pk]
-  daysEntitled Float [not null]
-  daysAccumulated Float [not null]
-  daysTaken Float [not null]
-  balance Float [not null]
-  staffId String [unique, not null]
-  staff Staff [not null]
-  createdAt DateTime [default: `now()`]
-  updatedAt DateTime
-  deletedAt DateTime
-}
-
-Table SupervisorApproval {
-  id String [pk]
+  leaveApplicationId String [not null]
+  comments String [not null]
   status Int [not null, default: 0]
-  dispprovalComment String
+  leaveApplication LeaveApplication [not null]
   createdAt DateTime [default: `now()`]
   updatedAt DateTime
   deletedAt DateTime
-  LeaveApplication LeaveApplication [not null]
 }
 
-Table PartnerApproval {
+Table LeavePartnerApproval {
   id String [pk]
+  leaveApplicationId String [not null]
+  comments String [not null]
   status Int [not null, default: 0]
-  disapprovalComment String
+  leaveApplication LeaveApplication [not null]
   createdAt DateTime [default: `now()`]
   updatedAt DateTime
   deletedAt DateTime
-  LeaveApplication LeaveApplication [not null]
 }
 
-Table HRMApproval {
+Table LeaveHRMApproval {
   id String [pk]
+  leaveApplicationId String [not null]
+  comments String [not null]
   status Int [not null, default: 0]
-  dispprovalComment String
+  leaveApplication LeaveApplication [not null]
   createdAt DateTime [default: `now()`]
   updatedAt DateTime
   deletedAt DateTime
-  LeaveApplication LeaveApplication [not null]
+}
+
+Table LeaveBalance {
+  id String [pk]
+  employeeId String [unique, not null]
+  employee Staff [not null]
+  annualEntitlement Float [not null]
+  balanceBroughtForward Float [not null]
+  earned Float [not null]
+  taken Float [not null]
+  sold Float [not null]
+  forfeited Float [not null]
+  balanceCarryForward Float [not null]
+  deletedAt DateTime
+  createdAt DateTime [default: `now()`]
+  updatedAt DateTime
 }
 
 Table NewsFeed {
@@ -607,13 +610,13 @@ Ref: LeaveApplication.approvingPartnerId > Staff.id
 
 Ref: LeaveApplication.approvingHRMId > Staff.id
 
-Ref: LeaveApplication.supervisorApprovalId > SupervisorApproval.id
+Ref: LeaveSupervisorApproval.leaveApplicationId > LeaveApplication.id
 
-Ref: LeaveApplication.partnerApprovalId > PartnerApproval.id
+Ref: LeavePartnerApproval.leaveApplicationId > LeaveApplication.id
 
-Ref: LeaveApplication.hRMApprovalId > HRMApproval.id
+Ref: LeaveHRMApproval.leaveApplicationId > LeaveApplication.id
 
-Ref: LeaveDays.staffId - Staff.id
+Ref: LeaveBalance.employeeId > Staff.id
 
 Ref: NewsFeed.userId > Staff.id
 
