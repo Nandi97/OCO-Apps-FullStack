@@ -145,7 +145,7 @@ Table Staff {
   email String [unique, not null]
   mobile String [not null]
   ext Int [not null]
-  staffNo Int [not null]
+  staffNo Int [unique, not null]
   avatarUrl String
   teamId Int [not null]
   designationId Int [not null]
@@ -334,30 +334,30 @@ Table LeaveType {
 Table LeaveApplication {
   id String [pk]
   employeeId String [not null]
-  supervisorId String [not null]
   leaveTypeId String [not null]
   duration Int [not null]
   startDate DateTime [not null]
   endDate DateTime [not null]
   reportDate DateTime [not null]
-  approvingPartnerId String [not null]
-  approvingHRMId String [not null]
+  supervisorId String
+  approvingPartnerId String
+  approvingHRMId String
   employee Staff [not null]
-  supervisor Staff [not null]
+  supervisor Staff
   type LeaveType [not null]
-  partner Staff [not null]
-  humanResource Staff [not null]
+  partner Staff
+  humanResource Staff
   createdAt DateTime [default: `now()`]
   updatedAt DateTime
   deletedAt DateTime
-  leaveSupervisorApproval LeaveSupervisorApproval [not null]
-  leavePartnerApproval LeavePartnerApproval [not null]
-  leaveHRMApproval LeaveHRMApproval [not null]
+  leaveSupervisorApproval LeaveSupervisorApproval
+  leavePartnerApproval LeavePartnerApproval
+  leaveHRMApproval LeaveHRMApproval
 }
 
 Table LeaveSupervisorApproval {
   id String [pk]
-  leaveApplicationId String [not null]
+  leaveApplicationId String [unique, not null]
   comments String [not null]
   status Int [not null, default: 0]
   leaveApplication LeaveApplication [not null]
@@ -368,7 +368,7 @@ Table LeaveSupervisorApproval {
 
 Table LeavePartnerApproval {
   id String [pk]
-  leaveApplicationId String [not null]
+  leaveApplicationId String [unique, not null]
   comments String [not null]
   status Int [not null, default: 0]
   leaveApplication LeaveApplication [not null]
@@ -379,7 +379,7 @@ Table LeavePartnerApproval {
 
 Table LeaveHRMApproval {
   id String [pk]
-  leaveApplicationId String [not null]
+  leaveApplicationId String [unique, not null]
   comments String [not null]
   status Int [not null, default: 0]
   leaveApplication LeaveApplication [not null]
@@ -390,8 +390,8 @@ Table LeaveHRMApproval {
 
 Table LeaveBalance {
   id String [pk]
-  employeeId String [unique, not null]
-  employee Staff [not null]
+  staffNo Int [unique, not null]
+  staff Staff [not null]
   annualEntitlement Float [not null]
   balanceBroughtForward Float [not null]
   earned Float [not null]
@@ -610,13 +610,13 @@ Ref: LeaveApplication.approvingPartnerId > Staff.id
 
 Ref: LeaveApplication.approvingHRMId > Staff.id
 
-Ref: LeaveSupervisorApproval.leaveApplicationId > LeaveApplication.id
+Ref: LeaveSupervisorApproval.leaveApplicationId - LeaveApplication.id
 
-Ref: LeavePartnerApproval.leaveApplicationId > LeaveApplication.id
+Ref: LeavePartnerApproval.leaveApplicationId - LeaveApplication.id
 
-Ref: LeaveHRMApproval.leaveApplicationId > LeaveApplication.id
+Ref: LeaveHRMApproval.leaveApplicationId - LeaveApplication.id
 
-Ref: LeaveBalance.employeeId > Staff.id
+Ref: LeaveBalance.staffNo > Staff.staffNo
 
 Ref: NewsFeed.userId > Staff.id
 

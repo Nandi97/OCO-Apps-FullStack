@@ -3,31 +3,27 @@ import { useQuery } from '@tanstack/react-query';
 import axios from 'axios';
 import Image from 'next/image';
 import format from 'date-fns/format';
+import { Staff } from '@/lib/types/master';
 
 interface LeaveApplicationPrev {
-	name: string;
-	staffNo: string;
-	title: string;
-	team: string;
-
-	leaveType: string;
-	leaveDays: string;
+	employee: Staff;
+	supervisorId: string;
+	leaveTypeId: string;
+	duration: number;
 	startDate: string;
 	endDate: string;
-	reportingDate: string;
-	appliedOn: string;
-	supervisor: string;
-	partner: string;
-	humanResource: string;
+	reportDate: string;
+	approvingPartnerId: string;
+	approvingHRMId: string;
 }
 
 interface LeaveApplicationPrevProps {
 	prevVal?: LeaveApplicationPrev;
 }
 
-const fetchAllStaff = async () => {
-	const response = await axios.get('/api/staff/getAllUnpaginatedStaff');
-	return response.data;
+const getStaff = async () => {
+	const response = await axios.get('/api/staff/get');
+	return response.data as Array<Staff>;
 };
 
 const fetchLeaveTypes = async () => {
@@ -36,9 +32,9 @@ const fetchLeaveTypes = async () => {
 };
 
 export default function LeaveApplicationPrev({ prevVal }: LeaveApplicationPrevProps) {
-	const { data: allStaff } = useQuery({
-		queryFn: fetchAllStaff,
-		queryKey: ['allStaff'],
+	const { data: staff } = useQuery({
+		queryFn: getStaff,
+		queryKey: ['all-staff'],
 	});
 	const { data: leaveTypes } = useQuery({
 		queryFn: fetchLeaveTypes,
@@ -73,13 +69,17 @@ export default function LeaveApplicationPrev({ prevVal }: LeaveApplicationPrevPr
 							<td className="px-2 border">
 								<div className="flex flex-col">
 									<span className="text-xs">Name:</span>
-									<span className="text-primary-600">{prevVal?.name}</span>
+									<span className="text-primary-600">
+										{prevVal?.employee?.name}
+									</span>
 								</div>
 							</td>
 							<td className="px-2 border">
 								<div className="flex flex-col">
 									<span className="text-xs">Payroll Number:</span>
-									<span className="text-primary-600">{prevVal?.staffNo}</span>
+									<span className="text-primary-600">
+										{prevVal?.employee?.staffNo}
+									</span>
 								</div>
 							</td>
 						</tr>
@@ -87,13 +87,17 @@ export default function LeaveApplicationPrev({ prevVal }: LeaveApplicationPrevPr
 							<td className="px-2 border">
 								<div className="flex flex-col">
 									<span className="text-xs">Title:</span>
-									<span className="text-primary-600">{prevVal?.title}</span>
+									<span className="text-primary-600">
+										{prevVal?.employee?.designation?.name}
+									</span>
 								</div>
 							</td>
 							<td className="px-2 border">
 								<div className="flex flex-col">
 									<span className="text-xs">Team:</span>
-									<span className="text-primary-600">{prevVal?.team}</span>
+									<span className="text-primary-600">
+										{prevVal?.employee?.team?.name}
+									</span>
 								</div>
 							</td>
 						</tr>
@@ -117,7 +121,7 @@ export default function LeaveApplicationPrev({ prevVal }: LeaveApplicationPrevPr
 									<span className="text-primary-600">
 										{
 											leaveTypes?.find(
-												(item: any) => item?.id === prevVal?.leaveType
+												(item: any) => item?.id === prevVal?.leaveTypeId
 											)?.name
 										}
 									</span>
@@ -126,7 +130,7 @@ export default function LeaveApplicationPrev({ prevVal }: LeaveApplicationPrevPr
 							<td className="px-2 border">
 								<div className="flex flex-col">
 									<span className="text-xs">Number of Leave Days:</span>
-									<span className="text-primary-600">{prevVal?.leaveDays}</span>
+									<span className="text-primary-600">{prevVal?.duration}</span>
 								</div>
 							</td>
 						</tr>
@@ -157,11 +161,8 @@ export default function LeaveApplicationPrev({ prevVal }: LeaveApplicationPrevPr
 								<div className="flex flex-col">
 									<span className="text-xs">Reporting Back On:</span>
 									<span className="text-primary-600">
-										{prevVal?.reportingDate
-											? format(
-													new Date(prevVal?.reportingDate),
-													'MMMM d, yyyy'
-												)
+										{prevVal?.reportDate
+											? format(new Date(prevVal?.reportDate), 'MMMM d, yyyy')
 											: ''}
 									</span>
 								</div>
@@ -192,7 +193,13 @@ export default function LeaveApplicationPrev({ prevVal }: LeaveApplicationPrevPr
 							<td className=" border">
 								<div className="flex flex-col">
 									<span>Supervisor:</span>
-									<span className="text-primary-600">{prevVal?.supervisor}</span>
+									<span className="text-primary-600">
+										{
+											staff?.find(
+												(item: any) => item?.id === prevVal?.supervisorId
+											)?.name
+										}
+									</span>
 								</div>
 							</td>
 							<td className=" border">
@@ -208,8 +215,8 @@ export default function LeaveApplicationPrev({ prevVal }: LeaveApplicationPrevPr
 									<span>HR Manager:</span>
 									<span className="text-primary-600">
 										{
-											allStaff?.find(
-												(item: any) => item?.id === prevVal?.humanResource
+											staff?.find(
+												(item: any) => item?.id === prevVal?.approvingHRMId
 											)?.name
 										}
 									</span>
@@ -228,8 +235,9 @@ export default function LeaveApplicationPrev({ prevVal }: LeaveApplicationPrevPr
 									<span>Deputy/ Managing Partner:</span>
 									<span className="text-primary-600">
 										{
-											allStaff?.find(
-												(item: any) => item?.id === prevVal?.partner
+											staff?.find(
+												(item: any) =>
+													item?.id === prevVal?.approvingPartnerId
 											)?.name
 										}
 									</span>

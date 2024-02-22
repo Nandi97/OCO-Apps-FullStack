@@ -1,17 +1,20 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import React, { useState, useEffect, Fragment } from 'react';
 import { Accordion, AccordionItem, AccordionTrigger, AccordionContent } from '../ui/Accordion ';
 import { useForm, SubmitHandler } from 'react-hook-form';
 import axios from 'axios';
 import { useQuery } from '@tanstack/react-query';
-import { Combobox } from '@headlessui/react';
+import { Combobox, Transition } from '@headlessui/react';
 import { Icon } from '@iconify/react/dist/iconify.js';
 import LeaveApplicationPrev from '../previews/LeaveApplication';
 import { useSession } from 'next-auth/react';
+import { LeaveType, Staff } from '@/lib/types/master';
+import { addBusinessDays, format } from 'date-fns';
+import useStaggeredTime from '@/hooks/useStaggeredTime';
 
 interface LeaveForm {
-	employeeId: string;
+	employee: Staff;
 	supervisorId: string;
 	leaveTypeId: string;
 	duration: number;
@@ -22,40 +25,48 @@ interface LeaveForm {
 	approvingHRMId: string;
 }
 
+interface HolidayApiParams {
+	api_key: any;
+	country: string;
+	year: number;
+}
+
 interface LeaveFormProps {
 	onSubmit: SubmitHandler<LeaveForm>;
 	initialValues?: LeaveForm;
 	isLoading: any;
-	formValues?: any;
-	loggedUser?: any;
 }
 
-const fetchAllStaff = async () => {
-	const response = await axios.get('/api/staff/getAllUnpaginatedStaff');
-	return response.data;
+const getStaff = async () => {
+	const response = await axios.get('/api/staff/get');
+	return response.data as Array<Staff>;
 };
 
-const fetchLeaveTypes = async () => {
+const getLeaveTypes = async () => {
 	const response = await axios.get('/api/leave/leave-type/get');
-	return response.data;
+	return response.data as Array<LeaveType>;
+};
+
+const getHolidays = async () => {
+	const response = await axios.get(
+		'https://holidays.abstractapi.com/v1/?api_key=6db54d5cbb2e413585c7c2271825d55f&country=KE&year=2024&month=12&day=25'
+	);
+	return response.data as Array<any>;
 };
 
 function classNames(...classes: any) {
 	return classes.filter(Boolean).join(' ');
 }
 
-export default function LeaveForm({
-	onSubmit,
-	initialValues,
-	isLoading,
-	loggedUser,
-}: LeaveFormProps) {
+export default function LeaveForm({ onSubmit, initialValues, isLoading }: LeaveFormProps) {
 	const { data: session } = useSession();
 	const [accValue, setAccValue] = useState('one');
-	const [dataState, setDataState] = useState('closed');
-	const [currentUser, setCurrentUser] = useState<any>();
 	const [query, setQuery] = useState('');
-	const [selectedPerson, setSelectedPerson] = useState<any>();
+	const [selectedPerson, setSelectedPerson] = useState<Staff>();
+	const [selectedHRM, setSelectedHRM] = useState<Staff>();
+	const [prevValues, setPrevValues] = useState<LeaveForm>();
+
+	const [endDate, setEndDate] = useState<any>();
 	const {
 		register,
 		handleSubmit,
@@ -65,76 +76,35 @@ export default function LeaveForm({
 	} = useForm<LeaveForm>({
 		defaultValues: initialValues,
 	});
-	console.log('Session:', session);
-	const [formValues, setFormValues] = useState({
-		name: '',
-		staffNo: '',
-		title: '',
-		team: '',
-		leaveType: '',
-		leaveDays: '',
-		startDate: '',
-		endDate: '',
-		reportingDate: '',
-		appliedOn: '',
-		supervisor: '',
-		partner: '',
-		humanResource: '',
-	});
 
-	const { data: allStaff } = useQuery({
-		queryFn: fetchAllStaff,
-		queryKey: ['allStaff'],
+	const { data: staff } = useQuery({
+		queryFn: getStaff,
+		queryKey: ['all-staff'],
 	});
 	const { data: leaveTypes } = useQuery({
-		queryFn: fetchLeaveTypes,
-		queryKey: ['leaveTypes'],
+		queryFn: getLeaveTypes,
+		queryKey: ['leave-types'],
+	});
+	const { data: holidays } = useQuery({
+		queryFn: getHolidays,
+		queryKey: ['ke-holidays'],
 	});
 
-	const selectedUser = allStaff?.find((item: any) => item?.email === session?.user?.email);
-
-	const partners = allStaff?.filter(
+	const partners = staff?.filter(
 		(item: any) =>
 			item?.designation?.name === 'Deputy Managing Partner' ||
 			item?.designation?.name === 'Managing Partner'
 	);
 
-	useEffect(() => {
-		if (
-			allStaff &&
-			selectedUser &&
-			selectedUser.designation &&
-			selectedUser.team &&
-			selectedPerson
-		) {
-			setFormValues((prevFormValues) => ({
-				...prevFormValues,
-				name: selectedUser.name || '',
-				staffNo: selectedUser.staffNo || '',
-				title: selectedUser.designation.name || '',
-				team: selectedUser.team.name || '',
-				supervisor: selectedPerson.name,
-				humanResource:
-					selectedUser?.designation?.staffTypeId === 1
-						? null
-						: allStaff?.find(
-								(item: any) => item?.designation?.name === 'Head of Human Resource'
-							)?.id,
-			}));
-		}
-	}, [allStaff, selectedUser, selectedPerson]);
-	// console.log('Selected User:', selectedUser);
-	// console.log('Partner', partners);
-	// console.log('Selected Person:', selectedPerson);
-	// console.log('Form Values:', formValues);
-	// console.log('Leave Types:', leaveTypes);
-
 	const filteredPeople =
 		query === ''
-			? allStaff
-			: allStaff.filter((person: any) => {
-					return person.name.toLowerCase().includes(query.toLowerCase());
-				});
+			? staff
+			: staff?.filter((person) =>
+					person?.name
+						.toLowerCase()
+						.replace(/\s+/g, '')
+						.includes(query.toLowerCase().replace(/\s+/g, ''))
+				);
 
 	const handleContinueClick = (newValue: string) => {
 		setAccValue(newValue);
@@ -144,21 +114,77 @@ export default function LeaveForm({
 		setAccValue(newValue);
 	};
 
+	const customTime = new Date().getTime();
+
+	useEffect(() => {
+		const defaultDate = new Date('01 January 1900 00:00:00 UTC+03:00');
+		const formPrevVal = watch();
+		const selectedLeaveType = watch('leaveTypeId');
+		const duration = watch('duration');
+		const startDate = watch('startDate')
+			? new Date(watch('startDate') + customTime)
+			: defaultDate;
+
+		const HRMId = staff?.find(
+			(person) => person?.designation?.name === 'Head of Human Resource'
+		)?.id;
+
+		if (HRMId) {
+			setValue('approvingHRMId', HRMId);
+		}
+		if (selectedPerson) {
+			setValue('supervisorId', selectedPerson?.id);
+		}
+
+		if (formPrevVal) {
+			console.log('Preview Values;', formPrevVal);
+
+			setPrevValues(formPrevVal);
+		}
+
+		if (session) {
+			const selectedUser = staff?.find((item: any) => item?.email === session?.user?.email);
+			if (selectedUser) {
+				setValue('employee', selectedUser);
+			}
+		}
+
+		if (selectedLeaveType) {
+			const selectedLeaveTypeName = leaveTypes?.find(
+				(type) => type?.id === selectedLeaveType
+			)?.name;
+
+			if (selectedLeaveTypeName === 'Maternity') {
+				setValue('duration', 90);
+			} else if (selectedLeaveTypeName === 'Paternity') {
+				setValue('duration', 10);
+			} else {
+				setValue('duration', 0);
+			}
+		}
+
+		if (startDate && duration) {
+			let tempEndDate = addBusinessDays(startDate, duration);
+
+			// Adjust end date for holidays
+			holidays?.forEach((holiday) => {
+				const holidayDate = new Date(holiday?.date + customTime);
+				if (holidayDate >= startDate && holidayDate <= tempEndDate) {
+					tempEndDate = addBusinessDays(tempEndDate, 1);
+				}
+			});
+			const computedTempEndDate = format(new Date(tempEndDate), 'yyyy-MM-dd');
+			setEndDate(computedTempEndDate);
+			setValue('endDate', tempEndDate ? computedTempEndDate : '');
+			const reportDate = format(addBusinessDays(tempEndDate, 1), 'yyyy-MM-dd');
+			// console.log('Reported End Date', reportDate);
+
+			setValue('reportDate', reportDate ? reportDate : '');
+		}
+	}, [session, selectedPerson, staff, watch, leaveTypes, setValue, holidays, customTime]);
+
 	const handleSubmitForm: SubmitHandler<LeaveForm> = (data) => {
 		try {
-			if (formValues || selectedUser || selectedPerson) {
-				data.employeeId = selectedUser.id;
-				data.supervisorId = selectedPerson.id;
-				data.leaveTypeId = formValues.leaveType;
-				data.duration = parseInt(formValues.leaveDays);
-				data.startDate = new Date(formValues.startDate).toISOString();
-				data.endDate = new Date(formValues.endDate).toISOString();
-				data.reportDate = new Date(formValues.reportingDate).toISOString();
-				data.approvingHRMId = formValues.humanResource;
-				data.approvingPartnerId = formValues.partner;
-			}
-
-			// console.log('Form Data:', data);
 			onSubmit(data);
 		} catch (error) {
 			console.error('Error in handleSubmitForm:', error);
@@ -198,13 +224,7 @@ export default function LeaveForm({
 										</label>
 										<select
 											id="leaveTypeId"
-											value={formValues?.leaveType}
-											onChange={(e) => {
-												setFormValues({
-													...formValues,
-													leaveType: e.target.value,
-												});
-											}}
+											{...register('leaveTypeId', { required: true })}
 											className="sm:text-sm w-full bg-secondary-50 bg-opacity-70 border-1 focus:shadow-inner shadow-accent-300  focus:border-secondary-500 block p-2.5 h-8  px-3 py-1 shadow-secondary-300 rounded-md border border-secondary-300 text-sm font-medium leading-4 text-secondary-700 shadow-sm hover:bg-secondary-50 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-1"
 										>
 											<option
@@ -231,15 +251,8 @@ export default function LeaveForm({
 										</label>
 										<input
 											type="number"
-											name="duration"
 											id="duration"
-											value={formValues?.leaveDays} // Use selectedStaffType here
-											onChange={(e) =>
-												setFormValues({
-													...formValues,
-													leaveDays: e.target.value,
-												})
-											}
+											{...register('duration', { valueAsNumber: true })}
 											className="sm:text-sm w-full bg-secondary-50 bg-opacity-70 border-1 focus:shadow-inner shadow-accent-300  focus:border-secondary-500 block p-2.5 h-8  px-3 py-1 shadow-secondary-300 rounded-md border border-secondary-300 text-sm font-medium leading-4 text-secondary-700 shadow-sm hover:bg-secondary-50 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-1"
 										/>
 									</div>
@@ -252,15 +265,12 @@ export default function LeaveForm({
 										</label>
 										<input
 											type="date"
-											name="startedAt"
 											id="startedAt"
-											value={formValues?.startDate} // Use selectedStaffType here
-											onChange={(e) =>
-												setFormValues({
-													...formValues,
-													startDate: e.target.value,
-												})
-											}
+											min={format(new Date(), 'yyyy-MM-dd')}
+											{...register('startDate', {
+												valueAsDate: true,
+												required: true,
+											})}
 											className="sm:text-sm w-full bg-secondary-50 bg-opacity-70 border-1 focus:shadow-inner shadow-accent-300  focus:border-secondary-500 block p-2.5 h-8  px-3 py-1 shadow-secondary-300 rounded-md border border-secondary-300 text-sm font-medium leading-4 text-secondary-700 shadow-sm hover:bg-secondary-50 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-1"
 										/>
 									</div>
@@ -273,15 +283,12 @@ export default function LeaveForm({
 										</label>
 										<input
 											type="date"
-											name="endedAt"
 											id="endedAt"
-											value={formValues?.endDate}
-											onChange={(e) =>
-												setFormValues({
-													...formValues,
-													endDate: e.target.value,
-												})
-											}
+											value={endDate}
+											{...register('endDate', {
+												valueAsDate: true,
+												required: true,
+											})}
 											className="sm:text-sm w-full bg-secondary-50 bg-opacity-70 border-1 focus:shadow-inner shadow-accent-300  focus:border-secondary-500 block p-2.5 h-8  px-3 py-1 shadow-secondary-300 rounded-md border border-secondary-300 text-sm font-medium leading-4 text-secondary-700 shadow-sm hover:bg-secondary-50 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-1"
 										/>
 									</div>
@@ -294,15 +301,11 @@ export default function LeaveForm({
 										</label>
 										<input
 											type="date"
-											name="reportOn"
 											id="reportOn"
-											value={formValues?.reportingDate}
-											onChange={(e) =>
-												setFormValues({
-													...formValues,
-													reportingDate: e.target.value,
-												})
-											}
+											{...register('reportDate', {
+												valueAsDate: true,
+												required: true,
+											})}
 											className="sm:text-sm w-full bg-secondary-50 bg-opacity-70 border-1 focus:shadow-inner shadow-accent-300  focus:border-secondary-500 block p-2.5 h-8  px-3 py-1 shadow-secondary-300 rounded-md border border-secondary-300 text-sm font-medium leading-4 text-secondary-700 shadow-sm hover:bg-secondary-50 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-1"
 										/>
 									</div>
@@ -347,7 +350,7 @@ export default function LeaveForm({
 											<Combobox.Input
 												className="sm:text-sm w-full bg-secondary-50 bg-opacity-70 border-1 focus:shadow-inner shadow-accent-300  focus:border-secondary-500 block p-2.5 h-8  px-3 py-1 shadow-secondary-300 rounded-md border border-secondary-300 text-sm font-medium leading-4 text-secondary-700 shadow-sm hover:bg-secondary-50 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-1"
 												onChange={(event) => setQuery(event.target.value)}
-												displayValue={(person) => person?.name}
+												displayValue={(staff: any) => staff?.name}
 											/>
 											<Combobox.Button className="absolute inset-y-0 right-0 flex items-center rounded-r-md px-2 focus:outline-none">
 												<Icon
@@ -357,73 +360,65 @@ export default function LeaveForm({
 												/>
 											</Combobox.Button>
 
-											{filteredPeople?.length > 0 && (
+											<Transition
+												as={Fragment}
+												leave="transition ease-in duration-100"
+												leaveFrom="opacity-100"
+												leaveTo="opacity-0"
+												afterLeave={() => setQuery('')}
+											>
 												<Combobox.Options className="absolute z-10 mt-1 max-h-60 w-full overflow-auto rounded-md bg-white py-1 text-base shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none sm:text-sm">
-													{filteredPeople?.map((person) => (
-														<Combobox.Option
-															key={person?.id}
-															value={person}
-															className={({ active }) =>
-																classNames(
-																	'relative cursor-default select-none py-2 pl-3 pr-9',
-																	active
-																		? 'bg-primary-600 text-white'
-																		: 'text-gray-900'
-																)
-															}
-														>
-															{({ active, selected }) => (
-																<>
-																	<div className="flex items-center">
+													{filteredPeople?.length === 0 &&
+													query !== '' ? (
+														<div className="relative cursor-default select-none px-4 py-2 text-gray-700">
+															Nothing found.
+														</div>
+													) : (
+														filteredPeople?.map((person) => (
+															<Combobox.Option
+																key={person.id}
+																className={({ active }) =>
+																	`relative cursor-default select-none py-2 pl-10 pr-4 ${
+																		active
+																			? 'bg-primary-600 text-white'
+																			: 'text-gray-900'
+																	}`
+																}
+																value={person}
+															>
+																{({ selected, active }) => (
+																	<>
 																		<span
-																			className={classNames(
-																				'inline-block h-2 w-2 flex-shrink-0 rounded-full',
-																				active
-																					? 'bg-secondary-400'
-																					: 'bg-gray-200'
-																			)}
-																			aria-hidden="true"
-																		/>
-																		<span
-																			className={classNames(
-																				'ml-3 truncate',
-																				selected &&
-																					'font-semibold'
-																			)}
+																			className={`block truncate ${
+																				selected
+																					? 'font-medium'
+																					: 'font-normal'
+																			}`}
 																		>
-																			{person?.name}
-																			<span className="sr-only">
-																				{' '}
-																				is{' '}
-																				{person.online
-																					? 'online'
-																					: 'offline'}
+																			{person.name}
+																		</span>
+																		{selected ? (
+																			<span
+																				className={`absolute inset-y-0 left-0 flex items-center pl-3 ${
+																					active
+																						? 'text-white'
+																						: 'text-primary-600'
+																				}`}
+																			>
+																				<Icon
+																					icon="heroicons:check"
+																					className="h-5 w-5"
+																					aria-hidden="true"
+																				/>
 																			</span>
-																		</span>
-																	</div>
-
-																	{selected && (
-																		<span
-																			className={classNames(
-																				'absolute inset-y-0 right-0 flex items-center pr-4',
-																				active
-																					? 'text-white'
-																					: 'text-primary-600'
-																			)}
-																		>
-																			<Icon
-																				icon="heroicons:check"
-																				className="h-5 w-5"
-																				aria-hidden="true"
-																			/>
-																		</span>
-																	)}
-																</>
-															)}
-														</Combobox.Option>
-													))}
+																		) : null}
+																	</>
+																)}
+															</Combobox.Option>
+														))
+													)}
 												</Combobox.Options>
-											)}
+											</Transition>
 										</div>
 									</Combobox>
 									<div className="col-span-6   space-y-1">
@@ -435,15 +430,9 @@ export default function LeaveForm({
 										</label>
 										<select
 											id="partner"
-											name="partner"
-											value={formValues?.partner} // Use selectedStaffType here
-											onChange={(e) => {
-												// console.log(e.target.value),
-												setFormValues({
-													...formValues,
-													partner: e.target.value,
-												});
-											}}
+											{...register('approvingPartnerId', {
+												required: true,
+											})}
 											className="sm:text-sm w-full bg-secondary-50 bg-opacity-70 border-1 focus:shadow-inner shadow-accent-300  focus:border-secondary-500 block p-2.5 h-8  px-3 py-1 shadow-secondary-300 rounded-md border border-secondary-300 text-sm font-medium leading-4 text-secondary-700 shadow-sm hover:bg-secondary-50 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-1"
 										>
 											<option
@@ -476,7 +465,7 @@ export default function LeaveForm({
 				</Accordion>
 			</form>
 			<div className="col-span-6">
-				<LeaveApplicationPrev prevVal={formValues} />
+				<LeaveApplicationPrev prevVal={prevValues} />
 			</div>
 		</div>
 	);

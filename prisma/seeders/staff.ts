@@ -243,7 +243,7 @@ export function getStaff() {
 		{
 			ext: 734,
 			teamId: 3,
-			staffNo: 0,
+			staffNo: 400,
 			name: 'Rebecca Musanga',
 			email: 'rebecca@oraro.co.ke',
 			mobile: '+254 727 707 707',
@@ -291,7 +291,7 @@ export function getStaff() {
 		{
 			ext: 735,
 			teamId: 3,
-			staffNo: 0,
+			staffNo: 401,
 			name: 'Kipkirui Kosgei',
 			email: 'gkosgei@oraro.co.ke',
 			mobile: '+254 724 362 606',
@@ -339,7 +339,7 @@ export function getStaff() {
 		{
 			ext: 722,
 			teamId: 4,
-			staffNo: 0,
+			staffNo: 402,
 			name: 'Erastus Maingi',
 			email: 'litigation_clerks@oraro.co.ke',
 			mobile: '+254 725 487 013',
@@ -471,7 +471,7 @@ export function getStaff() {
 		{
 			ext: 733,
 			teamId: 5,
-			staffNo: 0,
+			staffNo: 403,
 			name: 'Naeem Hirani',
 			email: 'naeem@oraro.co.ke',
 			mobile: '+254 731 823 791',
@@ -579,7 +579,7 @@ export function getStaff() {
 		{
 			ext: 741,
 			teamId: 8,
-			staffNo: 0,
+			staffNo: 404,
 			name: 'Nelly Gitau',
 			email: 'nelly@oraro.co.ke',
 			mobile: '+254 723 754 103',
@@ -603,7 +603,7 @@ export function getStaff() {
 		{
 			ext: 742,
 			teamId: 8,
-			staffNo: 0,
+			staffNo: 405,
 			name: 'Tesrah Wamache',
 			email: 'tesrah@oraro.co.ke',
 			mobile: '+254 711 152 086',
@@ -771,7 +771,7 @@ export function getStaff() {
 		{
 			ext: 707,
 			teamId: 10,
-			staffNo: 0,
+			staffNo: 406,
 			name: 'Geoffrey Muchiri',
 			email: 'geoffrey@oraro.co.ke',
 			mobile: '+254 717 191 626',
@@ -783,7 +783,7 @@ export function getStaff() {
 		{
 			ext: 708,
 			teamId: 10,
-			staffNo: 0,
+			staffNo: 407,
 			name: 'Yonah Ougo',
 			email: 'yonah@oraro.co.ke',
 			mobile: '+254 712 244 313',
@@ -819,7 +819,7 @@ export function getStaff() {
 		{
 			ext: 710,
 			teamId: 10,
-			staffNo: 0,
+			staffNo: 408,
 			name: 'Wanjala Opwora',
 			email: 'wanjala@oraro.co.ke',
 			mobile: '+254 703 930 077',
@@ -879,7 +879,7 @@ export function getStaff() {
 		{
 			ext: 710,
 			teamId: 10,
-			staffNo: 0,
+			staffNo: 409,
 			name: 'Rosemary Sossion',
 			email: 'rosemary@oraro.co.ke',
 			mobile: '+254 729 826 372',
@@ -903,7 +903,7 @@ export function getStaff() {
 		{
 			ext: 706,
 			teamId: 11,
-			staffNo: 0,
+			staffNo: 410,
 			name: 'Gibran Darr',
 			email: 'gibran@oraro.co.ke',
 			mobile: '+254 722 773 160',
@@ -987,7 +987,7 @@ export function getStaff() {
 		{
 			ext: 721,
 			teamId: 11,
-			staffNo: 0,
+			staffNo: 411,
 			name: 'Emmanuel Abok',
 			email: 'emmanuel@oraro.co.ke',
 			mobile: '+254 716 581 949',
@@ -1083,7 +1083,7 @@ export function getStaff() {
 		{
 			ext: 714,
 			teamId: 12,
-			staffNo: 0,
+			staffNo: 412,
 			name: 'Georgina Ogalo-Omondi',
 			email: 'georgina@oraro.co.ke',
 			mobile: '+254 735 229 096',
@@ -1095,7 +1095,7 @@ export function getStaff() {
 		{
 			ext: 721,
 			teamId: 12,
-			staffNo: 0,
+			staffNo: 413,
 			name: 'Quinter Okuta',
 			email: 'quinter@oraro.co.ke',
 			mobile: '+254 725 490 739',
@@ -1131,7 +1131,7 @@ export function getStaff() {
 		{
 			ext: 734,
 			teamId: 3,
-			staffNo: 289,
+			staffNo: 314,
 			name: 'Lusike Wabuge',
 			email: 'lusike@oraro.co.ke',
 			mobile: '+254 721 698 356',

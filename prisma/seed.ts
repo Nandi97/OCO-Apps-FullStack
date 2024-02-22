@@ -14,6 +14,7 @@ import { getAttendanceTypes } from './seeders/attendeeTypes';
 import { getTax } from './seeders/tax';
 import { getLeaveTypes } from './seeders/leaveTypes';
 import { getAssetCategories, getAssetConditions, getAssetTransactionTypes } from './seeders/assets';
+import { getLeaveBalances } from './seeders/leaveBalances';
 
 const prisma = new PrismaClient();
 
@@ -35,6 +36,7 @@ async function main() {
 	const assetCategories = getAssetCategories();
 	const assetConditions = getAssetConditions();
 	const assetTransactionTypes = getAssetTransactionTypes();
+	const leaveBalances = getLeaveBalances();
 	try {
 		// Menus
 		for (const menu of menus) {
@@ -253,7 +255,7 @@ async function main() {
 						where: { id: existing.id },
 						data: { ...book, userId: userId },
 					});
-					console.log(`Created Book: ${updatedData.title}`);
+					console.log(`Updated Book: ${updatedData.title}`);
 				}
 			}
 		} else {
@@ -320,6 +322,27 @@ async function main() {
 					data: { ...leaveType },
 				});
 				console.log(`Updated Leave Type: ${updatedData.name}`);
+			}
+		}
+
+		//Leave Balances
+		for (const leaveBalance of leaveBalances) {
+			const existing = await prisma.leaveBalance.findUnique({
+				where: { staffNo: leaveBalance.staffNo },
+			});
+			if (!existing) {
+				const newData = await prisma.leaveBalance.create({
+					data: {
+						...leaveBalance,
+					},
+				});
+				console.log(`Created Leave Balance: ${newData.staffNo}`);
+			} else {
+				const updatedData = await prisma.leaveBalance.update({
+					where: { id: existing.id },
+					data: { ...leaveBalance },
+				});
+				console.log(`Updated Leave Type: ${updatedData.staffNo}`);
 			}
 		}
 

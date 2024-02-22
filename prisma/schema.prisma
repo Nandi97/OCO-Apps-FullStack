@@ -154,7 +154,7 @@ model Staff {
   email           String  @unique
   mobile          String
   ext             Int
-  staffNo         Int
+  staffNo         Int     @unique
   avatarUrl       String?
   teamId          Int
   designationId   Int
@@ -352,28 +352,28 @@ model LeaveType {
 model LeaveApplication {
   id                 String   @id @default(cuid())
   employeeId         String
-  supervisorId       String
   leaveTypeId        String
   duration           Int
   startDate          DateTime
   endDate            DateTime
   reportDate         DateTime
-  approvingPartnerId String
-  approvingHRMId     String
+  supervisorId       String?
+  approvingPartnerId String?
+  approvingHRMId     String?
 
   employee      Staff     @relation("employee", fields: [employeeId], references: [id])
-  supervisor    Staff     @relation("supervisor", fields: [supervisorId], references: [id])
+  supervisor    Staff?    @relation("supervisor", fields: [supervisorId], references: [id])
   type          LeaveType @relation(fields: [leaveTypeId], references: [id])
-  partner       Staff     @relation("partner", fields: [approvingPartnerId], references: [id])
-  humanResource Staff     @relation("HR", fields: [approvingHRMId], references: [id])
+  partner       Staff?    @relation("partner", fields: [approvingPartnerId], references: [id])
+  humanResource Staff?    @relation("HR", fields: [approvingHRMId], references: [id])
 
   createdAt DateTime? @default(now())
   updatedAt DateTime? @updatedAt
   deletedAt DateTime?
 
-  leaveSupervisorApproval LeaveSupervisorApproval[]
-  leavePartnerApproval    LeavePartnerApproval[]
-  leaveHRMApproval        LeaveHRMApproval[]
+  leaveSupervisorApproval LeaveSupervisorApproval?
+  leavePartnerApproval    LeavePartnerApproval?
+  leaveHRMApproval        LeaveHRMApproval?
 }
 
 model LeaveSupervisorApproval {
@@ -388,6 +388,8 @@ model LeaveSupervisorApproval {
   createdAt DateTime? @default(now())
   updatedAt DateTime? @updatedAt
   deletedAt DateTime?
+
+  @@unique([leaveApplicationId])
 }
 
 model LeavePartnerApproval {
@@ -402,6 +404,8 @@ model LeavePartnerApproval {
   createdAt DateTime? @default(now())
   updatedAt DateTime? @updatedAt
   deletedAt DateTime?
+
+  @@unique([leaveApplicationId])
 }
 
 model LeaveHRMApproval {
@@ -416,12 +420,14 @@ model LeaveHRMApproval {
   createdAt DateTime? @default(now())
   updatedAt DateTime? @updatedAt
   deletedAt DateTime?
+
+  @@unique([leaveApplicationId])
 }
 
 model LeaveBalance {
   id                    String @id @default(cuid())
-  employeeId            String
-  employee              Staff  @relation(fields: [employeeId], references: [id])
+  staffNo               Int
+  staff                 Staff  @relation(fields: [staffNo], references: [staffNo])
   annualEntitlement     Float
   balanceBroughtForward Float
   earned                Float
@@ -434,7 +440,7 @@ model LeaveBalance {
   createdAt DateTime? @default(now())
   updatedAt DateTime? @updatedAt
 
-  @@unique([employeeId])
+  @@unique([staffNo])
 }
 
 model NewsFeed {

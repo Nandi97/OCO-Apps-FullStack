@@ -58,6 +58,18 @@ export type StaffData = {
 	to: number;
 };
 
+export type LeaveType = {
+	id: string;
+	name: string;
+	description: string;
+
+	deletedAt: string;
+	createdAt: string;
+	updatedAt: string;
+
+	//   leaveApplication LeaveApplication[]
+};
+
 export type PurchaseItem = {
 	id: number;
 	description: string;
