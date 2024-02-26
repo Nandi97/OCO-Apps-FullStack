@@ -5,9 +5,25 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
 	if (req.method === 'POST') {
 		try {
 			const formData = req.body;
-			// console.log(formData);
 			const result = await prisma.leaveApplication.create({
-				data: formData,
+				data: {
+					...formData,
+					leaveSupervisorApproval: {
+						create: {
+							comments: 'Pending Supervisor Approval',
+						},
+					},
+					leaveFinalApproval: {
+						create: {
+							comments: 'Pending Final Approval',
+						},
+					},
+					leaveHRMApproval: {
+						create: {
+							comments: 'Pending Human Resource Approval',
+						},
+					},
+				},
 			});
 			res.status(200).json(result);
 			// console.log(result);

@@ -9,8 +9,8 @@ export type Currency = {
 	initial: string;
 
 	//   purchaseOrders PurchaseOrder[]
-	createdAt: string;
-	updatedAt: string;
+	createdAt: string | Date | null;
+	updatedAt: string | Date | null;
 	asset: Asset[];
 };
 
@@ -39,7 +39,8 @@ export type Staff = {
 		id: number;
 		name: string;
 	};
-	deletedAt: string | null;
+	leaveBalance: LeaveBalance;
+	deletedAt: string | Date | null;
 };
 
 export type Links = {
@@ -58,27 +59,15 @@ export type StaffData = {
 	to: number;
 };
 
-export type LeaveType = {
-	id: string;
-	name: string;
-	description: string;
-
-	deletedAt: string;
-	createdAt: string;
-	updatedAt: string;
-
-	//   leaveApplication LeaveApplication[]
-};
-
 export type PurchaseItem = {
 	id: number;
 	description: string;
 	quantity: number;
 	cost: number;
 	purchaseOrderId: number;
-	deletedAt: string | null;
-	createdAt: string;
-	updatedAt: string;
+	deletedAt: string | Date | null;
+	createdAt: string | Date | null;
+	updatedAt: string | Date | null;
 };
 
 export type PurchaseOrder = {
@@ -99,8 +88,8 @@ export type PurchaseOrder = {
 	city: string;
 	country: string;
 	totalAmount: number;
-	deletedAt: string | null;
-	createdAt: string;
+	deletedAt: string | Date | null;
+	createdAt: string | Date | null;
 	approvedOn: string | null;
 	purchaseItems: PurchaseItem[];
 	approver: Staff;
@@ -141,7 +130,7 @@ export type CauseList = {
 	team: Team;
 	date: string;
 	cases: CauseListCase[];
-	createdAt: string;
+	createdAt: string | Date | null;
 };
 
 export type AssetTransactionType = {
@@ -149,9 +138,9 @@ export type AssetTransactionType = {
 	name: string;
 	description: string;
 
-	createdAt: string;
-	updatedAt: string;
-	deletedAt: string;
+	createdAt: string | Date | null;
+	updatedAt: string | Date | null;
+	deletedAt: string | Date | null;
 	// assetTransaction: AssetTransaction[];
 };
 
@@ -160,9 +149,9 @@ export type AssetType = {
 	name: string;
 	description: string;
 	assetCategoryId: string;
-	createdAt: string;
-	updatedAt: string;
-	deletedAt: string;
+	createdAt: string | Date | null;
+	updatedAt: string | Date | null;
+	deletedAt: string | Date | null;
 	asset: Asset[];
 };
 
@@ -170,9 +159,9 @@ export type AssetCategory = {
 	id: string;
 	name: string;
 	description: string;
-	createdAt: string;
-	updatedAt: string;
-	deletedAt: string;
+	createdAt: string | Date | null;
+	updatedAt: string | Date | null;
+	deletedAt: string | Date | null;
 	assetTypes: AssetType[];
 };
 
@@ -180,9 +169,9 @@ export type AssetCondition = {
 	id: string;
 	name: string;
 	description: string;
-	createdAt: string;
-	updatedAt: string;
-	deletedAt: string;
+	createdAt: string | Date | null;
+	updatedAt: string | Date | null;
+	deletedAt: string | Date | null;
 	asset: Asset[];
 };
 
@@ -202,13 +191,87 @@ export type Asset = {
 	currentlyWithId: string;
 	createdById: string;
 
-	createdAt: string;
-	updatedAt: string;
-	deletedAt: string;
+	createdAt: string | Date | null;
+	updatedAt: string | Date | null;
+	deletedAt: string | Date | null;
 
 	type: AssetType;
 	condition: AssetCondition;
 	currentlyWith: Staff;
 	createdBy: Staff;
 	currency: Currency;
+};
+
+export type LeaveBalance = {
+	id: string;
+	staffNo: number;
+	annualEntitlement: number;
+	balanceBroughtForward: number;
+	earned: number;
+	taken: number;
+	sold: number;
+	forfeited: number;
+	balanceCarryForward: number;
+	deletedAt: string | Date | null;
+	createdAt: string | Date | null;
+	updatedAt: string | Date | null;
+};
+export type LeaveSupervisorApproval = {
+	id: string;
+	leaveApplicationId: string;
+	comments: string;
+	status: number;
+	createdAt: string | Date | null;
+	updatedAt: string | Date | null;
+	deletedAt: string | Date | null;
+};
+export type LeaveFinalApproval = {
+	id: string;
+	leaveApplicationId: string;
+	comments: string;
+	status: number;
+	createdAt: string | Date | null;
+	updatedAt: string | Date | null;
+	deletedAt: string | Date | null;
+};
+export type LeaveHRMApproval = {
+	id: string;
+	leaveApplicationId: string;
+	comments: string;
+	status: number;
+	createdAt: string | Date | null;
+	updatedAt: string | Date | null;
+	deletedAt: string | Date | null;
+};
+export type LeaveType = {
+	id: string;
+	name: string;
+	description: string;
+	deletedAt: string | Date | null;
+	createdAt: string | Date | null;
+	updatedAt: string | Date | null;
+};
+
+export type LeaveApplication = {
+	id: string;
+	employeeId: string;
+	leaveTypeId: string;
+	duration: number;
+	startDate: string;
+	endDate: string;
+	reportDate: string;
+	supervisorId: string;
+	finalApproverId: string;
+	approvingHRMId: string;
+	createdAt: string | Date | null;
+	updatedAt: string | Date | null;
+	deletedAt: string | Date | null;
+	employee: Staff;
+	supervisor: Staff;
+	humanResource: Staff;
+	finalApprover: Staff;
+	type: LeaveType;
+	leaveSupervisorApproval: LeaveSupervisorApproval;
+	leaveFinalApproval: LeaveFinalApproval;
+	leaveHRMApproval: LeaveHRMApproval;
 };

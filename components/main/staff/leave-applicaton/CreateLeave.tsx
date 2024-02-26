@@ -1,6 +1,6 @@
 'use client';
-import LeaveForm from '@/components/forms/LeaveForm';
-import { useMutation, useQueryClient } from '@tanstack/react-query';
+import LeaveForm from '@/components/forms/leave/LeaveForm';
+import { useMutation } from '@tanstack/react-query';
 import axios, { AxiosError } from 'axios';
 import { useRouter } from 'next/navigation';
 import toast from 'react-hot-toast';
@@ -12,7 +12,20 @@ export default function CreateLeave() {
 
 	const { mutate, isPending } = useMutation({
 		mutationFn: async (data: any) => {
-			const response = await axios.post('/api/leave/post', data);
+			const formData = {
+				employeeId: data.employee.id,
+				leaveTypeId: data.leaveTypeId,
+				duration: data.duration,
+				startDate: data.startDate,
+				endDate: data.endDate,
+				reportDate: data.reportDate,
+				supervisorId: data.supervisorId,
+				finalApproverId: data.finalApproverId,
+				approvingHRMId: data.approvingHRMId,
+			};
+			// console.log('Form Data:', formData);
+
+			const response = await axios.post('/api/leave/post', formData);
 			return response.data;
 		},
 
@@ -24,9 +37,10 @@ export default function CreateLeave() {
 			}
 		},
 		onSuccess: (data: any) => {
-			toast.success('Leave Application Was Successful', { id: toastId });
+			console.log(data);
 			router.push(`/staff/leave-applications/${data?.id}`);
-			// queryClient.invalidateQueries({ queryKey: ['animals'] });
+
+			toast.success('Leave Application Was Successful', { id: toastId });
 		},
 	});
 

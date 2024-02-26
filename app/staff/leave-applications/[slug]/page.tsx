@@ -1,3 +1,9 @@
+import ShowLeave from '@/components/main/staff/leave-applicaton/ShowLeave';
+
 export default function page() {
-	return <div>preview</div>;
+	return (
+		<div>
+			<ShowLeave />
+		</div>
+	);
 }

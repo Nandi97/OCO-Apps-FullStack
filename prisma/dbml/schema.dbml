@@ -174,7 +174,7 @@ Table Staff {
   asset Asset [not null]
   assetOwner Asset [not null]
   assetTransaction AssetTransaction [not null]
-  LeaveBalance LeaveBalance [not null]
+  leaveBalance LeaveBalance
 }
 
 Table Book {
@@ -340,18 +340,18 @@ Table LeaveApplication {
   endDate DateTime [not null]
   reportDate DateTime [not null]
   supervisorId String
-  approvingPartnerId String
+  finalApproverId String
   approvingHRMId String
   employee Staff [not null]
   supervisor Staff
   type LeaveType [not null]
-  partner Staff
+  finalApprover Staff
   humanResource Staff
   createdAt DateTime [default: `now()`]
   updatedAt DateTime
   deletedAt DateTime
   leaveSupervisorApproval LeaveSupervisorApproval
-  leavePartnerApproval LeavePartnerApproval
+  leaveFinalApproval LeaveFinalApproval
   leaveHRMApproval LeaveHRMApproval
 }
 
@@ -366,7 +366,7 @@ Table LeaveSupervisorApproval {
   deletedAt DateTime
 }
 
-Table LeavePartnerApproval {
+Table LeaveFinalApproval {
   id String [pk]
   leaveApplicationId String [unique, not null]
   comments String [not null]
@@ -606,17 +606,17 @@ Ref: LeaveApplication.supervisorId > Staff.id
 
 Ref: LeaveApplication.leaveTypeId > LeaveType.id
 
-Ref: LeaveApplication.approvingPartnerId > Staff.id
+Ref: LeaveApplication.finalApproverId > Staff.id
 
 Ref: LeaveApplication.approvingHRMId > Staff.id
 
 Ref: LeaveSupervisorApproval.leaveApplicationId - LeaveApplication.id
 
-Ref: LeavePartnerApproval.leaveApplicationId - LeaveApplication.id
+Ref: LeaveFinalApproval.leaveApplicationId - LeaveApplication.id
 
 Ref: LeaveHRMApproval.leaveApplicationId - LeaveApplication.id
 
-Ref: LeaveBalance.staffNo > Staff.staffNo
+Ref: LeaveBalance.staffNo - Staff.staffNo
 
 Ref: NewsFeed.userId > Staff.id
 

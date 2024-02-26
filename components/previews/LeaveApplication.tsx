@@ -2,8 +2,8 @@ import logo from '@/public/assets/images/oco_ab_and_david.png';
 import { useQuery } from '@tanstack/react-query';
 import axios from 'axios';
 import Image from 'next/image';
-import format from 'date-fns/format';
 import { Staff } from '@/lib/types/master';
+import { format } from 'date-fns';
 
 interface LeaveApplicationPrev {
 	employee: Staff;
@@ -13,7 +13,7 @@ interface LeaveApplicationPrev {
 	startDate: string;
 	endDate: string;
 	reportDate: string;
-	approvingPartnerId: string;
+	finalApproverId: string;
 	approvingHRMId: string;
 }
 
@@ -32,6 +32,7 @@ const fetchLeaveTypes = async () => {
 };
 
 export default function LeaveApplicationPrev({ prevVal }: LeaveApplicationPrevProps) {
+	const customTime = new Date().getTime();
 	const { data: staff } = useQuery({
 		queryFn: getStaff,
 		queryKey: ['all-staff'],
@@ -139,9 +140,11 @@ export default function LeaveApplicationPrev({ prevVal }: LeaveApplicationPrevPr
 								<div className="flex flex-col">
 									<span className="text-xs">Start Leave On:</span>
 									<span className="text-primary-600">
-										{prevVal?.startDate
-											? format(new Date(prevVal?.startDate), 'MMMM d, yyyy')
-											: ''}
+										{prevVal?.startDate &&
+											format(
+												new Date(prevVal.startDate + customTime),
+												'MMMM d, yyyy'
+											)}
 									</span>
 								</div>
 							</td>
@@ -149,9 +152,11 @@ export default function LeaveApplicationPrev({ prevVal }: LeaveApplicationPrevPr
 								<div className="flex flex-col">
 									<span className="text-xs">End Leave On:</span>
 									<span className="text-primary-600">
-										{prevVal?.endDate
-											? format(new Date(prevVal?.endDate), 'MMMM d, yyyy')
-											: ''}
+										{prevVal?.endDate &&
+											format(
+												new Date(prevVal.endDate + customTime),
+												'MMMM d, yyyy'
+											)}
 									</span>
 								</div>
 							</td>
@@ -161,9 +166,9 @@ export default function LeaveApplicationPrev({ prevVal }: LeaveApplicationPrevPr
 								<div className="flex flex-col">
 									<span className="text-xs">Reporting Back On:</span>
 									<span className="text-primary-600">
-										{prevVal?.reportDate
-											? format(new Date(prevVal?.reportDate), 'MMMM d, yyyy')
-											: ''}
+										{prevVal?.reportDate &&
+											(new Date(prevVal.reportDate + customTime),
+											'MMMM d, yyyy')}
 									</span>
 								</div>
 							</td>
@@ -236,8 +241,7 @@ export default function LeaveApplicationPrev({ prevVal }: LeaveApplicationPrevPr
 									<span className="text-primary-600">
 										{
 											staff?.find(
-												(item: any) =>
-													item?.id === prevVal?.approvingPartnerId
+												(item: any) => item?.id === prevVal?.finalApproverId
 											)?.name
 										}
 									</span>
@@ -270,7 +274,7 @@ export default function LeaveApplicationPrev({ prevVal }: LeaveApplicationPrevPr
 								<span className="text-lg">No. of leave taken now</span>
 							</td>
 							<td className="p-2 border">
-								<span></span>
+								<span>{prevVal?.duration}</span>
 							</td>
 						</tr>
 						<tr>

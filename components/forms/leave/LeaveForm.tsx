@@ -1,13 +1,13 @@
 'use client';
 
 import React, { useState, useEffect, Fragment } from 'react';
-import { Accordion, AccordionItem, AccordionTrigger, AccordionContent } from '../ui/Accordion ';
+import { Accordion, AccordionItem, AccordionTrigger, AccordionContent } from '../../ui/Accordion ';
 import { useForm, SubmitHandler } from 'react-hook-form';
 import axios from 'axios';
 import { useQuery } from '@tanstack/react-query';
 import { Combobox, Transition } from '@headlessui/react';
 import { Icon } from '@iconify/react/dist/iconify.js';
-import LeaveApplicationPrev from '../previews/LeaveApplication';
+import LeaveApplicationPrev from '../../previews/LeaveApplication';
 import { useSession } from 'next-auth/react';
 import { LeaveType, Staff } from '@/lib/types/master';
 import { addBusinessDays, format } from 'date-fns';
@@ -21,7 +21,7 @@ interface LeaveForm {
 	startDate: string;
 	endDate: string;
 	reportDate: string;
-	approvingPartnerId: string;
+	finalApproverId: string;
 	approvingHRMId: string;
 }
 
@@ -63,7 +63,7 @@ export default function LeaveForm({ onSubmit, initialValues, isLoading }: LeaveF
 	const [accValue, setAccValue] = useState('one');
 	const [query, setQuery] = useState('');
 	const [selectedPerson, setSelectedPerson] = useState<Staff>();
-	const [selectedHRM, setSelectedHRM] = useState<Staff>();
+	const [sessionUser, setSessionUser] = useState<Staff>();
 	const [prevValues, setPrevValues] = useState<LeaveForm>();
 
 	const [endDate, setEndDate] = useState<any>();
@@ -119,7 +119,6 @@ export default function LeaveForm({ onSubmit, initialValues, isLoading }: LeaveF
 	useEffect(() => {
 		const defaultDate = new Date('01 January 1900 00:00:00 UTC+03:00');
 		const formPrevVal = watch();
-		const selectedLeaveType = watch('leaveTypeId');
 		const duration = watch('duration');
 		const startDate = watch('startDate')
 			? new Date(watch('startDate') + customTime)
@@ -137,29 +136,14 @@ export default function LeaveForm({ onSubmit, initialValues, isLoading }: LeaveF
 		}
 
 		if (formPrevVal) {
-			console.log('Preview Values;', formPrevVal);
-
 			setPrevValues(formPrevVal);
 		}
 
 		if (session) {
 			const selectedUser = staff?.find((item: any) => item?.email === session?.user?.email);
 			if (selectedUser) {
+				setSessionUser(selectedUser);
 				setValue('employee', selectedUser);
-			}
-		}
-
-		if (selectedLeaveType) {
-			const selectedLeaveTypeName = leaveTypes?.find(
-				(type) => type?.id === selectedLeaveType
-			)?.name;
-
-			if (selectedLeaveTypeName === 'Maternity') {
-				setValue('duration', 90);
-			} else if (selectedLeaveTypeName === 'Paternity') {
-				setValue('duration', 10);
-			} else {
-				setValue('duration', 0);
 			}
 		}
 
@@ -177,14 +161,15 @@ export default function LeaveForm({ onSubmit, initialValues, isLoading }: LeaveF
 			setEndDate(computedTempEndDate);
 			setValue('endDate', tempEndDate ? computedTempEndDate : '');
 			const reportDate = format(addBusinessDays(tempEndDate, 1), 'yyyy-MM-dd');
-			// console.log('Reported End Date', reportDate);
 
 			setValue('reportDate', reportDate ? reportDate : '');
 		}
 	}, [session, selectedPerson, staff, watch, leaveTypes, setValue, holidays, customTime]);
+	console.log('Session User', sessionUser);
 
 	const handleSubmitForm: SubmitHandler<LeaveForm> = (data) => {
 		try {
+			// console.log(data);
 			onSubmit(data);
 		} catch (error) {
 			console.error('Error in handleSubmitForm:', error);
@@ -252,9 +237,21 @@ export default function LeaveForm({ onSubmit, initialValues, isLoading }: LeaveF
 										<input
 											type="number"
 											id="duration"
-											{...register('duration', { valueAsNumber: true })}
+											{...register('duration', {
+												valueAsNumber: true,
+												min: 1,
+												max:
+													sessionUser?.leaveBalance
+														?.balanceCarryForward ||
+													sessionUser?.leaveBalance?.annualEntitlement,
+											})}
 											className="sm:text-sm w-full bg-secondary-50 bg-opacity-70 border-1 focus:shadow-inner shadow-accent-300  focus:border-secondary-500 block p-2.5 h-8  px-3 py-1 shadow-secondary-300 rounded-md border border-secondary-300 text-sm font-medium leading-4 text-secondary-700 shadow-sm hover:bg-secondary-50 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-1"
 										/>
+										{errors?.duration && (
+											<p className="text-xs text-red-500">
+												Please check your duration
+											</p>
+										)}
 									</div>
 									<div className="col-span-6 space-y-1">
 										<label
@@ -430,7 +427,7 @@ export default function LeaveForm({ onSubmit, initialValues, isLoading }: LeaveF
 										</label>
 										<select
 											id="partner"
-											{...register('approvingPartnerId', {
+											{...register('finalApproverId', {
 												required: true,
 											})}
 											className="sm:text-sm w-full bg-secondary-50 bg-opacity-70 border-1 focus:shadow-inner shadow-accent-300  focus:border-secondary-500 block p-2.5 h-8  px-3 py-1 shadow-secondary-300 rounded-md border border-secondary-300 text-sm font-medium leading-4 text-secondary-700 shadow-sm hover:bg-secondary-50 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-1"

@@ -188,7 +188,7 @@ model Staff {
   asset            Asset[]            @relation("asset-creator")
   assetOwner       Asset[]            @relation("owner")
   assetTransaction AssetTransaction[] @relation("asset-transaction-creator")
-  LeaveBalance     LeaveBalance[]
+  leaveBalance     LeaveBalance?
 }
 
 model Book {
@@ -350,21 +350,21 @@ model LeaveType {
 }
 
 model LeaveApplication {
-  id                 String   @id @default(cuid())
-  employeeId         String
-  leaveTypeId        String
-  duration           Int
-  startDate          DateTime
-  endDate            DateTime
-  reportDate         DateTime
-  supervisorId       String?
-  approvingPartnerId String?
-  approvingHRMId     String?
+  id              String   @id @default(cuid())
+  employeeId      String
+  leaveTypeId     String
+  duration        Int
+  startDate       DateTime
+  endDate         DateTime
+  reportDate      DateTime
+  supervisorId    String?
+  finalApproverId String?
+  approvingHRMId  String?
 
   employee      Staff     @relation("employee", fields: [employeeId], references: [id])
   supervisor    Staff?    @relation("supervisor", fields: [supervisorId], references: [id])
   type          LeaveType @relation(fields: [leaveTypeId], references: [id])
-  partner       Staff?    @relation("partner", fields: [approvingPartnerId], references: [id])
+  finalApprover Staff?    @relation("partner", fields: [finalApproverId], references: [id])
   humanResource Staff?    @relation("HR", fields: [approvingHRMId], references: [id])
 
   createdAt DateTime? @default(now())
@@ -372,7 +372,7 @@ model LeaveApplication {
   deletedAt DateTime?
 
   leaveSupervisorApproval LeaveSupervisorApproval?
-  leavePartnerApproval    LeavePartnerApproval?
+  leaveFinalApproval      LeaveFinalApproval?
   leaveHRMApproval        LeaveHRMApproval?
 }
 
@@ -392,7 +392,7 @@ model LeaveSupervisorApproval {
   @@unique([leaveApplicationId])
 }
 
-model LeavePartnerApproval {
+model LeaveFinalApproval {
   id                 String @id @default(cuid())
   leaveApplicationId String
 
