@@ -2,12 +2,11 @@
 import LeaveForm from '@/components/forms/leave/LeaveForm';
 import { useMutation } from '@tanstack/react-query';
 import axios, { AxiosError } from 'axios';
-import { useRouter } from 'next/navigation';
+import { redirect } from 'next/navigation';
 import toast from 'react-hot-toast';
 
 export default function CreateLeave() {
 	// const queryClient = useQueryClient();
-	const router = useRouter();
 	let toastId: string;
 
 	const { mutate, isPending } = useMutation({
@@ -38,9 +37,9 @@ export default function CreateLeave() {
 		},
 		onSuccess: (data: any) => {
 			console.log(data);
-			router.push(`/staff/leave-applications/${data?.id}`);
-
 			toast.success('Leave Application Was Successful', { id: toastId });
+
+			redirect(`/staff/leave-applications/${data?.id}`);
 		},
 	});
 

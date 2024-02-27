@@ -10,9 +10,9 @@ interface LeaveApplicationPrev {
 	supervisorId: string;
 	leaveTypeId: string;
 	duration: number;
-	startDate: string;
-	endDate: string;
-	reportDate: string;
+	startDate?: Date;
+	endDate?: Date;
+	reportDate?: Date;
 	finalApproverId: string;
 	approvingHRMId: string;
 }
@@ -41,6 +41,7 @@ export default function LeaveApplicationPrev({ prevVal }: LeaveApplicationPrevPr
 		queryFn: fetchLeaveTypes,
 		queryKey: ['leaveTypes'],
 	});
+
 	return (
 		<div className="w-full p-4 flex-col rounded-md shadow-md space-y-3">
 			<div className="w-full flex items-center justify-center">
@@ -140,11 +141,9 @@ export default function LeaveApplicationPrev({ prevVal }: LeaveApplicationPrevPr
 								<div className="flex flex-col">
 									<span className="text-xs">Start Leave On:</span>
 									<span className="text-primary-600">
-										{prevVal?.startDate &&
-											format(
-												new Date(prevVal.startDate + customTime),
-												'MMMM d, yyyy'
-											)}
+										{!prevVal?.startDate
+											? ''
+											: format(new Date(prevVal.startDate), 'MMMM d, yyyy')}
 									</span>
 								</div>
 							</td>
@@ -152,11 +151,9 @@ export default function LeaveApplicationPrev({ prevVal }: LeaveApplicationPrevPr
 								<div className="flex flex-col">
 									<span className="text-xs">End Leave On:</span>
 									<span className="text-primary-600">
-										{prevVal?.endDate &&
-											format(
-												new Date(prevVal.endDate + customTime),
-												'MMMM d, yyyy'
-											)}
+										{!prevVal?.endDate
+											? ''
+											: format(prevVal.endDate, 'MMMM d, yyyy')}
 									</span>
 								</div>
 							</td>
@@ -166,9 +163,9 @@ export default function LeaveApplicationPrev({ prevVal }: LeaveApplicationPrevPr
 								<div className="flex flex-col">
 									<span className="text-xs">Reporting Back On:</span>
 									<span className="text-primary-600">
-										{prevVal?.reportDate &&
-											(new Date(prevVal.reportDate + customTime),
-											'MMMM d, yyyy')}
+										{!prevVal?.reportDate
+											? ''
+											: format(prevVal.reportDate, 'MMMM d, yyyy')}
 									</span>
 								</div>
 							</td>
@@ -266,7 +263,11 @@ export default function LeaveApplicationPrev({ prevVal }: LeaveApplicationPrevPr
 								<span className="text-lg">No. of leave days available</span>
 							</td>
 							<td className="p-2 border">
-								<span></span>
+								<span>
+									{prevVal?.employee?.leaveBalance?.balanceCarryForward
+										? prevVal?.employee?.leaveBalance?.balanceCarryForward
+										: 0}
+								</span>
 							</td>
 						</tr>
 						<tr>
@@ -282,7 +283,12 @@ export default function LeaveApplicationPrev({ prevVal }: LeaveApplicationPrevPr
 								<span className="text-lg">Balance of leave days</span>
 							</td>
 							<td className="p-2 border">
-								<span></span>
+								<span>
+									{prevVal?.employee?.leaveBalance?.balanceCarryForward
+										? prevVal?.employee?.leaveBalance?.balanceCarryForward -
+											prevVal?.duration
+										: 0}
+								</span>
 							</td>
 						</tr>
 					</tbody>

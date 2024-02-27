@@ -1,12 +1,12 @@
 import { metadata } from '@/app/layout';
-import Layout from './components/Layout';
+import Dashboard from '@/components/main/staff/leave-applicaton/Dashboard';
 
 export default function LeaveApplication() {
 	metadata.title = 'Leave Application';
 
 	return (
 		<div className="space-y-2">
-			<Layout />
+			<Dashboard />
 		</div>
 	);
 }

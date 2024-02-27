@@ -3,9 +3,10 @@ import axios from 'axios';
 import Link from 'next/link';
 import format from 'date-fns/format';
 import { Icon } from '@iconify/react/dist/iconify.js';
+import { LeaveApplication } from '@/lib/types/master';
 
 const fetchAllApplications = async () => {
-	const response = await axios.get('/api/leave/get');
+	const response = await axios.get<LeaveApplication[]>('/api/leave/get');
 	return response.data;
 };
 
@@ -67,7 +68,7 @@ export default function LeaveView() {
 					</tr>
 				</thead>
 				<tbody className="bg-white divide-y divide-gray-200">
-					{applications?.map((item: any, index: any) => (
+					{applications?.map((item, index: number) => (
 						<tr
 							key={item?.id}
 							className={`hover:bg-primary-100/95 ${
@@ -86,24 +87,24 @@ export default function LeaveView() {
 								{item?.duration} Days
 							</td>
 							<td className="p-2 text-sm whitespace-nowrap text-secondary-500">
-								{item?.startDate
-									? format(new Date(item?.startDate), 'MMMM d, yyyy')
-									: ''}
+								{!item?.startDate
+									? ''
+									: format(new Date(item?.startDate), 'MMMM d, yyyy')}
 							</td>
 							<td className="p-2 text-sm whitespace-nowrap text-secondary-500">
-								{item?.endDate
-									? format(new Date(item?.endDate), 'MMMM d, yyyy')
-									: ''}
+								{!item?.endDate
+									? ''
+									: format(new Date(item?.endDate), 'MMMM d, yyyy')}
 							</td>
 							<td className="p-2 text-sm whitespace-nowrap text-secondary-500">
-								{item?.reportDate
-									? format(new Date(item?.reportDate), 'MMMM d, yyyy')
-									: ''}
+								{!item?.reportDate
+									? ''
+									: format(new Date(item?.reportDate), 'MMMM d, yyyy')}
 							</td>
 							<td className="px-3 flex items-center justify-center space-x-3 py-2 text-sm text-center whitespace-nowrap text-secondary-500">
 								<div
 									className={`rounded ring-2 ring-slate-400 ${
-										item?.supervisorApprovalDate === null
+										item?.leaveSupervisorApproval?.status !== 1
 											? 'bg-slate-50'
 											: 'bg-green-500'
 									}`}
@@ -111,7 +112,7 @@ export default function LeaveView() {
 									<Icon
 										icon="heroicons:check"
 										className={`font-semibold  ${
-											item?.supervisorApprovalDate === null
+											item?.leaveSupervisorApproval?.status !== 1
 												? 'text-slate-400'
 												: 'text-green-500'
 										}`}
@@ -119,7 +120,7 @@ export default function LeaveView() {
 								</div>
 								<div
 									className={`rounded ring-2 ring-slate-400 ${
-										item?.partnerApprovalDate === null
+										item?.leaveFinalApproval?.status !== 1
 											? 'bg-slate-50'
 											: 'bg-green-500'
 									}`}
@@ -127,7 +128,7 @@ export default function LeaveView() {
 									<Icon
 										icon="heroicons:check"
 										className={`font-semibold  ${
-											item?.partnerApprovalDate === null
+											item?.leaveFinalApproval?.status !== 1
 												? 'text-slate-400'
 												: 'text-green-500'
 										}`}
@@ -135,7 +136,7 @@ export default function LeaveView() {
 								</div>
 								<div
 									className={`rounded ring-2 ring-slate-400 ${
-										item?.HRMApprovalDate === null
+										item?.leaveHRMApproval?.status !== 1
 											? 'bg-slate-50'
 											: 'bg-green-500'
 									}`}
@@ -143,7 +144,7 @@ export default function LeaveView() {
 									<Icon
 										icon="heroicons:check"
 										className={`font-semibold  ${
-											item?.HRMApprovalDate === null
+											item?.leaveHRMApproval?.status !== 1
 												? 'text-slate-400'
 												: 'text-green-500'
 										}`}
