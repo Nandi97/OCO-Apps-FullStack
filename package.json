@@ -65,6 +65,7 @@
 		"zod": "^3.22.4"
 	},
 	"devDependencies": {
+		"@hookform/devtools": "^4.3.1",
 		"@iconify/react": "^4.1.1",
 		"@mightymeld/runtime": "^0.1.48",
 		"@types/lodash": "^4.14.202",

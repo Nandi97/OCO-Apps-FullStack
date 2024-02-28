@@ -1,5 +1,4 @@
 'use client';
-
 import React, { useState, Fragment } from 'react';
 import { SubmitHandler, useForm } from 'react-hook-form';
 import axios from 'axios';
@@ -16,6 +15,7 @@ import { Combobox, Transition } from '@headlessui/react';
 import { Icon } from '@iconify/react/dist/iconify.js';
 import { LeaveType, Staff, StaffData } from '@/lib/types/master';
 import LeaveApplicationPrev from '@/components/previews/LeaveApplication';
+import { DevTool } from '@hookform/devtools';
 
 interface LeaveForm {
 	employee: Staff;
@@ -45,6 +45,8 @@ interface LeaveFormProps {
 	isLoading: any;
 }
 
+let renderCount = 0;
+
 const LeaveForm2 = ({ onSubmit, initialValues, isLoading }: LeaveFormProps) => {
 	const authStaff = useAuthStaff();
 	const [reportingDate, setReportingDate] = useState<Date | string | undefined>();
@@ -54,16 +56,18 @@ const LeaveForm2 = ({ onSubmit, initialValues, isLoading }: LeaveFormProps) => {
 	const [hRMid, sethRMId] = useState<string>();
 	const [activePartners, setActivePartners] = useState<Staff[]>();
 	const [query, setQuery] = useState('');
+	const form = useForm<LeaveForm>({
+		defaultValues: initialValues,
+	});
 
 	const {
 		register,
 		handleSubmit,
 		setValue,
 		watch,
+		control,
 		formState: { errors },
-	} = useForm<LeaveForm>({
-		defaultValues: initialValues,
-	});
+	} = form;
 
 	const handleContinueClick = (newValue: string) => {
 		setAccValue(newValue);
@@ -156,13 +160,14 @@ const LeaveForm2 = ({ onSubmit, initialValues, isLoading }: LeaveFormProps) => {
 			console.error('Error in handleSubmitForm:', error);
 		}
 	};
-
+	renderCount++;
 	return (
 		<div className="grid md:grid-cols-12 grid-cols-6 gap-2 ">
 			<form
 				className="col-span-6 bg-primary-50 rounded"
 				onSubmit={handleSubmit(handleSubmitForm)}
 			>
+				<h1>Youtube Form ({renderCount / 2})</h1>
 				<Accordion
 					type="single"
 					value={accValue}
@@ -516,7 +521,7 @@ const LeaveForm2 = ({ onSubmit, initialValues, isLoading }: LeaveFormProps) => {
 					</AccordionItem>
 				</Accordion>
 			</form>
-
+			<DevTool control={control} />
 			<div className="col-span-6 bg-primary-50 rounded">
 				<LeaveApplicationPrev prevVal={watch()} />
 			</div>
