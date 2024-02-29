@@ -1,119 +1,98 @@
 'use client';
-
-import TextInput from '@/components/my-ui/form-inputs/InputField';
-import SelectInput from '@/components/my-ui/form-inputs/SelectField';
-import CauseListPreview from '@/components/previews/CauseList';
-import { Icon } from '@iconify/react/dist/iconify.js';
+import React, { Fragment } from 'react';
 import Link from 'next/link';
-import React, { useEffect, useState } from 'react';
-import { useForm, SubmitHandler, useFieldArray } from 'react-hook-form';
+import { Icon } from '@iconify/react/dist/iconify.js';
+import { Staff, Team } from '@/lib/types/master';
+import { SubmitHandler, useFieldArray, useForm, Controller } from 'react-hook-form';
 import axios from 'axios';
-import { Staff } from '@/lib/types/staff';
 import { useQuery } from '@tanstack/react-query';
-import { DevTool } from '@hookform/devtools';
+import { Combobox, Transition } from '@headlessui/react';
+import ComboBoxWrapper from '@/components/my-ui/form-inputs/ComboBox';
 
-interface CauseListForm {
-	team: { id: number; name: string };
+function classNames(...classes: any) {
+	return classes.filter(Boolean).join(' ');
+}
+
+type FormValues = {
+	team: Team;
 	date: Date;
 	cases: [
 		{
 			coram: string;
-			virtual: number;
+			virtual?: number | null;
 			url: string;
 			case: string;
 			advocates: Staff[];
 		},
 	];
-}
+};
+const getTeams = async () => {
+	const response = await axios.get('/api/staff/team/get');
+	return response.data as Array<Team>;
+};
 
-const fetchAllStaff = async () => {
+const getStaff = async () => {
 	const response = await axios.get('/api/staff/get');
 	return response.data as Array<Staff>;
 };
 
-const fetchAllTeams = async () => {
-	const response = await axios.get('/api/staff/team/get');
-	return response.data as Array<any>;
-};
-
 interface CauseListFormProps {
-	onSubmit: SubmitHandler<CauseListForm>;
-	initialValues?: CauseListForm;
+	onSubmit: SubmitHandler<FormValues>;
+	initialValues?: FormValues;
 	isPending: boolean;
 }
 
-const CauseListForm = ({ onSubmit, initialValues, isPending }: CauseListFormProps) => {
-	const [causeListItems, setCauseListItems] = useState<any>([
-		{
-			key: 0,
-			coram: '',
-			virtual: 0,
-			url: '',
-			case: '',
-			advocates: [],
+const CauseListForm2 = ({ onSubmit, initialValues, isPending }: CauseListFormProps) => {
+	const [isShowing, setIsShowing] = React.useState(false);
+	const [selectedPeople, setSelectedPeople] = React.useState<Staff[]>([]);
+	const [query, setQuery] = React.useState('');
+	const form = useForm<FormValues>({
+		defaultValues: {
+			...initialValues,
+			cases: [
+				{
+					coram: '',
+					virtual: null,
+					url: '',
+					case: '',
+					advocates: [],
+				},
+			],
 		},
-	]);
-	const [teamHandling, setTeamHandling] = useState('');
-	const form = useForm<CauseListForm>({
-		defaultValues: initialValues,
 	});
-
-	const {
-		register,
-		control,
-		setValue,
-		handleSubmit,
-		watch,
-		formState: { errors },
-	} = form;
-
+	const { register, formState, watch, setValue, control } = form;
+	const { errors } = formState;
 	const { fields, append, remove } = useFieldArray({
 		name: 'cases',
 		control,
 	});
 
-	const watchAllFields: CauseListForm = watch();
-
-	console.log(watchAllFields);
-
-	const { data: staffTeams } = useQuery({
-		queryFn: fetchAllTeams,
-		queryKey: ['teams'],
+	const { data: teams } = useQuery({
+		queryFn: getTeams,
+		queryKey: ['all-teams'],
 	});
-
 	const { data: staff } = useQuery({
-		queryFn: fetchAllStaff,
-		queryKey: ['allStaff'],
+		queryFn: getStaff,
+		queryKey: ['all-staff'],
 	});
 
-	useEffect(() => {
-		const findTeam = staffTeams?.find((t: any) => t?.name === teamHandling);
-		setValue('team', findTeam);
-	}, [setValue, staffTeams, teamHandling]);
+	const filteredTeams = teams?.filter(
+		(t) => t?.name === 'SIMBA' || t?.name === 'TAI' || t?.name === 'TWIGA'
+	);
 
-	const teams = [
-		{ id: 1, value: 'SIMBA' },
-		{ id: 2, value: 'TWIGA' },
-		{ id: 3, value: 'TAI' },
-	];
-
+	const filteredStaffTeam = staff?.filter((staff) => staff.team?.name === watch('team.name'));
+	const filteredPeople =
+		query === ''
+			? filteredStaffTeam
+			: filteredStaffTeam?.filter((person) => {
+					return person.name.toLowerCase().includes(query.toLowerCase());
+				});
 	const isVirtual = [
 		{ id: 1, name: 'YES' },
 		{ id: 2, name: 'NO' },
 	];
 
-	const filteredStaffTeam = staff?.filter((staff) => staff.team?.name === teamHandling);
-
-	const handleSubmitForm: SubmitHandler<any> = (data) => {
-		try {
-			if (data) {
-				data.cases = causeListItems;
-			}
-			onSubmit(data);
-		} catch (error) {
-			console.error('Error in handleSubmitForm:', error);
-		}
-	};
+	console.log('Watch All Fields:', watch());
 
 	return (
 		<div className="grid grid-cols-6 gap-2">
@@ -126,27 +105,41 @@ const CauseListForm = ({ onSubmit, initialValues, isPending }: CauseListFormProp
 					<span className="text-sm">Back</span>
 				</Link>
 			</div>
-			<div className="md:col-span-3 col-span-6">
-				<form
-					className="shadow-inner shadow-secondary-600/20 rounded-md bg-primary-50 p-2 w-full flex space-y-4 flex-col"
-					onSubmit={handleSubmit(handleSubmitForm)}
-				>
-					<h1>Cause List</h1>
-					<div className="grid grid-cols-6 gap-2">
+			<div className="md:col-span-3 col-span-6 bg-primary-50">
+				<form className="shadow-inner shadow-secondary-600/20 rounded-md w-full flex space-y-4 flex-col">
+					<h1 className="w-full bg-primary-600 text-primary-50 rounded-t-md p-2 font-semibold">
+						Cause List
+					</h1>
+					<div className="grid grid-cols-6 gap-2 p-2">
 						<div className="md:col-span-3 col-span-6">
 							<label className="form-control w-full max-w-xs ">
 								<div className="block text-sm font-medium text-secondary-700">
-									<span className="label-text">Team Handling</span>
+									<span className="label-text">
+										Team Handling<sup className="text-xs text-red-500">*</sup>
+									</span>
 								</div>
 								<select
-									name="team"
 									id="team"
-									value={teamHandling}
-									onChange={(e) => setTeamHandling(e.target.value)}
+									{...register('team.id', {
+										required: { value: true, message: 'Please Select a Team' },
+										valueAsNumber: true,
+										onChange: () => {
+											const teamId = watch('team.id');
+											if (teamId) {
+												const selectedTeam = teams?.find(
+													(t) => t?.id === teamId
+												);
+												console.log('Watch Team ', selectedTeam);
+												if (selectedTeam) {
+													setValue('team.name', selectedTeam.name);
+												}
+											}
+										},
+									})}
 									className="sm:text-sm w-full bg-secondary-50 bg-opacity-70 border-1 focus:shadow-inner shadow-accent-300 focus:border-secondary-500 block p-2.5 h-8 px-3 py-1 shadow-secondary-300 rounded-md border border-secondary-300 text-sm font-medium leading-4 text-secondary-700 shadow-sm hover:bg-secondary-50 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-1"
+									defaultValue=""
 								>
 									<option
-										selected
 										disabled
 										value=""
 										className="text-opacity-50 text-secondary-700"
@@ -154,24 +147,36 @@ const CauseListForm = ({ onSubmit, initialValues, isPending }: CauseListFormProp
 										--Select Team--
 									</option>
 
-									{teams?.map((team) => (
-										<option key={team.id} value={team.value}>
-											{team.value}
+									{filteredTeams?.map((team) => (
+										<option key={team?.id} value={team?.id}>
+											{team?.name}
 										</option>
 									))}
 								</select>
+								{errors?.team && (
+									<div className="text-red-500 text-xs">
+										<span className="px-2">
+											<sup>*</sup>
+											{errors.team.message}
+										</span>
+									</div>
+								)}
 							</label>
 						</div>
-
 						<div className="md:col-span-3 col-span-6">
 							<label className="form-control w-full max-w-xs ">
 								<div className="block text-sm font-medium text-secondary-700">
-									<span className="label-text">Date</span>
+									<span className="label-text">
+										Date<sup className="text-xs text-red-500">*</sup>
+									</span>
 								</div>
 								<input
 									type="date"
 									placeholder="Date"
-									{...register('date', { required: true, valueAsDate: true })}
+									{...register('date', {
+										required: { value: true, message: 'Date is required' },
+										valueAsDate: true,
+									})}
 									className="sm:text-sm w-full bg-secondary-50 bg-opacity-70 border-1 focus:shadow-inner shadow-accent-300  focus:border-secondary-500 block p-2.5 h-8  px-3 py-1 shadow-secondary-300 rounded-md border border-secondary-300 text-sm font-medium leading-4 text-secondary-700 shadow-sm hover:bg-secondary-50 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-1"
 								/>
 								{errors?.date && (
@@ -185,13 +190,13 @@ const CauseListForm = ({ onSubmit, initialValues, isPending }: CauseListFormProp
 							</label>
 						</div>
 					</div>
-					<div className="rounded-sm space-y-2 flex flex-col shadow-2 shadow-secondary-700/20 p-3">
+					<div className="rounded-sm space-y-2 flex flex-col p-3">
 						<div className="w-full">
 							<button
 								onClick={() =>
 									append({
 										coram: '',
-										virtual: 0,
+										virtual: null,
 										url: '',
 										case: '',
 										advocates: [],
@@ -205,11 +210,11 @@ const CauseListForm = ({ onSubmit, initialValues, isPending }: CauseListFormProp
 							</button>
 						</div>
 						<div className="flex w-full flex-col space-y-4">
-							{fields?.map((field, index) => {
+							{fields.map((field, index) => {
 								return (
 									<div className="flex w-full" key={field.id}>
 										<div
-											className={`grid ${index > 0 ? 'w-11/12' : 'w-full'}  grid-cols-6  gap-2 rounded-sm border border-secondary-700/10 p-4`}
+											className={`grid ${index > 0 ? 'w-11/12' : 'w-full'}  grid-cols-6  gap-2 border rounded-md border-secondary-700/10 p-4`}
 										>
 											<div className="md:col-span-4 col-span-6">
 												<label className="form-control w-full max-w-xs ">
@@ -220,11 +225,25 @@ const CauseListForm = ({ onSubmit, initialValues, isPending }: CauseListFormProp
 														type="text"
 														placeholder="Coram"
 														{...register(
-															`cases.${index}.coram` as const
+															`cases.${index}.coram` as 'cases.0.coram',
+															{
+																required: {
+																	value: true,
+																	message: 'Please fill in Coram',
+																},
+															}
 														)}
 														className="sm:text-sm w-full bg-secondary-50 bg-opacity-70 border-1 focus:shadow-inner shadow-accent-300  focus:border-secondary-500 block p-2.5 h-8  px-3 py-1 shadow-secondary-300 rounded-md border border-secondary-300 text-sm font-medium leading-4 text-secondary-700 shadow-sm hover:bg-secondary-50 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-1"
 													/>
 												</label>
+												{errors?.cases?.[index]?.coram && (
+													<div className="text-red-500 text-xs">
+														<span className="px-2">
+															<sup>*</sup>
+															{errors?.cases?.[index]?.coram?.message}
+														</span>
+													</div>
+												)}
 											</div>
 											<div className="md:col-span-2 col-span-6">
 												<label className="form-control w-full max-w-xs ">
@@ -232,9 +251,9 @@ const CauseListForm = ({ onSubmit, initialValues, isPending }: CauseListFormProp
 														<span className="label-text">Virtual</span>
 													</div>
 													<select
-														id={`virtual-${index}`}
 														{...register(
-															`cases.${index}.virtual` as const
+															`cases.${index}.virtual` as 'cases.0.virtual',
+															{ valueAsNumber: true }
 														)}
 														className="sm:text-sm w-full bg-secondary-50 bg-opacity-70 border-1 focus:shadow-inner shadow-accent-300 focus:border-secondary-500 block p-2.5 h-8 px-3 py-1 shadow-secondary-300 rounded-md border border-secondary-300 text-sm font-medium leading-4 text-secondary-700 shadow-sm hover:bg-secondary-50 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-1"
 														defaultValue={``}
@@ -254,7 +273,9 @@ const CauseListForm = ({ onSubmit, initialValues, isPending }: CauseListFormProp
 													</select>
 												</label>
 											</div>
-											{watch(`cases.${index}.virtual`) === '1' && (
+											{watch(
+												`cases.${index}.virtual` as 'cases.0.virtual'
+											) === 1 && (
 												<div className="col-span-6 ">
 													<label className="form-control w-full max-w-xs ">
 														<div className="block text-sm font-medium text-secondary-700">
@@ -263,17 +284,15 @@ const CauseListForm = ({ onSubmit, initialValues, isPending }: CauseListFormProp
 															</span>
 														</div>
 														<input
-															id={`url-${index}`}
 															placeholder="url"
 															{...register(
-																`cases.${index}.url` as const
+																`cases.${index}.url` as 'cases.0.url'
 															)}
 															className="sm:text-sm w-full bg-secondary-50 bg-opacity-70 border-1 focus:shadow-inner shadow-accent-300  focus:border-secondary-500 block p-2.5 h-8  px-3 py-1 shadow-secondary-300 rounded-md border border-secondary-300 text-sm font-medium leading-4 text-secondary-700 shadow-sm hover:bg-secondary-50 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-1"
 														/>
 													</label>
 												</div>
 											)}
-
 											<div className="col-span-6">
 												<label className="form-control w-full max-w-xs ">
 													<div className="block text-sm font-medium text-secondary-700">
@@ -282,9 +301,8 @@ const CauseListForm = ({ onSubmit, initialValues, isPending }: CauseListFormProp
 														</span>
 													</div>
 													<textarea
-														id={`case-${index}`}
 														{...register(
-															`cases.${index}.case` as const
+															`cases.${index}.case` as 'cases.0.case'
 														)}
 														placeholder="Case No. & Parties"
 														className="sm:text-sm w-full bg-secondary-50 bg-opacity-70 border-1 focus:shadow-inner shadow-accent-300  focus:border-secondary-500 block p-2.5 h-20  px-3 py-1 shadow-secondary-300 rounded-md border border-secondary-300 text-sm font-medium leading-4 text-secondary-700 shadow-sm hover:bg-secondary-50 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-1"
@@ -300,9 +318,15 @@ const CauseListForm = ({ onSubmit, initialValues, isPending }: CauseListFormProp
 														Advocate(s) handling
 													</div>
 													<select
-														id={`advocates-${index}`}
 														{...register(
-															`cases.${index}.advocates` as const
+															`cases.${index}.advocates` as 'cases.0.advocates',
+															{
+																required: {
+																	value: true,
+																	message:
+																		'Select Advocate Handling',
+																},
+															}
 														)}
 														className="sm:text-sm w-full bg-secondary-50 bg-opacity-70 border-1 focus:shadow-inner shadow-accent-300 focus:border-secondary-500 block p-2.5 h-8 px-3 py-1 shadow-secondary-300 rounded-md border border-secondary-300 text-sm font-medium leading-4 text-secondary-700 shadow-sm hover:bg-secondary-50 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-1"
 														defaultValue={``}
@@ -313,7 +337,7 @@ const CauseListForm = ({ onSubmit, initialValues, isPending }: CauseListFormProp
 															value=""
 															className="text-opacity-50 text-secondary-700"
 														>
-															--Is Virtual?--
+															Advocates Handling
 														</option>
 														{filteredStaffTeam?.map((item) => (
 															<option key={item.id} value={item.id}>
@@ -321,42 +345,29 @@ const CauseListForm = ({ onSubmit, initialValues, isPending }: CauseListFormProp
 															</option>
 														))}
 													</select>
+													{errors?.cases?.[index]?.advocates && (
+														<div className="text-red-500 text-xs">
+															<span className="px-2">
+																<sup>*</sup>
+																{
+																	errors?.cases?.[index]
+																		?.advocates?.message
+																}
+															</span>
+														</div>
+													)}
 												</label>
 											</div>
 										</div>
-										{index > 0 && (
-											<div className="w-1/12 flex items-center justify-center">
-												<button
-													onClick={() => remove(index)}
-													className="bg-primary-50 border border-primary-600 text-primary-600 p-1 hover:text-primary-50 hover:bg-primary-600 rounded-md"
-													type="button"
-												>
-													<span className="sr-only">Delete</span>
-													<Icon icon="heroicons:trash" />
-												</button>
-											</div>
-										)}
 									</div>
 								);
 							})}
 						</div>
 					</div>
-					<div className="w-full flex items-center justify-center">
-						<button
-							type="submit"
-							className="bg-primary-600 text-primary-50 hover:bg-primary-600/70 flex items-center space-x-2 rounded-md text-sm p-1"
-						>
-							<span>Submit</span>
-						</button>
-					</div>
 				</form>
-				<DevTool control={control} />
-			</div>
-			<div className="md:col-span-3 col-span-6">
-				{/* <CauseListPreview formData={formData} /> */}
 			</div>
 		</div>
 	);
 };
 
-export default CauseListForm;
+export default CauseListForm2;

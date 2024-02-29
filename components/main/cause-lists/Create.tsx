@@ -1,5 +1,6 @@
 'use client';
 import CauseListForm from '@/components/forms/cause-list/CauseListForm';
+import CauseListForm2 from '@/components/forms/cause-list/CauseListForm2';
 import { CauseList } from '@/lib/types/master';
 import { useMutation } from '@tanstack/react-query';
 import axios, { AxiosError } from 'axios';
@@ -43,7 +44,8 @@ const Create = () => {
 	};
 	return (
 		<div>
-			<CauseListForm onSubmit={handleCreate} isPending={isPending} />
+			{/* <CauseListForm onSubmit={handleCreate} isPending={isPending} /> */}
+			<CauseListForm2 />
 		</div>
 	);
 };
