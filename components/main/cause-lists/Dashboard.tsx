@@ -39,22 +39,22 @@ const Dashboard = () => {
 		setSearchParam(searchInput);
 	};
 	return (
-		<div className="w-full bg-primary-50 space-y-3">
-			<div className="sticky z-20 md:flex items-center justify-end gap-2 bg-white top-2 hidden">
+		<div className="w-full space-y-3 bg-primary-50">
+			<div className="sticky top-2 z-20 hidden items-center justify-end gap-2 bg-white md:flex">
 				<div className="inline-flex items-center space-x-2 px-2">
 					<SearchInput onSearch={handleSearch} />
 					<Link
 						href={`${pathname}/create`}
-						className="p-2 border bg-secondary-300  rounded-md"
+						className="rounded-md border bg-secondary-300  p-2"
 					>
 						<Icon icon="heroicons:plus" />
 					</Link>
 				</div>
 			</div>
-			<div className="shadow overscroll-none ring-1 ring-black ring-opacity-5 md:rounded-md">
-				<div className="flex-col hidden lg:flex">
+			<div className="overscroll-none shadow ring-1 ring-black ring-opacity-5 md:rounded-md">
+				<div className="hidden flex-col lg:flex">
 					<table className="table-auto divide-y divide-primary-100">
-						<thead className="sticky z-10 top-12 bg-secondary-600 text-secondary-50">
+						<thead className="sticky top-12 z-10 bg-secondary-600 text-secondary-50">
 							<tr>
 								{columns?.map((column, index) => (
 									<th
@@ -67,12 +67,12 @@ const Dashboard = () => {
 								))}
 							</tr>
 						</thead>
-						<tbody className="bg-white divide-y divide-gray-200">
+						<tbody className="divide-y divide-gray-200 bg-white">
 							{!data ? (
 								<tr>
 									<td
 										colSpan={4}
-										className="px-3 py-2 text-base text-start whitespace-nowrap text-secondary-900"
+										className="whitespace-nowrap px-3 py-2 text-start text-base text-secondary-900"
 									>
 										No data matching Search
 									</td>
@@ -85,19 +85,19 @@ const Dashboard = () => {
 											index % 2 && index !== 0 ? 'bg-secondary-100/95' : ''
 										}`}
 									>
-										<td className="px-3 py-2 text-base text-start whitespace-nowrap text-secondary-900">
+										<td className="whitespace-nowrap px-3 py-2 text-start text-base text-secondary-900">
 											{format(item?.createdAt, 'MMM do, yyyy')}
 										</td>
-										<td className="px-3 py-2 text-base text-start whitespace-nowrap text-secondary-900">
+										<td className="whitespace-nowrap px-3 py-2 text-start text-base text-secondary-900">
 											{item?.team?.name}
 										</td>
-										<td className="px-3 py-2 text-base text-start whitespace-nowrap text-primary-500">
+										<td className="whitespace-nowrap px-3 py-2 text-start text-base text-primary-500">
 											<Link href={`${pathname}/${item?.id}`}>
 												Matters Appearing in the Cause List for{' '}
 												{format(item?.date, 'EEEE do MMMM yyyy')}
 											</Link>
 										</td>
-										<td className="px-3 py-2 text-sm text-start whitespace-nowrap text-secondary-500">
+										<td className="whitespace-nowrap px-3 py-2 text-start text-sm text-secondary-500">
 											{item?.createdBy?.name}
 										</td>
 									</tr>

@@ -185,24 +185,24 @@ export default function StaffCard() {
 	};
 	return (
 		<>
-			<div className="sticky z-20 flex items-center justify-between gap-2 bg-white top-2 md:hidden">
-				<h1 className="text-lg font-extralight text-accent-700"></h1>
+			<div className="sticky top-2 z-20 flex items-center justify-between gap-2 bg-white md:hidden">
+				<h1 className="text-accent-700 text-lg font-extralight"></h1>
 				<div className="inline-flex items-center space-x-2">
 					<SearchInput onSearch={handleSearch} />
 					<OptDropdown optBtn={headerOptBtnTxt} optionsList={headerOptionsList} />
 				</div>
 			</div>
-			<div className="shadow overscroll-none ring-1 ring-black ring-opacity-5 md:rounded-md">
+			<div className="overscroll-none shadow ring-1 ring-black ring-opacity-5 md:rounded-md">
 				<div className="flex flex-wrap gap-2 sm:flex-col md:flex-row">
 					{data?.data?.map((person, index) => (
 						<div
 							key={person?.id}
-							className="grid min-w-full grid-cols-12 p-3 bg-white border-t border-gray-200 rounded-md shadow-sm sm:px-6 sm:flex lg:hidden shadow-secondary-400"
+							className="grid min-w-full grid-cols-12 rounded-md border-t border-gray-200 bg-white p-3 shadow-sm shadow-secondary-400 sm:flex sm:px-6 lg:hidden"
 						>
 							<div className="col-span-4">
 								<div className="flex items-center gap-2">
 									{!person?.avatarUrl ? (
-										<span className="inline-flex items-center justify-center rounded-full h-7 w-7 bg-secondary-500">
+										<span className="inline-flex h-7 w-7 items-center justify-center rounded-full bg-secondary-500">
 											<span className="font-medium leading-none text-white">
 												{person?.name
 													.split(' ')
@@ -215,7 +215,7 @@ export default function StaffCard() {
 										<Image
 											height={200}
 											width={200}
-											className="rounded-full h-7 w-7"
+											className="h-7 w-7 rounded-full"
 											src={person?.avatarUrl}
 											alt="user avatar"
 										/>
@@ -223,35 +223,35 @@ export default function StaffCard() {
 								</div>
 							</div>
 							<div className="col-span-8">{person?.staffNo}</div>
-							<div className="col-span-4 text-sm font-semibold text-left text-secondary-600">
+							<div className="col-span-4 text-left text-sm font-semibold text-secondary-600">
 								Name :
 							</div>
 							<div className="col-span-8">{person?.name}</div>
-							<div className="col-span-4 text-sm font-semibold text-left text-secondary-600">
+							<div className="col-span-4 text-left text-sm font-semibold text-secondary-600">
 								Designation :
 							</div>
 							<div className="col-span-8">{person?.designation?.name}</div>
-							<div className="col-span-4 text-sm font-semibold text-left text-secondary-600">
+							<div className="col-span-4 text-left text-sm font-semibold text-secondary-600">
 								E-mail Address :
 							</div>
 							<div className="col-span-8 text-primary-500">{person?.email}</div>
-							<div className="col-span-4 text-sm font-semibold text-left text-secondary-600">
+							<div className="col-span-4 text-left text-sm font-semibold text-secondary-600">
 								Extension :
 							</div>
 							<div className="col-span-8">{person?.ext}</div>
-							<div className="col-span-4 text-sm font-semibold text-left text-secondary-600">
+							<div className="col-span-4 text-left text-sm font-semibold text-secondary-600">
 								Team :
 							</div>
 							<div className="col-span-8">{person?.team?.name}</div>
-							<div className="col-span-4 text-sm font-semibold text-left text-secondary-600">
+							<div className="col-span-4 text-left text-sm font-semibold text-secondary-600">
 								Status :
 							</div>
 							<div className="col-span-8">
 								<span
 									className={`inline-flex rounded-full  px-2 text-xs font-semibold leading-5 ${
 										person?.deletedAt === null
-											? 'text-green-800 bg-green-100'
-											: 'text-red-800 bg-red-100'
+											? 'bg-green-100 text-green-800'
+											: 'bg-red-100 text-red-800'
 									}`}
 								>
 									{person?.deletedAt === null ? 'Active' : 'Inactive'}
@@ -259,7 +259,7 @@ export default function StaffCard() {
 							</div>
 						</div>
 					))}
-					<div className="flex md:hidden w-full">
+					<div className="flex w-full md:hidden">
 						<Pagination
 							from={from}
 							to={to}

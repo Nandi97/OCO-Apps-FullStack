@@ -59,69 +59,69 @@ export const NewsFeedEmail: React.FC<Readonly<NewsFeedEmailTempProps>> = ({ data
 			</Head>
 			<Body style={main}>
 				<Container style={container}>
-					<section className="w-full px-6 py-8 mx-auto bg-primary-50 dark:bg-gray-900">
-						<main className="my-8 w-2/3 grid gap-4 grid-cols-12">
-							<div className="w-full col-span-12">
+					<section className="mx-auto w-full bg-primary-50 px-6 py-8 dark:bg-gray-900">
+						<main className="my-8 grid w-2/3 grid-cols-12 gap-4">
+							<div className="col-span-12 w-full">
 								<img
 									alt="news feed logo"
 									src="https://firebasestorage.googleapis.com/v0/b/oco-ngao.appspot.com/o/newsfeed.jpg?alt=media&token=c3161855-a841-4d23-a70d-cfeee5d89081"
 									className="w-full"
 								/>
 							</div>
-							<div className="w-full space-y-2 px-8 grid grid-cols-12 gap-4 col-span-12">
+							<div className="col-span-12 grid w-full grid-cols-12 gap-4 space-y-2 px-8">
 								{data?.articles?.map((article: any) => (
 									<div
 										key={article?.id}
-										className="shadow-slate-300 p-2 w-full shadow-sm grid grid-cols-12 col-span-12 space-y-2"
+										className="col-span-12 grid w-full grid-cols-12 space-y-2 p-2 shadow-sm shadow-slate-300"
 									>
-										<h1 className="text-primary-600 font-bold text-xl col-span-12">
+										<h1 className="col-span-12 text-xl font-bold text-primary-600">
 											{article?.title}
 										</h1>
-										<p className="text-base col-span-12 text-justify">
+										<p className="col-span-12 text-justify text-base">
 											{article?.content}
 										</p>
 										<a
 											href={article?.url}
-											className="text-blue-500 col-span-12 underline"
+											className="col-span-12 text-blue-500 underline"
 										>
 											Read more...
 										</a>
-										<span className="font-semibold col-span-12">
+										<span className="col-span-12 font-semibold">
 											{article?.tags}
 										</span>
 									</div>
 								))}
 							</div>
-							<div className="bg-secondary-700 w-full col-span-12 py-4 flex justify-center items-center">
-								<h1 className="uppercase font-bold text-4xl text-secondary-50">
+							<div className="col-span-12 flex w-full items-center justify-center bg-secondary-700 py-4">
+								<h1 className="text-4xl font-bold uppercase text-secondary-50">
 									Digital Newspapers
 								</h1>
 							</div>
-							<div className="w-full  col-span-12 grid grid-cols-12 gap-4 space-y-1">
-								<p className="w-full col-span-12">
+							<div className="col-span-12  grid w-full grid-cols-12 gap-4 space-y-1">
+								<p className="col-span-12 w-full">
 									To access digital newspapers, click on any of the links below
 									and insert the username & password as follows:
 								</p>
-								<div className="flex space-x-1 col-span-12 w-full">
+								<div className="col-span-12 flex w-full space-x-1">
 									<span className="font-semibold">Username:</span>
-									<span className="underline text-primary-600">
+									<span className="text-primary-600 underline">
 										admin@oraro.co.ke
 									</span>
 									<span>|</span>
 									<span className="font-semibold">Password:</span>
 									<span className="text-primary-600">Gazeti@Oraro</span>
 								</div>
-								<ul className="underline text-primary-600 col-span-12 list-inside list-disc w-full">
+								<ul className="col-span-12 w-full list-inside list-disc text-primary-600 underline">
 									<li>Daily Nation </li>
 									<li>Business Daily </li>
 									<li>The Standard </li>
 								</ul>
 
-								<h2 className="underline font-semibold w-full col-span-12">
+								<h2 className="col-span-12 w-full font-semibold underline">
 									Note:
 								</h2>
 
-								<ul className="list-inside list-disc w-full col-span-12">
+								<ul className="col-span-12 w-full list-inside list-disc">
 									<li>
 										At any time, only <strong>3 users</strong> can be logged in
 										at the same time. As such, kindly ensure that you always log

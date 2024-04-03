@@ -25,23 +25,23 @@ export default async function Dashboard() {
 	for (let i = 0; i < 4; i++) {
 		divs.push(
 			<>
-				<div className="col-span-4 flex justify-center items-center">
+				<div className="col-span-4 flex items-center justify-center">
 					{/* <UserPanel sessionData={session} /> */}
 				</div>
-				<div className="col-span-8 flex justify-center items-center">
+				<div className="col-span-8 flex items-center justify-center">
 					{/* <UserPanel sessionData={session} /> */}
 				</div>
-				<div className="col-span-8 flex justify-center items-center">
+				<div className="col-span-8 flex items-center justify-center">
 					{/* <UserPanel sessionData={session} /> */}
 				</div>
-				<div className="col-span-4 flex justify-center items-center">
+				<div className="col-span-4 flex items-center justify-center">
 					{/* <UserPanel sessionData={session} /> */}
 				</div>
 			</>
 		);
 	}
 	return (
-		<div className=" bg-left-top bg-contain bg-no-repeat w-full px-40 mx-auto">
+		<div className=" mx-auto w-full bg-contain bg-left-top bg-no-repeat px-40">
 			<div className="grid grid-cols-12 gap-8">{divs}</div>
 		</div>
 	);

@@ -33,7 +33,7 @@ export function DataTablePagination<TData>({ table }: DataTablePaginationProps<T
 							table.setPageSize(Number(value));
 						}}
 					>
-						<SelectTrigger className="h-8 w-[70px] border-secondary-300 border-2">
+						<SelectTrigger className="h-8 w-[70px] border-2 border-secondary-300">
 							<SelectValue placeholder={table.getState().pagination.pageSize} />
 						</SelectTrigger>
 						<SelectContent side="top" className="bg-primary-50">
@@ -50,7 +50,7 @@ export function DataTablePagination<TData>({ table }: DataTablePaginationProps<T
 					</Select>
 				</div>
 
-				<div className="items-center isolate inline-flex -space-x-px rounded-md shadow-sm">
+				<div className="isolate inline-flex items-center -space-x-px rounded-md shadow-sm">
 					<Button
 						variant="outline"
 						className="relative inline-flex items-center px-4 py-2 text-sm font-semibold text-secondary-900 ring-1 ring-inset ring-secondary-300 hover:bg-gray-50 focus:z-20 focus:outline-offset-0"

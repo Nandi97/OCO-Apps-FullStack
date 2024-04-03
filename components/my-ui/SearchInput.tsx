@@ -14,19 +14,19 @@ export default function SearchInput({ onSearch }: any) {
 
 	return (
 		<div>
-			<label className="h-8 w-full md:w-72 relative inline-flex items-center">
+			<label className="relative inline-flex h-8 w-full items-center md:w-72">
 				<input
 					type="search"
 					name="search"
 					id="search"
 					placeholder="Search..."
-					className="h-full w-full bg-secondary-50 bg-opacity-70 border-1 border-secondary-300 shadow-inner shadow-accent-300 text-xs pl-8 focus:ring-secondary-500 border text-secondary-900 rounded-lg  focus:border-blue-500 block p-2.5"
+					className="border-1 shadow-accent-300 block h-full w-full rounded-lg border border-secondary-300 bg-secondary-50 bg-opacity-70 p-2.5 pl-8 text-xs text-secondary-900  shadow-inner focus:border-blue-500 focus:ring-secondary-500"
 					value={searchInput}
 					onChange={(e) => setSearchInput(e.target.value)}
 				/>
 				<Icon
 					icon="heroicons:magnifying-glass"
-					className="absolute left-2 top-2 text-md text-zinc-500"
+					className="text-md absolute left-2 top-2 text-zinc-500"
 				/>
 			</label>
 		</div>

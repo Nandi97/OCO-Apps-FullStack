@@ -162,9 +162,9 @@ const LeaveForm2 = ({ onSubmit, initialValues, isLoading }: LeaveFormProps) => {
 	};
 	renderCount++;
 	return (
-		<div className="grid md:grid-cols-12 grid-cols-6 gap-2 ">
+		<div className="grid grid-cols-6 gap-2 md:grid-cols-12 ">
 			<form
-				className="col-span-6 bg-primary-50 rounded"
+				className="col-span-6 rounded bg-primary-50"
 				onSubmit={handleSubmit(handleSubmitForm)}
 			>
 				<h1>Youtube Form ({renderCount / 2})</h1>
@@ -181,16 +181,16 @@ const LeaveForm2 = ({ onSubmit, initialValues, isLoading }: LeaveFormProps) => {
 							onClick={() => handleContinueClick('one')}
 						>
 							<div className="flex items-center space-x-3">
-								<div className="bg-secondary-200 text-white flex items-center justify-center text-xs p-2 h-4 w-4 rounded-full ">
+								<div className="flex h-4 w-4 items-center justify-center rounded-full bg-secondary-200 p-2 text-xs text-white ">
 									1
 								</div>
 								<span>Leave Details</span>
 							</div>
 						</AccordionTrigger>
 						<AccordionContent>
-							<div className="flex flex-col border rounded-b-lg">
-								<div className="grid grid-cols-6 md:grid-cols-12 gap-4 p-2">
-									<div className="col-span-6 md:col-span-8 space-y-1">
+							<div className="flex flex-col rounded-b-lg border">
+								<div className="grid grid-cols-6 gap-4 p-2 md:grid-cols-12">
+									<div className="col-span-6 space-y-1 md:col-span-8">
 										<label
 											htmlFor="leaveTypeId"
 											className="block text-xs font-medium text-secondary-700"
@@ -205,13 +205,13 @@ const LeaveForm2 = ({ onSubmit, initialValues, isLoading }: LeaveFormProps) => {
 													message: 'Please select a leave type',
 												},
 											})}
-											className="sm:text-sm w-full bg-secondary-50 bg-opacity-70 border-1 focus:shadow-inner shadow-accent-300  focus:border-secondary-500 block p-2.5 h-8  px-3 py-1 shadow-secondary-300 rounded-md border border-secondary-300 text-sm font-medium leading-4 text-secondary-700 shadow-sm hover:bg-secondary-50 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-1"
+											className="border-1 shadow-accent-300 block h-8 w-full rounded-md border  border-secondary-300 bg-secondary-50 bg-opacity-70 p-2.5  px-3 py-1 text-sm font-medium leading-4 text-secondary-700 shadow-sm shadow-secondary-300 hover:bg-secondary-50 focus:border-secondary-500 focus:shadow-inner focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-1 sm:text-sm"
 											defaultValue={``}
 										>
 											<option
 												disabled
 												value=""
-												className="text-opacity-50 text-secondary-700"
+												className="text-secondary-700 text-opacity-50"
 											>
 												--Select Leave Type--
 											</option>
@@ -262,7 +262,7 @@ const LeaveForm2 = ({ onSubmit, initialValues, isLoading }: LeaveFormProps) => {
 													message: `Minimum leave days is ${authStaff?.leaveBalance?.balanceCarryForward}`,
 												},
 											})}
-											className="sm:text-sm w-full bg-secondary-50 bg-opacity-70 border-1 focus:shadow-inner shadow-accent-300  focus:border-secondary-500 block p-2.5 h-8  px-3 py-1 shadow-secondary-300 rounded-md border border-secondary-300 text-sm font-medium leading-4 text-secondary-700 shadow-sm hover:bg-secondary-50 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-1"
+											className="border-1 shadow-accent-300 block h-8 w-full rounded-md border  border-secondary-300 bg-secondary-50 bg-opacity-70 p-2.5  px-3 py-1 text-sm font-medium leading-4 text-secondary-700 shadow-sm shadow-secondary-300 hover:bg-secondary-50 focus:border-secondary-500 focus:shadow-inner focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-1 sm:text-sm"
 										/>
 										{errors?.duration &&
 											(accValue !== 'one' ? (
@@ -296,7 +296,7 @@ const LeaveForm2 = ({ onSubmit, initialValues, isLoading }: LeaveFormProps) => {
 												valueAsDate: true,
 											})}
 											disabled={!duration || duration < 1 ? true : false}
-											className="sm:text-sm w-full bg-secondary-50 bg-opacity-70 border-1 focus:shadow-inner shadow-accent-300  focus:border-secondary-500 block p-2.5 h-8  px-3 py-1 shadow-secondary-300 rounded-md border border-secondary-300 text-sm font-medium leading-4 text-secondary-700 shadow-sm hover:bg-secondary-50 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-1"
+											className="border-1 shadow-accent-300 block h-8 w-full rounded-md border  border-secondary-300 bg-secondary-50 bg-opacity-70 p-2.5  px-3 py-1 text-sm font-medium leading-4 text-secondary-700 shadow-sm shadow-secondary-300 hover:bg-secondary-50 focus:border-secondary-500 focus:shadow-inner focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-1 sm:text-sm"
 										/>
 										{errors?.startDate &&
 											(accValue !== 'one' ? (
@@ -328,7 +328,7 @@ const LeaveForm2 = ({ onSubmit, initialValues, isLoading }: LeaveFormProps) => {
 												valueAsDate: true,
 											})}
 											disabled
-											className="sm:text-sm w-full bg-secondary-50 bg-opacity-70 border-1 focus:shadow-inner shadow-accent-300  focus:border-secondary-500 block p-2.5 h-8  px-3 py-1 shadow-secondary-300 rounded-md border border-secondary-300 text-sm font-medium leading-4 text-secondary-700 shadow-sm hover:bg-secondary-50 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-1"
+											className="border-1 shadow-accent-300 block h-8 w-full rounded-md border  border-secondary-300 bg-secondary-50 bg-opacity-70 p-2.5  px-3 py-1 text-sm font-medium leading-4 text-secondary-700 shadow-sm shadow-secondary-300 hover:bg-secondary-50 focus:border-secondary-500 focus:shadow-inner focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-1 sm:text-sm"
 										/>
 									</div>
 									<div className="col-span-6 space-y-1">
@@ -347,14 +347,14 @@ const LeaveForm2 = ({ onSubmit, initialValues, isLoading }: LeaveFormProps) => {
 												valueAsDate: true,
 											})}
 											disabled
-											className="sm:text-sm w-full bg-secondary-50 bg-opacity-70 border-1 focus:shadow-inner shadow-accent-300  focus:border-secondary-500 block p-2.5 h-8  px-3 py-1 shadow-secondary-300 rounded-md border border-secondary-300 text-sm font-medium leading-4 text-secondary-700 shadow-sm hover:bg-secondary-50 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-1"
+											className="border-1 shadow-accent-300 block h-8 w-full rounded-md border  border-secondary-300 bg-secondary-50 bg-opacity-70 p-2.5  px-3 py-1 text-sm font-medium leading-4 text-secondary-700 shadow-sm shadow-secondary-300 hover:bg-secondary-50 focus:border-secondary-500 focus:shadow-inner focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-1 sm:text-sm"
 										/>
 									</div>
 								</div>
-								<div className="w-full flex items-center py-2 justify-center">
+								<div className="flex w-full items-center justify-center py-2">
 									<button
 										type="button"
-										className="border rounded-md bg-secondary-600 text-white hover:bg-secondary-600/90 p-1"
+										className="rounded-md border bg-secondary-600 p-1 text-white hover:bg-secondary-600/90"
 										onClick={() => handleContinueClick('two')}
 									>
 										Continue
@@ -369,15 +369,15 @@ const LeaveForm2 = ({ onSubmit, initialValues, isLoading }: LeaveFormProps) => {
 							onClick={() => handleContinueClick('two')}
 						>
 							<div className="flex items-center space-x-3">
-								<div className="bg-secondary-200 text-white flex items-center justify-center text-xs p-2 h-4 w-4 rounded-full ">
+								<div className="flex h-4 w-4 items-center justify-center rounded-full bg-secondary-200 p-2 text-xs text-white ">
 									2
 								</div>
 								<span>Approval</span>
 							</div>
 						</AccordionTrigger>
 						<AccordionContent>
-							<div className="flex flex-col border rounded-b-lg">
-								<div className="grid grid-cols-6 md:grid-cols-12 gap-4 p-2">
+							<div className="flex flex-col rounded-b-lg border">
+								<div className="grid grid-cols-6 gap-4 p-2 md:grid-cols-12">
 									<Combobox
 										as="div"
 										value={selectedPerson}
@@ -389,7 +389,7 @@ const LeaveForm2 = ({ onSubmit, initialValues, isLoading }: LeaveFormProps) => {
 										</Combobox.Label>
 										<div className="relative mt-1">
 											<Combobox.Input
-												className="sm:text-sm w-full bg-secondary-50 bg-opacity-70 border-1 focus:shadow-inner shadow-accent-300  focus:border-secondary-500 block p-2.5 h-8  px-3 py-1 shadow-secondary-300 rounded-md border border-secondary-300 text-sm font-medium leading-4 text-secondary-700 shadow-sm hover:bg-secondary-50 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-1"
+												className="border-1 shadow-accent-300 block h-8 w-full rounded-md border  border-secondary-300 bg-secondary-50 bg-opacity-70 p-2.5  px-3 py-1 text-sm font-medium leading-4 text-secondary-700 shadow-sm shadow-secondary-300 hover:bg-secondary-50 focus:border-secondary-500 focus:shadow-inner focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-1 sm:text-sm"
 												onChange={(event) => setQuery(event.target.value)}
 												displayValue={(staff: any) => staff?.name}
 											/>
@@ -477,13 +477,13 @@ const LeaveForm2 = ({ onSubmit, initialValues, isLoading }: LeaveFormProps) => {
 													message: 'Please Select the final Approver',
 												},
 											})}
-											className="sm:text-sm w-full bg-secondary-50 bg-opacity-70 border-1 focus:shadow-inner shadow-accent-300  focus:border-secondary-500 block p-2.5 h-8  px-3 py-1 shadow-secondary-300 rounded-md border border-secondary-300 text-sm font-medium leading-4 text-secondary-700 shadow-sm hover:bg-secondary-50 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-1"
+											className="border-1 shadow-accent-300 block h-8 w-full rounded-md border  border-secondary-300 bg-secondary-50 bg-opacity-70 p-2.5  px-3 py-1 text-sm font-medium leading-4 text-secondary-700 shadow-sm shadow-secondary-300 hover:bg-secondary-50 focus:border-secondary-500 focus:shadow-inner focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-1 sm:text-sm"
 											defaultValue={``}
 										>
 											<option
 												disabled
 												value=""
-												className="text-opacity-50 text-secondary-700"
+												className="text-secondary-700 text-opacity-50"
 											>
 												--Select Final Approver--
 											</option>
@@ -508,10 +508,10 @@ const LeaveForm2 = ({ onSubmit, initialValues, isLoading }: LeaveFormProps) => {
 											))}
 									</div>
 								</div>
-								<div className="w-full flex items-center py-2 justify-center">
+								<div className="flex w-full items-center justify-center py-2">
 									<button
 										type="submit"
-										className="border rounded-md bg-secondary-600 text-white hover:bg-secondary-600/90 p-1"
+										className="rounded-md border bg-secondary-600 p-1 text-white hover:bg-secondary-600/90"
 									>
 										Save
 									</button>
@@ -522,7 +522,7 @@ const LeaveForm2 = ({ onSubmit, initialValues, isLoading }: LeaveFormProps) => {
 				</Accordion>
 			</form>
 			<DevTool control={control} />
-			<div className="col-span-6 bg-primary-50 rounded">
+			<div className="col-span-6 rounded bg-primary-50">
 				<LeaveApplicationPrev prevVal={watch()} />
 			</div>
 		</div>

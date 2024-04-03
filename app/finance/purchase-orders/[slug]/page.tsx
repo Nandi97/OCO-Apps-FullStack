@@ -26,33 +26,33 @@ export default function PurchaseOrder(url: URL) {
 	// console.log('Purchase order:', purchaseOrder);
 	return (
 		<div className="space-y-2 bg-white">
-			<div className="sticky z-20 flex items-center gap-2 bg-white top-2">
-				<h1 className="text-lg font-extralight text-accent-700">
+			<div className="sticky top-2 z-20 flex items-center gap-2 bg-white">
+				<h1 className="text-accent-700 text-lg font-extralight">
 					<span className="font-medium">PO# :</span> {purchaseOrder?.poNumber}
 				</h1>
 			</div>
-			<div className="w-full flex justify-center p-2">
-				<div className="w-full flex flex-col border rounded shadow-sm p-2 max-w-3xl">
-					<div className="w-full flex items-center justify-between">
+			<div className="flex w-full justify-center p-2">
+				<div className="flex w-full max-w-3xl flex-col rounded border p-2 shadow-sm">
+					<div className="flex w-full items-center justify-between">
 						<Image
 							src={OCO_AB_David_Logo}
 							alt="OCO AB David Logo"
 							width={356}
 							height={205}
-							className="h-20 object-contain w-full"
+							className="h-20 w-full object-contain"
 						/>
 						{purchaseOrder?.approvedOn === null ? (
 							<div className="flex items-center divide-x pr-2">
 								<Link
 									href={`${pathname}/edit`}
-									className="flex text-sm items-center p-0.5 rounded-l text-primary-600 space-x-2 font-medium border border-secondary-300 hover:bg-primary-600/90 hover:text-primary-50 hover:border-primary-600 shadow-sm"
+									className="flex items-center space-x-2 rounded-l border border-secondary-300 p-0.5 text-sm font-medium text-primary-600 shadow-sm hover:border-primary-600 hover:bg-primary-600/90 hover:text-primary-50"
 								>
 									<Icon icon="heroicons:pencil-square" />
 									<span>EDIT</span>
 								</Link>
 								<button
 									type="button"
-									className="flex text-sm items-center p-0.5 rounded-r text-primary-600  space-x-2 font-medium border border-secondary-300 hover:bg-primary-600/90 hover:text-primary-50 hover:border-primary-600 shadow-sm"
+									className="flex items-center space-x-2 rounded-r border border-secondary-300  p-0.5 text-sm font-medium text-primary-600 shadow-sm hover:border-primary-600 hover:bg-primary-600/90 hover:text-primary-50"
 								>
 									<Icon icon="heroicons:arrow-down-tray" />
 									<span>PDF</span>
@@ -62,7 +62,7 @@ export default function PurchaseOrder(url: URL) {
 							<div className="flex items-center divide-x pr-2">
 								<button
 									type="button"
-									className="flex text-sm items-center p-0.5 rounded text-primary-600  space-x-2 font-medium border border-secondary-300 hover:bg-primary-600/90 hover:text-primary-50 hover:border-primary-600 shadow-sm"
+									className="flex items-center space-x-2 rounded border border-secondary-300  p-0.5 text-sm font-medium text-primary-600 shadow-sm hover:border-primary-600 hover:bg-primary-600/90 hover:text-primary-50"
 								>
 									<Icon icon="heroicons:arrow-down-tray" />
 									<span>PDF</span>
@@ -76,23 +76,23 @@ export default function PurchaseOrder(url: URL) {
 							<div className="col-span-5"></div>
 							<div className="col-span-2"></div>
 							<div className="col-span-5">
-								<table className="table-auto w-full text-sm text-left text-secondary-500">
-									<thead className="text-xs uppercase  bg-secondary-50 text-primary-600">
+								<table className="w-full table-auto text-left text-sm text-secondary-500">
+									<thead className="bg-secondary-50 text-xs  uppercase text-primary-600">
 										<tr>
 											<th
 												scope="col"
 												colSpan={3}
-												className=" p-1 w-full text-center"
+												className=" w-full p-1 text-center"
 											>
 												PURCHASE ORDER
 											</th>
 										</tr>
 									</thead>
-									<tbody className="z-0 bg-white border-secondary-300 border divide-y divide-secondary-200">
-										<tr className="bg-white border-secondary-300 border-b">
+									<tbody className="z-0 divide-y divide-secondary-200 border border-secondary-300 bg-white">
+										<tr className="border-b border-secondary-300 bg-white">
 											<th
 												scope="row"
-												className="p-2 border-secondary-300 border-r font-medium text-secondary-900 whitespace-nowrap "
+												className="whitespace-nowrap border-r border-secondary-300 p-2 font-medium text-secondary-900 "
 											>
 												Date
 											</th>
@@ -105,10 +105,10 @@ export default function PurchaseOrder(url: URL) {
 													: ''}
 											</td>
 										</tr>
-										<tr className="bg-white border-secondary-300 border-b">
+										<tr className="border-b border-secondary-300 bg-white">
 											<th
 												scope="row"
-												className="p-2 border-secondary-300 border-r font-medium text-secondary-900 whitespace-nowrap "
+												className="whitespace-nowrap border-r border-secondary-300 p-2 font-medium text-secondary-900 "
 											>
 												PO #
 											</th>
@@ -123,15 +123,15 @@ export default function PurchaseOrder(url: URL) {
 						{/* SECTION B */}
 						<div className="grid grid-cols-12 gap-2">
 							<div className="col-span-5">
-								<table className="table-auto w-full text-sm text-left text-secondary-500 border-secondary-300 border">
-									<thead className="text-xs uppercase  bg-secondary-50 text-primary-600 border-secondary-300 border-b">
+								<table className="w-full table-auto border border-secondary-300 text-left text-sm text-secondary-500">
+									<thead className="border-b border-secondary-300  bg-secondary-50 text-xs uppercase text-primary-600">
 										<tr>
-											<th scope="col" colSpan={3} className="p-1 w-full">
+											<th scope="col" colSpan={3} className="w-full p-1">
 												Vendor
 											</th>
 										</tr>
 									</thead>
-									<tbody className="z-0 bg-white divide-secondary-200">
+									<tbody className="z-0 divide-secondary-200 bg-white">
 										<tr className="bg-white ">
 											<td colSpan={3} className="px-2 ">
 												{purchaseOrder?.name}
@@ -145,10 +145,10 @@ export default function PurchaseOrder(url: URL) {
 										<tr className="bg-white ">
 											<th
 												scope="row"
-												className="px-2 font-medium text-secondary-900 whitespace-nowrap "
+												className="whitespace-nowrap px-2 font-medium text-secondary-900 "
 											>
 												P.O. Box{' '}
-												<span className="text-sm text-secondary-500 font-normal">
+												<span className="text-sm font-normal text-secondary-500">
 													{purchaseOrder?.address}-
 													{purchaseOrder?.postalCode}
 												</span>
@@ -162,10 +162,10 @@ export default function PurchaseOrder(url: URL) {
 										<tr className="bg-white ">
 											<th
 												scope="row"
-												className="px-2 font-medium text-secondary-900 whitespace-nowrap "
+												className="whitespace-nowrap px-2 font-medium text-secondary-900 "
 											>
 												Phone:{' '}
-												<span className="text-sm text-secondary-500 font-normal px-1">
+												<span className="px-1 text-sm font-normal text-secondary-500">
 													{purchaseOrder?.phoneNumber}
 												</span>
 											</th>
@@ -173,10 +173,10 @@ export default function PurchaseOrder(url: URL) {
 										<tr className="bg-white ">
 											<th
 												scope="row"
-												className="px-2 font-medium text-secondary-900 whitespace-nowrap "
+												className="whitespace-nowrap px-2 font-medium text-secondary-900 "
 											>
 												Email:
-												<span className="text-sm text-primary-500 font-normal px-1">
+												<span className="px-1 text-sm font-normal text-primary-500">
 													{purchaseOrder?.email}
 												</span>
 											</th>
@@ -186,15 +186,15 @@ export default function PurchaseOrder(url: URL) {
 							</div>
 							<div className="col-span-2"></div>
 							<div className="col-span-5">
-								<table className="w-full table-auto text-sm text-left text-secondary-500 border-secondary-300 border">
-									<thead className="text-xs uppercase  bg-secondary-50 text-primary-600 border-secondary-300 border-b">
+								<table className="w-full table-auto border border-secondary-300 text-left text-sm text-secondary-500">
+									<thead className="border-b border-secondary-300  bg-secondary-50 text-xs uppercase text-primary-600">
 										<tr>
-											<th scope="col" colSpan={3} className="p-1 w-full">
+											<th scope="col" colSpan={3} className="w-full p-1">
 												Ship To
 											</th>
 										</tr>
 									</thead>
-									<tbody className="z-0 bg-white divide-secondary-200">
+									<tbody className="z-0 divide-secondary-200 bg-white">
 										<tr className="bg-white ">
 											<td colSpan={3} className="px-2 ">
 												Oraro & Company Advocates
@@ -208,10 +208,10 @@ export default function PurchaseOrder(url: URL) {
 										<tr className="bg-white ">
 											<th
 												scope="row"
-												className="px-2 font-medium text-secondary-900 whitespace-nowrap "
+												className="whitespace-nowrap px-2 font-medium text-secondary-900 "
 											>
 												P.O. Box{' '}
-												<span className="text-sm text-secondary-500 font-normal">
+												<span className="text-sm font-normal text-secondary-500">
 													51236-00200
 												</span>
 											</th>
@@ -224,10 +224,10 @@ export default function PurchaseOrder(url: URL) {
 										<tr className="bg-white ">
 											<th
 												scope="row"
-												className="px-2 font-medium text-secondary-900 whitespace-nowrap "
+												className="whitespace-nowrap px-2 font-medium text-secondary-900 "
 											>
 												Phone:{' '}
-												<span className="text-sm text-secondary-500 font-normal px-1">
+												<span className="px-1 text-sm font-normal text-secondary-500">
 													+254 709 250 000
 												</span>
 											</th>
@@ -235,10 +235,10 @@ export default function PurchaseOrder(url: URL) {
 										<tr className="bg-white ">
 											<th
 												scope="row"
-												className="px-2 font-medium text-secondary-900 whitespace-nowrap "
+												className="whitespace-nowrap px-2 font-medium text-secondary-900 "
 											>
 												Email:
-												<span className="text-sm text-primary-500 font-normal px-1">
+												<span className="px-1 text-sm font-normal text-primary-500">
 													legal@oraro.co.ke
 												</span>
 											</th>
@@ -249,48 +249,48 @@ export default function PurchaseOrder(url: URL) {
 						</div>
 						{/* SECTION C */}
 						<div className="w-full">
-							<table className="w-full table-auto text-sm text-left text-secondary-500 border-secondary-300 border">
-								<thead className="text-xs uppercase  bg-secondary-50 text-primary-600 border-secondary-300 border-b border-t">
+							<table className="w-full table-auto border border-secondary-300 text-left text-sm text-secondary-500">
+								<thead className="border-b border-t  border-secondary-300 bg-secondary-50 text-xs uppercase text-primary-600">
 									<tr className="divide-y">
 										<th
 											scope="col"
-											className="p-1 whitespace-normal border-secondary-300 border-r text-left"
+											className="whitespace-normal border-r border-secondary-300 p-1 text-left"
 										>
 											Description
 										</th>
 										<th
 											scope="col"
-											className="p-1 border-secondary-300 border-r text-right"
+											className="border-r border-secondary-300 p-1 text-right"
 										>
 											Price
 										</th>
 										<th
 											scope="col"
-											className="p-1 w-12 border-secondary-300 border-r text-center"
+											className="w-12 border-r border-secondary-300 p-1 text-center"
 										>
 											Qty
 										</th>
 										<th
 											scope="col"
-											className="p-1 border-secondary-300 border text-right"
+											className="border border-secondary-300 p-1 text-right"
 										>
 											Amount
 										</th>
 									</tr>
 								</thead>
-								<tbody className="z-0 bg-white divide-secondary-200">
+								<tbody className="z-0 divide-secondary-200 bg-white">
 									{purchaseOrder?.purchaseItems?.map((item, index) => (
 										<tr
 											key={index}
-											className="bg-white border-secondary-300 border-b text-left"
+											className="border-b border-secondary-300 bg-white text-left"
 										>
-											<td className="px-2 border-secondary-300 border-r">
+											<td className="border-r border-secondary-300 px-2">
 												{item?.description}
 											</td>
-											<td className="px-2 border-secondary-300 border-r text-right">
+											<td className="border-r border-secondary-300 px-2 text-right">
 												{item?.cost}
 											</td>
-											<td className="px-2 border-secondary-300 border-r text-center">
+											<td className="border-r border-secondary-300 px-2 text-center">
 												{item?.quantity}
 											</td>
 											<td className="px-2 text-right">
@@ -300,10 +300,10 @@ export default function PurchaseOrder(url: URL) {
 									))}
 									{purchaseOrder?.vatable === true ? (
 										<>
-											<tr className="border-secondary-300 border-b">
+											<tr className="border-b border-secondary-300">
 												<td
 													colSpan={3}
-													className="px-2 border-secondary-300 border-r text-right font-medium  text-secondary-600 uppercase"
+													className="border-r border-secondary-300 px-2 text-right font-medium  uppercase text-secondary-600"
 												>
 													SubTotal
 												</td>
@@ -316,10 +316,10 @@ export default function PurchaseOrder(url: URL) {
 													)}
 												</td>
 											</tr>
-											<tr className="border-secondary-300 border-b">
+											<tr className="border-b border-secondary-300">
 												<td
 													colSpan={3}
-													className="px-2 border-secondary-300 border-r text-right font-base  text-secondary-600 uppercase"
+													className="font-base border-r border-secondary-300 px-2 text-right  uppercase text-secondary-600"
 												>
 													VAT @ 16%
 												</td>
@@ -335,7 +335,7 @@ export default function PurchaseOrder(url: URL) {
 											<tr>
 												<td
 													colSpan={3}
-													className="px-2 border-secondary-300 border-r text-right font-medium  text-primary-600 uppercase"
+													className="border-r border-secondary-300 px-2 text-right font-medium  uppercase text-primary-600"
 												>
 													Total
 												</td>
@@ -353,7 +353,7 @@ export default function PurchaseOrder(url: URL) {
 										<tr>
 											<td
 												colSpan={3}
-												className="px-2 border-secondary-300 border-r text-right font-medium  text-primary-600 uppercase"
+												className="border-r border-secondary-300 px-2 text-right font-medium  uppercase text-primary-600"
 											>
 												Total
 											</td>
@@ -372,21 +372,21 @@ export default function PurchaseOrder(url: URL) {
 						</div>
 						<div className="grid grid-cols-12 gap-6">
 							<div className="col-span-3">
-								<table className="table-auto w-full text-sm text-left text-secondary-500 border-secondary-300 border">
-									<thead className="text-xs uppercase  bg-secondary-50 text-primary-600">
+								<table className="w-full table-auto border border-secondary-300 text-left text-sm text-secondary-500">
+									<thead className="bg-secondary-50 text-xs  uppercase text-primary-600">
 										<tr>
 											<th
 												scope="col"
 												colSpan={2}
-												className=" p-1 w-full text-center"
+												className=" w-full p-1 text-center"
 											>
 												Requested By:
 											</th>
 										</tr>
 									</thead>
-									<tbody className="z-0 bg-white border-secondary-300 border divide-y divide-secondary-200">
-										<tr className="bg-white border-secondary-300 border-b">
-											<td colSpan={2} className="p-2 flex flex-col text-sm">
+									<tbody className="z-0 divide-y divide-secondary-200 border border-secondary-300 bg-white">
+										<tr className="border-b border-secondary-300 bg-white">
+											<td colSpan={2} className="flex flex-col p-2 text-sm">
 												<span>{purchaseOrder?.creator?.name}</span>
 												<span>
 													<span className="font-semibold">ON:</span>{' '}
@@ -403,21 +403,21 @@ export default function PurchaseOrder(url: URL) {
 								</table>
 							</div>
 							<div className="col-span-3">
-								<table className="table-auto w-full text-sm text-left text-secondary-500 border-secondary-300 border">
-									<thead className="text-xs uppercase  bg-secondary-50 text-primary-600">
+								<table className="w-full table-auto border border-secondary-300 text-left text-sm text-secondary-500">
+									<thead className="bg-secondary-50 text-xs  uppercase text-primary-600">
 										<tr>
 											<th
 												scope="col"
 												colSpan={2}
-												className=" p-1 w-full text-center"
+												className=" w-full p-1 text-center"
 											>
 												Authorized By:
 											</th>
 										</tr>
 									</thead>
-									<tbody className="z-0 bg-white border-secondary-300 border divide-y divide-secondary-200">
-										<tr className="bg-white border-secondary-300 border-b">
-											<td colSpan={2} className="p-2 flex flex-col text-sm">
+									<tbody className="z-0 divide-y divide-secondary-200 border border-secondary-300 bg-white">
+										<tr className="border-b border-secondary-300 bg-white">
+											<td colSpan={2} className="flex flex-col p-2 text-sm">
 												<span>{purchaseOrder?.approver?.name}</span>
 												<span className="text-primary-600">
 													{' '}

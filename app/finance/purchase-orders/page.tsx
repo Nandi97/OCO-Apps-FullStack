@@ -70,62 +70,62 @@ export default function PurchaseOrder() {
 	};
 	return (
 		<div className="space-y-2 bg-white">
-			<div className="sticky z-20 flex items-center justify-between gap-2 bg-white top-2">
-				<h1 className="text-lg font-extralight text-accent-700">{title}</h1>
+			<div className="sticky top-2 z-20 flex items-center justify-between gap-2 bg-white">
+				<h1 className="text-accent-700 text-lg font-extralight">{title}</h1>
 				<div className="inline-flex items-center space-x-2">
 					<SearchInput onSearch={handleSearch} />
 					<Link
 						href={`${pathname}/create`}
-						className="inline-flex items-center justify-center w-8 h-8 p-2 text-xs rounded-sm shadow-sm text-secondary-600 bg-secondary-100 focus:ring-offset-secondary-100"
+						className="inline-flex h-8 w-8 items-center justify-center rounded-sm bg-secondary-100 p-2 text-xs text-secondary-600 shadow-sm focus:ring-offset-secondary-100"
 					>
 						<Icon icon={'heroicons:document-plus'} />
 					</Link>
 				</div>
 			</div>
-			<div className="shadow overscroll-none ring-1 ring-black ring-opacity-5 md:rounded-md">
-				<div className="flex-col hidden lg:flex">
+			<div className="overscroll-none shadow ring-1 ring-black ring-opacity-5 md:rounded-md">
+				<div className="hidden flex-col lg:flex">
 					<table className="min-w-full divide-y divide-primary-100">
-						<thead className="sticky z-10 top-12 bg-secondary-600 text-secondary-50">
+						<thead className="sticky top-12 z-10 bg-secondary-600 text-secondary-50">
 							<tr>
 								<th
 									scope="col"
-									className="sticky top-0 p-2 text-sm font-semibold text-center"
+									className="sticky top-0 p-2 text-center text-sm font-semibold"
 								>
 									{''}
 								</th>
 								<th
 									scope="col"
-									className="sticky top-0 p-2 pr-3 text-sm font-semibold text-left sm:pl-6"
+									className="sticky top-0 p-2 pr-3 text-left text-sm font-semibold sm:pl-6"
 								>
 									PO#
 								</th>
 								<th
 									scope="col"
-									className="sticky top-0 p-2 pr-3 text-sm font-semibold text-left sm:pl-6"
+									className="sticky top-0 p-2 pr-3 text-left text-sm font-semibold sm:pl-6"
 								>
 									Name
 								</th>
 								<th
 									scope="col"
-									className="sticky top-0 p-2 text-sm font-semibold text-left "
+									className="sticky top-0 p-2 text-left text-sm font-semibold "
 								>
 									Email
 								</th>
 								<th
 									scope="col"
-									className="sticky top-0 p-2 text-sm font-semibold text-left "
+									className="sticky top-0 p-2 text-left text-sm font-semibold "
 								>
 									Phone Number
 								</th>
 								<th
 									scope="col"
-									className="sticky top-0 p-2 text-sm font-semibold text-center "
+									className="sticky top-0 p-2 text-center text-sm font-semibold "
 								>
 									Address
 								</th>
 								<th
 									scope="col"
-									className="sticky top-0 p-2 text-sm font-semibold text-left "
+									className="sticky top-0 p-2 text-left text-sm font-semibold "
 								>
 									Created On
 								</th>
@@ -134,18 +134,18 @@ export default function PurchaseOrder() {
 								</th>
 							</tr>
 						</thead>
-						<tbody className="z-0 bg-white divide-y divide-gray-200">
+						<tbody className="z-0 divide-y divide-gray-200 bg-white">
 							{data?.data?.map((item, index) => {
 								if (isPending) {
 									return (
 										<tr key={index}>
 											<td
 												colSpan={7}
-												className="flex items-center justify-center w-full px-3 py-2 text-sm text-center whitespace-nowrap text-secondary-500"
+												className="flex w-full items-center justify-center whitespace-nowrap px-3 py-2 text-center text-sm text-secondary-500"
 											>
 												<svg
 													aria-hidden="true"
-													className="w-8 h-8 mr-2 text-secondary-200 animate-spin fill-primary-600"
+													className="mr-2 h-8 w-8 animate-spin fill-primary-600 text-secondary-200"
 													viewBox="0 0 100 101"
 													fill="none"
 													xmlns="http://www.w3.org/2000/svg"
@@ -173,39 +173,39 @@ export default function PurchaseOrder() {
 													: ''
 											}`}
 										>
-											<td className="p-2 text-sm text-center">
+											<td className="p-2 text-center text-sm">
 												{(index = 1)}
 											</td>
-											<td className="p-2 text-sm text-center">
+											<td className="p-2 text-center text-sm">
 												<Link
-													className="text-primary-600 hover:text-primary-600/90 font-medium"
+													className="font-medium text-primary-600 hover:text-primary-600/90"
 													href={`${pathname}/${item?.id}`}
 												>
 													{item?.poNumber}
 												</Link>
 											</td>
-											<td className="py-2 text-left  sm:pl-6 text-sm text-secondary-900">
+											<td className="py-2 text-left  text-sm text-secondary-900 sm:pl-6">
 												{item?.name}
 											</td>
-											<td className="py-2 text-left  sm:pl-6 text-sm text-secondary-900">
+											<td className="py-2 text-left  text-sm text-secondary-900 sm:pl-6">
 												{item?.email}
 											</td>
-											<td className="px-3 py-2 text-sm whitespace-nowrap text-secondary-500">
+											<td className="whitespace-nowrap px-3 py-2 text-sm text-secondary-500">
 												{item?.phoneNumber}
 											</td>
-											<td className="px-3 py-2 text-sm text-center whitespace-nowrap text-secondary-500">
+											<td className="whitespace-nowrap px-3 py-2 text-center text-sm text-secondary-500">
 												{item?.physicalAddress}
 											</td>
-											<td className="px-3 py-2 text-sm whitespace-nowrap text-secondary-500">
+											<td className="whitespace-nowrap px-3 py-2 text-sm text-secondary-500">
 												{`${formatDate(
 													item?.createdAt,
 													'dd MMM yyyy'
 												)} ${''} ${formatTime(item?.createdAt, 'hh:mm a')}`}
 											</td>
-											<td className="relative py-2 pl-3 pr-4 text-sm font-medium text-right whitespace-nowrap sm:pr-6">
+											<td className="relative whitespace-nowrap py-2 pl-3 pr-4 text-right text-sm font-medium sm:pr-6">
 												<button
 													type="button"
-													className="flex items-center justify-center w-5 h-5 p-1 rounded hover:bg-primary-700 hover:bg-opacity-20"
+													className="flex h-5 w-5 items-center justify-center rounded p-1 hover:bg-primary-700 hover:bg-opacity-20"
 												>
 													<OptDropdown
 														optBtn={tableOptBtnTxt}

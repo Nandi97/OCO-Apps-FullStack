@@ -74,15 +74,15 @@ export default function Form({ onSubmit, initialValues, isPending }: NewsFeedFor
 	};
 	return (
 		<div className="grid grid-cols-6 gap-2">
-			<div className="md:col-span-3 col-span-6">
+			<div className="col-span-6 md:col-span-3">
 				<form
-					className="shadow-inner bg-primary-50 p-2 w-full flex space-y-4 flex-col"
+					className="flex w-full flex-col space-y-4 bg-primary-50 p-2 shadow-inner"
 					onSubmit={handleSubmit(handleSubmitForm)}
 				>
 					<div>
 						<label
 							htmlFor="date"
-							className="flex items-center space-x-2 text-sm font-medium text-secondary-700 f"
+							className="f flex items-center space-x-2 text-sm font-medium text-secondary-700"
 						>
 							Date
 						</label>
@@ -91,26 +91,26 @@ export default function Form({ onSubmit, initialValues, isPending }: NewsFeedFor
 								type="date"
 								id="date"
 								{...register('date', { required: true })}
-								className="sm:text-sm w-full bg-secondary-50 bg-opacity-70 border-1 focus:shadow-inner shadow-accent-300  focus:border-secondary-500 block p-2.5 h-8  px-3 py-1 shadow-secondary-300 rounded-md border border-secondary-300 text-sm font-medium leading-4 text-secondary-700 shadow-sm hover:bg-secondary-50 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-1"
+								className="border-1 shadow-accent-300 block h-8 w-full rounded-md border  border-secondary-300 bg-secondary-50 bg-opacity-70 p-2.5  px-3 py-1 text-sm font-medium leading-4 text-secondary-700 shadow-sm shadow-secondary-300 hover:bg-secondary-50 focus:border-secondary-500 focus:shadow-inner focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-1 sm:text-sm"
 							/>
 						</div>
 					</div>
-					<div className="shadow-md rounded-md shadow-slate-500 p-2">
+					<div className="rounded-md p-2 shadow-md shadow-slate-500">
 						<div className="flex w-full divide-solid py-2">
 							<SubForm addArticle={handleAddArticle} />
 						</div>
-						<div className="w-full flex flex-col space-y-4">
+						<div className="flex w-full flex-col space-y-4">
 							{articleItems?.map((item, index: number) => (
 								<div
 									key={item?.key}
-									className="relative shadow-sm shadow-slate-600 p-2"
+									className="relative p-2 shadow-sm shadow-slate-600"
 								>
 									<h1>Article {index + 1}</h1>
 									<div>
 										<h2 className="block text-sm font-medium text-secondary-700">
 											Title:
 										</h2>
-										<p className="sm:text-sm w-full overflow-hidden truncate bg-secondary-50 bg-opacity-70 border-1 focus:shadow-inner shadow-accent-300  focus:border-secondary-500 block p-2.5 h-8  px-3 py-1 shadow-secondary-300 rounded-md border border-secondary-300 text-sm font-medium leading-4 text-secondary-400 shadow-sm cursor-default">
+										<p className="border-1 shadow-accent-300 block h-8 w-full cursor-default overflow-hidden truncate rounded-md  border border-secondary-300 bg-secondary-50 bg-opacity-70  p-2.5 px-3 py-1 text-sm font-medium leading-4 text-secondary-400 shadow-sm shadow-secondary-300 focus:border-secondary-500 focus:shadow-inner sm:text-sm">
 											{item?.title}
 										</p>
 									</div>
@@ -118,7 +118,7 @@ export default function Form({ onSubmit, initialValues, isPending }: NewsFeedFor
 										<h2 className="block text-sm font-medium text-secondary-700">
 											Body:
 										</h2>
-										<p className="sm:text-sm overflow-hidden truncate w-full bg-secondary-50 bg-opacity-70 border-1 focus:shadow-inner shadow-accent-300  focus:border-secondary-500 block p-2.5 h-8  px-3 py-1 shadow-secondary-300 rounded-md border border-secondary-300 text-sm font-medium leading-4 text-secondary-400 shadow-sm cursor-default">
+										<p className="border-1 shadow-accent-300 block h-8 w-full cursor-default overflow-hidden truncate rounded-md  border border-secondary-300 bg-secondary-50 bg-opacity-70  p-2.5 px-3 py-1 text-sm font-medium leading-4 text-secondary-400 shadow-sm shadow-secondary-300 focus:border-secondary-500 focus:shadow-inner sm:text-sm">
 											{item?.content}
 										</p>
 									</div>
@@ -126,7 +126,7 @@ export default function Form({ onSubmit, initialValues, isPending }: NewsFeedFor
 										<h2 className="block text-sm font-medium text-secondary-700">
 											Url:
 										</h2>
-										<p className="sm:text-sm w-full overflow-hidden truncate bg-secondary-50 bg-opacity-70 border-1 focus:shadow-inner shadow-accent-300  focus:border-secondary-500 block p-2.5 h-8  px-3 py-1 shadow-secondary-300 rounded-md border border-secondary-300 text-sm font-medium leading-4 text-secondary-400 shadow-sm cursor-default">
+										<p className="border-1 shadow-accent-300 block h-8 w-full cursor-default overflow-hidden truncate rounded-md  border border-secondary-300 bg-secondary-50 bg-opacity-70  p-2.5 px-3 py-1 text-sm font-medium leading-4 text-secondary-400 shadow-sm shadow-secondary-300 focus:border-secondary-500 focus:shadow-inner sm:text-sm">
 											{item?.url}
 										</p>
 									</div>
@@ -134,14 +134,14 @@ export default function Form({ onSubmit, initialValues, isPending }: NewsFeedFor
 										<h2 className="block text-sm font-medium text-secondary-700">
 											Tags:
 										</h2>
-										<p className="sm:text-sm w-full bg-secondary-50 bg-opacity-70 border-1 focus:shadow-inner shadow-accent-300  focus:border-secondary-500 block p-2.5 h-8  px-3 py-1 shadow-secondary-300 rounded-md border border-secondary-300 text-sm font-medium leading-4 text-secondary-400 shadow-sm cursor-default">
+										<p className="border-1 shadow-accent-300 block h-8 w-full cursor-default rounded-md  border border-secondary-300 bg-secondary-50 bg-opacity-70  p-2.5 px-3 py-1 text-sm font-medium leading-4 text-secondary-400 shadow-sm shadow-secondary-300 focus:border-secondary-500 focus:shadow-inner sm:text-sm">
 											{item?.tags}
 										</p>
 									</div>
-									<div className="absolute top-2 right-2">
+									<div className="absolute right-2 top-2">
 										<button
 											type="button"
-											className="p-2 shadow-sm shadow-secondary-400 hover:shadow-md rounded-l-md"
+											className="rounded-l-md p-2 shadow-sm shadow-secondary-400 hover:shadow-md"
 											onClick={() => handleRemoveArticle(item?.key)}
 										>
 											<span className="sr-only">Delete</span>
@@ -149,7 +149,7 @@ export default function Form({ onSubmit, initialValues, isPending }: NewsFeedFor
 										</button>
 										<button
 											type="button"
-											className="p-2 shadow-sm shadow-secondary-400 hover:shadow-md rounded-r-md"
+											className="rounded-r-md p-2 shadow-sm shadow-secondary-400 hover:shadow-md"
 											onClick={() => handleEditArticle(item?.key)}
 										>
 											<span className="sr-only">Edit</span>
@@ -160,14 +160,14 @@ export default function Form({ onSubmit, initialValues, isPending }: NewsFeedFor
 							))}
 						</div>
 					</div>
-					<div className="w-full flex items-center py-2 justify-center">
+					<div className="flex w-full items-center justify-center py-2">
 						<button
 							type="submit"
 							className={`flex ${
 								isPending
 									? 'bg-slate-600 text-white'
-									: 'bg-primary-600 text-white hover:bg-primary-600/90 hover:opacity-80 border-primary-300 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-1'
-							} items-center gap-2 p-2 text-sm font-medium leading- border rounded-md shadow-sm  `}
+									: 'border-primary-300 bg-primary-600 text-white hover:bg-primary-600/90 hover:opacity-80 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-1'
+							} leading- items-center gap-2 rounded-md border p-2 text-sm font-medium shadow-sm  `}
 							disabled={isPending ? true : false}
 						>
 							Save and Continue
@@ -175,7 +175,7 @@ export default function Form({ onSubmit, initialValues, isPending }: NewsFeedFor
 					</div>
 				</form>
 			</div>
-			<div className="md:col-span-3 col-span-6">
+			<div className="col-span-6 md:col-span-3">
 				<NewsFeedPrev prevData={NewsFeedPreview} />
 			</div>
 		</div>

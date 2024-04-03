@@ -16,10 +16,10 @@ const LoginPage = () => {
 		});
 	};
 	return (
-		<div className={'fixed top-0 left-0 z-40 w-full h-full bg-white'}>
-			<div className="flex flex-col items-center transform rounded-lg md:p-12 md:gap-6 ove md:absolute md:-translate-x-1/2 md:-translate-y-1/2 md:top-1/2 md:left-1/2">
-				<div className="grid grid-cols-12 shadow-md rounded-md">
-					<div className="col-span-6 rounded-l-md bg-primary-600/50 p-2 md:h-96 space-y-4 flex flex-col items-center justify-center w-60">
+		<div className={'fixed left-0 top-0 z-40 h-full w-full bg-white'}>
+			<div className="ove flex transform flex-col items-center rounded-lg md:absolute md:left-1/2 md:top-1/2 md:-translate-x-1/2 md:-translate-y-1/2 md:gap-6 md:p-12">
+				<div className="grid grid-cols-12 rounded-md shadow-md">
+					<div className="col-span-6 flex w-60 flex-col items-center justify-center space-y-4 rounded-l-md bg-primary-600/50 p-2 md:h-96">
 						<Image
 							src={logo}
 							alt="oco logo"
@@ -33,11 +33,11 @@ const LoginPage = () => {
 							<span className="text-primary-600">Apps</span>
 						</div>
 					</div>
-					<div className="col-span-6 flex items-center w-full h-full justify-center bg-secondary-100 rounded-r-md">
+					<div className="col-span-6 flex h-full w-full items-center justify-center rounded-r-md bg-secondary-100">
 						<button
 							type="button"
 							onClick={onSubmit}
-							className="flex items-center p-2 hover:shadow-lg shadow rounded-lg justify-center bg-primary-400 text-white"
+							className="flex items-center justify-center rounded-lg bg-primary-400 p-2 text-white shadow hover:shadow-lg"
 						>
 							Sign In
 						</button>

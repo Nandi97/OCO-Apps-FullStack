@@ -24,12 +24,12 @@ export default function SubForm({ addArticle }: ArticleFormProp) {
 		setFormData({ title: '', content: '', url: '', tags: '' });
 	};
 	return (
-		<div className="w-full flex flex-col">
+		<div className="flex w-full flex-col">
 			<input type="text" value={formValues?.key} name="key" id="key" hidden />
 			<div>
 				<label
 					htmlFor="title"
-					className="flex items-center space-x-2 text-sm font-medium text-secondary-700 f"
+					className="f flex items-center space-x-2 text-sm font-medium text-secondary-700"
 				>
 					Feed Title
 				</label>
@@ -45,14 +45,14 @@ export default function SubForm({ addArticle }: ArticleFormProp) {
 								title: e.target.value,
 							})
 						}
-						className="sm:text-sm w-full bg-secondary-50 bg-opacity-70 border-1 focus:shadow-inner shadow-accent-300  focus:border-secondary-500 block p-2.5 h-8  px-3 py-1 shadow-secondary-300 rounded-md border border-secondary-300 text-sm font-medium leading-4 text-secondary-700 shadow-sm hover:bg-secondary-50 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-1"
+						className="border-1 shadow-accent-300 block h-8 w-full rounded-md border  border-secondary-300 bg-secondary-50 bg-opacity-70 p-2.5  px-3 py-1 text-sm font-medium leading-4 text-secondary-700 shadow-sm shadow-secondary-300 hover:bg-secondary-50 focus:border-secondary-500 focus:shadow-inner focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-1 sm:text-sm"
 					/>
 				</div>
 			</div>
 			<div>
 				<label
 					htmlFor="content"
-					className="flex items-center space-x-2 text-sm font-medium text-secondary-700 f"
+					className="f flex items-center space-x-2 text-sm font-medium text-secondary-700"
 				>
 					Body
 				</label>
@@ -67,7 +67,7 @@ export default function SubForm({ addArticle }: ArticleFormProp) {
 								content: e.target.value,
 							})
 						}
-						className="sm:text-sm w-full bg-secondary-50 bg-opacity-70 border-1 focus:shadow-inner shadow-accent-300  focus:border-secondary-500 block p-2.5 h-20  px-3 py-1 shadow-secondary-300 rounded-md border border-secondary-300 text-sm font-medium leading-4 text-secondary-700 shadow-sm hover:bg-secondary-50 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-1"
+						className="border-1 shadow-accent-300 block h-20 w-full rounded-md border  border-secondary-300 bg-secondary-50 bg-opacity-70 p-2.5  px-3 py-1 text-sm font-medium leading-4 text-secondary-700 shadow-sm shadow-secondary-300 hover:bg-secondary-50 focus:border-secondary-500 focus:shadow-inner focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-1 sm:text-sm"
 					/>
 					{/* <Tiptap /> */}
 				</div>
@@ -75,7 +75,7 @@ export default function SubForm({ addArticle }: ArticleFormProp) {
 			<div>
 				<label
 					htmlFor="url"
-					className="flex items-center space-x-2 text-sm font-medium text-secondary-700 f"
+					className="f flex items-center space-x-2 text-sm font-medium text-secondary-700"
 				>
 					URL
 				</label>
@@ -91,14 +91,14 @@ export default function SubForm({ addArticle }: ArticleFormProp) {
 								url: e.target.value,
 							})
 						}
-						className="sm:text-sm w-full bg-secondary-50 bg-opacity-70 border-1 focus:shadow-inner shadow-accent-300  focus:border-secondary-500 block p-2.5 h-8  px-3 py-1 shadow-secondary-300 rounded-md border border-secondary-300 text-sm font-medium leading-4 text-secondary-700 shadow-sm hover:bg-secondary-50 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-1"
+						className="border-1 shadow-accent-300 block h-8 w-full rounded-md border  border-secondary-300 bg-secondary-50 bg-opacity-70 p-2.5  px-3 py-1 text-sm font-medium leading-4 text-secondary-700 shadow-sm shadow-secondary-300 hover:bg-secondary-50 focus:border-secondary-500 focus:shadow-inner focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-1 sm:text-sm"
 					/>
 				</div>
 			</div>
 			<div>
 				<label
 					htmlFor="tags"
-					className="flex items-center space-x-2 text-sm font-medium text-secondary-700 f"
+					className="f flex items-center space-x-2 text-sm font-medium text-secondary-700"
 				>
 					Tags
 				</label>
@@ -114,14 +114,14 @@ export default function SubForm({ addArticle }: ArticleFormProp) {
 								tags: e.target.value,
 							})
 						}
-						className="sm:text-sm w-full bg-secondary-50 bg-opacity-70 border-1 focus:shadow-inner shadow-accent-300  focus:border-secondary-500 block p-2.5 h-8  px-3 py-1 shadow-secondary-300 rounded-md border border-secondary-300 text-sm font-medium leading-4 text-secondary-700 shadow-sm hover:bg-secondary-50 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-1"
+						className="border-1 shadow-accent-300 block h-8 w-full rounded-md border  border-secondary-300 bg-secondary-50 bg-opacity-70 p-2.5  px-3 py-1 text-sm font-medium leading-4 text-secondary-700 shadow-sm shadow-secondary-300 hover:bg-secondary-50 focus:border-secondary-500 focus:shadow-inner focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-1 sm:text-sm"
 					/>
 				</div>
 			</div>
 			<div className="col-span-1 flex w-full items-center justify-center md:col-span-full">
 				<button
 					onClick={handleAddArticle}
-					className={`${isButtonDisabled() ? 'bg-slate-600' : 'bg-primary-600'} text-white p-2 rounded-md mt-5`}
+					className={`${isButtonDisabled() ? 'bg-slate-600' : 'bg-primary-600'} mt-5 rounded-md p-2 text-white`}
 					disabled={isButtonDisabled()}
 					type="button"
 				>

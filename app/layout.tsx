@@ -31,7 +31,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 				></script>
 			</head>
 			<body
-				className={` ${roboto.variable} h-screen font-sans bg-gradient-to-br from-accent-100 via-primary-100 to-accent-100 overflow-hidden`}
+				className={` ${roboto.variable} from-accent-100 to-accent-100 h-screen overflow-hidden bg-gradient-to-br via-primary-100 font-sans`}
 			>
 				<QueryWrapper>
 					<Providers>
@@ -39,8 +39,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 						<Nav pageTitle={metadata.title} />
 
 						{/* <main className="overflow-y-auto py-3 flex flex-col h-screen"> */}
-						<main className="overflow-y-auto flex flex-col h-screen  bg-gradient-to-br from-primary-500/10 to-secondary-500/10 p-2">
-							<div className="p-4 my-2  rounded-lg shadow-lg bg-primary-100 overflow-y-auto flex flex-col h-full ">
+						<main className="flex h-screen flex-col overflow-y-auto  bg-gradient-to-br from-primary-500/10 to-secondary-500/10 p-2">
+							<div className="my-2 flex  h-full flex-col overflow-y-auto rounded-lg bg-primary-100 p-4 shadow-lg ">
 								{children}
 							</div>
 						</main>

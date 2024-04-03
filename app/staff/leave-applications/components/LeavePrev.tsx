@@ -28,8 +28,8 @@ export default function LeavePrev({ url }: LeavePrevProps) {
 	return (
 		<>
 			<div className="grid grid-cols-12 gap-4">
-				<div className="w-full p-4 flex-col rounded-md shadow-md space-y-3 col-span-8 bg-primary-50">
-					<div className="w-full flex items-center justify-center">
+				<div className="col-span-8 w-full flex-col space-y-3 rounded-md bg-primary-50 p-4 shadow-md">
+					<div className="flex w-full items-center justify-center">
 						<Image
 							src={logo}
 							placeholder="blur"
@@ -39,12 +39,12 @@ export default function LeavePrev({ url }: LeavePrevProps) {
 							className="w-36"
 						/>
 					</div>
-					<div className="w-full flex items-center justify-center bg-primary-600">
-						<p className="font-bold uppercase text-2xl text-white">Leave Application</p>
+					<div className="flex w-full items-center justify-center bg-primary-600">
+						<p className="text-2xl font-bold uppercase text-white">Leave Application</p>
 					</div>
-					<div className="w-full flex items-center justify-center">
-						<table className="table-fixed w-full">
-							<thead className="text-xs text-secondary-700 uppercase bg-secondary-200">
+					<div className="flex w-full items-center justify-center">
+						<table className="w-full table-fixed">
+							<thead className="bg-secondary-200 text-xs uppercase text-secondary-700">
 								<tr>
 									<th scope="col" colSpan={2} className="px-6 py-3">
 										Section 1: Employee Details
@@ -53,7 +53,7 @@ export default function LeavePrev({ url }: LeavePrevProps) {
 							</thead>
 							<tbody>
 								<tr>
-									<td className="px-2 border">
+									<td className="border px-2">
 										<div className="flex flex-col">
 											<span className="text-xs">Name:</span>
 											<span className="text-primary-600">
@@ -61,7 +61,7 @@ export default function LeavePrev({ url }: LeavePrevProps) {
 											</span>
 										</div>
 									</td>
-									<td className="px-2 border">
+									<td className="border px-2">
 										<div className="flex flex-col">
 											<span className="text-xs">Payroll Number:</span>
 											<span className="text-primary-600">
@@ -71,7 +71,7 @@ export default function LeavePrev({ url }: LeavePrevProps) {
 									</td>
 								</tr>
 								<tr>
-									<td className="px-2 border">
+									<td className="border px-2">
 										<div className="flex flex-col">
 											<span className="text-xs">Title:</span>
 											<span className="text-primary-600">
@@ -79,7 +79,7 @@ export default function LeavePrev({ url }: LeavePrevProps) {
 											</span>
 										</div>
 									</td>
-									<td className="px-2 border">
+									<td className="border px-2">
 										<div className="flex flex-col">
 											<span className="text-xs">Team:</span>
 											<span className="text-primary-600">
@@ -91,9 +91,9 @@ export default function LeavePrev({ url }: LeavePrevProps) {
 							</tbody>
 						</table>
 					</div>
-					<div className="w-full flex items-center justify-center">
-						<table className="table-fixed w-full">
-							<thead className="text-xs text-secondary-700 uppercase bg-secondary-200">
+					<div className="flex w-full items-center justify-center">
+						<table className="w-full table-fixed">
+							<thead className="bg-secondary-200 text-xs uppercase text-secondary-700">
 								<tr>
 									<th scope="col" colSpan={2} className="px-6 py-3">
 										Section 2: Leave Details
@@ -102,7 +102,7 @@ export default function LeavePrev({ url }: LeavePrevProps) {
 							</thead>
 							<tbody>
 								<tr>
-									<td className="px-2 border">
+									<td className="border px-2">
 										<div className="flex flex-col">
 											<span className="text-xs">Leave Type:</span>
 											<span className="text-primary-600">
@@ -110,7 +110,7 @@ export default function LeavePrev({ url }: LeavePrevProps) {
 											</span>
 										</div>
 									</td>
-									<td className="px-2 border">
+									<td className="border px-2">
 										<div className="flex flex-col">
 											<span className="text-xs">Number of Leave Days:</span>
 											<span className="text-primary-600">
@@ -120,7 +120,7 @@ export default function LeavePrev({ url }: LeavePrevProps) {
 									</td>
 								</tr>
 								<tr>
-									<td className="px-2 border">
+									<td className="border px-2">
 										<div className="flex flex-col">
 											<span className="text-xs">Start Leave On:</span>
 											<span className="text-primary-600">
@@ -133,7 +133,7 @@ export default function LeavePrev({ url }: LeavePrevProps) {
 											</span>
 										</div>
 									</td>
-									<td className="px-2 border">
+									<td className="border px-2">
 										<div className="flex flex-col">
 											<span className="text-xs">End Leave On:</span>
 											<span className="text-primary-600">
@@ -148,7 +148,7 @@ export default function LeavePrev({ url }: LeavePrevProps) {
 									</td>
 								</tr>
 								<tr>
-									<td className="px-2 border">
+									<td className="border px-2">
 										<div className="flex flex-col">
 											<span className="text-xs">Reporting Back On:</span>
 											<span className="text-primary-600">
@@ -161,7 +161,7 @@ export default function LeavePrev({ url }: LeavePrevProps) {
 											</span>
 										</div>
 									</td>
-									<td className="px-2 border">
+									<td className="border px-2">
 										<div className="flex flex-col">
 											<span className="text-xs">Applied on:</span>
 											<span className="text-primary-600">
@@ -178,9 +178,9 @@ export default function LeavePrev({ url }: LeavePrevProps) {
 							</tbody>
 						</table>
 					</div>
-					<div className="w-full flex items-center justify-center">
-						<table className="table-fixed w-full">
-							<thead className="text-xs text-secondary-700 uppercase bg-secondary-200">
+					<div className="flex w-full items-center justify-center">
+						<table className="w-full table-fixed">
+							<thead className="bg-secondary-200 text-xs uppercase text-secondary-700">
 								<tr>
 									<th scope="col" colSpan={2} className="px-6 py-3">
 										Section 3: Approvals
@@ -245,31 +245,31 @@ export default function LeavePrev({ url }: LeavePrevProps) {
 							</tbody>
 						</table>
 					</div>
-					<div className="w-full flex items-center justify-center flex-col space-y-2">
+					<div className="flex w-full flex-col items-center justify-center space-y-2">
 						<h1 className="text-primary-600">For Official Use Only - HR Department</h1>
-						<table className="table-auto w-2/3">
+						<table className="w-2/3 table-auto">
 							<tbody>
 								<tr>
-									<td className="px-2 border">
+									<td className="border px-2">
 										<span className="text-lg">No. of leave days available</span>
 									</td>
-									<td className="p-2 border">
+									<td className="border p-2">
 										<span></span>
 									</td>
 								</tr>
 								<tr>
-									<td className="px-2 border">
+									<td className="border px-2">
 										<span className="text-lg">No. of leave taken now</span>
 									</td>
-									<td className="p-2 border">
+									<td className="border p-2">
 										<span></span>
 									</td>
 								</tr>
 								<tr>
-									<td className="px-2 border">
+									<td className="border px-2">
 										<span className="text-lg">Balance of leave days</span>
 									</td>
-									<td className="p-2 border">
+									<td className="border p-2">
 										<span></span>
 									</td>
 								</tr>
@@ -278,7 +278,7 @@ export default function LeavePrev({ url }: LeavePrevProps) {
 					</div>
 				</div>
 				<div className="col-span-4">
-					<table className="table-fixed w-full bg-primary-50 rounded-md">
+					<table className="w-full table-fixed rounded-md bg-primary-50">
 						<thead className=" bg-secondary-600 text-secondary-50">
 							<tr>
 								<th
@@ -290,20 +290,20 @@ export default function LeavePrev({ url }: LeavePrevProps) {
 								</th>
 							</tr>
 						</thead>
-						<tbody className="bg-white divide-y divide-gray-200">
+						<tbody className="divide-y divide-gray-200 bg-white">
 							{session && session?.user?.email === prevVal?.supervisor?.email ? (
 								<tr>
-									<td className="p-2 w-full text-sm text-center border border-secondary-200">
-										<div className="w-full flex items-center justify-center">
-											<button className="p-2 w-24 space-x-2 rounded text-white  flex items-center justify-center bg-secondary-700 hover:bg-secondary-700/50">
+									<td className="w-full border border-secondary-200 p-2 text-center text-sm">
+										<div className="flex w-full items-center justify-center">
+											<button className="flex w-24 items-center justify-center space-x-2  rounded bg-secondary-700 p-2 text-white hover:bg-secondary-700/50">
 												<span>Approve</span>
 												<Icon icon="heroicons:hand-thumb-up" />
 											</button>
 										</div>
 									</td>
-									<td className="p-2 w-full text-sm text-center border border-secondary-200">
-										<div className="w-full flex items-center justify-center">
-											<button className="p-2 w-24 space-x-2 rounded text-white  flex items-center justify-center bg-primary-600 hover:bg-primary-600/50">
+									<td className="w-full border border-secondary-200 p-2 text-center text-sm">
+										<div className="flex w-full items-center justify-center">
+											<button className="flex w-24 items-center justify-center space-x-2  rounded bg-primary-600 p-2 text-white hover:bg-primary-600/50">
 												<span>Reject</span>
 												<Icon icon="heroicons:hand-thumb-down" />
 											</button>
@@ -315,17 +315,17 @@ export default function LeavePrev({ url }: LeavePrevProps) {
 							)}
 							{session && session?.user?.email === prevVal?.partner?.email ? (
 								<tr>
-									<td className="p-2 w-full text-sm text-center border border-secondary-200">
-										<div className="w-full flex items-center justify-center">
-											<button className="p-2 w-24 space-x-2 rounded text-white  flex items-center justify-center bg-secondary-700 hover:bg-secondary-700/50">
+									<td className="w-full border border-secondary-200 p-2 text-center text-sm">
+										<div className="flex w-full items-center justify-center">
+											<button className="flex w-24 items-center justify-center space-x-2  rounded bg-secondary-700 p-2 text-white hover:bg-secondary-700/50">
 												<span>Approve</span>
 												<Icon icon="heroicons:hand-thumb-up" />
 											</button>
 										</div>
 									</td>
-									<td className="p-2 w-full text-sm text-center border border-secondary-200">
-										<div className="w-full flex items-center justify-center">
-											<button className="p-2 w-24 space-x-2 rounded text-white  flex items-center justify-center bg-primary-600 hover:bg-primary-600/50">
+									<td className="w-full border border-secondary-200 p-2 text-center text-sm">
+										<div className="flex w-full items-center justify-center">
+											<button className="flex w-24 items-center justify-center space-x-2  rounded bg-primary-600 p-2 text-white hover:bg-primary-600/50">
 												<span>Reject</span>
 												<Icon icon="heroicons:hand-thumb-down" />
 											</button>
@@ -337,17 +337,17 @@ export default function LeavePrev({ url }: LeavePrevProps) {
 							)}
 							{session && session?.user?.email === prevVal?.humanResource?.email ? (
 								<tr>
-									<td className="p-2 w-full text-sm text-center border border-secondary-200">
-										<div className="w-full flex items-center justify-center">
-											<button className="p-2 w-24 space-x-2 rounded text-white  flex items-center justify-center bg-secondary-700 hover:bg-secondary-700/50">
+									<td className="w-full border border-secondary-200 p-2 text-center text-sm">
+										<div className="flex w-full items-center justify-center">
+											<button className="flex w-24 items-center justify-center space-x-2  rounded bg-secondary-700 p-2 text-white hover:bg-secondary-700/50">
 												<span>Approve</span>
 												<Icon icon="heroicons:hand-thumb-up" />
 											</button>
 										</div>
 									</td>
-									<td className="p-2 w-full text-sm text-center border border-secondary-200">
-										<div className="w-full flex items-center justify-center">
-											<button className="p-2 w-24 space-x-2 rounded text-white  flex items-center justify-center bg-primary-600 hover:bg-primary-600/50">
+									<td className="w-full border border-secondary-200 p-2 text-center text-sm">
+										<div className="flex w-full items-center justify-center">
+											<button className="flex w-24 items-center justify-center space-x-2  rounded bg-primary-600 p-2 text-white hover:bg-primary-600/50">
 												<span>Reject</span>
 												<Icon icon="heroicons:hand-thumb-down" />
 											</button>
@@ -359,10 +359,10 @@ export default function LeavePrev({ url }: LeavePrevProps) {
 							)}
 							{session && session?.user?.email === prevVal?.employee?.email ? (
 								<tr>
-									<td className="p-2 w-full text-sm text-center border border-secondary-200">
-										<div className="w-full flex items-center justify-center">
+									<td className="w-full border border-secondary-200 p-2 text-center text-sm">
+										<div className="flex w-full items-center justify-center">
 											<button
-												className={`p-2 w-24 space-x-2 rounded text-white  flex items-center justify-center  ${
+												className={`flex w-24 items-center justify-center space-x-2  rounded p-2 text-white  ${
 													!prevVal?.supervisorApproval === null ||
 													!prevVal?.partnerApproval === null ||
 													!prevVal?.hRMApproval === null
@@ -382,8 +382,8 @@ export default function LeavePrev({ url }: LeavePrevProps) {
 											</button>
 										</div>
 									</td>
-									<td className="p-2 w-full text-sm text-center border border-secondary-200">
-										<div className="w-full flex items-center justify-center">
+									<td className="w-full border border-secondary-200 p-2 text-center text-sm">
+										<div className="flex w-full items-center justify-center">
 											<button
 												disabled={
 													!prevVal?.supervisorApproval === null &&
@@ -392,7 +392,7 @@ export default function LeavePrev({ url }: LeavePrevProps) {
 														? false
 														: true
 												}
-												className={`p-2 space-x-2 rounded text-white  flex items-center justify-center  ${
+												className={`flex items-center justify-center space-x-2  rounded p-2 text-white  ${
 													!prevVal?.supervisorApproval === null &&
 													!prevVal?.partnerApproval === null &&
 													!prevVal?.hRMApproval === null
@@ -410,7 +410,7 @@ export default function LeavePrev({ url }: LeavePrevProps) {
 								''
 							)}
 							<tr>
-								<td className="p-2 w-full text-sm border border-secondary-200">
+								<td className="w-full border border-secondary-200 p-2 text-sm">
 									<div className="flex flex-col">
 										<span className="text-xs">Supervisor :</span>
 										<span className="text-primary-600">
@@ -418,7 +418,7 @@ export default function LeavePrev({ url }: LeavePrevProps) {
 										</span>
 									</div>
 								</td>
-								<td className="p-2 w-full text-sm border border-secondary-200">
+								<td className="w-full border border-secondary-200 p-2 text-sm">
 									<div className="flex flex-col">
 										<span className="text-xs">Approved On :</span>
 										<span className="text-primary-600">
@@ -434,7 +434,7 @@ export default function LeavePrev({ url }: LeavePrevProps) {
 								</td>
 							</tr>
 							<tr>
-								<td className="p-2 w-full text-sm border border-secondary-200">
+								<td className="w-full border border-secondary-200 p-2 text-sm">
 									<div className="flex flex-col">
 										<span className="text-xs">Partner :</span>
 										<span className="text-primary-600">
@@ -442,7 +442,7 @@ export default function LeavePrev({ url }: LeavePrevProps) {
 										</span>
 									</div>
 								</td>
-								<td className="p-2 w-full text-sm border border-secondary-200">
+								<td className="w-full border border-secondary-200 p-2 text-sm">
 									<div className="flex flex-col">
 										<span className="text-xs">Approved On :</span>
 										<span className="text-primary-600">
@@ -458,7 +458,7 @@ export default function LeavePrev({ url }: LeavePrevProps) {
 							</tr>
 							{prevVal?.humanResource ? (
 								<tr>
-									<td className="p-2 w-full text-sm border border-secondary-200">
+									<td className="w-full border border-secondary-200 p-2 text-sm">
 										<div className="flex flex-col">
 											<span className="text-xs">Human Resource Manger :</span>
 											<span className="text-primary-600">
@@ -466,7 +466,7 @@ export default function LeavePrev({ url }: LeavePrevProps) {
 											</span>
 										</div>
 									</td>
-									<td className="p-2 w-full text-sm border border-secondary-200">
+									<td className="w-full border border-secondary-200 p-2 text-sm">
 										<div className="flex flex-col">
 											<span className="text-xs">Approved On :</span>
 											<span className="text-primary-600">

@@ -33,7 +33,7 @@ export function DataTableRowActions<TData>() {
 			<DropdownMenuTrigger asChild>
 				<Button
 					variant="ghost"
-					className="flex h-8 w-8 p-0 data-[state=open]:bg-muted hover:bg-secondary-500 hover:text-secondary-50"
+					className="data-[state=open]:bg-muted flex h-8 w-8 p-0 hover:bg-secondary-500 hover:text-secondary-50"
 				>
 					<Icon icon="radix-icons:dots-horizontal" className="h-4 w-4" />
 					<span className="sr-only">Open menu</span>

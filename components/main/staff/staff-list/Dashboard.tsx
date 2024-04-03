@@ -14,7 +14,7 @@ export default function Dashboard() {
 	console.log(data);
 
 	return (
-		<div className="shadow overscroll-none ring-1 ring-black ring-opacity-5 md:rounded-md">
+		<div className="overscroll-none shadow ring-1 ring-black ring-opacity-5 md:rounded-md">
 			{data && <DataTable columns={columns} data={data} />}
 		</div>
 	);

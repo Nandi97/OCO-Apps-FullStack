@@ -184,17 +184,17 @@ export default function StaffTable() {
 	};
 	return (
 		<>
-			<div className="sticky z-20 md:flex items-center justify-between gap-2 bg-white top-2 hidden">
-				<h1 className="text-lg font-extralight text-accent-700"></h1>
+			<div className="sticky top-2 z-20 hidden items-center justify-between gap-2 bg-white md:flex">
+				<h1 className="text-accent-700 text-lg font-extralight"></h1>
 				<div className="inline-flex items-center space-x-2">
 					<SearchInput onSearch={handleSearch} />
 					<OptDropdown optBtn={headerOptBtnTxt} optionsList={headerOptionsList} />
 				</div>
 			</div>
-			<div className="shadow overscroll-none ring-1 ring-black ring-opacity-5 md:rounded-md">
-				<div className="flex-col hidden lg:flex">
+			<div className="overscroll-none shadow ring-1 ring-black ring-opacity-5 md:rounded-md">
+				<div className="hidden flex-col lg:flex">
 					<table className="table-auto divide-y divide-primary-100">
-						<thead className="sticky z-10 top-12 bg-secondary-600 text-secondary-50">
+						<thead className="sticky top-12 z-10 bg-secondary-600 text-secondary-50">
 							<tr>
 								<th
 									scope="col"
@@ -243,18 +243,18 @@ export default function StaffTable() {
 								</th>
 							</tr>
 						</thead>
-						<tbody className="bg-white divide-y divide-gray-200">
+						<tbody className="divide-y divide-gray-200 bg-white">
 							{data?.data?.map((person, index) => {
 								if (isPending) {
 									return (
 										<tr key={index}>
 											<td
 												colSpan={9}
-												className="flex items-center justify-center w-full px-3 py-2 text-sm text-center whitespace-nowrap text-secondary-500"
+												className="flex w-full items-center justify-center whitespace-nowrap px-3 py-2 text-center text-sm text-secondary-500"
 											>
 												<svg
 													aria-hidden="true"
-													className="w-8 h-8 mr-2 text-secondary-200 animate-spin fill-primary-600"
+													className="mr-2 h-8 w-8 animate-spin fill-primary-600 text-secondary-200"
 													viewBox="0 0 100 101"
 													fill="none"
 													xmlns="http://www.w3.org/2000/svg"
@@ -282,13 +282,13 @@ export default function StaffTable() {
 													: ''
 											}`}
 										>
-											<td className="px-3 py-2 text-sm text-center whitespace-nowrap text-secondary-500">
+											<td className="whitespace-nowrap px-3 py-2 text-center text-sm text-secondary-500">
 												{person?.staffNo}
 											</td>
-											<td className="py-2 pl-4 pr-3 text-sm whitespace-nowrap sm:pl-6">
+											<td className="whitespace-nowrap py-2 pl-4 pr-3 text-sm sm:pl-6">
 												<div className="flex items-center gap-2">
 													{!person?.avatarUrl ? (
-														<span className="inline-flex items-center justify-center rounded-full h-7 w-7 bg-secondary-500">
+														<span className="inline-flex h-7 w-7 items-center justify-center rounded-full bg-secondary-500">
 															<span className="font-medium leading-none text-white">
 																{person?.name
 																	.split(' ')
@@ -300,7 +300,7 @@ export default function StaffTable() {
 														<Image
 															height={200}
 															width={200}
-															className="rounded-full h-7 w-7"
+															className="h-7 w-7 rounded-full"
 															src={person?.avatarUrl}
 															alt=""
 														/>
@@ -311,26 +311,26 @@ export default function StaffTable() {
 													</div>
 												</div>
 											</td>
-											<td className="px-3 py-2 text-sm whitespace-nowrap text-secondary-500">
+											<td className="whitespace-nowrap px-3 py-2 text-sm text-secondary-500">
 												<div className="text-secondary-900">
 													{person?.designation?.name}
 												</div>
 											</td>
-											<td className="px-3 py-2 text-sm whitespace-nowrap text-primary-500">
+											<td className="whitespace-nowrap px-3 py-2 text-sm text-primary-500">
 												{person?.email}
 											</td>
-											<td className="px-3 py-2 text-sm text-center whitespace-nowrap text-secondary-500">
+											<td className="whitespace-nowrap px-3 py-2 text-center text-sm text-secondary-500">
 												{person?.ext}
 											</td>
-											<td className="px-3 py-2 text-sm whitespace-nowrap text-secondary-500">
+											<td className="whitespace-nowrap px-3 py-2 text-sm text-secondary-500">
 												{person?.team?.name}
 											</td>
-											<td className="px-3 py-2 text-sm whitespace-nowrap text-secondary-500">
+											<td className="whitespace-nowrap px-3 py-2 text-sm text-secondary-500">
 												<span
 													className={`inline-flex rounded-full  px-2 text-xs font-semibold leading-5 ${
 														person?.deletedAt === null
-															? 'text-green-800 bg-green-100'
-															: 'text-red-800 bg-red-100'
+															? 'bg-green-100 text-green-800'
+															: 'bg-red-100 text-red-800'
 													}`}
 												>
 													{person?.deletedAt === null
@@ -338,10 +338,10 @@ export default function StaffTable() {
 														: 'Inactive'}
 												</span>
 											</td>
-											<td className="relative py-2 pl-3 pr-4 text-sm font-medium text-right whitespace-nowrap sm:pr-6">
+											<td className="relative whitespace-nowrap py-2 pl-3 pr-4 text-right text-sm font-medium sm:pr-6">
 												<button
 													type="button"
-													className="flex items-center justify-center w-5 h-5 p-1 rounded hover:bg-primary-700 hover:bg-opacity-20"
+													className="flex h-5 w-5 items-center justify-center rounded p-1 hover:bg-primary-700 hover:bg-opacity-20"
 												>
 													<OptDropdown
 														optBtn={tableOptBtnTxt}

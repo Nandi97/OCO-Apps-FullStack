@@ -75,15 +75,15 @@ const CreateMaintenance = ({ setToggle, assetId }: MaintenanceProps) => {
 	};
 
 	return (
-		<div className="fixed top-0 left-0 z-20 w-full -mt-20 h-full bg-secondary-700/50">
-			<div className="absolute flex flex-col items-center gap-6 p-12 transform -translate-x-1/2 -translate-y-1/2 bg-white rounded-lg top-1/2 left-1/2">
+		<div className="fixed left-0 top-0 z-20 -mt-20 h-full w-full bg-secondary-700/50">
+			<div className="absolute left-1/2 top-1/2 flex -translate-x-1/2 -translate-y-1/2 transform flex-col items-center gap-6 rounded-lg bg-white p-12">
 				<button
 					type="button"
 					onClick={(e) => {
 						e.stopPropagation();
 						setToggle(false);
 					}}
-					className="absolute top-2 right-2"
+					className="absolute right-2 top-2"
 				>
 					<Icon icon="heroicons:x-mark" />
 					<span className="sr-only">close</span>
@@ -100,7 +100,7 @@ const CreateMaintenance = ({ setToggle, assetId }: MaintenanceProps) => {
 									id="name"
 									placeholder="Name"
 									value={data?.name}
-									className="sm:text-sm w-full bg-secondary-50 bg-opacity-70 border-1 focus:shadow-inner shadow-accent-300  focus:border-secondary-500/50 block p-2.5 h-8  px-3 py-1 shadow-secondary-300 rounded-md border border-secondary-300 text-sm font-medium leading-4 text-secondary-700/50 shadow-sm hover:bg-secondary-50"
+									className="border-1 shadow-accent-300 block h-8 w-full rounded-md border  border-secondary-300 bg-secondary-50 bg-opacity-70 p-2.5  px-3 py-1 text-sm font-medium leading-4 text-secondary-700/50 shadow-sm shadow-secondary-300 hover:bg-secondary-50 focus:border-secondary-500/50 focus:shadow-inner sm:text-sm"
 									disabled
 								/>
 							</div>
@@ -119,7 +119,7 @@ const CreateMaintenance = ({ setToggle, assetId }: MaintenanceProps) => {
 										required: true,
 										valueAsDate: true,
 									})}
-									className="sm:text-sm w-full bg-secondary-50 bg-opacity-70 border-1 focus:shadow-inner shadow-accent-300  focus:border-secondary-500 block p-2.5 h-8  px-3 py-1 shadow-secondary-300 rounded-md border border-secondary-300 text-sm font-medium leading-4 text-secondary-700 shadow-sm hover:bg-secondary-50 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-1"
+									className="border-1 shadow-accent-300 block h-8 w-full rounded-md border  border-secondary-300 bg-secondary-50 bg-opacity-70 p-2.5  px-3 py-1 text-sm font-medium leading-4 text-secondary-700 shadow-sm shadow-secondary-300 hover:bg-secondary-50 focus:border-secondary-500 focus:shadow-inner focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-1 sm:text-sm"
 									id="maintenance-date"
 									placeholder="maintenance Date"
 									type="date"
@@ -137,18 +137,18 @@ const CreateMaintenance = ({ setToggle, assetId }: MaintenanceProps) => {
 							<div className="mt-1">
 								<textarea
 									{...register('description', { required: true })}
-									className="sm:text-sm w-full bg-secondary-50 bg-opacity-70 border-1 focus:shadow-inner shadow-accent-300  focus:border-secondary-500 block p-2.5 h-20  px-3 py-1 shadow-secondary-300 rounded-md border border-secondary-300 text-sm font-medium leading-4 text-secondary-700 shadow-sm hover:bg-secondary-50 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-1"
+									className="border-1 shadow-accent-300 block h-20 w-full rounded-md border  border-secondary-300 bg-secondary-50 bg-opacity-70 p-2.5  px-3 py-1 text-sm font-medium leading-4 text-secondary-700 shadow-sm shadow-secondary-300 hover:bg-secondary-50 focus:border-secondary-500 focus:shadow-inner focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-1 sm:text-sm"
 									id="description"
 									placeholder="Describe what has been done for maintenance"
 								/>
 							</div>
 						</label>
 					</div>
-					<div className="space-y-1.5 col-span-full">
+					<div className="col-span-full space-y-1.5">
 						<div className="w-3/5">
 							<label
 								htmlFor="price"
-								className="block leading-6  text-sm font-medium text-secondary-700"
+								className="block text-sm  font-medium leading-6 text-secondary-700"
 							>
 								Price
 							</label>
@@ -161,7 +161,7 @@ const CreateMaintenance = ({ setToggle, assetId }: MaintenanceProps) => {
 										validate: (value) => value > 0,
 									})}
 									step="any"
-									className="pl-2 pr-20  ring-1 ring-inset ring-gray-300 placeholder:text-gray-400  focus:ring-inset  sm:leading-6 sm:text-sm w-full bg-secondary-50 bg-opacity-70 border-1 focus:shadow-inner shadow-accent-300  focus:border-secondary-500 block p-2.5 h-8  px-3 py-1 shadow-secondary-300 rounded-md border border-secondary-300 text-sm font-medium leading-4 text-secondary-700 shadow-sm hover:bg-secondary-50 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-1"
+									className="border-1 shadow-accent-300  block h-8 w-full rounded-md  border  border-secondary-300 bg-secondary-50 bg-opacity-70 p-2.5 px-3 py-1 pl-2 pr-20  text-sm font-medium leading-4 text-secondary-700  shadow-sm shadow-secondary-300 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 hover:bg-secondary-50 focus:border-secondary-500 focus:shadow-inner focus:outline-none focus:ring-2 focus:ring-inset focus:ring-primary-500 focus:ring-offset-1 sm:text-sm sm:leading-6"
 									placeholder="0.00"
 								/>
 								<div className="absolute inset-y-0 right-0 flex items-center border-l">
@@ -170,7 +170,7 @@ const CreateMaintenance = ({ setToggle, assetId }: MaintenanceProps) => {
 									</label>
 									<span
 										id="currencyId"
-										className="h-full flex items-center justify-center rounded-r-md border-0 bg-transparent py-0 text-gray-500 w-12 px-1 border-primary-700 focus:ring-0 focus:ring-inset focus:ring-primary-600 sm:text-sm"
+										className="flex h-full w-12 items-center justify-center rounded-r-md border-0 border-primary-700 bg-transparent px-1 py-0 text-gray-500 focus:ring-0 focus:ring-inset focus:ring-primary-600 sm:text-sm"
 									>
 										{data?.currency?.initial}
 									</span>
@@ -178,11 +178,11 @@ const CreateMaintenance = ({ setToggle, assetId }: MaintenanceProps) => {
 							</div>
 						</div>
 					</div>
-					<div className="col-span-full w-full py-4 flex items-center justify-center">
+					<div className="col-span-full flex w-full items-center justify-center py-4">
 						<button
 							disabled={isPending ? true : false}
 							type="submit"
-							className="text-primary-50 bg-primary-600 text-sm p-1 rounded-md"
+							className="rounded-md bg-primary-600 p-1 text-sm text-primary-50"
 						>
 							<span>Submit</span>
 						</button>

@@ -72,24 +72,24 @@ const Dashboard = () => {
 		setSearchParam(searchInput);
 	};
 	return (
-		<div className="w-full bg-primary-50 space-y-3">
-			<div className="sticky z-20 md:flex items-center justify-between gap-2 bg-white top-2 hidden">
+		<div className="w-full space-y-3 bg-primary-50">
+			<div className="sticky top-2 z-20 hidden items-center justify-between gap-2 bg-white md:flex">
 				<div className="inline-flex items-center space-x-2 px-2">
 					<SearchInput onSearch={handleSearch} />
 				</div>
 				<div className="inline-flex items-center space-x-2 px-2">
 					<Link
 						href={`${pathname}/create`}
-						className="p-2 border bg-secondary-300  rounded-md"
+						className="rounded-md border bg-secondary-300  p-2"
 					>
 						<Icon icon="heroicons:plus" />
 					</Link>
 				</div>
 			</div>
-			<div className="shadow overscroll-none ring-1 ring-black ring-opacity-5 md:rounded-md">
-				<div className="flex-col hidden lg:flex">
+			<div className="overscroll-none shadow ring-1 ring-black ring-opacity-5 md:rounded-md">
+				<div className="hidden flex-col lg:flex">
 					<table className="table-auto divide-y divide-primary-100">
-						<thead className="sticky z-10 top-12 bg-secondary-600 text-secondary-50">
+						<thead className="sticky top-12 z-10 bg-secondary-600 text-secondary-50">
 							<tr>
 								{columns?.map((column, index) => (
 									<th
@@ -102,12 +102,12 @@ const Dashboard = () => {
 								))}
 							</tr>
 						</thead>
-						<tbody className="bg-white divide-y divide-gray-200">
+						<tbody className="divide-y divide-gray-200 bg-white">
 							{!data || isError || isPending ? (
 								<tr>
 									<td
 										colSpan={4}
-										className="px-3 py-2 text-base text-start whitespace-nowrap text-secondary-900"
+										className="whitespace-nowrap px-3 py-2 text-start text-base text-secondary-900"
 									>
 										No data
 									</td>
@@ -120,31 +120,31 @@ const Dashboard = () => {
 											i % 2 && i !== 0 ? 'bg-secondary-100/95' : ''
 										}`}
 									>
-										<td className="px-3 py-2 text-base text-start whitespace-nowrap text-secondary-900">
+										<td className="whitespace-nowrap px-3 py-2 text-start text-base text-secondary-900">
 											{i + 1}
 										</td>
-										<td className="px-3 py-2 text-base text-start whitespace-nowrap text-secondary-900">
+										<td className="whitespace-nowrap px-3 py-2 text-start text-base text-secondary-900">
 											{item?.name}
 										</td>
-										<td className="px-3 py-2 text-base text-start whitespace-nowrap text-secondary-900">
+										<td className="whitespace-nowrap px-3 py-2 text-start text-base text-secondary-900">
 											{item?.serialNumber}
 										</td>
-										<td className="px-3 py-2 text-base text-start whitespace-nowrap text-secondary-900">
+										<td className="whitespace-nowrap px-3 py-2 text-start text-base text-secondary-900">
 											{item?.ocoTagNumber}
 										</td>
-										<td className="px-3 py-2 text-base text-start whitespace-nowrap text-secondary-900">
+										<td className="whitespace-nowrap px-3 py-2 text-start text-base text-secondary-900">
 											{item?.location}
 										</td>
-										<td className="px-3 py-2 text-base text-start whitespace-nowrap text-secondary-900">
+										<td className="whitespace-nowrap px-3 py-2 text-start text-base text-secondary-900">
 											{item?.type?.name}
 										</td>
-										<td className="px-3 py-2 text-base text-start whitespace-nowrap text-secondary-900">
+										<td className="whitespace-nowrap px-3 py-2 text-start text-base text-secondary-900">
 											{item?.currentlyWith?.name}
 										</td>
-										<td className="px-3 py-2 text-base text-start whitespace-nowrap text-secondary-900">
+										<td className="whitespace-nowrap px-3 py-2 text-start text-base text-secondary-900">
 											{item?.condition?.name}
 										</td>
-										<td className="px-3 py-2 text-base text-start whitespace-nowrap text-secondary-900">
+										<td className="whitespace-nowrap px-3 py-2 text-start text-base text-secondary-900">
 											<OptDropdown
 												optBtn={tableOptBtnTxt}
 												optionsList={[

@@ -124,15 +124,15 @@ export default function CreateLawyerStopwatch({ setToggle }: CreateLawyerStopwat
 		mutate();
 	};
 	return (
-		<div className="fixed top-0 left-0 z-40 w-full h-full bg-black/50">
-			<div className="flex flex-col items-center transform bg-white rounded-lg md:p-12 md:gap-6 ove md:absolute md:-translate-x-1/2 md:-translate-y-1/2 md:top-1/2 md:left-1/2">
+		<div className="fixed left-0 top-0 z-40 h-full w-full bg-black/50">
+			<div className="ove flex transform flex-col items-center rounded-lg bg-white md:absolute md:left-1/2 md:top-1/2 md:-translate-x-1/2 md:-translate-y-1/2 md:gap-6 md:p-12">
 				<button
 					onClick={(e) => {
 						e.stopPropagation();
 						setToggle(false);
 					}}
 					type="button"
-					className="absolute top-3 right-2.5 text-secondary-400 bg-transparent hover:bg-secondary-200 hover:text-secondary-900 rounded-lg text-sm w-8 h-8 ml-auto inline-flex justify-center items-center"
+					className="absolute right-2.5 top-3 ml-auto inline-flex h-8 w-8 items-center justify-center rounded-lg bg-transparent text-sm text-secondary-400 hover:bg-secondary-200 hover:text-secondary-900"
 				>
 					<Icon icon="heroicons:x-mark" className="text-lg text-primary-600" />
 				</button>
@@ -148,10 +148,10 @@ export default function CreateLawyerStopwatch({ setToggle }: CreateLawyerStopwat
 								setToggleManualLawyerStopwatch(false);
 								setToggleAutomaticLawyerStopwatch(true);
 							}}
-							className={`text-xs p-1 shadow-sm ${
+							className={`p-1 text-xs shadow-sm ${
 								toggleAutomaticLawyerStopwatch
-									? 'bg-slate-300 cursor-not-allowed text-slate-400'
-									: 'bg-primary-500 hover:bg-primary-500/50 text-white'
+									? 'cursor-not-allowed bg-slate-300 text-slate-400'
+									: 'bg-primary-500 text-white hover:bg-primary-500/50'
 							}  rounded-l-md`}
 						>
 							Automatic
@@ -163,10 +163,10 @@ export default function CreateLawyerStopwatch({ setToggle }: CreateLawyerStopwat
 								setToggleAutomaticLawyerStopwatch(false);
 								setToggleManualLawyerStopwatch(true);
 							}}
-							className={`text-xs p-1 shadow-sm ${
+							className={`p-1 text-xs shadow-sm ${
 								toggleManualLawyerStopwatch
-									? 'bg-slate-300 cursor-not-allowed text-slate-400'
-									: 'bg-primary-500 hover:bg-primary-500/50 text-white'
+									? 'cursor-not-allowed bg-slate-300 text-slate-400'
+									: 'bg-primary-500 text-white hover:bg-primary-500/50'
 							}  rounded-r-md`}
 						>
 							Manual
@@ -197,10 +197,10 @@ export default function CreateLawyerStopwatch({ setToggle }: CreateLawyerStopwat
 						/>
 					)}
 
-					<div className="flex items-center justify-center w-full py-8 space-x-2">
+					<div className="flex w-full items-center justify-center space-x-2 py-8">
 						<button
 							type="submit"
-							className="flex items-center gap-2 p-2 text-sm font-medium leading-4 text-white border rounded-md shadow-sm bg-primary-600 hover:opacity-80 border-primary-300 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-1"
+							className="flex items-center gap-2 rounded-md border border-primary-300 bg-primary-600 p-2 text-sm font-medium leading-4 text-white shadow-sm hover:opacity-80 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-1"
 						>
 							Submit Form
 						</button>
@@ -219,7 +219,7 @@ export default function CreateLawyerStopwatch({ setToggle }: CreateLawyerStopwat
 									endedAt: '',
 								});
 							}}
-							className="flex items-center gap-2 p-2 text-sm font-medium leading-4 text-white border rounded-md shadow-sm bg-secondary-600 hover:opacity-80 border-secondary-300 focus:outline-none focus:ring-2 focus:ring-secondary-500 focus:ring-offset-1"
+							className="flex items-center gap-2 rounded-md border border-secondary-300 bg-secondary-600 p-2 text-sm font-medium leading-4 text-white shadow-sm hover:opacity-80 focus:outline-none focus:ring-2 focus:ring-secondary-500 focus:ring-offset-1"
 						>
 							Cancel
 						</button>

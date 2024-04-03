@@ -19,7 +19,7 @@ interface CustomTableProps {
 const CustomTable = ({ columns, data }: CustomTableProps) => {
 	return (
 		<table className="table-auto divide-y divide-primary-100">
-			<thead className="sticky z-10 top-12 bg-secondary-600 text-secondary-50">
+			<thead className="sticky top-12 z-10 bg-secondary-600 text-secondary-50">
 				<tr>
 					{columns?.map((column, index) => (
 						<th
@@ -32,7 +32,7 @@ const CustomTable = ({ columns, data }: CustomTableProps) => {
 					))}
 				</tr>
 			</thead>
-			<tbody className="bg-white divide-y divide-gray-200">
+			<tbody className="divide-y divide-gray-200 bg-white">
 				{data?.map((item, index) => (
 					<tr
 						key={index}

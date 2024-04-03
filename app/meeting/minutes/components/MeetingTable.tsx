@@ -34,13 +34,13 @@ export default function MeetingTable() {
 
 	return (
 		<>
-			<div className="sticky z-20 md:flex items-center justify-between gap-2 bg-transparent top-2 hidden">
-				<h1 className="text-lg font-extralight text-accent-700"></h1>
+			<div className="sticky top-2 z-20 hidden items-center justify-between gap-2 bg-transparent md:flex">
+				<h1 className="text-accent-700 text-lg font-extralight"></h1>
 				<div className="inline-flex items-center space-x-2">
 					<SearchInput onSearch={handleSearch} />
 					<Link
 						href={`${pathname}/create`}
-						className="inline-flex items-center justify-center w-8 h-8 p-2 text-xs rounded-sm shadow-sm text-secondary-600 bg-secondary-100 focus:ring-offset-secondary-100"
+						className="inline-flex h-8 w-8 items-center justify-center rounded-sm bg-secondary-100 p-2 text-xs text-secondary-600 shadow-sm focus:ring-offset-secondary-100"
 					>
 						<Icon icon={'heroicons:document-plus'} />
 					</Link>

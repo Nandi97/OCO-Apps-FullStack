@@ -49,8 +49,8 @@ const Create = () => {
 		mutate(data);
 	};
 	return (
-		<div className="w-3/4 h-full bg-primary-50 rounded-md shadow-md">
-			<div className="w-full flex flex-col items-center text-secondary-700 justify-center space-y-2">
+		<div className="h-full w-3/4 rounded-md bg-primary-50 shadow-md">
+			<div className="flex w-full flex-col items-center justify-center space-y-2 text-secondary-700">
 				<h1 className="text-2xl font-bold">Asset Details</h1>
 				<h2 className="text-xl font-semibold">Enter the asset details below.</h2>
 			</div>

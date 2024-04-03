@@ -19,7 +19,7 @@ export default function LeaveView() {
 	console.log('Leave Applications:', applications);
 	return (
 		<>
-			<table className="table-auto divide-y divide-primary-100 w-full">
+			<table className="w-full table-auto divide-y divide-primary-100">
 				<thead className="sticky z-10 bg-secondary-600 text-secondary-50">
 					<tr>
 						<th
@@ -67,7 +67,7 @@ export default function LeaveView() {
 						</th>
 					</tr>
 				</thead>
-				<tbody className="bg-white divide-y divide-gray-200">
+				<tbody className="divide-y divide-gray-200 bg-white">
 					{applications?.map((item, index: number) => (
 						<tr
 							key={item?.id}
@@ -75,7 +75,7 @@ export default function LeaveView() {
 								index % 2 && index !== 0 ? 'bg-secondary-100/95' : ''
 							}`}
 						>
-							<td className="p-2 text-sm text-center whitespace-nowrap text-secondary-500">
+							<td className="whitespace-nowrap p-2 text-center text-sm text-secondary-500">
 								{index + 1}
 							</td>
 							<td className="py-2 text-sm text-primary-600 hover:underline">
@@ -83,25 +83,25 @@ export default function LeaveView() {
 									{item?.id}
 								</Link>
 							</td>
-							<td className="p-2 text-sm whitespace-nowrap text-secondary-500">
+							<td className="whitespace-nowrap p-2 text-sm text-secondary-500">
 								{item?.duration} Days
 							</td>
-							<td className="p-2 text-sm whitespace-nowrap text-secondary-500">
+							<td className="whitespace-nowrap p-2 text-sm text-secondary-500">
 								{!item?.startDate
 									? ''
 									: format(new Date(item?.startDate), 'MMMM d, yyyy')}
 							</td>
-							<td className="p-2 text-sm whitespace-nowrap text-secondary-500">
+							<td className="whitespace-nowrap p-2 text-sm text-secondary-500">
 								{!item?.endDate
 									? ''
 									: format(new Date(item?.endDate), 'MMMM d, yyyy')}
 							</td>
-							<td className="p-2 text-sm whitespace-nowrap text-secondary-500">
+							<td className="whitespace-nowrap p-2 text-sm text-secondary-500">
 								{!item?.reportDate
 									? ''
 									: format(new Date(item?.reportDate), 'MMMM d, yyyy')}
 							</td>
-							<td className="px-3 flex items-center justify-center space-x-3 py-2 text-sm text-center whitespace-nowrap text-secondary-500">
+							<td className="flex items-center justify-center space-x-3 whitespace-nowrap px-3 py-2 text-center text-sm text-secondary-500">
 								<div
 									className={`rounded ring-2 ring-slate-400 ${
 										item?.leaveSupervisorApproval?.status !== 1

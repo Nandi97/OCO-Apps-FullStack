@@ -53,11 +53,11 @@ export default function MeetingItemForm({
 		{ id: 4, name: 'Decision' },
 	];
 	return (
-		<div className="grid grid-cols-12 gap-2 border rounded-md border-secondary-400 p-2">
+		<div className="grid grid-cols-12 gap-2 rounded-md border border-secondary-400 p-2">
 			<div className="col-span-12">
 				<label
 					htmlFor="description"
-					className="flex items-center space-x-2 text-sm font-medium text-secondary-700 f"
+					className="f flex items-center space-x-2 text-sm font-medium text-secondary-700"
 				>
 					<span> Action</span>
 				</label>
@@ -67,14 +67,14 @@ export default function MeetingItemForm({
 						id="description"
 						value={formValues?.action}
 						onChange={onChange}
-						className="sm:text-sm w-full bg-secondary-50 bg-opacity-70 border-1 focus:shadow-inner shadow-accent-300  focus:border-secondary-500 block p-2.5 h-8  px-3 py-1 shadow-secondary-300 rounded-md border border-secondary-300 text-sm font-medium leading-4 text-secondary-700 shadow-sm hover:bg-secondary-50 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-1"
+						className="border-1 shadow-accent-300 block h-8 w-full rounded-md border  border-secondary-300 bg-secondary-50 bg-opacity-70 p-2.5  px-3 py-1 text-sm font-medium leading-4 text-secondary-700 shadow-sm shadow-secondary-300 hover:bg-secondary-50 focus:border-secondary-500 focus:shadow-inner focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-1 sm:text-sm"
 					/>
 				</div>
 			</div>
 			<div className="col-span-12">
 				<label
 					htmlFor="responsible"
-					className="flex items-center space-x-2 text-sm font-medium text-secondary-700 f"
+					className="f flex items-center space-x-2 text-sm font-medium text-secondary-700"
 				>
 					<span>Responsible</span>
 				</label>
@@ -89,13 +89,13 @@ export default function MeetingItemForm({
 						multiple
 					>
 						<div className="relative mt-1">
-							<div className="flex flex-wrap items-center z-[3]">
+							<div className="z-[3] flex flex-wrap items-center">
 								{selected?.map((item) => (
 									<div
 										key={item?.id}
-										className="flex relative items-center bg-secondary-300 text-xs text-white px-2 py-1 rounded-full m-1"
+										className="relative m-1 flex items-center rounded-full bg-secondary-300 px-2 py-1 text-xs text-white"
 									>
-										<span className="text-xs overflow-hidden truncate w-14">
+										<span className="w-14 overflow-hidden truncate text-xs">
 											{item?.name}
 										</span>
 										<button
@@ -114,7 +114,7 @@ export default function MeetingItemForm({
 									</div>
 								))}
 								<Combobox.Input
-									className="z-[2]  sm:text-sm w-full bg-secondary-50 bg-opacity-70 border-1 focus:shadow-inner shadow-accent-300  focus:border-secondary-500 block p-2.5 h-8  px-3 py-1 shadow-secondary-300 rounded-md border border-secondary-300 text-sm font-medium leading-4 text-secondary-700 shadow-sm hover:bg-secondary-50 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-1"
+									className="border-1  shadow-accent-300 z-[2] block h-8 w-full rounded-md border  border-secondary-300 bg-secondary-50 bg-opacity-70 p-2.5  px-3 py-1 text-sm font-medium leading-4 text-secondary-700 shadow-sm shadow-secondary-300 hover:bg-secondary-50 focus:border-secondary-500 focus:shadow-inner focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-1 sm:text-sm"
 									onChange={(event) => setQuery('')}
 									// displayValue={(selected: any) =>
 									// 	selected
@@ -133,7 +133,7 @@ export default function MeetingItemForm({
 								<Combobox.Options className="z-10 mt-1 max-h-60 w-full overflow-auto rounded-md bg-white py-1 text-base shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none sm:text-sm">
 									{filteredPersons(personResponsible)?.length === 0 &&
 									query !== '' ? (
-										<div className="relative cursor-default select-none py-2 px-4 text-gray-700">
+										<div className="relative cursor-default select-none px-4 py-2 text-gray-700">
 											Nothing found.
 										</div>
 									) : (
@@ -143,7 +143,7 @@ export default function MeetingItemForm({
 												value={item}
 												className={({ active, selected }) =>
 													classNames(
-														'cursor-default select-none py-2 pl-3 pr-9 flex justify-between',
+														'flex cursor-default select-none justify-between py-2 pl-3 pr-9',
 														active
 															? 'bg-primary-600 text-white'
 															: 'text-secondary-900'
@@ -205,7 +205,7 @@ export default function MeetingItemForm({
 						value={formValues?.dueDate}
 						onChange={onChange}
 						id="dueDate"
-						className="sm:text-sm w-full bg-secondary-50 bg-opacity-70 border-1 focus:shadow-inner shadow-accent-300  focus:border-secondary-500 block p-2.5 h-8  px-3 py-1 shadow-secondary-300 rounded-md border border-secondary-300 text-sm font-medium leading-4 text-secondary-700 shadow-sm hover:bg-secondary-50 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-1"
+						className="border-1 shadow-accent-300 block h-8 w-full rounded-md border  border-secondary-300 bg-secondary-50 bg-opacity-70 p-2.5  px-3 py-1 text-sm font-medium leading-4 text-secondary-700 shadow-sm shadow-secondary-300 hover:bg-secondary-50 focus:border-secondary-500 focus:shadow-inner focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-1 sm:text-sm"
 					/>
 				</div>
 			</div>
@@ -222,9 +222,9 @@ export default function MeetingItemForm({
 						name="activity"
 						onChange={onChange}
 						value={formValues?.activity}
-						className="sm:text-sm w-full bg-secondary-50 bg-opacity-70 border-1 focus:shadow-inner shadow-accent-300 focus:border-secondary-500 block p-2.5 h-8 px-3 py-1 shadow-secondary-300 rounded-md border border-secondary-300 text-sm font-medium leading-4 text-secondary-700 shadow-sm hover:bg-secondary-50 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-1"
+						className="border-1 shadow-accent-300 block h-8 w-full rounded-md border border-secondary-300 bg-secondary-50 bg-opacity-70 p-2.5 px-3 py-1 text-sm font-medium leading-4 text-secondary-700 shadow-sm shadow-secondary-300 hover:bg-secondary-50 focus:border-secondary-500 focus:shadow-inner focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-1 sm:text-sm"
 					>
-						<option disabled value="" className="text-opacity-50 text-secondary-700">
+						<option disabled value="" className="text-secondary-700 text-opacity-50">
 							--Activity--
 						</option>
 						{activity?.map((item: any) => (
@@ -238,7 +238,7 @@ export default function MeetingItemForm({
 			<div className="col-span-12">
 				<label
 					htmlFor="status"
-					className="flex items-center space-x-2 text-sm font-medium text-secondary-700 f"
+					className="f flex items-center space-x-2 text-sm font-medium text-secondary-700"
 				>
 					<span> Status</span>
 				</label>
@@ -248,14 +248,14 @@ export default function MeetingItemForm({
 						id="status"
 						value={formValues?.status}
 						onChange={onChange}
-						className="sm:text-sm w-full bg-secondary-50 bg-opacity-70 border-1 focus:shadow-inner shadow-accent-300  focus:border-secondary-500 block p-2.5 h-8  px-3 py-1 shadow-secondary-300 rounded-md border border-secondary-300 text-sm font-medium leading-4 text-secondary-700 shadow-sm hover:bg-secondary-50 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-1"
+						className="border-1 shadow-accent-300 block h-8 w-full rounded-md border  border-secondary-300 bg-secondary-50 bg-opacity-70 p-2.5  px-3 py-1 text-sm font-medium leading-4 text-secondary-700 shadow-sm shadow-secondary-300 hover:bg-secondary-50 focus:border-secondary-500 focus:shadow-inner focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-1 sm:text-sm"
 					/>
 				</div>
 			</div>
-			<div className="md:col-span-1 flex w-full items-center justify-center">
+			<div className="flex w-full items-center justify-center md:col-span-1">
 				<button
 					onClick={onClick}
-					className="bg-primary-600 text-white p-2 rounded-md mt-5"
+					className="mt-5 rounded-md bg-primary-600 p-2 text-white"
 					type="button"
 				>
 					<Icon icon="heroicons:trash" />

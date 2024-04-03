@@ -41,7 +41,7 @@ export function DataTableToolbar<TData>({ table }: DataTableToolbarProps<TData>)
 					<Button
 						variant="ghost"
 						onClick={() => table.resetColumnFilters()}
-						className="h-8 px-2 lg:px-3 border-2 border-secondary-500/50 text-secondary-500"
+						className="h-8 border-2 border-secondary-500/50 px-2 text-secondary-500 lg:px-3"
 					>
 						Reset
 						<Icon icon="radix-icons:cross-2" className="ml-2 h-4 w-4" />

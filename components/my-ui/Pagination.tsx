@@ -57,19 +57,19 @@ export default function Pagination({
 	const showFullPagination = total / perPage < 11;
 
 	return (
-		<div className="flex items-center justify-between px-4 py-3 bg-white border-t border-secondary-200 sm:px-6">
-			<div className="flex justify-between flex-1 sm:hidden">
+		<div className="flex items-center justify-between border-t border-secondary-200 bg-white px-4 py-3 sm:px-6">
+			<div className="flex flex-1 justify-between sm:hidden">
 				<button
 					onClick={() => handlePageChange(currentPage - 1)}
 					disabled={currentPage === 1}
-					className="relative inline-flex items-center px-4 py-2 text-sm font-medium bg-white border rounded-md border-secondary-300 text-secondary-700 hover:bg-secondary-50"
+					className="relative inline-flex items-center rounded-md border border-secondary-300 bg-white px-4 py-2 text-sm font-medium text-secondary-700 hover:bg-secondary-50"
 				>
 					Previous
 				</button>
 				<button
 					onClick={() => handlePageChange(currentPage + 1)}
 					disabled={currentPage === lastPage}
-					className="relative inline-flex items-center px-4 py-2 ml-3 text-sm font-medium bg-white border rounded-md border-secondary-300 text-secondary-700 hover:bg-secondary-50"
+					className="relative ml-3 inline-flex items-center rounded-md border border-secondary-300 bg-white px-4 py-2 text-sm font-medium text-secondary-700 hover:bg-secondary-50"
 				>
 					Next
 				</button>
@@ -90,7 +90,7 @@ export default function Pagination({
 							</div>
 							<select
 								onChange={handlePerPageChange}
-								className="sm:text-sm w-16 bg-secondary-50 bg-opacity-70 border-1 focus:shadow-inner shadow-accent-300  focus:border-secondary-500 block p-2.5 h-8  px-3 py-1 shadow-secondary-300 rounded-md border border-secondary-300 text-sm font-medium leading-4 text-secondary-700 shadow-sm hover:bg-secondary-50 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-1"
+								className="border-1 shadow-accent-300 block h-8 w-16 rounded-md border  border-secondary-300 bg-secondary-50 bg-opacity-70 p-2.5  px-3 py-1 text-sm font-medium leading-4 text-secondary-700 shadow-sm shadow-secondary-300 hover:bg-secondary-50 focus:border-secondary-500 focus:shadow-inner focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-1 sm:text-sm"
 							>
 								<option value="" disabled>
 									Select Rows
@@ -104,7 +104,7 @@ export default function Pagination({
 							</select>
 						</div>
 						<nav
-							className="inline-flex -space-x-px rounded-md shadow-sm isolate"
+							className="isolate inline-flex -space-x-px rounded-md shadow-sm"
 							aria-label="Pagination"
 						>
 							{links.map((item, index) => {
@@ -114,16 +114,16 @@ export default function Pagination({
 											key={index}
 											onClick={() => handlePageChange(currentPage - 1)}
 											disabled={currentPage === 1}
-											className={` focus:z-20 relative px-2  inline-flex items-center rounded-l-md py-2 text-sm font-medium border ${
+											className={` relative inline-flex items-center  rounded-l-md border px-2 py-2 text-sm font-medium focus:z-20 ${
 												currentPage < 2
-													? 'cursor-not-allowed text-slate-400 border-secondary-200'
+													? 'cursor-not-allowed border-secondary-200 text-slate-400'
 													: 'border-secondary-400 bg-secondary-400 text-secondary-50   hover:bg-primary-500 hover:text-primary-50'
 											}`}
 										>
 											<span className="sr-only">Previous</span>
 											<Icon
 												icon="heroicons:chevron-left"
-												className="w-5 h-5"
+												className="h-5 w-5"
 												aria-hidden="true"
 											></Icon>
 										</button>
@@ -138,7 +138,7 @@ export default function Pagination({
 												}
 												className={`relative inline-flex items-center border ${
 													currentPage === parseInt(item?.label)
-														? 'border-primary-500 text-primary-50 bg-primary-500'
+														? 'border-primary-500 bg-primary-500 text-primary-50'
 														: 'border-secondary-400 bg-white text-secondary-500 hover:bg-secondary-50'
 												} px-4 py-2 text-sm font-medium  focus:z-20`}
 											>
@@ -151,9 +151,9 @@ export default function Pagination({
 										<button
 											key={index}
 											disabled={currentPage === lastPage}
-											className={`relative inline-flex items-center rounded-r-md border  focus:z-20 px-2 py-2 ${
+											className={`relative inline-flex items-center rounded-r-md border  px-2 py-2 focus:z-20 ${
 												currentPage === lastPage
-													? 'cursor-not-allowed text-slate-400 border-secondary-200'
+													? 'cursor-not-allowed border-secondary-200 text-slate-400'
 													: 'border-secondary-400 bg-secondary-400 text-secondary-50   hover:bg-primary-500 hover:text-primary-50'
 											}`}
 											onClick={() =>
@@ -163,7 +163,7 @@ export default function Pagination({
 											<span className="sr-only">Next</span>
 											<Icon
 												icon="heroicons:chevron-right"
-												className="w-5 h-5"
+												className="h-5 w-5"
 												aria-hidden="true"
 											></Icon>
 										</button>

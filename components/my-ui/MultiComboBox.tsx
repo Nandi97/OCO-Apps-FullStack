@@ -29,7 +29,7 @@ export default function MultiCombobox({ items, initialSelectedItems }: MultiComb
 	return (
 		<Combobox value={selectedItems} onChange={setSelectedItems} multiple>
 			<Combobox.Input
-				className="sm:text-sm w-full bg-secondary-50 bg-opacity-70 border-1 focus:shadow-inner shadow-accent-300  focus:border-secondary-500 block p-2.5 h-8  px-3 py-1 shadow-secondary-300 rounded-md border border-secondary-300 text-sm font-medium leading-4 text-secondary-700 shadow-sm hover:bg-secondary-50 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-1"
+				className="border-1 shadow-accent-300 block h-8 w-full rounded-md border  border-secondary-300 bg-secondary-50 bg-opacity-70 p-2.5  px-3 py-1 text-sm font-medium leading-4 text-secondary-700 shadow-sm shadow-secondary-300 hover:bg-secondary-50 focus:border-secondary-500 focus:shadow-inner focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-1 sm:text-sm"
 				displayValue={displaySelectedNames}
 				onChange={(event) => setQuery(event.target.value)}
 			/>
@@ -40,7 +40,7 @@ export default function MultiCombobox({ items, initialSelectedItems }: MultiComb
 						value={item}
 						className={({ active, selected }) =>
 							classNames(
-								'cursor-default select-none py-2 pl-3 pr-9 flex justify-between',
+								'flex cursor-default select-none justify-between py-2 pl-3 pr-9',
 								active ? 'bg-primary-600 text-white' : 'text-secondary-900'
 							)
 						}

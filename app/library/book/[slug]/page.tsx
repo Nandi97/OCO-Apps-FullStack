@@ -35,13 +35,13 @@ export default function Book(url: URL) {
 	];
 	return (
 		<div className="space-y-2 bg-white">
-			<div className="sticky z-20 flex items-center justify-between gap-2 bg-white top-2">
-				<h1 className="text-lg font-extralight text-accent-700">{book?.title}</h1>
+			<div className="sticky top-2 z-20 flex items-center justify-between gap-2 bg-white">
+				<h1 className="text-accent-700 text-lg font-extralight">{book?.title}</h1>
 				<div className="inline-flex items-center space-x-2"></div>
 			</div>
 			<div className="relative">
-				<div className="grid w-full grid-cols-6 p-4 shadow md:grid-cols-12 overscroll-none ring-1 ring-black ring-opacity-5 md:rounded-md">
-					<div className="flex items-center w-full col-span-6 md:col-span-4">
+				<div className="grid w-full grid-cols-6 overscroll-none p-4 shadow ring-1 ring-black ring-opacity-5 md:grid-cols-12 md:rounded-md">
+					<div className="col-span-6 flex w-full items-center md:col-span-4">
 						<Image
 							width={180}
 							height={320}
@@ -49,69 +49,69 @@ export default function Book(url: URL) {
 							src={book?.coverUrl || Book_Mockup}
 						/>
 					</div>
-					<div className="grid grid-cols-8 col-span-6 gap-2 md:col-span-8">
+					<div className="col-span-6 grid grid-cols-8 gap-2 md:col-span-8">
 						{/* Author  */}
-						<div className="flex justify-between w-full text-sm font-semibold text-secondary-700 md:col-span-2 sm:col-span-8">
+						<div className="flex w-full justify-between text-sm font-semibold text-secondary-700 sm:col-span-8 md:col-span-2">
 							<span>Author</span>
 							<span>:</span>
 						</div>
-						<div className="px-2 text-sm font-semibold md:col-span-6 sm:col-span-8">
+						<div className="px-2 text-sm font-semibold sm:col-span-8 md:col-span-6">
 							<span>{book?.author}</span>
 						</div>
 						{/* Publisher  */}
-						<div className="flex justify-between w-full text-sm font-semibold text-secondary-700 md:col-span-2 sm:col-span-8">
+						<div className="flex w-full justify-between text-sm font-semibold text-secondary-700 sm:col-span-8 md:col-span-2">
 							<span>Publisher</span>
 							<span>:</span>
 						</div>
-						<div className="px-2 text-sm font-semibold md:col-span-6 sm:col-span-8">
+						<div className="px-2 text-sm font-semibold sm:col-span-8 md:col-span-6">
 							<span>{book?.publisher}</span>
 						</div>
 						{/* Publication Year  */}
-						<div className="flex justify-between w-full text-sm font-semibold text-secondary-700 md:col-span-2 sm:col-span-8">
+						<div className="flex w-full justify-between text-sm font-semibold text-secondary-700 sm:col-span-8 md:col-span-2">
 							<span>Publication Year</span>
 							<span>:</span>
 						</div>
-						<div className="px-2 text-sm font-semibold md:col-span-6 sm:col-span-8">
+						<div className="px-2 text-sm font-semibold sm:col-span-8 md:col-span-6">
 							<span>{book?.publicationYear}</span>
 						</div>
 						{/* Subject  */}
-						<div className="flex justify-between w-full text-sm font-semibold text-secondary-700 md:col-span-2 sm:col-span-8">
+						<div className="flex w-full justify-between text-sm font-semibold text-secondary-700 sm:col-span-8 md:col-span-2">
 							<span>Subject</span>
 							<span>:</span>
 						</div>
-						<div className="px-2 text-sm font-semibold md:col-span-6 sm:col-span-8">
+						<div className="px-2 text-sm font-semibold sm:col-span-8 md:col-span-6">
 							<span>{book?.subject}</span>
 						</div>
 						{/* Edition  */}
-						<div className="flex justify-between w-full text-sm font-semibold text-secondary-700 md:col-span-2 sm:col-span-8">
+						<div className="flex w-full justify-between text-sm font-semibold text-secondary-700 sm:col-span-8 md:col-span-2">
 							<span>Edition</span>
 							<span>:</span>
 						</div>
-						<div className="px-2 text-sm font-semibold md:col-span-6 sm:col-span-8">
+						<div className="px-2 text-sm font-semibold sm:col-span-8 md:col-span-6">
 							<span>{book?.edition}</span>
 						</div>
 						{/* Edition  */}
-						<div className="flex justify-between w-full text-sm font-semibold text-secondary-700 md:col-span-2 sm:col-span-8">
+						<div className="flex w-full justify-between text-sm font-semibold text-secondary-700 sm:col-span-8 md:col-span-2">
 							<span>ISBN_ISSN</span>
 							<span>:</span>
 						</div>
-						<div className="px-2 text-sm font-semibold md:col-span-6 sm:col-span-8">
+						<div className="px-2 text-sm font-semibold sm:col-span-8 md:col-span-6">
 							<span>{book?.isbnIssn}</span>
 						</div>
 						{/* Copies  */}
-						<div className="flex items-center w-full col-span-8 text-sm font-semibold">
-							<div className="p-2 space-x-4 rounded-md bg-primary-400 text-secondary-50 ">
+						<div className="col-span-8 flex w-full items-center text-sm font-semibold">
+							<div className="space-x-4 rounded-md bg-primary-400 p-2 text-secondary-50 ">
 								<span className="inline-flex h-full rounded-md ">
 									Available Copies
 								</span>
-								<span className="inline-flex items-center justify-center text-xs rounded-full ">
+								<span className="inline-flex items-center justify-center rounded-full text-xs ">
 									{book?.copies}
 								</span>
 							</div>
 						</div>
 					</div>
 				</div>
-				<div className="absolute z-30 top-2 right-2 text-secondary-400 bg-transparent hover:bg-secondary-200 hover:text-secondary-900 rounded-lg text-sm w-8 h-8 ml-auto inline-flex justify-center items-center">
+				<div className="absolute right-2 top-2 z-30 ml-auto inline-flex h-8 w-8 items-center justify-center rounded-lg bg-transparent text-sm text-secondary-400 hover:bg-secondary-200 hover:text-secondary-900">
 					<OptDropdown
 						optBtn={tableOptBtnTxt}
 						optionsList={[

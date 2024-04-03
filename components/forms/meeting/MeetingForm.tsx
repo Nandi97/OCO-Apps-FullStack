@@ -105,8 +105,8 @@ export default function MeetingForm({
 				{({ open }) => (
 					<>
 						<Disclosure.Button className="flex w-full items-center justify-between rounded-lg bg-primary-100 px-4 py-2 text-left text-sm font-medium text-primary-900 hover:bg-primary-200 focus:outline-none focus-visible:ring focus-visible:ring-primary-500 focus-visible:ring-opacity-75">
-							<div className="w-full flex items-center space-x-2">
-								<div className="h-2 w-2 p-3 rounded-full bg-primary-600 text-primary-50 flex items-center justify-center">
+							<div className="flex w-full items-center space-x-2">
+								<div className="flex h-2 w-2 items-center justify-center rounded-full bg-primary-600 p-3 text-primary-50">
 									<span>1</span>
 								</div>
 								<div className="flex flex-col">
@@ -123,8 +123,8 @@ export default function MeetingForm({
 							/>
 						</Disclosure.Button>
 
-						<Disclosure.Panel as="dd" className="px-4 pt-4 pb-2 text-sm text-gray-500">
-							<div className="grid md:grid-cols-12 grid-cols-6 gap-4 border border-secondary-200 rounded p-2">
+						<Disclosure.Panel as="dd" className="px-4 pb-2 pt-4 text-sm text-gray-500">
+							<div className="grid grid-cols-6 gap-4 rounded border border-secondary-200 p-2 md:grid-cols-12">
 								<div className="col-span-6 md:col-span-12">
 									<label
 										htmlFor="title"
@@ -139,7 +139,7 @@ export default function MeetingForm({
 											id="title"
 											value={formValues?.title}
 											onChange={onChange}
-											className="sm:text-sm w-full bg-secondary-50 bg-opacity-70 border-1 focus:shadow-inner shadow-accent-300  focus:border-secondary-500 block p-2.5 h-8  px-3 py-1 shadow-secondary-300 rounded-md border border-secondary-300 text-sm font-medium leading-4 text-secondary-700 shadow-sm hover:bg-secondary-50 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-1"
+											className="border-1 shadow-accent-300 block h-8 w-full rounded-md border  border-secondary-300 bg-secondary-50 bg-opacity-70 p-2.5  px-3 py-1 text-sm font-medium leading-4 text-secondary-700 shadow-sm shadow-secondary-300 hover:bg-secondary-50 focus:border-secondary-500 focus:shadow-inner focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-1 sm:text-sm"
 										/>
 									</div>
 								</div>
@@ -158,7 +158,7 @@ export default function MeetingForm({
 											id="date"
 											value={formValues?.date}
 											onChange={onChange}
-											className="sm:text-sm w-full bg-secondary-50 bg-opacity-70 border-1 focus:shadow-inner shadow-accent-300  focus:border-secondary-500 block p-2.5 h-8  px-3 py-1 shadow-secondary-300 rounded-md border border-secondary-300 text-sm font-medium leading-4 text-secondary-700 shadow-sm hover:bg-secondary-50 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-1"
+											className="border-1 shadow-accent-300 block h-8 w-full rounded-md border  border-secondary-300 bg-secondary-50 bg-opacity-70 p-2.5  px-3 py-1 text-sm font-medium leading-4 text-secondary-700 shadow-sm shadow-secondary-300 hover:bg-secondary-50 focus:border-secondary-500 focus:shadow-inner focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-1 sm:text-sm"
 										/>
 									</div>
 								</div>
@@ -176,7 +176,7 @@ export default function MeetingForm({
 											id="startedAt"
 											value={formValues?.startedAt}
 											onChange={onChange}
-											className="sm:text-sm w-full bg-secondary-50 bg-opacity-70 border-1 focus:shadow-inner shadow-accent-300  focus:border-secondary-500 block p-2.5 h-8  px-3 py-1 shadow-secondary-300 rounded-md border border-secondary-300 text-sm font-medium leading-4 text-secondary-700 shadow-sm hover:bg-secondary-50 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-1"
+											className="border-1 shadow-accent-300 block h-8 w-full rounded-md border  border-secondary-300 bg-secondary-50 bg-opacity-70 p-2.5  px-3 py-1 text-sm font-medium leading-4 text-secondary-700 shadow-sm shadow-secondary-300 hover:bg-secondary-50 focus:border-secondary-500 focus:shadow-inner focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-1 sm:text-sm"
 										/>
 									</div>
 								</div>
@@ -194,7 +194,7 @@ export default function MeetingForm({
 											id="endedAt"
 											value={formValues?.endedAt}
 											onChange={onChange}
-											className="sm:text-sm w-full bg-secondary-50 bg-opacity-70 border-1 focus:shadow-inner shadow-accent-300  focus:border-secondary-500 block p-2.5 h-8  px-3 py-1 shadow-secondary-300 rounded-md border border-secondary-300 text-sm font-medium leading-4 text-secondary-700 shadow-sm hover:bg-secondary-50 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-1"
+											className="border-1 shadow-accent-300 block h-8 w-full rounded-md border  border-secondary-300 bg-secondary-50 bg-opacity-70 p-2.5  px-3 py-1 text-sm font-medium leading-4 text-secondary-700 shadow-sm shadow-secondary-300 hover:bg-secondary-50 focus:border-secondary-500 focus:shadow-inner focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-1 sm:text-sm"
 										/>
 									</div>
 								</div>
@@ -212,7 +212,7 @@ export default function MeetingForm({
 											id="venue"
 											value={formValues?.venue}
 											onChange={onChange}
-											className="sm:text-sm w-full bg-secondary-50 bg-opacity-70 border-1 focus:shadow-inner shadow-accent-300  focus:border-secondary-500 block p-2.5 h-8  px-3 py-1 shadow-secondary-300 rounded-md border border-secondary-300 text-sm font-medium leading-4 text-secondary-700 shadow-sm hover:bg-secondary-50 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-1"
+											className="border-1 shadow-accent-300 block h-8 w-full rounded-md border  border-secondary-300 bg-secondary-50 bg-opacity-70 p-2.5  px-3 py-1 text-sm font-medium leading-4 text-secondary-700 shadow-sm shadow-secondary-300 hover:bg-secondary-50 focus:border-secondary-500 focus:shadow-inner focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-1 sm:text-sm"
 										/>
 									</div>
 								</div>
@@ -229,13 +229,13 @@ export default function MeetingForm({
 										onChange={setMeetingAttendees}
 										multiple
 									>
-										<div className="flex flex-wrap items-center z-[3]">
+										<div className="z-[3] flex flex-wrap items-center">
 											{meetingAttendees?.map((item) => (
 												<div
 													key={item?.id}
-													className="flex relative items-center bg-secondary-300 text-xs text-white px-2 py-1 rounded-full m-1"
+													className="relative m-1 flex items-center rounded-full bg-secondary-300 px-2 py-1 text-xs text-white"
 												>
-													<span className="text-xs overflow-hidden truncate w-14">
+													<span className="w-14 overflow-hidden truncate text-xs">
 														{item?.name}
 													</span>
 													<button
@@ -259,7 +259,7 @@ export default function MeetingForm({
 												</div>
 											))}
 											<Combobox.Input
-												className="z-[2]  sm:text-sm w-full bg-secondary-50 bg-opacity-70 border-1 focus:shadow-inner shadow-accent-300  focus:border-secondary-500 block p-2.5 h-8  px-3 py-1 shadow-secondary-300 rounded-md border border-secondary-300 text-sm font-medium leading-4 text-secondary-700 shadow-sm hover:bg-secondary-50 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-1"
+												className="border-1  shadow-accent-300 z-[2] block h-8 w-full rounded-md border  border-secondary-300 bg-secondary-50 bg-opacity-70 p-2.5  px-3 py-1 text-sm font-medium leading-4 text-secondary-700 shadow-sm shadow-secondary-300 hover:bg-secondary-50 focus:border-secondary-500 focus:shadow-inner focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-1 sm:text-sm"
 												onChange={(event) => setQuery(event.target.value)}
 											/>
 										</div>
@@ -277,7 +277,7 @@ export default function MeetingForm({
 														value={item}
 														className={({ active, selected }) =>
 															classNames(
-																'cursor-default select-none py-2 pl-3 pr-9 flex justify-between',
+																'flex cursor-default select-none justify-between py-2 pl-3 pr-9',
 																active
 																	? 'bg-primary-600 text-white'
 																	: 'text-secondary-900'
@@ -334,13 +334,13 @@ export default function MeetingForm({
 										onChange={setMeetingAbsenteesWithApologies}
 										multiple
 									>
-										<div className="flex flex-wrap items-center z-[3]">
+										<div className="z-[3] flex flex-wrap items-center">
 											{meetingAbsenteesWithApologies?.map((item) => (
 												<div
 													key={item?.id}
-													className="flex relative items-center bg-secondary-300 text-xs text-white px-2 py-1 rounded-full m-1"
+													className="relative m-1 flex items-center rounded-full bg-secondary-300 px-2 py-1 text-xs text-white"
 												>
-													<span className="text-xs overflow-hidden truncate w-14">
+													<span className="w-14 overflow-hidden truncate text-xs">
 														{item?.name}
 													</span>
 													<button
@@ -365,7 +365,7 @@ export default function MeetingForm({
 												</div>
 											))}
 											<Combobox.Input
-												className="sm:text-sm w-full bg-secondary-50 bg-opacity-70 border-1 focus:shadow-inner shadow-accent-300  focus:border-secondary-500 block p-2.5 h-8  px-3 py-1 shadow-secondary-300 rounded-md border border-secondary-300 text-sm font-medium leading-4 text-secondary-700 shadow-sm hover:bg-secondary-50 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-1"
+												className="border-1 shadow-accent-300 block h-8 w-full rounded-md border  border-secondary-300 bg-secondary-50 bg-opacity-70 p-2.5  px-3 py-1 text-sm font-medium leading-4 text-secondary-700 shadow-sm shadow-secondary-300 hover:bg-secondary-50 focus:border-secondary-500 focus:shadow-inner focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-1 sm:text-sm"
 												// displayValue={(
 												// 	meetingAbsenteesWithApologies: any
 												// ) =>
@@ -386,7 +386,7 @@ export default function MeetingForm({
 														value={item}
 														className={({ active, selected }) =>
 															classNames(
-																'cursor-default select-none py-2 pl-3 pr-9 flex justify-between',
+																'flex cursor-default select-none justify-between py-2 pl-3 pr-9',
 																active
 																	? 'bg-primary-600 text-white'
 																	: 'text-secondary-900'
@@ -443,13 +443,13 @@ export default function MeetingForm({
 										onChange={setMeetingAbsenteesWithoutApologies}
 										multiple
 									>
-										<div className="flex flex-wrap items-center z-[3]">
+										<div className="z-[3] flex flex-wrap items-center">
 											{meetingAbsenteesWithoutApologies?.map((item) => (
 												<div
 													key={item?.id}
-													className="flex relative items-center bg-secondary-300 text-xs text-white px-2 py-1 rounded-full m-1"
+													className="relative m-1 flex items-center rounded-full bg-secondary-300 px-2 py-1 text-xs text-white"
 												>
-													<span className="text-xs overflow-hidden truncate w-14">
+													<span className="w-14 overflow-hidden truncate text-xs">
 														{item?.name}
 													</span>
 													<button
@@ -478,7 +478,7 @@ export default function MeetingForm({
 												</div>
 											))}
 											<Combobox.Input
-												className="sm:text-sm w-full bg-secondary-50 bg-opacity-70 border-1 focus:shadow-inner shadow-accent-300  focus:border-secondary-500 block p-2.5 h-8  px-3 py-1 shadow-secondary-300 rounded-md border border-secondary-300 text-sm font-medium leading-4 text-secondary-700 shadow-sm hover:bg-secondary-50 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-1"
+												className="border-1 shadow-accent-300 block h-8 w-full rounded-md border  border-secondary-300 bg-secondary-50 bg-opacity-70 p-2.5  px-3 py-1 text-sm font-medium leading-4 text-secondary-700 shadow-sm shadow-secondary-300 hover:bg-secondary-50 focus:border-secondary-500 focus:shadow-inner focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-1 sm:text-sm"
 												// displayValue={(
 												// 	meetingAbsenteesWithoutApologies: any
 												// ) =>
@@ -499,7 +499,7 @@ export default function MeetingForm({
 														value={item}
 														className={({ active, selected }) =>
 															classNames(
-																'cursor-default select-none py-2 pl-3 pr-9 flex justify-between',
+																'flex cursor-default select-none justify-between py-2 pl-3 pr-9',
 																active
 																	? 'bg-primary-600 text-white'
 																	: 'text-secondary-900'
@@ -544,10 +544,10 @@ export default function MeetingForm({
 										</Combobox.Options>
 									</Combobox>
 								</div>
-								<div className="col-span-6 md:col-span-12 w-full flex items-center justify-center">
+								<div className="col-span-6 flex w-full items-center justify-center md:col-span-12">
 									<button
 										type="button"
-										className="flex items-center gap-2 p-2 text-sm font-medium leading-4 text-white border rounded-md shadow-sm bg-secondary-600 hover:opacity-80 border-secondary-300 focus:outline-none focus:ring-2 focus:ring-secondary-500 focus:ring-offset-1"
+										className="flex items-center gap-2 rounded-md border border-secondary-300 bg-secondary-600 p-2 text-sm font-medium leading-4 text-white shadow-sm hover:opacity-80 focus:outline-none focus:ring-2 focus:ring-secondary-500 focus:ring-offset-1"
 									>
 										Continue
 									</button>
@@ -560,16 +560,16 @@ export default function MeetingForm({
 			<Disclosure as="div" className="pt-6">
 				{({ open }) => (
 					<>
-						<Disclosure.Button className="flex items-center w-full justify-between rounded-lg bg-primary-100 px-4 py-2 text-left text-sm font-medium text-primary-900 hover:bg-primary-200 focus:outline-none focus-visible:ring focus-visible:ring-primary-500 focus-visible:ring-opacity-75">
-							<div className="w-full flex items-center space-x-2">
-								<div className="h-2 w-2 p-3 rounded-full bg-primary-600 text-primary-50 flex items-center justify-center">
+						<Disclosure.Button className="flex w-full items-center justify-between rounded-lg bg-primary-100 px-4 py-2 text-left text-sm font-medium text-primary-900 hover:bg-primary-200 focus:outline-none focus-visible:ring focus-visible:ring-primary-500 focus-visible:ring-opacity-75">
+							<div className="flex w-full items-center space-x-2">
+								<div className="flex h-2 w-2 items-center justify-center rounded-full bg-primary-600 p-3 text-primary-50">
 									<span>1</span>
 								</div>
 								<div className="flex flex-col">
 									<span className="text-base font-semibold text-secondary-600">
 										Minutes
 									</span>
-									<span className="text-xs font-semibold text-secondary-600/70 flex items-center">
+									<span className="flex items-center text-xs font-semibold text-secondary-600/70">
 										Click the + icon to add a new item and the
 										<Icon icon="heroicons:trash-solid" /> icon to delete an item
 									</span>
@@ -583,13 +583,13 @@ export default function MeetingForm({
 							/>
 						</Disclosure.Button>
 
-						<Disclosure.Panel as="dd" className="px-4 pt-4 pb-2 text-sm text-gray-500">
-							<div className="border border-secondary-200 rounded p-4 space-y-2">
+						<Disclosure.Panel as="dd" className="px-4 pb-2 pt-4 text-sm text-gray-500">
+							<div className="space-y-2 rounded border border-secondary-200 p-4">
 								<div className="flex w-full divide-solid py-2">
 									<button
 										type="button"
 										onClick={handleAddMeetingItem}
-										className="bg-primary-600 text-white text-sm flex items-center p-2 rounded-md"
+										className="flex items-center rounded-md bg-primary-600 p-2 text-sm text-white"
 									>
 										<Icon icon="heroicons:plus" />{' '}
 										<span> Add A Meeting Item</span>
@@ -606,10 +606,10 @@ export default function MeetingForm({
 										/>
 									))}
 								</div>
-								<div className=" w-full flex items-center justify-center">
+								<div className=" flex w-full items-center justify-center">
 									<button
 										type="button"
-										className="flex items-center gap-2 p-2 text-sm font-medium leading-4 text-white border rounded-md shadow-sm bg-secondary-600 hover:opacity-80 border-secondary-300 focus:outline-none focus:ring-2 focus:ring-secondary-500 focus:ring-offset-1"
+										className="flex items-center gap-2 rounded-md border border-secondary-300 bg-secondary-600 p-2 text-sm font-medium leading-4 text-white shadow-sm hover:opacity-80 focus:outline-none focus:ring-2 focus:ring-secondary-500 focus:ring-offset-1"
 									>
 										Continue
 									</button>
@@ -622,16 +622,16 @@ export default function MeetingForm({
 			<Disclosure as="div" className="pt-6">
 				{({ open }) => (
 					<>
-						<Disclosure.Button className="flex items-center w-full justify-between rounded-lg bg-primary-100 px-4 py-2 text-left text-sm font-medium text-primary-900 hover:bg-primary-200 focus:outline-none focus-visible:ring focus-visible:ring-primary-500 focus-visible:ring-opacity-75">
-							<div className="w-full flex items-center space-x-2">
-								<div className="h-2 w-2 p-3 rounded-full bg-primary-600 text-primary-50 flex items-center justify-center">
+						<Disclosure.Button className="flex w-full items-center justify-between rounded-lg bg-primary-100 px-4 py-2 text-left text-sm font-medium text-primary-900 hover:bg-primary-200 focus:outline-none focus-visible:ring focus-visible:ring-primary-500 focus-visible:ring-opacity-75">
+							<div className="flex w-full items-center space-x-2">
+								<div className="flex h-2 w-2 items-center justify-center rounded-full bg-primary-600 p-3 text-primary-50">
 									<span>3</span>
 								</div>
 								<div className="flex flex-col">
 									<span className="text-base font-semibold text-secondary-600">
 										AOB {`(Any Other Business)`}
 									</span>
-									<span className="text-xs font-semibold text-secondary-600/70 flex items-center">
+									<span className="flex items-center text-xs font-semibold text-secondary-600/70">
 										Click the + icon to add a AOB and the
 										<Icon icon="heroicons:trash-solid" /> icon to delete a AOB
 									</span>
@@ -645,8 +645,8 @@ export default function MeetingForm({
 							/>
 						</Disclosure.Button>
 
-						<Disclosure.Panel as="dd" className="px-4 pt-4 pb-2 text-sm text-gray-500">
-							<div className="border border-secondary-200 rounded p-4 space-y-2">
+						<Disclosure.Panel as="dd" className="px-4 pb-2 pt-4 text-sm text-gray-500">
+							<div className="space-y-2 rounded border border-secondary-200 p-4">
 								{/* Panel Content Goes Here */}
 							</div>
 						</Disclosure.Panel>

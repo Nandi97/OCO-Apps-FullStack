@@ -15,11 +15,11 @@ export default function CreateMinutes() {
 	return (
 		<div className="space-y-2 bg-white">
 			<div className="grid grid-cols-12 gap-2">
-				<div className="rounded-md shadow-md shadow-secondary-300 col-span-6 p-2">
-					<h1 className="text-lg font-extralight text-accent-700">{title}</h1>
+				<div className="col-span-6 rounded-md p-2 shadow-md shadow-secondary-300">
+					<h1 className="text-accent-700 text-lg font-extralight">{title}</h1>
 					<MeetingForm />
 				</div>
-				<div className="md:col-span-6 col-span-12">
+				<div className="col-span-12 md:col-span-6">
 					{/* <PurchaseOrderPreview
 						formValues={formValues}
 						purchaseOrderItems={purchaseItems}

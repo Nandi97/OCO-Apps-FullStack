@@ -118,13 +118,13 @@ export default function StaffForm({ onSubmit, initialValues, isPending }: StaffF
 
 	return (
 		<form
-			className="md:w-4/6 w-full flex flex-col justify-center"
+			className="flex w-full flex-col justify-center md:w-4/6"
 			onSubmit={handleSubmit(handleSubmitForm)}
 		>
-			<div className="grid grid-cols-6 md:gap-4 md:grid-cols-12">
+			<div className="grid grid-cols-6 md:grid-cols-12 md:gap-4">
 				{/* Photo Upload Component */}
-				<div className="col-span-6 p-1 md:col-span-3 md:border-r-2 border-secondary-100">
-					<div className="flex flex-col items-center justify-center w-full space-y-2">
+				<div className="col-span-6 border-secondary-100 p-1 md:col-span-3 md:border-r-2">
+					<div className="flex w-full flex-col items-center justify-center space-y-2">
 						<label htmlFor="photo" className="text-sm font-medium text-secondary-700">
 							Staff Photo
 						</label>
@@ -134,7 +134,7 @@ export default function StaffForm({ onSubmit, initialValues, isPending }: StaffF
 							width={20}
 							src={initialValues?.avatarUrl || selectedImage || AvatarPlaceholder}
 							alt="Staff Avatar Image"
-							className="inline-flex items-center justify-center overflow-hidden rounded-full md:w-24 sm:h-10 md:h-24 sm:w-10 ring-2 ring-offset-1 ring-primary-600 bg-secondary-300"
+							className="inline-flex items-center justify-center overflow-hidden rounded-full bg-secondary-300 ring-2 ring-primary-600 ring-offset-1 sm:h-10 sm:w-10 md:h-24 md:w-24"
 						/>
 
 						<input
@@ -150,13 +150,13 @@ export default function StaffForm({ onSubmit, initialValues, isPending }: StaffF
 						<button
 							onClick={() => avatarRef.current?.click()}
 							type="button"
-							className="p-1 text-sm font-medium leading-4 bg-white border rounded-md shadow-sm border-secondary-300 text-secondary-700 hover:bg-secondary-50 focus:outline-none focus:ring-2 focus:ring-secondary-500 focus:ring-offset-1"
+							className="rounded-md border border-secondary-300 bg-white p-1 text-sm font-medium leading-4 text-secondary-700 shadow-sm hover:bg-secondary-50 focus:outline-none focus:ring-2 focus:ring-secondary-500 focus:ring-offset-1"
 						>
 							Change
 						</button>
 					</div>
 				</div>
-				<div className="grid grid-cols-6 col-span-6 gap-4 p-2 md:col-span-9">
+				<div className="col-span-6 grid grid-cols-6 gap-4 p-2 md:col-span-9">
 					{/* Name */}
 					{/* <div className="col-span-6 space-y-1 md:col-span-3">
 						<label
@@ -197,13 +197,13 @@ export default function StaffForm({ onSubmit, initialValues, isPending }: StaffF
 							name="type"
 							value={selectedType} // Use selectedStaffType here
 							onChange={(e) => setSelectedType(e.target.value)}
-							className="sm:text-sm w-full bg-secondary-50 bg-opacity-70 border-1 focus:shadow-inner shadow-accent-300  focus:border-secondary-500 block p-2.5 h-8  px-3 py-1 shadow-secondary-300 rounded-md border border-secondary-300 text-sm font-medium leading-4 text-secondary-700 shadow-sm hover:bg-secondary-50 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-1"
+							className="border-1 shadow-accent-300 block h-8 w-full rounded-md border  border-secondary-300 bg-secondary-50 bg-opacity-70 p-2.5  px-3 py-1 text-sm font-medium leading-4 text-secondary-700 shadow-sm shadow-secondary-300 hover:bg-secondary-50 focus:border-secondary-500 focus:shadow-inner focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-1 sm:text-sm"
 						>
 							<option
 								selected
 								disabled
 								value=""
-								className="text-opacity-50 text-secondary-700"
+								className="text-secondary-700 text-opacity-50"
 							>
 								--Select Staff Type--
 							</option>
@@ -230,14 +230,14 @@ export default function StaffForm({ onSubmit, initialValues, isPending }: StaffF
 								valueAsNumber: true,
 								validate: (value) => value > 0,
 							})}
-							className="sm:text-sm w-full bg-secondary-50 bg-opacity-70 border-1 focus:shadow-inner shadow-accent-300 focus:border-secondary-500 block p-2.5 h-8 px-3 py-1 shadow-secondary-300 rounded-md border border-secondary-300 text-sm font-medium leading-4 text-secondary-700 shadow-sm hover:bg-secondary-50 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-1"
+							className="border-1 shadow-accent-300 block h-8 w-full rounded-md border border-secondary-300 bg-secondary-50 bg-opacity-70 p-2.5 px-3 py-1 text-sm font-medium leading-4 text-secondary-700 shadow-sm shadow-secondary-300 hover:bg-secondary-50 focus:border-secondary-500 focus:shadow-inner focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-1 sm:text-sm"
 							disabled={!selectedType ? true : false}
 						>
 							<option
 								selected
 								disabled
 								value=""
-								className="text-opacity-50 text-secondary-700"
+								className="text-secondary-700 text-opacity-50"
 							>
 								--Select Designation--
 							</option>
@@ -265,13 +265,13 @@ export default function StaffForm({ onSubmit, initialValues, isPending }: StaffF
 									valueAsNumber: true,
 									validate: (value) => value > 0,
 								})}
-								className="sm:text-sm w-full bg-secondary-50 bg-opacity-70 border-1 focus:shadow-inner shadow-accent-300  focus:border-secondary-500 block p-2.5 h-8  px-3 py-1 shadow-secondary-300 rounded-md border border-secondary-300 text-sm font-medium leading-4 text-secondary-700 shadow-sm hover:bg-secondary-50 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-1"
+								className="border-1 shadow-accent-300 block h-8 w-full rounded-md border  border-secondary-300 bg-secondary-50 bg-opacity-70 p-2.5  px-3 py-1 text-sm font-medium leading-4 text-secondary-700 shadow-sm shadow-secondary-300 hover:bg-secondary-50 focus:border-secondary-500 focus:shadow-inner focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-1 sm:text-sm"
 							>
 								<option
 									selected
 									disabled
 									value=""
-									className="text-opacity-50 text-secondary-700"
+									className="text-secondary-700 text-opacity-50"
 								>
 									--Select Team--
 								</option>
@@ -297,7 +297,7 @@ export default function StaffForm({ onSubmit, initialValues, isPending }: StaffF
 								type="email"
 								id="email"
 								{...register('email', { required: true })}
-								className="sm:text-sm w-full bg-secondary-50 bg-opacity-70 border-1 focus:shadow-inner shadow-accent-300  focus:border-secondary-500 block p-2.5 h-8  px-3 py-1 shadow-secondary-300 rounded-md border border-secondary-300 text-sm font-medium leading-4 text-secondary-700 shadow-sm hover:bg-secondary-50 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-1"
+								className="border-1 shadow-accent-300 block h-8 w-full rounded-md border  border-secondary-300 bg-secondary-50 bg-opacity-70 p-2.5  px-3 py-1 text-sm font-medium leading-4 text-secondary-700 shadow-sm shadow-secondary-300 hover:bg-secondary-50 focus:border-secondary-500 focus:shadow-inner focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-1 sm:text-sm"
 							/>
 						</div>
 					</div>
@@ -315,7 +315,7 @@ export default function StaffForm({ onSubmit, initialValues, isPending }: StaffF
 								type="tel"
 								id="mobile"
 								{...register('mobile', { required: true })}
-								className="sm:text-sm w-full bg-secondary-50 bg-opacity-70 border-1 focus:shadow-inner shadow-accent-300  focus:border-secondary-500 block p-2.5 h-8  px-3 py-1 shadow-secondary-300 rounded-md border border-secondary-300 text-sm font-medium leading-4 text-secondary-700 shadow-sm hover:bg-secondary-50 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-1"
+								className="border-1 shadow-accent-300 block h-8 w-full rounded-md border  border-secondary-300 bg-secondary-50 bg-opacity-70 p-2.5  px-3 py-1 text-sm font-medium leading-4 text-secondary-700 shadow-sm shadow-secondary-300 hover:bg-secondary-50 focus:border-secondary-500 focus:shadow-inner focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-1 sm:text-sm"
 							/>
 						</div>
 					</div>
@@ -336,7 +336,7 @@ export default function StaffForm({ onSubmit, initialValues, isPending }: StaffF
 									valueAsNumber: true,
 									validate: (value) => value > 0,
 								})}
-								className="sm:text-sm w-full bg-secondary-50 bg-opacity-70 border-1 focus:shadow-inner shadow-accent-300  focus:border-secondary-500 block p-2.5 h-8  px-3 py-1 shadow-secondary-300 rounded-md border border-secondary-300 text-sm font-medium leading-4 text-secondary-700 shadow-sm hover:bg-secondary-50 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-1"
+								className="border-1 shadow-accent-300 block h-8 w-full rounded-md border  border-secondary-300 bg-secondary-50 bg-opacity-70 p-2.5  px-3 py-1 text-sm font-medium leading-4 text-secondary-700 shadow-sm shadow-secondary-300 hover:bg-secondary-50 focus:border-secondary-500 focus:shadow-inner focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-1 sm:text-sm"
 							/>
 						</div>
 					</div>
@@ -358,7 +358,7 @@ export default function StaffForm({ onSubmit, initialValues, isPending }: StaffF
 									valueAsNumber: true,
 									validate: (value) => value > 0,
 								})}
-								className="sm:text-sm w-full bg-secondary-50 bg-opacity-70 border-1 focus:shadow-inner shadow-accent-300  focus:border-secondary-500 block p-2.5 h-8  px-3 py-1 shadow-secondary-300 rounded-md border border-secondary-300 text-sm font-medium leading-4 text-secondary-700 shadow-sm hover:bg-secondary-50 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-1"
+								className="border-1 shadow-accent-300 block h-8 w-full rounded-md border  border-secondary-300 bg-secondary-50 bg-opacity-70 p-2.5  px-3 py-1 text-sm font-medium leading-4 text-secondary-700 shadow-sm shadow-secondary-300 hover:bg-secondary-50 focus:border-secondary-500 focus:shadow-inner focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-1 sm:text-sm"
 							/>
 						</div>
 					</div>
@@ -379,19 +379,19 @@ export default function StaffForm({ onSubmit, initialValues, isPending }: StaffF
 									valueAsNumber: true,
 									validate: (value) => value > 0,
 								})}
-								className="sm:text-sm w-full bg-secondary-50 bg-opacity-70 border-1 focus:shadow-inner shadow-accent-300  focus:border-secondary-500 block p-2.5 h-8  px-3 py-1 shadow-secondary-300 rounded-md border border-secondary-300 text-sm font-medium leading-4 text-secondary-700 shadow-sm hover:bg-secondary-50 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-1"
+								className="border-1 shadow-accent-300 block h-8 w-full rounded-md border  border-secondary-300 bg-secondary-50 bg-opacity-70 p-2.5  px-3 py-1 text-sm font-medium leading-4 text-secondary-700 shadow-sm shadow-secondary-300 hover:bg-secondary-50 focus:border-secondary-500 focus:shadow-inner focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-1 sm:text-sm"
 							>
 								<option
 									selected
 									disabled
 									value=""
-									className="text-opacity-50 text-secondary-700"
+									className="text-secondary-700 text-opacity-50"
 								>
 									--Gender--
 								</option>
 								{genders?.map((gender) => (
 									<option
-										className="border-secondary-300 p-2.5 h-8  px-3 py-1 text-sm font-medium leading-4 text-secondary-700 shadow-sm hover:bg-primary-500"
+										className="h-8 border-secondary-300 p-2.5  px-3 py-1 text-sm font-medium leading-4 text-secondary-700 shadow-sm hover:bg-primary-500"
 										key={gender.id}
 										value={gender.id}
 									>
@@ -403,16 +403,16 @@ export default function StaffForm({ onSubmit, initialValues, isPending }: StaffF
 					</div>
 				</div>
 			</div>
-			<div className="flex items-center justify-center w-full py-8 space-x-2">
+			<div className="flex w-full items-center justify-center space-x-2 py-8">
 				<button
 					type="submit"
-					className="flex items-center gap-2 p-2 text-sm font-medium leading-4 text-white border rounded-md shadow-sm bg-primary-600 hover:opacity-80 border-primary-300 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-1"
+					className="flex items-center gap-2 rounded-md border border-primary-300 bg-primary-600 p-2 text-sm font-medium leading-4 text-white shadow-sm hover:opacity-80 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-1"
 				>
 					Submit Form
 				</button>
 				<Link
 					href={`/staff/staff-list/`}
-					className="flex items-center gap-2 p-2 text-sm font-medium leading-4 text-white border rounded-md shadow-sm bg-secondary-600 hover:opacity-80 border-secondary-300 focus:outline-none focus:ring-2 focus:ring-secondary-500 focus:ring-offset-1"
+					className="flex items-center gap-2 rounded-md border border-secondary-300 bg-secondary-600 p-2 text-sm font-medium leading-4 text-white shadow-sm hover:opacity-80 focus:outline-none focus:ring-2 focus:ring-secondary-500 focus:ring-offset-1"
 				>
 					Cancel
 				</Link>

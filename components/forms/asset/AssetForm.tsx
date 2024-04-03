@@ -149,10 +149,10 @@ const AssetForm = ({ onSubmit, initialValues, isPending }: AssetFormProps) => {
 	};
 
 	return (
-		<form className="p-4 w-full flex justify-center" onSubmit={handleSubmit(handleSubmitForm)}>
-			<div className="grid grid-cols-12 divide-x-2 gap-2">
-				<div className="md:col-span-4 col-span-full">
-					<div className="flex flex-col items-center justify-center w-full space-y-2">
+		<form className="flex w-full justify-center p-4" onSubmit={handleSubmit(handleSubmitForm)}>
+			<div className="grid grid-cols-12 gap-2 divide-x-2">
+				<div className="col-span-full md:col-span-4">
+					<div className="flex w-full flex-col items-center justify-center space-y-2">
 						<label htmlFor="photo" className="text-sm font-medium text-secondary-700">
 							Book Cover Photo
 						</label>
@@ -161,7 +161,7 @@ const AssetForm = ({ onSubmit, initialValues, isPending }: AssetFormProps) => {
 							width={1022}
 							src={initialValues?.imageUrl || selectedImage || AddImagePlaceholder}
 							alt="Asset Image"
-							className="inline-flex items-center justify-center overflow-hidden rounded-md aspect-[1/1] md:w-28 object-contain sm:w-10 border-2 border-offset-1 border-dashed border-primary-600 bg-transparent"
+							className="border-offset-1 inline-flex aspect-[1/1] items-center justify-center overflow-hidden rounded-md border-2 border-dashed border-primary-600 bg-transparent object-contain sm:w-10 md:w-28"
 						/>
 						<input
 							type="file"
@@ -176,14 +176,14 @@ const AssetForm = ({ onSubmit, initialValues, isPending }: AssetFormProps) => {
 						<button
 							onClick={() => imageRef.current?.click()}
 							type="button"
-							className="p-1 text-sm font-medium leading-4 bg-secondary-500 border rounded-md shadow-sm border-secondary-300 text-secondary-50 hover:bg-secondary-500/90 focus:outline-none focus:ring-2 focus:ring-secondary-500 focus:ring-offset-1"
+							className="rounded-md border border-secondary-300 bg-secondary-500 p-1 text-sm font-medium leading-4 text-secondary-50 shadow-sm hover:bg-secondary-500/90 focus:outline-none focus:ring-2 focus:ring-secondary-500 focus:ring-offset-1"
 						>
 							Select Image
 						</button>
 					</div>
 				</div>
-				<div className="grid w-11/12 p-2 grid-cols-6  md:col-span-8 col-span-full gap-4">
-					<div className="space-y-2 md:col-span-4 col-span-full">
+				<div className="col-span-full grid w-11/12 grid-cols-6  gap-4 p-2 md:col-span-8">
+					<div className="col-span-full space-y-2 md:col-span-4">
 						<label htmlFor="name">
 							<div className="block text-sm font-medium text-secondary-700">
 								<span className="label-text">
@@ -196,17 +196,17 @@ const AssetForm = ({ onSubmit, initialValues, isPending }: AssetFormProps) => {
 									id="name"
 									placeholder="Name"
 									{...register('name', { required: true, min: 5 })}
-									className="sm:text-sm w-full bg-secondary-50 bg-opacity-70 border-1 focus:shadow-inner shadow-accent-300  focus:border-secondary-500 block p-2.5 h-8  px-3 py-1 shadow-secondary-300 rounded-md border border-secondary-300 text-sm font-medium leading-4 text-secondary-700 shadow-sm hover:bg-secondary-50 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-1"
+									className="border-1 shadow-accent-300 block h-8 w-full rounded-md border  border-secondary-300 bg-secondary-50 bg-opacity-70 p-2.5  px-3 py-1 text-sm font-medium leading-4 text-secondary-700 shadow-sm shadow-secondary-300 hover:bg-secondary-50 focus:border-secondary-500 focus:shadow-inner focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-1 sm:text-sm"
 								/>
 								{errors?.name && (
-									<p className="text-xs text-red-600 px-2">
+									<p className="px-2 text-xs text-red-600">
 										Asset name is required
 									</p>
 								)}
 							</div>
 						</label>
 					</div>
-					<div className="space-y-1.5 md:col-span-6 col-span-full">
+					<div className="col-span-full space-y-1.5 md:col-span-6">
 						<label htmlFor="description">
 							<div className="block text-sm font-medium text-secondary-700">
 								<span className="label-text">
@@ -216,19 +216,19 @@ const AssetForm = ({ onSubmit, initialValues, isPending }: AssetFormProps) => {
 							<div className="mt-1">
 								<textarea
 									{...register('description', { required: true, min: 20 })}
-									className="sm:text-sm w-full bg-secondary-50 bg-opacity-70 border-1 focus:shadow-inner shadow-accent-300  focus:border-secondary-500 block p-2.5 h-20  px-3 py-1 shadow-secondary-300 rounded-md border border-secondary-300 text-sm font-medium leading-4 text-secondary-700 shadow-sm hover:bg-secondary-50 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-1"
+									className="border-1 shadow-accent-300 block h-20 w-full rounded-md border  border-secondary-300 bg-secondary-50 bg-opacity-70 p-2.5  px-3 py-1 text-sm font-medium leading-4 text-secondary-700 shadow-sm shadow-secondary-300 hover:bg-secondary-50 focus:border-secondary-500 focus:shadow-inner focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-1 sm:text-sm"
 									id="description"
 									placeholder="Description"
 								/>
 								{errors?.description && (
-									<p className="text-xs text-red-600 px-2">
+									<p className="px-2 text-xs text-red-600">
 										description is required
 									</p>
 								)}
 							</div>
 						</label>
 					</div>
-					<div className="space-y-1.5 md:col-span-3 col-span-full">
+					<div className="col-span-full space-y-1.5 md:col-span-3">
 						<label htmlFor="serial-number">
 							<div className="block text-sm font-medium text-secondary-700">
 								<span className="label-text">Serial Number</span>
@@ -239,14 +239,14 @@ const AssetForm = ({ onSubmit, initialValues, isPending }: AssetFormProps) => {
 									{...register('serialNumber', {
 										min: 1,
 									})}
-									className="sm:text-sm w-full bg-secondary-50 bg-opacity-70 border-1 focus:shadow-inner shadow-accent-300  focus:border-secondary-500 block p-2.5 h-8  px-3 py-1 shadow-secondary-300 rounded-md border border-secondary-300 text-sm font-medium leading-4 text-secondary-700 shadow-sm hover:bg-secondary-50 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-1"
+									className="border-1 shadow-accent-300 block h-8 w-full rounded-md border  border-secondary-300 bg-secondary-50 bg-opacity-70 p-2.5  px-3 py-1 text-sm font-medium leading-4 text-secondary-700 shadow-sm shadow-secondary-300 hover:bg-secondary-50 focus:border-secondary-500 focus:shadow-inner focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-1 sm:text-sm"
 									id="serial-number"
 									placeholder="Serial Number"
 								/>
 							</div>
 						</label>
 					</div>
-					<div className="space-y-1.5 md:col-span-3 col-span-full">
+					<div className="col-span-full space-y-1.5 md:col-span-3">
 						<label htmlFor="oco-tag-number">
 							<div className="block text-sm font-medium text-secondary-700">
 								<span className="label-text">
@@ -260,14 +260,14 @@ const AssetForm = ({ onSubmit, initialValues, isPending }: AssetFormProps) => {
 										required: true,
 										min: 1,
 									})}
-									className="sm:text-sm w-full bg-secondary-50 bg-opacity-70 border-1 focus:shadow-inner shadow-accent-300  focus:border-secondary-500 block p-2.5 h-8  px-3 py-1 shadow-secondary-300 rounded-md border border-secondary-300 text-sm font-medium leading-4 text-secondary-700 shadow-sm hover:bg-secondary-50 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-1"
+									className="border-1 shadow-accent-300 block h-8 w-full rounded-md border  border-secondary-300 bg-secondary-50 bg-opacity-70 p-2.5  px-3 py-1 text-sm font-medium leading-4 text-secondary-700 shadow-sm shadow-secondary-300 hover:bg-secondary-50 focus:border-secondary-500 focus:shadow-inner focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-1 sm:text-sm"
 									id="oco-tag-number"
 									placeholder="OCO Tag Number"
 								/>
 							</div>
 						</label>
 					</div>
-					<div className="space-y-1.5 md:col-span-3 col-span-full">
+					<div className="col-span-full space-y-1.5 md:col-span-3">
 						<label htmlFor="location">
 							<div className="block text-sm font-medium text-secondary-700">
 								<span className="label-text">Location</span>
@@ -278,14 +278,14 @@ const AssetForm = ({ onSubmit, initialValues, isPending }: AssetFormProps) => {
 									{...register('location', {
 										min: 1,
 									})}
-									className="sm:text-sm w-full bg-secondary-50 bg-opacity-70 border-1 focus:shadow-inner shadow-accent-300  focus:border-secondary-500 block p-2.5 h-8  px-3 py-1 shadow-secondary-300 rounded-md border border-secondary-300 text-sm font-medium leading-4 text-secondary-700 shadow-sm hover:bg-secondary-50 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-1"
+									className="border-1 shadow-accent-300 block h-8 w-full rounded-md border  border-secondary-300 bg-secondary-50 bg-opacity-70 p-2.5  px-3 py-1 text-sm font-medium leading-4 text-secondary-700 shadow-sm shadow-secondary-300 hover:bg-secondary-50 focus:border-secondary-500 focus:shadow-inner focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-1 sm:text-sm"
 									id="location"
 									placeholder="Location"
 								/>
 							</div>
 						</label>
 					</div>
-					<div className="space-y-1.5  md:col-span-3 col-span-full">
+					<div className="col-span-full  space-y-1.5 md:col-span-3">
 						<label htmlFor="purchase-date">
 							<div className="block text-sm font-medium text-secondary-700">
 								<span className="label-text">Purchase Date</span>
@@ -293,7 +293,7 @@ const AssetForm = ({ onSubmit, initialValues, isPending }: AssetFormProps) => {
 							<div className="mt-1">
 								<input
 									{...register('purchaseDate')}
-									className="sm:text-sm w-full bg-secondary-50 bg-opacity-70 border-1 focus:shadow-inner shadow-accent-300  focus:border-secondary-500 block p-2.5 h-8  px-3 py-1 shadow-secondary-300 rounded-md border border-secondary-300 text-sm font-medium leading-4 text-secondary-700 shadow-sm hover:bg-secondary-50 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-1"
+									className="border-1 shadow-accent-300 block h-8 w-full rounded-md border  border-secondary-300 bg-secondary-50 bg-opacity-70 p-2.5  px-3 py-1 text-sm font-medium leading-4 text-secondary-700 shadow-sm shadow-secondary-300 hover:bg-secondary-50 focus:border-secondary-500 focus:shadow-inner focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-1 sm:text-sm"
 									id="purchase-date"
 									placeholder="Purchase Date"
 									type="date"
@@ -301,11 +301,11 @@ const AssetForm = ({ onSubmit, initialValues, isPending }: AssetFormProps) => {
 							</div>
 						</label>
 					</div>
-					<div className="space-y-1.5 col-span-full">
+					<div className="col-span-full space-y-1.5">
 						<div className="w-3/5">
 							<label
 								htmlFor="price"
-								className="block leading-6  text-sm font-medium text-secondary-700"
+								className="block text-sm  font-medium leading-6 text-secondary-700"
 							>
 								Price
 							</label>
@@ -318,7 +318,7 @@ const AssetForm = ({ onSubmit, initialValues, isPending }: AssetFormProps) => {
 										validate: (value) => value > 0,
 									})}
 									step="any"
-									className="pl-2 pr-20  ring-1 ring-inset ring-gray-300 placeholder:text-gray-400  focus:ring-inset  sm:leading-6 sm:text-sm w-full bg-secondary-50 bg-opacity-70 border-1 focus:shadow-inner shadow-accent-300  focus:border-secondary-500 block p-2.5 h-8  px-3 py-1 shadow-secondary-300 rounded-md border border-secondary-300 text-sm font-medium leading-4 text-secondary-700 shadow-sm hover:bg-secondary-50 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-1"
+									className="border-1 shadow-accent-300  block h-8 w-full rounded-md  border  border-secondary-300 bg-secondary-50 bg-opacity-70 p-2.5 px-3 py-1 pl-2 pr-20  text-sm font-medium leading-4 text-secondary-700  shadow-sm shadow-secondary-300 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 hover:bg-secondary-50 focus:border-secondary-500 focus:shadow-inner focus:outline-none focus:ring-2 focus:ring-inset focus:ring-primary-500 focus:ring-offset-1 sm:text-sm sm:leading-6"
 									placeholder="0.00"
 								/>
 								<div className="absolute inset-y-0 right-0 flex items-center border-l">
@@ -343,7 +343,7 @@ const AssetForm = ({ onSubmit, initialValues, isPending }: AssetFormProps) => {
 							</div>
 						</div>
 					</div>
-					<div className="space-y-1.5  md:col-span-2 col-span-full">
+					<div className="col-span-full  space-y-1.5 md:col-span-2">
 						<label className="flex items-center space-x-2 text-sm font-medium text-secondary-700">
 							<span>
 								Asset Category<sup className="text-red-600">*</sup>
@@ -356,13 +356,13 @@ const AssetForm = ({ onSubmit, initialValues, isPending }: AssetFormProps) => {
 									filterCategory(e.target.value);
 								},
 							})}
-							className="sm:text-sm w-full bg-secondary-50 bg-opacity-70 border-1 focus:shadow-inner shadow-accent-300 focus:border-secondary-500 block p-2.5 h-8 px-3 py-1 shadow-secondary-300 rounded-md border border-secondary-300 text-sm font-medium leading-4 text-secondary-700 shadow-sm hover:bg-secondary-50 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-1"
+							className="border-1 shadow-accent-300 block h-8 w-full rounded-md border border-secondary-300 bg-secondary-50 bg-opacity-70 p-2.5 px-3 py-1 text-sm font-medium leading-4 text-secondary-700 shadow-sm shadow-secondary-300 hover:bg-secondary-50 focus:border-secondary-500 focus:shadow-inner focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-1 sm:text-sm"
 						>
 							<option
 								selected
 								disabled
 								value=""
-								className="text-opacity-50 text-secondary-700"
+								className="text-secondary-700 text-opacity-50"
 							>
 								--Asset Category--
 							</option>
@@ -373,10 +373,10 @@ const AssetForm = ({ onSubmit, initialValues, isPending }: AssetFormProps) => {
 							))}
 						</select>
 						{errors?.assetCategoryId && (
-							<p className="text-xs text-red-600 px-2">Asset Category Required</p>
+							<p className="px-2 text-xs text-red-600">Asset Category Required</p>
 						)}
 					</div>
-					<div className="space-y-1.5  md:col-span-2 col-span-full">
+					<div className="col-span-full  space-y-1.5 md:col-span-2">
 						<label className="flex items-center space-x-2 text-sm font-medium text-secondary-700">
 							<span>
 								Asset Type<sup className="text-red-600">*</sup>
@@ -384,14 +384,14 @@ const AssetForm = ({ onSubmit, initialValues, isPending }: AssetFormProps) => {
 						</label>
 						<select
 							{...register('typeId', { required: true })}
-							className="sm:text-sm w-full bg-secondary-50 bg-opacity-70 border-1 focus:shadow-inner shadow-accent-300 focus:border-secondary-500 block p-2.5 h-8 px-3 py-1 shadow-secondary-300 rounded-md border border-secondary-300 text-sm font-medium leading-4 text-secondary-700 shadow-sm hover:bg-secondary-50 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-1"
+							className="border-1 shadow-accent-300 block h-8 w-full rounded-md border border-secondary-300 bg-secondary-50 bg-opacity-70 p-2.5 px-3 py-1 text-sm font-medium leading-4 text-secondary-700 shadow-sm shadow-secondary-300 hover:bg-secondary-50 focus:border-secondary-500 focus:shadow-inner focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-1 sm:text-sm"
 							disabled={filteredType ? false : true}
 						>
 							<option
 								selected
 								disabled
 								value=""
-								className="text-opacity-50 text-secondary-700"
+								className="text-secondary-700 text-opacity-50"
 							>
 								--Asset Type--
 							</option>
@@ -402,11 +402,11 @@ const AssetForm = ({ onSubmit, initialValues, isPending }: AssetFormProps) => {
 							))}
 						</select>
 						{errors?.typeId && (
-							<p className="text-xs text-red-600 px-2">Asset Type Required</p>
+							<p className="px-2 text-xs text-red-600">Asset Type Required</p>
 						)}
 					</div>
 
-					<div className="space-y-1.5  md:col-span-2 col-span-full">
+					<div className="col-span-full  space-y-1.5 md:col-span-2">
 						<label className="flex items-center space-x-2 text-sm font-medium text-secondary-700">
 							<span>
 								Condition<sup className="text-red-600">*</sup>
@@ -414,13 +414,13 @@ const AssetForm = ({ onSubmit, initialValues, isPending }: AssetFormProps) => {
 						</label>
 						<select
 							{...register('conditionId', { required: true })}
-							className="sm:text-sm w-full bg-secondary-50 bg-opacity-70 border-1 focus:shadow-inner shadow-accent-300 focus:border-secondary-500 block p-2.5 h-8 px-3 py-1 shadow-secondary-300 rounded-md border border-secondary-300 text-sm font-medium leading-4 text-secondary-700 shadow-sm hover:bg-secondary-50 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-1"
+							className="border-1 shadow-accent-300 block h-8 w-full rounded-md border border-secondary-300 bg-secondary-50 bg-opacity-70 p-2.5 px-3 py-1 text-sm font-medium leading-4 text-secondary-700 shadow-sm shadow-secondary-300 hover:bg-secondary-50 focus:border-secondary-500 focus:shadow-inner focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-1 sm:text-sm"
 						>
 							<option
 								selected
 								disabled
 								value=""
-								className="text-opacity-50 text-secondary-700"
+								className="text-secondary-700 text-opacity-50"
 							>
 								--Asset Condition--
 							</option>
@@ -431,13 +431,13 @@ const AssetForm = ({ onSubmit, initialValues, isPending }: AssetFormProps) => {
 							))}
 						</select>
 						{errors?.conditionId && (
-							<p className="text-xs text-red-600 px-2">
+							<p className="px-2 text-xs text-red-600">
 								What Condition is the Asset?
 							</p>
 						)}
 					</div>
 
-					<div className="space-y-1.5  md:col-span-4 col-span-full">
+					<div className="col-span-full  space-y-1.5 md:col-span-4">
 						<label className="flex items-center space-x-2 text-sm font-medium text-secondary-700">
 							<span>Currently With</span>
 						</label>
@@ -445,7 +445,7 @@ const AssetForm = ({ onSubmit, initialValues, isPending }: AssetFormProps) => {
 							<div className="relative mt-1">
 								<div className="relative w-full cursor-default overflow-hidden rounded-lg bg-white text-left shadow-md focus:outline-none focus-visible:ring-2 focus-visible:ring-white/75 focus-visible:ring-offset-2 focus-visible:ring-offset-teal-300 sm:text-sm">
 									<Combobox.Input
-										className="sm:text-sm w-full bg-secondary-50 bg-opacity-70 border-1 focus:shadow-inner shadow-accent-300  focus:border-secondary-500 block p-2.5 h-8  px-3 py-1 shadow-secondary-300 rounded-md border border-secondary-300 text-sm font-medium leading-4 text-secondary-700 shadow-sm hover:bg-secondary-50 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-1"
+										className="border-1 shadow-accent-300 block h-8 w-full rounded-md border  border-secondary-300 bg-secondary-50 bg-opacity-70 p-2.5  px-3 py-1 text-sm font-medium leading-4 text-secondary-700 shadow-sm shadow-secondary-300 hover:bg-secondary-50 focus:border-secondary-500 focus:shadow-inner focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-1 sm:text-sm"
 										displayValue={(staff: any) => staff?.name}
 										onChange={(event) => setQuery(event.target.value)}
 									/>
@@ -519,10 +519,10 @@ const AssetForm = ({ onSubmit, initialValues, isPending }: AssetFormProps) => {
 						</Combobox>
 					</div>
 				</div>
-				<div className="w-full flex col-span-full items-center justify-center">
+				<div className="col-span-full flex w-full items-center justify-center">
 					<button
 						type="submit"
-						className="bg-primary-600 text-primary-50 hover:bg-primary-600/70 flex items-center space-x-2 rounded-md text-sm p-1"
+						className="flex items-center space-x-2 rounded-md bg-primary-600 p-1 text-sm text-primary-50 hover:bg-primary-600/70"
 					>
 						<span>Submit</span>
 					</button>

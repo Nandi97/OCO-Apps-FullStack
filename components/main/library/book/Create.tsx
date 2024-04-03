@@ -57,9 +57,9 @@ export default function CreateBook() {
 	};
 
 	return (
-		<div className="  w-full h-full  text-center">
-			<div className="rounded-md bg-white w-full flex flex-col items-center divide-y-2 space-y-4">
-				<h1 className="mb-4 text-xl font-medium text-secondary-900 pt-5">Create Book</h1>
+		<div className="  h-full w-full  text-center">
+			<div className="flex w-full flex-col items-center space-y-4 divide-y-2 rounded-md bg-white">
+				<h1 className="mb-4 pt-5 text-xl font-medium text-secondary-900">Create Book</h1>
 
 				<BookForm onSubmit={handleCreate} isPending={isPending} />
 			</div>

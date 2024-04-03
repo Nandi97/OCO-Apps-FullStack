@@ -22,14 +22,14 @@ interface NewsFeedPrev {
 export default function NewsFeedPrev({ prevData }: NewsFeedPrev) {
 	// console.log('Preview Data:', prevData);
 	return (
-		<div className="w-full flex flex-col space-y-4 bg-primary-50 p-1 rounded-md">
+		<div className="flex w-full flex-col space-y-4 rounded-md bg-primary-50 p-1">
 			<div className="w-full">
 				<Image height={300} width={1000} src={NewsFeedLogo} alt="news feed logo" />
 			</div>
-			<div className="w-full px-8 flex flex-col space-y-4">
+			<div className="flex w-full flex-col space-y-4 px-8">
 				{prevData?.articles?.map((article) => (
 					<div key={article?.key} className="flex flex-col space-y-2">
-						<h1 className="text-primary-600 font-bold">{article?.title}</h1>
+						<h1 className="font-bold text-primary-600">{article?.title}</h1>
 						<p>{article?.content}</p>
 						<Link href={article?.url} className="text-blue-500 underline">
 							Read more...

@@ -43,8 +43,8 @@ export default function LeaveApplicationPrev({ prevVal }: LeaveApplicationPrevPr
 	});
 
 	return (
-		<div className="w-full p-4 flex-col rounded-md shadow-md space-y-3">
-			<div className="w-full flex items-center justify-center">
+		<div className="w-full flex-col space-y-3 rounded-md p-4 shadow-md">
+			<div className="flex w-full items-center justify-center">
 				<Image
 					src={logo}
 					placeholder="blur"
@@ -54,12 +54,12 @@ export default function LeaveApplicationPrev({ prevVal }: LeaveApplicationPrevPr
 					className="w-36"
 				/>
 			</div>
-			<div className="w-full flex items-center justify-center bg-primary-600">
-				<p className="font-bold uppercase text-2xl text-white">Leave Application</p>
+			<div className="flex w-full items-center justify-center bg-primary-600">
+				<p className="text-2xl font-bold uppercase text-white">Leave Application</p>
 			</div>
-			<div className="w-full flex items-center justify-center">
-				<table className="table-fixed w-full">
-					<thead className="text-xs text-secondary-700 uppercase bg-secondary-200">
+			<div className="flex w-full items-center justify-center">
+				<table className="w-full table-fixed">
+					<thead className="bg-secondary-200 text-xs uppercase text-secondary-700">
 						<tr>
 							<th scope="col" colSpan={2} className="px-6 py-3">
 								Section 1: Employee Details
@@ -68,7 +68,7 @@ export default function LeaveApplicationPrev({ prevVal }: LeaveApplicationPrevPr
 					</thead>
 					<tbody>
 						<tr>
-							<td className="px-2 border">
+							<td className="border px-2">
 								<div className="flex flex-col">
 									<span className="text-xs">Name:</span>
 									<span className="text-primary-600">
@@ -76,7 +76,7 @@ export default function LeaveApplicationPrev({ prevVal }: LeaveApplicationPrevPr
 									</span>
 								</div>
 							</td>
-							<td className="px-2 border">
+							<td className="border px-2">
 								<div className="flex flex-col">
 									<span className="text-xs">Payroll Number:</span>
 									<span className="text-primary-600">
@@ -86,7 +86,7 @@ export default function LeaveApplicationPrev({ prevVal }: LeaveApplicationPrevPr
 							</td>
 						</tr>
 						<tr>
-							<td className="px-2 border">
+							<td className="border px-2">
 								<div className="flex flex-col">
 									<span className="text-xs">Title:</span>
 									<span className="text-primary-600">
@@ -94,7 +94,7 @@ export default function LeaveApplicationPrev({ prevVal }: LeaveApplicationPrevPr
 									</span>
 								</div>
 							</td>
-							<td className="px-2 border">
+							<td className="border px-2">
 								<div className="flex flex-col">
 									<span className="text-xs">Team:</span>
 									<span className="text-primary-600">
@@ -106,9 +106,9 @@ export default function LeaveApplicationPrev({ prevVal }: LeaveApplicationPrevPr
 					</tbody>
 				</table>
 			</div>
-			<div className="w-full flex items-center justify-center">
-				<table className="table-fixed w-full">
-					<thead className="text-xs text-secondary-700 uppercase bg-secondary-200">
+			<div className="flex w-full items-center justify-center">
+				<table className="w-full table-fixed">
+					<thead className="bg-secondary-200 text-xs uppercase text-secondary-700">
 						<tr>
 							<th scope="col" colSpan={2} className="px-6 py-3">
 								Section 2: Leave Details
@@ -117,7 +117,7 @@ export default function LeaveApplicationPrev({ prevVal }: LeaveApplicationPrevPr
 					</thead>
 					<tbody>
 						<tr>
-							<td className="px-2 border">
+							<td className="border px-2">
 								<div className="flex flex-col">
 									<span className="text-xs">Leave Type:</span>
 									<span className="text-primary-600">
@@ -129,7 +129,7 @@ export default function LeaveApplicationPrev({ prevVal }: LeaveApplicationPrevPr
 									</span>
 								</div>
 							</td>
-							<td className="px-2 border">
+							<td className="border px-2">
 								<div className="flex flex-col">
 									<span className="text-xs">Number of Leave Days:</span>
 									<span className="text-primary-600">{prevVal?.duration}</span>
@@ -137,7 +137,7 @@ export default function LeaveApplicationPrev({ prevVal }: LeaveApplicationPrevPr
 							</td>
 						</tr>
 						<tr>
-							<td className="px-2 border">
+							<td className="border px-2">
 								<div className="flex flex-col">
 									<span className="text-xs">Start Leave On:</span>
 									<span className="text-primary-600">
@@ -147,7 +147,7 @@ export default function LeaveApplicationPrev({ prevVal }: LeaveApplicationPrevPr
 									</span>
 								</div>
 							</td>
-							<td className="px-2 border">
+							<td className="border px-2">
 								<div className="flex flex-col">
 									<span className="text-xs">End Leave On:</span>
 									<span className="text-primary-600">
@@ -159,7 +159,7 @@ export default function LeaveApplicationPrev({ prevVal }: LeaveApplicationPrevPr
 							</td>
 						</tr>
 						<tr>
-							<td className="px-2 border">
+							<td className="border px-2">
 								<div className="flex flex-col">
 									<span className="text-xs">Reporting Back On:</span>
 									<span className="text-primary-600">
@@ -169,7 +169,7 @@ export default function LeaveApplicationPrev({ prevVal }: LeaveApplicationPrevPr
 									</span>
 								</div>
 							</td>
-							<td className="px-2 border">
+							<td className="border px-2">
 								<div className="flex flex-col">
 									<span className="text-xs">Applied on:</span>
 									<span className="text-primary-600">
@@ -181,9 +181,9 @@ export default function LeaveApplicationPrev({ prevVal }: LeaveApplicationPrevPr
 					</tbody>
 				</table>
 			</div>
-			<div className="w-full flex items-center justify-center">
-				<table className="table-fixed w-full">
-					<thead className="text-xs text-secondary-700 uppercase bg-secondary-200">
+			<div className="flex w-full items-center justify-center">
+				<table className="w-full table-fixed">
+					<thead className="bg-secondary-200 text-xs uppercase text-secondary-700">
 						<tr>
 							<th scope="col" colSpan={2} className="px-6 py-3">
 								Section 3: Approvals
@@ -254,15 +254,15 @@ export default function LeaveApplicationPrev({ prevVal }: LeaveApplicationPrevPr
 					</tbody>
 				</table>
 			</div>
-			<div className="w-full flex items-center justify-center flex-col space-y-2">
+			<div className="flex w-full flex-col items-center justify-center space-y-2">
 				<h1 className="text-primary-600">For Official Use Only - HR Department</h1>
-				<table className="table-auto w-2/3">
+				<table className="w-2/3 table-auto">
 					<tbody>
 						<tr>
-							<td className="px-2 border">
+							<td className="border px-2">
 								<span className="text-lg">No. of leave days available</span>
 							</td>
-							<td className="p-2 border">
+							<td className="border p-2">
 								<span>
 									{prevVal?.employee?.leaveBalance?.balanceCarryForward
 										? prevVal?.employee?.leaveBalance?.balanceCarryForward
@@ -271,18 +271,18 @@ export default function LeaveApplicationPrev({ prevVal }: LeaveApplicationPrevPr
 							</td>
 						</tr>
 						<tr>
-							<td className="px-2 border">
+							<td className="border px-2">
 								<span className="text-lg">No. of leave taken now</span>
 							</td>
-							<td className="p-2 border">
+							<td className="border p-2">
 								<span>{prevVal?.duration}</span>
 							</td>
 						</tr>
 						<tr>
-							<td className="px-2 border">
+							<td className="border px-2">
 								<span className="text-lg">Balance of leave days</span>
 							</td>
-							<td className="p-2 border">
+							<td className="border p-2">
 								<span>
 									{prevVal?.employee?.leaveBalance?.balanceCarryForward
 										? prevVal?.employee?.leaveBalance?.balanceCarryForward -

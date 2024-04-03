@@ -109,57 +109,57 @@ export default function StaffList() {
 
 	return (
 		<div className="space-y-2 bg-white">
-			<div className="sticky z-20 flex items-center justify-between gap-2 bg-white top-2">
-				<h1 className="text-lg font-extralight text-accent-700">{title}</h1>
+			<div className="sticky top-2 z-20 flex items-center justify-between gap-2 bg-white">
+				<h1 className="text-accent-700 text-lg font-extralight">{title}</h1>
 				<div className="inline-flex items-center space-x-2">
 					<SearchInput onSearch={handleSearch} />
 					<OptDropdown optBtn={headerOptBtnTxt} optionsList={headerOptionsList} />
 				</div>
 			</div>
-			<div className="shadow overscroll-none ring-1 ring-black ring-opacity-5 md:rounded-md">
-				<div className="flex-col hidden lg:flex">
+			<div className="overscroll-none shadow ring-1 ring-black ring-opacity-5 md:rounded-md">
+				<div className="hidden flex-col lg:flex">
 					<table className="min-w-full divide-y divide-primary-100">
-						<thead className="sticky z-10 top-12 bg-secondary-600 text-secondary-50">
+						<thead className="sticky top-12 z-10 bg-secondary-600 text-secondary-50">
 							<tr>
 								<th
 									scope="col"
-									className="sticky top-0 p-2 text-sm font-semibold text-center"
+									className="sticky top-0 p-2 text-center text-sm font-semibold"
 								>
 									{''}
 								</th>
 								<th
 									scope="col"
-									className="sticky top-0 p-2 text-sm font-semibold text-center"
+									className="sticky top-0 p-2 text-center text-sm font-semibold"
 								>
 									Matter Code
 								</th>
 								<th
 									scope="col"
-									className="sticky top-0 p-2 pr-3 text-sm font-semibold text-left sm:pl-6"
+									className="sticky top-0 p-2 pr-3 text-left text-sm font-semibold sm:pl-6"
 								>
 									Task
 								</th>
 								<th
 									scope="col"
-									className="sticky top-0 p-2 text-sm font-semibold text-left "
+									className="sticky top-0 p-2 text-left text-sm font-semibold "
 								>
 									Narration
 								</th>
 								<th
 									scope="col"
-									className="sticky top-0 p-2 text-sm font-semibold text-left "
+									className="sticky top-0 p-2 text-left text-sm font-semibold "
 								>
 									Date
 								</th>
 								<th
 									scope="col"
-									className="sticky top-0 p-2 text-sm font-semibold text-center "
+									className="sticky top-0 p-2 text-center text-sm font-semibold "
 								>
 									Started At
 								</th>
 								<th
 									scope="col"
-									className="sticky top-0 p-2 text-sm font-semibold text-left "
+									className="sticky top-0 p-2 text-left text-sm font-semibold "
 								>
 									Ended At
 								</th>
@@ -168,18 +168,18 @@ export default function StaffList() {
 								</th>
 							</tr>
 						</thead>
-						<tbody className="bg-white divide-y divide-gray-200">
+						<tbody className="divide-y divide-gray-200 bg-white">
 							{data?.data?.map((item, index) => {
 								if (isPending) {
 									return (
 										<tr key={index}>
 											<td
 												colSpan={9}
-												className="flex items-center justify-center w-full px-3 py-2 text-sm text-center whitespace-nowrap text-secondary-500"
+												className="flex w-full items-center justify-center whitespace-nowrap px-3 py-2 text-center text-sm text-secondary-500"
 											>
 												<svg
 													aria-hidden="true"
-													className="w-8 h-8 mr-2 text-secondary-200 animate-spin fill-primary-600"
+													className="mr-2 h-8 w-8 animate-spin fill-primary-600 text-secondary-200"
 													viewBox="0 0 100 101"
 													fill="none"
 													xmlns="http://www.w3.org/2000/svg"
@@ -207,40 +207,40 @@ export default function StaffList() {
 													: ''
 											}`}
 										>
-											<td className="px-3 py-2 text-sm text-center whitespace-nowrap text-secondary-500">
+											<td className="whitespace-nowrap px-3 py-2 text-center text-sm text-secondary-500">
 												{index + 1}
 											</td>
-											<td className="px-3 py-2 text-sm text-left whitespace-nowrap font-semibold  text-primary-500">
+											<td className="whitespace-nowrap px-3 py-2 text-left text-sm font-semibold  text-primary-500">
 												{item?.matter?.code}
 											</td>
-											<td className="py-2 pl-4 pr-3  whitespace-nowrap sm:pl-6 text-sm text-secondary-900">
+											<td className="whitespace-nowrap py-2 pl-4  pr-3 text-sm text-secondary-900 sm:pl-6">
 												{item?.stopWatchItemTask?.name}
 											</td>
-											<td className="py-2 text-left  sm:pl-6 text-sm text-secondary-900">
-												<p className="truncate hover:whitespace-normal hover:overflow-visible w-72">
+											<td className="py-2 text-left  text-sm text-secondary-900 sm:pl-6">
+												<p className="w-72 truncate hover:overflow-visible hover:whitespace-normal">
 													{item?.narration}
 												</p>
 											</td>
-											<td className="px-3 py-2 text-sm whitespace-nowrap text-secondary-500">
+											<td className="whitespace-nowrap px-3 py-2 text-sm text-secondary-500">
 												{item?.itemDate
 													? formatDate(item.itemDate, 'dd MMM yyyy')
 													: formatDate(item.createdAt, 'dd MMM yyyy')}
 											</td>
-											<td className="px-3 py-2 text-sm text-center whitespace-nowrap text-secondary-500">
+											<td className="whitespace-nowrap px-3 py-2 text-center text-sm text-secondary-500">
 												{item?.startedAt
 													? formatTime(item?.startedAt, 'hh:mm a')
 													: formatTime(item?.createdAt, 'hh:mm a')}
 											</td>
-											<td className="px-3 py-2 text-sm whitespace-nowrap text-secondary-500">
+											<td className="whitespace-nowrap px-3 py-2 text-sm text-secondary-500">
 												{item?.endedAt
 													? formatTime(item?.endedAt, 'hh:mm a')
 													: formatTime(item?.createdAt, 'hh:mm a')}
 											</td>
 
-											<td className="relative py-2 pl-3 pr-4 text-sm font-medium text-right whitespace-nowrap sm:pr-6">
+											<td className="relative whitespace-nowrap py-2 pl-3 pr-4 text-right text-sm font-medium sm:pr-6">
 												<button
 													type="button"
-													className="flex items-center justify-center w-5 h-5 p-1 rounded hover:bg-primary-700 hover:bg-opacity-20"
+													className="flex h-5 w-5 items-center justify-center rounded p-1 hover:bg-primary-700 hover:bg-opacity-20"
 												>
 													<OptDropdown
 														optBtn={tableOptBtnTxt}
@@ -267,22 +267,22 @@ export default function StaffList() {
 					{data?.data?.map((item, index) => (
 						<div
 							key={item?.id}
-							className="grid min-w-full grid-cols-12 p-3 bg-white border-t border-gray-200 rounded-md shadow-sm sm:px-6 sm:flex lg:hidden shadow-secondary-400"
+							className="grid min-w-full grid-cols-12 rounded-md border-t border-gray-200 bg-white p-3 shadow-sm shadow-secondary-400 sm:flex sm:px-6 lg:hidden"
 						>
 							<div className="col-span-12">{index + 1}</div>
-							<div className="col-span-4 text-sm font-semibold text-left text-secondary-600">
+							<div className="col-span-4 text-left text-sm font-semibold text-secondary-600">
 								Matter :
 							</div>
 							<div className="col-span-8">{item?.matter?.code}</div>
-							<div className="col-span-4 text-sm font-semibold text-left text-secondary-600">
+							<div className="col-span-4 text-left text-sm font-semibold text-secondary-600">
 								Task :
 							</div>
 							<div className="col-span-8">{item?.stopWatchItemTask?.name}</div>
-							<div className="col-span-4 text-sm font-semibold text-left text-secondary-600">
+							<div className="col-span-4 text-left text-sm font-semibold text-secondary-600">
 								Narration :
 							</div>
 							<div className="col-span-8 text-primary-500">{item?.narration}</div>
-							<div className="col-span-4 text-sm font-semibold text-left text-secondary-600">
+							<div className="col-span-4 text-left text-sm font-semibold text-secondary-600">
 								Created At :
 							</div>
 							<div className="col-span-8">
@@ -290,7 +290,7 @@ export default function StaffList() {
 									? formatDate(item.itemDate, 'dd MMM yyyy')
 									: formatDate(item.createdAt, 'dd MMM yyyy')}
 							</div>
-							<div className="col-span-4 text-sm font-semibold text-left text-secondary-600">
+							<div className="col-span-4 text-left text-sm font-semibold text-secondary-600">
 								Start Time :
 							</div>
 							<div className="col-span-8">
@@ -298,7 +298,7 @@ export default function StaffList() {
 									? formatTime(item?.startedAt, 'hh:mm a')
 									: formatTime(item?.createdAt, 'hh:mm a')}
 							</div>
-							<div className="col-span-4 text-sm font-semibold text-left text-secondary-600">
+							<div className="col-span-4 text-left text-sm font-semibold text-secondary-600">
 								End Time :
 							</div>
 

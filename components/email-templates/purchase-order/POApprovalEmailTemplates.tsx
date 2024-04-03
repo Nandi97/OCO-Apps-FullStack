@@ -65,13 +65,13 @@ export const POEmailTemplate: React.FC<Readonly<POApprovalProps>> = ({
 					/>
 				</Head>
 				<section>
-					<div className="flex justify-center items-center w-full">
-						<table className="table-auto max-w-md">
+					<div className="flex w-full items-center justify-center">
+						<table className="max-w-md table-auto">
 							<thead>
 								<tr>
 									<th className="w-full text-center">
 										<img
-											className="w-[356px] h-[205px]"
+											className="h-[205px] w-[356px]"
 											src="cid:logo"
 											alt="oco abda logo"
 											onContextMenu={(e) => e.preventDefault()}
@@ -82,8 +82,8 @@ export const POEmailTemplate: React.FC<Readonly<POApprovalProps>> = ({
 							<tbody>
 								<tr>
 									<td>
-										<div className="grid p-4 bg-[#A65A2A] items-center gap-4">
-											<p className="mb-4 mt-7 text-lg font-bold text-white col-span-6 text-center">
+										<div className="grid items-center gap-4 bg-[#A65A2A] p-4">
+											<p className="col-span-6 mb-4 mt-7 text-center text-lg font-bold text-white">
 												Please approve {userName}&apos;s Purchase Order PO
 												Number:
 												{poNumber}
@@ -91,7 +91,7 @@ export const POEmailTemplate: React.FC<Readonly<POApprovalProps>> = ({
 											<div className="w-full text-center">
 												<a
 													href={approvalUrl}
-													className="p-0.5 rounded-md font-semibold text-[#A65A2A] bg-white col-span-6"
+													className="col-span-6 rounded-md bg-white p-0.5 font-semibold text-[#A65A2A]"
 												>
 													Approve Purchase Order
 												</a>
@@ -106,14 +106,14 @@ export const POEmailTemplate: React.FC<Readonly<POApprovalProps>> = ({
 								</tr>
 								<tr>
 									<td>
-										<p className="text-[#A65A2A] font-semibold">
+										<p className="font-semibold text-[#A65A2A]">
 											OCO Apps Admin
 										</p>
 									</td>
 								</tr>
 								<tr>
 									<td>
-										<p className="text-justify text-[#3f638a70] text-xs">
+										<p className="text-justify text-xs text-[#3f638a70]">
 											This e-mail and any attachments may contain information
 											that is confidential, legally privileged and protected
 											by law and is intended for the sole use of the named

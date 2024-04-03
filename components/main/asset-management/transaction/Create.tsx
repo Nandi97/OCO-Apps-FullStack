@@ -127,15 +127,15 @@ const Create = ({ setToggle, assetId }: TransactionProps) => {
 	};
 
 	return (
-		<div className="fixed top-0 left-0 z-20 w-full -mt-20 h-full bg-secondary-700/50">
-			<div className="absolute flex flex-col items-center gap-6 p-12 transform -translate-x-1/2 -translate-y-1/2 bg-white rounded-lg top-1/2 left-1/2">
+		<div className="fixed left-0 top-0 z-20 -mt-20 h-full w-full bg-secondary-700/50">
+			<div className="absolute left-1/2 top-1/2 flex -translate-x-1/2 -translate-y-1/2 transform flex-col items-center gap-6 rounded-lg bg-white p-12">
 				<button
 					type="button"
 					onClick={(e) => {
 						e.stopPropagation();
 						setToggle(false);
 					}}
-					className="absolute top-2 right-2"
+					className="absolute right-2 top-2"
 				>
 					<Icon icon="heroicons:x-mark" />
 					<span className="sr-only">close</span>
@@ -155,7 +155,7 @@ const Create = ({ setToggle, assetId }: TransactionProps) => {
 									id="name"
 									placeholder="Name"
 									value={data?.currentlyWith?.name}
-									className="sm:text-sm w-full bg-secondary-50 bg-opacity-70 border-1 focus:shadow-inner shadow-accent-300  focus:border-secondary-500/50 block p-2.5 h-8  px-3 py-1 shadow-secondary-300 rounded-md border border-secondary-300 text-sm font-medium leading-4 text-secondary-700/50 shadow-sm hover:bg-secondary-50"
+									className="border-1 shadow-accent-300 block h-8 w-full rounded-md border  border-secondary-300 bg-secondary-50 bg-opacity-70 p-2.5  px-3 py-1 text-sm font-medium leading-4 text-secondary-700/50 shadow-sm shadow-secondary-300 hover:bg-secondary-50 focus:border-secondary-500/50 focus:shadow-inner sm:text-sm"
 									disabled
 								/>
 							</div>
@@ -173,7 +173,7 @@ const Create = ({ setToggle, assetId }: TransactionProps) => {
 							<div className="relative mt-1">
 								<div className="relative w-full cursor-default overflow-hidden rounded-lg bg-white text-left shadow-md focus:outline-none focus-visible:ring-2 focus-visible:ring-white/75 focus-visible:ring-offset-2 focus-visible:ring-offset-teal-300 sm:text-sm">
 									<Combobox.Input
-										className="sm:text-sm w-full bg-secondary-50 bg-opacity-70 border-1 focus:shadow-inner shadow-accent-300  focus:border-secondary-500 block p-2.5 h-8  px-3 py-1 shadow-secondary-300 rounded-md border border-secondary-300 text-sm font-medium leading-4 text-secondary-700 shadow-sm hover:bg-secondary-50 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-1"
+										className="border-1 shadow-accent-300 block h-8 w-full rounded-md border  border-secondary-300 bg-secondary-50 bg-opacity-70 p-2.5  px-3 py-1 text-sm font-medium leading-4 text-secondary-700 shadow-sm shadow-secondary-300 hover:bg-secondary-50 focus:border-secondary-500 focus:shadow-inner focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-1 sm:text-sm"
 										displayValue={(staff: any) => staff?.name}
 										onChange={(event) => setQuery(event.target.value)}
 									/>
@@ -256,7 +256,7 @@ const Create = ({ setToggle, assetId }: TransactionProps) => {
 							<select
 								id="assetTransactionTypeId"
 								{...register('assetTransactionTypeId')}
-								className="sm:text-sm w-full bg-secondary-50 bg-opacity-70 border-1 focus:shadow-inner shadow-accent-300 focus:border-secondary-500 block p-2.5 h-8 px-3 py-1 shadow-secondary-300 rounded-md border border-secondary-300 text-sm font-medium leading-4 text-secondary-700 shadow-sm hover:bg-secondary-50 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-1"
+								className="border-1 shadow-accent-300 block h-8 w-full rounded-md border border-secondary-300 bg-secondary-50 bg-opacity-70 p-2.5 px-3 py-1 text-sm font-medium leading-4 text-secondary-700 shadow-sm shadow-secondary-300 hover:bg-secondary-50 focus:border-secondary-500 focus:shadow-inner focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-1 sm:text-sm"
 							>
 								{assetTransactionTypes?.map((item) => (
 									<option key={item?.id} value={item?.id}>
@@ -276,7 +276,7 @@ const Create = ({ setToggle, assetId }: TransactionProps) => {
 							<div className="mt-1">
 								<input
 									{...register('transactionDate', { valueAsDate: true })}
-									className="sm:text-sm w-full bg-secondary-50 bg-opacity-70 border-1 focus:shadow-inner shadow-accent-300  focus:border-secondary-500 block p-2.5 h-8  px-3 py-1 shadow-secondary-300 rounded-md border border-secondary-300 text-sm font-medium leading-4 text-secondary-700 shadow-sm hover:bg-secondary-50 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-1"
+									className="border-1 shadow-accent-300 block h-8 w-full rounded-md border  border-secondary-300 bg-secondary-50 bg-opacity-70 p-2.5  px-3 py-1 text-sm font-medium leading-4 text-secondary-700 shadow-sm shadow-secondary-300 hover:bg-secondary-50 focus:border-secondary-500 focus:shadow-inner focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-1 sm:text-sm"
 									id="transaction-date"
 									placeholder="Transaction Date"
 									type="date"
@@ -285,7 +285,7 @@ const Create = ({ setToggle, assetId }: TransactionProps) => {
 						</label>
 					</div>
 
-					<div className="space-y-1.5  md:col-span-4 col-span-full">
+					<div className="col-span-full  space-y-1.5 md:col-span-4">
 						<label className="flex items-center space-x-2 text-sm font-medium text-secondary-700">
 							<span>
 								Condition<sup className="text-red-600">*</sup>
@@ -293,7 +293,7 @@ const Create = ({ setToggle, assetId }: TransactionProps) => {
 						</label>
 						<select
 							{...register('asset.conditionId', { required: true })}
-							className="sm:text-sm w-full bg-secondary-50 bg-opacity-70 border-1 focus:shadow-inner shadow-accent-300 focus:border-secondary-500 block p-2.5 h-8 px-3 py-1 shadow-secondary-300 rounded-md border border-secondary-300 text-sm font-medium leading-4 text-secondary-700 shadow-sm hover:bg-secondary-50 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-1"
+							className="border-1 shadow-accent-300 block h-8 w-full rounded-md border border-secondary-300 bg-secondary-50 bg-opacity-70 p-2.5 px-3 py-1 text-sm font-medium leading-4 text-secondary-700 shadow-sm shadow-secondary-300 hover:bg-secondary-50 focus:border-secondary-500 focus:shadow-inner focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-1 sm:text-sm"
 							defaultValue={data?.conditionId}
 						>
 							{conditions?.map((item) => (
@@ -303,16 +303,16 @@ const Create = ({ setToggle, assetId }: TransactionProps) => {
 							))}
 						</select>
 						{errors?.asset?.conditionId && (
-							<p className="text-xs text-red-600 px-2">
+							<p className="px-2 text-xs text-red-600">
 								What Condition is the Asset?
 							</p>
 						)}
 					</div>
-					<div className="col-span-full w-full py-4 flex items-center justify-center">
+					<div className="col-span-full flex w-full items-center justify-center py-4">
 						<button
 							disabled={isPending ? true : false}
 							type="submit"
-							className="text-primary-50 bg-primary-600 text-sm p-1 rounded-md"
+							className="rounded-md bg-primary-600 p-1 text-sm text-primary-50"
 						>
 							<span>Submit</span>
 						</button>

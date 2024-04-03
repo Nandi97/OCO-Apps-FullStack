@@ -182,8 +182,8 @@ export default function PurchaseOrderForm({ onSubmit, initialValues, isPending }
 		}
 	};
 	return (
-		<div className="grid md:grid-cols-6 grid-cols-1 w-full">
-			<form className="md:col-span-3 col-span-1" onSubmit={handleSubmit(handleSubmitForm)}>
+		<div className="grid w-full grid-cols-1 md:grid-cols-6">
+			<form className="col-span-1 md:col-span-3" onSubmit={handleSubmit(handleSubmitForm)}>
 				<Accordion
 					type="single"
 					value={accValue}
@@ -197,20 +197,20 @@ export default function PurchaseOrderForm({ onSubmit, initialValues, isPending }
 							onClick={() => handleContinueClick('one')}
 						>
 							<div className="flex items-center space-x-3">
-								<div className="bg-secondary-200 text-white flex items-center justify-center text-xs p-2 h-4 w-4 rounded-full ">
+								<div className="flex h-4 w-4 items-center justify-center rounded-full bg-secondary-200 p-2 text-xs text-white ">
 									1
 								</div>
 
 								<span className="text-base font-semibold text-slate-700">
-									<span className="w-full flex items-start">Vendor Details</span>
-									<span className="text-xs font-semibold text-slate-700/70 flex items-center">
+									<span className="flex w-full items-start">Vendor Details</span>
+									<span className="flex items-center text-xs font-semibold text-slate-700/70">
 										Please fill in all the details
 									</span>
 								</span>
 							</div>
 						</AccordionTrigger>
 						<AccordionContent>
-							<div className="grid grid-cols-12 gap-2 border border-secondary-200 rounded p-4">
+							<div className="grid grid-cols-12 gap-2 rounded border border-secondary-200 p-4">
 								<div className="col-span-6 space-y-1 md:col-span-4">
 									<label
 										htmlFor="vendorType"
@@ -222,13 +222,13 @@ export default function PurchaseOrderForm({ onSubmit, initialValues, isPending }
 										id="vendorType"
 										value={vendorType}
 										onChange={(e) => setVendorType(e.target.value)}
-										className="sm:text-sm w-full bg-secondary-50 bg-opacity-70 border-1 focus:shadow-inner shadow-accent-300 focus:border-secondary-500 block p-2.5 h-8 px-3 py-1 shadow-secondary-300 rounded-md border border-secondary-300 text-sm font-medium leading-4 text-secondary-700 shadow-sm hover:bg-secondary-50 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-1"
+										className="border-1 shadow-accent-300 block h-8 w-full rounded-md border border-secondary-300 bg-secondary-50 bg-opacity-70 p-2.5 px-3 py-1 text-sm font-medium leading-4 text-secondary-700 shadow-sm shadow-secondary-300 hover:bg-secondary-50 focus:border-secondary-500 focus:shadow-inner focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-1 sm:text-sm"
 									>
 										<option
 											selected
 											disabled
 											value=""
-											className="text-opacity-50 text-secondary-700"
+											className="text-secondary-700 text-opacity-50"
 										>
 											--Vendor Type--
 										</option>
@@ -246,13 +246,13 @@ export default function PurchaseOrderForm({ onSubmit, initialValues, isPending }
 									<select
 										id="vatable"
 										{...register('taxId', { required: true })}
-										className="sm:text-sm w-full bg-secondary-50 bg-opacity-70 border-1 focus:shadow-inner shadow-accent-300 focus:border-secondary-500 block p-2.5 h-8 px-3 py-1 shadow-secondary-300 rounded-md border border-secondary-300 text-sm font-medium leading-4 text-secondary-700 shadow-sm hover:bg-secondary-50 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-1"
+										className="border-1 shadow-accent-300 block h-8 w-full rounded-md border border-secondary-300 bg-secondary-50 bg-opacity-70 p-2.5 px-3 py-1 text-sm font-medium leading-4 text-secondary-700 shadow-sm shadow-secondary-300 hover:bg-secondary-50 focus:border-secondary-500 focus:shadow-inner focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-1 sm:text-sm"
 									>
 										<option
 											selected
 											disabled
 											value=""
-											className="text-opacity-50 text-secondary-700"
+											className="text-secondary-700 text-opacity-50"
 										>
 											--Vatable?--
 										</option>
@@ -273,13 +273,13 @@ export default function PurchaseOrderForm({ onSubmit, initialValues, isPending }
 									<select
 										id="currencyId"
 										{...register('currencyId', { required: true })}
-										className="sm:text-sm w-full bg-secondary-50 bg-opacity-70 border-1 focus:shadow-inner shadow-accent-300 focus:border-secondary-500 block p-2.5 h-8 px-3 py-1 shadow-secondary-300 rounded-md border border-secondary-300 text-sm font-medium leading-4 text-secondary-700 shadow-sm hover:bg-secondary-50 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-1"
+										className="border-1 shadow-accent-300 block h-8 w-full rounded-md border border-secondary-300 bg-secondary-50 bg-opacity-70 p-2.5 px-3 py-1 text-sm font-medium leading-4 text-secondary-700 shadow-sm shadow-secondary-300 hover:bg-secondary-50 focus:border-secondary-500 focus:shadow-inner focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-1 sm:text-sm"
 									>
 										<option
 											selected
 											disabled
 											value=""
-											className="text-opacity-50 text-secondary-700"
+											className="text-secondary-700 text-opacity-50"
 										>
 											--Currency?--
 										</option>
@@ -302,14 +302,14 @@ export default function PurchaseOrderForm({ onSubmit, initialValues, isPending }
 											type="text"
 											id="name"
 											{...register('name', { required: true })}
-											className="sm:text-sm w-full bg-secondary-50 bg-opacity-70 border-1 focus:shadow-inner shadow-accent-300  focus:border-secondary-500 block p-2.5 h-8  px-3 py-1 shadow-secondary-300 rounded-md border border-secondary-300 text-sm font-medium leading-4 text-secondary-700 shadow-sm hover:bg-secondary-50 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-1"
+											className="border-1 shadow-accent-300 block h-8 w-full rounded-md border  border-secondary-300 bg-secondary-50 bg-opacity-70 p-2.5  px-3 py-1 text-sm font-medium leading-4 text-secondary-700 shadow-sm shadow-secondary-300 hover:bg-secondary-50 focus:border-secondary-500 focus:shadow-inner focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-1 sm:text-sm"
 										/>
 									</div>
 								</div>
 								<div className="col-span-6 md:col-span-6">
 									<label
 										htmlFor="email"
-										className="flex items-center space-x-2 text-sm font-medium text-secondary-700 f"
+										className="f flex items-center space-x-2 text-sm font-medium text-secondary-700"
 									>
 										<Icon icon="heroicons:envelope" className="text-base" />
 										<span> Email Address</span>
@@ -319,14 +319,14 @@ export default function PurchaseOrderForm({ onSubmit, initialValues, isPending }
 											type="text"
 											id="email"
 											{...register('email', { required: true })}
-											className="sm:text-sm w-full bg-secondary-50 bg-opacity-70 border-1 focus:shadow-inner shadow-accent-300  focus:border-secondary-500 block p-2.5 h-8  px-3 py-1 shadow-secondary-300 rounded-md border border-secondary-300 text-sm font-medium leading-4 text-secondary-700 shadow-sm hover:bg-secondary-50 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-1"
+											className="border-1 shadow-accent-300 block h-8 w-full rounded-md border  border-secondary-300 bg-secondary-50 bg-opacity-70 p-2.5  px-3 py-1 text-sm font-medium leading-4 text-secondary-700 shadow-sm shadow-secondary-300 hover:bg-secondary-50 focus:border-secondary-500 focus:shadow-inner focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-1 sm:text-sm"
 										/>
 									</div>
 								</div>
 								<div className="col-span-6 md:col-span-6">
 									<label
 										htmlFor="phoneNumber"
-										className="flex items-center space-x-2 text-sm font-medium text-secondary-700 f"
+										className="f flex items-center space-x-2 text-sm font-medium text-secondary-700"
 									>
 										<Icon
 											icon="heroicons:phone-20-solid"
@@ -339,14 +339,14 @@ export default function PurchaseOrderForm({ onSubmit, initialValues, isPending }
 											type="tel"
 											id="phoneNumber"
 											{...register('phoneNumber', { required: true })}
-											className="sm:text-sm w-full bg-secondary-50 bg-opacity-70 border-1 focus:shadow-inner shadow-accent-300  focus:border-secondary-500 block p-2.5 h-8  px-3 py-1 shadow-secondary-300 rounded-md border border-secondary-300 text-sm font-medium leading-4 text-secondary-700 shadow-sm hover:bg-secondary-50 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-1"
+											className="border-1 shadow-accent-300 block h-8 w-full rounded-md border  border-secondary-300 bg-secondary-50 bg-opacity-70 p-2.5  px-3 py-1 text-sm font-medium leading-4 text-secondary-700 shadow-sm shadow-secondary-300 hover:bg-secondary-50 focus:border-secondary-500 focus:shadow-inner focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-1 sm:text-sm"
 										/>
 									</div>
 								</div>
 								<div className="col-span-6 md:col-span-12">
 									<label
 										htmlFor="physicalAddress"
-										className="flex items-center space-x-2 text-sm font-medium text-secondary-700 f"
+										className="f flex items-center space-x-2 text-sm font-medium text-secondary-700"
 									>
 										Physical Address
 									</label>
@@ -355,7 +355,7 @@ export default function PurchaseOrderForm({ onSubmit, initialValues, isPending }
 											type="text"
 											id="physicalAddress"
 											{...register('physicalAddress', { required: true })}
-											className="sm:text-sm w-full bg-secondary-50 bg-opacity-70 border-1 focus:shadow-inner shadow-accent-300  focus:border-secondary-500 block p-2.5 h-8  px-3 py-1 shadow-secondary-300 rounded-md border border-secondary-300 text-sm font-medium leading-4 text-secondary-700 shadow-sm hover:bg-secondary-50 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-1"
+											className="border-1 shadow-accent-300 block h-8 w-full rounded-md border  border-secondary-300 bg-secondary-50 bg-opacity-70 p-2.5  px-3 py-1 text-sm font-medium leading-4 text-secondary-700 shadow-sm shadow-secondary-300 hover:bg-secondary-50 focus:border-secondary-500 focus:shadow-inner focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-1 sm:text-sm"
 										/>
 									</div>
 								</div>
@@ -364,7 +364,7 @@ export default function PurchaseOrderForm({ onSubmit, initialValues, isPending }
 										<div className="col-span-6 md:col-span-6">
 											<label
 												htmlFor="city"
-												className="flex items-center space-x-2 text-sm font-medium text-secondary-700 f"
+												className="f flex items-center space-x-2 text-sm font-medium text-secondary-700"
 											>
 												City
 											</label>
@@ -373,14 +373,14 @@ export default function PurchaseOrderForm({ onSubmit, initialValues, isPending }
 													type="text"
 													id="city"
 													{...register('city', { required: true })}
-													className="sm:text-sm w-full bg-secondary-50 bg-opacity-70 border-1 focus:shadow-inner shadow-accent-300  focus:border-secondary-500 block p-2.5 h-8  px-3 py-1 shadow-secondary-300 rounded-md border border-secondary-300 text-sm font-medium leading-4 text-secondary-700 shadow-sm hover:bg-secondary-50 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-1"
+													className="border-1 shadow-accent-300 block h-8 w-full rounded-md border  border-secondary-300 bg-secondary-50 bg-opacity-70 p-2.5  px-3 py-1 text-sm font-medium leading-4 text-secondary-700 shadow-sm shadow-secondary-300 hover:bg-secondary-50 focus:border-secondary-500 focus:shadow-inner focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-1 sm:text-sm"
 												/>
 											</div>
 										</div>
 										<div className="col-span-6 md:col-span-6">
 											<label
 												htmlFor="country"
-												className="flex items-center space-x-2 text-sm font-medium text-secondary-700 f"
+												className="f flex items-center space-x-2 text-sm font-medium text-secondary-700"
 											>
 												country
 											</label>
@@ -389,7 +389,7 @@ export default function PurchaseOrderForm({ onSubmit, initialValues, isPending }
 													type="text"
 													id="country"
 													{...register('country', { required: true })}
-													className="sm:text-sm w-full bg-secondary-50 bg-opacity-70 border-1 focus:shadow-inner shadow-accent-300  focus:border-secondary-500 block p-2.5 h-8  px-3 py-1 shadow-secondary-300 rounded-md border border-secondary-300 text-sm font-medium leading-4 text-secondary-700 shadow-sm hover:bg-secondary-50 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-1"
+													className="border-1 shadow-accent-300 block h-8 w-full rounded-md border  border-secondary-300 bg-secondary-50 bg-opacity-70 p-2.5  px-3 py-1 text-sm font-medium leading-4 text-secondary-700 shadow-sm shadow-secondary-300 hover:bg-secondary-50 focus:border-secondary-500 focus:shadow-inner focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-1 sm:text-sm"
 												/>
 											</div>
 										</div>
@@ -399,7 +399,7 @@ export default function PurchaseOrderForm({ onSubmit, initialValues, isPending }
 										<div className="col-span-6 md:col-span-4">
 											<label
 												htmlFor="address"
-												className="flex items-center space-x-2 text-sm font-medium text-secondary-700 f"
+												className="f flex items-center space-x-2 text-sm font-medium text-secondary-700"
 											>
 												Postal Address
 											</label>
@@ -410,14 +410,14 @@ export default function PurchaseOrderForm({ onSubmit, initialValues, isPending }
 													{...register('postalAddress', {
 														required: true,
 													})}
-													className="sm:text-sm w-full bg-secondary-50 bg-opacity-70 border-1 focus:shadow-inner shadow-accent-300  focus:border-secondary-500 block p-2.5 h-8  px-3 py-1 shadow-secondary-300 rounded-md border border-secondary-300 text-sm font-medium leading-4 text-secondary-700 shadow-sm hover:bg-secondary-50 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-1"
+													className="border-1 shadow-accent-300 block h-8 w-full rounded-md border  border-secondary-300 bg-secondary-50 bg-opacity-70 p-2.5  px-3 py-1 text-sm font-medium leading-4 text-secondary-700 shadow-sm shadow-secondary-300 hover:bg-secondary-50 focus:border-secondary-500 focus:shadow-inner focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-1 sm:text-sm"
 												/>
 											</div>
 										</div>
 										<div className="col-span-6 md:col-span-4">
 											<label
 												htmlFor="postalCode"
-												className="flex items-center space-x-2 text-sm font-medium text-secondary-700 f"
+												className="f flex items-center space-x-2 text-sm font-medium text-secondary-700"
 											>
 												Postal Code
 											</label>
@@ -426,7 +426,7 @@ export default function PurchaseOrderForm({ onSubmit, initialValues, isPending }
 													type="text"
 													id="postalCode"
 													{...register('postalCode', { required: true })}
-													className="sm:text-sm w-full bg-secondary-50 bg-opacity-70 border-1 focus:shadow-inner shadow-accent-300  focus:border-secondary-500 block p-2.5 h-8  px-3 py-1 shadow-secondary-300 rounded-md border border-secondary-300 text-sm font-medium leading-4 text-secondary-700 shadow-sm hover:bg-secondary-50 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-1"
+													className="border-1 shadow-accent-300 block h-8 w-full rounded-md border  border-secondary-300 bg-secondary-50 bg-opacity-70 p-2.5  px-3 py-1 text-sm font-medium leading-4 text-secondary-700 shadow-sm shadow-secondary-300 hover:bg-secondary-50 focus:border-secondary-500 focus:shadow-inner focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-1 sm:text-sm"
 												/>
 											</div>
 										</div>
@@ -437,14 +437,14 @@ export default function PurchaseOrderForm({ onSubmit, initialValues, isPending }
 												console.log('Selected Town:', newSelectedTown);
 												setSelectedTown(newSelectedTown);
 											}}
-											className="space-y-1 col-span-4"
+											className="col-span-4 space-y-1"
 										>
 											<Combobox.Label className="block text-sm font-medium text-secondary-700">
 												Town
 											</Combobox.Label>
 											<div className="relative mt-2">
 												<Combobox.Input
-													className="sm:text-sm w-full bg-secondary-50 bg-opacity-70 border-1 focus:shadow-inner shadow-accent-300  focus:border-secondary-500 block p-2.5 h-8  px-3 py-1 shadow-secondary-300 rounded-md border border-secondary-300 text-sm font-medium leading-4 text-secondary-700 shadow-sm hover:bg-secondary-50 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-1"
+													className="border-1 shadow-accent-300 block h-8 w-full rounded-md border  border-secondary-300 bg-secondary-50 bg-opacity-70 p-2.5  px-3 py-1 text-sm font-medium leading-4 text-secondary-700 shadow-sm shadow-secondary-300 hover:bg-secondary-50 focus:border-secondary-500 focus:shadow-inner focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-1 sm:text-sm"
 													onChange={(event) =>
 														setQuery(event.target.value)
 													}
@@ -513,11 +513,11 @@ export default function PurchaseOrderForm({ onSubmit, initialValues, isPending }
 										</Combobox>
 									</>
 								)}
-								<div className="col-span-12 w-full flex items-center justify-center">
+								<div className="col-span-12 flex w-full items-center justify-center">
 									<button
 										type="button"
 										onClick={() => handleContinueClick('two')}
-										className="flex items-center gap-2 p-2 text-sm font-medium leading-4 text-white border rounded-md shadow-sm bg-primary-600 hover:opacity-80 border-primary-300 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-1"
+										className="flex items-center gap-2 rounded-md border border-primary-300 bg-primary-600 p-2 text-sm font-medium leading-4 text-white shadow-sm hover:opacity-80 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-1"
 									>
 										Continue
 									</button>
@@ -531,13 +531,13 @@ export default function PurchaseOrderForm({ onSubmit, initialValues, isPending }
 							onClick={() => handleContinueClick('two')}
 						>
 							<div className="flex items-center space-x-3">
-								<div className="bg-secondary-200 text-white flex items-center justify-center text-xs p-2 h-4 w-4 rounded-full ">
+								<div className="flex h-4 w-4 items-center justify-center rounded-full bg-secondary-200 p-2 text-xs text-white ">
 									2
 								</div>
 
 								<span className="text-base font-semibold text-slate-700">
-									<span className="w-full flex items-start">Purchased Items</span>
-									<span className="text-xs font-semibold text-slate-700/70 flex items-center">
+									<span className="flex w-full items-start">Purchased Items</span>
+									<span className="flex items-center text-xs font-semibold text-slate-700/70">
 										Click the + icon to add a new item and the
 										<Icon icon="heroicons:trash-solid" /> icon to delete an item
 									</span>
@@ -545,16 +545,16 @@ export default function PurchaseOrderForm({ onSubmit, initialValues, isPending }
 							</div>
 						</AccordionTrigger>
 						<AccordionContent>
-							<div className="flex flex-col border rounded-b-lg bg-primary-50 p-4">
+							<div className="flex flex-col rounded-b-lg border bg-primary-50 p-4">
 								<div className="flex w-full divide-solid py-2">
 									<PurchaseItemForm
 										addPOItem={handleAddPOItem}
 										currency={selectedCurrency as string}
 									/>
 								</div>
-								<div className="w-full flex flex-col space-y-3">
-									<table className="w-full table-auto text-sm text-left rtl:text-right text-gray-500 border">
-										<thead className="text-xs text-gray-700 uppercase bg-primary-300">
+								<div className="flex w-full flex-col space-y-3">
+									<table className="w-full table-auto border text-left text-sm text-gray-500 rtl:text-right">
+										<thead className="bg-primary-300 text-xs uppercase text-gray-700">
 											<tr>
 												<th scope="col" className="px-6 py-3">
 													#
@@ -573,10 +573,10 @@ export default function PurchaseOrderForm({ onSubmit, initialValues, isPending }
 										</thead>
 										<tbody>
 											{purchaseOrderItems?.map((item) => (
-												<tr key={item?.key} className="bg-white border-b">
+												<tr key={item?.key} className="border-b bg-white">
 													<th
 														scope="row"
-														className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap"
+														className="whitespace-nowrap px-6 py-4 font-medium text-gray-900"
 													>
 														{item?.key}
 													</th>
@@ -602,11 +602,11 @@ export default function PurchaseOrderForm({ onSubmit, initialValues, isPending }
 										</tbody>
 									</table>
 								</div>
-								<div className="w-full flex items-center py-2 justify-center">
+								<div className="flex w-full items-center justify-center py-2">
 									<button
 										type="button"
 										onClick={() => handleContinueClick('three')}
-										className="flex items-center gap-2 p-2 text-sm font-medium leading-4 text-white border rounded-md shadow-sm bg-primary-600 hover:opacity-80 border-primary-300 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-1"
+										className="flex items-center gap-2 rounded-md border border-primary-300 bg-primary-600 p-2 text-sm font-medium leading-4 text-white shadow-sm hover:opacity-80 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-1"
 									>
 										Continue
 									</button>
@@ -620,35 +620,35 @@ export default function PurchaseOrderForm({ onSubmit, initialValues, isPending }
 							onClick={() => handleContinueClick('three')}
 						>
 							<div className="flex items-center space-x-3">
-								<div className="bg-secondary-200 text-white flex items-center justify-center text-xs p-2 h-4 w-4 rounded-full ">
+								<div className="flex h-4 w-4 items-center justify-center rounded-full bg-secondary-200 p-2 text-xs text-white ">
 									3
 								</div>
 
 								<span className="text-base font-semibold text-slate-700">
-									<span className="w-full flex items-start">
+									<span className="flex w-full items-start">
 										Partner Approval
 									</span>
-									<span className="text-xs font-semibold text-slate-700/70 flex items-center">
+									<span className="flex items-center text-xs font-semibold text-slate-700/70">
 										An email will be sent to the partner for their approval
 									</span>
 								</span>
 							</div>
 						</AccordionTrigger>
 						<AccordionContent>
-							<div className="flex flex-col border rounded-b-lg bg-primary-50 p-4">
+							<div className="flex flex-col rounded-b-lg border bg-primary-50 p-4">
 								<div className="flex w-full items-center justify-center divide-solid py-2">
 									<Combobox
 										as="div"
 										value={selectedStaff}
 										onChange={setSelectedStaff}
-										className="space-y-1 w-2/3"
+										className="w-2/3 space-y-1"
 									>
 										<Combobox.Label className="block text-sm font-medium text-secondary-700">
 											To be Authorized by
 										</Combobox.Label>
 										<div className="relative mt-2">
 											<Combobox.Input
-												className="sm:text-sm w-full bg-secondary-50 bg-opacity-70 border-1 focus:shadow-inner shadow-accent-300  focus:border-secondary-500 block p-2.5 h-8  px-3 py-1 shadow-secondary-300 rounded-md border border-secondary-300 text-sm font-medium leading-4 text-secondary-700 shadow-sm hover:bg-secondary-50 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-1"
+												className="border-1 shadow-accent-300 block h-8 w-full rounded-md border  border-secondary-300 bg-secondary-50 bg-opacity-70 p-2.5  px-3 py-1 text-sm font-medium leading-4 text-secondary-700 shadow-sm shadow-secondary-300 hover:bg-secondary-50 focus:border-secondary-500 focus:shadow-inner focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-1 sm:text-sm"
 												onChange={(event) => setQuery(event.target.value)}
 												displayValue={(item) => item?.name}
 											/>
@@ -719,14 +719,14 @@ export default function PurchaseOrderForm({ onSubmit, initialValues, isPending }
 										</div>
 									</Combobox>
 								</div>
-								<div className="w-full flex items-center py-2 justify-center">
+								<div className="flex w-full items-center justify-center py-2">
 									<button
 										type="submit"
 										className={`flex ${
 											isPending
 												? 'bg-slate-600 text-white'
-												: 'bg-primary-600 text-white hover:bg-primary-600/90 hover:opacity-80 border-primary-300 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-1'
-										} items-center gap-2 p-2 text-sm font-medium leading- border rounded-md shadow-sm  `}
+												: 'border-primary-300 bg-primary-600 text-white hover:bg-primary-600/90 hover:opacity-80 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-1'
+										} leading- items-center gap-2 rounded-md border p-2 text-sm font-medium shadow-sm  `}
 										disabled={isPending ? true : false}
 									>
 										Save and Continue
@@ -737,7 +737,7 @@ export default function PurchaseOrderForm({ onSubmit, initialValues, isPending }
 					</AccordionItem>
 				</Accordion>
 			</form>
-			<div className="md:col-span-3 col-span-1">
+			<div className="col-span-1 md:col-span-3">
 				<PurchaseOrderPreview />
 			</div>
 		</div>

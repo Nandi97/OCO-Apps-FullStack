@@ -120,20 +120,20 @@ const CauseListForm = ({ onSubmit, initialValues, isPending }: CauseListFormProp
 			<div className="col-span-6">
 				<Link
 					href={`/court/cause-lists`}
-					className="text-primary-500 inline-flex space-x-1 items-center"
+					className="inline-flex items-center space-x-1 text-primary-500"
 				>
 					<Icon className="text-secondary-700" icon="heroicons:chevron-left" />
 					<span className="text-sm">Back</span>
 				</Link>
 			</div>
-			<div className="md:col-span-3 col-span-6">
+			<div className="col-span-6 md:col-span-3">
 				<form
-					className="shadow-inner shadow-secondary-600/20 rounded-md bg-primary-50 p-2 w-full flex space-y-4 flex-col"
+					className="flex w-full flex-col space-y-4 rounded-md bg-primary-50 p-2 shadow-inner shadow-secondary-600/20"
 					onSubmit={handleSubmit(handleSubmitForm)}
 				>
 					<h1>Cause List</h1>
 					<div className="grid grid-cols-6 gap-2">
-						<div className="md:col-span-3 col-span-6">
+						<div className="col-span-6 md:col-span-3">
 							<label className="form-control w-full max-w-xs ">
 								<div className="block text-sm font-medium text-secondary-700">
 									<span className="label-text">Team Handling</span>
@@ -143,13 +143,13 @@ const CauseListForm = ({ onSubmit, initialValues, isPending }: CauseListFormProp
 									id="team"
 									value={teamHandling}
 									onChange={(e) => setTeamHandling(e.target.value)}
-									className="sm:text-sm w-full bg-secondary-50 bg-opacity-70 border-1 focus:shadow-inner shadow-accent-300 focus:border-secondary-500 block p-2.5 h-8 px-3 py-1 shadow-secondary-300 rounded-md border border-secondary-300 text-sm font-medium leading-4 text-secondary-700 shadow-sm hover:bg-secondary-50 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-1"
+									className="border-1 shadow-accent-300 block h-8 w-full rounded-md border border-secondary-300 bg-secondary-50 bg-opacity-70 p-2.5 px-3 py-1 text-sm font-medium leading-4 text-secondary-700 shadow-sm shadow-secondary-300 hover:bg-secondary-50 focus:border-secondary-500 focus:shadow-inner focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-1 sm:text-sm"
 								>
 									<option
 										selected
 										disabled
 										value=""
-										className="text-opacity-50 text-secondary-700"
+										className="text-secondary-700 text-opacity-50"
 									>
 										--Select Team--
 									</option>
@@ -163,7 +163,7 @@ const CauseListForm = ({ onSubmit, initialValues, isPending }: CauseListFormProp
 							</label>
 						</div>
 
-						<div className="md:col-span-3 col-span-6">
+						<div className="col-span-6 md:col-span-3">
 							<label className="form-control w-full max-w-xs ">
 								<div className="block text-sm font-medium text-secondary-700">
 									<span className="label-text">Date</span>
@@ -172,10 +172,10 @@ const CauseListForm = ({ onSubmit, initialValues, isPending }: CauseListFormProp
 									type="date"
 									placeholder="Date"
 									{...register('date', { required: true, valueAsDate: true })}
-									className="sm:text-sm w-full bg-secondary-50 bg-opacity-70 border-1 focus:shadow-inner shadow-accent-300  focus:border-secondary-500 block p-2.5 h-8  px-3 py-1 shadow-secondary-300 rounded-md border border-secondary-300 text-sm font-medium leading-4 text-secondary-700 shadow-sm hover:bg-secondary-50 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-1"
+									className="border-1 shadow-accent-300 block h-8 w-full rounded-md border  border-secondary-300 bg-secondary-50 bg-opacity-70 p-2.5  px-3 py-1 text-sm font-medium leading-4 text-secondary-700 shadow-sm shadow-secondary-300 hover:bg-secondary-50 focus:border-secondary-500 focus:shadow-inner focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-1 sm:text-sm"
 								/>
 								{errors?.date && (
-									<div className="text-red-500 text-xs">
+									<div className="text-xs text-red-500">
 										<span className="px-2">
 											<sup>*</sup>
 											{errors.date.message}
@@ -185,7 +185,7 @@ const CauseListForm = ({ onSubmit, initialValues, isPending }: CauseListFormProp
 							</label>
 						</div>
 					</div>
-					<div className="rounded-sm space-y-2 flex flex-col shadow-2 shadow-secondary-700/20 p-3">
+					<div className="flex flex-col space-y-2 rounded-sm p-3 shadow-2 shadow-secondary-700/20">
 						<div className="w-full">
 							<button
 								onClick={() =>
@@ -198,7 +198,7 @@ const CauseListForm = ({ onSubmit, initialValues, isPending }: CauseListFormProp
 									})
 								}
 								type="button"
-								className="bg-primary-600 text-primary-50 hover:bg-primary-600/70 flex items-center space-x-2 rounded-md text-sm p-1"
+								className="flex items-center space-x-2 rounded-md bg-primary-600 p-1 text-sm text-primary-50 hover:bg-primary-600/70"
 							>
 								<Icon icon="heroicons:plus" />
 								<span>Add Case</span>
@@ -211,7 +211,7 @@ const CauseListForm = ({ onSubmit, initialValues, isPending }: CauseListFormProp
 										<div
 											className={`grid ${index > 0 ? 'w-11/12' : 'w-full'}  grid-cols-6  gap-2 rounded-sm border border-secondary-700/10 p-4`}
 										>
-											<div className="md:col-span-4 col-span-6">
+											<div className="col-span-6 md:col-span-4">
 												<label className="form-control w-full max-w-xs ">
 													<div className="block text-sm font-medium text-secondary-700">
 														<span className="label-text">Coram</span>
@@ -222,11 +222,11 @@ const CauseListForm = ({ onSubmit, initialValues, isPending }: CauseListFormProp
 														{...register(
 															`cases.${index}.coram` as const
 														)}
-														className="sm:text-sm w-full bg-secondary-50 bg-opacity-70 border-1 focus:shadow-inner shadow-accent-300  focus:border-secondary-500 block p-2.5 h-8  px-3 py-1 shadow-secondary-300 rounded-md border border-secondary-300 text-sm font-medium leading-4 text-secondary-700 shadow-sm hover:bg-secondary-50 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-1"
+														className="border-1 shadow-accent-300 block h-8 w-full rounded-md border  border-secondary-300 bg-secondary-50 bg-opacity-70 p-2.5  px-3 py-1 text-sm font-medium leading-4 text-secondary-700 shadow-sm shadow-secondary-300 hover:bg-secondary-50 focus:border-secondary-500 focus:shadow-inner focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-1 sm:text-sm"
 													/>
 												</label>
 											</div>
-											<div className="md:col-span-2 col-span-6">
+											<div className="col-span-6 md:col-span-2">
 												<label className="form-control w-full max-w-xs ">
 													<div className="block text-sm font-medium text-secondary-700">
 														<span className="label-text">Virtual</span>
@@ -236,13 +236,13 @@ const CauseListForm = ({ onSubmit, initialValues, isPending }: CauseListFormProp
 														{...register(
 															`cases.${index}.virtual` as const
 														)}
-														className="sm:text-sm w-full bg-secondary-50 bg-opacity-70 border-1 focus:shadow-inner shadow-accent-300 focus:border-secondary-500 block p-2.5 h-8 px-3 py-1 shadow-secondary-300 rounded-md border border-secondary-300 text-sm font-medium leading-4 text-secondary-700 shadow-sm hover:bg-secondary-50 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-1"
+														className="border-1 shadow-accent-300 block h-8 w-full rounded-md border border-secondary-300 bg-secondary-50 bg-opacity-70 p-2.5 px-3 py-1 text-sm font-medium leading-4 text-secondary-700 shadow-sm shadow-secondary-300 hover:bg-secondary-50 focus:border-secondary-500 focus:shadow-inner focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-1 sm:text-sm"
 														defaultValue={``}
 													>
 														<option
 															disabled
 															value=""
-															className="text-opacity-50 text-secondary-700"
+															className="text-secondary-700 text-opacity-50"
 														>
 															--Is Virtual?--
 														</option>
@@ -268,7 +268,7 @@ const CauseListForm = ({ onSubmit, initialValues, isPending }: CauseListFormProp
 															{...register(
 																`cases.${index}.url` as const
 															)}
-															className="sm:text-sm w-full bg-secondary-50 bg-opacity-70 border-1 focus:shadow-inner shadow-accent-300  focus:border-secondary-500 block p-2.5 h-8  px-3 py-1 shadow-secondary-300 rounded-md border border-secondary-300 text-sm font-medium leading-4 text-secondary-700 shadow-sm hover:bg-secondary-50 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-1"
+															className="border-1 shadow-accent-300 block h-8 w-full rounded-md border  border-secondary-300 bg-secondary-50 bg-opacity-70 p-2.5  px-3 py-1 text-sm font-medium leading-4 text-secondary-700 shadow-sm shadow-secondary-300 hover:bg-secondary-50 focus:border-secondary-500 focus:shadow-inner focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-1 sm:text-sm"
 														/>
 													</label>
 												</div>
@@ -287,7 +287,7 @@ const CauseListForm = ({ onSubmit, initialValues, isPending }: CauseListFormProp
 															`cases.${index}.case` as const
 														)}
 														placeholder="Case No. & Parties"
-														className="sm:text-sm w-full bg-secondary-50 bg-opacity-70 border-1 focus:shadow-inner shadow-accent-300  focus:border-secondary-500 block p-2.5 h-20  px-3 py-1 shadow-secondary-300 rounded-md border border-secondary-300 text-sm font-medium leading-4 text-secondary-700 shadow-sm hover:bg-secondary-50 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-1"
+														className="border-1 shadow-accent-300 block h-20 w-full rounded-md border  border-secondary-300 bg-secondary-50 bg-opacity-70 p-2.5  px-3 py-1 text-sm font-medium leading-4 text-secondary-700 shadow-sm shadow-secondary-300 hover:bg-secondary-50 focus:border-secondary-500 focus:shadow-inner focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-1 sm:text-sm"
 													/>
 												</label>
 											</div>
@@ -304,14 +304,14 @@ const CauseListForm = ({ onSubmit, initialValues, isPending }: CauseListFormProp
 														{...register(
 															`cases.${index}.advocates` as const
 														)}
-														className="sm:text-sm w-full bg-secondary-50 bg-opacity-70 border-1 focus:shadow-inner shadow-accent-300 focus:border-secondary-500 block p-2.5 h-8 px-3 py-1 shadow-secondary-300 rounded-md border border-secondary-300 text-sm font-medium leading-4 text-secondary-700 shadow-sm hover:bg-secondary-50 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-1"
+														className="border-1 shadow-accent-300 block h-8 w-full rounded-md border border-secondary-300 bg-secondary-50 bg-opacity-70 p-2.5 px-3 py-1 text-sm font-medium leading-4 text-secondary-700 shadow-sm shadow-secondary-300 hover:bg-secondary-50 focus:border-secondary-500 focus:shadow-inner focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-1 sm:text-sm"
 														defaultValue={``}
 														multiple
 													>
 														<option
 															disabled
 															value=""
-															className="text-opacity-50 text-secondary-700"
+															className="text-secondary-700 text-opacity-50"
 														>
 															--Is Virtual?--
 														</option>
@@ -325,10 +325,10 @@ const CauseListForm = ({ onSubmit, initialValues, isPending }: CauseListFormProp
 											</div>
 										</div>
 										{index > 0 && (
-											<div className="w-1/12 flex items-center justify-center">
+											<div className="flex w-1/12 items-center justify-center">
 												<button
 													onClick={() => remove(index)}
-													className="bg-primary-50 border border-primary-600 text-primary-600 p-1 hover:text-primary-50 hover:bg-primary-600 rounded-md"
+													className="rounded-md border border-primary-600 bg-primary-50 p-1 text-primary-600 hover:bg-primary-600 hover:text-primary-50"
 													type="button"
 												>
 													<span className="sr-only">Delete</span>
@@ -341,10 +341,10 @@ const CauseListForm = ({ onSubmit, initialValues, isPending }: CauseListFormProp
 							})}
 						</div>
 					</div>
-					<div className="w-full flex items-center justify-center">
+					<div className="flex w-full items-center justify-center">
 						<button
 							type="submit"
-							className="bg-primary-600 text-primary-50 hover:bg-primary-600/70 flex items-center space-x-2 rounded-md text-sm p-1"
+							className="flex items-center space-x-2 rounded-md bg-primary-600 p-1 text-sm text-primary-50 hover:bg-primary-600/70"
 						>
 							<span>Submit</span>
 						</button>
@@ -352,7 +352,7 @@ const CauseListForm = ({ onSubmit, initialValues, isPending }: CauseListFormProp
 				</form>
 				<DevTool control={control} />
 			</div>
-			<div className="md:col-span-3 col-span-6">
+			<div className="col-span-6 md:col-span-3">
 				{/* <CauseListPreview formData={formData} /> */}
 			</div>
 		</div>

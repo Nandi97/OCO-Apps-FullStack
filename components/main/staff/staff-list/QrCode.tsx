@@ -21,9 +21,9 @@ export default function QrCode() {
 	});
 
 	return (
-		<div className="fixed top-0 left-0 z-[100] w-full h-full bg-white font-roboto">
+		<div className="fixed left-0 top-0 z-[100] h-full w-full bg-white font-roboto">
 			<div className="flex w-full flex-col items-center space-y-4">
-				<div className="bg-[#c9c2ba] w-full py-5 rounded-b-3xl flex-col flex items-center justify-center">
+				<div className="flex w-full flex-col items-center justify-center rounded-b-3xl bg-[#c9c2ba] py-5">
 					<Image
 						src={staff?.avatarUrl}
 						alt="OCO Logo"
@@ -31,7 +31,7 @@ export default function QrCode() {
 						height={205}
 						className="w-40"
 					/>
-					<h1 className="text-white text-2xl font-semibold">{staff?.name}</h1>
+					<h1 className="text-2xl font-semibold text-white">{staff?.name}</h1>
 				</div>
 				<div className="w-full max-w-lg px-4 py-10 md:max-h-80">
 					<QRCode

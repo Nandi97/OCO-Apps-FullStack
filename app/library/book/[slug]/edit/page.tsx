@@ -126,8 +126,8 @@ export default function EditBook(url: URL) {
 
 	return (
 		<div className="space-y-2 bg-white">
-			<div className="sticky z-20 flex items-center justify-between gap-2 bg-white top-2">
-				<h1 className="text-lg font-extralight text-accent-700">
+			<div className="sticky top-2 z-20 flex items-center justify-between gap-2 bg-white">
+				<h1 className="text-accent-700 text-lg font-extralight">
 					Edit Book: {book?.title}
 				</h1>
 			</div>
@@ -140,17 +140,17 @@ export default function EditBook(url: URL) {
 						setBase64Cover={setBase64Cover}
 					/>
 				</div>
-				<div className="flex items-center justify-center w-full py-8 space-x-2">
+				<div className="flex w-full items-center justify-center space-x-2 py-8">
 					{/* Submit Form Button  */}
 					<button
 						type="submit"
-						className="flex items-center gap-2 p-2 text-sm font-medium leading-4 text-white border rounded-md shadow-sm bg-primary-600 hover:opacity-80 border-primary-300 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-1"
+						className="flex items-center gap-2 rounded-md border border-primary-300 bg-primary-600 p-2 text-sm font-medium leading-4 text-white shadow-sm hover:opacity-80 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-1"
 					>
 						Submit Form
 					</button>
 					<Link
 						href={'/library'}
-						className="flex items-center gap-2 p-2 text-sm font-medium leading-4 text-white border rounded-md shadow-sm bg-secondary-600 hover:opacity-80 border-secondary-300 focus:outline-none focus:ring-2 focus:ring-secondary-500 focus:ring-offset-1"
+						className="flex items-center gap-2 rounded-md border border-secondary-300 bg-secondary-600 p-2 text-sm font-medium leading-4 text-white shadow-sm hover:opacity-80 focus:outline-none focus:ring-2 focus:ring-secondary-500 focus:ring-offset-1"
 					>
 						Cancel
 					</Link>

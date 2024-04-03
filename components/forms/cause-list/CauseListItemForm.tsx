@@ -48,7 +48,7 @@ const CauseListItemForm = ({
 	return (
 		<div className="flex w-full">
 			<div className="grid w-11/12 grid-cols-6  gap-2 rounded-sm border border-secondary-700/10 p-4">
-				<div className="md:col-span-4 col-span-6">
+				<div className="col-span-6 md:col-span-4">
 					<label className="form-control w-full max-w-xs ">
 						<div className="block text-sm font-medium text-secondary-700">
 							<span className="label-text">Coram</span>
@@ -64,11 +64,11 @@ const CauseListItemForm = ({
 									coram: e.target.value,
 								})
 							}
-							className={`sm:text-sm w-full bg-secondary-50 bg-opacity-70 border-1 focus:shadow-inner shadow-accent-300  focus:border-secondary-500 block p-2.5 h-8  px-3 py-1 shadow-secondary-300 rounded-md border border-secondary-300 text-sm font-medium leading-4 text-secondary-700 shadow-sm hover:bg-secondary-50 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-1`}
+							className={`border-1 shadow-accent-300 block h-8 w-full rounded-md border  border-secondary-300 bg-secondary-50 bg-opacity-70 p-2.5  px-3 py-1 text-sm font-medium leading-4 text-secondary-700 shadow-sm shadow-secondary-300 hover:bg-secondary-50 focus:border-secondary-500 focus:shadow-inner focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-1 sm:text-sm`}
 						/>
 					</label>
 				</div>
-				<div className="md:col-span-2 col-span-6">
+				<div className="col-span-6 md:col-span-2">
 					<label className="form-control w-full max-w-xs ">
 						<div className="block text-sm font-medium text-secondary-700">
 							<span className="label-text">Virtual</span>
@@ -82,13 +82,13 @@ const CauseListItemForm = ({
 									virtual: parseInt(e.target.value),
 								})
 							}
-							className="sm:text-sm w-full bg-secondary-50 bg-opacity-70 border-1 focus:shadow-inner shadow-accent-300 focus:border-secondary-500 block p-2.5 h-8 px-3 py-1 shadow-secondary-300 rounded-md border border-secondary-300 text-sm font-medium leading-4 text-secondary-700 shadow-sm hover:bg-secondary-50 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-1"
+							className="border-1 shadow-accent-300 block h-8 w-full rounded-md border border-secondary-300 bg-secondary-50 bg-opacity-70 p-2.5 px-3 py-1 text-sm font-medium leading-4 text-secondary-700 shadow-sm shadow-secondary-300 hover:bg-secondary-50 focus:border-secondary-500 focus:shadow-inner focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-1 sm:text-sm"
 						>
 							<option
 								selected
 								disabled
 								value=""
-								className="text-opacity-50 text-secondary-700"
+								className="text-secondary-700 text-opacity-50"
 							>
 								--Is Virtual?--
 							</option>
@@ -119,7 +119,7 @@ const CauseListItemForm = ({
 										url: e.target.value,
 									})
 								}
-								className="sm:text-sm w-full bg-secondary-50 bg-opacity-70 border-1 focus:shadow-inner shadow-accent-300  focus:border-secondary-500 block p-2.5 h-8  px-3 py-1 shadow-secondary-300 rounded-md border border-secondary-300 text-sm font-medium leading-4 text-secondary-700 shadow-sm hover:bg-secondary-50 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-1"
+								className="border-1 shadow-accent-300 block h-8 w-full rounded-md border  border-secondary-300 bg-secondary-50 bg-opacity-70 p-2.5  px-3 py-1 text-sm font-medium leading-4 text-secondary-700 shadow-sm shadow-secondary-300 hover:bg-secondary-50 focus:border-secondary-500 focus:shadow-inner focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-1 sm:text-sm"
 							/>
 						</label>
 					</div>
@@ -140,7 +140,7 @@ const CauseListItemForm = ({
 									case: e.target.value,
 								})
 							}
-							className="sm:text-sm w-full bg-secondary-50 bg-opacity-70 border-1 focus:shadow-inner shadow-accent-300  focus:border-secondary-500 block p-2.5 h-20  px-3 py-1 shadow-secondary-300 rounded-md border border-secondary-300 text-sm font-medium leading-4 text-secondary-700 shadow-sm hover:bg-secondary-50 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-1"
+							className="border-1 shadow-accent-300 block h-20 w-full rounded-md border  border-secondary-300 bg-secondary-50 bg-opacity-70 p-2.5  px-3 py-1 text-sm font-medium leading-4 text-secondary-700 shadow-sm shadow-secondary-300 hover:bg-secondary-50 focus:border-secondary-500 focus:shadow-inner focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-1 sm:text-sm"
 						/>
 					</label>
 				</div>
@@ -156,7 +156,7 @@ const CauseListItemForm = ({
 						<div className="relative w-full cursor-default overflow-hidden rounded-lg bg-white text-left shadow-md focus:outline-none focus-visible:ring-2 focus-visible:ring-white/75 focus-visible:ring-offset-2 focus-visible:ring-offset-teal-300 sm:text-sm">
 							<Combobox.Input
 								onClick={() => setIsShowing(true)}
-								className="z-[2]  sm:text-sm w-full bg-secondary-50 bg-opacity-70 border-1 focus:shadow-inner shadow-accent-300  focus:border-secondary-500 block p-2.5 h-8  px-3 py-1 shadow-secondary-300 rounded-md border border-secondary-300 text-sm font-medium leading-4 text-secondary-700 shadow-sm hover:bg-secondary-50 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-1"
+								className="border-1  shadow-accent-300 z-[2] block h-8 w-full rounded-md border  border-secondary-300 bg-secondary-50 bg-opacity-70 p-2.5  px-3 py-1 text-sm font-medium leading-4 text-secondary-700 shadow-sm shadow-secondary-300 hover:bg-secondary-50 focus:border-secondary-500 focus:shadow-inner focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-1 sm:text-sm"
 								displayValue={(selectedPeople: Staff[]) =>
 									selectedPeople?.map((person: Staff) => person.name).join(', ')
 								}
@@ -188,7 +188,7 @@ const CauseListItemForm = ({
 										onClick={() => setIsShowing(false)}
 										className={({ active, selected }) =>
 											classNames(
-												'cursor-default select-none py-2 pl-3 pr-9 flex justify-between',
+												'flex cursor-default select-none justify-between py-2 pl-3 pr-9',
 												active
 													? 'bg-primary-600 text-white'
 													: 'text-secondary-900'
@@ -234,9 +234,9 @@ const CauseListItemForm = ({
 					</Combobox>
 				</div>
 			</div>
-			<div className="w-1/12 flex items-center justify-center">
+			<div className="flex w-1/12 items-center justify-center">
 				<button
-					className="bg-primary-50 border border-primary-600 text-primary-600 p-1 hover:text-primary-50 hover:bg-primary-600 rounded-md"
+					className="rounded-md border border-primary-600 bg-primary-50 p-1 text-primary-600 hover:bg-primary-600 hover:text-primary-50"
 					type="button"
 				>
 					<span className="sr-only">Delete</span>

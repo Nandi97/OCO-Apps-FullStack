@@ -55,11 +55,11 @@ export const columns = [
 	columnHelper.accessor('deletedAt', {
 		cell: (info) =>
 			info.getValue() === null ? (
-				<span className="inline-flex rounded-full  px-2 text-xs font-semibold leading-5 text-green-800 bg-green-100">
+				<span className="inline-flex rounded-full  bg-green-100 px-2 text-xs font-semibold leading-5 text-green-800">
 					Active
 				</span>
 			) : (
-				<span className="inline-flex rounded-full  px-2 text-xs font-semibold leading-5 text-red-800 bg-red-100">
+				<span className="inline-flex rounded-full  bg-red-100 px-2 text-xs font-semibold leading-5 text-red-800">
 					Inactive
 				</span>
 			),

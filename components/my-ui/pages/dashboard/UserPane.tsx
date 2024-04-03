@@ -20,7 +20,7 @@ export default function UserPanel({ sessionData }: any) {
 				<Link
 					href={`/profile/${currentUser.id}`}
 					key={currentUser?.id}
-					className="flex justify-center items-center flex-col p-4 w-full space-y-4 hover:shadow-md transition-all duration-300 hover:p-5 cursor-pointer shadow-md border border-secondary-100 rounded-md bg-secondary-50 h-full bg-clip-padding backdrop-filter backdrop-blur-md"
+					className="flex h-full w-full cursor-pointer flex-col items-center justify-center space-y-4 rounded-md border border-secondary-100 bg-secondary-50 bg-clip-padding p-4 shadow-md backdrop-blur-md backdrop-filter transition-all duration-300 hover:p-5 hover:shadow-md"
 				>
 					`
 					<div
@@ -32,14 +32,14 @@ export default function UserPanel({ sessionData }: any) {
 						<Image
 							width={1000}
 							height={1000}
-							className="h-20 w-20 p-2 rounded-full z-10"
+							className="z-10 h-20 w-20 rounded-full p-2"
 							src={currentUser?.avatarUrl || sessionData?.user?.image || avatar}
 							alt="User Image"
 							quality={100}
 							style={{ objectFit: 'contain' }}
 						/>
 					</div>
-					<h1 className="font-bold text-lg">{currentUser?.name}</h1>
+					<h1 className="text-lg font-bold">{currentUser?.name}</h1>
 					<span className="font-normal text-primary-600">{currentUser?.email}</span>{' '}
 				</Link>
 			))}

@@ -99,19 +99,19 @@ const CauseListForm2 = ({ onSubmit, initialValues, isPending }: CauseListFormPro
 			<div className="col-span-6">
 				<Link
 					href={`/court/cause-lists`}
-					className="text-primary-500 inline-flex space-x-1 items-center"
+					className="inline-flex items-center space-x-1 text-primary-500"
 				>
 					<Icon className="text-secondary-700" icon="heroicons:chevron-left" />
 					<span className="text-sm">Back</span>
 				</Link>
 			</div>
-			<div className="md:col-span-3 col-span-6 bg-primary-50">
-				<form className="shadow-inner shadow-secondary-600/20 rounded-md w-full flex space-y-4 flex-col">
-					<h1 className="w-full bg-primary-600 text-primary-50 rounded-t-md p-2 font-semibold">
+			<div className="col-span-6 bg-primary-50 md:col-span-3">
+				<form className="flex w-full flex-col space-y-4 rounded-md shadow-inner shadow-secondary-600/20">
+					<h1 className="w-full rounded-t-md bg-primary-600 p-2 font-semibold text-primary-50">
 						Cause List
 					</h1>
 					<div className="grid grid-cols-6 gap-2 p-2">
-						<div className="md:col-span-3 col-span-6">
+						<div className="col-span-6 md:col-span-3">
 							<label className="form-control w-full max-w-xs ">
 								<div className="block text-sm font-medium text-secondary-700">
 									<span className="label-text">
@@ -136,13 +136,13 @@ const CauseListForm2 = ({ onSubmit, initialValues, isPending }: CauseListFormPro
 											}
 										},
 									})}
-									className="sm:text-sm w-full bg-secondary-50 bg-opacity-70 border-1 focus:shadow-inner shadow-accent-300 focus:border-secondary-500 block p-2.5 h-8 px-3 py-1 shadow-secondary-300 rounded-md border border-secondary-300 text-sm font-medium leading-4 text-secondary-700 shadow-sm hover:bg-secondary-50 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-1"
+									className="border-1 shadow-accent-300 block h-8 w-full rounded-md border border-secondary-300 bg-secondary-50 bg-opacity-70 p-2.5 px-3 py-1 text-sm font-medium leading-4 text-secondary-700 shadow-sm shadow-secondary-300 hover:bg-secondary-50 focus:border-secondary-500 focus:shadow-inner focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-1 sm:text-sm"
 									defaultValue=""
 								>
 									<option
 										disabled
 										value=""
-										className="text-opacity-50 text-secondary-700"
+										className="text-secondary-700 text-opacity-50"
 									>
 										--Select Team--
 									</option>
@@ -154,7 +154,7 @@ const CauseListForm2 = ({ onSubmit, initialValues, isPending }: CauseListFormPro
 									))}
 								</select>
 								{errors?.team && (
-									<div className="text-red-500 text-xs">
+									<div className="text-xs text-red-500">
 										<span className="px-2">
 											<sup>*</sup>
 											{errors.team.message}
@@ -163,7 +163,7 @@ const CauseListForm2 = ({ onSubmit, initialValues, isPending }: CauseListFormPro
 								)}
 							</label>
 						</div>
-						<div className="md:col-span-3 col-span-6">
+						<div className="col-span-6 md:col-span-3">
 							<label className="form-control w-full max-w-xs ">
 								<div className="block text-sm font-medium text-secondary-700">
 									<span className="label-text">
@@ -177,10 +177,10 @@ const CauseListForm2 = ({ onSubmit, initialValues, isPending }: CauseListFormPro
 										required: { value: true, message: 'Date is required' },
 										valueAsDate: true,
 									})}
-									className="sm:text-sm w-full bg-secondary-50 bg-opacity-70 border-1 focus:shadow-inner shadow-accent-300  focus:border-secondary-500 block p-2.5 h-8  px-3 py-1 shadow-secondary-300 rounded-md border border-secondary-300 text-sm font-medium leading-4 text-secondary-700 shadow-sm hover:bg-secondary-50 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-1"
+									className="border-1 shadow-accent-300 block h-8 w-full rounded-md border  border-secondary-300 bg-secondary-50 bg-opacity-70 p-2.5  px-3 py-1 text-sm font-medium leading-4 text-secondary-700 shadow-sm shadow-secondary-300 hover:bg-secondary-50 focus:border-secondary-500 focus:shadow-inner focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-1 sm:text-sm"
 								/>
 								{errors?.date && (
-									<div className="text-red-500 text-xs">
+									<div className="text-xs text-red-500">
 										<span className="px-2">
 											<sup>*</sup>
 											{errors.date.message}
@@ -190,7 +190,7 @@ const CauseListForm2 = ({ onSubmit, initialValues, isPending }: CauseListFormPro
 							</label>
 						</div>
 					</div>
-					<div className="rounded-sm space-y-2 flex flex-col p-3">
+					<div className="flex flex-col space-y-2 rounded-sm p-3">
 						<div className="w-full">
 							<button
 								onClick={() =>
@@ -203,7 +203,7 @@ const CauseListForm2 = ({ onSubmit, initialValues, isPending }: CauseListFormPro
 									})
 								}
 								type="button"
-								className="bg-primary-600 text-primary-50 hover:bg-primary-600/70 flex items-center space-x-2 rounded-md text-sm p-1"
+								className="flex items-center space-x-2 rounded-md bg-primary-600 p-1 text-sm text-primary-50 hover:bg-primary-600/70"
 							>
 								<Icon icon="heroicons:plus" />
 								<span>Add Case</span>
@@ -214,9 +214,9 @@ const CauseListForm2 = ({ onSubmit, initialValues, isPending }: CauseListFormPro
 								return (
 									<div className="flex w-full" key={field.id}>
 										<div
-											className={`grid ${index > 0 ? 'w-11/12' : 'w-full'}  grid-cols-6  gap-2 border rounded-md border-secondary-700/10 p-4`}
+											className={`grid ${index > 0 ? 'w-11/12' : 'w-full'}  grid-cols-6  gap-2 rounded-md border border-secondary-700/10 p-4`}
 										>
-											<div className="md:col-span-4 col-span-6">
+											<div className="col-span-6 md:col-span-4">
 												<label className="form-control w-full max-w-xs ">
 													<div className="block text-sm font-medium text-secondary-700">
 														<span className="label-text">Coram</span>
@@ -233,11 +233,11 @@ const CauseListForm2 = ({ onSubmit, initialValues, isPending }: CauseListFormPro
 																},
 															}
 														)}
-														className="sm:text-sm w-full bg-secondary-50 bg-opacity-70 border-1 focus:shadow-inner shadow-accent-300  focus:border-secondary-500 block p-2.5 h-8  px-3 py-1 shadow-secondary-300 rounded-md border border-secondary-300 text-sm font-medium leading-4 text-secondary-700 shadow-sm hover:bg-secondary-50 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-1"
+														className="border-1 shadow-accent-300 block h-8 w-full rounded-md border  border-secondary-300 bg-secondary-50 bg-opacity-70 p-2.5  px-3 py-1 text-sm font-medium leading-4 text-secondary-700 shadow-sm shadow-secondary-300 hover:bg-secondary-50 focus:border-secondary-500 focus:shadow-inner focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-1 sm:text-sm"
 													/>
 												</label>
 												{errors?.cases?.[index]?.coram && (
-													<div className="text-red-500 text-xs">
+													<div className="text-xs text-red-500">
 														<span className="px-2">
 															<sup>*</sup>
 															{errors?.cases?.[index]?.coram?.message}
@@ -245,7 +245,7 @@ const CauseListForm2 = ({ onSubmit, initialValues, isPending }: CauseListFormPro
 													</div>
 												)}
 											</div>
-											<div className="md:col-span-2 col-span-6">
+											<div className="col-span-6 md:col-span-2">
 												<label className="form-control w-full max-w-xs ">
 													<div className="block text-sm font-medium text-secondary-700">
 														<span className="label-text">Virtual</span>
@@ -255,13 +255,13 @@ const CauseListForm2 = ({ onSubmit, initialValues, isPending }: CauseListFormPro
 															`cases.${index}.virtual` as 'cases.0.virtual',
 															{ valueAsNumber: true }
 														)}
-														className="sm:text-sm w-full bg-secondary-50 bg-opacity-70 border-1 focus:shadow-inner shadow-accent-300 focus:border-secondary-500 block p-2.5 h-8 px-3 py-1 shadow-secondary-300 rounded-md border border-secondary-300 text-sm font-medium leading-4 text-secondary-700 shadow-sm hover:bg-secondary-50 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-1"
+														className="border-1 shadow-accent-300 block h-8 w-full rounded-md border border-secondary-300 bg-secondary-50 bg-opacity-70 p-2.5 px-3 py-1 text-sm font-medium leading-4 text-secondary-700 shadow-sm shadow-secondary-300 hover:bg-secondary-50 focus:border-secondary-500 focus:shadow-inner focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-1 sm:text-sm"
 														defaultValue={``}
 													>
 														<option
 															disabled
 															value=""
-															className="text-opacity-50 text-secondary-700"
+															className="text-secondary-700 text-opacity-50"
 														>
 															--Is Virtual?--
 														</option>
@@ -288,7 +288,7 @@ const CauseListForm2 = ({ onSubmit, initialValues, isPending }: CauseListFormPro
 															{...register(
 																`cases.${index}.url` as 'cases.0.url'
 															)}
-															className="sm:text-sm w-full bg-secondary-50 bg-opacity-70 border-1 focus:shadow-inner shadow-accent-300  focus:border-secondary-500 block p-2.5 h-8  px-3 py-1 shadow-secondary-300 rounded-md border border-secondary-300 text-sm font-medium leading-4 text-secondary-700 shadow-sm hover:bg-secondary-50 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-1"
+															className="border-1 shadow-accent-300 block h-8 w-full rounded-md border  border-secondary-300 bg-secondary-50 bg-opacity-70 p-2.5  px-3 py-1 text-sm font-medium leading-4 text-secondary-700 shadow-sm shadow-secondary-300 hover:bg-secondary-50 focus:border-secondary-500 focus:shadow-inner focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-1 sm:text-sm"
 														/>
 													</label>
 												</div>
@@ -305,7 +305,7 @@ const CauseListForm2 = ({ onSubmit, initialValues, isPending }: CauseListFormPro
 															`cases.${index}.case` as 'cases.0.case'
 														)}
 														placeholder="Case No. & Parties"
-														className="sm:text-sm w-full bg-secondary-50 bg-opacity-70 border-1 focus:shadow-inner shadow-accent-300  focus:border-secondary-500 block p-2.5 h-20  px-3 py-1 shadow-secondary-300 rounded-md border border-secondary-300 text-sm font-medium leading-4 text-secondary-700 shadow-sm hover:bg-secondary-50 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-1"
+														className="border-1 shadow-accent-300 block h-20 w-full rounded-md border  border-secondary-300 bg-secondary-50 bg-opacity-70 p-2.5  px-3 py-1 text-sm font-medium leading-4 text-secondary-700 shadow-sm shadow-secondary-300 hover:bg-secondary-50 focus:border-secondary-500 focus:shadow-inner focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-1 sm:text-sm"
 													/>
 												</label>
 											</div>
@@ -328,14 +328,14 @@ const CauseListForm2 = ({ onSubmit, initialValues, isPending }: CauseListFormPro
 																},
 															}
 														)}
-														className="sm:text-sm w-full bg-secondary-50 bg-opacity-70 border-1 focus:shadow-inner shadow-accent-300 focus:border-secondary-500 block p-2.5 h-8 px-3 py-1 shadow-secondary-300 rounded-md border border-secondary-300 text-sm font-medium leading-4 text-secondary-700 shadow-sm hover:bg-secondary-50 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-1"
+														className="border-1 shadow-accent-300 block h-8 w-full rounded-md border border-secondary-300 bg-secondary-50 bg-opacity-70 p-2.5 px-3 py-1 text-sm font-medium leading-4 text-secondary-700 shadow-sm shadow-secondary-300 hover:bg-secondary-50 focus:border-secondary-500 focus:shadow-inner focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-1 sm:text-sm"
 														defaultValue={``}
 														multiple
 													>
 														<option
 															disabled
 															value=""
-															className="text-opacity-50 text-secondary-700"
+															className="text-secondary-700 text-opacity-50"
 														>
 															Advocates Handling
 														</option>
@@ -346,7 +346,7 @@ const CauseListForm2 = ({ onSubmit, initialValues, isPending }: CauseListFormPro
 														))}
 													</select>
 													{errors?.cases?.[index]?.advocates && (
-														<div className="text-red-500 text-xs">
+														<div className="text-xs text-red-500">
 															<span className="px-2">
 																<sup>*</sup>
 																{

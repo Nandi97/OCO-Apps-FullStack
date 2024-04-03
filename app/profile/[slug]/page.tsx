@@ -33,10 +33,10 @@ export default function Profile(url: URL) {
 	// console.log('Weather', weather);
 	return (
 		<div>
-			<div className="sticky z-20 flex items-center justify-between p-4 bg-transparent top-2">
+			<div className="sticky top-2 z-20 flex items-center justify-between bg-transparent p-4">
 				<Link
 					href={`/`}
-					className="text-lg bg-primary-600 rounded-md flex items-center text-primary-50 p-1 hover:shadow-md shadow hover:bg-primary-500/70"
+					className="flex items-center rounded-md bg-primary-600 p-1 text-lg text-primary-50 shadow hover:bg-primary-500/70 hover:shadow-md"
 				>
 					<Icon icon="heroicons:chevron-left" />
 					<span>Dashboard</span>
@@ -44,9 +44,9 @@ export default function Profile(url: URL) {
 			</div>
 			<div className="grid grid-cols-12 gap-4">
 				<div className="col-span-4 p-4">
-					<div className="bg-primary-200 rounded-md flex flex-col w-full space-y-4">
-						<div className="relative w-full flex flex-col ">
-							<div className="w-full flex justify-center bg-primary-50 p-2 rounded-t-md">
+					<div className="flex w-full flex-col space-y-4 rounded-md bg-primary-200">
+						<div className="relative flex w-full flex-col ">
+							<div className="flex w-full justify-center rounded-t-md bg-primary-50 p-2">
 								<Image
 									width={100}
 									height={100}
@@ -60,13 +60,13 @@ export default function Profile(url: URL) {
 								width={100}
 								height={100}
 								quality={100}
-								className="h-20 w-20 rounded-xl border-4 border-primary-400 z-10 -mt-5 ml-4"
+								className="z-10 -mt-5 ml-4 h-20 w-20 rounded-xl border-4 border-primary-400"
 								alt="user profile image "
 								src={user?.avatarUrl || avatar}
 							/>
 						</div>
 						<div className="p-4">
-							<h1 className="font-bold text-xl text-secondary-700">{user?.name}</h1>
+							<h1 className="text-xl font-bold text-secondary-700">{user?.name}</h1>
 
 							<div className="flex items-center space-x-2">
 								<Icon icon="heroicons:identification" />
@@ -104,7 +104,7 @@ export default function Profile(url: URL) {
 					</div>
 				</div>
 				<div className="col-span-8 p-4">
-					<div className="bg-primary-200 rounded-md flex flex-col w-full space-y-4 p-4">
+					<div className="flex w-full flex-col space-y-4 rounded-md bg-primary-200 p-4">
 						<div className="flex items-center text-sm">
 							<span>
 								{weather?.name}, {weather?.sys?.country}

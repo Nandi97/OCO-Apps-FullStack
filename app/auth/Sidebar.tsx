@@ -63,7 +63,7 @@ export default function Sidebar({ sidebarProp }: { sidebarProp: React.ReactNode 
 							leaveFrom="translate-x-0"
 							leaveTo="-translate-x-full"
 						>
-							<Dialog.Panel className="relative flex flex-1 w-full max-w-xs mr-16">
+							<Dialog.Panel className="relative mr-16 flex w-full max-w-xs flex-1">
 								<Transition.Child
 									as={Fragment}
 									enter="ease-in-out duration-300"
@@ -73,7 +73,7 @@ export default function Sidebar({ sidebarProp }: { sidebarProp: React.ReactNode 
 									leaveFrom="opacity-100"
 									leaveTo="opacity-0"
 								>
-									<div className="absolute top-0 flex justify-center w-16 pt-5 left-full">
+									<div className="absolute left-full top-0 flex w-16 justify-center pt-5">
 										<button
 											type="button"
 											className="-m-2.5 p-2.5"
@@ -82,19 +82,19 @@ export default function Sidebar({ sidebarProp }: { sidebarProp: React.ReactNode 
 											<span className="sr-only">Close sidebar</span>
 											<Icon
 												icon={'heroicons:x-mark'}
-												className="w-6 h-6 text-white"
+												className="h-6 w-6 text-white"
 												aria-hidden="true"
 											/>
 										</button>
 									</div>
 								</Transition.Child>
 								{/* Sidebar component, swap this element with another sidebar if you like */}
-								<div className="flex flex-col justify-between h-screen px-6 pb-2 overflow-y-auto shadow-lg grow gap-y-5 bg-secondary-100">
-									<div className="flex items-center flex-shrink-0 p-4">
+								<div className="flex h-screen grow flex-col justify-between gap-y-5 overflow-y-auto bg-secondary-100 px-6 pb-2 shadow-lg">
+									<div className="flex flex-shrink-0 items-center p-4">
 										<Image
 											height={64}
 											width={64}
-											className="object-contain w-8 h-8"
+											className="h-8 w-8 object-contain"
 											src={OraroLogo}
 											alt="OCO Logo"
 										/>
@@ -103,7 +103,7 @@ export default function Sidebar({ sidebarProp }: { sidebarProp: React.ReactNode 
 											<span className="text-primary-600">Apps</span>
 										</div>
 									</div>
-									<div className="flex flex-col flex-grow mt-5">
+									<div className="mt-5 flex flex-grow flex-col">
 										<nav className="flex-1 px-4" aria-label="Sidebar">
 											{data?.map((item: any) =>
 												!item?.subMenus?.length ? (
@@ -111,7 +111,7 @@ export default function Sidebar({ sidebarProp }: { sidebarProp: React.ReactNode 
 														<Link
 															href={item?.url}
 															className={`
-										w-full inline-flex items-center space-x-2 text-xs rounded p-2 transition-all duration-500 ${
+										inline-flex w-full items-center space-x-2 rounded p-2 text-xs transition-all duration-500 ${
 											pathname?.includes(item.url)
 												? 'bg-primary-600 bg-opacity-20 text-secondary-600 hover:bg-primary-600 hover:bg-opacity-20'
 												: 'hover:bg-secondary-600 hover:bg-opacity-20'
@@ -119,7 +119,7 @@ export default function Sidebar({ sidebarProp }: { sidebarProp: React.ReactNode 
 														>
 															<Icon
 																icon={item?.icon}
-																className="text-sm xl:text-base text-primary-600"
+																className="text-sm text-primary-600 xl:text-base"
 															/>
 															<span>{item?.name}</span>
 														</Link>
@@ -147,7 +147,7 @@ export default function Sidebar({ sidebarProp }: { sidebarProp: React.ReactNode 
 																		)
 																			? 'bg-primary-600 bg-opacity-20 text-secondary-600 hover:bg-primary-600 hover:bg-opacity-20'
 																			: 'hover:bg-secondary-600 hover:bg-opacity-20',
-																		'w-full inline-flex items-center justify-between text-xs rounded py-2 pl-2 pr-1 transition-all duration-500'
+																		'inline-flex w-full items-center justify-between rounded py-2 pl-2 pr-1 text-xs transition-all duration-500'
 																	)}
 																	onClick={() =>
 																		handleDisclosureClick(
@@ -158,7 +158,7 @@ export default function Sidebar({ sidebarProp }: { sidebarProp: React.ReactNode 
 																	<div className="inline-flex items-center space-x-2 ">
 																		<Icon
 																			icon={item?.icon}
-																			className="text-sm xl:text-base text-primary-600"
+																			className="text-sm text-primary-600 xl:text-base"
 																		/>
 																		<span>{item?.name}</span>
 																	</div>
@@ -169,13 +169,13 @@ export default function Sidebar({ sidebarProp }: { sidebarProp: React.ReactNode 
 																				pathname?.includes(
 																					item?.url
 																				)
-																				? 'text-secondary-600 rotate-90'
+																				? 'rotate-90 text-secondary-600'
 																				: 'text-secondary-400',
 																			'transform transition-colors duration-150 ease-in-out'
 																		)}
 																	/>
 																</Disclosure.Button>
-																<Disclosure.Panel className="pl-3 space-y-1">
+																<Disclosure.Panel className="space-y-1 pl-3">
 																	{item?.subMenus?.map(
 																		(sub_menu: any) => (
 																			<Link
@@ -187,13 +187,13 @@ export default function Sidebar({ sidebarProp }: { sidebarProp: React.ReactNode 
 																						? 'bg-primary-600 bg-opacity-20 text-secondary-600 hover:bg-primary-600 hover:bg-opacity-20'
 																						: 'hover:bg-secondary-600 hover:bg-opacity-20'
 																				}
-														w-full inline-flex items-center space-x-2 text-xs rounded p-2 transition-all duration-500`}
+														inline-flex w-full items-center space-x-2 rounded p-2 text-xs transition-all duration-500`}
 																			>
 																				<Icon
 																					icon={
 																						sub_menu?.icon
 																					}
-																					className="text-sm xl:text-base text-primary-600"
+																					className="text-sm text-primary-600 xl:text-base"
 																				/>
 																				<span>
 																					{sub_menu?.name}
@@ -217,12 +217,12 @@ export default function Sidebar({ sidebarProp }: { sidebarProp: React.ReactNode 
 				</Dialog>
 			</Transition.Root>
 			<div className="hidden lg:fixed lg:inset-y-0 lg:z-30 lg:flex lg:w-64 lg:flex-col">
-				<div className="flex flex-col justify-between h-screen px-6 overflow-y-auto border-r divide-y divide-primary-200 border-gray-200 shadow-lg md:flex md:col-span-3 xl:col-span-2 bg-secondary-100 grow">
-					<div className="flex items-center flex-shrink-0 pt-6 pb-4 h-8">
+				<div className="flex h-screen grow flex-col justify-between divide-y divide-primary-200 overflow-y-auto border-r border-gray-200 bg-secondary-100 px-6 shadow-lg md:col-span-3 md:flex xl:col-span-2">
+					<div className="flex h-8 flex-shrink-0 items-center pb-4 pt-6">
 						<Image
 							height={64}
 							width={64}
-							className="object-contain w-8 h-8"
+							className="h-8 w-8 object-contain"
 							src={OraroLogo}
 							alt="OCO Logo"
 						/>
@@ -231,7 +231,7 @@ export default function Sidebar({ sidebarProp }: { sidebarProp: React.ReactNode 
 							<span className="text-primary-600">Apps</span>
 						</div>
 					</div>
-					<div className="flex flex-col flex-grow mt-5 pt-4">
+					<div className="mt-5 flex flex-grow flex-col pt-4">
 						<nav className="flex-1 px-4" aria-label="Sidebar">
 							{data?.map((item: any) =>
 								!item.subMenus.length ? (
@@ -239,7 +239,7 @@ export default function Sidebar({ sidebarProp }: { sidebarProp: React.ReactNode 
 										<Link
 											href={item?.url}
 											className={`
-										w-full inline-flex items-center space-x-2 text-xs rounded p-2 transition-all duration-500 ${
+										inline-flex w-full items-center space-x-2 rounded p-2 text-xs transition-all duration-500 ${
 											pathname?.includes(item.url)
 												? 'bg-primary-600 bg-opacity-20 text-secondary-600 hover:bg-primary-600 hover:bg-opacity-20'
 												: 'hover:bg-secondary-600 hover:bg-opacity-20'
@@ -247,7 +247,7 @@ export default function Sidebar({ sidebarProp }: { sidebarProp: React.ReactNode 
 										>
 											<Icon
 												icon={item?.icon}
-												className="text-sm xl:text-base text-primary-600"
+												className="text-sm text-primary-600 xl:text-base"
 											/>
 											<span>{item?.name}</span>
 										</Link>
@@ -273,14 +273,14 @@ export default function Sidebar({ sidebarProp }: { sidebarProp: React.ReactNode 
 														pathname?.includes(item?.url)
 															? 'bg-primary-600 bg-opacity-20 text-secondary-600 hover:bg-primary-600 hover:bg-opacity-20'
 															: 'hover:bg-secondary-600 hover:bg-opacity-20',
-														'w-full inline-flex items-center justify-between text-xs rounded py-2 pl-2 pr-1 transition-all duration-500'
+														'inline-flex w-full items-center justify-between rounded py-2 pl-2 pr-1 text-xs transition-all duration-500'
 													)}
 													onClick={() => handleDisclosureClick(item.name)}
 												>
 													<div className="inline-flex items-center space-x-2 ">
 														<Icon
 															icon={item?.icon}
-															className="text-sm xl:text-base text-primary-600"
+															className="text-sm text-primary-600 xl:text-base"
 														/>
 														<span>{item?.name}</span>
 													</div>
@@ -288,13 +288,13 @@ export default function Sidebar({ sidebarProp }: { sidebarProp: React.ReactNode 
 														icon={'heroicons:chevron-right'}
 														className={classNames(
 															open || pathname?.includes(item?.url)
-																? 'text-secondary-600 rotate-90'
+																? 'rotate-90 text-secondary-600'
 																: 'text-secondary-400',
 															'transform transition-colors duration-150 ease-in-out'
 														)}
 													/>
 												</Disclosure.Button>
-												<Disclosure.Panel className="pl-3 space-y-1">
+												<Disclosure.Panel className="space-y-1 pl-3">
 													{item?.subMenus?.map((sub_menu: any) => (
 														<Link
 															key={sub_menu?.name}
@@ -304,11 +304,11 @@ export default function Sidebar({ sidebarProp }: { sidebarProp: React.ReactNode 
 																	? 'bg-primary-600 bg-opacity-20 text-secondary-600 hover:bg-primary-600 hover:bg-opacity-20'
 																	: 'hover:bg-secondary-600 hover:bg-opacity-20'
 															}
-														w-full inline-flex items-center space-x-2 text-xs rounded p-2 transition-all duration-500`}
+														inline-flex w-full items-center space-x-2 rounded p-2 text-xs transition-all duration-500`}
 														>
 															<Icon
 																icon={sub_menu?.icon}
-																className="text-sm xl:text-base text-primary-600"
+																className="text-sm text-primary-600 xl:text-base"
 															/>
 															<span>{sub_menu?.name}</span>
 														</Link>
@@ -326,14 +326,14 @@ export default function Sidebar({ sidebarProp }: { sidebarProp: React.ReactNode 
 			</div>
 
 			{/* Top Nav  */}
-			<div className="sticky top-0 z-40 flex items-center justify-between w-screen px-4 py-4 bg-white shadow-sm gap-x-6 sm:px-6 lg:hidden">
+			<div className="sticky top-0 z-40 flex w-screen items-center justify-between gap-x-6 bg-white px-4 py-4 shadow-sm sm:px-6 lg:hidden">
 				<button
 					type="button"
 					className="-m-2.5 p-2.5 text-secondary-700 lg:hidden"
 					onClick={() => setSidebarOpen(true)}
 				>
 					<span className="sr-only">Open sidebar</span>
-					<Icon icon={'heroicons:bars-3'} className="w-6 h-6" aria-hidden="true" />
+					<Icon icon={'heroicons:bars-3'} className="h-6 w-6" aria-hidden="true" />
 				</button>
 				<div className="">{sidebarProp}</div>
 			</div>
