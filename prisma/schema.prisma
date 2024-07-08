@@ -189,6 +189,7 @@ model Staff {
   assetOwner       Asset[]            @relation("owner")
   assetTransaction AssetTransaction[] @relation("asset-transaction-creator")
   leaveBalance     LeaveBalance?
+  Project          Project[]
 }
 
 model Book {
@@ -616,4 +617,36 @@ model AssetMaintenanceLog {
   deletedAt DateTime?
 
   asset Asset @relation(fields: [assetId], references: [id])
+}
+
+model ProjectTag {
+  id          Int     @id @default(autoincrement())
+  name        String  @unique
+  colour      String
+  description String?
+
+  createdAt DateTime? @default(now())
+  updatedAt DateTime? @updatedAt
+  deletedAt DateTime?
+
+  projects Project[]
+}
+
+model Project {
+  id            String     @id @default(cuid())
+  title         String     @unique
+  description   String?
+  startDate     DateTime
+  endDate       DateTime
+  reminderDates DateTime[]
+
+  createdAt DateTime? @default(now())
+  updatedAt DateTime? @updatedAt
+  deletedAt DateTime?
+
+  projectTag   ProjectTag? @relation(fields: [projectTagId], references: [id])
+  projectTagId Int?
+
+  projectLead   Staff? @relation(fields: [projectLeadId], references: [id])
+  projectLeadId String
 }

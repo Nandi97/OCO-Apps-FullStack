@@ -175,6 +175,7 @@ Table Staff {
   assetOwner Asset [not null]
   assetTransaction AssetTransaction [not null]
   leaveBalance LeaveBalance
+  Project Project [not null]
 }
 
 Table Book {
@@ -554,6 +555,33 @@ Table AssetMaintenanceLog {
   asset Asset [not null]
 }
 
+Table ProjectTag {
+  id Int [pk, increment]
+  name String [unique, not null]
+  colour String [not null]
+  description String
+  createdAt DateTime [default: `now()`]
+  updatedAt DateTime
+  deletedAt DateTime
+  projects Project [not null]
+}
+
+Table Project {
+  id String [pk]
+  title String [unique, not null]
+  description String
+  startDate DateTime [not null]
+  endDate DateTime [not null]
+  reminderDates DateTime[] [not null]
+  createdAt DateTime [default: `now()`]
+  updatedAt DateTime
+  deletedAt DateTime
+  projectTag ProjectTag
+  projectTagId Int
+  projectLead Staff
+  projectLeadId String [not null]
+}
+
 Ref: Account.userId > User.id [delete: Cascade]
 
 Ref: Session.userId > User.id [delete: Cascade]
@@ -651,3 +679,7 @@ Ref: AssetTransaction.toUserId > Staff.id
 Ref: AssetTransaction.createdById > Staff.id
 
 Ref: AssetMaintenanceLog.assetId > Asset.id
+
+Ref: Project.projectTagId > ProjectTag.id
+
+Ref: Project.projectLeadId > Staff.id

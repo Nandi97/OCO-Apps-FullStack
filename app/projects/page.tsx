@@ -1,19 +1,13 @@
-'use client';
-import { useEffect, useState } from 'react';
+import Dashboard from '@/components/main/projects/Dashboard';
+
+import { usePathname } from 'next/navigation';
+import { metadata } from '@/app/layout';
 
 export default function Project() {
-	const [title, setTitle] = useState('');
-
-	// Update the title and breadcrumbs
-	useEffect(() => {
-		setTitle('Projects');
-	}, []);
-
+	metadata.title = 'Projects';
 	return (
 		<div className="space-y-2">
-			<div className="flex flex-col gap-2 bg-white">
-				<h1 className="text-accent-700 text-lg font-extralight">{title}</h1>
-			</div>
+			<Dashboard />
 		</div>
 	);
 }

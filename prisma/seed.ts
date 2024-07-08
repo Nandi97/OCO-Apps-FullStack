@@ -15,12 +15,14 @@ import { getTax } from './seeders/tax';
 import { getLeaveTypes } from './seeders/leaveTypes';
 import { getAssetCategories, getAssetConditions, getAssetTransactionTypes } from './seeders/assets';
 import { getLeaveBalances } from './seeders/leaveBalances';
+import { getProjectTags } from './seeders/projectTags';
 
 const prisma = new PrismaClient();
 
 async function main() {
 	const menus = getMenus();
 	const matters = getMatters();
+	const projectTags = getProjectTags();
 	const genders = getGenders();
 	const taxes = getTax();
 	const towns = getTowns();
@@ -424,6 +426,27 @@ async function main() {
 				const updatedData = await prisma.assetTransactionType.update({
 					where: { id: existing.id },
 					data: { ...assetTransactionType },
+				});
+				console.log(`Updated asset transaction types: ${updatedData.name}`);
+			}
+		}
+
+		//ProjectTags
+		for (const projectTag of projectTags) {
+			const existing = await prisma.projectTag.findUnique({
+				where: { name: projectTag.name },
+			});
+			if (!existing) {
+				const newData = await prisma.projectTag.create({
+					data: {
+						...projectTag,
+					},
+				});
+				console.log(`Created asset transaction types: ${newData.name}`);
+			} else {
+				const updatedData = await prisma.projectTag.update({
+					where: { id: existing.id },
+					data: { ...projectTag },
 				});
 				console.log(`Updated asset transaction types: ${updatedData.name}`);
 			}
